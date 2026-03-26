@@ -18,21 +18,27 @@ FROM node:20-slim
 
 WORKDIR /app
 
-# Copy root scraper deps
+# Copy root-level package.json & install production deps (playwright etc.)
 COPY package*.json ./
-RUN npm ci --omit=dev
+# Skip playwright browser install in Cloud Run (scrapers won't run there usually)
+RUN npm ci --omit=dev || npm install --omit=dev
 
-# Copy scrapers & shared assets
-COPY *.js ./
+# Copy all scraper scripts
+COPY rappi_scraper.js ./
+COPY mcdonalds_scraper.js ./
+COPY pedidosya_scraper.js ./
+COPY pizzahut_explore.js ./
+COPY check_mcd.js ./
+COPY dump_mcd.js ./
+COPY extract_nuxt.js ./
+COPY intercept_mcd.js ./
 
-# Copy Express server
+# Copy Express backend
+RUN mkdir -p dashboard
 COPY dashboard/server.cjs ./dashboard/server.cjs
 
 # Copy built frontend from Stage 1
 COPY --from=builder /app/dashboard/dist ./dashboard/dist
-
-# Copy data directory (will be empty initially but mounted at runtime if needed)
-RUN mkdir -p ./data
 
 ENV PORT=8080
 EXPOSE 8080
