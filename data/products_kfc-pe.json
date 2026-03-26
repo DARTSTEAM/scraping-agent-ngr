@@ -1,86 +1,667 @@
 [
   {
     "restaurant": "KFC",
-    "category": "Ver todo",
+    "category": "Carta",
     "name": "Mega Mix: 8 Piezas",
     "description": "",
     "price": 69.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Mega XL: 12 Piezas",
     "description": "",
     "price": 89.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Combo Chick'N Share 18 Nuggets",
     "description": "",
     "price": 43.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Super Mega: 10 Piezas",
     "description": "",
     "price": 79.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Pie de Manzana",
     "description": "",
     "price": 6.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Combo 8 Hot Wings",
     "description": "",
     "price": 24.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Mega 12 Piezas + Papas",
     "description": "",
     "price": 77.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Papa Familiar",
     "description": "",
     "price": 11.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Ensalada Regular",
     "description": "",
     "price": 5.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Combo 8 Nuggets",
     "description": "",
     "price": 24.9
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Ensalada Familiar",
     "description": "",
     "price": 11
   },
   {
     "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
+    "category": "Carta",
     "name": "Chick'N Share 3 Piezas + Snacks",
     "description": "",
     "price": 37.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos de la Semana",
+    "name": "Cyber Week: 6 piezas + Bebida",
+    "description": "",
+    "price": 45.8
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos de la Semana",
+    "name": "Cyber Week: 12 Hot Wings",
+    "description": "",
+    "price": 29.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos de la Semana",
+    "name": "Cyber Week: 8 Piezas",
+    "description": "",
+    "price": 54.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos de la Semana",
+    "name": "Cyber Week: 6 Piezas",
+    "description": "",
+    "price": 39.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos para 1",
+    "name": "Promo Personal: 2 Piezas",
+    "description": "",
+    "price": 19.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos para 1",
+    "name": "Combinados: Krunchy + Pieza de Pollo",
+    "description": "",
+    "price": 22.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos para 1",
+    "name": "Krunchy + Papas",
+    "description": "",
+    "price": 14.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos para 1",
+    "name": "Promo Tenders",
+    "description": "",
+    "price": 19.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos Grupales",
+    "name": "Mega Promo - 8 Piezas",
+    "description": "",
+    "price": 49.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos Grupales",
+    "name": "Mega Promo: 10 Piezas",
+    "description": "",
+    "price": 64.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos Grupales",
+    "name": "Mega Delivery - 6 Piezas",
+    "description": "",
+    "price": 39.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos Grupales",
+    "name": "Mega Delivery + Gaseosa",
+    "description": "",
+    "price": 45.8
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos Grupales",
+    "name": "Dúo Twister XL + Papas",
+    "description": "",
+    "price": 39.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos Grupales",
+    "name": "Wings & Krunch: 18 Hot Wings",
+    "description": "",
+    "price": 37.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Promos Grupales",
+    "name": "Dúo Krunchy + Papas",
+    "description": "",
+    "price": 24.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Megas",
+    "name": "Mega Dipeo",
+    "description": "",
+    "price": 49.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Megas",
+    "name": "Mega Dipeo con Gaseosas",
+    "description": "",
+    "price": 55.8
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Megas",
+    "name": "Mega Clásico: 6 Piezas",
+    "description": "",
+    "price": 59.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Para 2",
+    "name": "Chick'n Share Dipeo",
+    "description": "",
+    "price": 34.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Para 2",
+    "name": "Chick'n Share Dipeo con Bebidas",
+    "description": "",
+    "price": 38.8
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Para 2",
+    "name": "Popcorn para 2",
+    "description": "",
+    "price": 32.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Para 2",
+    "name": "Chick'N Share 18 Hot Wings + Papas",
+    "description": "",
+    "price": 42.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Para 2",
+    "name": "Chick'N Share 5 Piezas + Papas",
+    "description": "",
+    "price": 37.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Para 2",
+    "name": "Chick'N Share Tenders",
+    "description": "",
+    "price": 43.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Twister XL",
+    "name": "Combo Twister XL Americano",
+    "description": "",
+    "price": 28.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Twister XL",
+    "name": "Combo Twister XL Tradicional",
+    "description": "",
+    "price": 27.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Twister XL",
+    "name": "Twister XL Tradicional",
+    "description": "",
+    "price": 21.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Twister XL",
+    "name": "Twister XL Americano",
+    "description": "",
+    "price": 22.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Twister XL",
+    "name": "Combo Twister XL Peruano",
+    "description": "",
+    "price": 27.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Twister XL",
+    "name": "Twister XL Peruano",
+    "description": "",
+    "price": 21.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Big Box",
+    "name": "Big Box Twister XL Americano",
+    "description": "",
+    "price": 33.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Big Box",
+    "name": "Big Box Dipeo",
+    "description": "",
+    "price": 29.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Big Box",
+    "name": "Big Box Tenders",
+    "description": "",
+    "price": 33.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Big Box",
+    "name": "Big Box Wow",
+    "description": "",
+    "price": 28.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Big Box",
+    "name": "Big Box Classic",
+    "description": "",
+    "price": 27.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Combos",
+    "name": "Combo Krunchy Dipeo",
+    "description": "",
+    "price": 20.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Combos",
+    "name": "Combo Mix Dipeo",
+    "description": "",
+    "price": 23.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Combos",
+    "name": "Combo Twister Dipeo",
+    "description": "",
+    "price": 25.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Combos",
+    "name": "Combo Hot Wings Dipeo",
+    "description": "",
+    "price": 23.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Combos",
+    "name": "Combo Tenders Dipeo",
+    "description": "",
+    "price": 25.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Combos",
+    "name": "Combo Mix",
+    "description": "",
+    "price": 23.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Combos",
+    "name": "Combo Tenders",
+    "description": "",
+    "price": 25.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Combos",
+    "name": "Combo Clásico: 2 Piezas",
+    "description": "",
+    "price": 21.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Combo Sandwich Deluxe",
+    "description": "",
+    "price": 27.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Combo Sandwich Original",
+    "description": "",
+    "price": 25.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Krunchy Americano",
+    "description": "",
+    "price": 12.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Combo Krunchy Americano",
+    "description": "",
+    "price": 18.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Combo Krunchy BBQ",
+    "description": "",
+    "price": 17.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Krunchy BBQ",
+    "description": "",
+    "price": 11.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Combo Krunchy Meltz",
+    "description": "",
+    "price": 16.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Big Box Krunchy Meltz",
+    "description": "",
+    "price": 22.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Big Box Sandwich Deluxe",
+    "description": "",
+    "price": 32.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Sándwiches",
+    "name": "Krunchy Meltz",
+    "description": "",
+    "price": 10.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "Paquete 6 Nuggets",
+    "description": "",
+    "price": 16.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "Paquete 6 Hot Wings",
+    "description": "",
+    "price": 17.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "Paquete 6 Tenders",
+    "description": "",
+    "price": 33.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "Paquete 3 Tenders",
+    "description": "",
+    "price": 17.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "PopCorn Chicken",
+    "description": "",
+    "price": 15.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "Papa Super Familiar",
+    "description": "",
+    "price": 15.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "Papa Personal",
+    "description": "",
+    "price": 6.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "Piezas de Pollo (2 un)",
+    "description": "",
+    "price": 15.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Complementos",
+    "name": "Puré Familiar",
+    "description": "",
+    "price": 11
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Salsas",
+    "name": "Aji de la Casa Familiar",
+    "description": "",
+    "price": 3.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Salsas",
+    "name": "Tártara Peruana Familiar",
+    "description": "",
+    "price": 3.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Salsas",
+    "name": "BBQ Familiar",
+    "description": "",
+    "price": 3.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Salsas",
+    "name": "Salsa Secreta Familiar",
+    "description": "",
+    "price": 3.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Salsas",
+    "name": "Honey Mustard Familiar",
+    "description": "",
+    "price": 3.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Postres",
+    "name": "Tres Leches de Vainilla",
+    "description": "",
+    "price": 6.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Postres",
+    "name": "Torta Trufada",
+    "description": "",
+    "price": 11.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Postres",
+    "name": "Galleta de Avena",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Postres",
+    "name": "Pie de Dulce de Leche",
+    "description": "",
+    "price": 6.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero Azúcar 500 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero Azúcar 1L",
+    "description": "",
+    "price": 7
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero Azúcar 1.5L",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero Azúcar 500 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero Azúcar 1L",
+    "description": "",
+    "price": 7
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero Azúcar 1.5L",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Fanta Naranja 500 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Fanta 2.25L",
+    "description": "",
+    "price": 13
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Sprite Original 500 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Sprite 2.25L",
+    "description": "",
+    "price": 13
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Agua Saborizada de Manzana",
+    "description": "",
+    "price": 4.5
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Bebidas",
+    "name": "Agua San Luis Sin Gas 750 ml",
+    "description": "",
+    "price": 4.5
   }
 ]
