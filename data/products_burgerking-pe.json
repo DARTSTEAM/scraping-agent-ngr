@@ -1,0 +1,506 @@
+[
+  {
+    "name": "Dúo STACKER®",
+    "description": "2 Stacker® Simple y 2 Papas Jr",
+    "price": 25.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Fiesta WHOPPER®",
+    "description": "2 WHOPPER® Grande, 2 Papas Junior y 1 Bebida 1L",
+    "price": 36.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Grande",
+    "description": "Hamburguesa 100% carne de res a la parrilla con tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla. Disponible sola o en combo.",
+    "price": 17.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "KING DE POLLO®",
+    "description": "Hamburguesa de pechuga de pollo con lechuga y mayonesa. Disponible sola o en combo",
+    "price": 16.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Mega STACKER®",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla con nuestra exclusiva salsa BK STACKER®, queso y tocino. Disponible sola o en combo.",
+    "price": 26.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Cheese Grande",
+    "description": "Hamburguesa 100% carne de res a la parrilla con queso, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla.Disponible sola o en combo.",
+    "price": 19.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "El Rey WHOPPER® Para 4 + Papa Familiar",
+    "description": "4 WHOPPER® Grande y 1 Papa Familiar",
+    "price": 54.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Tejana Grande",
+    "description": "Hamburguesa 100% carne de res a la parrilla con queso, tocino, tomate, lechuga, mayonesa, BBQ, pepinillos y cebolla. Disponible sola o en combo.",
+    "price": 21.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "XT Steakhouse",
+    "description": "75% más grande. Hamburguesa 100% carne de res a la parrilla con queso, lechuga, tomate, cebollitas crujientes, salsa BBQ y mayonesa. Disponible sola o en combo.",
+    "price": 28.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Mega Doble con Queso Grande",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla con queso, pepinillos, mostaza y kétchup. Disponible sola o en combo.",
+    "price": 24.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Whopper® Pack con Gaseosa",
+    "description": "2 WHOPPER® Junior, 2 Papas Junior y 1 Bebida 1L",
+    "price": 23.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Pie de Manzana",
+    "description": "Pie crocante relleno de trozos de manzana y canela",
+    "price": 5.5,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Crispy Grande",
+    "description": "Hamburguesa 100% carne de res a la parrilla con queso, cebollitas crujientes, BBQ, tomate, lechuga y mayonesa. Disponible sola o en combo.",
+    "price": 21.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Dúo WHOPPER® + Shake OREO®",
+    "description": "1 WHOPPER®, 1 Papa Jr. y 1 Shake OREO® Vainilla",
+    "price": 18.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "XT Queso & Tocino",
+    "description": "75% más grande. Hamburguesa 100% carne de res a la parrilla con queso, tocino, lechuga, tomate y mayonesa. Disponible sola o en combo.",
+    "price": 26.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Combo King Jr.",
+    "description": "Combo infantil a elección con acompañamiento, bebida y juguete sorpresa.",
+    "price": 21.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "10 Nuggets",
+    "description": "10 nuggets de pollo dorados y crujientes, perfectos para compartir.",
+    "price": 15.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Papa Familiar",
+    "description": "Papas fritas crujientes para compartir.",
+    "price": 9.5,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "El Rey WHOPPER® Para 3",
+    "description": "3 WHOPPER®, 1 Papa Familiar y 1 Gaseosa 1L",
+    "price": 44.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Vegetal con Queso",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, tomates, lechuga, mayonesa, ketchup, pepinillos y aros de cebolla. Disponible sola o en combo.",
+    "price": 21.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Vegetal",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con tomates con lechuga, mayonesa, ketchup, pepinillos y aros de cebolla. Disponible sola o en combo.",
+    "price": 19.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Dúo WHOPPER® Junior",
+    "description": "1 WHOPPER® Jr. y 1 Papa Jr.",
+    "price": 11.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Chicken Dúo",
+    "description": "2 Chicken Cheese y 2 Papa Jr",
+    "price": 22.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Máxima Crunch",
+    "description": "2 Carnes de res a la parrilla con 3 slides de queso, tocino, salsa BBQ, salsa STACKER® y crispy onions. Disponible sola o en combo.",
+    "price": 27.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Philly Cheese",
+    "description": "Doble carne 100% a la parrilla con 4 slides de queso, tocino, cebolla frita y nuestra exclusiva \"Cheese sauce\". Disponible sola o en combo.",
+    "price": 28.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "XT Clásica",
+    "description": "75% más grande. Hamburguesa 100% carne de res a la parrilla con lechuga, tomate, cebolla, kétchup y mayonesa. Disponible sola o en combo",
+    "price": 22.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Pack Parrillero",
+    "description": "2 Parrilleras Jr y 2 Papas Jr",
+    "price": 23.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Pack Para Compartir",
+    "description": "1 STACKER® Doble Jr., 1 WHOPPER® Jr., 2 Papas Jr. y 1 Bebida 1L.",
+    "price": 29.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Promo 3 Pie de Manzana",
+    "description": "3 Pies de Manzana",
+    "price": 11.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Mega STACKER® Cuádruple",
+    "description": "Cuádruple hamburguesa 100% carne de res a la parrilla con queso, tocino y nuestra exclusiva salsa STACKER®. Disponible sola o en combo.",
+    "price": 36.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Mega STACKER® Triple",
+    "description": "Triple hamburguesa 100% carne de res a la parrilla con queso, tocino y nuestra exclusiva salsa STACKER®. Disponible sola o en combo.",
+    "price": 32.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Papa Jr.",
+    "description": "Papas fritas doradas y crujientes en tamaño junior.",
+    "price": 4.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "King Pack Online",
+    "description": "4 WHOPPER® Junior + 8 Nuggets + 4 Papas Junior",
+    "price": 44.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Parrillera XL",
+    "description": "Hamburguesa grande 100% carne de res a la parrilla con chorizo, papitas al hilo, mayonesa y ají. Disponible sola o en combo.",
+    "price": 22.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Chicken Cheese Bacon Junior",
+    "description": "Hamburguesa de pechuga de pollo regular con tomate, lechuga, mayonesa, tocino y queso americano. Disponible sola o en combo",
+    "price": 16.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "8 Onion Rings",
+    "description": "8 aros de cebolla empanizados y crujientes acompañados de un pirotín de salsa Bbq.",
+    "price": 9.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Dúo Parrillero Personal",
+    "description": "1 Parrillera Jr. y 1 Papa Jr.",
+    "price": 14,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Doble Chicken BBQ",
+    "description": "Hamburguesa de doble pechuga de pollo crispy bañada en salsa BBQ, con queso americano, lechuga fresca, mayonesa y papas al hilo crocantes.",
+    "price": 17.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "King Para 3",
+    "description": "1 Whopper® Jr, 1 Chicken Cheese, 1 Parrillera Jr y 1 Papa Familiar",
+    "price": 32.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Bacon King",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla con queso, tocino, mayonesa y kétchup. Disponible sola o en combo.",
+    "price": 32.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Vegetal Crispy",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, cebollitas crujientes, salsa BBQ, tomate, lechuga y mayonesa. Disponible sola o en combo.",
+    "price": 23.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Junior",
+    "description": "Hamburguesa 100% carne de res a la parrilla con tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla. Disponible sola o en combo.",
+    "price": 15.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Tejana Junior",
+    "description": "Hamburguesa 100% carne de res a la parrilla con queso, tocino, tomate, lechuga, mayonesa, BBQ, pepinillos y cebolla. Disponible sola o en combo.",
+    "price": 20.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "STACKER® Doble Junior",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla con nuestra exclusiva salsa BK STACKER®, queso, tocino. Disponible sola o en combo.",
+    "price": 22.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Doble con Queso Junior",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla , queso, pepinillos, mostaza y kétchup. Disponible sola o en combo.",
+    "price": 20.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "XT Parrillera",
+    "description": "75% más grande. Hamburguesa 100% carne de res a la parrilla con papas al hilo, chorizo, ají y mayonesa. Disponible sola o en combo.",
+    "price": 25.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Coca Cola Sin Azucar 1 L",
+    "description": "1 Coca-Cola Mediana Sin Azúcar 1L",
+    "price": 8,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Camote Familiar",
+    "description": "Camote frito crujiente en tamaño familiar.",
+    "price": 10.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "8 Churros",
+    "description": "8 crujientes churros acompañados de salsa dulce a elección: fudge o manjar.",
+    "price": 11.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Chicken Dúo Con Gaseosa",
+    "description": "2 Chicken Cheese, 2 Papas Jr y 1 Bebida 1L",
+    "price": 27.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Philly Cheese Junior",
+    "description": "Doble carne 100% a la parrilla con 2 slides de queso, tocino, cebolla frita y nuestra exclusiva \"Cheese sauce\". Disponible sola o en combo.",
+    "price": 21.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Pack Super Familiar",
+    "description": "1 Whopper®, 1 Stacker® Doble Jr, 2 Whopper® Jr y 1 Papa Familiar",
+    "price": 54.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Cheese Junior",
+    "description": "Hamburguesa 100% carne de res a la parrilla con queso, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla.Disponible sola o en combo.",
+    "price": 17.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Whopper® Crispy Junior",
+    "description": "Hamburguesa 100% carne de res a la parrilla con queso, cebollitas crujientes, BBQ, tomate, lechuga y mayonesa. Disponible sola o en combo.",
+    "price": 19.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Ring",
+    "description": "Hamburguesa Jr.100% carne de res a la parrilla con tomate, lechuga, mayonesa, salsa BBQ, queso americano y aros de cebolla empanizados. Disponible sola o en combo.",
+    "price": 20.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "4 Onion Rings",
+    "description": "4 aros de cebolla empanizados y crujientes acompañados de un pirotín de salsa Bbq.",
+    "price": 5.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Shake OREO® de Vainilla",
+    "description": "Milkshake de vainilla con trozos de galleta OREO®.",
+    "price": 14.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "4 Churros",
+    "description": "4 crujientes churros acompañados de salsa dulce a elección: fudge o manjar.",
+    "price": 6.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Pack Parrillero Con Gaseosa",
+    "description": "2 Parrilleras Jr, 2 Papas Jr y 1 Bebida 1L",
+    "price": 28.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "WHOPPER® Vegetal Tejana",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, tocino, tomates, lechuga, mayonesa, salsa BBQ, pepinillos y aros de cebolla. Disponible sola o en combo.",
+    "price": 24.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Inca Kola Sin Azucar 1 L",
+    "description": "1 Inca-Kola Mediana Sin Azúcar 1L",
+    "price": 8,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Papa Tumbay Grande",
+    "description": "Papas tumbay crocantes, tamaño grande.",
+    "price": 7.5,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Coca-Cola Sin Azucar 500 ml",
+    "description": "1 Coca-Cola Personal Sin Azúcar 500ml",
+    "price": 4.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Camote Grande",
+    "description": "Camote frito crocante, tamaño grande.",
+    "price": 7.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "16 Onion Rings",
+    "description": "16 aros de cebolla empanizados y crujientes acompañados de dos pirotines de salsa Bbq.",
+    "price": 16.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "King Para 4",
+    "description": "1 Whopper® Jr, 1 Stacker® Simple, 2 Parrillera Jr y 1 Papa Familiar",
+    "price": 42.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "STACKER® Triple Junior",
+    "description": "Triple hamburguesa 100% carne de res a la parrilla con nuestra exclusiva salsa BK STACKER®, queso, tocino. Disponible sola o en combo.",
+    "price": 24.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Papa Tumbay Familiar",
+    "description": "Papas tumbay crocantes para compartir.",
+    "price": 10.5,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Inca Kola Sin Azucar 500 ml",
+    "description": "1 Inca-Kola Personal Sin Azúcar 500ml",
+    "price": 4.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Camote Junior",
+    "description": "Camote frito crocante, tamaño junior.",
+    "price": 5.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Shake OREO® de Chocolate",
+    "description": "Milkshake de chocolate con trozos de galleta OREO®.",
+    "price": 14.9,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "King Fusion OREO®",
+    "description": "Cremoso helado de vainilla, chocolate o mixto con trozos de galleta OREO® y fudge, en presentación de 10 oz.",
+    "price": 8.5,
+    "category": "King Jr.",
+    "restaurant": "Burger King"
+  }
+]

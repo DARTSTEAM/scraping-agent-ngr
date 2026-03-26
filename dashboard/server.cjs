@@ -37,7 +37,8 @@ const STORE_METADATA = {
     '38002': { name: "Starbucks", platform: 'Rappi' },
     'mcd-ovalo-gutierrez': { name: "McDonald's - Ovalo Gutierrez", platform: 'PedidosYa' },
     'mcd-izaguirre-iza': { name: "McDonald's - Izaguirre", platform: 'McDonalds Propio' },
-    'pizzahut-miraflores': { name: "Pizza Hut - Miraflores", platform: 'Pizza Hut Propio' }
+    'pizzahut-miraflores': { name: "Pizza Hut - Miraflores", platform: 'Pizza Hut Propio' },
+    'burgerking-pe': { name: "Burger King", platform: 'Burger King Propio' }
 };
 
 /**
@@ -121,6 +122,8 @@ app.post('/api/update', (req, res) => {
         scriptName = 'pedidosya_scraper.js';
     } else if (url.includes('mcdonalds.com.pe')) {
         scriptName = 'mcdonalds_scraper.js';
+    } else if (url.includes('burgerking.pe')) {
+        scriptName = 'burgerking_scraper.js';
     } else if (url.includes('pizzahut.com.pe')) {
         // Pizza Hut scraper not ready yet
         return res.status(501).json({ error: 'Scraper para Pizza Hut en desarrollo (bloqueo estricto por Akamai detectado)' });

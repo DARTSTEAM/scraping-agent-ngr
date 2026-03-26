@@ -60,6 +60,7 @@ npm run dev
 |---|---|---|
 | Rappi | `rappi_scraper.js` | ✅ Operativo |
 | McDonald's Propio | `mcdonalds_scraper.js` | ✅ Operativo |
+| Burger King Propio | `burgerking_scraper.js` | ✅ Operativo |
 | PedidosYa | `pedidosya_scraper.js` | ⚠️ Bloqueado por Cloudflare |
 | Pizza Hut Propio | `pizzahut_explore.js` | ⚠️ Bloqueado por Akamai |
 
