@@ -1,0 +1,866 @@
+[
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Desayuno Ligero",
+    "description": "Llévate una bebida y un alimento a un precio especial",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Desayuno Para 2",
+    "description": "¡Inicia tu mañana con un desayuno para dos! elige dos de tus bebidas favoritas + dos sándwiches y comparte un momento especial. imagen referencial.",
+    "price": 33,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Duo Desayuno Summer 2026",
+    "description": "Llévate una bebida y un alimento a un precio especial.",
+    "price": 12.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Duo Tardes Summer 2026",
+    "description": "Llévate una bebida y un alimento a un precio especial.",
+    "price": 12.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Momentos Dulces",
+    "description": "¡Es momento de engreírnos! arma tu dúo, elige tu bebida favorita entre 1 vainilla latte, chocolate, mocha frappuccino o chocolate creme frappuccino o algarrobina frappuccino y combínalo con 1 galleta, keke o muffin. imágenes referenciales.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Shaken Espresso",
+    "name": "Choco Shaken Espresso Frío",
+    "description": "Bebida intensa de café espresso con salsa mocha y cubos de hielo con bebida de avena.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Shaken Espresso",
+    "name": "Brown Sugar Shaken Espresso Frio",
+    "description": "Brown sugar shaken espresso frio con bebida de avena",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Shaken Espresso",
+    "name": "Mocha Blanco Shaken Espresso Frío",
+    "description": "Bebida intensa de café espresso con salsa de mocha blanco y cubos de hielo con bebida de avena",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Mocha Blanco Frappuccino®",
+    "description": "Frappuccino de café mezclado con leche, mocha blanco y decorado con crema batida. sin endulzantes.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Vainilla Creme Frappuccino®",
+    "description": "Clásico frappuccino de vainilla mezclado con leche, jarabe de azucar y decorado con crema batida.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Chocolúcuma Creme Frappuccino®",
+    "description": "Nuestro frappuccino peruano. deliciosa lúcuma mezclada con mocha, jarabe de azucar y chispas sabor chocolate, decorado con crema batida y extra chispas sabor chocolate.",
+    "price": 19,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Café Frappuccino®",
+    "description": "Clásico frappuccino con base de café, mezclado con leche y hielo. sin endulzantes.",
+    "price": 14.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Black & White Mocha Frappuccino®",
+    "description": "Frappuccino de café con capas de mocha y mocha blanco combinadas leche y decorado con crema batida y chispas sabor chocolate. sin endulzantes.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Cookies & Cream Frappuccino®",
+    "description": "Clásico frappuccino de leche batido con galletas de cookies & creme, jarabe de azucar y decorado con crema batida.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Caramel Frappuccino®",
+    "description": "Frappuccino de café mezclado con leche y endulzado con caramelo, decorado con crema batida y topping de caramelo",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Ultimate Caramel Frappuccino®",
+    "description": "Versión renovada de nuestro clásico caramel frappuccino, con doble crema batida y extra de caramelo",
+    "price": 18,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Algarrobina Frappuccino®",
+    "description": "Nuestro frappuccino peruano. delicioso jarabe de algarrobina mezclada con café, leche y mocha; decorado con crema batida y topping de algarrobina. sin endulzantes.",
+    "price": 17.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Triple Mocha Frappuccino®",
+    "description": "Delicioso frappuccino de café mezclado con leche, jarabe de mocha y decorado con crema batida y topping de mocha. sin endulzantes.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Lúcuma Creme Frappuccino®",
+    "description": "Clásico frappuccino de lúcuma mezclado con leche, jarabe de azucar y decorado con crema batida.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Manjar Blanco Frappuccino®",
+    "description": "Frappuccino de café mezclado con leche y  manjar blanco; decorado con crema batida y topping de caramelo. sin endulzantes.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Chocolate Creme Frappuccino®",
+    "description": "Clásico frappuccino de chocolate mezclado con leche y jarabe de azucar, decorado con crema batida.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Algarrobina Creme Frappuccino®",
+    "description": "Nuestro frappuccino peruano. delicioso jarabe de algarrobina mezclada con leche y mocha; decorado con crema batida y topping de algarrobina. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Chocochip Frappuccino®",
+    "description": "Clásico frappuccino de leche batido con galletas de cookies & creme, jarabe de azucar y decorado con crema batida.",
+    "price": 17.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Caramel Macchiato Creme Frappuccino®",
+    "description": "Frappuccino de leche batida con hielo y vainilla, coronado con shot de café espresso y decorado con topping de caramelo. sin endulzantes.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Mocha Frappuccino®",
+    "description": "Frappuccino de café mezclado con leche y jarabe de mocha, decorado con crema batida. sin endulzantes.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Chocolate Cookies & Cream Frappuccino®",
+    "description": "Frappuccino sin café de mocha con trozos de chispas, crema batida de chocolate y topping de cookies",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Fresa Creme Frappuccino®",
+    "description": "Refrescante frappuccino con  salsa de fresa mezclada con leche y jarabe de azucar, decorado con crema batida.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Frappuccinos®",
+    "name": "Ultra Fresa Creme Frappuccino®",
+    "description": "Frappuccino de leche batida con hielo, jarabe de azucar y jarabe de fresa, decorado con crema batida.",
+    "price": 18,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Refreshers®",
+    "name": "Mango Dragon Fruit Refresher®",
+    "description": "Bebida elaborada con concentrado de café verde sabor a mango, mezclado con pitahaya deshidratada. sin endulzantes.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Refreshers®",
+    "name": "Strawberry Acaí­ Lemonade Refresher®",
+    "description": "Bebida elaborada con extracto de grano verde de café, mezclado con limonada, jugo de fresa y acaí. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Refreshers®",
+    "name": "Dragon Drink Refresher®",
+    "description": "Refrescante bebida hecha a base de pitahaya, mango, bebida vegetal de coco y cubos de hielo. imágenes referenciales",
+    "price": 17.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Refreshers®",
+    "name": "Cannonball Drink Refresher®",
+    "description": "Limonada fría y refrescante con strawberry açaí y mango dragon fruit, finalizada con inclusiones de fruta.",
+    "price": 18,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Refreshers®",
+    "name": "Strawberry Acaí Refresher®",
+    "description": "Bebida elaborada con extracto de grano verde de café, mezclado con jugo de fresa y acaí. sin endulzantes.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Refreshers®",
+    "name": "Mango Dragon Fruit Lemonade Refresher®",
+    "description": "Bebida elaborada con extracto de grano verde de café, mezclado con limonada y pitahaya. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Refreshers®",
+    "name": "Pink Drink Refresher®",
+    "description": "Bebida elaborada con concentrado de café verde sabor a fresa, mezclado con bebida vegetal de coco y acaí deshidratado. sin endulzante",
+    "price": 17.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Mocha Café",
+    "description": "Café espresso mezclado con mocha y leche vaporizada. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Algarrobina Latte",
+    "description": "Deliciosa algarrobina mezclada con café esspreso, leche vaporizada y mocha; decorado con topping de algarrobina. sin endulzantes.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Latte",
+    "description": "Café espresso de cuerpo completo mezclado con leche vaporizada",
+    "price": 14,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Vainilla Latte",
+    "description": "Delicioso café espresso mezclado con vainilla y leche vaporizada. sin endulzantes.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Manjar Blanco Latte",
+    "description": "Café espresso mezclado con manjar blanco y leche vaporizada, decorado con topping de caramelo",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Mocha Blanco Café",
+    "description": "Café espresso mezclado con mocha blanco y leche vaporizada. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Black Cold Brew",
+    "description": "Café intenso filtrado por más de 20 horas, servido con agua y cubos de hielo.",
+    "price": 12.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Skinny Vainilla Latte",
+    "description": "Café espresso mezclado con leche vaporizada y jarabe de vainilla sin azúcar. sin endulzantes.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Black & White Mocha",
+    "description": "Café espresso con capas de mocha y mocha blanco combinadas en leche vaporizada, decorado con crema batida y chispas sabor chocolate. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Chocolate Caliente",
+    "description": "Clásico chocolate caliente con leche vaporizada y salsa de chocolate. sin endulzantes.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Caramel Macchiato",
+    "description": "Leche vaporizada con vainilla, coronado con shot de café espresso y decorado con una rejilla de caramelo. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Flat White",
+    "description": "Intenso café ristretto mezclado con leche vaporizada y decorado con un punto de espuma",
+    "price": 16,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso",
+    "name": "Latte Macchiato",
+    "description": "Leche vaporizada coronada con shots de intenso café espresso",
+    "price": 16,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Latte Macchiato Helado",
+    "description": "Leche fría coronada con shots de intenso café espresso",
+    "price": 16,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Americano Helado",
+    "description": "Café espresso de cuerpo completo con agua y hielo",
+    "price": 12,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Vainilla Latte Helado",
+    "description": "Delicioso café espresso mezclado con vainilla, leche fría y cubos de hielo. sin endulzantes.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Mocha Blanco Café Helado",
+    "description": "Café espresso mezclado con mocha blanco, leche fría y cubos de hielo. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Chocolate Helado",
+    "description": "Clásico chocolate caliente con leche fría, cubos de hielo y salsa de chocolate. sin endulzantes.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Flat White Helado",
+    "description": "Intenso café ristretto mezclado con leche. sin endulzantes. imágenes referenciales.",
+    "price": 16,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Manjar Blanco Latte Helado",
+    "description": "Café espresso mezclado con manjar blanco, leche fría y cubos de hielo, decorado con topping de caramelo. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Mocha Macchiato Frío Con Bebida De Aven",
+    "description": "Bebida de café fría con bebida vegetal de avena, salsa de chocolate, cubos de hielo y terminada con una rejilla de chocolate. imágenes referenciales.",
+    "price": 18,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Algarrobina Latte Helado",
+    "description": "Deliciosa algarrobina mezclada con café espresso, leche fría, mocha y cubos de hielo; decorado con topping de algarrobina. sin endulzantes.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Mocha Café Helado",
+    "description": "Café espresso mezclado con mocha, leche dría y cubos de hielo. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Caramel Macchiato Helado",
+    "description": "Leche fría mezclada con cubos de hielo, vainilla, coronado con shot de café espresso y decorado con una rejilla de caramelo. sin endulzantes.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Espresso Frío",
+    "name": "Latte Helado",
+    "description": "Café espresso de cuerpo completo mezclado con leche fría y cubos de hielo",
+    "price": 14,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otras Bebidas",
+    "name": "Té Hibiscus Teavana Helado",
+    "description": "Té filtrante frío con escencia de flores, canela, manzana, azucar de papaya y mango, ojas de blackberry y pétalos de rosas. sin endulzantes.",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otras Bebidas",
+    "name": "Té Chai Latte Helado",
+    "description": "Té negro con canela, clavo y otras especias calientes se combina con leche fría, logrando un equilibrio perfecto. sin endulzantes",
+    "price": 14,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otras Bebidas",
+    "name": "Té Chai Latte",
+    "description": "Té negro con canela, clavo y otras especias calientes se combina con leche vaporizada y espuma, logrando un equilibrio perfecto. sin endulzantes.",
+    "price": 14.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otras Bebidas",
+    "name": "Té Mint Citrus Teavana Helado",
+    "description": "Té verde filtrante frío con limón, verbena y menta.sin endulzantes.",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otras Bebidas",
+    "name": "Té Chamomile Teavana Helado",
+    "description": "Té chamoline de la línea de starbucks teavana",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Recién Horneados",
+    "name": "Croissant De Mantequilla",
+    "description": "Croissant de mantequilla. porción individual.imágenes referenciales.",
+    "price": 8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Finas Hierbas",
+    "description": "Sándwich de pan finas hierbas con mantequilla, queso edam y mezcla de pollo con salsa pizza.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Triple",
+    "description": "Sándwich triple elaborado con pan marmoleado, relleno de queso, jamón de cerdo y pollo deshilachado con mayonesa. porción individual. imágenes referenciales.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Panino Vesubio",
+    "description": "Sándwich elaborado con pan panini, jamón de cerdo y queso gouda. porción individual. imágenes referenciales.",
+    "price": 14.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Eggmont",
+    "description": "Croissant de mantequilla relleno de huevos escalfados, mayonesa y trozos de tocino. porción individual.  imágenes referenciales.",
+    "price": 14.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Pavita, Queso & Espinaca",
+    "description": "Sándwich elaborado con pan de semillas, relleno con jamón de pavita, queso gouda y espinaca. porción individual. imágenes referenciales.",
+    "price": 16,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sandwich Croissant Jamón Inglés & Ques",
+    "description": "Croissant francés con jamón inglés y queso andino",
+    "price": 17.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Brioche Campesino",
+    "description": "Contundente sándwich con jamón de pierna de cerdo, queso crema y jalea de rocoto. porción individual. imágenes referenciales.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Chicken Ciabatta",
+    "description": "Sándwich elaborado con pan ciabatta, pollo deshilachado y mezclado con mayonesa y apio picado. porción individual. imágenes referenciales.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Pavita & Queso",
+    "description": "Sándwich elaborado con pan tipo avena, jamón de pavita y queso cheddar. porción individual. imágenes referenciales.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sandwich Croissant Jamón Del País & Qu",
+    "description": "Croissant francés con jamón del país y queso andino",
+    "price": 17.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Sándwiches",
+    "name": "Sándwich Chicken Panino",
+    "description": "Sándwich elaborado en pan panini integral, con pollo deshilachado, apio picado, jamón de cerdo y queso. porción individual. imágenes referenciales.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Torta De Chocolate",
+    "description": "Torta de chocolate, con fudge superior y trozos pequeños de chocolate. porción individual. imágenes referenciales.",
+    "price": 14.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Cuchareable De Torta De Chocolate",
+    "description": "Cuchareable de torta de chocolate.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Keke De Zanahoria",
+    "description": "Keke elaborado con harina, azucar, manteca, ralladura de zanahoria, trozos de pecanas y con frostry zona superior. porción individual. imágenes referenciales.",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Galleta De Avena & Cranberry",
+    "description": "Galleta elaborada con avena, harina de trigo, manteca, huevos, escencia de vainilla y cranberry. porción individual. imágenes referenciales.",
+    "price": 8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Cuchareable De Tres Leches",
+    "description": "Cuchareable de tres leches.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Cake Pop San Valentin 2026",
+    "description": "Cake pop pastel con manjar y cobertura sabor chocolate blanco y bitter y diseño de sv",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Cuchareable De Alfajor",
+    "description": "Cuchareable de alfajor.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Cheesecake De Arándanos",
+    "description": "Cheesecake con base de galleta y couliz de fresa y arándanos. porción individual. imágenes referenciales.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Muffin De Berries",
+    "description": "Muffin realizado con harina de trigo, yogurt natural, huevos, aceite vegetal, azucar, leche, margarina, coco fino, sal, escencia de blueberries y cremor tartaro. porción individual. imágenes referenciales.",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Galleta Rellena De Crema De Avellanas",
+    "description": "Galleta rellena de crema de avellanas.",
+    "price": 11.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Keke De Limón",
+    "description": "Keke elaborado con harina, azucar, manteca, escencia de limón y con frostry zona superior. porción individual. imágenes referenciales.",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otros Alimentos",
+    "name": "Crocantinis Pimienta & Parmesano",
+    "description": "Galletas delgadas y crocantes de queso parmesano y pimienta",
+    "price": 8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otros Alimentos",
+    "name": "Special Mix",
+    "description": "Bolsa con frutas secas mixtas: maní, pasas, almendras y pecanas",
+    "price": 8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otros Alimentos",
+    "name": "Egg Bites (2 Un)",
+    "description": "Pack de 2 batidos de huevos al vapor. podrás elegir dentro de nuestras opciones de eggbites una opción con trozos de tocino y espinada o eggbites de jamón de cerdo y queso. porción individual. imágenes referenciales.",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otros Alimentos",
+    "name": "Banana Bread",
+    "description": "Biscocho a base plátanos y frutos secos.",
+    "price": 11.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otros Alimentos",
+    "name": "Star Cookies",
+    "description": "Galleta en forma de estrella bañada con chocolate y hecha con ingredientes vegetales.",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otros Alimentos",
+    "name": "Almendras Bañadas En Chocolate",
+    "description": "Almendras bañadas en chocolate.",
+    "price": 8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Otros Alimentos",
+    "name": "Palito Integral Salvado & Linaza",
+    "description": "Galletas en forma de palitos con linaza y salvado",
+    "price": 8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "Guatemala Casi Cielo 250 Gr.",
+    "description": "Bolsa de café en grano de 250 gr. café de cuerpo suave y con equlibrio de sabores y olores florales, a limón y cacao.",
+    "price": 43,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "Ethiopia Single Origin De 250 Gr.",
+    "description": "Ethiopia single origin de 250 gr.",
+    "price": 41,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "México Single Origin De 250 Gr",
+    "description": "México single origin de 250 gr",
+    "price": 41,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "Sumatra 250 Gr.",
+    "description": "Bolsa de café en grano de 250 gr. café con aroma herbal. tostado dark, cuerpo completo y acidez baja.",
+    "price": 41,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "Espresso 250 Gr.",
+    "description": "Bolsa de café en grano de 250 gr.café con pronunciado sabor a naranja, lima y cítricos; con tostado medio, acidez alta y cuerpo medio.",
+    "price": 41,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "Dragon De Komodo Decaf 250 Gr.",
+    "description": "Bolsa de café en grano de 250 gr. café descafeinado terroso y con capas de notas a hierbas frescas, y especias persistentes. cuerpo completo, acidez baja y tostado dark.",
+    "price": 41,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "Kenya 250 Gr.",
+    "description": "Bolsa de café en grano de 250 gr. notas acarameladas, un perfecto complemento a la leche; con tostado alto, acidez baja y cuerpo completo.",
+    "price": 41,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "Verona 250 Gr.",
+    "description": "Bolsa de café en grano de 250 gr. café balanceado con notas a chocolate dark o cocoa; con tostado alto, acidez baja y cuerpo completo.",
+    "price": 41,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Café En Grano",
+    "name": "Colombia 250 Gr.",
+    "description": "Bolsa de café en grano de 250 gr. café balanceado con aromas floral. tostado medio, cuerpo medio y acidez alta.",
+    "price": 41,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Cajas De Té",
+    "name": "Caja Teavana Mint Citrus",
+    "description": "Caja de 12 filtrantes de té mint citrus. filtrante con té verde, limón, verbena y menta. cada filtrante contiene 3 gr.",
+    "price": 30,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Cajas De Té",
+    "name": "Caja Teavana Chai",
+    "description": "Caja de 12 filtrantes de té chai. filtrante con especies como té negro, jengibre, pimienta, canela que ofrecen un sabor ligeramente picante. cada filtrante contiene 3 gr.",
+    "price": 30,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Cajas De Té",
+    "name": "Caja Teavana Youthberry",
+    "description": "Caja de 12 filtrantes de té youthberry. cada filtrante contiene 3 gr.",
+    "price": 30,
+    "inStock": true
+  },
+  {
+    "restaurant": "Starbucks - Chacarilla-Santa Cruz",
+    "category": "Cajas De Té",
+    "name": "Caja Teavana Hibiscus",
+    "description": "Caja de 12 filtrantes de té hibiscus. filtrante con escencia de flores, canela, manzana, azucar de papaya y mango, ojas de blackberry y pétalos de rosas. cada filtrante contiene 3 gr.",
+    "price": 30,
+    "inStock": true
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Descuentos Pro",
+    "name": "Promo Full: 3 Piezas de Pollo",
+    "description": "3 Piezas de Pollo + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 43.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Full Dipeo",
+    "name": "Big Box Dipeo",
+    "description": "3 Piezas de Pollo, 4 Nuggets, 1 Complemento Regular, 1 Ensalada o Puré Regular, 1 Salsa Personal y 1 Bebida Personal",
+    "price": 65.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Full Dipeo",
+    "name": "Chick'n Share Dipeo",
+    "description": "8 Nuggets, 8 Hot Wings, 1 Salsa Familiar y 2 Complementos Regulares",
+    "price": 68.3,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Full Dipeo",
+    "name": "Chick'n Share Dipeo con Bebidas",
+    "description": "8 Nuggets, 8 Hot Wings, 2 Complementos Regulares, 1 Salsa Familiar y 1 Bebida 1L",
+    "price": 77.3,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Full Dipeo",
+    "name": "Mega Dipeo",
+    "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Complemento Familiar y 1 Salsa Familiar",
+    "price": 95.1,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Full Dipeo",
+    "name": "Mega Dipeo con Gaseosas",
+    "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Complemento Familiar, 1 Bebida 1L y 1 Salsa Familiar",
+    "price": 104.1,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Full Dipeo",
+    "name": "Rappi Chick'N Share Dipeo",
+    "description": "4 piezas de pollo + 2 papas regulares + 1 gaseosa de 1 litro + 1 salsa familiar",
+    "price": 67.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Full Dipeo",
+    "name": "Rappi Mega Dipeo: 8 piezas",
+    "description": "8 piezas de pollo + 6 nuggets + 1 papa familiar + 1 gaseosa de 1 litro + 1 salsa familiar",
+    "price": 124.1,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Full Dipeo",
+    "name": "Rappi Combo Dipeo: 9 Nuggets",
+    "description": "9 nuggets + 1 papa regular + 1 salsa familiar + 1 bebida regular",
+    "price": 46.15,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Salsas",
+    "name": "BBQ Familiar",
+    "description": "Salsa Barbecue. Dulce con un toque ahumado (99 Gr aprox)",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Salsas",
+    "name": "Aji de la Casa Familiar",
+    "description": "Salsa picante hecha con ají amarillo, cebolla y otras especias (99 Gr aprox)",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Salsas",
+    "name": "Honey Mustard Familiar",
+    "description": "Salsa dulce a base de mostaza y mayonesa (99 Gr aprox)",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Salsas",
+    "name": "Tártara Peruana Familiar",
+    "description": "Salsa a base de mayonesa mezclada cebolla china y BBQ, con un toque ahumado y cremoso (99 Gr aprox)",
+    "price": 3.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Salsas",
+    "name": "Salsa Secreta Familiar",
+    "description": "1 Salsa Familiar de Salsa Secreta",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Promos Krunch",
+    "name": "Dúo Twister XL + Papas",
+    "description": "2 Twisters XL Tradicionales + 2 Complementos Regulares",
+    "price": 61.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Promos Krunch",
+    "name": "Mega Promo: 6 Piezas",
+    "description": "6 Piezas de Pollo + 4 Nuggets + 1 Complemento Familiar",
+    "price": 84.1,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Promos Krunch",
+    "name": "Mega Promo: 8 Piezas",
+    "description": "8 Piezas de Pollo + 1 Complemento Familiar + 1 Ensalada o Puré Familiar",
+    "price": 102.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Promos Krunch",
+    "name": "Mega Promo: 10 Piezas",
+    "description": "10 Piezas de Pollo + 1 Complemento Familiar + 1 Salsa Familiar + 1 Bebida 1L",
+    "price": 125.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Promos Krunch",
+    "name": "Promo Wow: 2 Piezas",
+    "description": "2 Piezas de Pollo + 3 Nuggets + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 42.95,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Mega Bienvendida Rappi: 6 Piezas",
+    "description": "6 Piezas de Pollo + 1 Complemento Familiar",
+    "price": 71.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Promo Personal: 2 Piezas + Papas",
+    "description": "2 Piezas de Pollo + 1 Complemento Regular",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Twister XL",
+    "name": "Combo Twister XL Tradicional",
+    "description": "1 Twister XL Tradicional + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 37.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Twister XL",
+    "name": "Combo Twister XL Americano",
+    "description": "1 Twister XL Americano + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 38.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Twister XL",
+    "name": "Combo Twister XL Peruano",
+    "description": "1 Twister XL Peruano + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 36.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Twister XL",
+    "name": "Twister XL Americano",
+    "description": "Tortilla de maíz + 2 tenders 100% pechuga de Pollo + lechuga + tocino + queso americano + salsa meltz",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Twister XL",
+    "name": "Twister XL Tradicional",
+    "description": "Tortilla de maíz + 2 tenders 100% pechuga de Pollo + lechuga + tomate + queso americano + mayonesa",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Big Box",
+    "name": "Big Box Twister XL Americano",
+    "description": "1 Twister XL Americano + 3 Nuggets o Hot Wings + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
+    "price": 55.05,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Big Box",
+    "name": "Big Box Titan",
+    "description": "2 Piezas de Pollo + 4 Nuggets o Hot Wings + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
+    "price": 53.3,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Big Box",
+    "name": "Big Box Tenders",
+    "description": "4 Tenders (100% Pechuga de Pollo) + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Salsa Personal + 1 Bebida Personal",
+    "price": 60.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Big Box",
+    "name": "Big Box Classic",
+    "description": "3 Piezas de Pollo + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
+    "price": 50.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Combos",
+    "name": "Combo 8 Nuggets",
+    "description": "8 Nuggets + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 38.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Combos",
+    "name": "Combo Clásico: 2 Piezas",
+    "description": "2 Piezas de Pollo + 1 Papa Regular + 1 Personal Regular",
+    "price": 33.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Combos",
+    "name": "Combo Tenders",
+    "description": "3 Tenders + 1 Complemento Regular + 1 Salsa Personal + 1 Bebida Personal",
+    "price": 44.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Sándwiches",
+    "name": "Kentucky Chicken Sandwich Original",
+    "description": "Sandwich de pan brioche con mantequilla, pechuga crujiente con triple empanizado, mayonesa premium y pickles",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Sándwiches",
+    "name": "Kentucky Chicken Sandwich Deluxe",
+    "description": "Sándwich de pan brioche, pechuga crujiente con triple empanizado, queso americano, salsa meltz, lechuga y tocino",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Para 2",
+    "name": "Combo Chick'N Share Mix",
+    "description": "3 Piezas de Pollo + 6 Nuggets o Hot Wings + 2 Complementos Regulares + 1 Bebida de 1 L",
+    "price": 71.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Para 2",
+    "name": "Combo Chick'N Share 18 Nuggets",
+    "description": "18 Nuggets + 2 complementos regulares + 1 Bebida 1L",
+    "price": 77.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Para 2",
+    "name": "Chick'N Share 3 Piezas + Snacks",
+    "description": "3 Piezas de Pollo + 6 Nuggets o Hot Wings + 2 complementos regulares",
+    "price": 62.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Para 2",
+    "name": "Popcorn para 2",
+    "description": "2 PopCorn Chicken + 2 Complementos Regulares",
+    "price": 47.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Para 2",
+    "name": "Chick'N Share Tenders",
+    "description": "8 Tenders (100% Pechuga de Pollo) + 2 Complementos Regulares + 2 Salsas Personales",
+    "price": 93.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Megas",
+    "name": "Mega Recargado: 10 Piezas",
+    "description": "10 Piezas de Pollo + 6 Nuggets o Hot Wings o 1 PopCorn Chicken + 1 Complemento Familiar + 1 Bebida 1.5L",
+    "price": 142.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Megas",
+    "name": "Mega Familiar: 8 Piezas",
+    "description": "8 Piezas de Pollo + 1 Complemento Familiar + 1 Ensalada o Puré Familiar + 1 Bebida 1.5L",
+    "price": 114.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Megas",
+    "name": "Mega Original: 6 Piezas",
+    "description": "6 Piezas de Pollo + 1 Complemento Familiar + 1 Ensalada o Puré Familiar",
+    "price": 82.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Megas",
+    "name": "Mega Poderoso: 12 Piezas",
+    "description": "12 Piezas de Pollo + 2 Complementos Familiares + 1 Bebida 1.5L",
+    "price": 155.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "PopCorn Chicken",
+    "description": "Jugosos y crocantes trozitos de filete de pierna, empanizados en nuestra Receta Crispy",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Papa Super Familiar",
+    "description": "Tradicionales papas fritas (450 gr aprox)",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Piezas de Pollo (3 un)",
+    "description": "3 Pieza de Pollo en Receta Original o Crispy",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Paquete 3 Tenders",
+    "description": "3 crujientes tenders elaborados con 100% pechuga de Pollo, empanizados en nuestra Receta Crispy",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Paquete 6 Tenders",
+    "description": "6 crujientes tenders elaborados con 100% pechuga de Pollo + empanizados en nuestra Receta Crispy",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Paquete 6 Hot Wings",
+    "description": "6 deliciosas alitas de Pollo picante",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Paquete 6 Nuggets",
+    "description": "6 Deliciosos Nuggets de Pollo 100% de Pechuga de Pollo empanizados en nuestra Receta Original",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Puré Regular",
+    "description": "Nuestro tradicional puré de papas con salsa gravy en presentación personal",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Puré Familiar",
+    "description": "Nuestro tradicional puré de papas con salsa gravy en presentación Familiar",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Ensalada Regular",
+    "description": "Nuestra tradicional ensalada de col con zanahoria y aderezo agridulce (4 Oz. aprox.)",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Ensalada Familiar",
+    "description": "Nuestra tradicional ensalada de col con zanahoria y aderezo agridulce (16 Oz. aprox)",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Papa Familiar",
+    "description": "Tradicionales papas fritas (240 gr aprox)",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Complementos",
+    "name": "Papa Personal",
+    "description": "Tradicionales papas fritas (116 gr aprox)",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Postres",
+    "name": "Tres Leches de Vainilla",
+    "description": "Tres Leches de Vainilla Personal",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Postres",
+    "name": "Torta Trufada",
+    "description": "Torta sabor chocolate con crema de avellanas",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Postres",
+    "name": "Galleta de Avena",
+    "description": "Galleta de Avena",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Postres",
+    "name": "Pie de Manzana",
+    "description": "Delicioso y crocante pie relleno de trozos de manzana caramelizada",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero Azúcar 1L",
+    "description": "Coca-Cola Zero Azúcar 1L",
+    "price": 9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero Azúcar 1L",
+    "description": "Inca Kola Sin Azúcar 1L",
+    "price": 9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero Azúcar 1.5L",
+    "description": "Coca-Cola Zero Azúcar 1.5L",
+    "price": 12,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero Azúcar 1.5L",
+    "description": "Inca Kola Sin Azúcar 1.5L",
+    "price": 12,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Fanta 2.25L",
+    "description": "Fanta de 2.25L",
+    "price": 14,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Sprite 2.25L",
+    "description": "Sprite 2.25L",
+    "price": 14,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Agua Saborizada de Manzana",
+    "description": "Agua Saborizada de Manzana",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Agua Saborizada de Maracuyá",
+    "description": "Agua Saborizada de Maracuyá",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Sprite Original 500 ml",
+    "description": "Sprite Personal",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Fanta Naranja 500 ml",
+    "description": "Fanta Personal",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Agua San Luis Sin Gas 750 ml",
+    "description": "Agua San Luis Sin Gas 750 ml",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero Azúcar 500 ml",
+    "description": "Coca-Cola Zero Azúcar Personal",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Agua San Luis Con Gas 750 ml",
+    "description": "Agua San Luis Con Gas 625 ml",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "KFC - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero Azúcar 500 ml",
+    "description": "Inca Kola Zero Azúcar Personal",
+    "price": 6.9,
+    "inStock": true
+  }
+]

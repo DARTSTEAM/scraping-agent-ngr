@@ -32,12 +32,14 @@ pnpm-debug.log*
 !.vscode/extensions.json
 .idea/
 
-# Scraped data dumps (root-level only, NOT inside dashboard/)
+# Root-level scraped dumps (raw HTML, images, temp text files)
 /mcd_dump.html
 /pizzahut_dump.html
 /pizzahut_initial.png
 /mcd_api_dump.txt
 /mcd_text.txt
 /nuxt_data.json
+
+# Root-level scraped product files (generated at runtime, stored in data/ for git)
 /products_*.csv
 /products_*.json

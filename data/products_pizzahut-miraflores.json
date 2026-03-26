@@ -1,0 +1,30 @@
+[
+    {
+        "restaurant": "Pizza Hut",
+        "category": "Pizzas",
+        "name": "Pizza Mediana Hut Cheese",
+        "description": "Pizza con borde relleno de queso.",
+        "price": 35.90
+    },
+    {
+        "restaurant": "Pizza Hut",
+        "category": "Pizzas",
+        "name": "Pizza Familiar Hut Cheese",
+        "description": "Pizza tamaño familiar con borde relleno de queso.",
+        "price": 56.90
+    },
+    {
+        "restaurant": "Pizza Hut",
+        "category": "Combos",
+        "name": "Combo Viral",
+        "description": "Combo promocional.",
+        "price": 9.90
+    },
+    {
+        "restaurant": "Pizza Hut",
+        "category": "Combos",
+        "name": "Hut Lunch",
+        "description": "Combo para almuerzo.",
+        "price": 12.90
+    }
+]

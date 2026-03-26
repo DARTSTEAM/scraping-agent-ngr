@@ -1,0 +1,826 @@
+[
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Sándwich Queso, Huevo y Tocino",
+    "description": "Sándwich con queso cheddar, huevo frito y tocino",
+    "price": 10,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McHuevo Deluxe",
+    "description": "Sándwich con un huevo frito, una carne de res y mayonesa en pan sin ajonjolí",
+    "price": 12,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Tostado, Tocino y queso",
+    "description": "Sándwich tostado con tocino y queso cheddar amarillo. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 8,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Tostado Tocino y Queso con café",
+    "description": "Sándwich tostado tocino y queso y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Café con Doble Huevo",
+    "description": "Café americano de 14 oz. más un sándwich con dos huevos fritos y doble queso cheddar amarillo en pan sin ajonjolí. Producto válido hasta las 11:45 a.m. o sujeto a stock. Imagen referencial",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McHuevo con café",
+    "description": "Sándwich McHuevo y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Café con Hamburguesa con queso",
+    "description": "Café americano de 14 oz. más un sándwich de hamburguesa de res, un queso cheddar amarillo, pepinillos, mostaza, ketchup, cebolla fresca en pan sin ajonjolí. Imagen referencial",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McQueso con café",
+    "description": "Un sándwich McQueso y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Sándwich Queso, Huevo y Tocino con café",
+    "description": "Sándwich Queso, Huevo y Tocino y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McHuevo Deluxe con café",
+    "description": "Sándwich con un huevo frito, una carne de res y mayonesa en pan sin ajonjolí. y un café de 14 oz",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Sándwich Doble Huevo",
+    "description": "Sándwich con dos huevos fritos y doble queso cheddar amarillo en pan sin ajonjolí. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McHuevo",
+    "description": "Sándwich con un huevo frito, una carne de res y mayonesa en pan sin ajonjolí. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "price": 9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Hamburguesa con Queso",
+    "description": "Sándwich de hamburguesa de res, un queso cheddar amarillo, pepinillos, mostaza, ketchup, cebolla fresca en pan sin ajonjolí. Imagen referencial",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McQueso",
+    "description": "Sándwich tostado con un queso cheddar amarillo. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Cafe Pasado",
+    "description": "Café americano de 14 oz. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Café con Leche",
+    "description": "Café con Leche. Sujeto a stock. Imágenes Referenciales",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo grande Grand Apaltada 2 carnes",
+    "description": "Hamburguesa \"Grand Apaltada 2 carnes\", 1 papa grande, 1 gaseosa grande de 21 oz a elección. La bebida incluye hielo. El sándwich contiene: 2 carnes de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo grande Grand Apaltada 1 carne",
+    "description": "Hamburguesa \"Grand Apaltada 1 carne\", 1 papa grande, 1 gaseosa grande de 21 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 carne de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo grande Grand Apaltada pollo",
+    "description": "Hamburguesa \"Grand Apaltada pollo\", 1 papa grande, 1 gaseosa grande de 21 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 hamburguesa de pollo, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande Big Mac",
+    "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande de 21 oz, a elección. Imagen referencial",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande Grand Tasty Doble",
+    "description": "01 hamburguesa Grand Tasty Doble, 1 papa grande y 1 gaseosa grande de 21 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 2 carnes de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo Grande Grand Tasty 1 carne",
+    "description": "01 hamburguesa Grand Tasty de 1 carne, 1 papa grande y 1 gaseosa grande de 21 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 1 carne de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande Grand Tasty Triple",
+    "description": "01 hamburguesa Grand Tasty Triple, 1 papa grande y 1 gaseosa grande de 21 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 3 carnes de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo Grande Bacon Cheddar McMelt doble",
+    "description": "Hamburguesa Grand Bacon Cheddar McMelt de dos carnes, 1 gaseosa grande 21 oz sabor a elección y 1 papas grandes. Imagen referencial",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande Doble Cuarto de Libra Bacon",
+    "description": "Hamburguesa doble carne de res, 2 tocinos en tiras, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande Doble Cuarto de Libra",
+    "description": "Hamburguesa doble carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande Cuarto de Libra",
+    "description": "Hamburguesa de carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo Grande Bacon Cheddar McMelt 1 carne",
+    "description": "Hamburguesa Grand Bacon Cheddar McMelt de una carnes, 1 gaseosa grande 21 oz sabor a elección y 1 papas grandes. Imagen referencial",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo Regular para 2 con Salsas",
+    "description": "1 McBacon, 1 Doble Hamburguesa, 2 papas regulares, 2 gaseosas regulares y 2 salsas a elección de 85 grs. Imágenes referenciales",
+    "price": 34.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo Grande McNifica",
+    "description": "Hamburguesa de res, un queso cheddar, mayonesa, ketchup, mostaza, tomate, lechuga y cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo grande Apaltada burger Carne",
+    "description": "Hamburguesa \" Apaltada burger Carne\", 1 papa grande, 1 gaseosa grande de 21 oz a elección. La bebida incluye hielo. El sándwich contiene: 2 carnes, lechuga, tomate, papas al hilo y salsa sabor a palta. Imagen referencial",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo grande Apaltada burger Pollo",
+    "description": "Hamburguesa \" Apaltada burger Pollo\", 1 papa grande, 1 gaseosa grande de 21 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 hamburguesa de pollo, lechuga, tomate, papas al hilo y salsa sabor a palta. Imagen referencial",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande McBacon",
+    "description": "Hamburguesa de doble carne de res, 2 tocinos en tiras, ketchup, mostaza, cebolla, queso cheddar en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande Doble Hamburguesa",
+    "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo Grande Bacon Cheddar McMelt triple",
+    "description": "Hamburguesa Grand Bacon Cheddar McMelt de tres carnes, 1 gaseosa grande 21 oz sabor a elección y 1 papas grandes. Imagen referencial",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande 10 McNuggets",
+    "description": "10 nuggets de pechuga de pollo con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Incluye 2 salsas barbacue de 28.3 Grs cada una. Imagen referencial",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande 6 McNuggets",
+    "description": "6 nuggets de pechuga de pollo con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Incluye 1 salsa barbacue de 28.3 Grs cada una. Imagen referencial",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande 3 piezas de pollo crispy",
+    "description": "3 piezas de pollo crispy (enharinado y frito) con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo grande Sorprendente",
+    "description": "3 piezas de pollo crujiente, 1 papa grande, 1 gaseosa grande de 21oz y 4 Mcnuggets. Válido todo el mes. Piezas de pollo aleatorias.Ver composición de productos en la sección \"Sándwiches y piezas de pollo\". Imagen referencial",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo grande Imponente",
+    "description": "2 piezas de pollo crispy, 4 McNuggets, 1 papa grande, 1 gaseosa grande",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande Doble McPollo Bacon",
+    "description": "Doble hamburguesa de pollo apanado, 2 tocinos en tiras, doble queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande McPollo Bacon",
+    "description": "Hamburguesa de pollo apanado, 2 tocinos en tiras, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo grande McPollo con queso",
+    "description": "Hamburguesa de pollo apanado, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo Grande McPollo Deluxe",
+    "description": "Hamburguesa de pollo apanado, mayonesa, tomate y lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano Grand Tasty Doble",
+    "description": "01 hamburguesa Grand Tasty Doble, 1 papa mediana y 1 gaseosa mediana de 16 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 2 carnes de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo Mediano Grand Tasty 1 carne",
+    "description": "01 hamburguesa Grand Tasty de 1 carne, 1 papa mediana y 1 gaseosa mediana de 16 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 1 carne de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano Grand Tasty Triple",
+    "description": "01 hamburguesa Grand Tasty Triple, 1 papa mediana y 1 gaseosa mediana de 16 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 3 carnes de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo mediano Grand Apaltada 2 carnes",
+    "description": "Hamburguesa \"Grand Apaltada 2 carnes\", 1 papa mediana, 1 gaseosa mediana de 16 oz a elección. La bebida incluye hielo. El sándwich contiene: 2 carnes de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo mediano Grand Apaltada 1 carne",
+    "description": "Hamburguesa \"Grand Apaltada 1 carne\", 1 papa mediana, 1 gaseosa mediana de 16 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 carne de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo mediano Grand Apaltada burger pollo",
+    "description": "Hamburguesa \"Grand Apaltada pollo\", 1 papa mediana, 1 gaseosa mediana de 16 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 hamburguesa de pollo, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano Big Mac",
+    "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana de 16 oz, a elección. Imagen referencial",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano Doble Cuarto de Libra",
+    "description": "Hamburguesa doble carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano Doble Cuarto Libra Bacon",
+    "description": "Hamburguesa doble carne de res, 2 tocinos en tiras, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano Cuarto de Libra",
+    "description": "Hamburguesa de carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo mediano Bacon Cheddar McMelt 1 carne",
+    "description": "Hamburguesa Grand Bacon Cheddar McMelt de una carnes, 1 gaseosa mediana 16 oz sabor a elección y 1 papas medianas. Imagen referencial",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo Mediano Bacon Cheddar McMelt doble",
+    "description": "Hamburguesa Grand Bacon Cheddar McMelt de dos carnes, 1 gaseosa mediana 16 oz sabor a elección y 1 papas medianas. Imagen referencial",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo Mediano McNifica",
+    "description": "Hamburguesa de res, un queso cheddar, mayonesa, ketchup, mostaza, tomate, lechuga y cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo mediano Apaltada burger Carne",
+    "description": "Hamburguesa \" Apaltada burger Carne\", 1 papa mediana, 1 gaseosa mediana de 16 oz a elección. La bebida incluye hielo. El sándwich contiene: 2 carnes, lechuga, tomate, papas al hilo y salsa sabor a palta. Imagen referencial",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo mediano Apaltada burger Pollo",
+    "description": "Hamburguesa \" Apaltada burger Pollo\", 1 papa mediana, 1 gaseosa mediana de 16 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 hamburguesa de pollo, lechuga, tomate, papas al hilo y salsa sabor a palta. Imagen referencial",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano McBacon",
+    "description": "Hamburguesa de doble carne de res, 2 tocinos en tiras, ketchup, mostaza, cebolla, queso cheddar en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano Doble Hamburguesa",
+    "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo Mediano Bacon Cheddar McMelt triple",
+    "description": "Hamburguesa Grand Bacon Cheddar McMelt de tres carnes, 1 gaseosa mediana 16 oz sabor a elección y 1 papas medianas. Imagen referencial",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano 10 McNuggets",
+    "description": "10 nuggets de pechuga de pollo con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Incluye 2 salsas barbacue de 28.3 Grs cada una. Imagen referencial",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano 6 McNuggets",
+    "description": "6 nuggets de pechuga de pollo con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Incluye 1 salsa barbacue de 28.3 Grs cada una. Imagen referencial",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano 3 piezas de pollo crispy",
+    "description": "3 piezas de pollo crispy (enharinado y frito) con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo Mediano Sorprendente",
+    "description": "3 piezas de pollo crispy, 4 McNuggets, 1 papa grande, 1 gaseosa grande. Imágenes referenciales",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo Mediano Imponente",
+    "description": "2 piezas de pollo crispy, 4 McNuggets, 1 papa mediana y 1 gaseosa mediana. Imágenes referenciales",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano Doble McPollo Bacon",
+    "description": "Doble hamburguesa de pollo apanado, 2 tocinos en tiras, doble queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano McPollo Bacon",
+    "description": "Hamburguesa de pollo apanado, 2 tocinos en tiras, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo mediano McPollo con queso",
+    "description": "Hamburguesa de pollo apanado, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo Mediano de McPollo",
+    "description": "Hamburguesa de pollo apanado, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "Combo Mediano McPollo Deluxe",
+    "description": "Hamburguesa de pollo apanado, mayonesa, tomate y lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo regular Apaltada burger Carne",
+    "description": "Hamburguesa \" Apaltada burger Carne\", 1 papa regular, 1 gaseosa regular de 12 oz a elección. La bebida incluye hielo. El sándwich contiene: 2 carnes 10:1, lechuga, tomate, papas al hilo y salsa sabor a palta. Imagen referencial",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "McCombos",
+    "name": "McCombo regular Apaltada burger Pollo",
+    "description": "Hamburguesa \" Apaltada burger Pollo\", 1 papa regular, 1 gaseosa regular de 12 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 hamburguesa de pollo, lechuga, tomate, papas al hilo y salsa sabor a palta. Imagen referencial",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Grimace Shake",
+    "description": "Helado de vainilla y jarabe de frutos rojos. Tamaño personal. Imagen referencial",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McShake Oreo",
+    "description": "Helado de vainilla, trocitos de Oreo y topping de chocolate. Tamaño personal. Imagen referencial",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McShake Fresa",
+    "description": "Helado de vainilla y topping líquido de fresa. Tamaño personal. Imagen referencial",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McShake Manjar",
+    "description": "Helado de vainilla y topping líquido de manjar. Tamaño personal. Imagen referencial",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McShake Chocolate",
+    "description": "Helado de vainilla y topping líquido de chocolate. Tamaño personal. Imagen referencial",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McFlurry Milo ®",
+    "description": "Helado de vainilla, polvo de milo, barquillo picado de sabor a chocolate y con cobertura líquida de chocolate. Tamaño personal. Imagen referencial",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McFlurry Biscolata chocolate",
+    "description": "Helado de vainilla, galletas Biscolata rellenas con chocolate y crema de avellanas, con cobertura líquida de chocolate. Tamaño personal. Imagen referencial",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McFlurry Biscolata manjar",
+    "description": "Helado de vainilla, galletas Biscolata rellenas con chocolate y crema de avellanas, con cobertura líquida de manjar. Tamaño personal. Imagen referencial",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McFlurry Oreo",
+    "description": "Helado de vainilla, trozos de galleta oreo y cobertura líquida de chocolate. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McFlurry mini M&M chocolate",
+    "description": "Helado de vainilla, chocolate mini m&m y cobertura líquida de chocolate en delivery. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McFlurry mini M&M manjar",
+    "description": "Helado de vainilla, chocolate mini m&m y cobertura líquida de manjar. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McFlurry Sublime",
+    "description": "Helado de vainilla, trozos de chocolate sublime y cobertura líquida de chocolate. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Sundae Doble Chocolate",
+    "description": "Helado de vainilla con doble cobertura líquida de chocolate. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 6.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Sundae Doble Fresa",
+    "description": "Helado de vainilla con doble cobertura líquida de fresa. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 6.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Sundae Doble Manjar",
+    "description": "Helado de vainilla con doble cobertura líquida de manjar. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 6.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Sundae Fresa",
+    "description": "Helado de vainilla con cobertura líquida de fresa. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Sundae Chocolate",
+    "description": "Helado de vainilla con cobertura líquida de chocolate. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Sundae Manjar",
+    "description": "Helado de vainilla con cobertura líquida de manjar. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McColoso Selva negra",
+    "description": "Helado de vainilla en cono con topping de chocolate y fresa",
+    "price": 4.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "SuperCono Twist",
+    "description": "Incluye helado sabor vainilla, helado sabor chocolate, un barquillo de chocolate y 1 stick de vainilla y chocolate. Imagenes referenciales",
+    "price": 4,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Super Cono Combinado",
+    "description": "Helado de vainilla y chocolate en barquillo. Imagen referencial",
+    "price": 3.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Super Cono de Vainilla",
+    "description": "Helado de vainilla en barquillo. Imagen referencial",
+    "price": 3.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Super Cono de Chocolate",
+    "description": "Helado de chocolate en barquillo. Imagen referencial",
+    "price": 3.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Cono Twist",
+    "description": "Incluye helado sabor vainilla, helado sabor chocolate, un barquillo de chocolate y 1 stick de vainilla y chocolate. Imagenes referenciales",
+    "price": 3.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Cono Combinado",
+    "description": "Helado de vainilla y chocolate en barquillo. Imagen referencial",
+    "price": 2.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Cono de Vainilla",
+    "description": "Helado de vainilla en barquillo. Imagen referencial",
+    "price": 2.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Cono de Chocolate",
+    "description": "Helado de chocolate en barquillo. Imagen referencial",
+    "price": 2.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Pie + café",
+    "description": "Un café americano de 14 oz con un pie de manzana. Ver detalle en postres. Válido durante el mes, sujeto a stock. Stock: 2 mil. Imágenes referenciales",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Pie de manzana",
+    "description": "Delicioso pastel de manzana caliente con un toque de canela envuelto en hojaldre. Válido durante el mes, sujeto a stock. Stock: 2mil. Imágenes referenciales",
+    "price": 5.9,
+    "inStock": true
+  }
+]

@@ -12,7 +12,9 @@ import {
 import axios from 'axios';
 import logoNgr from './assets/Logo-ngr.png';
 
-const API_BASE = 'http://localhost:3001/api';
+// In production the frontend is served by the same Express server,
+// so relative paths work. In dev, Vite proxies /api to localhost:3001.
+const API_BASE = '/api';
 
 const COMPETITORS = [
   { name: "McDonald's (San Antonio)", url: "https://www.rappi.com.pe/restaurantes/742-mcdonalds", id: '742', platform: 'Rappi' },
