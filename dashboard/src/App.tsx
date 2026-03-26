@@ -23,7 +23,8 @@ const COMPETITORS = [
   { name: "McDonald's (Ovalo Gutierrez)", url: "https://www.pedidosya.com.pe/restaurantes/lima/mcdonalds-ovalo-gutierrez-e6b6652e-45c6-44f7-8976-e376edf475a8-menu", id: 'mcd-ovalo-gutierrez', platform: 'PedidosYa' },
   { name: "McDonald's (Izaguirre)", url: "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos", id: 'mcd-izaguirre-iza', platform: 'McDonalds Propio' },
   { name: "Pizza Hut (Miraflores)", url: "https://www.pizzahut.com.pe/order", id: 'pizzahut-miraflores', platform: 'Pizza Hut Propio' },
-  { name: "Burger King", url: "https://www.burgerking.pe/carta/ver-todo", id: 'burgerking-pe', platform: 'Burger King Propio' }
+  { name: "Burger King", url: "https://www.burgerking.pe/carta/ver-todo", id: 'burgerking-pe', platform: 'Burger King Propio' },
+  { name: "KFC", url: "https://www.kfc.com.pe/carta", id: 'kfc-pe', platform: 'KFC Propio' }
 ];
 
 interface Product {
@@ -69,7 +70,7 @@ export default function App() {
   const filteredCompetitors = COMPETITORS.filter(c =>
     activeTab === 'competitors'
       ? (c.platform === 'Rappi' || c.platform === 'PedidosYa')
-      : (c.platform === 'McDonalds Propio' || c.platform === 'Pizza Hut Propio' || c.platform === 'Burger King Propio')
+      : (c.platform === 'McDonalds Propio' || c.platform === 'Pizza Hut Propio' || c.platform === 'Burger King Propio' || c.platform === 'KFC Propio')
   );
 
   useEffect(() => {
@@ -203,6 +204,11 @@ export default function App() {
                         </optgroup>
                         <optgroup label="BURGER KING PROPIO">
                           {COMPETITORS.filter(c => c.platform === 'Burger King Propio').map(comp => (
+                            <option key={comp.id} value={comp.id}>{comp.name}</option>
+                          ))}
+                        </optgroup>
+                        <optgroup label="KFC PROPIO">
+                          {COMPETITORS.filter(c => c.platform === 'KFC Propio').map(comp => (
                             <option key={comp.id} value={comp.id}>{comp.name}</option>
                           ))}
                         </optgroup>

@@ -38,6 +38,8 @@ COPY rappi_scraper.js ./
 COPY mcdonalds_scraper.js ./
 COPY pedidosya_scraper.js ./
 COPY pizzahut_explore.js ./
+COPY burgerking_scraper.js ./
+COPY kfc_scraper.js ./
 COPY check_mcd.js ./
 COPY dump_mcd.js ./
 COPY extract_nuxt.js ./
