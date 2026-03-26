@@ -7,17 +7,13 @@ const path = require('path');
 /**
  * KFC Peru scraper — kfc.com.pe
  *
- * NOTE: kfc.com.pe is geo-blocked outside Peru.
- * This scraper is designed to run from Cloud Run (us-central1, Iowa USA)
- * which is NOT geo-blocked.
- *
- * The KFC site requires:
- * 1. Selecting a store (modal on first visit)
- * 2. Navigating category by category
- * We handle this by intercepting the internal API calls that power the menu.
+ * ⚠️  kfc.com.pe está geo-bloqueado por CloudFront para IPs fuera de Perú.
+ * Corré este scraper localmente con un VPN configurado en Perú (e.g. Hola VPN → Perú).
+ * Una vez generado products_kfc-pe.json, copialo a data/ y hacé commit+push+deploy.
  */
-async function scrapeKFC(url = 'https://www.kfc.com.pe/carta/ver-todo') {
+async function scrapeKFC(url = 'https://www.kfc.com.pe/carta') {
     console.log(`Iniciando scraping de KFC: ${url}`);
+    console.log(`⚠️  Asegurate de que tu VPN esté activo y configurado en Perú.`);
 
     const browser = await chromium.launch({
         headless: true,
@@ -78,7 +74,7 @@ async function scrapeKFC(url = 'https://www.kfc.com.pe/carta/ver-todo') {
         // Check for geo-block
         const bodyText = await page.textContent('body').catch(() => '');
         if (bodyText.includes('403') || bodyText.includes('Access Denied') || bodyText.includes('Forbidden')) {
-            throw new Error('⛔ Geo-block detectado. Este scraper debe correr desde Cloud Run (IP de EEUU), no desde Argentina.');
+            throw new Error('⛔ Geo-block detectado. Activá Hola VPN (u otro VPN) y configuralo en Perú, luego volvé a correr el scraper.');
         }
 
         // Dismiss any modals (select store, cookies, etc.)

@@ -126,7 +126,10 @@ app.post('/api/update', (req, res) => {
     } else if (url.includes('burgerking.pe')) {
         scriptName = 'burgerking_scraper.js';
     } else if (url.includes('kfc.com.pe')) {
-        scriptName = 'kfc_scraper.js';
+        // KFC Peru is blocked by CloudFront for GCP IPs — must be run locally with a Peru VPN
+        return res.status(501).json({
+            error: 'KFC Peru requiere VPN peruano para scrapear. Corré node kfc_scraper.js localmente con Hola VPN configurado en Perú, luego copiá el JSON a data/ y hacé commit+push.'
+        });
     } else if (url.includes('pizzahut.com.pe')) {
         // Pizza Hut scraper not ready yet
         return res.status(501).json({ error: 'Scraper para Pizza Hut en desarrollo (bloqueo estricto por Akamai detectado)' });
