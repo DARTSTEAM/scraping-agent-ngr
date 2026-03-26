@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+dashboard/node_modules/
+
+# Build output
+dashboard/dist/
+dashboard/dist-ssr/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Scraped data (large binaries & generated CSVs/JSONs)
+*.html
+*.png
+mcd_api_dump.txt
+mcd_text.txt
+products_*.csv
+products_*.json
+nuxt_data.json
+
+# Playwright browsers
