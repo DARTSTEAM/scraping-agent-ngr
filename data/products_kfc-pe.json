@@ -1,0 +1,86 @@
+[
+  {
+    "restaurant": "KFC",
+    "category": "Ver todo",
+    "name": "Mega Mix: 8 Piezas",
+    "description": "",
+    "price": 69.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Mega XL: 12 Piezas",
+    "description": "",
+    "price": 89.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Combo Chick'N Share 18 Nuggets",
+    "description": "",
+    "price": 43.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Super Mega: 10 Piezas",
+    "description": "",
+    "price": 79.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Pie de Manzana",
+    "description": "",
+    "price": 6.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Combo 8 Hot Wings",
+    "description": "",
+    "price": 24.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Mega 12 Piezas + Papas",
+    "description": "",
+    "price": 77.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Papa Familiar",
+    "description": "",
+    "price": 11.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Ensalada Regular",
+    "description": "",
+    "price": 5.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Combo 8 Nuggets",
+    "description": "",
+    "price": 24.9
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Ensalada Familiar",
+    "description": "",
+    "price": 11
+  },
+  {
+    "restaurant": "KFC",
+    "category": "Mega Mix: 8 Piezas",
+    "name": "Chick'N Share 3 Piezas + Snacks",
+    "description": "",
+    "price": 37.9
+  }
+]
