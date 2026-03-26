@@ -32,13 +32,12 @@ pnpm-debug.log*
 !.vscode/extensions.json
 .idea/
 
-# Scraped data (large binaries & generated CSVs/JSONs)
-*.html
-*.png
-mcd_api_dump.txt
-mcd_text.txt
-products_*.csv
-products_*.json
-nuxt_data.json
-
-# Playwright browsers
+# Scraped data dumps (root-level only, NOT inside dashboard/)
+/mcd_dump.html
+/pizzahut_dump.html
+/pizzahut_initial.png
+/mcd_api_dump.txt
+/mcd_text.txt
+/nuxt_data.json
+/products_*.csv
+/products_*.json
