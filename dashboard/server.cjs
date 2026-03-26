@@ -131,7 +131,8 @@ app.get('/api/download/:file', (req, res) => {
 // SPA fallback – serve index.html for all other routes
 // ──────────────────────────────────────────────
 if (fs.existsSync(DIST_DIR)) {
-    app.get('*', (_req, res) => {
+    // Express 5 uses path-to-regexp v8 — wildcard must be {*path}, not bare *
+    app.get('{*path}', (_req, res) => {
         res.sendFile(path.join(DIST_DIR, 'index.html'));
     });
 }
