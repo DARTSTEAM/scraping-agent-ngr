@@ -7,7 +7,7 @@
 
 ## 🌐 Dashboard en vivo
 
-**➡️ [Ver dashboard en producción](https://scraping-agent-PLACEHOLDER.run.app)**
+**➡️ [Ver dashboard en producción](https://scraping-agent-ngr-233100106347.us-central1.run.app)**
 
 ---
 
