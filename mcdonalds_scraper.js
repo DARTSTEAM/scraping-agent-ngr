@@ -1,20 +1,14 @@
-const { chromium } = require('playwright-extra');
-const stealth = require('puppeteer-extra-plugin-stealth')();
-chromium.use(stealth);
+const { createKernelBrowser, closeKernelBrowser } = require('./kernel_browser');
 const fs = require('fs');
 const path = require('path');
 
 async function scrapeMcDonalds(url) {
     console.log(`Iniciando scraping de McDonald's (Own): ${url}`);
+    console.log(`🌐 Conectando al navegador remoto en Kernel (proxy residencial Perú)...`);
 
-    const browser = await chromium.launch({
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
-    });
-
-    // User agent for stealth
-    const context = await browser.newContext({
-        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+    const { browser, context, kernelBrowser, kernel } = await createKernelBrowser({
+        proxy: 'ngr-peru',
+        stealth: true,
     });
 
     const page = await context.newPage();
@@ -83,7 +77,7 @@ async function scrapeMcDonalds(url) {
         console.error(`Error durante el scraping: ${error.message}`);
         process.exit(1);
     } finally {
-        await browser.close();
+        await closeKernelBrowser({ browser, kernelBrowser, kernel });
     }
 }
 

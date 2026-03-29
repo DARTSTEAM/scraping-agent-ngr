@@ -1,6 +1,4 @@
-const { chromium } = require('playwright-extra');
-const stealth = require('puppeteer-extra-plugin-stealth')();
-chromium.use(stealth);
+const { createKernelBrowser, closeKernelBrowser } = require('./kernel_browser');
 const fs = require('fs');
 const path = require('path');
 
@@ -13,21 +11,11 @@ const path = require('path');
  */
 async function scrapeKFC(url = 'https://www.kfc.com.pe/carta') {
     console.log(`Iniciando scraping de KFC: ${url}`);
-    console.log(`⚠️  Asegurate de que tu VPN esté activo y configurado en Perú.`);
+    console.log(`🌐 Conectando al navegador remoto en Kernel (proxy residencial Perú)...`);
 
-    const browser = await chromium.launch({
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled']
-    });
-
-    const context = await browser.newContext({
-        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
-        locale: 'es-PE',
-        timezoneId: 'America/Lima',
-        viewport: { width: 1280, height: 900 },
-        extraHTTPHeaders: {
-            'Accept-Language': 'es-PE,es;q=0.9',
-        }
+    const { browser, context, kernelBrowser, kernel } = await createKernelBrowser({
+        proxy: 'ngr-peru',
+        stealth: true,
     });
 
     const page = await context.newPage();
@@ -127,11 +115,11 @@ async function scrapeKFC(url = 'https://www.kfc.com.pe/carta') {
     } catch (error) {
         console.error(`Error: ${error.message}`);
         if (error.message.includes('Geo-block')) {
-            await browser.close();
+            await closeKernelBrowser({ browser, kernelBrowser, kernel });
             process.exit(1);
         }
     } finally {
-        await browser.close();
+        await closeKernelBrowser({ browser, kernelBrowser, kernel });
     }
 
     // Deduplicate

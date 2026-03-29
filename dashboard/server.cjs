@@ -126,10 +126,7 @@ app.post('/api/update', (req, res) => {
     } else if (url.includes('burgerking.pe')) {
         scriptName = 'burgerking_scraper.js';
     } else if (url.includes('kfc.com.pe')) {
-        // KFC Peru is blocked by CloudFront for GCP IPs — must be run locally with a Peru VPN
-        return res.status(501).json({
-            error: 'KFC Peru requiere VPN peruano para scrapear. Corré node kfc_scraper.js localmente con Hola VPN configurado en Perú, luego copiá el JSON a data/ y hacé commit+push.'
-        });
+        scriptName = 'kfc_scraper.js';
     } else if (url.includes('pizzahut.com.pe')) {
         // Pizza Hut scraper not ready yet
         return res.status(501).json({ error: 'Scraper para Pizza Hut en desarrollo (bloqueo estricto por Akamai detectado)' });
@@ -148,8 +145,12 @@ app.post('/api/update', (req, res) => {
 
     console.log(`Starting scraper ${scriptName} for ${url}…`);
 
-    // Pass --no-sandbox for Playwright when running inside a container
-    const env = { ...process.env, PLAYWRIGHT_CHROMIUM_LAUNCH_OPTIONS: JSON.stringify({ args: ['--no-sandbox', '--disable-setuid-sandbox'] }) };
+    // Forward KERNEL_API_KEY and sandbox flags to child scraper processes
+    const env = {
+        ...process.env,
+        KERNEL_API_KEY: process.env.KERNEL_API_KEY || '',
+        PLAYWRIGHT_CHROMIUM_LAUNCH_OPTIONS: JSON.stringify({ args: ['--no-sandbox', '--disable-setuid-sandbox'] })
+    };
 
     // Scraper outputs products_<id>.json to its cwd (SCRAPERS_DIR = /app)
     exec(`node "${scriptPath}" "${url}"`, { cwd: SCRAPERS_DIR, env, timeout: 120000 }, (error, stdout, stderr) => {

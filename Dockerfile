@@ -33,13 +33,14 @@ RUN npm install --omit=dev
 # Install Chromium browser for Playwright
 RUN npx playwright install chromium
 
-# Copy scraper scripts
+# Copy scraper scripts and shared helpers
 COPY rappi_scraper.js ./
 COPY mcdonalds_scraper.js ./
 COPY pedidosya_scraper.js ./
 COPY pizzahut_explore.js ./
 COPY burgerking_scraper.js ./
 COPY kfc_scraper.js ./
+COPY kernel_browser.js ./
 COPY check_mcd.js ./
 COPY dump_mcd.js ./
 COPY extract_nuxt.js ./

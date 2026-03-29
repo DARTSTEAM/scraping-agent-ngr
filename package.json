@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "kfc": "node kfc_scraper.js",
+    "mcd": "node mcdonalds_scraper.js",
+    "bk": "node burgerking_scraper.js",
+    "rappi": "node rappi_scraper.js",
+    "pedidosya": "node pedidosya_scraper.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@onkernel/sdk": "^0.44.0",
     "playwright": "^1.58.2",
     "playwright-extra": "^4.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2"

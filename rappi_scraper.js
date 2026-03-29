@@ -1,6 +1,4 @@
-const { chromium } = require('playwright-extra');
-const stealth = require('puppeteer-extra-plugin-stealth')();
-chromium.use(stealth);
+const { createKernelBrowser, closeKernelBrowser } = require('./kernel_browser');
 const fs = require('fs');
 const path = require('path');
 
@@ -14,12 +12,10 @@ function escapeCsv(str) {
 }
 
 async function scrapeRappi(url) {
-    const browser = await chromium.launch({
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
-    });
-    const context = await browser.newContext({
-        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+    console.log(`🌐 Conectando al navegador remoto en Kernel (proxy residencial Perú)...`);
+    const { browser, context, kernelBrowser, kernel } = await createKernelBrowser({
+        proxy: 'ngr-peru',
+        stealth: true,
     });
     const page = await context.newPage();
 
@@ -38,7 +34,7 @@ async function scrapeRappi(url) {
 
     if (!nextData) {
         console.error('Could not find __NEXT_DATA__ script tag.');
-        await browser.close();
+        await closeKernelBrowser({ browser, kernelBrowser, kernel });
         return;
     }
 
@@ -50,7 +46,7 @@ async function scrapeRappi(url) {
     if (!storeKey) {
         console.error('Could not find restaurant data in fallback.');
         console.log('Available keys in fallback:', Object.keys(fallback));
-        await browser.close();
+        await closeKernelBrowser({ browser, kernelBrowser, kernel });
         return;
     }
 
@@ -111,7 +107,7 @@ async function scrapeRappi(url) {
         fs.writeFileSync(`products_${safeStoreId}.json`, JSON.stringify(results, null, 2));
     }
 
-    await browser.close();
+    await closeKernelBrowser({ browser, kernelBrowser, kernel });
     return results;
 }
 
