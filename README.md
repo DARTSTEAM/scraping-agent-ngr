@@ -7,7 +7,7 @@
 
 ## 🌐 Dashboard en vivo
 
-**➡️ [Ver dashboard en producción](https://scraping-agent-ngr-233100106347.us-central1.run.app)**
+**➡️ [Ver dashboard en producción](https://scraping-agent-ngr-gvxb4rjzvq-uc.a.run.app)**
 
 ---
 
@@ -100,7 +100,7 @@ docker run -p 8080:8080 scraping-agent
 | Frontend | React 19 + TypeScript + Vite |
 | Estilos | TailwindCSS v4 |
 | Backend | Node.js + Express |
-| Scraping | Playwright + Playwright Extra (Stealth) |
+| Scraping | Playwright + Kernel Residential Proxy (Peru) |
 | Deploy | Google Cloud Run |
 | CI/CD | GitHub → Cloud Run (auto-deploy) |
 
