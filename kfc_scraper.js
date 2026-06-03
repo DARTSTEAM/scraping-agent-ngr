@@ -54,15 +54,32 @@ async function scrapeKFC(url = 'https://www.kfc.com.pe/carta') {
     let results = [];
 
     try {
+        // Step 0: Verify the Kernel proxy IP is actually from Peru
+        console.log('[Kernel] Verificando IP del proxy...');
+        try {
+            await page.goto('https://ipinfo.io/json', { waitUntil: 'domcontentloaded', timeout: 15000 });
+            const ipRaw = await page.textContent('body').catch(() => '{}');
+            const ipData = JSON.parse(ipRaw);
+            console.log(`[Kernel] IP: ${ipData.ip}, Country: ${ipData.country}, Region: ${ipData.region}, Org: ${ipData.org}`);
+            if (ipData.country && ipData.country !== 'PE') {
+                console.warn(`[Kernel] ⚠️ La IP NO es de Perú (es de ${ipData.country}). El proxy ngr-peru puede no estar funcionando correctamente.`);
+            } else {
+                console.log('[Kernel] ✅ IP confirmada como peruana. Procediendo...');
+            }
+        } catch (e) {
+            console.warn(`[Kernel] No se pudo verificar la IP: ${e.message}`);
+        }
+
         // Step 1: Navigate to homepage first to handle cookies/session
         console.log('Cargando homepage...');
-        await page.goto('https://www.kfc.com.pe/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+        const homeResponse = await page.goto('https://www.kfc.com.pe/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+        const httpStatus = homeResponse?.status();
+        console.log(`[KFC] HTTP status de homepage: ${httpStatus}`);
         await page.waitForTimeout(2000);
 
-        // Check for geo-block
-        const bodyText = await page.textContent('body').catch(() => '');
-        if (bodyText.includes('403') || bodyText.includes('Access Denied') || bodyText.includes('Forbidden')) {
-            throw new Error('⛔ Geo-block detectado. Activá Hola VPN (u otro VPN) y configuralo en Perú, luego volvé a correr el scraper.');
+        // Check for geo-block using HTTP status (not body text — body contains JS with the words "403"/"Forbidden")
+        if (httpStatus === 403 || httpStatus === 451) {
+            throw new Error(`⛔ Geo-block detectado (HTTP ${httpStatus}). El proxy Kernel no pudo superar el bloqueo de CloudFront.`);
         }
 
         // Dismiss any modals (select store, cookies, etc.)

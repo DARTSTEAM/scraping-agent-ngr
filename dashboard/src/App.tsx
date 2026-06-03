@@ -16,15 +16,103 @@ import logoNgr from './assets/Logo-ngr.png';
 // so relative paths work. In dev, Vite proxies /api to localhost:3001.
 const API_BASE = '/api';
 
+// NGR locals and their Rappi competitors
+const NGR_GROUPS = [
+  {
+    ngrLocal: 'Bembos',
+    competitors: [
+      { name: "McDonald's",  url: "https://www.rappi.com.pe/restaurantes/742-mcdonalds",     id: '742',   platform: 'Rappi' },
+      { name: "Burger King", url: "https://www.rappi.com.pe/restaurantes/2376-burger-king",  id: '2376',  platform: 'Rappi' },
+    ]
+  },
+  {
+    ngrLocal: 'Popeyes',
+    competitors: [
+      { name: "KFC",   url: "https://www.rappi.com.pe/restaurantes/6337-kfc",   id: '6337',  platform: 'Rappi' },
+      { name: "Yopo",  url: "https://www.rappi.com.pe/restaurantes/58629-yopo",  id: '58629', platform: 'Rappi' },
+    ]
+  },
+  {
+    ngrLocal: 'Papa Johns',
+    competitors: [
+      { name: "Pizza Hut",      url: "https://www.rappi.com.pe/restaurantes/2372-pizza-hut",      id: '2372',  platform: 'Rappi' },
+      { name: "Domino's Pizza", url: "https://www.rappi.com.pe/restaurantes/74738-dominos-pizza", id: '74738', platform: 'Rappi' },
+      { name: "Little Caesars", url: "https://www.rappi.com.pe/restaurantes/4136-little-caesars", id: '4136',  platform: 'Rappi' },
+    ]
+  },
+  {
+    ngrLocal: 'Chinawok',
+    competitors: [
+      { name: "Wanta Chifa",  url: "https://www.rappi.com.pe/restaurantes/73245-wanta-chifa",            id: '73245', platform: 'Rappi' },
+      { name: "Chifa Express", url: "https://www.rappi.com.pe/restaurantes/13399-chifa-express-chifa",  id: '13399', platform: 'Rappi' },
+    ]
+  },
+  {
+    ngrLocal: 'Dunkin',
+    competitors: [
+      { name: "Starbucks",   url: "https://www.rappi.com.pe/restaurantes/38002-starbucks",  id: '38002', platform: 'Rappi' },
+      { name: "Juan Valdez", url: "https://www.rappi.com.pe/restaurantes/79108-juan-valdez", id: '79108', platform: 'Rappi' },
+      { name: "Cinnabon",    url: "https://www.rappi.com.pe/restaurantes/66914-cinnabon",    id: '66914', platform: 'Rappi' },
+    ]
+  },
+  {
+    ngrLocal: 'Don Belisario',
+    competitors: [
+      { name: "Pardos Chicken", url: "https://www.rappi.com.pe/restaurantes/4580-pardos-chicken", id: '4580', platform: 'Rappi' },
+      { name: "Rokys",         url: "https://www.rappi.com.pe/restaurantes/5341-rokys",          id: '5341', platform: 'Rappi' },
+    ]
+  },
+];
+
+// NGR own brands and their own-site menus, grouped by brand
+const NGR_OWN_GROUPS = [
+  {
+    ngrLocal: 'Bembos',
+    stores: [
+      { name: "McDonald's (Izaguirre)", url: "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos", id: 'mcd-izaguirre-iza', platform: 'Propio' },
+      { name: "Burger King",            url: "https://www.burgerking.pe/carta/ver-todo",                                       id: 'burgerking-pe',       platform: 'Propio' },
+    ]
+  },
+  {
+    ngrLocal: 'Popeyes',
+    stores: [
+      { name: "KFC",   url: "https://www.kfc.com.pe/carta",    id: 'kfc-pe',   platform: 'Propio' },
+      { name: "Yopo",  url: "https://yopo.pe/categorias/",      id: 'yopo-pe',  platform: 'Propio' },
+    ]
+  },
+  {
+    ngrLocal: 'Papa Johns',
+    stores: [
+      { name: "Pizza Hut (Miraflores)", url: "https://www.pizzahut.com.pe/carta/ver-todo",   id: 'pizzahut-miraflores',  platform: 'Propio' },
+      { name: "Little Caesars",         url: "https://pe.littlecaesars.com/es-pe/menu/",     id: 'littlecaesars-pe',    platform: 'Propio' },
+    ]
+  },
+  {
+    ngrLocal: 'Chinawok',
+    stores: [
+      { name: "Wanta",        url: "https://www.wanta.pe/carta/ver-todo",   id: 'wanta-pe',       platform: 'Propio' },
+      { name: "Chifa Express",url: "https://www.chifaexpress.pe/pedir",     id: 'chifaexpress-pe',platform: 'Propio' },
+    ]
+  },
+  {
+    ngrLocal: 'Dunkin',
+    stores: [
+      { name: "Starbucks",  url: "https://www.starbucks.pe/menu",         id: 'starbucks-pe', platform: 'Propio' },
+      { name: "Cinnabon",   url: "https://www.cinnabon.com.pe/pedir",     id: 'cinnabon-pe',  platform: 'Propio' },
+    ]
+  },
+  {
+    ngrLocal: 'Don Belisario',
+    stores: [
+      { name: "Rokys",      url: "https://rokys.com/menu",                id: 'rokys-pe',     platform: 'Propio' },
+    ]
+  },
+];
+
+// Flat list for lookups / scraper dispatch
 const COMPETITORS = [
-  { name: "McDonald's (San Antonio)", url: "https://www.rappi.com.pe/restaurantes/742-mcdonalds", id: '742', platform: 'Rappi' },
-  { name: "KFC (Surquillo)", url: "https://www.rappi.com.pe/restaurantes/6337-kfc", id: '6337', platform: 'Rappi' },
-  { name: "Starbucks", url: "https://www.rappi.com.pe/restaurantes/38002-starbucks", id: '38002', platform: 'Rappi' },
-  { name: "McDonald's (Ovalo Gutierrez)", url: "https://www.pedidosya.com.pe/restaurantes/lima/mcdonalds-ovalo-gutierrez-e6b6652e-45c6-44f7-8976-e376edf475a8-menu", id: 'mcd-ovalo-gutierrez', platform: 'PedidosYa' },
-  { name: "McDonald's (Izaguirre)", url: "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos", id: 'mcd-izaguirre-iza', platform: 'McDonalds Propio' },
-  { name: "Pizza Hut (Miraflores)", url: "https://www.pizzahut.com.pe/order", id: 'pizzahut-miraflores', platform: 'Pizza Hut Propio' },
-  { name: "Burger King", url: "https://www.burgerking.pe/carta/ver-todo", id: 'burgerking-pe', platform: 'Burger King Propio' },
-  { name: "KFC", url: "https://www.kfc.com.pe/carta", id: 'kfc-pe', platform: 'KFC Propio' }
+  ...NGR_GROUPS.flatMap(g => g.competitors),
+  ...NGR_OWN_GROUPS.flatMap(g => g.stores),
 ];
 
 interface Product {
@@ -69,8 +157,8 @@ export default function App() {
 
   const filteredCompetitors = COMPETITORS.filter(c =>
     activeTab === 'competitors'
-      ? (c.platform === 'Rappi' || c.platform === 'PedidosYa')
-      : (c.platform === 'McDonalds Propio' || c.platform === 'Pizza Hut Propio' || c.platform === 'Burger King Propio' || c.platform === 'KFC Propio')
+      ? c.platform === 'Rappi'
+      : c.platform === 'Propio'
   );
 
   useEffect(() => {
@@ -179,39 +267,23 @@ export default function App() {
                     <option value="">Seleccionar...</option>
                     {activeTab === 'competitors' ? (
                       <>
-                        <optgroup label="RAPPI">
-                          {COMPETITORS.filter(c => c.platform === 'Rappi').map(comp => (
-                            <option key={comp.id} value={comp.id}>{comp.name}</option>
-                          ))}
-                        </optgroup>
-                        <optgroup label="PEDIDOS YA">
-                          {COMPETITORS.filter(c => c.platform === 'PedidosYa').map(comp => (
-                            <option key={comp.id} value={comp.id}>{comp.name}</option>
-                          ))}
-                        </optgroup>
+                        {NGR_GROUPS.map(group => (
+                          <optgroup key={group.ngrLocal} label={`vs. ${group.ngrLocal.toUpperCase()}`}>
+                            {group.competitors.map(comp => (
+                              <option key={comp.id} value={comp.id}>{comp.name}</option>
+                            ))}
+                          </optgroup>
+                        ))}
                       </>
                     ) : (
                       <>
-                        <optgroup label="MCDONALDS PROPIO">
-                          {COMPETITORS.filter(c => c.platform === 'McDonalds Propio').map(comp => (
-                            <option key={comp.id} value={comp.id}>{comp.name}</option>
-                          ))}
-                        </optgroup>
-                        <optgroup label="PIZZA HUT PROPIO">
-                          {COMPETITORS.filter(c => c.platform === 'Pizza Hut Propio').map(comp => (
-                            <option key={comp.id} value={comp.id}>{comp.name}</option>
-                          ))}
-                        </optgroup>
-                        <optgroup label="BURGER KING PROPIO">
-                          {COMPETITORS.filter(c => c.platform === 'Burger King Propio').map(comp => (
-                            <option key={comp.id} value={comp.id}>{comp.name}</option>
-                          ))}
-                        </optgroup>
-                        <optgroup label="KFC PROPIO">
-                          {COMPETITORS.filter(c => c.platform === 'KFC Propio').map(comp => (
-                            <option key={comp.id} value={comp.id}>{comp.name}</option>
-                          ))}
-                        </optgroup>
+                        {NGR_OWN_GROUPS.map(group => (
+                          <optgroup key={group.ngrLocal} label={`${group.ngrLocal.toUpperCase()}`}>
+                            {group.stores.map(store => (
+                              <option key={store.id} value={store.id}>{store.name}</option>
+                            ))}
+                          </optgroup>
+                        ))}
                       </>
                     )}
                   </select>

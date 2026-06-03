@@ -4,6 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
+const { Storage } = require('@google-cloud/storage');
+
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -14,14 +16,54 @@ app.use(express.json());
 // Paths
 // ──────────────────────────────────────────────
 const DIST_DIR = path.join(__dirname, 'dist');
-// Root of the project (/app in Docker, parent of dashboard/ locally)
 const ROOT_DIR = path.join(__dirname, '..');
-// Scraped data lives in ROOT/data/ (committed baseline) and ROOT/ (fresh scrapes)
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const SCRAPERS_DIR = ROOT_DIR;
 
 // Ensure data dir exists
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+
+// ──────────────────────────────────────────────
+// GCS Persistence
+// ──────────────────────────────────────────────
+const GCS_BUCKET = 'ngr-scraping-data';
+const gcs = new Storage();
+
+/**
+ * Download all products_*.json from GCS to DATA_DIR.
+ * Called once at startup so fresh scrapes survive container restarts.
+ */
+async function syncFromGCS() {
+    try {
+        const [files] = await gcs.bucket(GCS_BUCKET).getFiles({ prefix: 'products_' });
+        let synced = 0;
+        for (const file of files) {
+            if (!file.name.endsWith('.json')) continue;
+            const dest = path.join(DATA_DIR, file.name);
+            await file.download({ destination: dest });
+            synced++;
+        }
+        console.log(`[GCS] Sincronizados ${synced} archivos desde gs://${GCS_BUCKET}`);
+    } catch (err) {
+        console.warn(`[GCS] No se pudo sincronizar al arrancar: ${err.message}`);
+    }
+}
+
+/**
+ * Upload a local JSON file to GCS so it survives container restarts.
+ */
+async function uploadToGCS(localPath) {
+    try {
+        const fileName = path.basename(localPath);
+        await gcs.bucket(GCS_BUCKET).upload(localPath, { destination: fileName });
+        console.log(`[GCS] Subido: gs://${GCS_BUCKET}/${fileName}`);
+    } catch (err) {
+        console.warn(`[GCS] Error subiendo ${localPath}: ${err.message}`);
+    }
+}
+
+// GCS sync runs BEFORE the server starts listening.
+// This guarantees every user always sees the latest scraped data.
 
 // ──────────────────────────────────────────────
 // Static frontend (production build)
@@ -32,14 +74,43 @@ if (fs.existsSync(DIST_DIR)) {
 
 // Mapping of store IDs to names and platforms
 const STORE_METADATA = {
-    '742': { name: "McDonald's - San Antonio", platform: 'Rappi' },
-    '6337': { name: "KFC - Surquillo", platform: 'Rappi' },
-    '38002': { name: "Starbucks", platform: 'Rappi' },
-    'mcd-ovalo-gutierrez': { name: "McDonald's - Ovalo Gutierrez", platform: 'PedidosYa' },
-    'mcd-izaguirre-iza': { name: "McDonald's - Izaguirre", platform: 'McDonalds Propio' },
-    'pizzahut-miraflores': { name: "Pizza Hut - Miraflores", platform: 'Pizza Hut Propio' },
-    'burgerking-pe': { name: "Burger King", platform: 'Burger King Propio' },
-    'kfc-pe': { name: "KFC", platform: 'KFC Propio' }
+    // Rappi – vs. Bembos
+    '742':   { name: "McDonald's",   platform: 'Rappi' },
+    '2376':  { name: "Burger King",  platform: 'Rappi' },
+    // Rappi – vs. Popetes
+    '6337':  { name: "KFC",          platform: 'Rappi' },
+    '58629': { name: "Yopo",         platform: 'Rappi' },
+    // Rappi – vs. Papa Johns
+    '2372':  { name: "Pizza Hut",     platform: 'Rappi' },
+    '74738': { name: "Domino's Pizza",platform: 'Rappi' },
+    '4136':  { name: "Little Caesars",platform: 'Rappi' },
+    // Rappi – vs. Chinawok
+    '73245': { name: "Wanta Chifa",   platform: 'Rappi' },
+    '13399': { name: "Chifa Express", platform: 'Rappi' },
+    // Rappi – vs. Dunkin
+    '38002': { name: "Starbucks",    platform: 'Rappi' },
+    '79108': { name: "Juan Valdez",  platform: 'Rappi' },
+    '66914': { name: "Cinnabon",     platform: 'Rappi' },
+    // Rappi – vs. Don Belisario
+    '4580':  { name: "Pardos Chicken", platform: 'Rappi' },
+    '5341':  { name: "Rokys",          platform: 'Rappi' },
+    // Propios – vs. Bembos
+    'mcd-izaguirre-iza':   { name: "McDonald's - Izaguirre",   platform: 'Propio' },
+    'burgerking-pe':       { name: "Burger King",               platform: 'Propio' },
+    // Propios – vs. Popetes
+    'kfc-pe':              { name: "KFC",                       platform: 'Propio' },
+    'yopo-pe':             { name: "Yopo",                      platform: 'Propio' },
+    // Propios – vs. Papa Johns
+    'pizzahut-miraflores': { name: "Pizza Hut - Miraflores",    platform: 'Propio' },
+    'littlecaesars-pe':    { name: "Little Caesars",            platform: 'Propio' },
+    // Propios – vs. Chinawok
+    'wanta-pe':            { name: "Wanta",                     platform: 'Propio' },
+    'chifaexpress-pe':     { name: "Chifa Express",             platform: 'Propio' },
+    // Propios – vs. Dunkin
+    'starbucks-pe':        { name: "Starbucks",                 platform: 'Propio' },
+    'cinnabon-pe':         { name: "Cinnabon",                  platform: 'Propio' },
+    // Propios – vs. Don Belisario
+    'rokys-pe':            { name: "Rokys",                     platform: 'Propio' },
 };
 
 /**
@@ -128,8 +199,17 @@ app.post('/api/update', (req, res) => {
     } else if (url.includes('kfc.com.pe')) {
         scriptName = 'kfc_scraper.js';
     } else if (url.includes('pizzahut.com.pe')) {
-        // Pizza Hut scraper not ready yet
-        return res.status(501).json({ error: 'Scraper para Pizza Hut en desarrollo (bloqueo estricto por Akamai detectado)' });
+        scriptName = 'pizzahut_scraper.js';
+    } else if (url.includes('yopo.pe')) {
+        scriptName = 'yopo_scraper.js';
+    } else if (url.includes('littlecaesars.com')) {
+        scriptName = 'littlecaesars_scraper.js';
+    } else if (url.includes('wanta.pe') || url.includes('chifaexpress.pe') || url.includes('cinnabon.com.pe')) {
+        scriptName = 'digifood_scraper.js';
+    } else if (url.includes('starbucks.pe')) {
+        scriptName = 'starbucks_scraper.js';
+    } else if (url.includes('rokys.com')) {
+        scriptName = 'rokys_scraper.js';
     }
 
     const scriptPath = path.join(SCRAPERS_DIR, scriptName);
@@ -138,10 +218,6 @@ app.post('/api/update', (req, res) => {
         return res.status(501).json({ error: `Scraper ${scriptName} no encontrado` });
     }
 
-    // PedidosYa is blocked by Cloudflare
-    if (scriptName === 'pedidosya_scraper.js') {
-        return res.status(501).json({ error: 'Scraper para PedidosYa en desarrollo (bloqueo por Cloudflare detectado)' });
-    }
 
     console.log(`Starting scraper ${scriptName} for ${url}…`);
 
@@ -152,13 +228,43 @@ app.post('/api/update', (req, res) => {
         PLAYWRIGHT_CHROMIUM_LAUNCH_OPTIONS: JSON.stringify({ args: ['--no-sandbox', '--disable-setuid-sandbox'] })
     };
 
+    // For PedidosYa, also pass the storeId so the scraper knows what filename to use
+    const PEDIDOSYA_STORES = {
+        'mcdonalds-ovalo-gutierrez': 'mcd-ovalo-gutierrez',
+    };
+    const urlSlug = url.split('/').pop()?.replace(/-menu$/, '').replace(/-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/, '') || '';
+    const pedidosYaStoreId = PEDIDOSYA_STORES[urlSlug] || 'mcd-ovalo-gutierrez';
+    const scriptArgs = scriptName === 'pedidosya_scraper.js'
+        ? `"${scriptPath}" "${url}" "${pedidosYaStoreId}"`
+        : `"${scriptPath}" "${url}"`;
+    const execTimeout = scriptName === 'pedidosya_scraper.js' ? 180000 : 120000;
+
     // Scraper outputs products_<id>.json to its cwd (SCRAPERS_DIR = /app)
-    exec(`node "${scriptPath}" "${url}"`, { cwd: SCRAPERS_DIR, env, timeout: 120000 }, (error, stdout, stderr) => {
+    exec(`node ${scriptArgs}`, { cwd: SCRAPERS_DIR, env, timeout: execTimeout }, async (error, stdout, stderr) => {
         if (error) {
             console.error(`exec error: ${error.message}`);
             return res.status(500).json({ error: 'Scraper execution failed', detail: stderr || error.message });
         }
         console.log(`Scraper output: ${stdout}`);
+
+        // Upload fresh JSON to GCS so it persists across container restarts
+        const storeIdFromScript = pedidosYaStoreId || url.split('/').pop();
+        // Find any newly-written products_*.json in SCRAPERS_DIR and upload to GCS
+        try {
+            const freshFiles = fs.readdirSync(SCRAPERS_DIR)
+                .filter(f => f.startsWith('products_') && f.endsWith('.json'));
+            for (const f of freshFiles) {
+                const localPath = path.join(SCRAPERS_DIR, f);
+                // Only upload if modified in the last 5 minutes (fresh scrape)
+                const stat = fs.statSync(localPath);
+                if (Date.now() - stat.mtimeMs < 5 * 60 * 1000) {
+                    await uploadToGCS(localPath);
+                }
+            }
+        } catch (uploadErr) {
+            console.warn(`[GCS] Upload post-scrape fallado: ${uploadErr.message}`);
+        }
+
         res.json({ message: 'Scraper finished successfully', output: stdout });
     });
 });
@@ -167,21 +273,48 @@ app.post('/api/update', (req, res) => {
 // API – download CSV
 // ──────────────────────────────────────────────
 app.get('/api/download/:file', (req, res) => {
-    const fileName = req.params.file;
+    const fileName = req.params.file; // e.g. products_742.csv
+    const storeId = fileName.replace(/^products_/, '').replace(/\.csv$/, '');
 
-    // Look in root dir first, then data/
-    const locations = [path.join(SCRAPERS_DIR, fileName), path.join(DATA_DIR, fileName.replace('.csv', '.json'))];
-    const csvPath = path.join(SCRAPERS_DIR, fileName);
-    const dataJsonPath = path.join(DATA_DIR, fileName);
+    // 1. Try pre-built CSV in SCRAPERS_DIR (written by fresh scrapes)
+    const csvInRoot = path.join(SCRAPERS_DIR, fileName);
+    if (fs.existsSync(csvInRoot)) {
+        return res.download(csvInRoot);
+    }
 
-    if (fs.existsSync(csvPath)) {
-        res.download(csvPath);
-    } else if (fs.existsSync(dataJsonPath)) {
-        res.download(dataJsonPath);
-    } else {
-        res.status(404).json({ error: 'File not found' });
+    // 2. Try pre-built CSV in DATA_DIR
+    const csvInData = path.join(DATA_DIR, fileName);
+    if (fs.existsSync(csvInData)) {
+        return res.download(csvInData);
+    }
+
+    // 3. Generate CSV on-the-fly from JSON (works for baseline data that has no .csv)
+    const jsonInRoot = path.join(SCRAPERS_DIR, `products_${storeId}.json`);
+    const jsonInData = path.join(DATA_DIR, `products_${storeId}.json`);
+    const jsonPath = fs.existsSync(jsonInRoot) ? jsonInRoot : fs.existsSync(jsonInData) ? jsonInData : null;
+
+    if (!jsonPath) {
+        return res.status(404).json({ error: `No data found for ${storeId}` });
+    }
+
+    try {
+        const products = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+        const escape = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
+        const header = 'Restaurant,Category,Name,Description,Price';
+        const rows = products.map(p =>
+            [escape(p.restaurant), escape(p.category), escape(p.name), escape(p.description), p.price ?? ''].join(',')
+        );
+        const csv = [header, ...rows].join('\n');
+
+        res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+        res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);
+        res.send(csv);
+    } catch (err) {
+        console.error('Error generating CSV:', err);
+        res.status(500).json({ error: 'Failed to generate CSV' });
     }
 });
+
 
 // ──────────────────────────────────────────────
 // SPA fallback – serve index.html for all other routes
@@ -193,8 +326,14 @@ if (fs.existsSync(DIST_DIR)) {
     });
 }
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-    console.log(`Data dir: ${DATA_DIR}`);
-    console.log(`Scrapers dir: ${SCRAPERS_DIR}`);
-});
+(async () => {
+    console.log('[GCS] Sincronizando datos antes de arrancar el servidor...');
+    await syncFromGCS();
+    console.log('[GCS] Sincronización completa. Arrancando servidor...');
+
+    app.listen(port, () => {
+        console.log(`Server running on port ${port}`);
+        console.log(`Data dir: ${DATA_DIR}`);
+        console.log(`Scrapers dir: ${SCRAPERS_DIR}`);
+    });
+})();

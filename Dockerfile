@@ -37,9 +37,14 @@ RUN npx playwright install chromium
 COPY rappi_scraper.js ./
 COPY mcdonalds_scraper.js ./
 COPY pedidosya_scraper.js ./
-COPY pizzahut_explore.js ./
+COPY pizzahut_scraper.js ./
 COPY burgerking_scraper.js ./
 COPY kfc_scraper.js ./
+COPY yopo_scraper.js ./
+COPY littlecaesars_scraper.js ./
+COPY digifood_scraper.js ./
+COPY starbucks_scraper.js ./
+COPY rokys_scraper.js ./
 COPY kernel_browser.js ./
 COPY check_mcd.js ./
 COPY dump_mcd.js ./
