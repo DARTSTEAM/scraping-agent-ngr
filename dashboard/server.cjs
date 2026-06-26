@@ -101,22 +101,29 @@ const STORE_METADATA = {
     // Rappi – Competencia vs. Don Belisario
     '4580':  { name: "Pardos Chicken", platform: 'Rappi' },
     '5341':  { name: "Rokys",          platform: 'Rappi' },
-    // ── Propios – vs. Bembos ────────────────────
+    // ── Propios – Marcas Propias NGR ─────────────
+    'bembos-pe':           { name: "Bembos",                    platform: 'Propio' },
+    'popeyes-pe':          { name: "Popeyes",                   platform: 'Propio' },
+    'dunkin-pe':           { name: "Dunkin'",                   platform: 'Propio' },
+    'papajohns-pe':        { name: "Papa Johns",                platform: 'Propio' },
+    'donbelisario-pe':     { name: "Don Belisario",             platform: 'Propio' },
+    'chinawok-pe':         { name: "Chinawok",                  platform: 'Propio' },
+    // ── Propios – Competencia vs. Bembos ────────
     'mcd-izaguirre-iza':   { name: "McDonald's - Izaguirre",   platform: 'Propio' },
     'burgerking-pe':       { name: "Burger King",               platform: 'Propio' },
-    // Propios – vs. Popeyes
+    // Propios – Competencia vs. Popeyes
     'kfc-pe':              { name: "KFC",                       platform: 'Propio' },
     'yopo-pe':             { name: "Yopo",                      platform: 'Propio' },
-    // Propios – vs. Papa Johns
+    // Propios – Competencia vs. Papa Johns
     'pizzahut-miraflores': { name: "Pizza Hut - Miraflores",    platform: 'Propio' },
     'littlecaesars-pe':    { name: "Little Caesars",            platform: 'Propio' },
-    // Propios – vs. Chinawok
+    // Propios – Competencia vs. Chinawok
     'wanta-pe':            { name: "Wanta",                     platform: 'Propio' },
     'chifaexpress-pe':     { name: "Chifa Express",             platform: 'Propio' },
-    // Propios – vs. Dunkin
+    // Propios – Competencia vs. Dunkin
     'starbucks-pe':        { name: "Starbucks",                 platform: 'Propio' },
     'cinnabon-pe':         { name: "Cinnabon",                  platform: 'Propio' },
-    // Propios – vs. Don Belisario
+    // Propios – Competencia vs. Don Belisario
     'rokys-pe':            { name: "Rokys",                     platform: 'Propio' },
 };
 
@@ -218,6 +225,18 @@ app.post('/api/update', (req, res) => {
         scriptName = 'starbucks_scraper.js';
     } else if (url.includes('rokys.com')) {
         scriptName = 'rokys_scraper.js';
+    } else if (url.includes('bembos.com.pe')) {
+        scriptName = 'bembos_scraper.js';
+    } else if (url.includes('popeyes.com.pe')) {
+        scriptName = 'popeyes_scraper.js';
+    } else if (url.includes('papajohns.com.pe')) {
+        scriptName = 'papajohns_scraper.js';
+    } else if (url.includes('dunkin.pe')) {
+        scriptName = 'dunkin_scraper.js';
+    } else if (url.includes('donbelisario.com.pe')) {
+        scriptName = 'donbelisario_scraper.js';
+    } else if (url.includes('chinawok.com.pe')) {
+        scriptName = 'chinawok_scraper.js';
     }
 
     const scriptPath = path.join(SCRAPERS_DIR, scriptName);

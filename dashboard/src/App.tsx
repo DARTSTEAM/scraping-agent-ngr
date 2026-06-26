@@ -79,42 +79,48 @@ const NGR_OWN_GROUPS = [
   {
     ngrLocal: 'Bembos',
     stores: [
-      { name: "McDonald's (Izaguirre)", url: "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos", id: 'mcd-izaguirre-iza', platform: 'Propio' },
-      { name: "Burger King",            url: "https://www.burgerking.pe/carta/ver-todo",                                       id: 'burgerking-pe',       platform: 'Propio' },
+      { name: "Bembos",                 url: "https://www.bembos.com.pe/menu",                                                  id: 'bembos-pe',           platform: 'Propio' },
+      { name: "McDonald's (Izaguirre)", url: "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos",    id: 'mcd-izaguirre-iza',   platform: 'Propio' },
+      { name: "Burger King",            url: "https://www.burgerking.pe/carta/ver-todo",                                         id: 'burgerking-pe',       platform: 'Propio' },
     ]
   },
   {
     ngrLocal: 'Popeyes',
     stores: [
-      { name: "KFC",   url: "https://www.kfc.com.pe/carta",    id: 'kfc-pe',   platform: 'Propio' },
-      { name: "Yopo",  url: "https://yopo.pe/categorias/",      id: 'yopo-pe',  platform: 'Propio' },
+      { name: "Popeyes",url: "https://www.popeyes.com.pe/menu",           id: 'popeyes-pe', platform: 'Propio' },
+      { name: "KFC",     url: "https://www.kfc.com.pe/carta",              id: 'kfc-pe',     platform: 'Propio' },
+      { name: "Yopo",    url: "https://yopo.pe/categorias/",               id: 'yopo-pe',    platform: 'Propio' },
     ]
   },
   {
     ngrLocal: 'Papa Johns',
     stores: [
-      { name: "Pizza Hut (Miraflores)", url: "https://www.pizzahut.com.pe/carta/ver-todo",   id: 'pizzahut-miraflores',  platform: 'Propio' },
+      { name: "Papa Johns",             url: "https://www.papajohns.com.pe/menu",            id: 'papajohns-pe',        platform: 'Propio' },
+      { name: "Pizza Hut (Miraflores)", url: "https://www.pizzahut.com.pe/carta/ver-todo",   id: 'pizzahut-miraflores', platform: 'Propio' },
       { name: "Little Caesars",         url: "https://pe.littlecaesars.com/es-pe/menu/",     id: 'littlecaesars-pe',    platform: 'Propio' },
     ]
   },
   {
     ngrLocal: 'Chinawok',
     stores: [
-      { name: "Wanta",        url: "https://www.wanta.pe/carta/ver-todo",   id: 'wanta-pe',       platform: 'Propio' },
-      { name: "Chifa Express",url: "https://www.chifaexpress.pe/pedir",     id: 'chifaexpress-pe',platform: 'Propio' },
+      { name: "Chinawok",     url: "https://www.chinawok.com.pe/menu",       id: 'chinawok-pe',    platform: 'Propio' },
+      { name: "Wanta",        url: "https://www.wanta.pe/carta/ver-todo",    id: 'wanta-pe',       platform: 'Propio' },
+      { name: "Chifa Express",url: "https://www.chifaexpress.pe/pedir",      id: 'chifaexpress-pe',platform: 'Propio' },
     ]
   },
   {
     ngrLocal: 'Dunkin',
     stores: [
-      { name: "Starbucks",  url: "https://www.starbucks.pe/menu",         id: 'starbucks-pe', platform: 'Propio' },
-      { name: "Cinnabon",   url: "https://www.cinnabon.com.pe/pedir",     id: 'cinnabon-pe',  platform: 'Propio' },
+      { name: "Dunkin'",     url: "https://www.dunkin.pe/menu",              id: 'dunkin-pe',    platform: 'Propio' },
+      { name: "Starbucks",   url: "https://www.starbucks.pe/menu",           id: 'starbucks-pe', platform: 'Propio' },
+      { name: "Cinnabon",    url: "https://www.cinnabon.com.pe/pedir",       id: 'cinnabon-pe',  platform: 'Propio' },
     ]
   },
   {
     ngrLocal: 'Don Belisario',
     stores: [
-      { name: "Rokys",      url: "https://rokys.com/menu",                id: 'rokys-pe',     platform: 'Propio' },
+      { name: "Don Belisario",url: "https://www.donbelisario.com.pe/menu",   id: 'donbelisario-pe', platform: 'Propio' },
+      { name: "Rokys",        url: "https://rokys.com/menu",                  id: 'rokys-pe',        platform: 'Propio' },
     ]
   },
 ];
