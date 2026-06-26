@@ -74,30 +74,37 @@ if (fs.existsSync(DIST_DIR)) {
 
 // Mapping of store IDs to names and platforms
 const STORE_METADATA = {
-    // Rappi – vs. Bembos
+    // ── Rappi – Marcas Propias NGR ──────────────
+    '1109':  { name: "Bembos",        platform: 'Rappi' },
+    '95275': { name: "Popeyes",       platform: 'Rappi' },
+    '61955': { name: "Dunkin'",       platform: 'Rappi' },
+    '1121':  { name: "Papa Johns",    platform: 'Rappi' },
+    '1190':  { name: "Don Belisario", platform: 'Rappi' },
+    '10266': { name: "Chinawok",      platform: 'Rappi' },
+    // ── Rappi – Competencia vs. Bembos ──────────
     '742':   { name: "McDonald's",   platform: 'Rappi' },
     '2376':  { name: "Burger King",  platform: 'Rappi' },
-    // Rappi – vs. Popetes
+    // Rappi – Competencia vs. Popeyes
     '6337':  { name: "KFC",          platform: 'Rappi' },
     '58629': { name: "Yopo",         platform: 'Rappi' },
-    // Rappi – vs. Papa Johns
+    // Rappi – Competencia vs. Papa Johns
     '2372':  { name: "Pizza Hut",     platform: 'Rappi' },
     '74738': { name: "Domino's Pizza",platform: 'Rappi' },
     '4136':  { name: "Little Caesars",platform: 'Rappi' },
-    // Rappi – vs. Chinawok
+    // Rappi – Competencia vs. Chinawok
     '73245': { name: "Wanta Chifa",   platform: 'Rappi' },
     '13399': { name: "Chifa Express", platform: 'Rappi' },
-    // Rappi – vs. Dunkin
+    // Rappi – Competencia vs. Dunkin
     '38002': { name: "Starbucks",    platform: 'Rappi' },
     '79108': { name: "Juan Valdez",  platform: 'Rappi' },
     '66914': { name: "Cinnabon",     platform: 'Rappi' },
-    // Rappi – vs. Don Belisario
+    // Rappi – Competencia vs. Don Belisario
     '4580':  { name: "Pardos Chicken", platform: 'Rappi' },
     '5341':  { name: "Rokys",          platform: 'Rappi' },
-    // Propios – vs. Bembos
+    // ── Propios – vs. Bembos ────────────────────
     'mcd-izaguirre-iza':   { name: "McDonald's - Izaguirre",   platform: 'Propio' },
     'burgerking-pe':       { name: "Burger King",               platform: 'Propio' },
-    // Propios – vs. Popetes
+    // Propios – vs. Popeyes
     'kfc-pe':              { name: "KFC",                       platform: 'Propio' },
     'yopo-pe':             { name: "Yopo",                      platform: 'Propio' },
     // Propios – vs. Papa Johns
@@ -167,6 +174,7 @@ app.get('/api/results', (req, res) => {
                 id: storeId,
                 name: meta.name,
                 platform: meta.platform,
+                local: content[0]?.restaurant || 'Sin información de local',
                 lastUpdated: mtime,
                 products: content,
                 csvFile: `products_${storeId}.csv`

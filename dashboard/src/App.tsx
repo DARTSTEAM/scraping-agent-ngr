@@ -64,6 +64,16 @@ const NGR_GROUPS = [
   },
 ];
 
+// NGR own brands on Rappi
+const NGR_OWN_RAPPI = [
+  { name: "Bembos",        url: "https://www.rappi.com.pe/restaurantes/1109-bembos",          id: '1109',  platform: 'Rappi' },
+  { name: "Popeyes",       url: "https://www.rappi.com.pe/restaurantes/95275-popeyes",        id: '95275', platform: 'Rappi' },
+  { name: "Dunkin'",       url: "https://www.rappi.com.pe/restaurantes/61955-dunkin",          id: '61955', platform: 'Rappi' },
+  { name: "Papa Johns",    url: "https://www.rappi.com.pe/restaurantes/1121-papa-johns",      id: '1121',  platform: 'Rappi' },
+  { name: "Don Belisario", url: "https://www.rappi.com.pe/restaurantes/1190-don-belisario",    id: '1190',  platform: 'Rappi' },
+  { name: "Chinawok",      url: "https://www.rappi.com.pe/restaurantes/10266-chinawok-chifa",  id: '10266', platform: 'Rappi' },
+];
+
 // NGR own brands and their own-site menus, grouped by brand
 const NGR_OWN_GROUPS = [
   {
@@ -111,6 +121,7 @@ const NGR_OWN_GROUPS = [
 
 // Flat list for lookups / scraper dispatch
 const COMPETITORS = [
+  ...NGR_OWN_RAPPI,
   ...NGR_GROUPS.flatMap(g => g.competitors),
   ...NGR_OWN_GROUPS.flatMap(g => g.stores),
 ];
@@ -127,6 +138,7 @@ interface CompetitorData {
   id: string;
   name: string;
   platform: string;
+  local: string;
   lastUpdated: string;
   products: Product[];
   csvFile: string;
@@ -267,6 +279,11 @@ export default function App() {
                     <option value="">Seleccionar...</option>
                     {activeTab === 'competitors' ? (
                       <>
+                        <optgroup label="MARCAS PROPIAS">
+                          {NGR_OWN_RAPPI.map(brand => (
+                            <option key={brand.id} value={brand.id}>{brand.name}</option>
+                          ))}
+                        </optgroup>
                         {NGR_GROUPS.map(group => (
                           <optgroup key={group.ngrLocal} label={`vs. ${group.ngrLocal.toUpperCase()}`}>
                             {group.competitors.map(comp => (
@@ -288,6 +305,16 @@ export default function App() {
                     )}
                   </select>
                   <ChevronDownIcon className="w-4 h-4 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+                </div>
+              </div>
+
+              <div className="p-4 bg-slate-50 rounded-xl flex items-center gap-4">
+                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center border border-slate-200">
+                  <BuildingOfficeIcon className="w-5 h-5 text-indigo-400" />
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Local / Sucursal</p>
+                  <p className="text-sm font-bold text-slate-900 truncate max-w-[200px]" title={currentCompData?.local}>{currentCompData?.local || 'Sin datos'}</p>
                 </div>
               </div>
 
