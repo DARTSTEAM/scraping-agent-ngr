@@ -46,6 +46,7 @@ COPY digifood_scraper.js ./
 COPY starbucks_scraper.js ./
 COPY rokys_scraper.js ./
 COPY kernel_browser.js ./
+COPY magento_scraper.js ./
 COPY check_mcd.js ./
 COPY dump_mcd.js ./
 COPY extract_nuxt.js ./

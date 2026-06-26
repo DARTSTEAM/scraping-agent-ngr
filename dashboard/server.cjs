@@ -225,18 +225,10 @@ app.post('/api/update', (req, res) => {
         scriptName = 'starbucks_scraper.js';
     } else if (url.includes('rokys.com')) {
         scriptName = 'rokys_scraper.js';
-    } else if (url.includes('bembos.com.pe')) {
-        scriptName = 'bembos_scraper.js';
-    } else if (url.includes('popeyes.com.pe')) {
-        scriptName = 'popeyes_scraper.js';
-    } else if (url.includes('papajohns.com.pe')) {
-        scriptName = 'papajohns_scraper.js';
-    } else if (url.includes('dunkin.pe')) {
-        scriptName = 'dunkin_scraper.js';
-    } else if (url.includes('donbelisario.com.pe')) {
-        scriptName = 'donbelisario_scraper.js';
-    } else if (url.includes('chinawok.com.pe')) {
-        scriptName = 'chinawok_scraper.js';
+    } else if (url.includes('bembos.com.pe') || url.includes('popeyes.com.pe') ||
+               url.includes('papajohns.com.pe') || url.includes('dunkin.pe') ||
+               url.includes('donbelisario.com.pe') || url.includes('chinawok.com.pe')) {
+        scriptName = 'magento_scraper.js';
     }
 
     const scriptPath = path.join(SCRAPERS_DIR, scriptName);
