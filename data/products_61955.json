@@ -1,0 +1,1302 @@
+[
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Duo Pink",
+    "description": "El doble de sabor, el doble de actitud. Comparte o disfruta dos Bebidas Pink y vive la experiencia It's Giving Pink.",
+    "price": 28.9,
+    "originalPrice": 28.9,
+    "productId": 3173902,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Trio Pink",
+    "description": "Porque el rosa se disfruta mejor en grupo. Tres Bebidas Pink para compartir momentos llenos de color y sabor.",
+    "price": 39.9,
+    "originalPrice": 39.9,
+    "productId": 3173903,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Pink Snack",
+    "description": "Un snack perfecto para cualquier momento. Disfruta una refrescante Bebida Pink acompañada de 5 irresistibles Munchkins, ideales para compartir… o no.",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 3173904,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Pink Combo",
+    "description": "La combinación perfecta para disfrutar el lado más pink. Elige tu Bebida Pink favorita y acompáñala con una deliciosa dona clásica.",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 3173901,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Strawberry Cloud Energy",
+    "description": "Bebida preparada con Monster Energy®, hielo y un delicioso sabor a fresa, coronada con una suave espuma que brinda una textura ligera y una experiencia refrescante en cada sorbo.",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 3173898,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Refresher Pitahaya Pink",
+    "description": "Refrescante bebida con el exótico sabor de pitahaya, ideal para disfrutar una opción frutal, ligera y llena de frescura.",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 3173897,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Iced Vanilla Cloud Latte",
+    "description": "Delicioso latte frío preparado con espresso y leche, coronado con una suave espuma sabor vainilla que aporta una textura ligera y un toque dulce en cada sorbo.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 3173896,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Hot Pink",
+    "description": "Más intensa, más atrevida y lista para robarse todas las miradas. Hot Pink está cubierta con un vibrante glaseado rosa y chispas rojas que le aportan un look audaz y lleno de personalidad. Una dona hecha para quienes viven el momento y lo hacen en grande.",
+    "price": 6.5,
+    "originalPrice": 6.5,
+    "productId": 3173900,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Pink",
+    "name": "Pink Glow",
+    "description": "Una dona que brilla por sí sola. Pink Glow combina un suave glaseado rosa con delicadas chispas rosadas que le dan un toque dulce, divertido y lleno de estilo. El snack perfecto para quienes saben que el rosa nunca pasa de moda.",
+    "price": 6.5,
+    "originalPrice": 6.5,
+    "productId": 3173899,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Donuts X6 Clásicas",
+    "description": "Disfruta de 6 deliciosas donuts clásicas a elección.",
+    "price": 25.78,
+    "originalPrice": 25.78,
+    "productId": 1133161,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Donuts X12 Clásicas",
+    "description": "Disfruta de 12 deliciosas donuts clásicas a elección.",
+    "price": 40.26,
+    "originalPrice": 40.26,
+    "productId": 1133042,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Big Deal 18",
+    "description": "Disfruta de 18 deliciosas donuts clásicas a elección.",
+    "price": 117,
+    "originalPrice": 117,
+    "productId": 1133198,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Cuatroferta Clásica",
+    "description": "Disfruta de 4 deliciosas donuts clásicas a elección.",
+    "price": 21.9,
+    "originalPrice": 21.9,
+    "productId": 1133331,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Donuts X4 Clásicas + Munchkins X10",
+    "description": "Disfruta de 4 deliciosas donuts clásicas a elección y 10 Munchkins",
+    "price": 30.9,
+    "originalPrice": 30.9,
+    "productId": 1133048,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "10 Donuts Nuevos Usuarios",
+    "description": "Disfruta de 10 donuts clásicas a elección.",
+    "price": 65,
+    "originalPrice": 65,
+    "productId": 1132997,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Dunkin N Share",
+    "description": "6 donuts clásicas y 2 bebidas Dunkin' 12 oz a elección.",
+    "price": 27.11,
+    "originalPrice": 27.11,
+    "productId": 1132619,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Dunkin N Party",
+    "description": "12 donuts clásicas y 4 bebidas Dunkin' 12 oz a elección.",
+    "price": 51.9,
+    "originalPrice": 51.9,
+    "productId": 1133337,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Dulce Combinación",
+    "description": "4 donuts clásicas y 2 bebidas Dunkin' 12 oz a elección.",
+    "price": 20.76,
+    "originalPrice": 20.76,
+    "productId": 1132774,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Duo Dunkin",
+    "description": "1 donut clásica y 1 bebida Dunkin' 12 oz a elección.",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 1133004,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "8 Donuts Sorpresa",
+    "description": "Disfruta de 8 donuts clásicas aleatorias (mínimo 3 variedades diferentes).",
+    "price": 23.7,
+    "originalPrice": 23.7,
+    "productId": 1132945,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Donuts X10 Clásicas",
+    "description": "Disfruta de 10 donuts clásicas a elección.",
+    "price": 39.9,
+    "originalPrice": 39.9,
+    "productId": 1132882,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Rappi Promos",
+    "name": "Donuts X8 Clásicas Fin de Semana",
+    "description": "Disfruta de 8 donuts clásicas a elección. Promoción exclusiva de viernes a domingo.",
+    "price": 29.9,
+    "originalPrice": 29.9,
+    "productId": 1132731,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Novedades",
+    "name": "Minions X6 Premium",
+    "description": "6 donuts premium a elección",
+    "price": 35,
+    "originalPrice": 35,
+    "productId": 2819183,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Novedades",
+    "name": "Minions X6 Clásicas y Premium",
+    "description": "4 donuts clásicas y 2 donuts premium a elección",
+    "price": 32,
+    "originalPrice": 32,
+    "productId": 2819184,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Novedades",
+    "name": "Minions X12 Clásicas y Premium",
+    "description": "8 donuts clásicas y 4 donuts premium a elección",
+    "price": 49,
+    "originalPrice": 49,
+    "productId": 2819186,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Novedades",
+    "name": "Minions X12 Premium",
+    "description": "12 donuts premium a elección",
+    "price": 57,
+    "originalPrice": 57,
+    "productId": 2819187,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Novedades",
+    "name": "Minions X4 Premium",
+    "description": "4 donuts premium a elección",
+    "price": 28,
+    "originalPrice": 28,
+    "productId": 2819188,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Duo Snack",
+    "description": "La combinación perfecta para un break dulce: disfruta 1 donut Dunkin acompañada de tus bebidas favoritas. Ideal para compartir o darte un antojo a cualquier hora del día",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 3089618,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Matcha Lover",
+    "description": "Para los verdaderos fans del matcha: disfruta 1 bebida Matcha acompañada de 1 donut Dunkin. El combo perfecto para un break dulce y refrescante.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 3089620,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Frozen Snack Combo",
+    "description": "Tu frappe favorito junto a 2 donuts clásicas para disfrutar un combo lleno de sabor y antojo en cualquier momento del día.",
+    "price": 24.9,
+    "originalPrice": 24.9,
+    "productId": 3089622,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Morning Value",
+    "description": "Empieza tu mañana con un Café Dunkin acompañado de 1 donut clásica. El combo perfecto para arrancar el día.",
+    "price": 9.9,
+    "originalPrice": 9.9,
+    "productId": 3089624,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Dunkin Snack",
+    "description": "Tu Café Dunkin favorito junto a 5 Munchkins para disfrutar un desayuno rápido y delicioso.",
+    "price": 10.9,
+    "originalPrice": 10.9,
+    "productId": 3089626,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Hat Trick Combo",
+    "description": "Disfruta un Iced Americano acompañado de 1 donut clásica y 1 Dunwich Cheese. El mix ideal entre dulce y salado.",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 3089627,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Daily Duo",
+    "description": "Tu Café Dunkin favorito acompañado de un Dunwich recién preparado. El combo ideal para empezar el día con el balance perfecto entre café y sabor",
+    "price": 10.9,
+    "originalPrice": 10.9,
+    "productId": 3089629,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Matcha Fuel Combo",
+    "description": "Energía y sabor en un solo combo: Bebida Dunkin Matcha junto a un Dunwich Mixto.",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 3089630,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Protein Morning",
+    "description": "Disfruta un Protein Latte acompañado de sandwich para una mañana con más energía y sabor",
+    "price": 31.9,
+    "originalPrice": 31.9,
+    "productId": 3089631,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Sweet Pair",
+    "description": "Disfruta 2 bebidas Dunkin de tu sabor favorito acompañadas de 2 donuts clásicas. El combo ideal para compartir algo dulce en cualquier momento del día",
+    "price": 31.9,
+    "originalPrice": 31.9,
+    "productId": 3089632,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Oreo Individual",
+    "description": "Disfruta 1 bebida Oreo acompañada de 1 donut clásica. El combo perfecto para darte un antojo lleno de sabor.",
+    "price": 19.11,
+    "originalPrice": 19.11,
+    "productId": 3089634,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Oreo Duo",
+    "description": "Comparte el lado más dulce de Dunkin con 2 Frappes Oreo llenos de sabor y cremosidad.",
+    "price": 26.9,
+    "originalPrice": 26.9,
+    "productId": 3089636,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Oreo Duo Meal",
+    "description": "2 bebidas Oreo y 2 Dunwichs. El combo ideal para compartir entre dulce y salado.",
+    "price": 39.9,
+    "originalPrice": 39.9,
+    "productId": 3089639,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Coffe Run Combo",
+    "description": "La dupla perfecta para tu mañana: Café Dunkin y sandwich recién preparado.",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 3089640,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "La Previa",
+    "description": "24 donuts clásicas y 6 bebidas Dunkin 12 oz para disfrutar cada partido con el combo perfecto para compartir entre amigos, oficina o el team completo.",
+    "price": 99,
+    "originalPrice": 99,
+    "productId": 3089642,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Tiempo Extra Combo",
+    "description": "3 bebidas Dunkin y 3 Dunwichs para acompañar cada momento del partido.",
+    "price": 41.9,
+    "originalPrice": 41.9,
+    "productId": 3089643,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Barra Brava",
+    "description": "2 Box O Joe acompañados de 36 donuts para compartir en grande.",
+    "price": 189,
+    "originalPrice": 189,
+    "productId": 3089644,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Docena Mundialista",
+    "description": "12 donuts clásicas perfectas para compartir durante cada partido.",
+    "price": 41.9,
+    "originalPrice": 41.9,
+    "productId": 3089645,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Combos",
+    "name": "Duo Proteico",
+    "description": "Disfruta de una bebida Protein y un delicioso sándwich en un solo combo. La combinación perfecta para recargar energías con una opción práctica, deliciosa y con un extra de proteína para acompañarte durante el día.",
+    "price": 29.8,
+    "originalPrice": 29.8,
+    "productId": 3175093,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Sandwich",
+    "name": "Dunwich Mixto",
+    "description": "Deliciosa donut glaseada con jamón y queso.",
+    "price": 9.9,
+    "originalPrice": 9.9,
+    "productId": 1133052,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Sandwich",
+    "name": "Combo Dunwich Mixto",
+    "description": "Disfruta de un deliciosa Dunwchi Mixto + 1 bebida Dunkin' 12 oz.",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 1132711,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Sandwich",
+    "name": "Combo Dunwich Bacon",
+    "description": "Disfruta de un deliciosa Dunwchi Bacon + 1 bebida Dunkin' 12 oz.",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 1133109,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Sandwich",
+    "name": "Croissant de Jamón Inglés y Queso",
+    "description": "Delicioso Croissant relleno de jamón ingles y queso",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 2346878,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Sandwich",
+    "name": "Ciabatta de pollo y apio",
+    "description": "Delicioso ciabatta relleno de pollo y apio",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 2346879,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Sandwich",
+    "name": "Panini Jamón Inglés y Queso",
+    "description": "Delicioso panini relleno de jamón inglés y queso",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 2346880,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Sandwich",
+    "name": "Croissant huevo y tocino",
+    "description": "Delicioso Croissant relleno de huevo revuelto y tocino",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 2346881,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Sandwich",
+    "name": "Panini Jamón ahumado y queso",
+    "description": "Delicioso panini relleno de jamón ahumado y queso",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 2346882,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Popping Bubbles Frozen Fresa",
+    "description": "Frozen de jarabe de fresa, leche con Popping Bubbles. Opcional chantilly.",
+    "price": 18.9,
+    "originalPrice": 18.9,
+    "productId": 1132851,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Frozen Moccha",
+    "description": "Frozen de café expresso, leche y jarabe de chocolate. Opcional chantilly y topping de chocolate.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1132639,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Frozen Oreo",
+    "description": "Frozen con trozos de Oreo. Opcional chantillí.",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 1133121,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Frozen Caramel",
+    "description": "Frozen de café expresso, leche y jarabe de caramelo. Adicional topping de caramelo.",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 1132644,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Frozen Chocolate",
+    "description": "Frozen de jarabe de chocolate y leche con opcional chantilly.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1133214,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Frozen Fresa",
+    "description": "Frozen de jarabe de fresa y leche. Opcional chantilly.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1133063,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Frozen Vainilla",
+    "description": "Frozen de jarabe de vainilla y leche. Opcional chantilly.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1133177,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Frozen White Chocolate Moccha",
+    "description": "Frozen de jarabe de chocolate blanco, leche y café expresso. Opcional chantillí.",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 1132560,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Popping Bubbles Iced Caramel",
+    "description": "Bebida fría de café expresso, leche, jarabe de caramelo y Popping Bubbles, servido sobre hielo.",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 1133287,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Popping Bubbles Cool Lemonade Sandía",
+    "description": "Bebida fría con limonada, sabor sandía y Popping Bubbles.",
+    "price": 18.9,
+    "originalPrice": 18.9,
+    "productId": 1132971,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Caramel",
+    "description": "Bebida fría de café expresso, leche y jarabe de caramelo, servido sobre hielo.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1132651,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Latte",
+    "description": "Bebida fría de café expresso y leche, servido sobre hielo. Sin endulzantes.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1133245,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Oreo Matcha",
+    "description": "Matcha cremoso + trozos de Oreo en una mezcla demasiado fresca y crunchy. El balance perfecto entre sweet y chill.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 2819191,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Oreo Mocha",
+    "description": "Café helado con caramelo suave, crema y el toque irresistible de Oreo para activar tu lado más dulce.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 2819192,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Oreo Caramel",
+    "description": "La mezcla intensa de mocha y Oreo en un iced ultra cremoso que convierte cualquier momento en un mood chocolatísimo.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 2819193,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Cool Lemonade Pitahaya",
+    "description": "Bebida fría con limonada sabor pitahaya.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1276633,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Cool Lemonade Sandía",
+    "description": "Bebida fría con limonada sabor sandía.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1133074,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Cool Lemonade Mora Manzana",
+    "description": "Bebida fría con limonada sabor mora manzana.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1132740,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Cool Lemonade Manzana",
+    "description": "Bebida fría con limonada sabor manzana.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1133255,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Jugo Naranja 16 oz",
+    "description": "Refrescante jugo de Naranja 16 oz.",
+    "price": 10.9,
+    "originalPrice": 10.9,
+    "productId": 1132779,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Matcha Latte",
+    "description": "Bebida de leche y matcha, servido sobre hielo.",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 2086922,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Latte Protein Matcha",
+    "description": "Bebida fría de leche, matcha y Whey Protein, servido sobre hielo.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 2086923,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Latte Protein Caramel",
+    "description": "Bebida fría de café expresso, leche, jarabe de caramelo y Whey Protein, servido sobre hielo.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 2086924,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Latte Protein Mocha",
+    "description": "Bebida fría de café expresso, leche, jarabe de chocolate y Whey Protein, servido sobre hielo.",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 2086925,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Latte Protein Vainilla",
+    "description": "Bebida fría de café expresso, leche, jarabe de vainilla y Whey Protein, servido sobre hielo.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 2086926,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Coffe",
+    "description": "Café Dunkin' servido sobre hielo. Refrescante, ligero y perfecto para disfrutar tu café favorito en cualquier momento.",
+    "price": 8.9,
+    "originalPrice": 8.9,
+    "productId": 3125421,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Refresher Tangerine",
+    "description": "Bebida fría con limonada sabor tangerine.",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 2086927,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Refresher Mango Piña",
+    "description": "Bebida fría con limonada sabor Mago Piña.",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 2086928,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Dot Frappe Vainilla",
+    "description": "La tendencia más viral ahora en versión frappe. Nuestro cremoso frappe de vainilla se corona con abundante crema chantilly y una explosión de mini grageas multicolor que aportan el toque perfecto de diversión y crunch. Dulce, colorido e imposible de ignor",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 3101244,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Dot Frappe Matcha",
+    "description": "El favorito de los matcha lovers ahora con un giro viral. Un refrescante frappe de matcha coronado con crema chantilly y una lluvia de mini grageas multicolor que transforman cada sorbo en una experiencia única, divertida y llena de color.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 3101245,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Dot Frappe White Chocolate",
+    "description": "Nuestro cremoso White Chocolate Frappe se reinventa con el toque Dot: una explosión de mini grageas multicolor sobre una suave corona de chantilly que transforma cada sorbo en una experiencia dulce, divertida y totalmente viral",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 3101246,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Duo Dot Frappe",
+    "description": "Comparte el sabor de la tendencia más viral con 2 Dot Frappes de cualquier sabor. Disfruta dos deliciosos frappes coronados con abundante crema chantilly y miles de mini grageas multicolor que convierten cada sorbo en una experiencia divertida, colorida e",
+    "price": 27.9,
+    "originalPrice": 27.9,
+    "productId": 3101247,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Protein Mocha Blanco",
+    "description": "Disfruta la combinación perfecta de café, chocolate blanco y proteína en una bebida helada, cremosa y llena de sabor. Ideal para refrescarte mientras disfrutas de un toque indulgente.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 3162541,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "2 Iced Protein Mocha Blanco",
+    "description": "Todos los martes son Dunkin Day. Aprovecha el 2 x S/. 21.90 en Iced Protein Mocha Blanco y disfruta el doble de sabor con una bebida refrescante que combina chocolate blanco y proteína en cada sorbo. ¡Porque los martes saben mejor en Dunkin!",
+    "price": 21.9,
+    "originalPrice": 21.9,
+    "productId": 3162542,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Iced Strawberry Matcha Protein",
+    "description": "Disfruta la combinación perfecta entre la dulzura de la fresa y las notas naturales del matcha en una refrescante bebida preparada con leche y Whey Protein, servida sobre hielo. Cremosa, deliciosa y con un extra de proteína para darle un impulso a tu día.",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 3175091,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Frías",
+    "name": "Caramel Protein Frappe",
+    "description": "Refrescante frappé preparado con hielo, leche, salsa de caramelo y Whey Protein, coronado con crema batida y un delicioso drizzle de caramelo. Una bebida cremosa y deliciosa con un extra de proteína para acompañarte en cualquier momento del día.",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 3175092,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Calientes",
+    "name": "Cafe Dunkin",
+    "description": "Café filtrado con selectos granos tostado de café Dunkin' original. Sin endulzantes.",
+    "price": 9.9,
+    "originalPrice": 9.9,
+    "productId": 1133189,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Calientes",
+    "name": "Capuccino",
+    "description": "Café expresso con espuma de leche. Sin endulzantes.",
+    "price": 11.9,
+    "originalPrice": 11.9,
+    "productId": 1133086,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Calientes",
+    "name": "Latte",
+    "description": "Café expresso con leche vaporizada y espuma de leche. Sin endulzantes.",
+    "price": 11.9,
+    "originalPrice": 11.9,
+    "productId": 1132915,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Calientes",
+    "name": "Moccha Latte",
+    "description": "Café expresso con leche vaporizada, espuma de leche y jarabe de chocolate.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1132982,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Calientes",
+    "name": "Caramel Latte",
+    "description": "Café expresso con leche vaporizada, espuma de leche y jarabe de caramelo.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1133318,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Calientes",
+    "name": "White Chocolate Moccha Latte",
+    "description": "Café expresso con leche vaporizada, espuma de leche y jarabe de chocolate blanco.",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 1132663,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Calientes",
+    "name": "Chocolate Caliente",
+    "description": "Leche vaporizada y jarabe de chocolate",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1133266,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Bebidas Calientes",
+    "name": "Café Blend Original 435 gr",
+    "description": "Disfruta de nuestro Café Blend Original 435gr. Selección de granos de la mejor calidad.",
+    "price": 39.9,
+    "originalPrice": 39.9,
+    "productId": 1133307,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Bavaria",
+    "description": "Donut espolvoreada con azúcar, rellena de crema pastelera.",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1132759,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Carita Feliz",
+    "description": "Donut con cobertura de azúcar, rellena de crema pastelera y sonrisa de chocolate.",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1133132,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Boston Cream",
+    "description": "Donut con cobertura de chocolate, rellena de crema pastelera.",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1132669,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Chocolate Arcoiris",
+    "description": "Anillo con cobertura de chocolate y grageas de colores.",
+    "price": 6.5,
+    "originalPrice": 6.5,
+    "productId": 1133095,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Glaseada",
+    "description": "Anillo glaseado de azúcar.",
+    "price": 6.5,
+    "originalPrice": 6.5,
+    "productId": 1132805,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Fresa Arcoiris",
+    "description": "Anillo con cobertura sabor fresa y grageas de colores.",
+    "price": 6.5,
+    "originalPrice": 6.5,
+    "productId": 1132766,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Vainilla Arcoiris",
+    "description": "Anillo con cobertura sabor vainilla y grageas de colores.",
+    "price": 6.5,
+    "originalPrice": 6.5,
+    "productId": 1132772,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Tutti Frutti Arcoiris",
+    "description": "Anillo con cobertura sabor tutti y grageas de colores.",
+    "price": 6.5,
+    "originalPrice": 6.5,
+    "productId": 1132626,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Lentejitas",
+    "description": "Anillo con cobertura de chocolate y topping de lentejitas.",
+    "price": 7.5,
+    "originalPrice": 7.5,
+    "productId": 1132860,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Gomi",
+    "description": "Donut decorada con cobertura, diseño exclusivo de minions y relleno de manjar",
+    "price": 7.5,
+    "originalPrice": 7.5,
+    "productId": 2819179,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "James",
+    "description": "Donut decorada con cobertura, diseño exclusivo de minions y relleno de crema pastelera",
+    "price": 7.5,
+    "originalPrice": 7.5,
+    "productId": 2819178,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Oreo Caramel",
+    "description": "Donut decorada con Oreo vainilla, tiritas de caramelo y rellena de caramelo.",
+    "price": 7.5,
+    "originalPrice": 7.5,
+    "productId": 2819181,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Donuts",
+    "name": "Oreo Mocha",
+    "description": "Donut decorada con Oreo, tiritas de caramelo y rellena de crema mocha.",
+    "price": 7.5,
+    "originalPrice": 7.5,
+    "productId": 2819182,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Boxes Para Compartir",
+    "name": "Box O' Joe",
+    "description": "Disfruta de nuestro exquisito café con este Box que incluye 10 bebidas de café Dunkin' con todos los implementos necesarios para compartir.",
+    "price": 89,
+    "originalPrice": 89,
+    "productId": 1132867,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Boxes Para Compartir",
+    "name": "Box O' Joe Donuts",
+    "description": "Disfruta de nuestro exquisito café con este Box que incluye 10 bebidas de café Dunkin' y 12 donuts clásicas a elección con todos los implementos necesarios para compartir.",
+    "price": 167,
+    "originalPrice": 167,
+    "productId": 1133321,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Boxes Para Compartir",
+    "name": "Box O Joe Sandwich",
+    "description": "10 sandwiches + café Dunkin para compartir",
+    "price": 146,
+    "originalPrice": 146,
+    "productId": 3092568,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Boxes Para Compartir",
+    "name": "Box O Joe Dunwichs",
+    "description": "10 Dunwichs + café Dunkin. El combo perfecto para el team",
+    "price": 119,
+    "originalPrice": 119,
+    "productId": 3092570,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Boxes Para Compartir",
+    "name": "Box O Joe Mixto (Dunwich + Donuts)",
+    "description": "Dunwichs + donuts + café Dunkin = combo ganador",
+    "price": 106,
+    "originalPrice": 106,
+    "productId": 3128066,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Boxes Para Compartir",
+    "name": "Box O Joe Mixto (Sandwich + Donuts)",
+    "description": "Sandwiches, donuts y café para compartir",
+    "price": 129,
+    "originalPrice": 129,
+    "productId": 3128068,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Boxes Para Compartir",
+    "name": "Box O Joe Munchkins",
+    "description": "50 munchkins + café Dunkin para compartir con todos",
+    "price": 86,
+    "originalPrice": 86,
+    "productId": 3128069,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Detalles Dunkin",
+    "name": "Donut Clásica x6 Happy Birthday",
+    "description": "!Detalle perfecto! Caja con motivo Happy Birthday + 6 donuts clásicas a elección.",
+    "price": 30.9,
+    "originalPrice": 30.9,
+    "productId": 1132780,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Detalles Dunkin",
+    "name": "Donut Clásica x6 With Love",
+    "description": "!Detalle perfecto! Caja con motivo With Love + 6 donuts clásicas a elección.",
+    "price": 30.9,
+    "originalPrice": 30.9,
+    "productId": 1132590,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Merch",
+    "name": "Vaso Escarchado Dunkin Naranja",
+    "description": "Botella de doble pared y brillo con capacidad de 450ml.",
+    "price": 29.9,
+    "originalPrice": 29.9,
+    "productId": 1132679,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Gaseosas",
+    "name": "Inca Kola Sabor Original 500 ml",
+    "description": "Inca Kola Sabor Original 500 Ml",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1132688,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Gaseosas",
+    "name": "Inca Kola Sin Azúcar 500 ml",
+    "description": "Inca Kola Sin Azúcar 500 Ml",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1133151,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Gaseosas",
+    "name": "Coca Cola Sabor Original 500 ml",
+    "description": "Coca Cola Sabor Original 500 Ml",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1132812,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Gaseosas",
+    "name": "Coca Cola Sin Azúcar 500 ml",
+    "description": "Coca Cola Sin Azúcar 500 Ml",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1132793,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Pro",
+    "name": "Donuts X6 Clásicas Pro",
+    "description": "6 Donuts clásicas a elección. Promoción exclusiva para usuarios Pro.",
+    "price": 39,
+    "originalPrice": 39,
+    "productId": 1133268,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Pro",
+    "name": "Donuts X12 Clásicas + 2 Gaseosas Pro",
+    "description": "12 Donuts clásicas y 2 gaseosas de 500 ml. Promoción exclusiva para usuarios Pro.",
+    "price": 89.8,
+    "originalPrice": 89.8,
+    "productId": 1133270,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Pro",
+    "name": "Donuts X18 Clásicas Pro",
+    "description": "18 Donuts clásicas a elección. Promoción exclusiva para usuarios Pro.",
+    "price": 117,
+    "originalPrice": 117,
+    "productId": 1132875,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Pro",
+    "name": "8x4 Clásicas Pro",
+    "description": "8 donuts clásicas. Promoción exclusiva para usuario Pro. ruc: 20144215649 razón social: nutra s.a.c.",
+    "price": 52,
+    "originalPrice": 52,
+    "productId": 1132729,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dunkin - Leuro",
+    "category": "Dunkin Pro",
+    "name": "Dulce Combinación Pro",
+    "description": "4 donuts clásicas y 2 bebidas Dunkin' 12 oz a elección.",
+    "price": 41.4,
+    "originalPrice": 41.4,
+    "productId": 2278248,
+    "inStock": true
+  }
+]

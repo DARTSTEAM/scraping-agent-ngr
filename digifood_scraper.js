@@ -19,38 +19,67 @@ async function scrapeDigifood(url, restaurantName, storeId) {
     });
 
     const page = await context.newPage();
-    const results = [];
+    let results = [];
+    const origin = (() => { try { return new URL(url).origin; } catch { return ''; } })();
 
     try {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
         await page.waitForSelector('article', { timeout: 20000 }).catch(() => {});
         await page.waitForTimeout(2000);
 
-        // Detect pagination
-        let totalPages = 1;
-        try {
-            const pageNums = await page.$$eval(
-                'nav button, [class*="pagination"] button, [class*="pager"] button',
-                btns => btns.map(b => parseInt(b.textContent?.trim())).filter(n => !isNaN(n) && n > 0)
-            );
-            if (pageNums.length > 0) totalPages = Math.max(...pageNums);
-        } catch (_) {}
+        // On /carta sites (Wanta & other BK-style Digifood menus) each category is a
+        // route /carta/<slug>. Scrape per-category so products carry a real category.
+        const categories = await page.evaluate(() => {
+            const seen = new Map();
+            for (const a of document.querySelectorAll('a[href*="/carta/"]')) {
+                const href = a.getAttribute('href') || '';
+                const m = href.match(/^\/carta\/([a-z0-9-]+)\/?$/i);
+                if (!m || m[1].toLowerCase() === 'ver-todo') continue;
+                let text = (a.textContent || '').trim();
+                const half = text.slice(0, text.length / 2);
+                if (text.length % 2 === 0 && half === text.slice(text.length / 2)) text = half; // de-double
+                if (!seen.has(href) && text) seen.set(href, { href, name: text });
+            }
+            return [...seen.values()];
+        });
 
-        console.log(`Total de páginas: ${totalPages}`);
+        if (categories.length > 0 && origin) {
+            console.log(`Categorías detectadas: ${categories.length} → ${categories.map(c => c.name).join(', ')}`);
+            const nameToCategory = new Map();
+            for (const cat of categories) {
+                const catUrl = cat.href.startsWith('http') ? cat.href : `${origin}${cat.href}`;
+                const catProducts = await scrapeCategoryPage(page, catUrl, cat.name, restaurantName);
+                console.log(`  → ${cat.name}: ${catProducts.length} productos`);
+                for (const p of catProducts) if (!nameToCategory.has(p.name)) nameToCategory.set(p.name, cat.name);
+            }
+            // Full ver-todo pass for coverage; tag with the mapped category.
+            const all = await scrapeCategoryPage(page, `${origin}/carta/ver-todo`, 'Otros', restaurantName);
+            results = all.map(p => ({ ...p, category: nameToCategory.get(p.name) || 'Otros' }));
+            console.log(`Cobertura ver-todo: ${all.length} · con categoría mapeada: ${all.filter(p => nameToCategory.has(p.name)).length}`);
+        } else {
+            // /pedir sites (Chifa Express, Cinnabon): flat paginated flow.
+            let totalPages = 1;
+            try {
+                const pageNums = await page.$$eval(
+                    'nav button, [class*="pagination"] button, [class*="pager"] button',
+                    btns => btns.map(b => parseInt(b.textContent?.trim())).filter(n => !isNaN(n) && n > 0)
+                );
+                if (pageNums.length > 0) totalPages = Math.max(...pageNums);
+            } catch (_) {}
 
-        for (let p = 1; p <= totalPages; p++) {
-            console.log(`Procesando página ${p} de ${totalPages}...`);
-            await page.waitForSelector('article', { timeout: 15000 }).catch(() => {});
-            await autoScroll(page);
-
-            const pageProducts = await extractProducts(page, restaurantName);
-            console.log(`  → ${pageProducts.length} productos en página ${p}`);
-            results.push(...pageProducts);
-
-            if (p < totalPages) {
-                const clicked = await clickNext(page);
-                if (!clicked) break;
-                await page.waitForTimeout(3000);
+            console.log(`Total de páginas: ${totalPages}`);
+            for (let p = 1; p <= totalPages; p++) {
+                console.log(`Procesando página ${p} de ${totalPages}...`);
+                await page.waitForSelector('article', { timeout: 15000 }).catch(() => {});
+                await autoScroll(page);
+                const pageProducts = await extractProducts(page, restaurantName);
+                console.log(`  → ${pageProducts.length} productos en página ${p}`);
+                results.push(...pageProducts);
+                if (p < totalPages) {
+                    const clicked = await clickNext(page);
+                    if (!clicked) break;
+                    await page.waitForTimeout(3000);
+                }
             }
         }
 
@@ -61,6 +90,25 @@ async function scrapeDigifood(url, restaurantName, storeId) {
     }
 
     return saveUnique(results, storeId, restaurantName);
+}
+
+// Navigate to a category route, load all cards, and return its products.
+async function scrapeCategoryPage(page, categoryUrl, categoryName, restaurantName) {
+    await page.goto(categoryUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.waitForSelector('article', { timeout: 20000 }).catch(() => {});
+    await page.waitForTimeout(1500);
+    const out = [];
+    for (let guard = 0; guard < 30; guard++) {
+        await autoScroll(page);
+        const products = await extractProducts(page, restaurantName);
+        out.push(...products.map(p => ({ ...p, category: categoryName })));
+        const clicked = await clickNext(page);
+        if (!clicked) break;
+        await page.waitForTimeout(2500);
+    }
+    // de-dupe within the category by name
+    const seen = new Set();
+    return out.filter(p => (seen.has(p.name) ? false : (seen.add(p.name), true)));
 }
 
 async function autoScroll(page) {
@@ -143,8 +191,9 @@ async function extractProducts(page, restaurantName) {
 function saveUnique(results, storeId, restaurantName) {
     const seen = new Set();
     const unique = results.filter(p => {
-        if (!p.name || seen.has(p.name)) return false;
-        seen.add(p.name);
+        const key = `${p.name}||${p.category || ''}`;
+        if (!p.name || seen.has(key)) return false;
+        seen.add(key);
         return true;
     });
 

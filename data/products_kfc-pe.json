@@ -1,142 +1,682 @@
 [
   {
-    "restaurant": "KFC",
-    "category": "Ver todo",
-    "name": "Mega Futbolero",
-    "description": "6 Piezas de Pollo + 6 Hot Wings o Nuggets + 1 Complemento Familiar + 1 Salsa Familiar",
-    "price": 49.9
+    "name": "Combo Big Crunch",
+    "description": "1 Big Crunch + 1 Complemento Regular + 1 Bebida Regular",
+    "price": 23.9,
+    "originalPrice": 27.7,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "-42%",
-    "description": "",
-    "price": 49.9
+    "name": "Combo Twister XL Tradicional",
+    "description": "1 Twister XL Tradicional + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 27.9,
+    "originalPrice": 32.7,
+    "category": "Twister XL",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Mega Mix: 8 Piezas",
-    "description": "8 Piezas de Pollo + 6 Nuggets o Hot Wings + 1 Complemento Familiar + 1 Bebida 1.5L",
-    "price": 69.9
+    "name": "Big Crunch",
+    "description": "Sándwich de pan hamburguesa, filete de pierna, salsa Meltz, lechuga y tomate",
+    "price": 16.9,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Mix: 8 Piezas",
-    "name": "-37%",
-    "description": "",
-    "price": 69.9
+    "name": "Combo Twister XL Americano",
+    "description": "1 Twister XL Americano + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 28.9,
+    "originalPrice": 33.7,
+    "category": "Twister XL",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Mega XL: 12 Piezas",
-    "description": "12 Piezas de Pollo + 6 Nuggets o Hot Wings o 1 PopCorn Chicken + 1 Papa Súper Familiar + 1 Bebida 1.5L",
-    "price": 89.9
+    "name": "Mega Futbolero: 7 Piezas",
+    "description": "7 Piezas de Pollo + 1 Complemento Familiar + 1 Bebida 1 L",
+    "price": 49.9,
+    "originalPrice": 81.9,
+    "category": "Modo Fútbol",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega XL: 12 Piezas",
-    "name": "-40%",
-    "description": "",
-    "price": 89.9
+    "name": "Big Box Big Crunch",
+    "description": "1 Big Crunch + 3 Nuggets o Hot Wings + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Regular",
+    "price": 29.9,
+    "originalPrice": 42.75,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Super Mega: 10 Piezas",
-    "description": "10 Piezas de Pollo + 8 Nuggets o Hot Wings o 1 PopCorn Chicken + 1 Complemento Familiar + 1 Bebida 1.5L",
-    "price": 79.9
+    "name": "Paquete 6 Nuggets",
+    "description": "6 Deliciosos Nuggets de Pollo 100% de Pechuga de Pollo empanizados en nuestra Receta Original",
+    "price": 16.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Combo 8 Hot Wings",
-    "description": "8 Hot Wings + 1 Complemento Regular + 1 Bebida Personal",
-    "price": 24.9
+    "name": "Krunchy Meltz",
+    "description": "Jugoso filete de pierna con empanizado crispy, acompañado con lechuga y salsa agridulce meltz",
+    "price": 13.9,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Combo 8 Hot Wings",
-    "name": "-29%",
-    "description": "",
-    "price": 24.9
-  },
-  {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Combo Chick'N Share 18 Nuggets",
-    "description": "18 Nuggets + 2 complementos regulares + 1 Bebida 1L",
-    "price": 43.9
-  },
-  {
-    "restaurant": "KFC",
-    "category": "Combo Chick'N Share 18 Nuggets",
-    "name": "-34%",
-    "description": "",
-    "price": 43.9
-  },
-  {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Big Box Wow",
-    "description": "2 Piezas de Pollo + 3 Nuggets o Hot Wings + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
-    "price": 28.9
-  },
-  {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Chick'N Share 3 Piezas + Snacks",
-    "description": "3 Piezas de Pollo + 6 Nuggets o Hot Wings + 2 complementos regulares",
-    "price": 37.9
-  },
-  {
-    "restaurant": "KFC",
-    "category": "Chick'N Share 3 Piezas + Snacks",
-    "name": "-33%",
-    "description": "",
-    "price": 37.9
-  },
-  {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
     "name": "Paquete 6 Hot Wings",
     "description": "6 deliciosas alitas de Pollo picante",
-    "price": 17.9
+    "price": 17.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Big Box Futbolero",
-    "description": "3 Piezas de Pollo + 4 Nuggets + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Salsa Personal + 1 Bebida Personal",
-    "price": 29.9
+    "name": "Combo Mix",
+    "description": "1 Pieza de Pollo + 2 Nuggets + 2 Hot Wings + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 23.9,
+    "originalPrice": 31.8,
+    "category": "Combos",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Big Box Futbolero",
-    "name": "-47%",
-    "description": "",
-    "price": 29.9
+    "name": "Combo Tenders",
+    "description": "3 Tenders + 1 Complemento Regular + 1 Salsa Personal + 1 Bebida Personal",
+    "price": 25.9,
+    "originalPrice": 33.3,
+    "category": "Combos",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
-    "name": "Mega 12 Piezas + Papas",
-    "description": "12 Piezas de Pollo + 1 Papa Súper Familiar",
-    "price": 77.9
+    "name": "Paquete 6 Tenders",
+    "description": "6 crujientes tenders elaborados con 100% pechuga de Pollo + empanizados en nuestra Receta Crispy",
+    "price": 33.9,
+    "originalPrice": 49.8,
+    "category": "Complementos",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Mega Futbolero",
+    "name": "Combo Clásico: 2 Piezas",
+    "description": "2 Piezas de Pollo + 1 Papa Regular + 1 Personal Regular",
+    "price": 21.9,
+    "originalPrice": 28.8,
+    "category": "Combos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Paquete 3 Tenders",
+    "description": "3 crujientes tenders elaborados con 100% pechuga de Pollo, empanizados en nuestra Receta Crispy",
+    "price": 17.9,
+    "originalPrice": 24.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Popcorn para 2",
+    "description": "2 PopCorn Chicken + 2 Complementos Regulares",
+    "price": 32.9,
+    "originalPrice": 43.6,
+    "category": "Para 2",
+    "restaurant": "KFC"
+  },
+  {
     "name": "Combo 8 Nuggets",
     "description": "8 Nuggets + 1 Complemento Regular + 1 Bebida Personal",
-    "price": 24.9
+    "price": 24.9,
+    "originalPrice": 32.4,
+    "category": "Combos",
+    "restaurant": "KFC"
   },
   {
-    "restaurant": "KFC",
-    "category": "Combo 8 Nuggets",
-    "name": "-23%",
-    "description": "",
-    "price": 24.9
+    "name": "Chick'N Share 3 Piezas + Snacks",
+    "description": "3 Piezas de Pollo + 6 Nuggets o Hot Wings + 2 complementos regulares",
+    "price": 37.9,
+    "originalPrice": 57.1,
+    "category": "Para 2",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Combo 8 Hot Wings",
+    "description": "8 Hot Wings + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 24.9,
+    "originalPrice": 35.2,
+    "category": "Combos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Big Box Twister XL Americano",
+    "description": "1 Twister XL Americano + 3 Nuggets o Hot Wings + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
+    "price": 33.9,
+    "originalPrice": 48.75,
+    "category": "Big Box",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Big Box Tenders",
+    "description": "4 Tenders (100% Pechuga de Pollo) + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Salsa Personal + 1 Bebida Personal",
+    "price": 33.9,
+    "originalPrice": 52.4,
+    "category": "Big Box",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Big Box Wow",
+    "description": "2 Piezas de Pollo + 3 Nuggets o Hot Wings + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
+    "price": 28.9,
+    "originalPrice": 43.85,
+    "category": "Big Box",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Twister XL Tradicional",
+    "description": "Tortilla de maíz + 2 tenders 100% pechuga de Pollo + lechuga + tomate + queso americano + mayonesa",
+    "price": 21.9,
+    "category": "Twister XL",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Twister XL Americano",
+    "description": "Tortilla de maíz + 2 tenders 100% pechuga de Pollo + lechuga + tocino + queso americano + salsa meltz",
+    "price": 22.9,
+    "category": "Twister XL",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "PopCorn Chicken",
+    "description": "Jugosos y crocantes trozitos de filete de pierna, empanizados en nuestra Receta Crispy",
+    "price": 15.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Inca Kola Zero Azúcar 500 ml",
+    "description": "Inca Kola Zero Azúcar Personal",
+    "price": 4.9,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Papa Super Familiar",
+    "description": "Tradicionales papas fritas (450 gr aprox)",
+    "price": 15.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Inca Kola Zero Azúcar 1L",
+    "description": "Inca Kola Sin Azúcar 1L",
+    "price": 7,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Papa Familiar",
+    "description": "Tradicionales papas fritas (240 gr aprox)",
+    "price": 11.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Chick'N Share 18 Hot Wings + Papas",
+    "description": "18 Hot Wings + 2 complementos regulares",
+    "price": 42.9,
+    "originalPrice": 66.7,
+    "category": "Para 2",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Inca Kola Zero Azúcar 1.5L",
+    "description": "Inca Kola Sin Azúcar 1.5L",
+    "price": 10,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Combo Chick'N Share 18 Nuggets",
+    "description": "18 Nuggets + 2 complementos regulares + 1 Bebida 1L",
+    "price": 43.9,
+    "originalPrice": 67.4,
+    "category": "Para 2",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Pie de Manzana",
+    "description": "Delicioso y crocante pie relleno de trozos de manzana caramelizada",
+    "price": 6.9,
+    "category": "Postres",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Papa Personal",
+    "description": "Tradicionales papas fritas (116 gr aprox)",
+    "price": 6.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Salsa Secreta Familiar",
+    "description": "1 Salsa Familiar de Salsa Secreta",
+    "price": 3.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Honey Mustard Familiar",
+    "description": "Salsa dulce a base de mostaza y mayonesa (99 Gr aprox)",
+    "price": 3.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Coca-Cola Zero Azúcar 500 ml",
+    "description": "Coca-Cola Zero Azúcar Personal",
+    "price": 4.9,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Aji de la Casa Familiar",
+    "description": "Salsa picante hecha con ají amarillo, cebolla y otras especias (99 Gr aprox)",
+    "price": 3.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Big Box Classic",
+    "description": "3 Piezas de Pollo + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
+    "price": 27.9,
+    "originalPrice": 38.8,
+    "category": "Big Box",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Coca-Cola Zero Azúcar 1L",
+    "description": "Coca-Cola Zero Azúcar 1L",
+    "price": 7,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Big Box Krunchy Meltz",
+    "description": "1 Krunchy Meltz + 3 Nuggets o Hot Wings + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
+    "price": 25.9,
+    "originalPrice": 36.75,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "BBQ Familiar",
+    "description": "Salsa Barbecue. Dulce con un toque ahumado (99 Gr aprox)",
+    "price": 3.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Coca-Cola Zero Azúcar 1.5L",
+    "description": "Coca-Cola Zero Azúcar 1.5L",
+    "price": 10,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Krunchy Americano",
+    "description": "Jugoso filete de pierna con empanizado crispy, acompañado con crujiente tocino + queso americano + lechuga + salsa meltz",
+    "price": 15.9,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Ensalada Familiar",
+    "description": "Nuestra tradicional ensalada de col con zanahoria y aderezo agridulce (16 Oz. aprox)",
+    "price": 11,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Krunchy BBQ",
+    "description": "Jugoso filete de pierna con empanizado crispy, acompañado con lechuga + salsa BBQ.",
+    "price": 14.9,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Ensalada Regular",
+    "description": "Nuestra tradicional ensalada de col con zanahoria y aderezo agridulce (4 Oz. aprox.)",
+    "price": 5.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Fanta Naranja 500 ml",
+    "description": "Fanta Personal",
+    "price": 4.9,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Piezas de Pollo (2 un)",
+    "description": "2 Piezas de Pollo en receta Original o Crispy.",
+    "price": 15.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Fanta 2.25L",
+    "description": "Fanta de 2.25L",
+    "price": 13,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Puré Familiar",
+    "description": "Nuestro tradicional puré de papas con salsa gravy en presentación Familiar",
+    "price": 11,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Puré Regular",
+    "description": "Nuestro tradicional puré de papas con salsa gravy en presentación personal",
+    "price": 5.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Combo Sandwich Original",
+    "description": "1 Kentucky Chicken Sándwich + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 25.9,
+    "originalPrice": 29.7,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Sprite Original 500 ml",
+    "description": "Sprite Personal",
+    "price": 4.9,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Sprite 2.25L",
+    "description": "Sprite 2.25L",
+    "price": 13,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Combo Sandwich Deluxe",
+    "description": "1 Kentucky Chicken Sándwich Deluxe + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 27.9,
+    "originalPrice": 31.7,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Agua Saborizada de Manzana",
+    "description": "Agua Saborizada de Manzana",
+    "price": 4.5,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Big Box Sandwich Deluxe",
+    "description": "1 Kentucky Chicken Sándwich Deluxe + 3 Nuggets o Hot Wings + 1 Complemento Regular + 1 Ensalada o Puré Regular + 1 Bebida Personal",
+    "price": 32.9,
+    "originalPrice": 46.75,
+    "category": "Sándwiches",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Clásico: 6 Piezas",
+    "description": "6 Piezas de Pollo + 4 Nuggets o Hot Wings + 1 Complemento Familiar + 1 Ensalada o Puré Familiar",
+    "price": 59.9,
+    "originalPrice": 89.1,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Mix: 8 Piezas",
+    "description": "8 Piezas de Pollo + 6 Nuggets o Hot Wings + 1 Complemento Familiar + 1 Bebida 1.5L",
+    "price": 69.9,
+    "originalPrice": 112.2,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Bucket de Salsa Aji de la Casa",
+    "description": "1 Bucket de Salsa Aji de la Casa",
+    "price": 9.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Bucket de Salsa BBQ",
+    "description": "1 Bucket de Salsa BBQ",
+    "price": 9.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Bucket de Salsa Honey Mustard",
+    "description": "1 Bucket de Salsa Honey Mustard",
+    "price": 9.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Agua San Luis Sin Gas 750 ml",
+    "description": "Agua San Luis Sin Gas 750 ml",
+    "price": 4.5,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Chick'N Share 5 Piezas + Papas",
+    "description": "5 Piezas de Pollo + 2 Complementos Regulares",
+    "price": 37.9,
+    "originalPrice": 56.8,
+    "category": "Para 2",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Bucket de Salsa Tartara Peruana",
+    "description": "1 Bucket de Salsa Tartara Peruana",
+    "price": 9.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega 12 Piezas + Papas",
+    "description": "12 Piezas de Pollo + 1 Papa Súper Familiar",
+    "price": 77.9,
+    "originalPrice": 123.9,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Agua San Luis Con Gas 750 ml",
+    "description": "Agua San Luis Con Gas 625 ml",
+    "price": 4.5,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Rocoto Familiar",
+    "description": "Salsa cremosa a base de crema de rocoto, de sabor intenso y picante (99 Gr aprox)",
+    "price": 3.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Super Mega: 10 Piezas",
+    "description": "10 Piezas de Pollo + 8 Nuggets o Hot Wings o 1 PopCorn Chicken + 1 Complemento Familiar + 1 Bebida 1.5L",
+    "price": 79.9,
+    "originalPrice": 133.5,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega XL: 12 Piezas",
+    "description": "12 Piezas de Pollo + 6 Nuggets o Hot Wings o 1 PopCorn Chicken + 1 Papa Súper Familiar + 1 Bebida 1.5L",
+    "price": 89.9,
+    "originalPrice": 152.2,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Gigante: 14 Piezas",
+    "description": "14 Piezas de Pollo + 8 Nuggets o Hot Wings o 1 PopCorn Chicken + 1 Papa Súper Familiar + 1 Bebida 1.5L",
+    "price": 99.9,
+    "originalPrice": 158.1,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Agua Saborizada de Maracuyá",
+    "description": "Agua Saborizada de Maracuyá",
+    "price": 4.5,
+    "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Supremo 16 Piezas",
+    "description": "16 Piezas de Pollo + 8 Nuggets o Hot Wings o 1 PopCorn Chicken + 1 Papa Súper Familiar + 1 Bebida 1.5L",
+    "price": 109.9,
+    "originalPrice": 173.9,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Extremo: 18 Piezas",
+    "description": "18 Piezas de Pollo + 1 Papa Súper Familiar + 1 Ensalada o Puré Familiar + 1 Salsa Familiar + 1 Bebida 1.5L",
+    "price": 119.9,
+    "originalPrice": 183,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Combo Twister XL Peruano",
+    "description": "1 Twister XL Peruano + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 27.9,
+    "originalPrice": 30.7,
+    "category": "Twister XL",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Twister XL Peruano",
+    "description": "1 Twister XL Peruano con Ají de la Casa + Crujientes Papitas al hilo",
+    "price": 21.9,
+    "category": "Twister XL",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Tártara Peruana Familiar",
+    "description": "Salsa a base de mayonesa mezclada cebolla china y BBQ, con un toque ahumado y cremoso (99 Gr aprox)",
+    "price": 3.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Bucket de Salsa Secreta",
+    "description": "1 Bucket de Salsa Secreta",
+    "price": 9.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Futbolero: 8 piezas",
+    "description": "8 Piezas de Pollo + 6 Nuggets + 1 Complemento Familiar + 1 Coca Cola 1.5L",
+    "price": 64.9,
+    "originalPrice": 110.8,
+    "category": "Modo Fútbol",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Futbolero: 12 piezas",
+    "description": "12 Piezas de Pollo + 8 Nuggets + 1 Complemento Familiar + 1 Ensalada o Puré Familiar + 1 Coca Cola 1.5 L",
+    "price": 89.9,
+    "originalPrice": 162.5,
+    "category": "Modo Fútbol",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Futbolero: 10 piezas",
+    "description": "10 Piezas de Pollo + 5 Nuggets + 1 Complemento Familiar + 1 Salsa Familiar + 1 Coca Cola 1.5L",
+    "price": 74.9,
+    "originalPrice": 129.3,
+    "category": "Modo Fútbol",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Peruano",
+    "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Complemento Familiar y 1 Salsa Familiar",
+    "price": 49.9,
+    "originalPrice": 86.7,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Peruano con Gaseosas",
+    "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Complemento Familiar, 1 Bebida 1L y 1 Salsa Familiar",
+    "price": 55.8,
+    "originalPrice": 93.7,
+    "category": "Megas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Chick'N Share Tenders",
+    "description": "8 Tenders (100% Pechuga de Pollo) + 2 Complementos Regulares + 2 Salsas Personales",
+    "price": 43.9,
+    "originalPrice": 83.2,
+    "category": "Para 2",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Chick'n Share Peruano",
+    "description": "8 Nuggets, 8 Hot Wings, 1 Salsa Familiar y 2 Complementos Regulares",
+    "price": 34.9,
+    "originalPrice": 61.7,
+    "category": "Para 2",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Chick'n Share Peruano con Bebidas",
+    "description": "8 Nuggets, 8 Hot Wings, 2 Complementos Regulares, 1 Salsa Familiar y 1 Bebida 1L",
+    "price": 38.8,
+    "originalPrice": 68.7,
+    "category": "Para 2",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Big Box Peruano",
+    "description": "3 Piezas de Pollo, 4 Nuggets, 1 Complemento Regular, 1 Ensalada o Puré Regular, 1 Salsa Personal y 1 Bebida Personal",
+    "price": 29.9,
+    "originalPrice": 57,
+    "category": "Big Box",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Yuquita Familiar",
+    "description": "15 Yuquitas Fritas",
+    "price": 11.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Yuquita Personal",
+    "description": "5 Yuquitas Fritas",
+    "price": 5.9,
+    "category": "Complementos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Rocoto Súper Familiar",
+    "description": "Salsa cremosa a base de crema de rocoto, de sabor intenso y picante (300 Gr aprox)",
+    "price": 9.9,
+    "category": "Salsas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Pie de Dulce de Leche",
+    "description": "Delicioso y crocante pie relleno de Dulce de Leche",
+    "price": 6.9,
+    "category": "Postres",
+    "restaurant": "KFC"
   }
 ]

@@ -1,0 +1,812 @@
+[
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promos de Locura",
+    "name": "2/4 Clasico",
+    "description": "2/4 de pollo + 2 papas fritas menú + 2 salsas.",
+    "price": 59.8,
+    "originalPrice": 59.8,
+    "productId": 2795606,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promos de Locura",
+    "name": "2/4 Clasico +Gas",
+    "description": "2/4 de pollo + 2 papas fritas menú + 2 bot. gaseosas + 2 salsas.",
+    "price": 73.7,
+    "originalPrice": 73.7,
+    "productId": 2795610,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promos de Locura",
+    "name": "2/4 Mostrito",
+    "description": "2/4 mostrito + 2 salsas.",
+    "price": 63.8,
+    "originalPrice": 63.8,
+    "productId": 2795615,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promos de Locura",
+    "name": "2/4 Mostrito +Gas",
+    "description": "2/4 mostrito + 2 bot. gaseosas + 2 salsas.",
+    "price": 77.6,
+    "originalPrice": 77.6,
+    "productId": 2795620,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promos de Locura",
+    "name": "1 Pollo Clasico",
+    "description": "1 pollo + papas fritas fam. + 3 salsas.",
+    "price": 85.9,
+    "originalPrice": 85.9,
+    "productId": 2795625,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promos de Locura",
+    "name": "1 Pollo Clasico +Gas",
+    "description": "1 pollo + papas fritas fam. + 1 bot. gaseosa 1L + 3 salsas.",
+    "price": 101.8,
+    "originalPrice": 101.8,
+    "productId": 2795627,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promos de Locura",
+    "name": "1 Pollo Clasico y Ensalda",
+    "description": "1 pollo + papas fritas fam. + ensalada fresca fam. + 3 salsas.",
+    "price": 89.9,
+    "originalPrice": 89.9,
+    "productId": 2795629,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promos de Locura",
+    "name": "1 Pollo Clasico +Ens + Gas",
+    "description": "1 pollo + papas fritas fam. + ensalada fresca fam. + 1 bot. gaseosa 1L + 3 salsas.",
+    "price": 105.8,
+    "originalPrice": 105.8,
+    "productId": 2795631,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Brand Week",
+    "name": "Viral 1/4 Pollo",
+    "description": "¡SOLO POR HOY! 1/4 de pollo + papas fritas + salsas.",
+    "price": 39.9,
+    "originalPrice": 39.9,
+    "productId": 1051124,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Brand Week",
+    "name": "Encamotado Clasico",
+    "description": "Aprovecha esta super promo de: 1/4 pollo, camotitos, ensalada fresca, salsas. Razón social: EP DE RESTAURANRES S.A.C. RUC: 20545699550. Imágenes referenciales.",
+    "price": 33.9,
+    "originalPrice": 33.9,
+    "productId": 1051049,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Brand Week",
+    "name": "Mostrito Rappi",
+    "description": "Aprovecha esta super promo de: 1/4 pollo + papas personales + arroz chaufa + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 45.9,
+    "originalPrice": 45.9,
+    "productId": 1051219,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Brand Week",
+    "name": "Combo Beliclasico",
+    "description": "Aprovecha esta super promo de: 1/4 pollo + papas + gaseosa 500ml + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC: 20545699550",
+    "price": 49.9,
+    "originalPrice": 49.9,
+    "productId": 1051149,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Brand Week",
+    "name": "Promo Familiar",
+    "description": "Aprovecha esta super promo de: 1 pollo + papas familiar + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 110.9,
+    "originalPrice": 110.9,
+    "productId": 1051206,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollos a la Parrilla",
+    "name": "Pechuga Tradicional",
+    "description": "Pechuga a la parrilla (sin chimichurri) + 2 guarniciones + salsas.",
+    "price": 29.9,
+    "originalPrice": 29.9,
+    "productId": 1051069,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollos a la Parrilla",
+    "name": "Pechuga Parrillera",
+    "description": "Aprovecha esta super promo de: 1 Filete de pechuga marinada con salsa parrillera + guarnición personal a elección + ensalada fresca personal + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 33.9,
+    "originalPrice": 33.9,
+    "productId": 1051172,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollos a la Parrilla",
+    "name": "Pierna Parrillera",
+    "description": "Aprovecha esta super promo de: 1 Filete de pierna marinada con salsa parrillera + guarnición personal a elección + ensalada fresca personal + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 32.9,
+    "originalPrice": 32.9,
+    "productId": 1051203,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "San Valentin",
+    "name": "Duo Sabor",
+    "description": "1/4 mostrito + 1/4 clásico + 2 bot. Gaseosa 500ml + salsas.",
+    "price": 79.8,
+    "originalPrice": 79.8,
+    "productId": 1865488,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "San Valentin",
+    "name": "Combo Sabor",
+    "description": "1 pollo + papas fritas + ensalada + bot. gaseosa 1.5L + salsas.",
+    "price": 111.9,
+    "originalPrice": 111.9,
+    "productId": 1865489,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "San Valentin",
+    "name": "Banquete Sabor",
+    "description": "1 pollo + 4 guarniciones + ensalada fresca + bot. gaseosa 1.5L + salsas",
+    "price": 159.9,
+    "originalPrice": 159.9,
+    "productId": 1865490,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Productos Pro",
+    "name": "Promo 1/4",
+    "description": "Aprovecha esta super promo de: 1/4 pollo + papas + ensalada + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 49.9,
+    "originalPrice": 49.9,
+    "productId": 1051037,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Productos Pro",
+    "name": "Combo Mediclasico Pro",
+    "description": "Aprovecha esta super promo de: 1/2 pollo + papas + ensalada + 2 gaseosas 500ml + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 59.9,
+    "originalPrice": 59.9,
+    "productId": 1051173,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Productos Pro",
+    "name": "Mostrito Familiar Pro",
+    "description": "Aprovecha esta super promo de: 1 pollo + papas medianas + 2 arroz chaufa personal + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC: 20545699550",
+    "price": 129.9,
+    "originalPrice": 129.9,
+    "productId": 1051064,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Productos Pro",
+    "name": "Promo para dos Pro",
+    "description": "Aplica solo para usuarios pro. 1/2 pollo+ papas + salsas.Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 45.9,
+    "originalPrice": 45.9,
+    "productId": 1051183,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Productos Pro",
+    "name": "Dúo Perfecto Pro",
+    "description": "1/2 pollo a la brasa, guarnición a elección, ensalada fresca mediana y salsas.",
+    "price": 49.9,
+    "originalPrice": 49.9,
+    "productId": 1051230,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Productos Pro",
+    "name": "Banquete Futbolero Pro",
+    "description": "Aprovecha esta super promo de: 1 pollo + 2 papas personales + 1 camote personal + 1 chaufa persnal + 1 ensalada familiar + salsas. Razón social: EP DE RESTAURANRES S.A.C. RUC: 20545699550. Imágenes referenciales.",
+    "price": 99.9,
+    "originalPrice": 99.9,
+    "productId": 1051090,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Novedades Don Beli",
+    "name": "Combo Personal",
+    "description": "Aprovecha esta super promo de: 1/4 pollo+ papas menú + gaseosa 500ml + salsas. Presa a disponibilidad del local. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 30.9,
+    "originalPrice": 30.9,
+    "productId": 1051187,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Novedades Don Beli",
+    "name": "Clasico Super Contudente",
+    "description": "\"Aprovecha esta super promo de: 1 pollo+ 1/2 pollo + ensalada fresca + papas fritas +salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550 \"",
+    "price": 125.9,
+    "originalPrice": 125.9,
+    "productId": 1050956,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Novedades Don Beli",
+    "name": "Arma tu 1/4",
+    "description": "Aprovecha esta super promo de: 1/4 pollo a la brasa + papas menú o chaufa menú o cacerola menú + salsas. Razón Social: EP de Restaurantes S.A.C.-RUC: 20545699550. Imágenes referenciales.",
+    "price": 25.9,
+    "originalPrice": 25.9,
+    "productId": 1050987,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Novedades Don Beli",
+    "name": "Mostrito 2x1",
+    "description": "2 mostritos + 2 bot. gaseosa + salsas.",
+    "price": 79.8,
+    "originalPrice": 79.8,
+    "productId": 1600520,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Novedades Don Beli",
+    "name": "Dúo Perfecto",
+    "description": "1/2 pollo a la brasa, guarnición a elección, ensalada fresca mediana y salsas.",
+    "price": 49.9,
+    "originalPrice": 49.9,
+    "productId": 1051111,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Novedades Don Beli",
+    "name": "Duo Mostrito",
+    "description": "\"Aprovecha esta super promo de: 2 1/4 pollo + 2 papas fritas + 2 arroz chaufa + salsas. Presa a disponibilidad de tienda. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550 \"",
+    "price": 62.9,
+    "originalPrice": 62.9,
+    "productId": 1051177,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo familiares",
+    "name": "Combo Familiar",
+    "description": "Aprovecha esta super promo de: 1 pollo + papas familiar + ensalada + gaseosa 1.5 lt + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 100.9,
+    "originalPrice": 100.9,
+    "productId": 1051190,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo familiares",
+    "name": "Combo 4 guarniciones",
+    "description": "Aprovecha esta super promo de: 1 pollo + 4 guarniciones a elección + gaseosa 1.5 lt + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 156.9,
+    "originalPrice": 156.9,
+    "productId": 1051200,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo familiares",
+    "name": "Combo Beli Familiar",
+    "description": "Aprovecha esta super promo de: 1 pollo + papas + gaseosa 1.5L + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 119.9,
+    "originalPrice": 119.9,
+    "productId": 1051114,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo familiares",
+    "name": "Combo Contundente",
+    "description": "Aprovecha esta super promo de: 1 pollo + 1/4 pollo + papas familiares + gaseosa 1.5L + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 145.9,
+    "originalPrice": 145.9,
+    "productId": 1050993,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo familiares",
+    "name": "Familiar Encamotado",
+    "description": "Aprovecha esta super promo de: 1 pollo + camotitos de la abuela +ensalada fresca + gaseosa 1.5L + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 148.9,
+    "originalPrice": 148.9,
+    "productId": 1051209,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo familiares",
+    "name": "Clásico Combo Contudente",
+    "description": "Aprovecha esta super promo de: 1 pollo + 1/4 pollo + papas + ensalada fresca + gaseosa 1.5L + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 160.9,
+    "originalPrice": 160.9,
+    "productId": 1051091,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo familiares",
+    "name": "Banquete 4 Guarniciones",
+    "description": "2 mostritos + 2 bot. gaseosa + salsas.",
+    "price": 159.9,
+    "originalPrice": 159.9,
+    "productId": 1600521,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo para dos",
+    "name": "Combo Medimostrito",
+    "description": "Aprovecha esta super promo de: 1/2 pollo+papas+arroz chaufa+ 2 gaseosas 500ml. Razón Social: EP DE RESTAURANTES S.A.C. RUC:20545699550",
+    "price": 76.9,
+    "originalPrice": 76.9,
+    "productId": 1051095,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo para dos",
+    "name": "Promo Para Dos",
+    "description": "Aprovecha esta super promo de: 1/2 pollo + papas medianas + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 45.9,
+    "originalPrice": 45.9,
+    "productId": 1051212,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo para dos",
+    "name": "Combo Mediclasico",
+    "description": "Aprovecha esta super promo de: 1/2 pollo + papas medianas + ensalada mediana + 2 gaseosas 500 ml + salsas. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 59.9,
+    "originalPrice": 59.9,
+    "productId": 1051193,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo personales",
+    "name": "Combo Mostrito",
+    "description": "Aprovecha esta super promo de: 1/4 pollo+papas+arroz chaufa+gaseosas 500ml. Razón Social: EP DE RESTAURANTES S.A.C. RUC:20545699550",
+    "price": 42.8,
+    "originalPrice": 42.8,
+    "productId": 1051001,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Promo personales",
+    "name": "Mostrito Power",
+    "description": "Aprovecha esta super promo de:1/4 pollo+papas+chaufa+tequeños x4+ salsas. Presa a disponibilidad del local. Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 52.9,
+    "originalPrice": 52.9,
+    "productId": 1051030,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollos a la Brasa",
+    "name": "1 Pollo con guarnición y ensalada",
+    "description": "1 pollo a la brasa, guarnición familiar a elección, ensalada fresca familiar. Imágenes referenciales.",
+    "price": 87.9,
+    "originalPrice": 87.9,
+    "productId": 1051228,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollos a la Brasa",
+    "name": "1/2 Pollo con guarnición y ensalada",
+    "description": "\"1/2 de pollo a la brasa, guarnición mediana a elección, ensalada fresca mediana. Imágenes referenciales. \"",
+    "price": 49.9,
+    "originalPrice": 49.9,
+    "productId": 1051166,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollos a la Brasa",
+    "name": "1/4 Pollo con guarnición y ensalada",
+    "description": "1/4 de pollo a la brasa, guarnición personal a elección, ensalada fresca personal. Imágenes referenciales.",
+    "price": 29.9,
+    "originalPrice": 29.9,
+    "productId": 1051023,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Guarniciones",
+    "name": "Papas Crocantitas Personal",
+    "description": "Papas crocantitas personales. EP DE RESTAURANTES S.A.C. RUC: 20545699550",
+    "price": 11.9,
+    "originalPrice": 11.9,
+    "productId": 1051229,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Guarniciones",
+    "name": "Papas del Caporal Personal",
+    "description": "Papas nativas gratidas con queso mozarella y chimichurri. Imágenes referenciales.",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1051052,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Guarniciones",
+    "name": "Arroz Chaufa Personal",
+    "description": "Arroz chaufa personal al estilo Don Beli. EP DE RESTAURANTES S.A.C. RUC: 20545699550",
+    "price": 11.9,
+    "originalPrice": 11.9,
+    "productId": 1051204,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Guarniciones",
+    "name": "Arrocito Cacerola Personal",
+    "description": "Arroz blanco estilo casero con choclito desgranado en presentación personal. EP DE RESTAURANTES S.A.C. RUC: 20545699550",
+    "price": 11.9,
+    "originalPrice": 11.9,
+    "productId": 1051097,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Guarniciones",
+    "name": "Camotitos de la Abuelita Personal",
+    "description": "Tiras de camote frito con un secreto de antaño en presentación personal. EP DE RESTAURANTES S.A.C. RUC: 20545699550",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1050959,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Guarniciones",
+    "name": "Ensalada Fresca Familiar",
+    "description": "Ensalada de lechuga, tomate y zanahoria rallada con vinagreta de la casa en presentación familiar. EP DE RESTAURANTES S.A.C. RUC: 20545699550",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 1051099,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Guarniciones",
+    "name": "Ensalada Cocida Familiar",
+    "description": "Ensalada Cocida Familiar. Imágenes referenciales",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 1051102,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Piqueos",
+    "name": "Tequeños de Pollo a la Brasa x4",
+    "description": "4 Tequeños de pollo a la brasa con salsa de guacamole. EP DE RESTAURANTES S.A.C. RUC: 20545699550",
+    "price": 11.9,
+    "originalPrice": 11.9,
+    "productId": 1051004,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Piqueos",
+    "name": "Tequeños de Pollo a la Brasa x8",
+    "description": "8 tqueños rellenos de pollo a la brasa. Imágenes referenciales.",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 1051152,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Piqueos",
+    "name": "Anticuchos Doble",
+    "description": "2 palitos de anticucho, 2 rodajas de choclo, papas crocantitas personal. Imágenes referenciales.",
+    "price": 27.9,
+    "originalPrice": 27.9,
+    "productId": 1051142,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Piqueos",
+    "name": "Alitas Don Beli",
+    "description": "Alitas x5(bbq o de la casa). Razón social: EP DE RESTAURANTES S.A.C.-RUC:20545699550",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 1051081,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sabor Original 500ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1050965,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Inca Kola Sabor Original 500ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1050968,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Coca Cola Sin Azúcar 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1051232,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1050971,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Fanta Naranja 500ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1051196,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Sprite 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1051180,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "San Luis 750ml",
+    "description": "Agua",
+    "price": 5.9,
+    "originalPrice": 5.9,
+    "productId": 1051007,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Coca Cola Sabor Original 1.5 L",
+    "description": "Gaseosa",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 1051126,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Inca Kola Sabor Original 1.5 L",
+    "description": "Gaseosa",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 1051144,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Coca Cola Sin Azúcar 1.5 L",
+    "description": "Gaseosa",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 1051234,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 1.5 L",
+    "description": "Gaseosa",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 1051104,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bomba Rappi",
+    "name": "Bomba 1/4 Rappi",
+    "description": "1/4 pollo + papas menú + 1S",
+    "price": 39.9,
+    "originalPrice": 39.9,
+    "productId": 3173782,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bomba Rappi",
+    "name": "Bomba Menú Clásico",
+    "description": "1/4 pollo + papas menú + bot. 500ml + 1S",
+    "price": 39.9,
+    "originalPrice": 39.9,
+    "productId": 3173784,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bomba Rappi",
+    "name": "Bomba Menú Mostrito",
+    "description": "1/4 pollo + papas per + chaufa per + bot. 500ml + 1S",
+    "price": 43.9,
+    "originalPrice": 43.9,
+    "productId": 3173786,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Bomba Rappi",
+    "name": "Bomba Duo Mostrito",
+    "description": "2/4 pollo + 2 papas menú + 1 chaufa per + 2 bot. 500ml + 2S",
+    "price": 79.9,
+    "originalPrice": 79.9,
+    "productId": 3173788,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollo Brasa Fest",
+    "name": "Mega Fest",
+    "description": "1 pollo + 1/4 pollo + papas fam + ens fam + bot. 1.5L + salsas",
+    "price": 169.9,
+    "originalPrice": 169.9,
+    "productId": 3168595,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollo Brasa Fest",
+    "name": "Banquete Fest",
+    "description": "1 pollo + 2 papas per + 1 camote per + 1 chaufa per + ens fam + bot. 1L + salsas",
+    "price": 149.9,
+    "originalPrice": 149.9,
+    "productId": 3168597,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollo Brasa Fest",
+    "name": "Mostrazo Fest",
+    "description": "1 pollo + papas fritas fam. + arroz chaufa fam. + bot. gaseosa 1L + salsas",
+    "price": 119.9,
+    "originalPrice": 119.9,
+    "productId": 3168600,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollo Brasa Fest",
+    "name": "Clásico Fest",
+    "description": "1 pollo + papas fritas fam. + ensalada fam. + bot. gaseosa 1L + salsas",
+    "price": 109.9,
+    "originalPrice": 109.9,
+    "productId": 3168602,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Pollo Brasa Fest",
+    "name": "2x1 Power Fest",
+    "description": "1/4 mostrito + 1/4 clásico + 2 bot. 500ml + salsas",
+    "price": 82.9,
+    "originalPrice": 82.9,
+    "productId": 3168604,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Calientitos del Día",
+    "name": "Aguadito",
+    "description": "Disfruta de un sabroso aguadito, acompañado de limon y rocoto.",
+    "price": 17.8,
+    "originalPrice": 17.8,
+    "productId": 3174759,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Calientitos del Día",
+    "name": "1/4 Pollo + Aguadito",
+    "description": "1/4 de pollo + papas fritas + bot. gaseosa 500ml + aguadito + salsas.",
+    "price": 46.7,
+    "originalPrice": 46.7,
+    "productId": 3174760,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Calientitos del Día",
+    "name": "1/2 Pollo + Aguadito",
+    "description": "1/2 pollo + papas fritas + 2 bot. gaseosa 500ml + 2 aguaditos + salsas.",
+    "price": 94.5,
+    "originalPrice": 94.5,
+    "productId": 3174762,
+    "inStock": true
+  },
+  {
+    "restaurant": "Don Belisario - Leuro",
+    "category": "Calientitos del Día",
+    "name": "1 Pollo + Aguadito",
+    "description": "1 pollo + papas fritas + bot. gaseosa 1L + 4 aguaditos + salsas.",
+    "price": 199,
+    "originalPrice": 199,
+    "productId": 3174765,
+    "inStock": true
+  }
+]

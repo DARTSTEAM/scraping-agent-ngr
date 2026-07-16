@@ -2,12 +2,103 @@ const { createKernelBrowser, closeKernelBrowser } = require('./kernel_browser');
 const fs = require('fs');
 const path = require('path');
 
+// Prettify a URL slug into a category label: "las-goleadoras" → "Las Goleadoras".
+function prettifySlug(slug) {
+    return slug.split('-')
+        .filter(Boolean)
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
+}
+
+// Extract product cards currently rendered on the page → [{name, description, price}].
+async function extractProductsOnPage(page) {
+    return page.evaluate(() => {
+        const cards = Array.from(document.querySelectorAll('article, [class*="product-card"], [class*="ProductCard"], [class*="menu-item"], [class*="MenuItem"]'));
+        const items = [];
+        const seenEls = new Set();
+        for (const el of cards) {
+            // Skip cards nested inside another already-processed card
+            if (el.parentElement?.closest('article, [class*="product-card"], [class*="ProductCard"], [class*="menu-item"], [class*="MenuItem"]')) continue;
+            const nameEl = el.querySelector('h3, h2, h4, [class*="name"], [class*="title"]');
+            const name = nameEl?.textContent?.trim() || '';
+            if (!name || seenEls.has(name)) continue;
+
+            const descEls = Array.from(el.querySelectorAll('p, [class*="description"], [class*="desc"]'));
+            const descEl = descEls.find(p => !p.textContent.includes('S/') && p.textContent.trim().length > 3);
+            const description = descEl?.textContent?.trim() || '';
+
+            const priceMatches = [...(el.textContent || '').matchAll(/S\/\s*([\d.,]+)/g)];
+            let price = 0;
+            if (priceMatches.length > 0) {
+                const prices = priceMatches
+                    .map(m => parseFloat(m[1].replace(',', '.')))
+                    .filter(p => !isNaN(p) && p > 0);
+                // regular + promo on one card → promo (lowest) is what the client pays
+                price = prices.length > 1 ? Math.min(...prices) : (prices[0] || 0);
+            }
+            if (price > 0) { items.push({ name, description, price }); seenEls.add(name); }
+        }
+        return items;
+    });
+}
+
+// Scroll to load lazy cards.
+async function autoScroll(page) {
+    let prev = -1;
+    for (let i = 0; i < 15; i++) {
+        const count = await page.evaluate(() => {
+            window.scrollTo(0, document.body.scrollHeight);
+            return document.querySelectorAll('article, [class*="product-card"], [class*="menu-item"]').length;
+        });
+        await page.waitForTimeout(1200);
+        if (count === prev) break;
+        prev = count;
+    }
+    await page.evaluate(() => window.scrollTo(0, 0));
+}
+
+// Scrape all cards across a category's pagination, tagging each with `category`.
+async function scrapeCategoryPages(page, categoryUrl, categoryName) {
+    const out = [];
+    await page.goto(categoryUrl, { waitUntil: 'domcontentloaded', timeout: 90000 });
+    try {
+        await page.waitForSelector('article, [class*="product-card"], [class*="menu-item"]', { timeout: 20000 });
+    } catch (_) {
+        console.warn(`  ⚠ ${categoryName}: sin cards, salteando.`);
+        return out;
+    }
+    await page.waitForTimeout(1500);
+    for (let guard = 0; guard < 30; guard++) {
+        await autoScroll(page);
+        out.push(...await extractProductsOnPage(page));
+        const nextClicked = await page.evaluate(() => {
+            const buttons = Array.from(document.querySelectorAll('button, a'));
+            const nextBtn = buttons.find(b => {
+                const text = b.textContent?.trim();
+                const label = (b.getAttribute('aria-label') || '').toLowerCase();
+                return (text === '>' || text === '›' || text === '→' || text === '»' ||
+                    label.includes('siguiente') || label.includes('next'));
+            });
+            if (nextBtn && !nextBtn.hasAttribute('disabled') && nextBtn.getAttribute('aria-disabled') !== 'true') {
+                nextBtn.click();
+                return true;
+            }
+            return false;
+        });
+        if (!nextClicked) break;
+        await page.waitForTimeout(2500);
+    }
+    console.log(`  → ${categoryName}: ${out.length} productos`);
+    return out.map(p => ({ ...p, category: categoryName, restaurant: 'Pizza Hut' }));
+}
+
 /**
- * Pizza Hut Peru scraper — pizzahut.com.pe/carta/ver-todo
- * Paginates through all pages and extracts product name, description, price.
- * Mirrors the Burger King scraper strategy (article cards, pagination).
+ * Pizza Hut Peru scraper — pizzahut.com.pe/carta
+ * Discovers per-category routes (/carta/<slug>) and scrapes each so every product
+ * carries its real category. The link text is promotional here, so the category
+ * name is derived from the slug.
  */
-async function scrapePizzaHut(url = 'https://www.pizzahut.com.pe/carta/ver-todo') {
+async function scrapePizzaHut(url = 'https://www.pizzahut.com.pe/carta') {
     console.log(`Iniciando scraping de Pizza Hut: ${url}`);
     console.log(`🌐 Conectando al navegador remoto en Kernel (proxy residencial Perú)...`);
 
@@ -17,166 +108,46 @@ async function scrapePizzaHut(url = 'https://www.pizzahut.com.pe/carta/ver-todo'
     });
 
     const page = await context.newPage();
-    const results = [];
+    let results = [];
 
     try {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90000 });
-
-        // Wait for product cards — Pizza Hut uses article tags like BK, or divs with product classes
-        const cardSelector = 'article, [class*="product-card"], [class*="ProductCard"], [class*="menu-item"], [class*="MenuItem"]';
-        try {
-            await page.waitForSelector(cardSelector, { timeout: 20000 });
-        } catch (_) {
-            console.log('No se encontraron cards estándar, intentando con body...');
-        }
+        await page.waitForSelector('article, [class*="product-card"], [class*="menu-item"]', { timeout: 20000 }).catch(() => {});
         console.log('Página cargada.');
+        await page.waitForTimeout(2000);
 
-        // Detect total number of pages
-        let totalPages = 1;
-        try {
-            await page.waitForTimeout(2000);
-            const pageNums = await page.$$eval(
-                'nav button, [class*="pagination"] button, [class*="pager"] button',
-                (btns) => btns
-                    .map(b => parseInt(b.textContent?.trim()))
-                    .filter(n => !isNaN(n) && n > 0)
-            );
-            if (pageNums.length > 0) totalPages = Math.max(...pageNums);
-        } catch (_) {}
-
-        // Fallback: look for numbered pagination text
-        if (totalPages === 1) {
-            try {
-                const allText = await page.textContent('body');
-                const match = allText.match(/página\s+\d+\s+de\s+(\d+)/i) ||
-                              allText.match(/(\d+)\s+páginas/i);
-                if (match) totalPages = parseInt(match[1]);
-            } catch (_) {}
-        }
-
-        console.log(`Total de páginas detectadas: ${totalPages}`);
-
-        for (let currentPage = 1; currentPage <= totalPages; currentPage++) {
-            console.log(`Procesando página ${currentPage} de ${totalPages}...`);
-
-            await page.waitForTimeout(1500);
-
-            // Extract using the same tree-walker strategy as BK (category headers + cards)
-            const productsWithCategory = await page.evaluate(() => {
-                const items = [];
-                let currentCategory = 'General';
-
-                const walker = document.createTreeWalker(
-                    document.body,
-                    NodeFilter.SHOW_ELEMENT
-                );
-
-                while (walker.nextNode()) {
-                    const el = walker.currentNode;
-
-                    // Section/category headers (h2 or h1 NOT inside a product card)
-                    if ((el.tagName === 'H2' || el.tagName === 'H1') && !el.closest('article') && !el.closest('[class*="product"]')) {
-                        const text = el.textContent?.trim();
-                        if (text && text.length > 1 && text.length < 80) {
-                            currentCategory = text;
-                        }
-                    }
-
-                    // Product cards — article OR div/li with product-related class names
-                    const isCard = el.tagName === 'ARTICLE' ||
-                        (el.tagName === 'LI' && (el.className.toLowerCase().includes('product') || el.className.toLowerCase().includes('item'))) ||
-                        (el.tagName === 'DIV' && (
-                            el.className.toLowerCase().includes('productcard') ||
-                            el.className.toLowerCase().includes('product-card') ||
-                            el.className.toLowerCase().includes('menuitem') ||
-                            el.className.toLowerCase().includes('menu-item')
-                        ));
-
-                    if (!isCard) continue;
-
-                    // Skip if this card is nested inside another card
-                    if (el.parentElement?.closest('article, [class*="productcard"], [class*="menuitem"]')) continue;
-
-                    const nameEl = el.querySelector('h3, h2, h4, [class*="name"], [class*="title"]');
-                    const name = nameEl?.textContent?.trim() || '';
-                    if (!name) continue;
-
-                    const allPs = Array.from(el.querySelectorAll('p, [class*="description"], [class*="desc"]'));
-                    const descEl = allPs.find(p => !p.textContent.includes('S/') && p.textContent.trim().length > 3);
-                    const description = descEl?.textContent?.trim() || '';
-
-                    const priceText = el.textContent || '';
-                    const priceMatches = [...priceText.matchAll(/S\/\s*([\d.,]+)/g)];
-                    let price = 0;
-                    if (priceMatches.length > 0) {
-                        const prices = priceMatches
-                            .map(m => parseFloat(m[1].replace(',', '.')))
-                            .filter(p => !isNaN(p) && p > 0);
-                        price = prices.length > 1 ? Math.min(...prices) : (prices[0] || 0);
-                    }
-
-                    items.push({ name, description, price, category: currentCategory });
-                }
-
-                return items;
-            });
-
-            const filtered = productsWithCategory.filter(p => p.name.length > 0 && p.price > 0);
-            console.log(`  → ${filtered.length} productos encontrados en página ${currentPage}`);
-            results.push(...filtered.map(p => ({ ...p, restaurant: 'Pizza Hut' })));
-
-            // Navigate to next page
-            if (currentPage < totalPages) {
-                const nextClicked = await page.evaluate(() => {
-                    const buttons = Array.from(document.querySelectorAll('button, a'));
-                    const nextBtn = buttons.find(b => {
-                        const text = b.textContent?.trim();
-                        const label = b.getAttribute('aria-label') || '';
-                        return (
-                            text === '>' || text === '›' || text === '→' || text === '»' ||
-                            label.toLowerCase().includes('siguiente') ||
-                            label.toLowerCase().includes('next')
-                        );
-                    });
-                    if (nextBtn && !nextBtn.hasAttribute('disabled')) {
-                        nextBtn.click();
-                        return true;
-                    }
-                    return false;
-                });
-
-                if (!nextClicked) {
-                    console.warn(`No se encontró botón siguiente en página ${currentPage}. Deteniendo.`);
-                    break;
-                }
-
-                await page.waitForTimeout(3000);
+        // Discover category routes /carta/<slug> (excluding ver-todo). Name from slug.
+        const categories = await page.evaluate(() => {
+            const seen = new Map();
+            for (const a of document.querySelectorAll('a[href*="/carta/"]')) {
+                const href = a.getAttribute('href') || '';
+                const m = href.match(/^\/carta\/([a-z0-9-]+)\/?$/i);
+                if (!m) continue;
+                const slug = m[1].toLowerCase();
+                if (slug === 'ver-todo') continue;
+                if (!seen.has(slug)) seen.set(slug, { href, slug });
             }
-        }
+            return [...seen.values()];
+        });
+        categories.forEach(c => { c.name = prettifySlug(c.slug); });
 
-        // If no products found with card selectors, try a broader approach
-        if (results.length === 0) {
-            console.log('No se encontraron productos con selectores estándar, intentando scraping genérico...');
-            const generic = await page.evaluate(() => {
-                const items = [];
-                // Find any element mentioning S/ price near a product name
-                const priceEls = Array.from(document.querySelectorAll('*')).filter(el => {
-                    return el.children.length === 0 && /S\/\s*[\d.,]+/.test(el.textContent || '');
-                });
-                priceEls.forEach(priceEl => {
-                    const container = priceEl.closest('li, article, div[class], tr') || priceEl.parentElement;
-                    if (!container) return;
-                    const nameEl = container.querySelector('h2, h3, h4, h5, strong');
-                    const name = nameEl?.textContent?.trim() || '';
-                    if (!name) return;
-                    const priceMatch = (priceEl.textContent || '').match(/S\/\s*([\d.,]+)/);
-                    const price = priceMatch ? parseFloat(priceMatch[1].replace(',', '.')) : 0;
-                    if (price > 0) items.push({ name, description: '', price, category: 'General' });
-                });
-                return items;
-            });
-            results.push(...generic.map(p => ({ ...p, restaurant: 'Pizza Hut' })));
-            console.log(`  → ${generic.length} productos via scraping genérico`);
+        console.log(`Categorías detectadas: ${categories.length} → ${categories.map(c => c.name).join(', ')}`);
+
+        if (categories.length === 0) {
+            console.warn('No se detectaron categorías; usando /carta/ver-todo como respaldo.');
+            results = await scrapeCategoryPages(page, 'https://www.pizzahut.com.pe/carta/ver-todo', 'General');
+        } else {
+            // 1) Per-category pass → real category per product.
+            const nameToCategory = new Map();
+            for (const cat of categories) {
+                const catUrl = cat.href.startsWith('http') ? cat.href : `https://www.pizzahut.com.pe${cat.href}`;
+                const catProducts = await scrapeCategoryPages(page, catUrl, cat.name);
+                for (const p of catProducts) if (!nameToCategory.has(p.name)) nameToCategory.set(p.name, cat.name);
+            }
+            // 2) Full ver-todo pass → complete coverage; tag with mapped category.
+            const allProducts = await scrapeCategoryPages(page, 'https://www.pizzahut.com.pe/carta/ver-todo', 'Otros');
+            results = allProducts.map(p => ({ ...p, category: nameToCategory.get(p.name) || 'Otros' }));
+            console.log(`Cobertura ver-todo: ${allProducts.length} · con categoría mapeada: ${allProducts.filter(p => nameToCategory.has(p.name)).length}`);
         }
 
     } catch (error) {
@@ -185,11 +156,12 @@ async function scrapePizzaHut(url = 'https://www.pizzahut.com.pe/carta/ver-todo'
         await closeKernelBrowser({ browser, kernelBrowser, kernel });
     }
 
-    // Deduplicate by name
+    // Deduplicate by name + category
     const seen = new Set();
     const unique = results.filter(p => {
-        if (seen.has(p.name)) return false;
-        seen.add(p.name);
+        const key = `${p.name}||${p.category}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
         return true;
     });
 
@@ -224,5 +196,5 @@ function saveData(products, storeId) {
     console.log(`CSV guardado en: ${csvPath}`);
 }
 
-const targetUrl = process.argv[2] || 'https://www.pizzahut.com.pe/carta/ver-todo';
+const targetUrl = process.argv[2] || 'https://www.pizzahut.com.pe/carta';
 scrapePizzaHut(targetUrl);

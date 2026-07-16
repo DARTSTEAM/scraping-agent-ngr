@@ -16,47 +16,41 @@ async function scrapeRokys(url = 'https://rokys.com/menu') {
     const page = await context.newPage();
     let results = [];
 
+    // Rokys' own menu (rokys.com/menu) is a custom Tailwind SPA: products render as
+    // `div.cursor-pointer.grid` cards (no <article>, no product data in __NEXT_DATA__).
+    // Categories are a horizontal tab bar. We click each tab and scrape its cards.
+    const KNOWN_CATEGORIES = ['Promociones', 'Brasas', 'Broaster', 'Parrillas', 'Fusión Criolla',
+        'Hamburguesas', 'Piqueos', 'Desayunos', 'Bebidas', "Cyber Roky's"];
+
     try {
         await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
-        await page.waitForTimeout(3000);
+        await page.waitForTimeout(4000);
+        await autoScroll(page);
 
-        // Try embedded JSON data sources
-        const embedded = await page.evaluate(() => {
-            const nextScript = document.getElementById('__NEXT_DATA__');
-            if (nextScript) {
-                try { return { type: 'next', data: JSON.parse(nextScript.textContent) }; } catch (_) {}
-            }
-            const nuxt = document.getElementById('__NUXT_DATA__') || document.querySelector('[id="__NUXT_DATA__"]');
-            if (nuxt) {
-                try { return { type: 'nuxt', data: JSON.parse(nuxt.textContent) }; } catch (_) {}
-            }
-            return null;
-        });
+        // Baseline: everything currently rendered (full catalogue).
+        const allCards = await extractRokysCards(page);
+        console.log(`Cards totales en la página: ${allCards.length}`);
 
-        if (embedded?.type === 'next') {
-            console.log('Encontrado __NEXT_DATA__, extrayendo...');
-            results = parseNextData(embedded.data);
-        }
+        // Products live in category sections down the page (the tabs only scroll, they
+        // don't filter). Assign each card the category section header directly above it,
+        // matched by vertical position — ignoring the sticky tab bar near the top.
+        const nameToCategory = await categoriesByPosition(page, KNOWN_CATEGORIES);
+        const catCount = new Set(Object.values(nameToCategory)).size;
+        console.log(`Categorías mapeadas por posición: ${catCount}`);
 
-        // DOM fallback with scroll
-        if (results.length < 3) {
+        results = allCards.map(c => ({
+            restaurant: 'Rokys',
+            category: nameToCategory[c.name] || 'General',
+            name: c.name,
+            description: c.description || '',
+            price: c.price,
+            ...(c.oldPrice && c.oldPrice > c.price ? { originalPrice: c.oldPrice } : {}),
+        }));
+
+        // Last-resort fallback if the new extractor found nothing.
+        if (results.length === 0) {
             await autoScroll(page);
             results = await extractProductsDOM(page, 'Rokys');
-        }
-
-        // Paginate if needed
-        if (results.length > 0) {
-            let pageNum = 1;
-            while (true) {
-                const clicked = await clickNext(page);
-                if (!clicked) break;
-                pageNum++;
-                console.log(`Página ${pageNum}...`);
-                await page.waitForTimeout(3000);
-                await autoScroll(page);
-                const more = await extractProductsDOM(page, 'Rokys');
-                results.push(...more);
-            }
         }
 
     } catch (err) {
@@ -66,6 +60,82 @@ async function scrapeRokys(url = 'https://rokys.com/menu') {
     }
 
     return saveUnique(results, 'rokys-pe');
+}
+
+// Extract Rokys product cards. Discards struck-through (old) prices as `oldPrice`
+// and never mistakes a discount badge for a product.
+async function extractRokysCards(page) {
+    return page.evaluate(() => {
+        const cards = [...document.querySelectorAll('div[class*="cursor-pointer"]')]
+            .filter(el => /S\/\s*\d/.test(el.textContent || '') && el.querySelector('[class*="font-bold"]'));
+        const out = [];
+        const seen = new Set();
+        for (const el of cards) {
+            // keep only outermost card (skip nested cursor-pointer wrappers)
+            if (cards.some(o => o !== el && o.contains(el))) continue;
+
+            const nameEl = [...el.querySelectorAll('[class*="font-bold"]')]
+                .find(n => !/S\/\s*\d/.test(n.textContent) && !/^-?\s?\d{1,3}\s?%$/.test(n.textContent.trim()) && n.textContent.trim().length > 1);
+            const name = nameEl?.textContent?.trim() || '';
+            if (!name || seen.has(name)) continue;
+
+            // struck-through original price → oldPrice
+            let oldPrice = null;
+            const strikeEl = el.querySelector('[class*="line-through"]');
+            if (strikeEl) { const m = strikeEl.textContent.match(/([\d.,]+)/); if (m) oldPrice = parseFloat(m[0].replace(',', '.')); }
+
+            // current price: first S/ value that isn't the struck-through one
+            const values = [...(el.textContent || '').matchAll(/S\/\s*([\d.,]+)/g)]
+                .map(m => parseFloat(m[1].replace(',', '.')))
+                .filter(v => !isNaN(v) && v > 0 && v !== oldPrice);
+            const price = values[0] || 0;
+            if (price === 0) continue;
+
+            const descEl = el.querySelector('p, [class*="desc"]');
+            const description = descEl?.textContent?.trim() || '';
+
+            out.push({ name, price, oldPrice, description });
+            seen.add(name);
+        }
+        return out;
+    });
+}
+
+// Map each product name → its category by vertical position: the category section
+// header directly above the card. The sticky tab bar (all categories clustered near
+// the top) is ignored by preferring, per category, the LOWEST element on the page
+// (the real section header sits far below the tab bar).
+async function categoriesByPosition(page, cats) {
+    return page.evaluate((categories) => {
+        const docY = el => el.getBoundingClientRect().top + window.scrollY;
+
+        // Section header per category = the matching leaf element with the greatest Y.
+        const headerY = {};
+        for (const el of document.querySelectorAll('h1,h2,h3,h4,p,span,div,a,button,li')) {
+            if (el.children.length > 2) continue;
+            const t = (el.textContent || '').trim();
+            if (!categories.includes(t)) continue;
+            const y = docY(el);
+            if (headerY[t] === undefined || y > headerY[t]) headerY[t] = y;
+        }
+        const headers = Object.entries(headerY).map(([name, y]) => ({ name, y })).sort((a, b) => a.y - b.y);
+
+        const map = {};
+        const cards = [...document.querySelectorAll('div[class*="cursor-pointer"]')]
+            .filter(el => /S\/\s*\d/.test(el.textContent || '') && el.querySelector('[class*="font-bold"]'));
+        for (const el of cards) {
+            if (cards.some(o => o !== el && o.contains(el))) continue;
+            const nameEl = [...el.querySelectorAll('[class*="font-bold"]')]
+                .find(n => !/S\/\s*\d/.test(n.textContent) && n.textContent.trim().length > 1);
+            const name = nameEl?.textContent?.trim();
+            if (!name) continue;
+            const y = docY(el);
+            let cat = 'General';
+            for (const h of headers) { if (h.y <= y + 5) cat = h.name; else break; }
+            if (!(name in map)) map[name] = cat;
+        }
+        return map;
+    }, cats);
 }
 
 function parseNextData(data) {

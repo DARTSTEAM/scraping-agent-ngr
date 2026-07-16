@@ -1,0 +1,723 @@
+[
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo 1/4 brasa",
+    "description": "promo 1/4 brasa",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo para compartir",
+    "description": "promo para compartir",
+    "price": 39.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo mostrito brasa + gaseosa",
+    "description": "promo mostrito brasa + gaseosa",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "salsas familiares -sp",
+    "description": "salsas familiares -sp",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo personal",
+    "description": "promo personal",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "megarokyto",
+    "description": "megarokyto",
+    "price": 80.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "cremas personales",
+    "description": "cremas personales",
+    "price": 1.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo 1/4 brasa + gaseosa",
+    "description": "promo 1/4 brasa + gaseosa",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "1 pollo + papa + ensalada",
+    "description": "1 pollo + papa + ensalada",
+    "price": 78.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "el sabor del fútbol",
+    "description": "el sabor del fútbol",
+    "price": 89.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "rokybox usa",
+    "description": "rokybox usa",
+    "price": 44.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "rokybox méxico",
+    "description": "rokybox méxico",
+    "price": 36.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "rokybox canadá",
+    "description": "rokybox canadá",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "rokybox",
+    "description": "rokybox",
+    "price": 33.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "el ofertón",
+    "description": "el ofertón",
+    "price": 60.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "festín peruano",
+    "description": "festín peruano",
+    "price": 49.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "locos por los pollos",
+    "description": "locos por los pollos",
+    "price": 29.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "oferta 1",
+    "description": "oferta 1",
+    "price": 85.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "1/4 pollo + papa + ensalada",
+    "description": "1/4 pollo + papa + ensalada",
+    "price": 26.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "1/4 pollo + papas + ensalada + gaseosa 500 ml",
+    "description": "1/4 pollo + papas + ensalada + gaseosa 500 ml",
+    "price": 27.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "1/2 pollo + papa + ensalada",
+    "description": "1/2 pollo + papa + ensalada",
+    "price": 48.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "mega banquete",
+    "description": "mega banquete",
+    "price": 94.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "medio combo dulce",
+    "description": "medio combo dulce",
+    "price": 61.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "combo limonada",
+    "description": "combo limonada",
+    "price": 84.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo 6 broasters",
+    "description": "promo 6 broasters",
+    "price": 39.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo 10 broasters",
+    "description": "promo 10 broasters",
+    "price": 59.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo 8 broasters",
+    "description": "promo 8 broasters",
+    "price": 49.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "cajita mágica broaster",
+    "description": "cajita mágica broaster",
+    "price": 20.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "cajita magica chicharron de pollo",
+    "description": "cajita magica chicharron de pollo",
+    "price": 20.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "cajita mágica brasa",
+    "description": "cajita mágica brasa",
+    "price": 20.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "banquete broaster",
+    "description": "banquete broaster",
+    "price": 54.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "mega banquete broaster",
+    "description": "mega banquete broaster",
+    "price": 98.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo 2 broaster",
+    "description": "promo 2 broaster",
+    "price": 12.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "filete broaster + arroz oriental + papas fritas",
+    "description": "filete broaster + arroz oriental + papas fritas",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "parrilla carretillera",
+    "description": "parrilla carretillera",
+    "price": 49.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "parrilla para dos",
+    "description": "parrilla para dos",
+    "price": 71.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "parrilla clasica",
+    "description": "parrilla clasica",
+    "price": 152.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "bife a la parrilla",
+    "description": "bife a la parrilla",
+    "price": 44.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "pechuga de pollo a la parrilla",
+    "description": "pechuga de pollo a la parrilla",
+    "price": 27.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "dos chuleta a la parrilla",
+    "description": "dos chuleta a la parrilla",
+    "price": 36.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "1/2 parrilla brasa",
+    "description": "1/2 parrilla brasa",
+    "price": 104.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "1/2 parrilla clásica",
+    "description": "1/2 parrilla clásica",
+    "price": 128.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo hot crunch",
+    "description": "promo hot crunch",
+    "price": 28.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "promo roky's burgers",
+    "description": "promo roky's burgers",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "rokys burger hot crunch + papas",
+    "description": "rokys burger hot crunch + papas",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "roky's burger + papa ondulada 100g",
+    "description": "roky's burger + papa ondulada 100g",
+    "price": 14.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "hamburguesa suprema + papas",
+    "description": "hamburguesa suprema + papas",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "hamburguesa parrillera",
+    "description": "hamburguesa parrillera",
+    "price": 19.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "hamburguesa extrema",
+    "description": "hamburguesa extrema",
+    "price": 22.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "martes de rokywraps",
+    "description": "martes de rokywraps",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "wrap de pollo a la brasa",
+    "description": "wrap de pollo a la brasa",
+    "price": 14.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "wrap crispy de pollo",
+    "description": "wrap crispy de pollo",
+    "price": 14.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "2 wrap a elección",
+    "description": "2 wrap a elección",
+    "price": 28
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "2 wrap a elección + 2 gaseosas",
+    "description": "2 wrap a elección + 2 gaseosas",
+    "price": 32
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "wrap de pollo a la brasa + gaseosa",
+    "description": "wrap de pollo a la brasa + gaseosa",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "wrap crispy de pollo + gaseosa",
+    "description": "wrap crispy de pollo + gaseosa",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "12 rokytenders + papas + 2 gaseosas",
+    "description": "12 rokytenders + papas + 2 gaseosas",
+    "price": 64.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "6 rokytenders + papas + gaseosa",
+    "description": "6 rokytenders + papas + gaseosa",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "12 rokytenders + papas",
+    "description": "12 rokytenders + papas",
+    "price": 54.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "6 rokytenders + papas",
+    "description": "6 rokytenders + papas",
+    "price": 27.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "3 rokytenders",
+    "description": "3 rokytenders",
+    "price": 9.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "tallarin a la huancaina con lomo saltado",
+    "description": "tallarin a la huancaina con lomo saltado",
+    "price": 30.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "crocante mixto doble",
+    "description": "crocante mixto doble",
+    "price": 23.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "chaufa con chancho y frankfurter",
+    "description": "chaufa con chancho y frankfurter",
+    "price": 30.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "lomo saltado",
+    "description": "lomo saltado",
+    "price": 34.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "pollo saltado",
+    "description": "pollo saltado",
+    "price": 31.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "tallarin de carne",
+    "description": "tallarin de carne",
+    "price": 34.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "tallarin saltado de pollo",
+    "description": "tallarin saltado de pollo",
+    "price": 31.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "chaufa de pollo",
+    "description": "chaufa de pollo",
+    "price": 31.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "caldo de gallina sin presa",
+    "description": "caldo de gallina sin presa",
+    "price": 12.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "caldo de gallina con presa",
+    "description": "caldo de gallina con presa",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "tequeños x12",
+    "description": "tequeños x12",
+    "price": 19.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "tequeños x6",
+    "description": "tequeños x6",
+    "price": 10.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "tequeños x3",
+    "description": "tequeños x3",
+    "price": 5.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "wantanes hot brasa x6",
+    "description": "wantanes hot brasa x6",
+    "price": 14.5
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "wantanes hot brasa x3",
+    "description": "wantanes hot brasa x3",
+    "price": 7.5
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "6 rokys wings + papas fritas",
+    "description": "6 rokys wings + papas fritas",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "12 rokys wings + papas fritas",
+    "description": "12 rokys wings + papas fritas",
+    "price": 29.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "salchipapa especial",
+    "description": "salchipapa especial",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "salchipapa clásica",
+    "description": "salchipapa clásica",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "sándwich chicharrón sin café",
+    "description": "sándwich chicharrón sin café",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno jugo de fresa 1/2 l.",
+    "description": "desayuno jugo de fresa 1/2 l.",
+    "price": 10.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno jugo de naranja 1/2 l.",
+    "description": "desayuno jugo de naranja 1/2 l.",
+    "price": 10.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno sandwich asado de res",
+    "description": "desayuno sandwich asado de res",
+    "price": 15.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno mixto especial",
+    "description": "desayuno mixto especial",
+    "price": 14.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno continental",
+    "description": "desayuno continental",
+    "price": 9.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno americano",
+    "description": "desayuno americano",
+    "price": 12.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno huachano",
+    "description": "desayuno huachano",
+    "price": 23.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno sandwich butifarra",
+    "description": "desayuno sandwich butifarra",
+    "price": 15.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno rokys especial",
+    "description": "desayuno rokys especial",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno jugo surtido 1",
+    "description": "desayuno jugo surtido 1",
+    "price": 11.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "desayuno jugo surtido 3",
+    "description": "desayuno jugo surtido 3",
+    "price": 11.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "chicha morada 3.75lt",
+    "description": "chicha morada 3.75lt",
+    "price": 44.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "chicha morada 1.9lt",
+    "description": "chicha morada 1.9lt",
+    "price": 34.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "chicha morada 1lt",
+    "description": "chicha morada 1lt",
+    "price": 20.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "inca kola 3l",
+    "description": "inca kola 3l",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "coca cola 3l",
+    "description": "coca cola 3l",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "maracuyá 1l",
+    "description": "maracuyá 1l",
+    "price": 20.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "limonada 1l",
+    "description": "limonada 1l",
+    "price": 19.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "inca kola 1.5l",
+    "description": "inca kola 1.5l",
+    "price": 14.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "coca cola 1.5l",
+    "description": "coca cola 1.5l",
+    "price": 14.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "inca kola personal",
+    "description": "inca kola personal",
+    "price": 6.9
+  },
+  {
+    "restaurant": "Rokys",
+    "category": "General",
+    "name": "coca cola personal",
+    "description": "coca cola personal",
+    "price": 6.9
+  }
+]

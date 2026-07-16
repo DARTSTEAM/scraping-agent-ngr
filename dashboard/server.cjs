@@ -495,19 +495,9 @@ app.get('/api/download/:file', (req, res) => {
     const fileName = req.params.file; // e.g. products_742.csv
     const storeId = fileName.replace(/^products_/, '').replace(/\.csv$/, '');
 
-    // 1. Try pre-built CSV in SCRAPERS_DIR (written by fresh scrapes)
-    const csvInRoot = path.join(SCRAPERS_DIR, fileName);
-    if (fs.existsSync(csvInRoot)) {
-        return res.download(csvInRoot);
-    }
-
-    // 2. Try pre-built CSV in DATA_DIR
-    const csvInData = path.join(DATA_DIR, fileName);
-    if (fs.existsSync(csvInData)) {
-        return res.download(csvInData);
-    }
-
-    // 3. Generate CSV on-the-fly from JSON (works for baseline data that has no .csv)
+    // Always regenerate from the JSON source so the CSV is correctly quoted and
+    // UTF-8/BOM encoded. Pre-built .csv files written by scrapers are ignored on
+    // purpose — they were the origin of the encoding + column-fragmentation issues.
     const jsonInRoot = path.join(SCRAPERS_DIR, `products_${storeId}.json`);
     const jsonInData = path.join(DATA_DIR, `products_${storeId}.json`);
     const jsonPath = fs.existsSync(jsonInRoot) ? jsonInRoot : fs.existsSync(jsonInData) ? jsonInData : null;
@@ -518,12 +508,25 @@ app.get('/api/download/:file', (req, res) => {
 
     try {
         const products = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-        const escape = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
-        const header = 'Restaurant,Category,Name,Description,Price';
-        const rows = products.map(p =>
-            [escape(p.restaurant), escape(p.category), escape(p.name), escape(p.description), p.price ?? ''].join(',')
-        );
-        const csv = [header, ...rows].join('\n');
+
+        // Quote every field (handles commas, quotes and newlines inside descriptions
+        // so nothing spills into the next column). CRLF line endings for Excel.
+        const cell = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
+        const num = (v) => (typeof v === 'number' ? v : '');
+
+        const header = ['Local', 'Categoria', 'Producto', 'Descripcion', 'Precio', 'Precio regular', 'Disponible'];
+        const rows = products.map(p => [
+            cell(p.restaurant),
+            cell(p.category),
+            cell(p.name),
+            cell(p.description),
+            num(p.price),
+            num(p.originalPrice ?? p.price), // regular price when a promo was captured
+            p.inStock === false ? 'No' : p.inStock === true ? 'Si' : '',
+        ].join(','));
+
+        // Prepend a UTF-8 BOM so Excel renders tildes/ñ correctly.
+        const csv = '﻿' + [header.join(','), ...rows].join('\r\n');
 
         res.setHeader('Content-Type', 'text/csv; charset=utf-8');
         res.setHeader('Content-Disposition', `attachment; filename="${fileName}"`);

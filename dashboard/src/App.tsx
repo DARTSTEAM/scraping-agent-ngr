@@ -82,7 +82,7 @@ const NGR_OWN_GROUPS = [
     stores: [
       { name: "Bembos",                 url: "https://www.bembos.com.pe/menu",                                                  id: 'bembos-pe',           platform: 'Propio' },
       { name: "McDonald's (Izaguirre)", url: "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos",    id: 'mcd-izaguirre-iza',   platform: 'Propio' },
-      { name: "Burger King",            url: "https://www.burgerking.pe/carta/ver-todo",                                         id: 'burgerking-pe',       platform: 'Propio' },
+      { name: "Burger King",            url: "https://www.burgerking.pe/carta",                                                  id: 'burgerking-pe',       platform: 'Propio' },
     ]
   },
   {
@@ -97,7 +97,7 @@ const NGR_OWN_GROUPS = [
     ngrLocal: 'Papa Johns',
     stores: [
       { name: "Papa Johns",             url: "https://www.papajohns.com.pe/menu",            id: 'papajohns-pe',        platform: 'Propio' },
-      { name: "Pizza Hut (Miraflores)", url: "https://www.pizzahut.com.pe/carta/ver-todo",   id: 'pizzahut-miraflores', platform: 'Propio' },
+      { name: "Pizza Hut (Miraflores)", url: "https://www.pizzahut.com.pe/carta",             id: 'pizzahut-miraflores', platform: 'Propio' },
       { name: "Little Caesars",         url: "https://pe.littlecaesars.com/es-pe/menu/",     id: 'littlecaesars-pe',    platform: 'Propio' },
     ]
   },
@@ -105,7 +105,7 @@ const NGR_OWN_GROUPS = [
     ngrLocal: 'Chinawok',
     stores: [
       { name: "Chinawok",     url: "https://www.chinawok.com.pe/menu",       id: 'chinawok-pe',    platform: 'Propio' },
-      { name: "Wanta",        url: "https://www.wanta.pe/carta/ver-todo",    id: 'wanta-pe',       platform: 'Propio' },
+      { name: "Wanta",        url: "https://www.wanta.pe/carta",             id: 'wanta-pe',       platform: 'Propio' },
       { name: "Chifa Express",url: "https://www.chifaexpress.pe/pedir",      id: 'chifaexpress-pe',platform: 'Propio' },
     ]
   },

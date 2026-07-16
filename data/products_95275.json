@@ -1,0 +1,932 @@
+[
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Banquete del Día",
+    "name": "Festi Banquete 6 pz",
+    "description": "6 piezas de pollo + 2 papas regular + 2 gaseosas de 500 ml",
+    "price": 71.82,
+    "originalPrice": 71.82,
+    "productId": 3162550,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Hora del Almuerzo",
+    "name": "Menu 3 pz Salsometro",
+    "description": "3 piezas de pollo crujiente + 1 papa cajun regular + 1 salsa 3 oz familiar",
+    "price": 41.5,
+    "originalPrice": 41.5,
+    "productId": 2297572,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Hora del Almuerzo",
+    "name": "Menu Sandwich",
+    "description": "Elige tu chicken sandwich favorito (disponible en tres versiones: Tártara Golf, Mayo Especial o Ají Mix) + 1 papa cajun regular.",
+    "price": 33.7,
+    "originalPrice": 33.7,
+    "productId": 2297573,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Hora del Almuerzo",
+    "name": "Menu Tosty",
+    "description": "Elige tu tosty favorito ente tradicional y Crunch + 1 papa cajun regular.",
+    "price": 39.7,
+    "originalPrice": 39.7,
+    "productId": 2297574,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Hora del Almuerzo",
+    "name": "Menu 2x1 Sandwich Salsometro",
+    "description": "Elige tus 2 chicken sandwich favorito (disponible en tres versiones: Tártara Golf, Mayo Especial o Ají Mix) + 2 papa cajun regular + 2 gaseosa de 500 ml + 1 salsa 3 oz familiar",
+    "price": 80.4,
+    "originalPrice": 80.4,
+    "productId": 2297575,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Hora del Almuerzo",
+    "name": "Menu 2x1 Tosty Salsometro",
+    "description": "Elige tus 2 tostys favoritos entre tradicional y Crunch + 2 papa cajun regular + 2 gaseosa de 500 ml + 1 salsa 3 oz familiar",
+    "price": 78.8,
+    "originalPrice": 78.8,
+    "productId": 2297576,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Hora del Almuerzo",
+    "name": "Menu Tenders",
+    "description": "4 tenders + 1 papa cajun regular",
+    "price": 36.5,
+    "originalPrice": 36.5,
+    "productId": 2368387,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Salsaton Divino",
+    "description": "2 pieza pollo + 6 nuggets + 2 papa cajún regular + 1 salsa a eleccion de 3oz (acevichada, golf, rocoto dulce, aji popeyes, aji limo o aguaymanto). No incluye otras salsas de 1 oz como mayonesa ni aji popeyes.",
+    "price": 47.6,
+    "originalPrice": 47.6,
+    "productId": 1134744,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Festi 10 Alitas AON",
+    "description": "10 Alitas Picantes y 1 Papa Cajún Regular.",
+    "price": 40.9,
+    "originalPrice": 40.9,
+    "productId": 1134859,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Rappi Cajun",
+    "description": "3 Piezas, 1 Papa Cajún Regular y 1 Gaseosa 500ml.",
+    "price": 48.9,
+    "originalPrice": 48.9,
+    "productId": 1134959,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Duo Inka Cajún",
+    "description": "4 piezas de pollo + 2 papas cajun regular +2 gaseosas 500 mil",
+    "price": 72.9,
+    "originalPrice": 72.9,
+    "productId": 1134856,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Day 6 piezas",
+    "description": "6 piezas de pollo + 1 papa cajun familiar",
+    "price": 61.9,
+    "originalPrice": 61.9,
+    "productId": 1134888,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Festi 8 piezas",
+    "description": "8 Piezas y 1 Papa Cajún Familiar",
+    "price": 99.9,
+    "originalPrice": 99.9,
+    "productId": 1134771,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Combo 2 pz + Nuggets",
+    "description": "2 piezas de pollo crujiente + 4 nuggets + 1 papa cajun regular + 1 gaseosa 500ml",
+    "price": 44.5,
+    "originalPrice": 44.5,
+    "productId": 3087188,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Duo 4 pz + Alitas",
+    "description": "4 piezas de pollo crujiente + 4 alitas picantes + 2 papa cajun regular + 2 gaseosa 500ml",
+    "price": 77.8,
+    "originalPrice": 77.8,
+    "productId": 3087190,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Promos de Locura",
+    "name": "Duo Tenders + Alitas",
+    "description": "6 tenders + 6 alitas picantes + 2 papas cajun regulares + 2 gaseosas 500ml",
+    "price": 90.2,
+    "originalPrice": 90.2,
+    "productId": 3087787,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Box Max Futbol",
+    "description": "3 piezas de pollo o 4 tenders + 3 nuggets + 1 papa cajun regular + 1 gaseosa de 500 ml + 1 salsa de 3 oz. Prueba nuestra nueva salsa Honey Mustard.",
+    "price": 54.9,
+    "originalPrice": 54.9,
+    "productId": 1650967,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Duo Alitas Futbol",
+    "description": "12 alitas, 2 papas regulares, 2 gaseosas 500 ml, 1 salsa 3 oz",
+    "price": 84,
+    "originalPrice": 84,
+    "productId": 2082792,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Duo Salsaton Futbol",
+    "description": "4 piezas de pollo crujiente + 2 papas cajun regular + 2 gaseosas 500 ml + 1 salsa de 3 oz. Prueba nuestra nueva salsa Honey Mustard.",
+    "price": 64.9,
+    "originalPrice": 64.9,
+    "productId": 1650964,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Duo Tenders Futbol",
+    "description": "6 tenders o 12 nuggets, 2 papas regulares, 2 gaseosas 500 ml, 1 salsa 3 oz",
+    "price": 84,
+    "originalPrice": 84,
+    "productId": 2082793,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Festi Futbol 6pz",
+    "description": "6 piezas de pollo + 6 nuggets + 1 papa cajun familiar +1 salsa de 3 oz. Prueba nuestra nueva salsa Honey Mustard.",
+    "price": 89.9,
+    "originalPrice": 89.9,
+    "productId": 1650965,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Festi Futbol 8pz",
+    "description": "8 piezas de pollo + 1 papa cajun familiar +1 salsa de 3 oz. Prueba nuestra nueva salsa Honey Mustard.",
+    "price": 88.9,
+    "originalPrice": 88.9,
+    "productId": 1650966,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Salsa Familiar",
+    "description": "1 Salsa Salsatón familiar 3 oz (elige sabor)",
+    "price": 3.9,
+    "originalPrice": 3.9,
+    "productId": 1134827,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Tenders Futbol",
+    "description": "3 tenders o 6 nuggets o 6 alitas, 1 papa regular, 1 gaseosa 500 ml, 1 salsa 3 oz",
+    "price": 42,
+    "originalPrice": 42,
+    "productId": 2082791,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Salsaton Futbol",
+    "name": "Vasote Salsaton",
+    "description": "¡Vive la experiencia Salsatón con lo más viral del momento: nuestro Vasote de 12 oz! Elige tu sabor favorito.",
+    "price": 9.9,
+    "originalPrice": 9.9,
+    "productId": 1134986,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Full Box",
+    "name": "Full Box",
+    "description": "Crea tu box eligiendo entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders. Como parte de la experiencia podras elegir 2 salsas de 2oz en el sabor que desees y papas para compartir",
+    "price": 88.4,
+    "originalPrice": 88.4,
+    "productId": 1650963,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Full Box",
+    "name": "Full Box + Coca cola",
+    "description": "Crea tu box eligiendo entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders + 2 salsas de 2oz +2 papa cajún regular + 1 gaseosa de 1 litro.",
+    "price": 97.3,
+    "originalPrice": 97.3,
+    "productId": 3026461,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Full Box",
+    "name": "Duo Full Box + Coca cola",
+    "description": "Crea tus 2 box eligiendo, en cada full box elige entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders + 2 salsas de 2oz +2 papa cajún regular + 1 gaseosa de 1.5 litros.",
+    "price": 187.7,
+    "originalPrice": 187.7,
+    "productId": 3026465,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Full Box",
+    "name": "Duo Full Box",
+    "description": "Crea tus 2 box eligiendo, en cada full box elige entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders + 2 salsas de 2oz +2 papa cajún regular",
+    "price": 176.8,
+    "originalPrice": 176.8,
+    "productId": 3026467,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Break 1 pz",
+    "description": "1 pieza + 3 nuggets + 1 papa regular",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 1134942,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "2 Piezas Flash",
+    "description": "2 Piezas y 1 Papa Cajún Regular.",
+    "price": 29.9,
+    "originalPrice": 29.9,
+    "productId": 1134963,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Cajún Para 2",
+    "description": "3 piezas, 4 nuggets y 2 papas cajún regulares",
+    "price": 60.9,
+    "originalPrice": 60.9,
+    "productId": 1134601,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Duo 4 Piezas Combo",
+    "description": "4 piezas + 2 papa cajun regular + 2 gaseosa de 500 ml",
+    "price": 65.2,
+    "originalPrice": 65.2,
+    "productId": 1134934,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Pollo Divino",
+    "description": "6 Piezas y 2 Papas Cajún Regulares.",
+    "price": 70.9,
+    "originalPrice": 70.9,
+    "productId": 1134662,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Festi 6 Piezas Combo",
+    "description": "6 piezas de pollo crujiente + 1 papa cajun familiar + 1 gaseosa de 1 litro",
+    "price": 76.2,
+    "originalPrice": 76.2,
+    "productId": 1134758,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Festi Cajún Power",
+    "description": "6 piezas, 6 alitas picantes ó 6 nuggets, 1 papa cajún familiar y 1 gaseosa 1L.",
+    "price": 108.9,
+    "originalPrice": 108.9,
+    "productId": 1134910,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Festi 8 Piezas Combo",
+    "description": "8 piezas de pollo crujiente + 1 papa cajun familiar + 1 gaseosa de 1 litro",
+    "price": 94,
+    "originalPrice": 94,
+    "productId": 1134853,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Festi 10 Piezas Combo",
+    "description": "10 piezas de pollo crujiente + 1 papa cajun familiar + 1 gaseosa de 1 litro",
+    "price": 111.8,
+    "originalPrice": 111.8,
+    "productId": 1134965,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Pieza de Pollo x2",
+    "description": "2 piezas de pollo crujiente crispy, elige entre tradicional o picante.",
+    "price": 17.8,
+    "originalPrice": 17.8,
+    "productId": 2082753,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Personal 2 Piezas Combo",
+    "description": "2 piezas de pollo crujiente + 1 papa cajun regular +1 gaseosa de 500 ml",
+    "price": 32.6,
+    "originalPrice": 32.6,
+    "productId": 2082754,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Personal 3 piezas Combo",
+    "description": "3 piezas de pollo crujiente + 1 papa cajun regular +1 gaseosa de 500 ml",
+    "price": 41.5,
+    "originalPrice": 41.5,
+    "productId": 2082755,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "2 x 1 Salsatón Cajún",
+    "description": "4 piezas de pollo + 2 papas cajun regulares + 1 salsa a eleccion de 3oz (acevichada, golf, rocoto dulce, aji popeyes, aji limo o aguaymanto). No incluye otras salsas de 1 oz como mayonesa ni aji popeyes.",
+    "price": 50.6,
+    "originalPrice": 50.6,
+    "productId": 1134943,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Pollo Frito",
+    "name": "Festi Salsatón",
+    "description": "6piezas+ 6 nugg+ papa cajun familiar + 1 salsa a eleccion de 3oz (acevichada, golf, rocoto dulce, aji popeyes, aji limo o aguaymanto). No incluye otras salsas de 1 oz como mayonesa ni aji popeyes.",
+    "price": 80.5,
+    "originalPrice": 80.5,
+    "productId": 1134846,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Tenders",
+    "name": "Break Tenders",
+    "description": "2 tenders + 2 nuggets + 1 papa regular.",
+    "price": 26.9,
+    "originalPrice": 26.9,
+    "productId": 1134998,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Tenders",
+    "name": "Duo 6 Tenders Salsaton",
+    "description": "6 tenders de pechuga crispy + 2 papas cajun regular + 1 salsa familiar de 3 oz",
+    "price": 60.5,
+    "originalPrice": 60.5,
+    "productId": 1134946,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Tenders",
+    "name": "Day 2x1 tenders",
+    "description": "6 tenders + 6 nuggets + 2 papas regulares + 2 gaseosas 500ml",
+    "price": 78.9,
+    "originalPrice": 78.9,
+    "productId": 1134889,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Tenders",
+    "name": "Tenders x4",
+    "description": "4 tiras de pechuga crispy",
+    "price": 27.8,
+    "originalPrice": 27.8,
+    "productId": 2082757,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Tenders",
+    "name": "Tenders x6",
+    "description": "6 tiras de pechuga crispy",
+    "price": 41.7,
+    "originalPrice": 41.7,
+    "productId": 2082758,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Tenders",
+    "name": "Personal 4 Tenders Salsaton",
+    "description": "4 tenders de pechuga crispy + 1 papa cajún regular + 1 gaseosa 500 ml + 1 salsa familiar 3 oz",
+    "price": 45.6,
+    "originalPrice": 45.6,
+    "productId": 2082759,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Tenders",
+    "name": "Tenders x8",
+    "description": "8 tiras de pechuga crispy",
+    "price": 55.6,
+    "originalPrice": 55.6,
+    "productId": 2082760,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Tenders",
+    "name": "Duo 8 Tenders Salsaton",
+    "description": "8 tenders de pechuga crispy + 2 papas cajun regular + 1 salsa familiar de 3 oz",
+    "price": 74.4,
+    "originalPrice": 74.4,
+    "productId": 2082790,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Nuggets",
+    "name": "Break Nuggets",
+    "description": "7 nuggets + 1 papa regular",
+    "price": 26.9,
+    "originalPrice": 26.9,
+    "productId": 1134883,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Nuggets",
+    "name": "Nuggets x4",
+    "description": "4 nuggets",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 2082761,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Nuggets",
+    "name": "Nuggets x8",
+    "description": "8 nuggets",
+    "price": 23.87,
+    "originalPrice": 23.87,
+    "productId": 2082762,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Nuggets",
+    "name": "Personal 8 Nuggets Combo",
+    "description": "8 nuggets + 1 papa cajun regular +1 gaseosa 500ml. Agrega +2 soles una salsa familiar 3oz.",
+    "price": 38.67,
+    "originalPrice": 38.67,
+    "productId": 2082763,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Nuggets",
+    "name": "Duo 16 nuggets combo",
+    "description": "16 nuggets + 2 papa cajun regular + 2 gaseosa 500ml. Agrega +2 soles una salsa familiar 3oz.",
+    "price": 77.33,
+    "originalPrice": 77.33,
+    "productId": 2082764,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Alitas",
+    "name": "Break Alitas",
+    "description": "4 alitas + 1 papa regular",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 1134884,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Alitas",
+    "name": "Locura de Alitas",
+    "description": "12 Alitas Picantes y 2 Papas Cajún Regulares.",
+    "price": 61.9,
+    "originalPrice": 61.9,
+    "productId": 1134560,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Alitas",
+    "name": "Alitas x4",
+    "description": "4 alitas picantes en receta cajun.",
+    "price": 12.6,
+    "originalPrice": 12.6,
+    "productId": 2082765,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Alitas",
+    "name": "Alitas x8",
+    "description": "8 alitas picantes en receta cajun.",
+    "price": 25.2,
+    "originalPrice": 25.2,
+    "productId": 2082766,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Alitas",
+    "name": "Personal 8 Alitas Combo",
+    "description": "8 alitas picantes en receta cajun + 1 papa cajun regular +1 gaseosa 500ml. Agrega +2 soles una salsa familiar 3oz",
+    "price": 40,
+    "originalPrice": 40,
+    "productId": 2082767,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Alitas",
+    "name": "Duo 16 Alitas Combo",
+    "description": "16 alitas picantes en receta cajun + 2 papa cajun regular +2 gaseosa 500ml. Agrega +2 soles una salsa familiar 3oz",
+    "price": 80,
+    "originalPrice": 80,
+    "productId": 2082768,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Wraps",
+    "name": "Break Rolls",
+    "description": "1 chicken roll + 1 papa cajun regular + 1 gaseosa 500 ml",
+    "price": 30.7,
+    "originalPrice": 30.7,
+    "productId": 1134747,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Wraps",
+    "name": "Personal Tosty",
+    "description": "Elige tu tosty favorito ente tradicional y Crunch + 1 papa cajun regular",
+    "price": 37.7,
+    "originalPrice": 37.7,
+    "productId": 1725814,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Wraps",
+    "name": "Personal Tosty Combo",
+    "description": "Elige tu tosty favorito ente tradicional y Crunch + 1 papa cajun regular + 1 gaseosa de 500 ml",
+    "price": 37.7,
+    "originalPrice": 37.7,
+    "productId": 2795412,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Wraps",
+    "name": "Duo Chicken Roll",
+    "description": "2 Chicken Rolls( Tortilla rellena con pollo crujiente, papas al hilo, tomate y mayonesa) y 1 Papa Cajún Familiar.",
+    "price": 40.9,
+    "originalPrice": 40.9,
+    "productId": 1134925,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Wraps",
+    "name": "Chicken Roll x1",
+    "description": "Tortilla pequeña con 1 tender, papas al hilo, tomate y mayonesa",
+    "price": 15.9,
+    "originalPrice": 15.9,
+    "productId": 2082769,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Wraps",
+    "name": "Tosty x1",
+    "description": "Elige tu Tosty favorito: Tosty Crunch (contiene 1 tender y 1 nugget crujiente, papas al hilo, queso cheddar, salsa de tocino ahumado, tomate y lechuga); o el Tosty tradicional (contiene 1 tender y 1 nugget crujiente, queso cheddar, mayonesa, tomate y l",
+    "price": 22.9,
+    "originalPrice": 22.9,
+    "productId": 2082770,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Wraps",
+    "name": "Personal Tosty Salsaton",
+    "description": "Elige tu tosty favorito ente tradicional y Crunch + 1 papa cajun regular + 1 salsa familiar 3oz",
+    "price": 33.8,
+    "originalPrice": 33.8,
+    "productId": 2082771,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Sandwich",
+    "name": "Sandwich x1",
+    "description": "Disfruta nuestro Sándwich de pechuga de pollo crujiente en pan brioche, disponible en tres versiones: Tártara Golf con papas al hilo, lechuga y salsa tártara golf; Mayo Especial con tomate, lechuga y mayonesa especial; y Ají Mix con tomate, lechuga.",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 2082772,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Sandwich",
+    "name": "Personal Sandwich Combo",
+    "description": "Elige tu chicken sandwich favorito (disponible en tres versiones: Tártara Golf, Mayo Especial o Ají Mix) + 1 papa cajun regular + 1 gaseosa de 500 ml",
+    "price": 38.7,
+    "originalPrice": 38.7,
+    "productId": 2082773,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Sandwich",
+    "name": "Personal Sandwich Salsaton",
+    "description": "Elige tu chicken sandwich favorito (disponible en tres versiones: Tártara Golf, Mayo Especial o Ají Mix) + 1 papa regular + 1 salsa familiar 3 oz",
+    "price": 34.8,
+    "originalPrice": 34.8,
+    "productId": 2082774,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Chicharron Pop",
+    "name": "Chicharrón Pop",
+    "description": "1 Chicharron Pop de pollo + 1 salsa de 2 oz",
+    "price": 12.4,
+    "originalPrice": 12.4,
+    "productId": 2082775,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Chicharron Pop",
+    "name": "Chicharrón Pop XL",
+    "description": "1 Chicharron Pop XL de pollo + 1 salsa de 2 oz",
+    "price": 19.4,
+    "originalPrice": 19.4,
+    "productId": 2082776,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Chicharron Pop",
+    "name": "Personal Chicharron Pop XL Combo",
+    "description": "Chicharron Pop de pollo XL + 1 salsa 2oz + 1 papa cajun regular + 1 gaseosa 500 ml",
+    "price": 34.2,
+    "originalPrice": 34.2,
+    "productId": 2082777,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Chicharron Pop",
+    "name": "Duo Chicharron Pop XL",
+    "description": "2 Chicharron Pop de pollo XL + 2 papa cajun regular + 2 salsas 2 oz",
+    "price": 54.6,
+    "originalPrice": 54.6,
+    "productId": 2082778,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Complementos y Salsas",
+    "name": "Papa Regular",
+    "description": "Papas fritas doradas con mezcla de especies cajun. Disfruta +3 soles con tu salsa preferida.",
+    "price": 7.9,
+    "originalPrice": 7.9,
+    "productId": 1134886,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Complementos y Salsas",
+    "name": "Papa Grande",
+    "description": "Papas fritas doradas con mezcla de especies cajun. Disfruta +3 soles con tu salsa preferida.",
+    "price": 9.9,
+    "originalPrice": 9.9,
+    "productId": 1134867,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Complementos y Salsas",
+    "name": "Papa Familiar",
+    "description": "Papas fritas doradas con mezcla de especies cajun. Disfruta +3 soles con tu salsa preferida.",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 1134604,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Complementos y Salsas",
+    "name": "Papa Super Familiar",
+    "description": "Papas fritas doradas con mezcla de especies cajun. Disfruta +3 soles con tu salsa preferida.",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 1134957,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Complementos y Salsas",
+    "name": "Camote Cajun Regular",
+    "description": "Camotes fritos doradas con mezcla de especias cajún tamaño regular",
+    "price": 8.9,
+    "originalPrice": 8.9,
+    "productId": 2800158,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Complementos y Salsas",
+    "name": "Ensalada de Col Regular",
+    "description": "Col + zanahoria + salsa agridulce",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 2082779,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Complementos y Salsas",
+    "name": "Ensalada de Col Familiar",
+    "description": "Col + zanahoria + salsa agridulce",
+    "price": 11.9,
+    "originalPrice": 11.9,
+    "productId": 2082780,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "San Luis Con Gas 625 ml",
+    "description": "San Luis Con Gas 625 ml",
+    "price": 3.9,
+    "originalPrice": 3.9,
+    "productId": 2082781,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "San Luis Sin Gas 625 ml",
+    "description": "San Luis Sin Gas 625 ml",
+    "price": 3.9,
+    "originalPrice": 3.9,
+    "productId": 2082782,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "San Luis Sin Gas 750 ml",
+    "description": "San Luis Sin Gas 750 ml",
+    "price": 4.2,
+    "originalPrice": 4.2,
+    "productId": 2082783,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "Inca Kola 500 ml",
+    "description": "Inca Kola 500 ml",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 2079137,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "Coca-Cola 500 ml",
+    "description": "Coca-Cola 500 ml",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 2082784,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 500 ml",
+    "description": "Inca Kola Sin Azúcar 500 ml",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 2082785,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 500 ml",
+    "description": "Coca-Cola Sin Azúcar 500 ml",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 2082786,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "Inca Kola 1.5 Litros",
+    "description": "Inca Kola 1.5 Litros",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 2082787,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 1.5 Litros",
+    "description": "Coca-Cola Sin Azúcar 1.5 Litros",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 2082788,
+    "inStock": true
+  },
+  {
+    "restaurant": "Popeyes - San Antonio",
+    "category": "Bebidas",
+    "name": "Coca-Cola 1.5 Litros",
+    "description": "Coca-Cola 1.5 Litros",
+    "price": 12.9,
+    "originalPrice": 12.9,
+    "productId": 2082789,
+    "inStock": true
+  }
+]

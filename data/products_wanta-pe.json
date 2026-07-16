@@ -1,115 +1,353 @@
 [
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Dúo Combinados",
-    "description": "1 Combinado Tipakay + 1 Combinado Chijaukay + 4 Wantanes Clásicos + 2 Gaseosas Personales.",
-    "price": 46.9
+    "category": "Otros",
+    "name": "Dúo Goleador",
+    "description": "Dos combinados de Chaufa con fondo a elección (Chijaukay o Tipakay)",
+    "price": 39.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Sopa Wantán",
-    "description": "Rica sopita con pollo, chancho, wantanes, huevito y verduras.",
-    "price": 22.9
+    "category": "Otros",
+    "name": "Taypá Goleador",
+    "description": "4 Combinados Jr. de Chaufa y Saltado de Pollo + 12 Wantanes Clásicos + su salsa Tamarindo",
+    "price": 64.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Chaufa de Chancho asado",
-    "description": "Arroz salteado al wok con chanchito asado, huevo y cebolla china. Ajá, el clásico chaufita de chancho asado.",
-    "price": 18.9
+    "category": "Otros",
+    "name": "Wantazo Goleador",
+    "description": "1 Tallarín Saltado de pollo ´+ 2 Chaufas de pollo + 1 Plato de fondo a elección (Tipakay o Chijaukay) + 8 Wantanes Clásicos de pollo + su salsa tamari",
+    "price": 85.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Siu Mai (6 un)",
-    "description": "6 Siu mais rellenos de chancho y hongos. Wantéalos en su rica salsa hoisin.",
-    "price": 18.9
+    "category": "Otros",
+    "name": "Tipakay a lo Pobre",
+    "description": "Un Combinado de Arroz Chaufa y Tipakay, montado con huevo y plátano frito",
+    "price": 23.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Mostro Hong Kong",
-    "description": "Base de arroz chaufa de pollo, montado con chancho asado, huevo frito y nabo encurtido.",
-    "price": 26.9
+    "category": "Otros",
+    "name": "Chijaukay a lo Pobre",
+    "description": "Un Combinado de Arroz Chaufa y Chijaukay, montado con huevo y plátano frito",
+    "price": 23.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Combo Mostro Casero Yape Delivery",
-    "description": "1 Mostro Casero de Saltado de pollo + 2 Wantanes Clásicos de pollo + su salsa tamarindo",
-    "price": 24.9
+    "category": "Otros",
+    "name": "Wantazo 7 Sabores",
+    "description": "Un Chaufa de Pollo, medio Tallarín de Saltado de Pollo, Mix de Pollo Chijaukay y Tipakay, Mix de Pollo Cruyok y Chancho al Tausí, cuatro Wantanes Clásicos y su salsa Tamarindo",
+    "price": 80.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Aeropuertos",
+    "name": "Aeropuerto Picante",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y Pollo Picante",
+    "price": 23.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Otros",
     "name": "Combinado a lo Pobre",
     "description": "Un combinado clásico de Arroz Chaufa y Tallarín Saltado de pollo, montado con plátano y huevo frito.",
     "price": 19.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Otros",
+    "name": "Combo Patita",
+    "description": "Chaufita de pollo + 2 wantanes + su gaseosa personal.",
+    "price": 15.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Otros",
     "name": "Dúo de aeropuertos",
     "description": "Elige tus dos aeropuertos favoritos: chijaukay, tipakay, kamlú wantán o chancho al ajo y acompáñalos con 2 bebidas personales",
     "price": 48.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Wantazo Familiar",
-    "description": "¡Para compartir con tus wantas! Un clásico Chaufa, Tallarín saltado y 3 de platos de fondo a elección. ¡Buen provecho!",
-    "price": 99
+    "category": "Otros",
+    "name": "Dúo Bocaditos",
+    "description": "Elige tus dos bocaditos favoritos: wantanes clásicos, rollitos primavera o siu kaos fritos",
+    "price": 22.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Otros",
+    "name": "Dúo Combinados",
+    "description": "1 Combinado Tipakay + 1 Combinado Chijaukay + 4 Wantanes Clásicos + 2 Gaseosas Personales.",
+    "price": 47.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Otros",
+    "name": "Wantazo Familiar",
+    "description": "¡Para compartir con tus wantas! Un clásico Chaufa, Tallarín saltado y 3 de platos de fondo a elección. ¡Buen provecho!",
+    "price": 119.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Otros",
+    "name": "Promo Combo Chijaukay",
+    "description": "Chaufa de pollo con Pollo Chijaukay (ajá, es el salado!) + 2 Wantanes clásicos de pollo + su salsa Tamarindo",
+    "price": 23.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Otros",
     "name": "Promo Combo Tipakay",
     "description": "Chaufa de pollo con Pollo Tipakay (aja, es el dulce!) + 2 Wantanes clásicos de pollo + su salsa Tamarindo",
     "price": 23.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Wanta para 6",
-    "description": "6 Wantanes clásicos de pollo  + su salsa Tamarindo + 2 Arroces Chaufa de Pollo + 1 Tallarín Saltado de Pollo +  2 Platos de fondo a elección (Tipakay/Chijaukay)",
-    "price": 108.9
+    "category": "Otros",
+    "name": "Promo Mostro Casero",
+    "description": "Base de arroz chaufa de pollo, montado con saltado de pollo, papas fritas, plátano frito y huevo frito.",
+    "price": 21.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Otros",
+    "name": "Wanta para 4",
+    "description": "4 Wantanes clásicos de pollo + su salsa Tamarindo + 1 Chaufa y medio de Pollo + 1 Tallarin Saltado de Pollo + 1 Plato de fondo a elección (Tipakay/Chijaukay)",
+    "price": 78.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Otros",
+    "name": "Wanta para 6",
+    "description": "6 Wantanes clásicos de pollo  + su salsa Tamarindo + 2 Arroces Chaufa de Pollo + 1 Tallarín Saltado de Pollo +  2 Platos de fondo a elección (Tipakay/Chijaukay)",
+    "price": 112.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Bocaditos & Piqueos",
     "name": "Wantán Frito (6 un)",
     "description": "6 Wantanes fritos re-llenos de pollo y su indispensable salsa tamarindo para wantearlos en cada bocado.",
     "price": 12.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Aeropuerto Chijaukai",
-    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y chijukay",
-    "price": 23.9
+    "category": "Bocaditos & Piqueos",
+    "name": "Siu Mai (6 un)",
+    "description": "6 Siu mais rellenos de chancho y hongos. Wantéalos en su rica salsa hoisin.",
+    "price": 18.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Bocaditos & Piqueos",
+    "name": "Siu Kao (6 un)",
+    "description": "6 Siu Kaos rellenos de cerdo",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Bocaditos & Piqueos",
+    "name": "Bombitas Chinas de Chancho (4 un)",
+    "description": "4 Mini Baos con un lado al vapor y el otro doradito, rellenos de generoso chancho con piña. A estos los comes hasta con los ojos.",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Bocaditos & Piqueos",
+    "name": "Spring Rolls (5 un)",
+    "description": "5 Rollitos rellenos de chancho y verduras, con salsa de limón y canela china. Aclaración: Son rollitos primavera pero se pueden comer todo el año.",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Bocaditos & Piqueos",
+    "name": "Chanchito con Nabo",
+    "description": "Chanchito asado con nabo encurtido. Sabemos que va a dar que hablar",
+    "price": 29.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Bocaditos & Piqueos",
+    "name": "Chicharron de Pechuga",
+    "description": "Chicharrón de pechuga con su cremita de ají chifero.",
+    "price": 22.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Sopas",
+    "name": "Sopa Wantán",
+    "description": "Rica sopita con pollo, chancho, wantanes, huevito y verduras.",
+    "price": 22.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Sopas",
+    "name": "Sopa Poderosa",
+    "description": "Sopa poderosa al estilo caldo de gallina",
+    "price": 22.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Aeropuertos",
     "name": "Aeropuerto Kamlu Wantan",
     "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y kam-lu con 2 wantanes.",
     "price": 25.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Aeropuertos",
+    "name": "Aeropuerto Chancho Tausí",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y chancho al tausí.",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Aeropuertos",
+    "name": "Aeropuerto Chijaukai",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y chijukay",
+    "price": 23.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Aeropuertos",
+    "name": "Aeropuerto Tipakay",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y tipakay",
+    "price": 23.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Mostros",
+    "name": "Mostro de Chicharrón",
+    "description": "Base de arroz chaufa de pollo, montado con chicharrón de Pollo, papas fritas, plátano frito y huevo frito.",
+    "price": 26.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Mostros",
+    "name": "Mostro Casero",
+    "description": "Base de arroz chaufa de pollo, montado con saltado de pollo, papas fritas, platano frito y huevo frito.",
+    "price": 26.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Mostros",
+    "name": "Mostro Hong Kong",
+    "description": "Base de arroz chaufa de pollo, montado con chancho asado, huevo frito y nabo encurtido.",
+    "price": 26.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Fondos",
+    "name": "Pollo Cruyok",
+    "description": "Pollito crocante con salsa agridulce, verduras saltadas y piña. Si no te gusta lo agridulce, piña.",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Fondos",
+    "name": "Pollo Tipakay (el dulce!)",
+    "description": "Pollo crocante con salsa Tipakay al tamarindo. Estabas en lo cierto, Tipakay es el dulce.",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Fondos",
+    "name": "Pollo Picante",
+    "description": "Pollito saltado con jalapeño, pimientos, kión, cebolla china y maní. Este pica wantástico.",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Fondos",
+    "name": "Pollo Chijaukay (el salado!)",
+    "description": "El clásico de toda la vida, pierna crocante de pollo. Viene con salsa ajonjolí para darle un rico baño. Correcto, Chijaukay es el salado.",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Chaufas",
+    "name": "Chaufa de Chancho asado",
+    "description": "Arroz salteado al wok con chanchito asado, huevo y cebolla china. Ajá, el clásico chaufita de chancho asado.",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Chaufas",
     "name": "Chaufa de Pollo",
     "description": "Arroz salteado al wok con pollo, huevo y cebolla china. Ajá, el clásico chaufita de pollo.",
     "price": 16.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Chaufas",
+    "name": "Chaufa Vegetariano",
+    "description": "1 Chaufa Vegetariano a Base de Verduras",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Tallarines",
+    "name": "Tallarín de Pollo con Verduras",
+    "description": "Tallarín de Pollo al estilo del chifa antiguo, primero bien dorado, luego bien saltado y por último tu aporte: bien comido.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Tallarines",
+    "name": "Tallarín Taypá",
+    "description": "Tallarín Con Pollo Chancho Y Verduras",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Tallarines",
+    "name": "Tallarín de Chancho con Verduras",
+    "description": "Tallarín de Chancho asado con verduras, bien saltado, bien mezclado y bien rico.",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Tallarines",
+    "name": "Tallarín Vegetariano",
+    "description": "Tallarín Con Verduras",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Postres",
+    "name": "Bombitas Lay won (4 un)",
+    "description": "4 Bocaditos dulces rellenos de salsa Lay Won",
+    "price": 10.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Complementos",
     "name": "Salsa de Ají Chifero",
     "description": "Salsa de ají chifero",
     "price": 2
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Complementos",
+    "name": "Nabo Encurtido",
+    "description": "Nabo encurtido con la receta antigua del chifa limeño. (Que ya no es secreta porque se la vienen pasando desde el primer chifa hasta hoy)",
+    "price": 11.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Complementos",
+    "name": "Salsa Tamarindo",
+    "description": "Salsa Tamarindo",
+    "price": 2
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 500 ml",
+    "description": "Coca-Cola Sin Azúcar 500 ml. Muchos dicen que chifa va con Inca... Pero la Coca-Cola Sin Azúcar no está tan de acuerdo.",
+    "price": 4.9
   },
   {
     "restaurant": "Wanta",
@@ -121,233 +359,9 @@
   {
     "restaurant": "Wanta",
     "category": "Bebidas",
-    "name": "Taypá Para 2 Yape Delivery",
-    "description": "1 Plato de fondo de Pollo Chijaukay + 1 Arroz Chaufa de pollo + 6 Wantanes Clásicos de pollo + su salsa tamarindo",
-    "price": 44.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Aerowanta Tipakay",
-    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y Pollo Tipakay.",
-    "price": 21.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Combo Patita",
-    "description": "Chaufita de pollo + 2 wantanes + su gaseosa personal.",
-    "price": 15.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Dúo Bocaditos",
-    "description": "Elige tus dos bocaditos favoritos: wantanes clásicos, rollitos primavera o siu kaos fritos",
-    "price": 22.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Dúo Mostro Casero",
-    "description": "2 Mostros Casero de pollo saltado, acompañados de 2 gaseosas personales.",
-    "price": 46.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Promo Combo Chijaukay",
-    "description": "Chaufa de pollo con Pollo Chijaukay (ajá, es el salado!) + 2 Wantanes clásicos de pollo + su salsa Tamarindo",
-    "price": 23.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Promo Mostro Casero",
-    "description": "Base de arroz chaufa de pollo, montado con saltado de pollo, papas fritas, plátano frito y huevo frito.",
-    "price": 21.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Wanta para 4",
-    "description": "4 Wantanes clásicos de pollo + su salsa Tamarindo + 1 Chaufa y medio de Pollo + 1 Tallarin Saltado de Pollo + 1 Plato de fondo a elección (Tipakay/Chijaukay)",
-    "price": 78.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Siu Kao (6 un)",
-    "description": "6 Siu Kaos rellenos de cerdo",
-    "price": 18.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Bombitas Chinas de Chancho (4 un)",
-    "description": "4 Mini Baos con un lado al vapor y el otro doradito, rellenos de generoso chancho con piña. A estos los comes hasta con los ojos.",
-    "price": 16.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Chanchito con Nabo",
-    "description": "Chanchito asado con nabo encurtido. Sabemos que va a dar que hablar",
-    "price": 29.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Chicharron de Pechuga",
-    "description": "Chicharrón de pechuga con su cremita de ají chifero.",
-    "price": 22.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Spring Rolls (5 un)",
-    "description": "5 Rollitos rellenos de chancho y verduras, con salsa de limón y canela china. Aclaración: Son rollitos primavera pero se pueden comer todo el año.",
-    "price": 17.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Sopa Poderosa",
-    "description": "Sopa poderosa al estilo caldo de gallina",
-    "price": 22.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Aeropuerto Picante",
-    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y Pollo Picante",
-    "price": 23.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Aeropuerto Tipakay",
-    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y tipakay",
-    "price": 23.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Aeropuerto Chancho Tausí",
-    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y chancho al tausí.",
-    "price": 25.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Mostro de Chicharrón",
-    "description": "Base de arroz chaufa de pollo, montado con chicharrón de Pollo, papas fritas, plátano frito y huevo frito.",
-    "price": 26.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Mostro Casero",
-    "description": "Base de arroz chaufa de pollo, montado con saltado de pollo, papas fritas, platano frito y huevo frito.",
-    "price": 26.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Pollo Picante",
-    "description": "Pollito saltado con jalapeño, pimientos, kión, cebolla china y maní. Este pica wantástico.",
-    "price": 32.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Pollo Cruyok",
-    "description": "Pollito crocante con salsa agridulce, verduras saltadas y piña. Si no te gusta lo agridulce, piña.",
-    "price": 32.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Pollo Chijaukay (el salado!)",
-    "description": "El clásico de toda la vida, pierna crocante de pollo. Viene con salsa ajonjolí para darle un rico baño. Correcto, Chijaukay es el salado.",
-    "price": 32.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Pollo Tipakay (el dulce!)",
-    "description": "Pollo crocante con salsa Tipakay al tamarindo. Estabas en lo cierto, Tipakay es el dulce.",
-    "price": 32.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Chaufa Vegetariano",
-    "description": "1 Chaufa Vegetariano a Base de Verduras",
-    "price": 16.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Tallarín de Pollo con Verduras",
-    "description": "Tallarín de Pollo al estilo del chifa antiguo, primero bien dorado, luego bien saltado y por último tu aporte: bien comido.",
-    "price": 24.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Tallarín de Chancho con Verduras",
-    "description": "Tallarín de Chancho asado con verduras, bien saltado, bien mezclado y bien rico.",
-    "price": 25.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Tallarín Vegetariano",
-    "description": "Tallarín Con Verduras",
-    "price": 24.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Tallarín Taypá",
-    "description": "Tallarín Con Pollo Chancho Y Verduras",
-    "price": 25.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Bombitas Lay won (4 un)",
-    "description": "4 Bocaditos dulces rellenos de salsa Lay Won",
-    "price": 10.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Salsa Tamarindo",
-    "description": "Salsa Tamarindo",
-    "price": 2
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Nabo Encurtido",
-    "description": "Nabo encurtido con la receta antigua del chifa limeño. (Que ya no es secreta porque se la vienen pasando desde el primer chifa hasta hoy)",
-    "price": 11.9
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
     "name": "Coca-Cola Sin Azúcar 1.5 L",
     "description": "Coca-Cola Sin Azúcar 1.5 L. Muchos dicen que chifa va con Inca... Pero la Coca-Cola Sin Azúcar no está tan de acuerdo.",
     "price": 10
-  },
-  {
-    "restaurant": "Wanta",
-    "category": "Bebidas",
-    "name": "Coca-Cola Sin Azúcar 500 ml",
-    "description": "Coca-Cola Sin Azúcar 500 ml. Muchos dicen que chifa va con Inca... Pero la Coca-Cola Sin Azúcar no está tan de acuerdo.",
-    "price": 4.9
   },
   {
     "restaurant": "Wanta",
@@ -365,16 +379,30 @@
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Otros",
     "name": "Combinado Chijaukay Yape Delivery",
     "description": "Combinado de Arroz Chaufa y Pollo Chijaukay",
     "price": 19.9
   },
   {
     "restaurant": "Wanta",
-    "category": "Bebidas",
+    "category": "Otros",
     "name": "Dúo Mostro Casero Yape Delivery",
     "description": "2 Mostros Caseros de Saltado de pollo",
     "price": 41.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Otros",
+    "name": "Combo Mostro Casero Yape Delivery",
+    "description": "1 Mostro Casero de Saltado de pollo + 2 Wantanes Clásicos de pollo + su salsa tamarindo",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Wanta",
+    "category": "Otros",
+    "name": "Taypá Para 2 Yape Delivery",
+    "description": "1 Plato de fondo de Pollo Chijaukay + 1 Arroz Chaufa de pollo + 6 Wantanes Clásicos de pollo + su salsa tamarindo",
+    "price": 44.9
   }
 ]
