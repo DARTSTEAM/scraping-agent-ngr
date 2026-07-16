@@ -1,0 +1,1354 @@
+[
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Jueves de Dulzura",
+    "description": "Disfruta la promo jueves de 12 donuts clásicas a elección.",
+    "price": 36.9,
+    "sku": "9474"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Cuatroferta Clásica",
+    "description": "Disfruta de 4 deliciosas donuts clásicas a elección.",
+    "price": 19.9,
+    "sku": "6932"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donuts Clásicas x6",
+    "description": "Disfruta de 6 deliciosas donuts clásicas a elección.",
+    "price": 27.9,
+    "sku": "5511"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donuts Clásicas x12",
+    "description": "Disfruta de 12 deliciosas donuts clásicas a elección.",
+    "price": 44.9,
+    "sku": "5514"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "8 Donuts Sorpresa",
+    "description": "Disfruta de 8 donuts clásicas aleatorias (mínimo 3 variedades diferentes). Exclusivo Delivery",
+    "price": 25.9,
+    "sku": "11600"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donuts Clásicas x36",
+    "description": "Disfruta de 36 donuts clásicas a elección",
+    "price": 119.9,
+    "sku": "9838"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donuts Clásicas x24",
+    "description": "Disfruta de 24 donuts clásicas a elección.",
+    "price": 79.9,
+    "sku": "8201"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donuts Clásicas x54",
+    "description": "Disfruta de 54 deliciosas donuts clásicas a elección.",
+    "price": 174.9,
+    "sku": "5517"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Big Deal 18",
+    "description": "Disfruta de 18 deliciosas donuts clásicas a elección.",
+    "price": 62.9,
+    "sku": "5515"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donuts Clásicas x54 Yape",
+    "description": "54 donuts clásicas perfectas para compartir.",
+    "price": 297,
+    "sku": "14354"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donuts Clásicas x36 Yape",
+    "description": "36 donuts clásicas perfectas para compartir.",
+    "price": 198,
+    "sku": "14353"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donuts Clásicas x24 Yape",
+    "description": "24 donuts clásicas perfectas para compartir.",
+    "price": 132,
+    "sku": "14352"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Big Deal 18 Yape",
+    "description": "18 donuts clásicas perfectas para compartir.",
+    "price": 99,
+    "sku": "14351"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Dulce Combinación Yape",
+    "description": "Ahorra en tu combo favorito. Disfruta de 4 donuts clásicas + 2 bebidas Dunkin' de 12 oz a elección y comparte el antojo al mejor precio. ¡Pídelo ahora!",
+    "price": 37.8,
+    "sku": "14355"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "La Docena del Campeón Premium",
+    "description": "12 Donuts Premium",
+    "price": 55.9,
+    "sku": "14147"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "La Docena del Campeón Clásicas y Premium",
+    "description": "8 Donuts Clásicas y 4 Donuts Premium",
+    "price": 39.9,
+    "sku": "14146"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Media Docena FC Clásicas y Premium",
+    "description": "4 Donuts Clásicas y 2 Donuts Premium",
+    "price": 29.9,
+    "sku": "14145"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Media Docena FC Premium",
+    "description": "6 donuts premium a elección",
+    "price": 33.9,
+    "sku": "14144"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Minions x6 Premium",
+    "description": "6 donuts premium a elección",
+    "price": 33.9,
+    "sku": "13908"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Minions x6 Clásicas y Premium",
+    "description": "4 donuts clásicas y 2 donuts premium a elección",
+    "price": 29.9,
+    "sku": "13911"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Minions x12 Premium",
+    "description": "12 donuts premium a elección",
+    "price": 55.9,
+    "sku": "13913"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Minions x12 Clásicas y Premium",
+    "description": "8 donuts clásicas y 4 donuts premium a elección",
+    "price": 47.9,
+    "sku": "13912"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Minions x4 Premium",
+    "description": "4 donuts premium a elección",
+    "price": 25.9,
+    "sku": "13914"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Minions x4 Clásicas y Premium",
+    "description": "2 donuts clásicas y 2 donuts premium a elección",
+    "price": 24.9,
+    "sku": "13915"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donut Clásica x6 Happy Birthday",
+    "description": "!Detalle perfecto! Caja con motivo Happy Birthday + 6 donuts clásicas a elección.",
+    "price": 28.5,
+    "sku": "12051"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Pack Cumpleañero",
+    "description": "!Regalo perfecto! Caja con motivo Happy Birthday con 6 donuts clásicas a elección + Medias Dunkin'",
+    "price": 47.9,
+    "sku": "12052"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Donut Clásicas x6 With Love",
+    "description": "!Detalle perfecto! Caja con motivo With Love + 6 donuts clásicas a elección.",
+    "price": 28.5,
+    "sku": "12057"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Glaseada",
+    "description": "Anillo glaseado de azúcar.",
+    "price": 5.5,
+    "sku": "5588"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Bavaria",
+    "description": "Donut espolvoreada con azúcar, rellena de crema pastelera.",
+    "price": 5.9,
+    "sku": "5529"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Fudge",
+    "description": "Donut espolvoreada con azúcar, rellena de fudge.",
+    "price": 5.9,
+    "sku": "5532"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Manjar Blanco",
+    "description": "Donut espolvoreada con azúcar, rellena de manjar blanco.",
+    "price": 5.9,
+    "sku": "5530"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Fresa",
+    "description": "Donut espolvoreada con azúcar, rellena de salsa de fresa.",
+    "price": 5.9,
+    "sku": "5531"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Manzana",
+    "description": "Donut espolvoreada con azúcar, rellena de manzana.",
+    "price": 5.5,
+    "sku": "12531"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Carita Feliz",
+    "description": "Donut con cobertura de azúcar, rellena de crema pastelera y sonrisa de chocolate.",
+    "price": 5.9,
+    "sku": "5540"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Chocolate arcoiris",
+    "description": "Anillo con cobertura de chocolate y grageas de colores.",
+    "price": 5.5,
+    "sku": "5537"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Vainilla Arcoiris",
+    "description": "Anillo con cobertura sabor vainilla y grageas de colores.",
+    "price": 5.5,
+    "sku": "5535"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Fresa Arcoiris",
+    "description": "Anillo con cobertura sabor fresa y grageas de colores.",
+    "price": 5.5,
+    "sku": "5536"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Tutti Frutti Arcoiris",
+    "description": "Anillo con cobertura sabor tutti y grageas de colores.",
+    "price": 5.5,
+    "sku": "5539"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Boston Manjar",
+    "description": "Donut con cobertura de chocolate, rellena de manjar blanco.",
+    "price": 5.9,
+    "sku": "5534"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Boston Crema",
+    "description": "Donut con cobertura de chocolate, rellena de crema pastelera.",
+    "price": 5.9,
+    "sku": "5533"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Pink Glow",
+    "description": "Una dona que brilla por sí sola. Pink Glow combina un suave glaseado rosa con delicadas chispas rosadas que le dan un toque dulce, divertido y lleno de estilo. El snack perfecto para quienes saben que el rosa nunca pasa de moda.",
+    "price": 5.5,
+    "sku": "14473"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Hot Pink",
+    "description": "Más intensa, más atrevida y lista para robarse todas las miradas. Hot Pink está cubierta con un vibrante glaseado rosa y chispas rojas que le aportan un look audaz y lleno de personalidad. Una dona hecha para quienes viven el momento y lo hacen en grande.",
+    "price": 5.5,
+    "sku": "14474"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Dot Donut",
+    "description": "La dona que está rompiendo internet. Cubierta con miles de mini grageas de colores sobre un delicioso glaseado de vainilla. Dulce, divertida y 100% instagrameable.",
+    "price": 5.5,
+    "sku": "14312"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Donut Dot Manjar",
+    "description": "Una suave Dot Donut rellena de cremoso manjar, perfecta para disfrutar sola o acompañada de tu bebida Dunkin' favorita.",
+    "price": 5.5,
+    "sku": "14367"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Donut Pelota",
+    "description": "La favorita de los fanáticos. Una donut inspirada en la pasión por el fútbol, perfecta para acompañar cada partido y celebrar cada gol.",
+    "price": 6.5,
+    "sku": "14140"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "James",
+    "description": "Donut decorada con cobertura, diseño exclusivo de minions y relleno de crema pastelera",
+    "price": 6.5,
+    "sku": "13905"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Oreo Caramel",
+    "description": "Donut decorada con Oreo vainilla, tiritas de caramelo y rellena de caramelo",
+    "price": 6.5,
+    "sku": "13909"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Oreo Mocha",
+    "description": "Donut decorada con Oreo, tiritas de caramelo y rellena de crema mocha",
+    "price": 6.5,
+    "sku": "13910"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Lentejitas",
+    "description": "Anillo con cobertura de chocolate y topping de lentejitas.",
+    "price": 6.5,
+    "sku": "5543"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Donuts Unitarias",
+    "name": "Dona Pecas",
+    "description": "Anillo con cobertura de chocolate, grageas de colores y topping de doña pepa.",
+    "price": 6.5,
+    "sku": "5542"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Cyber 4x10 Donuts Delivery",
+    "description": "¡Solo por Cyber Dunkin' Paga 4 y lleva 10 donuts clásicas a solo S/22.00 ! Exclusivo en Web del 03 al 10 de julio.  Válido solo para envío por DELIVERY. No válido para retiro en tienda",
+    "price": 22,
+    "sku": "12131"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Cyber Comparte",
+    "description": "¡Solo por Cyber Dunkin' 8 Donuts Clásicas a solo S/21.90! Exclusivo en Web del 03 al 10 de julio",
+    "price": 21.9,
+    "sku": "11626"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Pack de Donuts",
+    "name": "Cyber Docena",
+    "description": "¡Solo por Cyber Dunkin' Docena de Donuts Clásicas a solo S/29.90! Exclusivo en Web del 03 al 10 de julio",
+    "price": 25.9,
+    "sku": "6918"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Protein Morning Box",
+    "description": "Balance pero con antojo. Protein Latte y Dunwichs para sentirte fit… pero feliz.",
+    "price": 31,
+    "sku": "14079"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Study & Work Box",
+    "description": "Tu break productivo acaba de subir de nivel. 2 Iced Protein Latte + 2 sandwiches para sobrevivir calls, pendientes y reuniones eternas sin perder el mood.",
+    "price": 39.9,
+    "sku": "14075"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Coffee & Dunwich Box",
+    "description": "El desayuno que sí te deja feliz. Cafecito, dunwich y donuts para arrancar el día con full energía y cero decisiones difíciles.",
+    "price": 39.9,
+    "sku": "14076"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Morning Boost Box",
+    "description": "Tu upgrade mañanero llegó. El combo perfecto para sobrevivir clases, oficina o juntas eternas con café, sandwiches y donuts para compartir.",
+    "price": 59.9,
+    "sku": "14077"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Dunkin Breakfast Club",
+    "description": "El desayuno oficial del team. Café, sandwiches y donuts para compartir porque las mejores mañanas siempre empiezan en grupo.",
+    "price": 89.9,
+    "sku": "14078"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Oreo Cookies & Chill",
+    "description": "Una selección irresistible de bebidas Oreo, donuts y Dunwich para compartir, relajarte y disfrutar de un momento lleno de sabor.",
+    "price": 74.9,
+    "sku": "14306"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Workday Breakfast Box",
+    "description": "La solución perfecta para la oficina: café, sándwiches y donuts para compartir y empezar el día con el mejor ánimo.",
+    "price": 99,
+    "sku": "14301"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Matcha Mood Box",
+    "description": "La solución perfecta para la oficina: café, sándwiches y donuts para compartir y empezar el día con el mejor ánimo.",
+    "price": 59.9,
+    "sku": "14302"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Desayuno Iced",
+    "description": "Dos Iced Latte acompañados de dos sándwiches para comenzar el día con el balance perfecto entre café y sabor.",
+    "price": 39.9,
+    "sku": "14122"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Dúo Protein",
+    "description": "Dos bebidas proteicas y dos Dunwich para una mañana práctica, deliciosa y llena de energía.",
+    "price": 35.9,
+    "sku": "14300"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Dunkin N Share",
+    "description": "6 donuts clásicas y 2 bebidas Dunkin' 12 oz a elección.",
+    "price": 26.9,
+    "sku": "11596"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Dunkin N Party",
+    "description": "12 donuts clásicas y 4 bebidas Dunkin' 12 oz a elección.",
+    "price": 42.9,
+    "sku": "11597"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Dulce Combinación",
+    "description": "4 donuts clásicas y 2 bebidas Dunkin' 12 oz a elección.",
+    "price": 22.9,
+    "sku": "11598"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Oreo Mocha",
+    "description": "La mezcla intensa de mocha y Oreo en un iced ultra cremoso que convierte cualquier momento en un mood chocolatísimo.",
+    "price": 14.9,
+    "sku": "14007"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Oreo Caramel",
+    "description": "Café helado con caramelo suave, crema y el toque irresistible de Oreo para activar tu lado más dulce.",
+    "price": 14.9,
+    "sku": "14008"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Oreo Matcha",
+    "description": "Matcha cremoso + trozos de Oreo en una mezcla demasiado fresca y crunchy. El balance perfecto entre sweet y chill.",
+    "price": 14.9,
+    "sku": "14006"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Frozen Oreo",
+    "description": "Frozen con trozos de Oreo. Opcional chantillí.",
+    "price": 14.9,
+    "sku": "9926"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Frozen Fresa con Popping",
+    "description": "Frozen de fresa, decorado con chantilly y poppings",
+    "price": 13.9,
+    "sku": "13041"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Popping Bubbles Frozen Fresa",
+    "description": "Frozen de jarabe de fresa, leche con Popping Bubbles. Opcional chantilly.",
+    "price": 16.9,
+    "sku": "12100"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Frozen Latte Red Velvet",
+    "description": "Frozen de café expresso, leche, jarabe de red velvet. Opcional chantilly.",
+    "price": 15.9,
+    "sku": "11321"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Frozen Caramel",
+    "description": "Frozen de café expresso, leche y jarabe de caramelo. Adicional topping de caramelo.",
+    "price": 13.9,
+    "sku": "9110"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Frozen Moccha",
+    "description": "Frozen de café expresso, leche y jarabe de chocolate. Opcional chantilly y topping de chocolate.",
+    "price": 13.9,
+    "sku": "5596"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Frozen Chocolate",
+    "description": "Frozen de jarabe de chocolate y leche. Opcional chantilly y topping de chocolate.",
+    "price": 13.9,
+    "sku": "5593"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Frozen Fresa",
+    "description": "Frozen de jarabe de fresa y leche. Opcional chantilly.",
+    "price": 13.9,
+    "sku": "5591"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Frozen Vainilla",
+    "description": "Frozen de jarabe de vainilla y leche. Opcional chantilly.",
+    "price": 13.9,
+    "sku": "5592"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Caramel Protein Frappe",
+    "description": "Refrescante frappé preparado con hielo, leche, salsa de caramelo y Whey Protein, coronado con crema batida y un delicioso drizzle de caramelo. Una bebida cremosa y deliciosa con un extra de proteína para acompañarte en cualquier momento del día.",
+    "price": 15.9,
+    "sku": "14539"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Strawberry Cloud Energy",
+    "description": "Bebida preparada con Monster Energy, hielo y un delicioso sabor a fresa, coronada con una suave espuma que brinda una textura ligera y una experiencia refrescante en cada sorbo.",
+    "price": 16.9,
+    "sku": "14472"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Refresher Pitahaya Pink",
+    "description": "Refrescante bebida con el exótico sabor de pitahaya, ideal para disfrutar una opción frutal, ligera y llena de frescura.",
+    "price": 14.9,
+    "sku": "14471"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Vanilla Cloud Latte",
+    "description": "Delicioso latte frío preparado con espresso y leche, coronado con una suave espuma sabor vainilla que aporta una textura ligera y un toque dulce en cada sorbo.",
+    "price": 15.9,
+    "sku": "14470"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Dot Frappe Vainilla",
+    "description": "La tendencia más viral ahora en versión frappe. Nuestro cremoso frappe de vainilla se corona con abundante crema chantilly y una explosión de mini grageas multicolor que aportan el toque perfecto de diversión y crunch. Dulce, colorido e imposible de ignorar.",
+    "price": 14.9,
+    "sku": "14322"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Dot Frappe White Chocolate",
+    "description": "Nuestro cremoso White Chocolate Frappe se reinventa con el toque Dot: una explosión de mini grageas multicolor sobre una suave corona de chantilly que transforma cada sorbo en una experiencia dulce, divertida y totalmente viral.",
+    "price": 14.9,
+    "sku": "14324"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Dot Frappe Matcha",
+    "description": "El favorito de los matcha lovers ahora con un giro viral. Un refrescante frappe de matcha coronado con crema chantilly y una lluvia de mini grageas multicolor que transforman cada sorbo en una experiencia única, divertida y llena de color.",
+    "price": 14.9,
+    "sku": "14323"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Frozen",
+    "name": "Dúo Dot Frappe",
+    "description": "Comparte el sabor de la tendencia más viral con 2 Dot Frappes de cualquier sabor. Disfruta dos deliciosos frappes coronados con abundante crema chantilly y miles de mini grageas multicolor que convierten cada sorbo en una experiencia divertida, colorida e inigualable.",
+    "price": 25.9,
+    "sku": "14325"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Trio Pink",
+    "description": "Porque el rosa se disfruta mejor en grupo. Tres Bebidas Pink para compartir momentos llenos de color y sabor.",
+    "price": 38.9,
+    "sku": "14477"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Duo Pink",
+    "description": "El doble de sabor, el doble de actitud. Comparte o disfruta dos Bebidas Pink y vive la experiencia It's Giving Pink.",
+    "price": 26.9,
+    "sku": "14476"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Duo Dunkster",
+    "description": "Energízate con 2 Cool Monster Sandía o Mora Azul de 16 oz a solo S/19.90",
+    "price": 19.9,
+    "sku": "12831"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Cool Monster Sandía",
+    "description": "Refrescante bebida energizante sabor a Sandia, servida sobre hielo.",
+    "price": 13.9,
+    "sku": "12829"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Cool Monster Mora Azul",
+    "description": "Refrescante bebida energizante sabor a Mora Azul, servida sobre hielo.",
+    "price": 13.9,
+    "sku": "12830"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Protein Mocha Blanco",
+    "description": "Disfruta la combinación perfecta de café, chocolate blanco y proteína en una bebida helada, cremosa y llena de sabor. Ideal para refrescarte mientras disfrutas de un toque indulgente.",
+    "price": 15.9,
+    "sku": "14428"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Coffe",
+    "description": "Café Dunkin' servido sobre hielo. Refrescante, ligero y perfecto para disfrutar tu café favorito en cualquier momento.",
+    "price": 8.9,
+    "sku": "14360"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Latte Protein Matcha",
+    "description": "Bebida fría de leche, matcha y Whey Protein, servido sobre hielo",
+    "price": 15.9,
+    "sku": "13604"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Strawberry Matcha Protein",
+    "description": "Disfruta la combinación perfecta entre la dulzura de la fresa y las notas naturales del matcha en una refrescante bebida preparada con leche y Whey Protein, servida sobre hielo. Cremosa, deliciosa y con un extra de proteína para darle un impulso a tu día.",
+    "price": 15.9,
+    "sku": "14538"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Latte Protein Vainilla",
+    "description": "Bebida fría de café expresso, leche, jarabe de vainilla y Whey Protein, servido sobre hielo",
+    "price": 15.9,
+    "sku": "13607"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Latte Protein Mocha",
+    "description": "Bebida fría de café expresso, leche, jarabe de chocolate y Whey Protein, servido sobre hielo",
+    "price": 15.9,
+    "sku": "13606"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Latte Protein Caramel",
+    "description": "Bebida fría de café expresso, leche, jarabe de caramelo y Whey Protein, servido sobre hielo",
+    "price": 15.9,
+    "sku": "13605"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Matcha Latte",
+    "description": "Bebida de leche y matcha, servido sobre hielo",
+    "price": 12.9,
+    "sku": "13603"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Latte Fresa",
+    "description": "Bebida fría de café expresso, leche y jarabe de fresa, servido sobre hielo",
+    "price": 15.9,
+    "sku": "13040"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Popping Bubbles Cool Lemonade Sandía",
+    "description": "Bebida fría con limonada sabor sandía con Popping Bubbles.",
+    "price": 16.9,
+    "sku": "12106"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Popping Bubbles Iced Caramel",
+    "description": "Bebida fría de café expresso, leche, jarabe de caramelo y Popping Bubbles, servido sobre hielo.",
+    "price": 15.9,
+    "sku": "12101"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Caramel",
+    "description": "Bebida fría de café expresso, leche y jarabe de caramelo, servido sobre hielo.",
+    "price": 12.9,
+    "sku": "9111"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Iced Latte",
+    "description": "Bebida fría de café expresso y leche, servido sobre hielo. Sin endulzantes.",
+    "price": 10.9,
+    "sku": "5600"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Refresher Mango Piña",
+    "description": "Bebida fría con limonada sabor Mago Piña",
+    "price": 14.9,
+    "sku": "13609"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Refresher Tangerine",
+    "description": "Bebida fría con limonada sabor tangerine",
+    "price": 14.9,
+    "sku": "13608"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Cool Lemonade Pitahaya",
+    "description": "Bebida fría con limonada sabor pitahaya",
+    "price": 13.9,
+    "sku": "12725"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Cool Lemonade Mora Manzana",
+    "description": "Bebida fría con limonada sabor mora manzana.",
+    "price": 13.9,
+    "sku": "11099"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Cool Lemonade Sandía",
+    "description": "Bebida fría con limonada sabor sandía.",
+    "price": 13.9,
+    "sku": "11100"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Iced",
+    "name": "Cool Sandía",
+    "description": "Refrescante bebida sabor a Sandía, servida sobre hielo.",
+    "price": 11.9,
+    "sku": "9274"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras bebidas frías",
+    "name": "Jugo de Naranja 16 oz",
+    "description": "",
+    "price": 9.9,
+    "sku": "6493"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras bebidas frías",
+    "name": "Coca Cola Sabor Original 500 ml",
+    "description": "",
+    "price": 4.9,
+    "sku": "5477"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras bebidas frías",
+    "name": "Coca Cola Sin Azúcar 500 ml",
+    "description": "",
+    "price": 4.9,
+    "sku": "5476"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras bebidas frías",
+    "name": "Inca Kola Sabor Original 500 ml",
+    "description": "",
+    "price": 4.9,
+    "sku": "5475"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras bebidas frías",
+    "name": "Inca Kola Sin Azúcar 500 ml",
+    "description": "",
+    "price": 4.9,
+    "sku": "5474"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras bebidas frías",
+    "name": "San Luis Sin Gas 625 ML",
+    "description": "",
+    "price": 4,
+    "sku": "6915"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras bebidas frías",
+    "name": "San Luis Con Gas 625 ML",
+    "description": "",
+    "price": 4,
+    "sku": "6925"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Café Dunkin",
+    "name": "Café Dunkin",
+    "description": "Café filtrado con selectos granos tostado de café Dunkin' original. Sin endulzantes.",
+    "price": 7.9,
+    "sku": "5547"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Expresso Simple",
+    "description": "Extracto de café fuerte e intenso. Sin endulzantes.",
+    "price": 5.9,
+    "sku": "5590"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Expresso Doble",
+    "description": "Doble extracto de café, fuerte e intenso. Sin endulzantes.",
+    "price": 7.9,
+    "sku": "5589"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Macchiato",
+    "description": "Café expresso con carga extra, leche vaporizada y espuma de leche. Sin endulzantes.",
+    "price": 5.9,
+    "sku": "5617"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Capuccino",
+    "description": "Café expresso con espuma de leche. Sin endulzantes.",
+    "price": 9.9,
+    "sku": "5549"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Latte",
+    "description": "Café expresso con leche vaporizada y espuma de leche. Sin endulzantes.",
+    "price": 9.9,
+    "sku": "5548"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Moccha Latte",
+    "description": "Café expresso con leche vaporizada, espuma de leche y jarabe de chocolate.",
+    "price": 12.9,
+    "sku": "5550"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Caramel Latte",
+    "description": "Café expresso con leche vaporizada, espuma de leche y jarabe de caramelo.",
+    "price": 12.9,
+    "sku": "9112"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras Bebidas Calientes",
+    "name": "Matcha Latte",
+    "description": "Leche vaporizada, espuma de leche y matcha",
+    "price": 12.9,
+    "sku": "13602"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Latte Fresa",
+    "description": "Bebida caliente de café expresso, leche y jarabe de fresa",
+    "price": 15.9,
+    "sku": "13043"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Expresso Caliente",
+    "name": "Latte Fresa Sin Café",
+    "description": "Bebida caliente de leche y jarabe de fresa",
+    "price": 15.9,
+    "sku": "13042"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Otras Bebidas Calientes",
+    "name": "Chocolate Caliente",
+    "description": "Delicioso chocolate caliente con textura cremosa, aroma profundo y un toque de dulzura perfecta.",
+    "price": 12.9,
+    "sku": "5553"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Combo Dunwich Mixto",
+    "description": "Disfruta de un deliciosa Dunwchi Mixto + 1 bebida Dunkin' 12 oz.",
+    "price": 10.9,
+    "sku": "12397"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Combo Dunwich Bacon",
+    "description": "Disfruta de un deliciosa Dunwchi Bacon + 1 bebida Dunkin' 12 oz.",
+    "price": 11.9,
+    "sku": "12398"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Dunwich Bacon",
+    "description": "Deliciosa donut glaseada con tocino cocido.",
+    "price": 9.9,
+    "sku": "12396"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Dunwich Mixto",
+    "description": "Deliciosa donut glaseada con jamón y queso.",
+    "price": 8.9,
+    "sku": "12395"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "La Previa",
+    "description": "24 donuts clásicas y 6 bebidas Dunkin 12oz para disfrutar cada partido con el combo perfecto para compartir entre amigos, oficina o el team completo.",
+    "price": 96.9,
+    "sku": "14307"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "Tiempo Extra Combo",
+    "description": "3 bebidas Dunkin y 3 Dunwichs para acompañar cada momento del partido.",
+    "price": 41.9,
+    "sku": "14308"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "Dúo Proteico",
+    "description": "Disfruta de una bebida Protein y un delicioso sándwich en un solo combo. La combinación perfecta para recargar energías con una opción práctica, deliciosa y con un extra de proteína para acompañarte durante el día.",
+    "price": 28.9,
+    "sku": "14540"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "Pink Snack",
+    "description": "",
+    "price": 18.9,
+    "sku": "14478"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "Pink Combo",
+    "description": "La combinación perfecta para disfrutar el lado más pink. Elige tu Bebida Pink favorita y acompáñala con una deliciosa dona clásica.",
+    "price": 16.9,
+    "sku": "14475"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "Dúo Dot",
+    "description": "La combinación perfecta para sumarte a la tendencia más viral. Disfruta de 1 Dot Donut y 1 Dot Frappe de cualquier sabor, una dupla irresistible coronada con miles de mini grageas multicolor que llenan cada mordida y sorbo de color, diversión y mucho sabor.",
+    "price": 16.3,
+    "sku": "14326"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "Duo Dunkin",
+    "description": "1 donut clásica y 1 bebida Dunkin' 12 oz a elección.",
+    "price": 10.9,
+    "sku": "11599"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "Hat Trick Combo",
+    "description": "Disfruta un Iced Americano acompañado de 1 donut clásica y 1 Dunwich Cheese. El mix ideal entre dulce y salado.",
+    "price": 15.9,
+    "sku": "14311"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Boxes",
+    "name": "Box O' Joe",
+    "description": "Disfruta de nuestro exquisito café con este Box que incluye 10 bebidas de café Dunkin' con todos los implementos necesarios para compartir.",
+    "price": 59,
+    "sku": "8674"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Boxes",
+    "name": "Box O' Joe Donuts",
+    "description": "Disfruta de un momento delicioso con el Box O' Joe de Dunkin'. Café fresco y donuts irresistibles en un solo pedido. ¡Haz tu orden ahora en Dunkin'!",
+    "price": 79.9,
+    "sku": "8688"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Combos",
+    "name": "Barra Brava",
+    "description": "2 Box O Joe acompañados de 36 donuts para compartir en grande.",
+    "price": 196,
+    "sku": "14309"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Boxes",
+    "name": "Box O Joe Mixto (Sandwich + Donuts)",
+    "description": "El brunch definitivo sí existe. Sandwiches, donuts y café Dunkin para convertir cualquier reunión en planazo.",
+    "price": 119,
+    "sku": "14233"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Boxes",
+    "name": "Box O Joe Mixto (Dunwich + Donuts)",
+    "description": "Mitad salado, mitad dulce, 100% necesario. Dunwichs, donuts y café para compartir con todo el crew.",
+    "price": 96,
+    "sku": "14099"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Boxes",
+    "name": "Box O Joe Dunwichs",
+    "description": "Tu oficina acaba de subir de level. 10 Dunwichs recién hechos + café Dunkin para el coffee break definitivo",
+    "price": 109,
+    "sku": "14098"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Boxes",
+    "name": "Box O Joe Sandwich",
+    "description": "El combo perfecto para compartir entre reuniones, clases o full chamba. 10 sandwiches + café Dunkin para alimentar al team completo.",
+    "price": 136,
+    "sku": "14097"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Boxes",
+    "name": "Box O Joe Munchkins",
+    "description": "50 munchkins = felicidad grupal garantizada. Perfecto para oficinas, cumpleaños o cualquier excusa para compartir.",
+    "price": 76,
+    "sku": "14234"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Sandwich",
+    "name": "Croissant de pollo",
+    "description": "Un croissant doradito y súper suave, relleno con jugoso pollo sazonado y una combinación deliciosa que lo convierte en el match perfecto para cualquier momento del día. Ideal para acompañarlo con tu bebida favorita de Dunkin.",
+    "price": 13.9,
+    "sku": "14187"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Sandwich",
+    "name": "Croissant de Jamón Inglés y Queso",
+    "description": "Delicioso Croissant relleno de jamón inglés y queso",
+    "price": 13.9,
+    "sku": "13738"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Sandwich",
+    "name": "Croissant huevo y tocino",
+    "description": "Delicioso Croissant relleno de huevo revuelto y tocino",
+    "price": 13.9,
+    "sku": "13741"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Sandwich",
+    "name": "Ciabatta de pollo y apio",
+    "description": "Delicioso ciabatta relleno de pollo y apio",
+    "price": 13.9,
+    "sku": "13739"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Sandwich",
+    "name": "Panini Jamón Inglés y Queso",
+    "description": "Delicioso panini relleno de jamón inglés y queso",
+    "price": 13.9,
+    "sku": "13740"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Sandwich",
+    "name": "Panini Jamón ahumado y queso",
+    "description": "Delicioso panini relleno de jamón ahumado y queso",
+    "price": 13.9,
+    "sku": "13742"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Empanadas",
+    "name": "Empanada de pollo",
+    "description": "Clásica empanada de pollo",
+    "price": 8.9,
+    "sku": "13743"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Empanadas",
+    "name": "Empanada de carne",
+    "description": "Clásica empanada de carne",
+    "price": 8.9,
+    "sku": "13744"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Bakery",
+    "name": "Brownie",
+    "description": "",
+    "price": 7.9,
+    "sku": "6974"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Bakery",
+    "name": "Galleta de Chocolate y Chocochips",
+    "description": "",
+    "price": 5.9,
+    "sku": "6972"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Bakery",
+    "name": "Galleta de Vainilla y Chocochips",
+    "description": "",
+    "price": 5.9,
+    "sku": "6970"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Bakery",
+    "name": "Galleta de avena y pasas",
+    "description": "",
+    "price": 5.9,
+    "sku": "6973"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Café en Granos",
+    "name": "Café Blend Original 435 gr",
+    "description": "Disfruta de nuestro Café Blend Original 435gr. Selección de granos de la mejor calidad.",
+    "price": 35.9,
+    "sku": "5510"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Tomatodos",
+    "name": "Tomatodo Dunkin' Naranja",
+    "description": "Tomatodo Dunkin' color naranja. Imágenes referenciales.",
+    "price": 39.9,
+    "sku": "9132"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Tomatodos",
+    "name": "Tomatodo Dunkin' Blanco",
+    "description": "Tomatodo Dunkin' color blanco. Imágenes referenciales.",
+    "price": 39.9,
+    "sku": "9133"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Tomatodos",
+    "name": "Tomatodo Metálico Dunkin' Naranja",
+    "description": "Botella Metálica de doble pared con capacidad de 600ml.",
+    "price": 59.9,
+    "sku": "9832"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Tomatodos",
+    "name": "Tomatodo Metálico Dunkin' Blanco",
+    "description": "Botella Metálica de doble pared con capacidad de 600ml.",
+    "price": 59.9,
+    "sku": "9833"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Tomatodos",
+    "name": "Vaso Escarchado Dunkin' Naranja",
+    "description": "Botella de doble pared y brillo con capacidad de 450ml.",
+    "price": 29.9,
+    "sku": "9835"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "Tomatodos",
+    "name": "Vaso Escarchado Dunkin' Fucsia",
+    "description": "Botella de doble pared y brillo con capacidad de 450ml.",
+    "price": 29.9,
+    "sku": "9836"
+  },
+  {
+    "restaurant": "Dunkin'",
+    "category": "General",
+    "name": "Medias Dunkin",
+    "description": "Medias con diseño de donuts. Talla estándar.",
+    "price": 29.9,
+    "sku": "12056"
+  }
+]

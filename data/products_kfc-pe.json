@@ -36,14 +36,15 @@
     "description": "3 Piezas de Pollo, 4 Nuggets, 1 Complemento Regular, 1 Ensalada o Puré Regular, 1 Salsa Personal y 1 Bebida Personal",
     "price": 29.9,
     "originalPrice": 57,
-    "category": "🔥Promos Patrias",
+    "category": "Promos Patrias",
     "restaurant": "KFC"
   },
   {
     "name": "Chick'n Share Peruano con Bebidas",
     "description": "8 Nuggets, 8 Hot Wings, 2 Complementos Regulares, 1 Salsa Familiar y 1 Bebida 1L",
     "price": 38.8,
-    "category": "🔥Promos Patrias",
+    "originalPrice": 68.7,
+    "category": "Promos Patrias",
     "restaurant": "KFC"
   },
   {
@@ -51,7 +52,7 @@
     "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Complemento Familiar y 1 Salsa Familiar",
     "price": 49.9,
     "originalPrice": 86.7,
-    "category": "🔥Promos Patrias",
+    "category": "Promos Patrias",
     "restaurant": "KFC"
   },
   {
@@ -59,7 +60,7 @@
     "description": "8 Nuggets, 8 Hot Wings, 1 Salsa Familiar y 2 Complementos Regulares",
     "price": 34.9,
     "originalPrice": 61.7,
-    "category": "🔥Promos Patrias",
+    "category": "Promos Patrias",
     "restaurant": "KFC"
   },
   {
@@ -67,21 +68,21 @@
     "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Complemento Familiar, 1 Bebida 1L y 1 Salsa Familiar",
     "price": 55.8,
     "originalPrice": 93.7,
-    "category": "🔥Promos Patrias",
+    "category": "Promos Patrias",
     "restaurant": "KFC"
   },
   {
     "name": "Yuquita Familiar",
     "description": "15 Yuquitas Fritas",
     "price": 11.9,
-    "category": "🔥Promos Patrias",
+    "category": "Promos Patrias",
     "restaurant": "KFC"
   },
   {
     "name": "Yuquita Personal",
     "description": "5 Yuquitas Fritas",
     "price": 5.9,
-    "category": "🔥Promos Patrias",
+    "category": "Promos Patrias",
     "restaurant": "KFC"
   },
   {

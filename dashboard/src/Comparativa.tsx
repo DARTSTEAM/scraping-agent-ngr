@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, Fragment } from 'react';
 import {
   ArrowPathIcon,
   CheckCircleIcon,
@@ -189,7 +189,7 @@ export default function Comparativa() {
       ) : !data ? (
         <EmptyState brandLabel={currentBrand?.label} channel={channel} onRecalc={recalcular} recalculating={recalculating} />
       ) : subTab === 'dashboard' ? (
-        <Dashboard data={data} competitors={competitors} />
+        <Dashboard data={data} competitors={competitors} brandLabel={currentBrand?.label || data.brand} />
       ) : (
         <Review data={data} competitors={competitors} onlyPending={onlyPending} setOnlyPending={setOnlyPending}
                 brand={brand} channel={channel} applyOverride={applyOverride} />
@@ -226,12 +226,81 @@ function EmptyState({ brandLabel, channel, onRecalc, recalculating }: any) {
 // ──────────────────────────────────────────────
 // Dashboard
 // ──────────────────────────────────────────────
-function Dashboard({ data, competitors }: { data: Comparison; competitors: Competitor[] }) {
+// Variation of a competitor price RELATIVE TO the NGR price.
+// +% (competitor more expensive → NGR cheaper) is good for NGR → green up.
+// -% (competitor cheaper) → red down.
+function variationPct(ngrPrice: number | undefined, compPrice: number | null | undefined): number | null {
+  if (!ngrPrice || typeof compPrice !== 'number') return null;
+  return ((compPrice - ngrPrice) / ngrPrice) * 100;
+}
+
+function VariationBadge({ pct }: { pct: number | null }) {
+  if (pct == null) return <span className="text-slate-300">—</span>;
+  const up = pct > 0.05, down = pct < -0.05;
+  const cls = up ? 'text-emerald-600' : down ? 'text-rose-600' : 'text-slate-400';
+  const Icon = up ? ArrowUpIcon : down ? ArrowDownIcon : MinusIcon;
+  return (
+    <span className={`inline-flex items-center justify-end gap-0.5 font-bold tabular-nums ${cls}`}>
+      <Icon className="w-3.5 h-3.5" />{Math.abs(pct).toFixed(0)}%
+    </span>
+  );
+}
+
+type SortState = { key: string; dir: 'asc' | 'desc' };
+
+function Dashboard({ data, competitors, brandLabel }: { data: Comparison; competitors: Competitor[]; brandLabel: string }) {
+  const comps = competitors.filter(c => c.hasData !== false);
+  const [query, setQuery] = useState('');
+  const [category, setCategory] = useState('all');
+  const [onlyMatched, setOnlyMatched] = useState(false);
+  const [sort, setSort] = useState<SortState>({ key: 'ngr', dir: 'asc' });
+
+  const categories = useMemo(
+    () => [...new Set(data.rows.map(r => r.ngr.category).filter(Boolean))].sort(),
+    [data]
+  );
+
+  const valueFor = (row: Row, key: string): string | number | null => {
+    if (key === 'ngr') return row.ngr.name.toLowerCase();
+    if (key === 'ngrprice') return row.ngr.price ?? null;
+    if (key.startsWith('price:')) return row.matches[key.slice(6)]?.best?.price ?? null;
+    if (key.startsWith('var:')) return variationPct(row.ngr.price, row.matches[key.slice(4)]?.best?.price ?? null);
+    return null;
+  };
+
+  const rows = useMemo(() => {
+    const q = query.toLowerCase().trim();
+    const list = data.rows.filter(r =>
+      (!q || r.ngr.name.toLowerCase().includes(q) || (r.ngr.category || '').toLowerCase().includes(q)) &&
+      (category === 'all' || r.ngr.category === category) &&
+      (!onlyMatched || comps.some(c => r.matches[c.id]?.best))
+    );
+    const mult = sort.dir === 'asc' ? 1 : -1;
+    return [...list].sort((a, b) => {
+      const va = valueFor(a, sort.key), vb = valueFor(b, sort.key);
+      const na = va == null || (typeof va === 'number' && isNaN(va));
+      const nb = vb == null || (typeof vb === 'number' && isNaN(vb));
+      if (na && nb) return 0;
+      if (na) return 1;   // empties always last
+      if (nb) return -1;
+      if (typeof va === 'string' && typeof vb === 'string') return va < vb ? -mult : va > vb ? mult : 0;
+      return ((va as number) - (vb as number)) * mult;
+    });
+  }, [data, query, category, onlyMatched, sort, comps]);
+
+  const toggleSort = (key: string) =>
+    setSort(s => (s.key === key ? { key, dir: s.dir === 'asc' ? 'desc' : 'asc' } : { key, dir: 'asc' }));
+
+  const arrow = (key: string) =>
+    sort.key === key ? (sort.dir === 'asc' ? <ArrowUpIcon className="w-3 h-3" /> : <ArrowDownIcon className="w-3 h-3" />) : null;
+
+  const thBase = 'py-2.5 px-3 text-[10px] font-black uppercase tracking-wider border-b border-slate-200 bg-slate-50/80 cursor-pointer select-none whitespace-nowrap';
+
   return (
     <div className="space-y-6">
       {/* KPI cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-        {competitors.filter(c => c.hasData !== false).map(c => {
+        {comps.map(c => {
           const k = data.kpis[c.id];
           if (!k) return null;
           const idx = k.priceIndex;
@@ -247,11 +316,11 @@ function Dashboard({ data, competitors }: { data: Comparison; competitors: Compe
                 <span className="text-slate-400 text-sm font-bold mb-1.5">índice precio</span>
               </div>
               <p className="text-[11px] text-slate-400 mb-4">
-                {idx == null ? 'sin datos' : idx > 100 ? `NGR es ${(idx - 100).toFixed(0)}% más caro en promedio` : `NGR es ${(100 - idx).toFixed(0)}% más barato en promedio`}
+                {idx == null ? 'sin datos' : idx > 100 ? `${brandLabel} es ${(idx - 100).toFixed(0)}% más caro en promedio` : `${brandLabel} es ${(100 - idx).toFixed(0)}% más barato en promedio`}
               </p>
               <div className="grid grid-cols-3 gap-2 text-center">
-                <Stat n={k.pricier} label="más caro" cls="text-rose-600" />
-                <Stat n={k.cheaper} label="más barato" cls="text-emerald-600" />
+                <Stat n={k.cheaper} label="+ barato NGR" cls="text-emerald-600" />
+                <Stat n={k.pricier} label="+ caro NGR" cls="text-rose-600" />
                 <Stat n={k.pending} label="a revisar" cls="text-amber-600" />
               </div>
             </div>
@@ -260,43 +329,91 @@ function Dashboard({ data, competitors }: { data: Comparison; competitors: Compe
       </div>
 
       {/* Comparison table */}
-      <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm overflow-hidden">
-        <h2 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Tabla Comparativa</h2>
-        <div className="overflow-auto max-h-[560px] custom-scrollbar">
-          <table className="w-full text-left border-separate border-spacing-0 min-w-[720px]">
-            <thead className="sticky top-0 bg-white z-10">
+      <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm overflow-hidden">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 mb-4">
+          <div>
+            <h2 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Tabla Comparativa</h2>
+            <p className="text-[11px] text-slate-400 mt-0.5">Precios en S/ · variación = competidor vs {brandLabel} · {rows.length} productos</p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="relative">
+              <MagnifyingGlassIcon className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                value={query}
+                onChange={e => setQuery(e.target.value)}
+                placeholder="Filtrar producto…"
+                className="pl-9 pr-3 py-2 bg-slate-50 border-0 rounded-lg text-sm w-48 focus:ring-2 focus:ring-slate-200"
+              />
+            </div>
+            <select
+              value={category}
+              onChange={e => setCategory(e.target.value)}
+              className="py-2 px-3 bg-slate-50 border-0 rounded-lg text-sm font-medium cursor-pointer focus:ring-2 focus:ring-slate-200 max-w-[180px]"
+            >
+              <option value="all">Todas las categorías</option>
+              {categories.map(cat => <option key={cat} value={cat}>{cat}</option>)}
+            </select>
+            <label className="flex items-center gap-1.5 text-xs font-bold text-slate-600 cursor-pointer px-2">
+              <input type="checkbox" checked={onlyMatched} onChange={e => setOnlyMatched(e.target.checked)} className="rounded accent-slate-900 w-4 h-4" />
+              Solo con match
+            </label>
+          </div>
+        </div>
+
+        <div className="overflow-auto max-h-[600px] custom-scrollbar border border-slate-200 rounded-lg">
+          <table className="border-separate border-spacing-0 text-sm w-full min-w-[560px]">
+            <thead className="sticky top-0 z-20">
               <tr>
-                <th className="py-3 pr-4 text-[10px] font-black text-slate-400 uppercase tracking-widest border-b border-slate-100">Producto NGR</th>
-                {competitors.filter(c => c.hasData !== false).map(c => (
-                  <th key={c.id} className="py-3 px-4 text-[10px] font-black text-slate-400 uppercase tracking-widest border-b border-slate-100">{c.name}</th>
+                <th onClick={() => toggleSort('ngr')} className={`${thBase} text-left sticky left-0 z-30 text-slate-700`}>
+                  <span className="inline-flex items-center gap-1">{brandLabel}{arrow('ngr')}</span>
+                </th>
+                <th onClick={() => toggleSort('ngrprice')} className={`${thBase} text-right text-slate-700`}>
+                  <span className="inline-flex items-center gap-1 justify-end">Precio{arrow('ngrprice')}</span>
+                </th>
+                {comps.map(c => (
+                  <Fragment key={c.id}>
+                    <th onClick={() => toggleSort(`price:${c.id}`)} className={`${thBase} text-right text-slate-500 border-l border-slate-200`}>
+                      <span className="inline-flex items-center gap-1 justify-end">{c.name}{arrow(`price:${c.id}`)}</span>
+                    </th>
+                    <th onClick={() => toggleSort(`var:${c.id}`)} className={`${thBase} text-right text-slate-400`}>
+                      <span className="inline-flex items-center gap-1 justify-end">Var{arrow(`var:${c.id}`)}</span>
+                    </th>
+                  </Fragment>
                 ))}
               </tr>
             </thead>
             <tbody>
-              {data.rows.map((row, i) => (
-                <tr key={i} className="hover:bg-slate-50/50 transition-colors align-top">
-                  <td className="py-3 pr-4 border-b border-slate-50 max-w-[240px]">
-                    <p className="font-bold text-slate-900 leading-tight">{row.ngr.name}</p>
-                    <p className="text-[13px] font-black text-slate-900 mt-0.5">{money(row.ngr.price)}</p>
+              {rows.length === 0 ? (
+                <tr><td colSpan={2 + comps.length * 2} className="py-12 text-center text-slate-400 italic">Sin resultados para el filtro.</td></tr>
+              ) : rows.map((row, i) => (
+                <tr key={i} className="group">
+                  <td
+                    className="py-2 px-3 border-b border-slate-100 font-semibold text-slate-800 sticky left-0 bg-white group-hover:bg-slate-50 z-10 whitespace-nowrap max-w-[280px] truncate cursor-default"
+                    title={row.ngr.description || row.ngr.name}
+                  >
+                    {row.ngr.name}
                   </td>
-                  {competitors.filter(c => c.hasData !== false).map(c => {
+                  <td className="py-2 px-3 border-b border-slate-100 text-right font-bold text-slate-900 tabular-nums group-hover:bg-slate-50">
+                    {typeof row.ngr.price === 'number' ? row.ngr.price.toFixed(2) : '—'}
+                  </td>
+                  {comps.map(c => {
                     const cell = row.matches[c.id];
+                    const p = cell?.best?.price;
+                    const v = variationPct(row.ngr.price, typeof p === 'number' ? p : null);
                     return (
-                      <td key={c.id} className="py-3 px-4 border-b border-slate-50 max-w-[240px]">
-                        {cell?.best ? (
-                          <>
-                            <p className="text-sm text-slate-700 leading-tight line-clamp-2" title={cell.best.name}>{cell.best.name}</p>
-                            <div className="flex items-center gap-2 mt-1">
-                              <span className="text-[13px] font-bold text-slate-900">{money(cell.best.price)}</span>
-                              <DeltaBadge delta={cell.delta} deltaPct={cell.deltaPct} />
-                            </div>
-                          </>
-                        ) : (
-                          <span className={`text-[11px] font-bold px-2 py-0.5 rounded ${cell?.status === 'pending' ? 'bg-amber-50 text-amber-600' : 'bg-slate-50 text-slate-400'}`}>
-                            {cell?.status === 'pending' ? 'a revisar' : 'sin equivalente'}
-                          </span>
-                        )}
-                      </td>
+                      <Fragment key={c.id}>
+                        <td
+                          className="py-2 px-3 border-b border-slate-100 border-l border-slate-100 text-right tabular-nums text-slate-700 group-hover:bg-slate-50 cursor-default"
+                          title={cell?.best?.name || (cell?.status === 'pending' ? 'Pendiente de revisión' : 'Sin equivalente')}
+                        >
+                          {typeof p === 'number'
+                            ? p.toFixed(2)
+                            : <span className="text-slate-300">{cell?.status === 'pending' ? '·' : '—'}</span>}
+                        </td>
+                        <td className="py-2 px-3 border-b border-slate-100 text-right group-hover:bg-slate-50">
+                          <VariationBadge pct={v} />
+                        </td>
+                      </Fragment>
                     );
                   })}
                 </tr>
