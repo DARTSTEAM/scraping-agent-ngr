@@ -254,6 +254,12 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
   const [category, setCategory] = useState('all');
   const [onlyMatched, setOnlyMatched] = useState(false);
   const [sort, setSort] = useState<SortState>({ key: 'ngr', dir: 'asc' });
+  // Custom instant tooltip (native `title` is slow). Positioned at the cursor on
+  // enter only — no per-move re-render, so the big table stays snappy.
+  const [tip, setTip] = useState<{ x: number; y: number; name: string; desc: string } | null>(null);
+  const showTip = (e: { clientX: number; clientY: number }, name: string, desc: string) =>
+    setTip({ x: e.clientX, y: e.clientY, name, desc: desc || '' });
+  const hideTip = () => setTip(null);
 
   const categories = useMemo(
     () => [...new Set(data.rows.map(r => r.ngr.category).filter(Boolean))].sort(),
@@ -389,7 +395,8 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
                 <tr key={i} className="group">
                   <td
                     className="py-2 px-3 border-b border-slate-100 font-semibold text-slate-800 sticky left-0 bg-white group-hover:bg-slate-50 z-10 whitespace-nowrap max-w-[280px] truncate cursor-default"
-                    title={row.ngr.description || row.ngr.name}
+                    onMouseEnter={e => showTip(e, row.ngr.name, row.ngr.description || '')}
+                    onMouseLeave={hideTip}
                   >
                     {row.ngr.name}
                   </td>
@@ -404,7 +411,10 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
                       <Fragment key={c.id}>
                         <td
                           className="py-2 px-3 border-b border-slate-100 border-l border-slate-100 text-right tabular-nums text-slate-700 group-hover:bg-slate-50 cursor-default"
-                          title={cell?.best?.name || (cell?.status === 'pending' ? 'Pendiente de revisión' : 'Sin equivalente')}
+                          onMouseEnter={e => cell?.best
+                            ? showTip(e, cell.best.name, cell.best.description || '')
+                            : showTip(e, cell?.status === 'pending' ? 'Pendiente de revisión' : 'Sin equivalente', '')}
+                          onMouseLeave={hideTip}
                         >
                           {typeof p === 'number'
                             ? p.toFixed(2)
@@ -422,6 +432,16 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
           </table>
         </div>
       </div>
+
+      {tip && (
+        <div
+          className="fixed z-50 pointer-events-none max-w-[300px] rounded-lg bg-slate-900 text-white px-3 py-2 shadow-xl"
+          style={{ left: Math.min(tip.x + 14, (typeof window !== 'undefined' ? window.innerWidth : 1280) - 320), top: tip.y + 16 }}
+        >
+          <p className="text-xs font-bold leading-snug">{tip.name}</p>
+          {tip.desc && <p className="text-[11px] text-slate-300 mt-1 leading-snug">{tip.desc}</p>}
+        </div>
+      )}
     </div>
   );
 }
