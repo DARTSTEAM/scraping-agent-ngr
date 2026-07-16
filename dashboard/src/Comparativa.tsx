@@ -246,6 +246,127 @@ function VariationBadge({ pct }: { pct: number | null }) {
   );
 }
 
+// Validated categorical palette (dataviz skill), fixed order per competitor.
+const SERIES_COLORS = ['#2a78d6', '#1baf7a', '#eda100', '#4a3aa7', '#e34948'];
+
+const clampN = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v));
+function niceCeil(v: number): number {
+  if (v <= 0) return 1;
+  const pow = Math.pow(10, Math.floor(Math.log10(v)));
+  const n = v / pow;
+  const nice = n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10;
+  return nice * pow;
+}
+
+// Scatter: X = NGR price, Y = variation of NGR vs competitor (%). Above 0 = NGR
+// pricier (rose band); below 0 = NGR cheaper (emerald band). One color per competitor.
+function PriceScatter({ rows, comps, brandLabel }: { rows: Row[]; comps: Competitor[]; brandLabel: string }) {
+  const [tip, setTip] = useState<{ x: number; y: number; lines: string[]; color: string } | null>(null);
+
+  const points = useMemo(() => {
+    const pts: { price: number; pct: number; color: string; name: string; compName: string; compPrice: number; compLabel: string }[] = [];
+    comps.forEach((c, ci) => {
+      const color = SERIES_COLORS[ci % SERIES_COLORS.length];
+      for (const row of rows) {
+        const p = row.matches[c.id]?.best?.price;
+        if (typeof p === 'number' && row.ngr.price) {
+          pts.push({
+            price: row.ngr.price, pct: ((row.ngr.price - p) / p) * 100, color,
+            name: row.ngr.name, compName: row.matches[c.id]!.best!.name, compPrice: p, compLabel: c.name,
+          });
+        }
+      }
+    });
+    return pts;
+  }, [rows, comps]);
+
+  const W = 760, H = 360, m = { top: 14, right: 18, bottom: 46, left: 54 };
+  const iw = W - m.left - m.right, ih = H - m.top - m.bottom;
+  const zeroY = m.top + ih / 2;
+
+  const xMax = niceCeil(Math.max(10, ...points.map(p => p.price)));
+  const absSorted = points.map(p => Math.abs(p.pct)).sort((a, b) => a - b);
+  const p90 = absSorted.length ? absSorted[Math.floor(absSorted.length * 0.9)] : 50;
+  const D = clampN(niceCeil(p90 * 1.1), 25, 200);
+
+  const xOf = (price: number) => m.left + (price / xMax) * iw;
+  const yOf = (pct: number) => zeroY - (clampN(pct, -D, D) / D) * (ih / 2);
+
+  const xTicks = [0, 0.25, 0.5, 0.75, 1].map(t => Math.round(t * xMax));
+  const yTicks = [D, D / 2, 0, -D / 2, -D];
+
+  if (points.length === 0) {
+    return <div className="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm text-center text-slate-400 italic py-12">Sin matches para graficar.</div>;
+  }
+
+  return (
+    <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
+      <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
+        <div>
+          <h2 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Dispersión de precios</h2>
+          <p className="text-[11px] text-slate-400 mt-0.5">cada punto = un producto · Y: {brandLabel} vs competidor (%) · X: precio {brandLabel} (S/)</p>
+        </div>
+        <div className="flex flex-wrap items-center gap-3">
+          {comps.map((c, ci) => (
+            <span key={c.id} className="inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-600">
+              <span className="w-2.5 h-2.5 rounded-full" style={{ background: SERIES_COLORS[ci % SERIES_COLORS.length] }} />
+              {c.name}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" role="img" aria-label="Dispersión de variación de precio por producto">
+        {/* polarity bands */}
+        <rect x={m.left} y={m.top} width={iw} height={ih / 2} fill="#fef2f2" />
+        <rect x={m.left} y={zeroY} width={iw} height={ih / 2} fill="#f0fdf4" />
+
+        {/* gridlines + y ticks */}
+        {yTicks.map((t, i) => (
+          <g key={i}>
+            <line x1={m.left} x2={m.left + iw} y1={yOf(t)} y2={yOf(t)} stroke={t === 0 ? '#94a3b8' : '#e1e0d9'} strokeWidth={t === 0 ? 1.5 : 1} />
+            <text x={m.left - 8} y={yOf(t) + 3} textAnchor="end" className="fill-slate-400" fontSize="10" fontWeight="700">{t > 0 ? '+' : ''}{t}%</text>
+          </g>
+        ))}
+        {/* x ticks */}
+        {xTicks.map((t, i) => (
+          <g key={i}>
+            <text x={xOf(t)} y={m.top + ih + 16} textAnchor="middle" className="fill-slate-400" fontSize="10" fontWeight="700">{t}</text>
+          </g>
+        ))}
+        <line x1={m.left} x2={m.left + iw} y1={m.top + ih} y2={m.top + ih} stroke="#c3c2b7" strokeWidth="1" />
+
+        {/* axis titles */}
+        <text x={m.left + iw / 2} y={H - 6} textAnchor="middle" className="fill-slate-500" fontSize="11" fontWeight="800">Precio {brandLabel} (S/)</text>
+        <text transform={`rotate(-90 14 ${m.top + ih / 2})`} x={14} y={m.top + ih / 2} textAnchor="middle" className="fill-slate-500" fontSize="11" fontWeight="800">Variación vs competidor</text>
+
+        {/* points */}
+        {points.map((pt, i) => (
+          <circle
+            key={i}
+            cx={xOf(pt.price)} cy={yOf(pt.pct)} r={4.5}
+            fill={pt.color} fillOpacity={0.75} stroke="#fff" strokeWidth={1.2}
+            style={{ cursor: 'pointer' }}
+            onMouseEnter={e => setTip({
+              x: e.clientX, y: e.clientY, color: pt.color,
+              lines: [pt.name, `${brandLabel} S/ ${pt.price.toFixed(2)} · ${pt.compLabel} S/ ${pt.compPrice.toFixed(2)}`, `${pt.pct > 0 ? '+' : ''}${pt.pct.toFixed(0)}% (${pt.pct > 0 ? 'más caro' : 'más barato'} que ${pt.compLabel})`],
+            })}
+            onMouseLeave={() => setTip(null)}
+          />
+        ))}
+      </svg>
+
+      {tip && (
+        <div className="fixed z-50 pointer-events-none max-w-[300px] rounded-lg bg-slate-900 text-white px-3 py-2 shadow-xl"
+          style={{ left: Math.min(tip.x + 14, (typeof window !== 'undefined' ? window.innerWidth : 1280) - 320), top: tip.y + 16 }}>
+          <p className="text-xs font-bold leading-snug flex items-center gap-1.5"><span className="w-2 h-2 rounded-full inline-block" style={{ background: tip.color }} />{tip.lines[0]}</p>
+          {tip.lines.slice(1).map((l, i) => <p key={i} className="text-[11px] text-slate-300 mt-0.5 leading-snug">{l}</p>)}
+        </div>
+      )}
+    </div>
+  );
+}
+
 type SortState = { key: string; dir: 'asc' | 'desc' };
 
 function Dashboard({ data, competitors, brandLabel }: { data: Comparison; competitors: Competitor[]; brandLabel: string }) {
@@ -294,6 +415,25 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
     });
   }, [data, query, category, onlyMatched, sort, comps]);
 
+  // Per-competitor KPI: MEAN of per-product % (NGR vs competitor), equal-weighted.
+  // +avg = NGR pricier on average; −avg = cheaper. (Distinct from the basket index,
+  // which is price-weighted.)
+  const compStats = useMemo(() => {
+    const out: Record<string, { avgPct: number | null; n: number; index: number | null }> = {};
+    for (const c of comps) {
+      let sumPct = 0, n = 0, sumNgr = 0, sumComp = 0;
+      for (const row of data.rows) {
+        const p = row.matches[c.id]?.best?.price;
+        if (typeof p === 'number' && row.ngr.price) {
+          sumPct += ((row.ngr.price - p) / p) * 100;
+          sumNgr += row.ngr.price; sumComp += p; n++;
+        }
+      }
+      out[c.id] = { avgPct: n ? sumPct / n : null, n, index: sumComp ? (sumNgr / sumComp) * 100 : null };
+    }
+    return out;
+  }, [data, comps]);
+
   const toggleSort = (key: string) =>
     setSort(s => (s.key === key ? { key, dir: s.dir === 'asc' ? 'desc' : 'asc' } : { key, dir: 'asc' }));
 
@@ -304,35 +444,45 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
 
   return (
     <div className="space-y-6">
-      {/* KPI cards */}
+      {/* KPI cards — main metric: average % NGR vs each competitor */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {comps.map(c => {
           const k = data.kpis[c.id];
-          if (!k) return null;
-          const idx = k.priceIndex;
-          const idxCls = idx == null ? 'text-slate-400' : idx > 101 ? 'text-rose-600' : idx < 99 ? 'text-emerald-600' : 'text-slate-600';
+          const s = compStats[c.id];
+          if (!k || !s) return null;
+          const avg = s.avgPct;
+          const pricier = avg != null && avg > 0.5;
+          const cheaper = avg != null && avg < -0.5;
+          const cls = avg == null ? 'text-slate-400' : pricier ? 'text-rose-600' : cheaper ? 'text-emerald-600' : 'text-slate-600';
           return (
             <div key={c.id} className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
               <div className="flex items-center justify-between mb-3">
-                <h3 className="font-black text-slate-900">{c.name}</h3>
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{k.matched} matches</span>
+                <h3 className="font-black text-slate-900">{brandLabel} vs {c.name}</h3>
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{s.n} productos</span>
               </div>
               <div className="flex items-end gap-2">
-                <span className={`text-4xl font-black tracking-tight ${idxCls}`}>{idx == null ? '—' : idx.toFixed(0)}</span>
-                <span className="text-slate-400 text-sm font-bold mb-1.5">índice precio</span>
+                <span className={`text-4xl font-black tracking-tight ${cls}`}>
+                  {avg == null ? '—' : `${avg > 0 ? '+' : ''}${avg.toFixed(0)}%`}
+                </span>
               </div>
-              <p className="text-[11px] text-slate-400 mb-4">
-                {idx == null ? 'sin datos' : idx > 100 ? `${brandLabel} es ${(idx - 100).toFixed(0)}% más caro en promedio` : `${brandLabel} es ${(100 - idx).toFixed(0)}% más barato en promedio`}
+              <p className="text-[11px] text-slate-500 font-medium mb-1">
+                {avg == null ? 'sin datos'
+                  : Math.abs(avg) < 0.5 ? `${brandLabel} tiene precios similares en promedio`
+                  : `en promedio ${brandLabel} es ${Math.abs(avg).toFixed(0)}% más ${pricier ? 'caro' : 'barato'} que ${c.name}`}
               </p>
+              <p className="text-[10px] text-slate-400 mb-4">índice canasta {s.index == null ? '—' : s.index.toFixed(0)} (ponderado por precio)</p>
               <div className="grid grid-cols-3 gap-2 text-center">
-                <Stat n={k.cheaper} label="+ barato NGR" cls="text-emerald-600" />
-                <Stat n={k.pricier} label="+ caro NGR" cls="text-rose-600" />
+                <Stat n={k.cheaper} label={`+ barato`} cls="text-emerald-600" />
+                <Stat n={k.pricier} label={`+ caro`} cls="text-rose-600" />
                 <Stat n={k.pending} label="a revisar" cls="text-amber-600" />
               </div>
             </div>
           );
         })}
       </div>
+
+      {/* Scatter chart */}
+      <PriceScatter rows={data.rows} comps={comps} brandLabel={brandLabel} />
 
       {/* Comparison table */}
       <div className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm overflow-hidden">
