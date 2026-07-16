@@ -26,36 +26,35 @@ async function scrapeKFC(url = 'https://www.kfc.com.pe/carta') {
     let results = [];
 
     try {
-        // Step 0: verify the proxy IP is Peruvian
-        console.log('[Kernel] Verificando IP del proxy...');
-        try {
-            await page.goto('https://ipinfo.io/json', { waitUntil: 'domcontentloaded', timeout: 15000 });
-            const ipData = JSON.parse(await page.textContent('body').catch(() => '{}'));
-            console.log(`[Kernel] IP: ${ipData.ip}, Country: ${ipData.country}, Org: ${ipData.org}`);
-            if (ipData.country && ipData.country !== 'PE') {
-                console.warn(`[Kernel] ⚠️ La IP NO es de Perú (es de ${ipData.country}).`);
-            } else {
-                console.log('[Kernel] ✅ IP peruana confirmada.');
-            }
-        } catch (e) {
-            console.warn(`[Kernel] No se pudo verificar la IP: ${e.message}`);
-        }
-
-        // Step 1: homepage (session/cookies) + geo-block check
+        // Step 1: homepage (session/cookies) + geo-block check — best-effort.
+        // A flaky navigation here must NOT abort the whole scrape.
         console.log('Cargando homepage...');
-        const homeResponse = await page.goto('https://www.kfc.com.pe/', { waitUntil: 'domcontentloaded', timeout: 45000 });
-        const httpStatus = homeResponse?.status();
-        console.log(`[KFC] HTTP status homepage: ${httpStatus}`);
-        if (httpStatus === 403 || httpStatus === 451) {
-            throw new Error(`⛔ Geo-block detectado (HTTP ${httpStatus}). El proxy Kernel no pudo superar CloudFront.`);
+        try {
+            const homeResponse = await page.goto('https://www.kfc.com.pe/', { waitUntil: 'domcontentloaded', timeout: 30000 });
+            const httpStatus = homeResponse?.status();
+            console.log(`[KFC] HTTP status homepage: ${httpStatus}`);
+            if (httpStatus === 403 || httpStatus === 451) throw new Error(`GEOBLOCK:${httpStatus}`);
+            await page.waitForTimeout(1200);
+            await dismissModals(page);
+        } catch (e) {
+            if (String(e.message).startsWith('GEOBLOCK')) {
+                throw new Error(`⛔ Geo-block detectado (HTTP ${e.message.split(':')[1]}). El proxy Kernel no superó CloudFront.`);
+            }
+            console.warn(`[KFC] Homepage falló (${e.message}); continuando directo a /carta.`);
         }
-        await page.waitForTimeout(2000);
-        await dismissModals(page);
 
-        // Step 2: go to the carta and discover categories
-        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 }).catch(() => {});
+        // Step 2: go to the carta and discover categories (with one retry).
+        for (let attempt = 0; attempt < 2; attempt++) {
+            try {
+                await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+                break;
+            } catch (e) {
+                console.warn(`[KFC] goto /carta intento ${attempt + 1} falló: ${e.message}`);
+                await page.waitForTimeout(2000);
+            }
+        }
         await page.waitForSelector('article', { timeout: 20000 }).catch(() => {});
-        await page.waitForTimeout(2000);
+        await page.waitForTimeout(1500);
         await handleStoreModal(page);
 
         const categories = await page.evaluate(() => {
@@ -77,17 +76,14 @@ async function scrapeKFC(url = 'https://www.kfc.com.pe/carta') {
         if (categories.length === 0) {
             results = await scrapeCategoryPages(page, 'https://www.kfc.com.pe/carta/ver-todo', 'General');
         } else {
-            // 1) Per-category pass (no cap) → real category per product.
-            const nameToCategory = new Map();
+            // Per-category pass (no cap). KFC's categories cover the whole menu, so this
+            // gives full coverage on its own — no separate ver-todo pass (keeps runtime
+            // under the Cloud Run request timeout).
             for (const cat of categories) {
                 const catUrl = cat.href.startsWith('http') ? cat.href : `https://www.kfc.com.pe${cat.href}`;
                 const catProducts = await scrapeCategoryPages(page, catUrl, cat.name);
-                for (const p of catProducts) if (!nameToCategory.has(p.name)) nameToCategory.set(p.name, cat.name);
+                results.push(...catProducts);
             }
-            // 2) Full ver-todo pass → complete coverage; tag with mapped category.
-            const all = await scrapeCategoryPages(page, 'https://www.kfc.com.pe/carta/ver-todo', 'Otros');
-            results = all.map(p => ({ ...p, category: nameToCategory.get(p.name) || 'Otros' }));
-            console.log(`Cobertura ver-todo: ${all.length} · con categoría mapeada: ${all.filter(p => nameToCategory.has(p.name)).length}`);
         }
 
     } catch (error) {
@@ -157,12 +153,12 @@ async function extractProductsOnPage(page) {
 
 async function autoScroll(page) {
     let prev = -1;
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 6; i++) {
         const count = await page.evaluate(() => {
             window.scrollTo(0, document.body.scrollHeight);
             return document.querySelectorAll('article').length;
         });
-        await page.waitForTimeout(1200);
+        await page.waitForTimeout(700);
         if (count === prev) break;
         prev = count;
     }
@@ -171,14 +167,14 @@ async function autoScroll(page) {
 
 async function scrapeCategoryPages(page, categoryUrl, categoryName) {
     const out = [];
-    await page.goto(categoryUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
     try {
-        await page.waitForSelector('article', { timeout: 20000 });
+        await page.goto(categoryUrl, { waitUntil: 'domcontentloaded', timeout: 40000 });
+        await page.waitForSelector('article', { timeout: 15000 });
     } catch (_) {
         console.warn(`  ⚠ ${categoryName}: sin artículos, salteando.`);
         return out;
     }
-    await page.waitForTimeout(1500);
+    await page.waitForTimeout(800);
     for (let guard = 0; guard < 30; guard++) {
         await autoScroll(page);
         out.push(...await extractProductsOnPage(page));
@@ -196,7 +192,7 @@ async function scrapeCategoryPages(page, categoryUrl, categoryName) {
             return false;
         });
         if (!nextClicked) break;
-        await page.waitForTimeout(2500);
+        await page.waitForTimeout(1200);
     }
     // de-dupe within the category by name
     const seen = new Set();

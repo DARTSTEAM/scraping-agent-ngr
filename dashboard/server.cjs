@@ -267,7 +267,15 @@ app.post('/api/update', (req, res) => {
     const scriptArgs = scriptName === 'pedidosya_scraper.js'
         ? `"${scriptPath}" "${url}" "${pedidosYaStoreId}"`
         : `"${scriptPath}" "${url}"`;
-    const execTimeout = scriptName === 'pedidosya_scraper.js' ? 180000 : 120000;
+    // Per-category browser crawls (Digifood /carta sites, Rokys) do many page loads
+    // and need well over 2 min. Kept under Cloud Run's 300s request timeout.
+    const HEAVY_SCRAPERS = new Set([
+        'kfc_scraper.js', 'burgerking_scraper.js', 'pizzahut_scraper.js',
+        'digifood_scraper.js', 'rokys_scraper.js', 'magento_scraper.js',
+    ]);
+    const execTimeout = scriptName === 'pedidosya_scraper.js' ? 180000
+        : HEAVY_SCRAPERS.has(scriptName) ? 270000
+        : 120000;
 
     // Scraper outputs products_<id>.json to its cwd (SCRAPERS_DIR = /app)
     exec(`node ${scriptArgs}`, { cwd: SCRAPERS_DIR, env, timeout: execTimeout }, async (error, stdout, stderr) => {
