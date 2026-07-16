@@ -23,16 +23,22 @@ const { GoogleGenAI, Type } = require('@google/genai');
 const { getChannelConfig } = require('./brand_config');
 
 const PROJECT = process.env.GOOGLE_CLOUD_PROJECT || process.env.GCLOUD_PROJECT || 'hike-fafo';
-const LOCATION = process.env.VERTEX_LOCATION || 'global';
+// Regional endpoint (own quota pool) is more stable than 'global' (dynamic shared
+// quota), which was returning persistent 429 RESOURCE_EXHAUSTED.
+const LOCATION = process.env.VERTEX_LOCATION || 'us-central1';
 const MODEL = process.env.VERTEX_MODEL || 'gemini-2.5-flash';
 
 const ROOT_DIR = __dirname;
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 
 // Anchor products per model call, and how many calls run at once.
+// Concurrency is kept low so we stay under Vertex's per-minute request/token
+// quota (429 RESOURCE_EXHAUSTED); transient 429/503 are retried with backoff.
 const CHUNK_SIZE = 40;
-const CONCURRENCY = 8;
+const CONCURRENCY = 2;
 const MAX_ALTERNATIVES = 3;
+const MAX_RETRIES = 5;
+const RETRY_BASE_MS = 4000;
 
 // ──────────────────────────────────────────────
 // Data loading
@@ -148,23 +154,43 @@ function getAI() {
   return _ai;
 }
 
-async function callGemini(prompt) {
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+
+// Retry transient rate-limit / overload errors with exponential backoff + jitter.
+function isRetryable(err) {
+  const msg = String(err?.message || err || '');
+  const code = err?.status ?? err?.code;
+  return code === 429 || code === 503 ||
+    /RESOURCE_EXHAUSTED|UNAVAILABLE|exhausted|overloaded|rate.?limit|quota/i.test(msg);
+}
+
+async function callGemini(prompt, attempt = 0) {
   const ai = getAI();
-  const resp = await ai.models.generateContent({
-    model: MODEL,
-    contents: prompt,
-    config: {
-      temperature: 0,
-      responseMimeType: 'application/json',
-      responseSchema: RESPONSE_SCHEMA,
-      // gemini-2.5-* enables "thinking" by default, which adds large latency.
-      // This is a shallow extraction task — disable it for speed.
-      thinkingConfig: { thinkingBudget: 0 },
-    },
-  });
-  const text = resp.text;
-  if (!text) throw new Error('Gemini devolvió respuesta vacía');
-  return JSON.parse(text);
+  try {
+    const resp = await ai.models.generateContent({
+      model: MODEL,
+      contents: prompt,
+      config: {
+        temperature: 0,
+        responseMimeType: 'application/json',
+        responseSchema: RESPONSE_SCHEMA,
+        // gemini-2.5-* enables "thinking" by default, which adds large latency.
+        // This is a shallow extraction task — disable it for speed.
+        thinkingConfig: { thinkingBudget: 0 },
+      },
+    });
+    const text = resp.text;
+    if (!text) throw new Error('Gemini devolvió respuesta vacía');
+    return JSON.parse(text);
+  } catch (err) {
+    if (isRetryable(err) && attempt < MAX_RETRIES) {
+      const delay = RETRY_BASE_MS * Math.pow(2, attempt) + Math.floor(Math.random() * 1000);
+      console.warn(`[match] 429/503, reintento ${attempt + 1}/${MAX_RETRIES} en ${Math.round(delay / 1000)}s`);
+      await sleep(delay);
+      return callGemini(prompt, attempt + 1);
+    }
+    throw err;
+  }
 }
 
 // ──────────────────────────────────────────────
