@@ -1,56 +1,24 @@
 [
   {
     "restaurant": "McDonald's - San Antonio",
-    "category": "Grimace Shake",
-    "name": "McCombo grande Grimace Shake",
-    "description": "1 Big Mac, 1 papa grande, 1 Grimace Shake. Sujeto a stock de local. Imágenes referenciales.",
-    "price": 31.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Grimace Shake",
-    "name": "McCombo mediano Grimace Shake",
-    "description": "1 Big Mac, 1 papa mediana, 1 Grimace Shake. Sujeto a stock de local. Imágenes referenciales.",
-    "price": 29.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Grimace Shake",
-    "name": "Combo grande Grimace Shake y Gaseosa gde",
-    "description": "1 Big Mac, 1 papa grande, 1 Grimace Shake y 1 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Imágenes referenciales.",
+    "category": "Copa Mundial de la FIFA",
+    "name": "McCombo grande Chicken Nuggets 10 unidades FIFA",
+    "description": "10 Chicken McNuggets, 01 papa grande, 01 gaseosa grande de 21oz, 02 blíster de salsas Big Mac y 01 vaso coleccionable modelo aleatorio. Sujeto a stock de local y sin posibilidad de excepción. Las gaseosas incluyen hielo. Imágenes referenciales.",
     "price": 34.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
-    "category": "Grimace Shake",
-    "name": "Combo mediano Grimace Shake Gaseosa med",
-    "description": "1 Big Mac, 1 papa mediana, 1 Grimace Shake y 1 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Imágenes referenciales.",
+    "category": "Copa Mundial de la FIFA",
+    "name": "McCombo mediano Chicken Nuggets 10 unidades FIFA",
+    "description": "10 Chicken McNuggets, 01 papa mediana, 01 gaseosa mediana de 16 oz, 02 blíster de salsas Big Mac y 01 vaso coleccionable modelo aleatorio. Sujeto a stock de local y sin posibilidad de excepción. Las gaseosas incluyen hielo. Imágenes referenciales.",
     "price": 32.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
-    "category": "Grimace Shake",
-    "name": "Grimace Shake",
-    "description": "Helado de vainilla y jarabe de frutos rojos. Tamaño personal. Imagen referencial.",
-    "price": 12.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Semana de McDonald's",
-    "name": "Combo Cuarto Power",
-    "description": "Una Cuarto de Libra, una papa regular, una gaseosa mediana y cuatro chicken McNuggets. Válido este mes. Stock: 3,000 unds. La bebida incluye hielo. Imágenes referenciales.",
-    "price": 15.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
     "category": "Promos Desayunos Mc",
-    "name": "27%OFF Combo McHuevo",
+    "name": "McHuevo + Café + Papas",
     "description": "1 McHuevo con papas y café. Válido todo el mes hasta las 11:45am o hasta agotar stock de 3000 unidades. Imagen referencial.",
     "price": 15.9,
     "inStock": true
@@ -82,105 +50,57 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Rappi Promo",
-    "name": "Combo regular Big Mac y Cuarto de Libra",
-    "description": "1 Big Mac, 1 Cuarto de Libra con queso, 2 papas regulares y 2 gaseosas regulares de 12 oz. La gaseosa viene con hielo. Válida durante todo el mes. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\". Imagenes referenciales.",
-    "price": 24.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Rappi Promo",
-    "name": "Cuarto de Libra,McPollo con queso y papas",
-    "description": "1 Cuarto de Libra, 1 McPollo con queso y 2 papas regulares. Válida solo hoy. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\". Imagenes referenciales.",
-    "price": 25.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Rappi Promo",
-    "name": "Combo regular Big Mac",
-    "description": "01 hamburguesa Big Mac, 1 papas regulares, 1 gaseosa regular de 12 oz. La gaseosa viene con hielo. Válida durante todo el mes. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\". Imagenes referenciales.",
-    "price": 14.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Rappi Promo",
-    "name": "6 piezas de pollo, 3 papas y 3 gaseosas",
-    "description": "6 piezas de pollo crujiente, 3 papas regulares, 3 gaseosa regular de 12 oz. La gaseosa viene con hielo. Piezas de pollo aleatorias. Válida durante todo el mes. Stock: 3,000 unds. Imagenes referenciales.",
+    "name": "Pack Hamburguesas, nuggets y papas",
+    "description": "1 McBacon, 1 McPollo, 1 Doble Hamburguesa, 06 McNuggets y 03 papas regulares. Válida solo hoy. Stock: 2,000 unds total país. Ver detalle de producto en \"Hamburguesas\". Imágenes referenciales.",
     "price": 44.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Rappi Promo",
-    "name": "2 Doble Hamburguesas y 2 papas regulares",
-    "description": "2 Doble hamburguesas con queso y 2 papas regulares. Válida solo hoy. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\". Imagenes referenciales.",
-    "price": 47.6,
+    "name": "Big Mac, McNuggets y papa",
+    "description": "1 hamburguesa Big Mac, 06 McNuggets y 01 papas regulares. Válida solo hoy. Stock: 2,000 unds total país. Ver detalle de producto en \"Hamburguesas\". Imágenes referenciales.",
+    "price": 20.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Rappi Promo",
-    "name": "2 Combos McPollo con queso",
-    "description": "2 McPollo con queso, 2 papas regulares y 2 gaseosas regulares de 12 oz. La gaseosa viene con hielo. Válida durante todo el mes. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\". Imagenes referenciales.",
-    "price": 29.9,
+    "name": "Pack Cuarto y 10 McNuggets",
+    "description": "1 Cuarto de Libra, 10 McNuggets, 2 papas regulares y 2 gaseosas regulares de 12 oz. Las gaseosas incluyen hielo. Válida solo hoy. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\". Imágenes referenciales.",
+    "price": 32.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Rappi Promo",
-    "name": "Doble Hamburguesa y papas",
-    "description": "Una Doble Hamburguesa con queso y unas papas regulares. Válido durante el mes. Stock: 3,000 unds. Imagenes referenciales.",
-    "price": 10.9,
+    "name": "Combo 3 piezas de pollo",
+    "description": "03 piezas de pollo crujiente, 1 papa regular, 1 gaseosa mediana de 16 oz. La gaseosa viene con hielo. Piezas de pollo aleatorias. Válida hoy. Stock: 3,000 unds. Imágenes referenciales.",
+    "price": 19.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Rappi Promo",
-    "name": "Big Mac + Doble Hamburguesa + 2 papas reg",
-    "description": "1 Big Mac y 1 Doble hamburguesas con queso y 2 papas regulares. Válida solo hoy. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\". Imagenes referenciales.",
-    "price": 25.9,
+    "name": "2x1 McBacon y papas",
+    "description": "02 McBacon y 02 papas regulares. Válida solo hoy. Stock: 1,000 unds.Ver detalle de producto en \"Hamburguesas\". Imagenes referenciales.",
+    "price": 49.6,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Rappi Promo",
-    "name": "McFlurry Oreo + Mini M&M + Milo",
-    "description": "01 helado McFlurry Milo, 01 helado McFlurry Oreo y 01 helado McFlurry Mini M&M. Todos los helados son base vainilla. Válida durante todo el mes. Stock: 3,000 unds.Ver detalle de producto en \"Postres\". Imagenes referenciales.",
-    "price": 17.9,
+    "name": "Combo 10 McNuggets",
+    "description": "10 Chicken McNuggets, 1 papa mediana y 1 gaseosa grande. La gaseosa incluyen hielo. Válido hoy o hasta agotar stock 3mil uds. Imágenes referenciales.",
+    "price": 19.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Rappi Promo",
-    "name": "McFlurry Oreo + Sublime",
-    "description": "01 helado McFlurry Oreo y 01 helado McFlurry Sublime. Todos los helados son base vainilla. Válida durante todo el mes. Stock: 3,000 unds.Ver detalle de producto en \"Postres\". Imagenes referenciales.",
-    "price": 12.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Rappi Promo",
-    "name": "McFlurry Oreo + Milo",
-    "description": "01 helado McFlurry Milo y 01 helado McFlurry Oreo. Todos los helados son base vainilla. Válida durante todo el mes. Stock: 3,000 unds.Ver detalle de producto en \"Postres\". Imagenes referenciales.",
-    "price": 12.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Rappi Promo",
-    "name": "Dupla Power",
-    "description": "Una Cuarto de Libra, una McBacon, dos papas regulares y dos gaseosas medianas. Válido este mes. Stock: 3,000 unds. Las bebidas incluyen hielo. Imágenes referenciales.",
-    "price": 22.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Rappi Promo",
-    "name": "Combo Cuarto Power",
-    "description": "Una Cuarto de Libra, una papa regular, una gaseosa mediana y cuatro chicken McNuggets. Válido este mes. Stock: 3,000 unds. La bebida incluye hielo. Imágenes referenciales.",
-    "price": 15.9,
+    "name": "Cuarto de Libra con papas",
+    "description": "1 Hamburguesa Cuarto de libra y 1 papa regular. Imágenes referenciales. Stock: 3,000 unds. Válido hoy.",
+    "price": 9.9,
     "inStock": true
   },
   {
@@ -188,7 +108,7 @@
     "category": "Rappi Promo",
     "name": "Combo McBacon",
     "description": "Una hamburguesa McBacon, unas papas regulares y una gaseosa mediana. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds.",
-    "price": 10.9,
+    "price": 33.3,
     "inStock": true
   },
   {
@@ -197,14 +117,6 @@
     "name": "Dúo McFlurry M&M",
     "description": "2 McFlurry M&M. Válido del 05/12/2023 al 10/12/2023 o hasta agotar stock de 3000 unidades. Imagen referencial.",
     "price": 10.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Rappi Promo",
-    "name": "Fanático de la Big Mac",
-    "description": "1 sándwich Big Mac, 1 papas regulares, 4 McNuggets y 1 gaseosa mediana. Válido durante la semana. Stock: 2 mil. Imagen referencial.",
-    "price": 18.9,
     "inStock": true
   },
   {
@@ -226,7 +138,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Desayunos Mc",
-    "name": "McHuevo Deluxe con café",
+    "name": "McHuevo Deluxe + Café",
     "description": "Sándwich con un huevo frito, una carne de res y mayonesa en pan sin ajonjolí. y un café de 14 oz.",
     "price": 17.9,
     "inStock": true
@@ -234,7 +146,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Desayunos Mc",
-    "name": "Café con Doble Huevo",
+    "name": "Doble Huevo + Café",
     "description": "Café americano de 14 oz. más un sándwich con dos huevos fritos y doble queso cheddar amarillo en pan sin ajonjolí. Producto válido hasta las 11:45 a.m. o sujeto a stock. Imagen referencial.",
     "price": 16.9,
     "inStock": true
@@ -242,7 +154,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Desayunos Mc",
-    "name": "McHuevo con café",
+    "name": "McHuevo + Café",
     "description": "Sándwich McHuevo y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds.",
     "price": 14.9,
     "inStock": true
@@ -250,7 +162,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Desayunos Mc",
-    "name": "McQueso con café",
+    "name": "McQueso + Café",
     "description": "Un sándwich McQueso y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds.",
     "price": 10.9,
     "inStock": true
@@ -258,7 +170,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Desayunos Mc",
-    "name": "Sándwich Queso, Huevo y Tocino con café",
+    "name": "Sándwich Queso, Huevo y Tocino + Café",
     "description": "Sándwich Queso, Huevo y Tocino y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds.",
     "price": 15.9,
     "inStock": true
@@ -266,7 +178,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Desayunos Mc",
-    "name": "Sándwich Doble Huevo",
+    "name": "Doble Huevo",
     "description": "Sándwich con dos huevos fritos y doble queso cheddar amarillo en pan sin ajonjolí. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial.",
     "price": 11,
     "inStock": true
@@ -274,7 +186,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Desayunos Mc",
-    "name": "Tostado, Tocino y queso",
+    "name": "Tostado, Tocino y Queso",
     "description": "Sándwich tostado con tocino y queso cheddar amarillo. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds.",
     "price": 8,
     "inStock": true
@@ -306,7 +218,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Desayunos Mc",
-    "name": "Cafe Pasado",
+    "name": "Café Pasado",
     "description": "Café americano de 14 oz. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial.",
     "price": 6.9,
     "inStock": true
@@ -322,8 +234,48 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Promos Top",
+    "name": "4 McCombos y 4 Juguetes Sorpresa",
+    "description": "4 hamburguesas a elección entre Big Mac o Cuarto de Libra, 4 papas medianas, 4 gaseosas medianas de 16 oz y 4 juguetes sorpresas de colecciones pasadas. Los juguetes son aleatorios y sujeto a stock de local. Los juguetes no son de licencia actual y no incluyen los productos de la Cajita Feliz. Las gaseosas incluyen hielo. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales.",
+    "price": 79.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Promos Top",
+    "name": "3 McCombos y 3 Juguetes Sorpresa",
+    "description": "3 hamburguesas a elección entre Big Mac o Cuarto de Libra, 3 papas medianas, 3 gaseosas medianas de 16 oz y 3 juguetes sorpresas de colecciones pasadas. Los juguetes son aleatorios y sujeto a stock de local. Los juguetes no son de licencia actual y no incluyen los productos de la Cajita Feliz. Las gaseosas incluyen hielo. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales.",
+    "price": 59.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Promos Top",
+    "name": "2 McCombos y 2 Juguetes Sorpresa",
+    "description": "2 hamburguesas a elección entre Big Mac o Cuarto de Libra, 2 papas medianas, 2 gaseosas medianas de 16 oz y 2 juguetes sorpresas de colecciones pasadas. Los juguetes son aleatorios y sujeto a stock de local. Los juguetes no son de licencia actual y no incluyen los productos de la Cajita Feliz. Las gaseosas incluyen hielo. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales.",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Promos Top",
+    "name": "Banquete 6 piezas y 3 Juguetes Sorpresa",
+    "description": "06 piezas de pollo crujiente, 3 papas regulares, 3 gaseosas regulares de 12 oz y 3 juguetes sorpresas de colecciones pasadas. Los juguetes son aleatorios y sujeto a stock de local. Los juguetes no son de licencia actual y no incluyen los productos de la Cajita Feliz. Las gaseosas incluyen hielo. Piezas de pollo aleatorias. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales.",
+    "price": 59.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Promos Top",
+    "name": "Banquete 9 piezas y 4 Juguetes Sorpresa",
+    "description": "09 piezas de pollo crujiente, 4 papas regulares, 4 gaseosas regulares de 12 oz y 4 juguetes sorpresas de colecciones pasadas. Los juguetes son aleatorios y sujeto a stock de local. Los juguetes no son de licencia actual y no incluyen los productos de la Cajita Feliz. Las gaseosas incluyen hielo. Piezas de pollo aleatorias. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales.",
+    "price": 78.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Promos Top",
     "name": "McCombo regular McBacon y McFlurry Milo ®",
-    "description": "01 hamburguesa McBacon, 1 papas regulares, 1 gaseosa regular de 12 oz y 1 helado McFlurry Milo. La gaseosa viene con hielo. Válida durante todo el mes. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\" y \"Postres\". Imagenes referenciales.",
+    "description": "01 hamburguesa McBacon, 1 papas regulares, 1 gaseosa regular de 12 oz y 1 helado McFlurry Milo. La gaseosa viene con hielo. Válida durante todo el mes. Stock: 3,000 unds.Ver detalle de producto en \"Hamburguesas\" y \"Postres\". Imagenes referenciales.",
     "price": 26.9,
     "inStock": true
   },
@@ -338,7 +290,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Promos Top",
-    "name": "Banquete con 1 Cajita Feliz",
+    "name": "Banquete x 6 piezas con 1 Cajita Feliz",
     "description": "6 piezas de pollo crujiente, 6 chicken McNuggets, 3 papas regulares y 1 Cajita Feliz a elección entre: hamburguesa, 4 nuggets, 1 pieza de pollo o McFiesta Jr. Sujeto a stock disponible en tienda. Las piezas de pollo y los juguetes son aleatorios y sujetos a stock. Válido durante el mes. Ver composición de productos en sección \"Cajita Feliz\".",
     "price": 65.9,
     "inStock": true
@@ -348,7 +300,7 @@
     "category": "Promos Top",
     "name": "Banquete Power x6 pzas con gaseosas",
     "description": "6 piezas de pollo crujiente, 3 papas regulares, 6 chicken McNuggets y 3 gaseosas regulares. Las gaseosas vienen con hielo. Piezas de pollo aleatorias. Sujeto a stock en local. Imágenes referenciales.",
-    "price": 59.67,
+    "price": 45.9,
     "inStock": true
   },
   {
@@ -356,7 +308,7 @@
     "category": "Promos Top",
     "name": "Banquete Power x6 pzas",
     "description": "6 piezas de pollo crujiente, 3 papas regulares, 6 chicken McNuggets. Piezas de pollo aleatorias. Sujeto a stock en local. Imágenes referenciales.",
-    "price": 50.95,
+    "price": 39.9,
     "inStock": true
   },
   {
@@ -371,7 +323,7 @@
     "restaurant": "McDonald's - San Antonio",
     "category": "Promos Top",
     "name": "McLover Doble para 2",
-    "description": "1 Hamburguesa doble cuarto de libra, 1  hamburguesa cuarto de libra y 2 papas medianas.  Imágenes referenciales. Stock: 3,000 unds. Válido durante el mes.",
+    "description": "1 Hamburguesa doble cuarto de libra, 1 hamburguesa cuarto de libra y 2 papas medianas. Imágenes referenciales. Stock: 3,000 unds. Válido durante el mes.",
     "price": 39.9,
     "inStock": true
   },
@@ -388,14 +340,14 @@
     "category": "Promos Top",
     "name": "Banquete Mix 8 piezas",
     "description": "8 piezas de pollo crujiente, 6 Chicken McNuggets y 4 papas regulares. Piezas de pollo son aleatorias. Válido durante el mes. Stock: 3,000 unds. Imágenes referenciales.",
-    "price": 52.09,
+    "price": 49.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Promos Top",
     "name": "Dupla Cuarto",
-    "description": "2 Hamburguesas Cuarto de libra y 2 papas medianas.  Imágenes referenciales. Stock: 3,000 unds. Válido durante el mes.",
+    "description": "2 Hamburguesas Cuarto de libra y 2 papas medianas. Imágenes referenciales. Stock: 3,000 unds. Válido durante el mes.",
     "price": 34.9,
     "inStock": true
   },
@@ -436,61 +388,101 @@
     "category": "Promos Top",
     "name": "2 McFlurry Biscolata chocolate",
     "description": "2 Helados McFlurry Biscolata chocolate. Stock: 3 mil uds. Válido todo el mes. Tamaño personal. Imagen referencial.",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Promos Top",
+    "name": "3 Pie de manzana",
+    "description": "3 pie rellenos de manzana. Stock: 3,000 unds. Detalle de producto en sección \"Postres\". Imagenes referenciales.",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Promos Top",
+    "name": "McCombo regular Sándwich Pollo con Queso",
+    "description": "01 sándwich de pollo, 01 papa regular y 01 gaseosa regular de 12 oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Imágenes referenciales.",
     "price": 15.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "McCombo grande Grand Apaltada 2 carnes",
-    "description": "Hamburguesa \"Grand Apaltada 2 carnes\", 1 papa grande, 1 gaseosa grande de 21 oz a elección. La bebida incluye hielo. El sándwich contiene: 2 carnes de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
+    "name": "McCombo grande McArgentina 2 carnes",
+    "description": "01 hamburguesa McArgentina, 01 papa grande , 01 gaseosa grande de 21oz y 01 sobre de Panini. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Mundialistas\". Imágenes referenciales.",
     "price": 35.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "McCombo grande Grand Apaltada 1 carne",
-    "description": "Hamburguesa \"Grand Apaltada 1 carne\", 1 papa grande, 1 gaseosa grande de 21 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 carne de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
+    "name": "McCombo grande McMéxico",
+    "description": "01 hamburguesa McMéxico, 01 papa grande , 01 gaseosa grande de 21oz y 01 sobre de Panini. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Mundialistas\". Imágenes referenciales.",
     "price": 29.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "McCombo grande Grand Apaltada pollo",
-    "description": "Hamburguesa \"Grand Apaltada pollo\", 1 papa grande, 1 gaseosa grande de 21 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 hamburguesa de pollo, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
+    "name": "McCombo grande McArgentina 1 carne",
+    "description": "01 hamburguesa McArgentina de 1 carne, 01 papa grande , 01 gaseosa grande de 21oz y 01 sobre de Panini. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Mundialistas\". Imágenes referenciales.",
     "price": 29.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande Grand Tasty Doble",
-    "description": "01 hamburguesa Grand Tasty Doble, 1 papa grande y 1 gaseosa grande de 21 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 2 carnes de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar.",
-    "price": 35.9,
+    "name": "McCombo mediano McArgentina 2 carnes",
+    "description": "01 hamburguesa McArgentina, 01 papa mediana, 01 gaseosa mediana de 16oz y 01 sobre de Panini. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Detalle del sándwich en \"Mundialistas\". Imágenes referenciales.",
+    "price": 33.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo Grande Grand Tasty 1 carne",
-    "description": "01 hamburguesa Grand Tasty de 1 carne, 1 papa grande y 1 gaseosa grande de 21 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 1 carne de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar.",
-    "price": 29.9,
+    "name": "McCombo mediano McUSA 2 carnes",
+    "description": "01 hamburguesa McUsa, 01 papa mediana, 01 gaseosa mediana de 16oz y 01 sobre de Panini. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Detalle del sándwich en \"Mundialistas\". Imágenes referenciales.",
+    "price": 33.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande Grand Tasty Triple",
-    "description": "01 hamburguesa Grand Tasty Triple, 1 papa grande y 1 gaseosa grande de 21 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 3 carnes de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar.",
-    "price": 41.9,
+    "name": "McCombo mediano McArgentina 1 carne",
+    "description": "01 hamburguesa McArgentina de 1 carne, 01 papa mediana, 01 gaseosa mediana de 16oz y 01 sobre de Panini. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Detalle del sándwich en \"Mundialistas\". Imágenes referenciales.",
+    "price": 27.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande Cuarto de Libra",
+    "name": "McCombo mediano McUSA 1 carne",
+    "description": "01 hamburguesa McUsa, 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Detalle del sándwich en \"Mundialistas\". Imágenes referenciales.",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "McCombos",
+    "name": "McCombo grande BBQ",
+    "description": "01 hamburguesa BBQ, 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales.",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "McCombos",
+    "name": "McCombo mediano BBQ",
+    "description": "01 hamburguesa BBQ, 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales.",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "McCombos",
+    "name": "McCombo grande Cuarto de Libra con Queso",
     "description": "Hamburguesa de carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 27.9,
     "inStock": true
@@ -498,15 +490,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande Big Mac",
-    "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande de 21 oz, a elección. Imagen referencial.",
-    "price": 26.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "McCombos",
-    "name": "Combo Grande McNifica",
+    "name": "McCombo Grande McNifica",
     "description": "Hamburguesa de res, un queso cheddar, mayonesa, ketchup, mostaza, tomate, lechuga y cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 27.9,
     "inStock": true
@@ -514,7 +498,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande McBacon",
+    "name": "McCombo grande McBacon",
     "description": "Hamburguesa de doble carne de res, 2 tocinos en tiras, ketchup, mostaza, cebolla, queso cheddar en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 25.9,
     "inStock": true
@@ -522,7 +506,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande Doble Hamburguesa",
+    "name": "McCombo grande Doble Hamburguesa con queso",
     "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 23.9,
     "inStock": true
@@ -530,7 +514,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande Doble Cuarto de Libra Bacon",
+    "name": "McCombo grande Doble Cuarto de Libra Bacon",
     "description": "Hamburguesa doble carne de res, 2 tocinos en tiras, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 33.9,
     "inStock": true
@@ -538,7 +522,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande Doble Cuarto de Libra",
+    "name": "McCombo grande Doble Cuarto de Libra con Queso",
     "description": "Hamburguesa doble carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 32.9,
     "inStock": true
@@ -546,7 +530,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande 10 McNuggets",
+    "name": "McCombo grande Chicken McNuggets 10 unidades",
     "description": "10 nuggets de pechuga de pollo con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Incluye 2 salsas barbacue de 28.3 Grs cada una. Imagen referencial.",
     "price": 26.9,
     "inStock": true
@@ -554,7 +538,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande 6 McNuggets",
+    "name": "McCombo grande Chicken McNuggets 6 unidades",
     "description": "6 nuggets de pechuga de pollo con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Incluye 1 salsa barbacue de 28.3 Grs cada una. Imagen referencial.",
     "price": 21.9,
     "inStock": true
@@ -562,15 +546,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande Doble McPollo Bacon",
-    "description": "Doble hamburguesa de pollo apanado, 2 tocinos en tiras, doble queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
-    "price": 31.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "McCombos",
-    "name": "Combo grande McPollo Bacon",
+    "name": "McCombo grande McPollo Bacon",
     "description": "Hamburguesa de pollo apanado, 2 tocinos en tiras, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 26.9,
     "inStock": true
@@ -578,7 +554,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo grande McPollo con queso",
+    "name": "McCombo grande McPollo con queso",
     "description": "Hamburguesa de pollo apanado, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 25.9,
     "inStock": true
@@ -586,7 +562,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo Grande McPollo Deluxe",
+    "name": "McCombo grande McPollo Deluxe",
     "description": "Hamburguesa de pollo apanado, mayonesa, tomate y lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial.",
     "price": 25.9,
     "inStock": true
@@ -594,55 +570,23 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "McCombo mediano Grand Apaltada 2 carnes",
-    "description": "Hamburguesa \"Grand Apaltada 2 carnes\", 1 papa mediana, 1 gaseosa mediana de 16 oz a elección. La bebida incluye hielo. El sándwich contiene: 2 carnes de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
-    "price": 33.9,
+    "name": "McCombo grande Clásica carne",
+    "description": "01 hamburguesa Clásica, 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales.",
+    "price": 23.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "McCombo mediano Grand Apaltada 1 carne",
-    "description": "Hamburguesa \"Grand Apaltada 1 carne\", 1 papa mediana, 1 gaseosa mediana de 16 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 carne de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
-    "price": 27.9,
+    "name": "McCombo mediano Clásica carne",
+    "description": "01 hamburguesa Clásica, 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales.",
+    "price": 21.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano Grand Tasty Doble",
-    "description": "01 hamburguesa Grand Tasty Doble, 1 papa mediana y 1 gaseosa mediana de 16 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 2 carnes de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar.",
-    "price": 33.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "McCombos",
-    "name": "Combo Mediano Grand Tasty 1 carne",
-    "description": "01 hamburguesa Grand Tasty de 1 carne, 1 papa mediana y 1 gaseosa mediana de 16 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 1 carne de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar.",
-    "price": 27.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "McCombos",
-    "name": "Combo mediano Grand Tasty Triple",
-    "description": "01 hamburguesa Grand Tasty Triple, 1 papa mediana y 1 gaseosa mediana de 16 oz, sabor a elección. La bebida incluye hielo. Imágenes referenciales. La hamburguesa contiene: 3 carnes de res 4:1 en pan con ajonjolí, tiras de lechuga, cebolla, 2 rodajas de tomate, salsa tasty, fetas de queso cheddar.",
-    "price": 39.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "McCombos",
-    "name": "McCombo mediano Grand Apaltada burger pollo",
-    "description": "Hamburguesa \"Grand Apaltada pollo\", 1 papa mediana, 1 gaseosa mediana de 16 oz a elección. La bebida incluye hielo. El sándwich contiene: 1 hamburguesa de pollo, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
-    "price": 27.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "McCombos",
-    "name": "Combo mediano Cuarto de Libra",
+    "name": "McCombo mediano Cuarto de Libra con Queso",
     "description": "Hamburguesa de carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 25.9,
     "inStock": true
@@ -650,7 +594,15 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano McBacon",
+    "name": "McCombo mediano Big Mac",
+    "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana de 16 oz, a elección. Imagen referencial.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "McCombos",
+    "name": "McCombo mediano McBacon",
     "description": "Hamburguesa de doble carne de res, 2 tocinos en tiras, ketchup, mostaza, cebolla, queso cheddar en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 23.9,
     "inStock": true
@@ -658,7 +610,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano Doble Hamburguesa",
+    "name": "McCombo mediano Doble Hamburguesa con Queso",
     "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 21.9,
     "inStock": true
@@ -666,7 +618,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano Doble Cuarto de Libra",
+    "name": "McCombo mediano Doble Cuarto de Libra con Queso",
     "description": "Hamburguesa doble carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 30.9,
     "inStock": true
@@ -674,7 +626,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano Doble Cuarto Libra Bacon",
+    "name": "McCombo mediano Doble Cuarto Libra Bacon",
     "description": "Hamburguesa doble carne de res, 2 tocinos en tiras, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 31.9,
     "inStock": true
@@ -682,7 +634,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano 10 McNuggets",
+    "name": "McCombo mediano Chicken McNuggets 10 unidades",
     "description": "10 nuggets de pechuga de pollo con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Incluye 2 salsas barbacue de 28.3 Grs cada una. Imagen referencial.",
     "price": 24.9,
     "inStock": true
@@ -690,7 +642,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano 6 McNuggets",
+    "name": "McCombo mediano Chicken McNuggets 6 unidades",
     "description": "6 nuggets de pechuga de pollo con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Incluye 1 salsa barbacue de 28.3 Grs cada una. Imagen referencial.",
     "price": 19.9,
     "inStock": true
@@ -698,7 +650,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano Doble McPollo Bacon",
+    "name": "McCombo mediano Doble McPollo Bacon",
     "description": "Doble hamburguesa de pollo apanado, 2 tocinos en tiras, doble queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 29.9,
     "inStock": true
@@ -706,7 +658,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano McPollo Bacon",
+    "name": "McCombo mediano McPollo Bacon",
     "description": "Hamburguesa de pollo apanado, 2 tocinos en tiras, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 24.9,
     "inStock": true
@@ -714,7 +666,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo mediano McPollo con queso",
+    "name": "McCombo mediano McPollo con queso",
     "description": "Hamburguesa de pollo apanado, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 23.9,
     "inStock": true
@@ -722,7 +674,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo Mediano de McPollo",
+    "name": "McCombo mediano McPollo",
     "description": "Hamburguesa de pollo apanado, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 22.9,
     "inStock": true
@@ -730,7 +682,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "McCombos",
-    "name": "Combo Mediano McPollo Deluxe",
+    "name": "McCombo mediano McPollo Deluxe",
     "description": "Hamburguesa de pollo apanado, mayonesa, tomate y lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial.",
     "price": 23.9,
     "inStock": true
@@ -739,15 +691,15 @@
     "restaurant": "McDonald's - San Antonio",
     "category": "Cajita Feliz",
     "name": "Cajita Feliz Hamburguesa",
-    "description": "Cajita Feliz™ hamburguesa, pepinillos, mostaza, ketchup, cebolla fresca. Papa kids, 1agua, 1yogurt, 1juguete. ©2026 McDonald’s. © 2026AdoptMe! ™ UpliftGames ™. Disponible del 24.02.26 al 23.03.26 y/o hasta agotar stock de 80 mil unds y/o lo que ocurra primero, en los locales McDonald’s de Perú. Juguete sujeto a disponibilidad del local y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial.",
+    "description": "Cajita Feliz™ hamburguesa, pepinillos, mostaza, ketchup, cebolla fresca. Papa kids, 1agua, 1yogurt, 1juguete. ©2026McDonald’s © Jazwares, LLC. FIFA World Cup 26. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 02.06.26 al 06.07.26 y/o hasta agotar stock de 87mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial.",
     "price": 20.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Cajita Feliz",
-    "name": "Cajita Feliz McNuggets",
-    "description": "Cajita Feliz™: 4 nuggets de pechuga de pollo, 1papa kids, 1agua, 1yogurt, 1juguete. ©2026 McDonald’s. © 2026AdoptMe! ™ UpliftGames ™. Disponible del 24.02.26 al 23.03.26 y/o hasta agotar stock de 80 mil unds y/o lo que ocurra primero, en los locales McDonald’s de Perú. Juguete sujeto a disponibilidad del local y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial.",
+    "name": "Cajita Feliz Chicken McNuggets 4 unidades",
+    "description": "Cajita Feliz™: 4 nuggets de pechuga de pollo, 1papa kids, 1agua, 1yogurt, 1juguete.©2026McDonald’s ©StrangerThings: Talesfrom85/© Netflix. Usedwithpermission ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 12.05 al 01.06.26 y/o hasta agotar stock de 96mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial.",
     "price": 20.9,
     "inStock": true
   },
@@ -755,22 +707,22 @@
     "restaurant": "McDonald's - San Antonio",
     "category": "Cajita Feliz",
     "name": "Cajita Feliz 1 pieza de pollo",
-    "description": "Cajita Feliz™: 1 pieza de pollo crispy (enharinado y frito), 1papa kids, 1agua, 1yogurt, 1juguete. ©2026 McDonald’s. © 2026AdoptMe! ™ UpliftGames ™. Disponible del 24.02.26 al 23.03.26 y/o hasta agotar stock de 80 mil unds y/o lo que ocurra primero, en los locales McDonald’s de Perú. Juguete sujeto a disponibilidad del local y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial.",
+    "description": "Cajita Feliz™: 1 pieza de pollo crispy (enharinado y frito), 1papa kids, 1agua, 1yogurt, 1juguete.©2026McDonald’s © Jazwares, LLC. FIFA World Cup 26. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 02.06.26 al 06.07.26 y/o hasta agotar stock de 87mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial.",
     "price": 20.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Cajita Feliz",
-    "name": "Cajita Feliz McFiesta Jr.",
-    "description": "Cajita Feliz™ con hamburguesa de res, tomate, lechuga en pan sin ajonjolí; 1papa kids, 1agua, 1yogurt, 1juguete. ©2026 McDonald’s. © 2026AdoptMe! ™ UpliftGames ™. Disponible del 24.02.26 al 23.03.26 y/o hasta agotar stock de 80 mil unds y/o lo que ocurra primero, en los locales McDonald’s de Perú. Juguete sujeto a disponibilidad del local y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial.",
+    "name": "Cajita Feliz Hamburguesa con Queso",
+    "description": "Cajita Feliz™:4 nuggets de pechuga de pollo, 1papa kids, 1agua, 1yogurt, 1juguete.©2026McDonald’s © Jazwares, LLC. FIFA World Cup 26. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 02.06.26 al 06.07.26 y/o hasta agotar stock de 87mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial.",
     "price": 20.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "McCombo Mediano Contundente",
+    "name": "McCombo mediano Contundente",
     "description": "4 piezas de pollo crujiente, 2 papas medianas y 2 gaseosas medianas. Piezas de pollo aleatorias. Imágenes referenciales.",
     "price": 37.9,
     "inStock": true
@@ -778,7 +730,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "McCombo Grande Contundente",
+    "name": "McCombo grande Contundente",
     "description": "4 piezas de pollo crujiente, 2 papas grandes y 2 gaseosas grandes. Piezas de pollo aleatorias. Imágenes referenciales.",
     "price": 39.9,
     "inStock": true
@@ -788,7 +740,7 @@
     "category": "Pollo Crujiente y McNuggets",
     "name": "Banquete Full (x8 piezas)",
     "description": "8 piezas de pollo y 4 papas regulares. Piezas de pollo aleatorias. Imagen referencial.",
-    "price": 59.9,
+    "price": 81.3,
     "inStock": true
   },
   {
@@ -796,7 +748,7 @@
     "category": "Pollo Crujiente y McNuggets",
     "name": "Banquete Extremo (x10 piezas)",
     "description": "10 piezas de pollo y 4 papas regulares. Piezas de pollo aleatorias. Imagen referencial.",
-    "price": 69.9,
+    "price": 94.2,
     "inStock": true
   },
   {
@@ -804,7 +756,7 @@
     "category": "Pollo Crujiente y McNuggets",
     "name": "Banquete Supremo (x12 piezas)",
     "description": "12 piezas de pollo y 4 papas regulares. Piezas de pollo aleatorias. Imagenes referenciales.",
-    "price": 79.9,
+    "price": 103.2,
     "inStock": true
   },
   {
@@ -812,7 +764,7 @@
     "category": "Pollo Crujiente y McNuggets",
     "name": "Banquete Full (x8 piezas) con gaseosas",
     "description": "8 piezas de Pollo, 4 Papas Regulares, 4 gaseosas medianas. Piezas de pollo aleatorias. Stock de 5,000 uds. Imagen referencial.",
-    "price": 71.8,
+    "price": 115.3,
     "inStock": true
   },
   {
@@ -820,7 +772,7 @@
     "category": "Pollo Crujiente y McNuggets",
     "name": "Banquete Extremo (x10 piezas) con gaseosas",
     "description": "10 piezas de Pollo, 4 Papas Regulares, 4 gaseosas medianas. Piezas de pollo aleatorias. Stock de 5,000 uds. Imagen referencial.",
-    "price": 81.8,
+    "price": 128.2,
     "inStock": true
   },
   {
@@ -828,7 +780,7 @@
     "category": "Pollo Crujiente y McNuggets",
     "name": "Banquete Supremo (x12 piezas) con gaseosas",
     "description": "12 piezas de Pollo, 4 Papas Regulares, 4 gaseosas medianas. Piezas de pollo aleatorias. Stock de 5,000 uds. Imagen referencial.",
-    "price": 91.8,
+    "price": 137.2,
     "inStock": true
   },
   {
@@ -866,7 +818,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "McCombo Mediano Sorprendente",
+    "name": "McCombo mediano Sorprendente",
     "description": "3 piezas de pollo crispy, 4 McNuggets, 1 papa grande, 1 gaseosa grande. Imágenes referenciales.",
     "price": 31.9,
     "inStock": true
@@ -874,7 +826,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "McCombo Mediano Imponente",
+    "name": "McCombo mediano Imponente",
     "description": "2 piezas de pollo crispy, 4 McNuggets, 1 papa mediana y 1 gaseosa mediana. Imágenes referenciales.",
     "price": 28.9,
     "inStock": true
@@ -882,7 +834,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "2 Piezas de pollo crispy",
+    "name": "2 Piezas de Pollo Crispy",
     "description": "2 piezas de pollo enharinado y frito. Imagen referencial.",
     "price": 15.9,
     "inStock": true
@@ -898,7 +850,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "10 McNuggets",
+    "name": "Chicken McNuggets 10 unidades",
     "description": "10 nuggets de pechuga de pollo. Incluye 2 salsas barbacue de 28.3 Grs cada una. Imagen referencial.",
     "price": 18.9,
     "inStock": true
@@ -906,7 +858,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "6 McNuggets",
+    "name": "Chicken McNuggets 6 unidades",
     "description": "6 nuggets de pechuga de pollo. Incluye 1 salsa barbacue de 28.3 Grs cada una. Imagen referencial.",
     "price": 13.9,
     "inStock": true
@@ -914,25 +866,57 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Hamburguesas",
-    "name": "Grand Apaltada Burger 2 carnes",
-    "description": "Hamburguesa \"Grand Apaltada 2 carnes\" contiene: 2 carnes de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
-    "price": 28.9,
+    "name": "McArgentina 2 carnes",
+    "description": "Doble carne de res en pan con ajonjolí, mayonesa chimichurri, cebolla, lechuga, tomate, tiras de tocino, queso. Imagen referencial.",
+    "price": 30.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Hamburguesas",
-    "name": "Grand Apaltada burger 1 carne",
-    "description": "Hamburguesa \"Grand Apaltada 1 carne\" contiene: 1 carne de res, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
-    "price": 22.9,
+    "name": "McUSA doble",
+    "description": "Doble carne de res en pan con ajonjolí, salsa BBQ, pepinillos, tiras de tocino, queso, cebolla grillada y mayonesa. Imagen referencial.",
+    "price": 30.9,
     "inStock": true
   },
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Hamburguesas",
-    "name": "Grand Apaltada burger Pollo",
-    "description": "Hamburguesa \"Grand Apaltada pollo\" contiene: 1 hamburguesa de pollo, lechuga, 2 tomates, papas al hilo y salsa sabor a palta en pan con ajonjolí. Imagen referencial.",
-    "price": 22.9,
+    "name": "McMéxico",
+    "description": "Hamburguesa de pollo en pan con ajonjolí, salsa mayopalta, tomate, lechuga, tiras de tocino, queso, tostitos y cebolla grillada. Imagen referencial.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Hamburguesas",
+    "name": "McArgentina 1 carne",
+    "description": "Una carne de res en pan con ajonjolí, mayonesa chimichurri, cebolla, lechuga, tomate, tiras de tocino, queso. Imagen referencial.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Hamburguesas",
+    "name": "McUSA 1 carne",
+    "description": "Una carne de res en pan con ajonjolí, salsa BBQ, pepinillos, tiras de tocino, queso, cebolla grillada y mayonesa. Imagen referencial.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa BBQ",
+    "description": "Hamburguesa con doble carne de res, un queso cheddar, papitas al hilo, salsa BBQ en pan con ajonjolí. Imagen referencial.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa clásica",
+    "description": "Hamburguesa con doble carne de res, lechuga, tomate, papitas al hilo, salsa mayonesa en pan con ajonjolí. Imagen referencial.",
+    "price": 16.9,
     "inStock": true
   },
   {
@@ -963,7 +947,7 @@
     "restaurant": "McDonald's - San Antonio",
     "category": "Hamburguesas",
     "name": "Doble Cuarto de Libra Bacon",
-    "description": "Hamburguesa de  doble carne de res, 2 tocinos en tiras, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí. Imagen referencial.",
+    "description": "Hamburguesa de doble carne de res, 2 tocinos en tiras, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí. Imagen referencial.",
     "price": 25.9,
     "inStock": true
   },
@@ -971,7 +955,7 @@
     "restaurant": "McDonald's - San Antonio",
     "category": "Hamburguesas",
     "name": "Doble Hamburguesa con queso",
-    "description": "Hamburguesa de doble carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan sin ajonjolí. Imagen referencial.",
+    "description": "Hamburguesa de doble carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan*. Imagen referencial. IMPORTANTE: El pan podría tener semillas de ajonjolí",
     "price": 16.9,
     "inStock": true
   },
@@ -1034,7 +1018,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Para acompañar",
-    "name": "Papas Grandes",
+    "name": "Papas grandes",
     "description": "Papas fritas en tamaño grande.",
     "price": 8.9,
     "inStock": true
@@ -1042,9 +1026,17 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Para acompañar",
-    "name": "Papas Medianas",
+    "name": "Papas medianas",
     "description": "Papas fritas en tamaño mediano.",
     "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Postres",
+    "name": "Shake de Milo",
+    "description": "Helado de vainilla, polvo de Milo y topping de chocolate. Tamaño personal. Imagen referencial.",
+    "price": 12.9,
     "inStock": true
   },
   {
@@ -1090,24 +1082,8 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Postres",
-    "name": "McFlurry Milo ®",
-    "description": "Helado de vainilla, polvo de milo, barquillo picado de sabor a chocolate y con cobertura líquida de chocolate. Tamaño personal. Imagen referencial.",
-    "price": 9.5,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Postres",
-    "name": "McFlurry Biscolata chocolate",
+    "name": "McFlurry Biscolata Chocolate",
     "description": "Helado de vainilla, galletas Biscolata rellenas con chocolate y crema de avellanas, con cobertura líquida de chocolate. Tamaño personal. Imagen referencial.",
-    "price": 9.5,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Postres",
-    "name": "McFlurry Biscolata manjar",
-    "description": "Helado de vainilla, galletas Biscolata rellenas con chocolate y crema de avellanas, con cobertura líquida de manjar. Tamaño personal. Imagen referencial.",
     "price": 9.5,
     "inStock": true
   },
@@ -1122,15 +1098,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Postres",
-    "name": "McFlurry mini M&M manjar",
-    "description": "Helado de vainilla, chocolate mini m&m y cobertura líquida de manjar. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial.",
-    "price": 9.5,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Postres",
-    "name": "McFlurry mini M&M chocolate",
+    "name": "McFlurry mini M&M's Chocolate",
     "description": "Helado de vainilla, chocolate mini m&m y cobertura líquida de chocolate en delivery. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial.",
     "price": 9.5,
     "inStock": true
@@ -1170,14 +1138,6 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Postres",
-    "name": "Sundae Chocolate",
-    "description": "Helado de vainilla con cobertura líquida de chocolate. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial.",
-    "price": 6.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonald's - San Antonio",
-    "category": "Postres",
     "name": "Sundae Fresa",
     "description": "Helado de vainilla con cobertura líquida de fresa. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial.",
     "price": 6.9,
@@ -1194,7 +1154,15 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Coca Cola sabor original grande",
+    "name": "Splash x Sprite",
+    "description": "16oz.Bebida gasificada con sprite y jaraba de frutos rojos. La bebida incluye hielo. Imagen referencial.",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonald's - San Antonio",
+    "category": "Bebidas",
+    "name": "Coca-Cola grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 7.9,
     "inStock": true
@@ -1202,7 +1170,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Inca Kola sabor original grande",
+    "name": "Inca Kola grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 7.9,
     "inStock": true
@@ -1210,7 +1178,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Coca Cola Sin Azucar Grande",
+    "name": "Coca-Cola Zero Azúcar grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 7.9,
     "inStock": true
@@ -1218,7 +1186,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Inca Kola Sin Azucar Grande",
+    "name": "Inca Kola Zero Azúcar grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 7.9,
     "inStock": true
@@ -1226,7 +1194,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Sprite Grande",
+    "name": "Sprite grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 7.9,
     "inStock": true
@@ -1242,7 +1210,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Coca Cola sabor original mediana",
+    "name": "Coca-Cola mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 6.9,
     "inStock": true
@@ -1250,7 +1218,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Coca Cola Sin Azucar Mediana",
+    "name": "Coca-Cola Zero Azúcar mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 6.9,
     "inStock": true
@@ -1258,7 +1226,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Inca Kola sabor original mediana",
+    "name": "Inca Kola mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 6.9,
     "inStock": true
@@ -1266,7 +1234,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Inca Kola Sin Azucar Mediana",
+    "name": "Inca Kola Zero Azúcar mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 6.9,
     "inStock": true
@@ -1274,7 +1242,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Sprite Mediana",
+    "name": "Sprite mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales.",
     "price": 6.9,
     "inStock": true
@@ -1290,7 +1258,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Agua San Luis sin gas 500 ml",
+    "name": "Agua San Luis",
     "description": "500 ml.",
     "price": 5.9,
     "inStock": true
@@ -1298,7 +1266,7 @@
   {
     "restaurant": "McDonald's - San Antonio",
     "category": "Bebidas",
-    "name": "Cafe Pasado",
+    "name": "Café Pasado",
     "description": "Café americano de 14 oz. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial.",
     "price": 6.9,
     "inStock": true

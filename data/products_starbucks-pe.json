@@ -1,0 +1,436 @@
+[
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Iced Protein Matcha",
+    "description": "",
+    "price": 22
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Protein Matcha ​",
+    "description": "",
+    "price": 22
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Iced Sugar Free Vanilla Protein Latte​",
+    "description": "",
+    "price": 22
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Sugar Free Vanilla Protein Latte​",
+    "description": "",
+    "price": 22
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Black & White Mocha Frappuccino®",
+    "description": "",
+    "price": 17.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Cookies & Cream Creme Frappuccino®",
+    "description": "",
+    "price": 17.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Ultimate Caramel Frappuccino®",
+    "description": "",
+    "price": 17
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mocha Frappuccino®",
+    "description": "",
+    "price": 16
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Chocolúcuma Frappuccino®",
+    "description": "",
+    "price": 18
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Caramel Frappuccino®",
+    "description": "",
+    "price": 16
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Triple Mocha Frappuccino®",
+    "description": "",
+    "price": 17.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Algarrobina Frappuccino®",
+    "description": "",
+    "price": 16.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Chocolate Creme Frappuccino®",
+    "description": "",
+    "price": 16
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Lúcuma Creme Frappuccino®",
+    "description": "",
+    "price": 17.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Vainilla Creme Frappuccino®",
+    "description": "",
+    "price": 16
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Café Frappuccino®",
+    "description": "",
+    "price": 13.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Algarrobina Creme Frappuccino®",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mocha Blanco Frappuccino®",
+    "description": "",
+    "price": 16
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Ultra Fresa Creme Frappuccino®",
+    "description": "",
+    "price": 17
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Fresa Creme Frappuccino®",
+    "description": "",
+    "price": 16
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Chocolate Cookies & Cream Frappuccino®",
+    "description": "",
+    "price": 17.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Dulce de leche cheesecake frappuccino®",
+    "description": "",
+    "price": 16.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Fresa cheesecake frappuccino®",
+    "description": "",
+    "price": 16.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Black & White Mocha",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Flat White",
+    "description": "",
+    "price": 15
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Latte",
+    "description": "",
+    "price": 13
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Latte Macchiato",
+    "description": "",
+    "price": 15
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mocha Café",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Vainilla Latte",
+    "description": "",
+    "price": 14.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Caramel Macchiato",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mocha Blanco Café",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Skinny Vainilla Latte",
+    "description": "",
+    "price": 14.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Algarrobina Latte",
+    "description": "",
+    "price": 16
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Americano",
+    "description": "",
+    "price": 11
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mocha Macchiato Frío con Bebida de Avena",
+    "description": "",
+    "price": 17
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Black Cold Brew",
+    "description": "",
+    "price": 11.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Americano Helado",
+    "description": "",
+    "price": 11
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Latte Helado",
+    "description": "",
+    "price": 13
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Vainilla Latte Helado",
+    "description": "",
+    "price": 14.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mocha Blanco Café Helado",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Caramel Macchiato Helado",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mocha Café Helado",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Skinny Vainilla Latte Helado",
+    "description": "",
+    "price": 14.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Strawberry Acaí Refresher®",
+    "description": "",
+    "price": 14.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Strawberry Acaí Lemonade Refresher®",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Pink Drink Refresher®",
+    "description": "",
+    "price": 16.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mango Dragon Fruit Refresher®",
+    "description": "",
+    "price": 14.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mango Dragon Fruit Lemonade Refresher®",
+    "description": "",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Dragon Drink Refresher®",
+    "description": "",
+    "price": 16.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Chocolate Caliente",
+    "description": "",
+    "price": 14
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Té Chai Latte",
+    "description": "",
+    "price": 13.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Té Chai Teavana",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Té Chamomile Teavana",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Té Hibiscus Teavana",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Té Mint Citrus Teavana",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Té Hibiscus Teavana Helado",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Chocolate Helado",
+    "description": "",
+    "price": 14
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Té Chamoline Teavana Helado",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Té Mint Citrus Teavana Helado",
+    "description": "",
+    "price": 10
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Choco Shaken Espresso c/ Bebida de Avena",
+    "description": "",
+    "price": 17.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Mocha Blanco Shaken Espresso Frío con Bebida de Avena",
+    "description": "",
+    "price": 17.5
+  },
+  {
+    "restaurant": "Starbucks",
+    "category": "Bebidas",
+    "name": "Brown Sugar Shaken Espresso con Bebida de Avena",
+    "description": "",
+    "price": 17.5
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Promo Royal",
+    "description": "1 Royal regular, 1 papa regular. Stock mínimo 500 unidades. *Foto referencial*. Bembos s.a.c ruc 20101087647",
+    "price": 19.8,
+    "originalPrice": 19.8,
+    "productId": 1045285,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Promo Churrita",
+    "description": "1 Churrita regular, 1 papa mediana, 1 gaseosa personal. Foto referecial",
+    "price": 31.7,
+    "originalPrice": 31.7,
+    "productId": 2827544,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Combo Bravazo 2",
+    "description": "1 A lo Pobre regular, 1 papa regular, Nuggets x4, gaseosa personal de 500ml. Stock mínimo 500 unidades. *Foto referencial*. Bembos s.a.c ruc 20101087647",
+    "price": 37.7,
+    "originalPrice": 37.7,
+    "productId": 1045148,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Duo Queso Tocino",
+    "description": "2 Queso Tocino regulares, 2 papas regulares. Stock mínimo 500 unidades. *Foto referencial*. Bembos s.a.c ruc 20101087647",
+    "price": 41.6,
+    "originalPrice": 41.6,
+    "productId": 1045194,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Combo Trio",
+    "description": "1 Royal mediana, 2 Cheese mediana, 3 papas medianas. Foto referencial.",
+    "price": 84.4,
+    "originalPrice": 84.4,
+    "productId": 1045139,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Personal Clasico",
+    "description": "1 Clásica regular, 1 papa mediana. Foto referencial",
+    "price": 18.8,
+    "originalPrice": 18.8,
+    "productId": 1045303,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Promo Extrema",
+    "description": "Extrema regular, papa mediana, gaseosa personal.",
+    "price": 33.7,
+    "originalPrice": 33.7,
+    "productId": 1045233,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Dúo Super Power",
+    "description": "1 Queso Tocino regular, 1 Royal regular, 2 papa regular, nuggets x4, 2 gaseosa personal. Foto referencial",
+    "price": 60.4,
+    "originalPrice": 60.4,
+    "productId": 2827541,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Dúo Imperdible",
+    "description": "1 Clásica regular, 1 Churrita regular, 2 papas regulares.",
+    "price": 35.6,
+    "originalPrice": 35.6,
+    "productId": 1045304,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Dúo Power",
+    "description": "1 Queso Tocino regular, 1 Royal regular, 2 papas regular. Foto referencial",
+    "price": 39.6,
+    "originalPrice": 39.6,
+    "productId": 1273477,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Familiar Ideal",
+    "description": "4 Clasicas regulares, 4 papas regulares. Foto referencial.",
+    "price": 71.2,
+    "originalPrice": 71.2,
+    "productId": 1045116,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Promo Personal Power",
+    "description": "1 QT regular, 1 papa regular,1 gaseosa, Nuggets x4",
+    "price": 33.7,
+    "originalPrice": 33.7,
+    "productId": 2827538,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Dúo Sabroso",
+    "description": "1 A lo pobre reg, 1 Cheese reg, 2 papas regulares, 2 gaseosas personales. Foto referecial",
+    "price": 55.4,
+    "originalPrice": 55.4,
+    "productId": 2827543,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Duo Mundial",
+    "description": "1 Queso tocino regular + 1 Cheese regular + 2 papas regulares + 2 gaseosas personales.",
+    "price": 55.4,
+    "originalPrice": 55.4,
+    "productId": 3108712,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Trío Mundial",
+    "description": "1 Clásica regular + 2 Royal regulares + 3 papas regulares + nuggets x6",
+    "price": 77.3,
+    "originalPrice": 77.3,
+    "productId": 3108716,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Familiar Mundial",
+    "description": "2 Queso tocino regulares + 2 Churrita regulares + 4 papas regulares",
+    "price": 95.2,
+    "originalPrice": 95.2,
+    "productId": 3108718,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Compartir con Papá",
+    "description": "2 Royal regulares + 2 Cheese regulares + 4 papas regulares",
+    "price": 75.2,
+    "originalPrice": 75.2,
+    "productId": 3108723,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Bembonera Regular",
+    "description": "4 Hamburguesas regulares a elección entre Clásica, Cheese o Queso Tocino (máximo 2 unidades por tipo), 4 papas regulares, nuggets x6, 1 ají de 3 oz y 1 tártara golf de 3 oz.",
+    "price": 114.46,
+    "originalPrice": 114.46,
+    "productId": 3116742,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Bembonera Mediana",
+    "description": "Bembonera Mediana: 4 Hamburguesas medianas a elección entre Clásica, Cheese o Queso Tocino (máximo 2 unidades por tipo), 4 papas medianas, 2 nuggets x4, 1 ají de 3 oz y 1 tártara golf de 3 oz.",
+    "price": 131.56,
+    "originalPrice": 131.56,
+    "productId": 3119617,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Promociones",
+    "name": "Combazo Mediano",
+    "description": "1 Queso tocino mediana + 1 Clásica mediana + 2 papas medianas",
+    "price": 59.4,
+    "originalPrice": 59.4,
+    "productId": 3124657,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Clasica",
+    "description": "Hamburguesa de carne de res a la parrilla, lechuga, tomate y mayonesa. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 1045183,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Cheese",
+    "description": "Hamburguesa de carne de res a la parrilla, queso edam, mayonesa, tomate y lechuga. Foto referencial. BEMBOS S.A.C RUC 20101087647.",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 1045234,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Churrita",
+    "description": "Hamburguesa de carne de res, tocino, papas al hilo y mayonesa de chimichurri. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 1045124,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "A lo Pobre",
+    "description": "Hamburguesa de carne de res a la parrilla, huevo frito, platano frito, cebolla blanca, tomate y mayonesa. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 1045198,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Royal",
+    "description": "Hamburguesa de carne de res a la parrilla, huevo, queso edam, tomate, lechuga y mayonesa. Foo referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 1045149,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Queso Tocino",
+    "description": "Hamburguesade carne de res a la parrilla, doble tocino, queso edam, tomate, lechuga y mayonesa. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 1045187,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Parrillera",
+    "description": "Hamburguesa de carne de res y chorizo a la parrilla, chimichurri, tomate, mayonesa y mostaza. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 25.9,
+    "originalPrice": 25.9,
+    "productId": 1045221,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Extrema",
+    "description": "2 Hamburguesa de carne de res a la parrilla con ques o edam, tocino, tomate, lechuga y mayonesa. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 25.9,
+    "originalPrice": 25.9,
+    "productId": 1045202,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Hawaiana",
+    "description": "Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa. Foto referencial. Bembos s.a.c ruc 20101087647",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 1045128,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Mexicana",
+    "description": "Hamburguesa a la parrilla, queso, salsa guacamole, doritos, tomate, y mayonesa.",
+    "price": 21.9,
+    "originalPrice": 21.9,
+    "productId": 1045106,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Doble Queso Tocino",
+    "description": "Doble hamburguesa a la parrilla, doble queso edam, doble tocino, lechuga, tomate y mayonesa. Foto referencial.",
+    "price": 26.9,
+    "originalPrice": 26.9,
+    "productId": 1045171,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa La Tumbay",
+    "description": "Hamburguesa a la parrilla, huevo frito, tocino, papas tumbay, salsa de chimichurri y lechuga. Foto referencial.",
+    "price": 21.9,
+    "originalPrice": 21.9,
+    "productId": 1258711,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa Chicharonera",
+    "description": "Deliciosa hamburguesa de carne de res, chicharrón, camotes al hilo, cebolla morada y salsa de rocoto. Foto referencial",
+    "price": 18.9,
+    "originalPrice": 18.9,
+    "productId": 2258957,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Clasica",
+    "description": "Hamburguesa Clasica a la parrilla , papa mediana, gaseosa de 500 ml. Ver composicion de productos en la sección de hamburguesas. Puedes elegir entre mediana o grande. Foto referencial. * Papas peruanas solo en provincia. BEMBOS S.A.C RUC 20101087647",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 1045081,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Cheese",
+    "description": "Hamburguesa de carne de res a la parrilla, queso edam, mayonesa, tomate y lechuga, papa mediana y gaseosa personal. Foto referencial. BEMBOS S.A.C RUC 20101087647.",
+    "price": 23.9,
+    "originalPrice": 23.9,
+    "productId": 1045085,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Queso Tocino",
+    "description": "Hamburguesa Queso Tocino a la parrilla , papa mediana, gaseosa de 500 ml. Ver composicion de productos en la sección de hamburguesas. Puedes elegir entre mediana o grande. Foto referencial.",
+    "price": 25.9,
+    "originalPrice": 25.9,
+    "productId": 1045259,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Royal",
+    "description": "Hamburguesa Royal a la parrilla , papa mediana, gaseosa de 500 ml. Ver composicion de productos en la sección de hamburguesas. Puedes elegir entre mediana o grande. Foto referencial . BEMBOS S.A.C RUC 20101087647",
+    "price": 25.9,
+    "originalPrice": 25.9,
+    "productId": 1045245,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo A lo Pobre",
+    "description": "Hamburguesa A lo pobre a la parrilla , papa mediana, gaseosa de 500 ml. Ver composicion de productos en la sección de hamburguesas. Puedes elegir entre mediana o grande. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 29.9,
+    "originalPrice": 29.9,
+    "productId": 1045089,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Churrita",
+    "description": "Hamburguesa Churrita a la parrilla , papa mediana, gaseosa de 500 ml. Ver composicion de productos en la sección de hamburguesas. Puedes elegir entre mediana o grande. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 29.9,
+    "originalPrice": 29.9,
+    "productId": 1045195,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Parrillera",
+    "description": "Hamburguesa Parrillera a la parrilla , papa mediana, gaseosa de 500 ml. Ver composicion de productos en la sección de hamburguesas. Puedes elegir entre mediana o grande. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 31.9,
+    "originalPrice": 31.9,
+    "productId": 1045291,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Extrema",
+    "description": "Hamburguesa Extrema a la parrilla , papa mediana, gaseosa de 500 ml. Ver composicion de productos en la sección de hamburguesas. Puedes elegir entre mediana o grande. Foto referencial . BEMBOS S.A.C RUC 20101087647",
+    "price": 31.9,
+    "originalPrice": 31.9,
+    "productId": 1045222,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Hawaiana",
+    "description": "Hamburguesa Hawaiana mediana, papa mediana, gaseosa de 500ml. Foto referencial. Foto referencial. Bembos s.a.c ruc 20101087647",
+    "price": 29.9,
+    "originalPrice": 29.9,
+    "productId": 1045267,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Mexicana",
+    "description": "Hamburguesa a la parrilla, queso, salsa guacamole, doritos, tomate, y mayonesa, papa mediana y gaseosa 500ml.",
+    "price": 27.9,
+    "originalPrice": 27.9,
+    "productId": 1045226,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Doble Queso Tocino",
+    "description": "Doble hamburguesa a la parrilla, doble queso edam, doble tocino, lechuga, tomate, mayonesa, papa mediana y gaseosa de 500ml. Foto referencial.",
+    "price": 33.8,
+    "originalPrice": 33.8,
+    "productId": 1045230,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo La Tumbay",
+    "description": "Hamburguesa a la parrilla, huevo frito, tocino, papas tumbay, salsa de chimichurri y lechuga; papa mediana y gaseosa 500ml. Foto referencial.",
+    "price": 27.9,
+    "originalPrice": 27.9,
+    "productId": 1258710,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Combos",
+    "name": "Combo Chicharronera",
+    "description": "1 Chicharronera mediana, 1 papa mediana, 1 gaseosa personal, 1 salsa a elección.",
+    "price": 26.9,
+    "originalPrice": 26.9,
+    "productId": 2258958,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Pollo",
+    "name": "Chicken Grill",
+    "description": "Pechuga de pollo marinada a la parrilla, lechuga, tomate y mayonesa. BEMBOS S.A.C RUC 20101087647",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 1045205,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Pollo",
+    "name": "Bembroster Clásica",
+    "description": "Pollo crocante, mayonesa, lechuga y tomate. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 1045240,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Pollo",
+    "name": "Combo Chicken Grill",
+    "description": "Pechuga de pollo marinada a la parrilla, lechuga, tomate y mayonesa. Puedes elegir entre mediana o grande. BEMBOS S.A.C RUC 20101087647",
+    "price": 24.9,
+    "originalPrice": 24.9,
+    "productId": 1045292,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Pollo",
+    "name": "Combo Bembroster Clásica",
+    "description": "Sandwich de pollo crocante, papas y bebida a elección. Ver composicion de productos en la sección de pollo. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 21.9,
+    "originalPrice": 21.9,
+    "productId": 1045266,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Menu",
+    "name": "Menú Pechugón",
+    "description": "Delicioso pollo a la parrilla, papas fritas, arroz, lechuga orgánica, tomate, zanahoria y salsa vinagreta.Válido del 29.01.2024 al 31.12.2024. Válido de lunes a viernes. Stock mínimo disponible 500 unidades. Foto referencial. BEMBOS S.A.C RUC 20101087647.",
+    "price": 18.9,
+    "originalPrice": 18.9,
+    "productId": 1045229,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Menu",
+    "name": "Burger menú",
+    "description": "Deliciosa hamburguesa a la parrilla, papas fritas, huevo frito, arroz, lechuga orgánica, tomate, zanahoria y salsa vinagreta. álido del 29.01.2024 al 31.12.2024. Válido de lunes a viernes. Stock mínimo disponible 500 unidades. Foto referencial. BEMBOS S.A",
+    "price": 17.9,
+    "originalPrice": 17.9,
+    "productId": 1045237,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Menu",
+    "name": "Menú Taypá",
+    "description": "Deliciosa hamburguesa a la parrilla, chorizo, papas fritas, huevo frito, arroz, lechuga orgánica, tomate, zanahoria y salsa vinagreta. álido del 29.01.2024 al 31.12.2024. Válido de lunes a viernes. Stock mínimo disponible 500 unidades. Foto referencial. B",
+    "price": 20.9,
+    "originalPrice": 20.9,
+    "productId": 1045152,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Menu",
+    "name": "Menú A Lo Pobre",
+    "description": "Deliciosa hamburguesa a la parrilla, papas fritas, huevo frito, plátano frito, arroz, lechuga orgánica, tomate, zanahoria y salsa vinagreta. Válido del 29.01.2024 al 31.12.2024. Válido de lunes a viernes. Stock mínimo disponible 500 unidades. Foto referen",
+    "price": 19.9,
+    "originalPrice": 19.9,
+    "productId": 1045248,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Complementos",
+    "name": "Papas Fritas",
+    "description": "Papas Fritas. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1045268,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Complementos",
+    "name": "Cheese Fingers",
+    "description": "Cheese Fingers. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 14.9,
+    "originalPrice": 14.9,
+    "productId": 1045273,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Complementos",
+    "name": "Nuggets",
+    "description": "Nuggets. Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 13.9,
+    "originalPrice": 13.9,
+    "productId": 1045132,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Complementos",
+    "name": "Salchipapa",
+    "description": "Porción familiar de papas fritas con Hot dog.",
+    "price": 11.9,
+    "originalPrice": 11.9,
+    "productId": 1045208,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Complementos",
+    "name": "Salchinuggets",
+    "description": "Porción familiar de papas fritas con Hot dog y Nuggets x4",
+    "price": 18.9,
+    "originalPrice": 18.9,
+    "productId": 1045099,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Complementos",
+    "name": "Nuggetspapa",
+    "description": "Porción familiar de papas fritas con Nuggets x5",
+    "price": 16.9,
+    "originalPrice": 16.9,
+    "productId": 1045295,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Loncheritas",
+    "name": "Loncherita Faber Hamburguesa",
+    "description": "1 Básica regular, 1 papa regular, 1 frugos, plumones Faber x6. Foto referencial",
+    "price": 20.9,
+    "originalPrice": 20.9,
+    "productId": 1045180,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Loncheritas",
+    "name": "Loncherita Faber Nuggets",
+    "description": "Nuggets x4, 1 papa regular, 1 frugos, plumones Faber x6. Foto referencial",
+    "price": 20.9,
+    "originalPrice": 20.9,
+    "productId": 1045197,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Bebidas",
+    "name": "Coca Cola Sabor Original 500 ml",
+    "description": "Gaseosa.Foto referencial. BEMBOS S.A.C RUC 20101087647",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1045242,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Bebidas",
+    "name": "Coca Cola Sin Azúcar 500 ml",
+    "description": "Gaseosa. Foto referencial.BEMBOS S.A.C RUC 20101087647",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1045182,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Bebidas",
+    "name": "Inca Kola Sabor Original 500 ml",
+    "description": "Gaseosa. Foto referencial.BEMBOS S.A.C RUC 20101087647",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1045244,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Bebidas",
+    "name": "Inka Kola Sin Azúcar 500 ml",
+    "description": "Gaseosa. Foto referencial.BEMBOS S.A.C RUC 20101087647",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1045275,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Bebidas",
+    "name": "Sprite Sabor Original 500 ml",
+    "description": "Gaseosa. Foto referencial.BEMBOS S.A.C RUC 20101087647",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1045277,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Bebidas",
+    "name": "Fanta Sabor Original 500 ml",
+    "description": "Gaseosa. Foto referencial.BEMBOS S.A.C RUC 20101087647",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1045065,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Bebidas",
+    "name": "Agua San Luis sin gas 750 ml",
+    "description": "Agua San Luis sin gas 750 ml. Foto referencial.BEMBOS S.A.C RUC 20101087647",
+    "price": 6.9,
+    "originalPrice": 6.9,
+    "productId": 1045102,
+    "inStock": true
+  },
+  {
+    "restaurant": "Bembos - Cocharcas",
+    "category": "Helados",
+    "name": "Sundae Suspiro Vainilla",
+    "description": "Delicioso helado cremoso con manjar blanco , trozos de suspiros y canela en polvo.",
+    "price": 9.9,
+    "originalPrice": 9.9,
+    "productId": 2342217,
+    "inStock": true
+  }
+]

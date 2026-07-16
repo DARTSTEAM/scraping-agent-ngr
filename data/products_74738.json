@@ -1,0 +1,426 @@
+[
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Favorita Mediana",
+    "description": "Pizza masa original o italiana con 1 o 2 ingredientes",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Especial Mediana",
+    "description": "Pizza masa original o italiana con 3 o 4 ingredientes",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Premium Mediana",
+    "description": "Pizza masa original o italiana con  5 a 9 ingredientes",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Favorita Grande",
+    "description": "Pizza masa original o italiana con 1 o 2 ingredientes",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Especial Grande",
+    "description": "Pizza masa original o italiana con 3 o 4 ingredientes",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Premium Grande",
+    "description": "Pizza masa original o italiana con  5 a 9 ingredientes",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Favorita Familiar",
+    "description": "Pizza masa original con 1 o 2 ingredientes",
+    "price": 40.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Especial Familiar",
+    "description": "Pizza masa original con 3 o 4 ingredientes",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Premium Familiar",
+    "description": "Pizza masa original con  5 a 9 ingredientes",
+    "price": 52.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Favorita Gigante",
+    "description": "Pizza masa original con 1 o 2 ingredientes",
+    "price": 50.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Especial Gigante",
+    "description": "Pizza masa original con 3 o 4 ingredientes",
+    "price": 55.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizzas",
+    "name": "Premium Gigante",
+    "description": "Pizza masa original con  5 a 9 ingredientes",
+    "price": 62.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Borde De Queso Favorita Grande",
+    "description": "Pizza masa original, borde relleno de queso y con 1 o 2 ingredientes",
+    "price": 34.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Borde De Queso Especial Grande",
+    "description": "Pizza masa original, borde relleno de queso y  con 3 o 4 ingredientes",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Borde De Queso Premium Grande",
+    "description": "Pizza masa originall, borde relleno de queso y  con  5 a 9 ingredientes",
+    "price": 49.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Borde De Queso Favorita Familiar",
+    "description": "Pizza masa original, borde relleno de queso y con 1 o 2 ingredientes",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Borde De Queso Especial Familiar",
+    "description": "Pizza masa original, borde relleno de queso y  con 3 o 4 ingredientes",
+    "price": 49.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Borde De Queso Premium Familiar",
+    "description": "Pizza masa original, borde relleno de queso y  con  5 a 9 ingredientes",
+    "price": 59.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Pan Pizza Favorita Grande",
+    "description": "Pizza con deliciosa masa esponjosa, un toque de mantequilla, base crujiente y con 1 o 2 ingredientes",
+    "price": 40.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Pan Pizza Especial Grande",
+    "description": "Pizza con deliciosa masa esponjosa, un toque de mantequilla, base crujiente y con 3 o 4 ingredientes",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Pizza Masas Especiales",
+    "name": "Pan Pizza Premium Grande",
+    "description": "Pizza con deliciosa masa esponjosa, un toque de mantequilla, base crujiente y  con  5 a 9 ingredientes",
+    "price": 52.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Manja Rolls",
+    "description": "Rollitos de pan rellenos de exquisito manjar blanco, cubiertos de azúcar glaseada",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Canelazo Bites",
+    "description": "Deliciosos bocados horneados, espolvoreados con canela y azúcar, acompañados con un dip de manjar blanco",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Cheesy Bread Relleno",
+    "description": "Delicioso pan horneado gratinado con queso mozzarella - cheddar y relleno a elección, acompañado de salsa marinara",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Pantásticos",
+    "description": "Crocantes palitos horneados con un delicioso toque de zesty y acompañados de salsa marinara",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Parmesan Bites",
+    "description": "Bocadillos de pan horneados, gratinados con queso parmesano y un delicioso toque de zesty",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Cheesy Bread",
+    "description": "Delicioso pan horneado gratinado con queso mozzarella y cheddaracompañado de una salsa marinara",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Domino's Wings X6",
+    "description": "Deliciosas alitas horneadas con a elección. alitas naturales, alitas en salsa bbq o alitas en salsa buffalo.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Choco Baitz",
+    "description": "Deliciosos panecillos horneados, bañados en chocolate, glaseado y espolvoreado con azúcar glas",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Domino's Wings X10",
+    "description": "Deliciosas alitas horneadas con a elección. alitas naturales, alitas en salsa bbq o alitas en salsa buffalo.",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Calzone Carnivoro",
+    "description": "Delicioso pan horneado, relleno de queso provolone, pepperoni, jamón, salchicha italiana y carne molida, bañado con mantequilla y un toque de zesty.",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Calzone Bbq Chicken",
+    "description": "Delicioso pan horneado, relleno de queso provolone, queso cheddar, salsa bbq, pollo y cebolla, bañado con mantequilla y un toque de zesty",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Calzone Hot Chicken",
+    "description": "Delicioso pan horneado, relleno de queso provolone, queso cheddar, jalapeños, tocino, pollo y cebolla, bañado con mantequilla y un toque de zesty.",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Calzone Hawaiano",
+    "description": "Delicioso pan horneado, relleno de queso provolone, jamón y piña, bañado con mantequilla y un toque de zesty.",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Complementos",
+    "name": "Calzone Deluxe",
+    "description": "Delicioso pan horneado, relleno de queso provolone, pepperoni, salchicha italiana, champiñones y cebolla, bañado con mantequilla y un toque de zesty.",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Pizzatón",
+    "description": "3 Pizzas grandes favoritas y/o especiales + 01 gaseosa 1lt (pepsi)",
+    "price": 117.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Duo Favorito",
+    "description": "2 Pizzas grandes favoritas + gaseosa 1lt",
+    "price": 71.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Tripack De Pizzas",
+    "description": "3 Pizzas medianas favoritas",
+    "price": 71.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Big Duo",
+    "description": "2 Pizzas grandes cualquier sabor",
+    "price": 61.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Combo Pantastico",
+    "description": "01 Pizza grande favorita + pantasticos",
+    "price": 44.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Quesomanía",
+    "description": "01 Pizza borde de queso grande favorita + gaseosa 1lt",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Trio",
+    "description": "03 Pizzas grandes favoritas + pantasticos + manjaroll + gaseosa 1.5lt",
+    "price": 133.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Entre Patas",
+    "description": "03 Pizzas grandes favoritas + gaseosa 1lt",
+    "price": 102.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Combo Irrestible",
+    "description": "01 Pizza mediana favorita + 01 mini manja rolls",
+    "price": 36.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Combo Irrestible 2",
+    "description": "01 Pizza mediana favorita + 01 mini manja rolls + 01 gaseosa 355 ml",
+    "price": 39.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "La Gigante",
+    "description": "01 Pizza gigante favorita",
+    "price": 50.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Combo Especial",
+    "description": "1 Pizza grande favorita + mini canelazo",
+    "price": 44.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "La Favorita",
+    "description": "1 Pizza mediana favorita + gaseosa 300ml + mini canelazo",
+    "price": 40.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Combo Pantásticos Especial",
+    "description": "01 Pizza grande especial + pantasticos",
+    "price": 49.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Doble Quesomanía",
+    "description": "01 Pizza grande especial + pantasticos",
+    "price": 69.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Promociones",
+    "name": "Combo Calzone",
+    "description": "01 Calzone+ 01 gaseosa 300 ml",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Bebidas",
+    "name": "Gaseosa 500ml",
+    "description": "Inca-kola sabor  original 500ml y coca-cola sabor original 500ml",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Dominos Pizza - Surquillo",
+    "category": "Bebidas",
+    "name": "Gaseosa 1.5lt",
+    "description": "Coca-cola sabor original 1500ml",
+    "price": 12.9,
+    "inStock": true
+  }
+]

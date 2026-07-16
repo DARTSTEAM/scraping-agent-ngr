@@ -6,6 +6,9 @@ const { exec } = require('child_process');
 
 const { Storage } = require('@google-cloud/storage');
 
+const { matchBrand } = require('../product_matcher');
+const { BRANDS, CHANNELS, getChannelConfig } = require('../brand_config');
+
 const app = express();
 const port = process.env.PORT || 3001;
 
@@ -34,18 +37,26 @@ const gcs = new Storage();
  * Called once at startup so fresh scrapes survive container restarts.
  */
 async function syncFromGCS() {
-    try {
-        const [files] = await gcs.bucket(GCS_BUCKET).getFiles({ prefix: 'products_' });
-        let synced = 0;
-        for (const file of files) {
-            if (!file.name.endsWith('.json')) continue;
-            const dest = path.join(DATA_DIR, file.name);
-            await file.download({ destination: dest });
-            synced++;
+    // products_* land in data/ (baseline). matches_*/overrides_* land in ROOT_DIR
+    // where the matcher writes and reads them.
+    const prefixes = [
+        { prefix: 'products_',  dir: DATA_DIR },
+        { prefix: 'matches_',   dir: ROOT_DIR },
+        { prefix: 'overrides_', dir: ROOT_DIR },
+    ];
+    for (const { prefix, dir } of prefixes) {
+        try {
+            const [files] = await gcs.bucket(GCS_BUCKET).getFiles({ prefix });
+            let synced = 0;
+            for (const file of files) {
+                if (!file.name.endsWith('.json')) continue;
+                await file.download({ destination: path.join(dir, file.name) });
+                synced++;
+            }
+            console.log(`[GCS] Sincronizados ${synced} archivos '${prefix}*' desde gs://${GCS_BUCKET}`);
+        } catch (err) {
+            console.warn(`[GCS] No se pudo sincronizar '${prefix}*': ${err.message}`);
         }
-        console.log(`[GCS] Sincronizados ${synced} archivos desde gs://${GCS_BUCKET}`);
-    } catch (err) {
-        console.warn(`[GCS] No se pudo sincronizar al arrancar: ${err.message}`);
     }
 }
 
@@ -286,6 +297,195 @@ app.post('/api/update', (req, res) => {
 
         res.json({ message: 'Scraper finished successfully', output: stdout });
     });
+});
+
+// ──────────────────────────────────────────────
+// Price comparison / AI matching
+// ──────────────────────────────────────────────
+
+const round2 = (n) => Math.round(n * 100) / 100;
+
+function matchesFilePath(brand, channel) {
+    const name = `matches_${brand}_${channel}.json`;
+    const inRoot = path.join(ROOT_DIR, name);
+    const inData = path.join(DATA_DIR, name);
+    if (fs.existsSync(inRoot)) return inRoot;
+    if (fs.existsSync(inData)) return inData;
+    return null;
+}
+
+function overridesFilePath(brand, channel) {
+    return path.join(ROOT_DIR, `overrides_${brand}_${channel}.json`);
+}
+
+function loadOverrides(brand, channel) {
+    const fp = overridesFilePath(brand, channel);
+    if (!fs.existsSync(fp)) return {};
+    try { return JSON.parse(fs.readFileSync(fp, 'utf8')); } catch { return {}; }
+}
+
+// Confidence below this drops a match into the manual review queue.
+const REVIEW_THRESHOLD = 70;
+const overrideKey = (ngrName, competitorId) => `${ngrName}||${competitorId}`;
+
+/** Merge AI matches with human overrides and compute deltas + status per cell. */
+function buildComparison(brand, channel) {
+    const fp = matchesFilePath(brand, channel);
+    if (!fp) return null;
+    const raw = JSON.parse(fs.readFileSync(fp, 'utf8'));
+    const overrides = loadOverrides(brand, channel);
+
+    const rows = raw.rows.map(row => {
+        const cells = {};
+        for (const comp of raw.competitors) {
+            const cell = row.matches[comp.id] || { best: null, alternatives: [] };
+            const ov = overrides[overrideKey(row.ngr.name, comp.id)];
+
+            let best = cell.best;
+            let status;
+            if (ov) {
+                if (ov.action === 'reject') { best = null; status = 'rejected'; }
+                else if (ov.action === 'reassign') { best = ov.product; status = 'confirmed'; }
+                else { status = 'confirmed'; } // confirm
+            } else {
+                status = best && best.score >= REVIEW_THRESHOLD ? 'auto' : 'pending';
+            }
+
+            let delta = null, deltaPct = null;
+            if (best && typeof best.price === 'number' && row.ngr.price) {
+                delta = round2(row.ngr.price - best.price);
+                deltaPct = round2(((row.ngr.price - best.price) / best.price) * 100);
+            }
+            cells[comp.id] = { best, alternatives: cell.alternatives || [], status, delta, deltaPct, edited: !!ov };
+        }
+        return { ngr: row.ngr, matches: cells };
+    });
+
+    // KPIs per competitor (over rows with a resolved best match)
+    const kpis = {};
+    for (const comp of raw.competitors) {
+        let cheaper = 0, pricier = 0, equal = 0, sumNgr = 0, sumComp = 0, matched = 0, pending = 0;
+        for (const row of rows) {
+            const c = row.matches[comp.id];
+            if (c.status === 'pending') pending++;
+            if (!c.best || typeof c.best.price !== 'number' || !row.ngr.price) continue;
+            matched++;
+            sumNgr += row.ngr.price;
+            sumComp += c.best.price;
+            if (c.delta > 0.05) pricier++;
+            else if (c.delta < -0.05) cheaper++;
+            else equal++;
+        }
+        kpis[comp.id] = {
+            matched, pending, cheaper, pricier, equal,
+            avgDeltaPct: matched ? round2(((sumNgr - sumComp) / sumComp) * 100) : null,
+            priceIndex: sumComp ? round2((sumNgr / sumComp) * 100) : null, // >100 = NGR más caro
+        };
+    }
+
+    return {
+        brand, channel,
+        generatedAt: raw.generatedAt || null,
+        model: raw.model || null,
+        competitors: raw.competitors,
+        missingCompetitors: raw.missingCompetitors || [],
+        reviewThreshold: REVIEW_THRESHOLD,
+        kpis,
+        rows,
+    };
+}
+
+// Full product catalog of one competitor store (for manual reassignment search)
+app.get('/api/catalog', (req, res) => {
+    const { id } = req.query;
+    if (!id) return res.status(400).json({ error: 'id requerido' });
+    const inRoot = path.join(SCRAPERS_DIR, `products_${id}.json`);
+    const inData = path.join(DATA_DIR, `products_${id}.json`);
+    const fp = fs.existsSync(inRoot) ? inRoot : fs.existsSync(inData) ? inData : null;
+    if (!fp) return res.status(404).json({ error: `Sin datos para ${id}` });
+    try {
+        const products = JSON.parse(fs.readFileSync(fp, 'utf8'));
+        res.json(products.map(p => ({ name: p.name, category: p.category || '', price: p.price })));
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// List brands + channels + whether matches already exist
+app.get('/api/brands', (_req, res) => {
+    const out = BRANDS.map(b => ({
+        key: b.key,
+        label: b.label,
+        channels: CHANNELS.map(ch => {
+            const cfg = b.channels[ch];
+            return {
+                channel: ch,
+                competitors: cfg ? cfg.competitors : [],
+                hasMatches: !!matchesFilePath(b.key, ch),
+            };
+        }),
+    }));
+    res.json(out);
+});
+
+// Read merged comparison (AI + overrides) with deltas + KPIs
+app.get('/api/matches', (req, res) => {
+    const { brand, channel } = req.query;
+    if (!brand || !channel) return res.status(400).json({ error: 'brand y channel son requeridos' });
+    try {
+        const data = buildComparison(String(brand), String(channel));
+        if (!data) return res.status(404).json({ error: 'Sin matches. Ejecutá "Recalcular matches" primero.' });
+        res.json(data);
+    } catch (err) {
+        console.error('Error building comparison:', err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// Recalculate matches for a brand+channel via Gemini, persist to GCS
+app.post('/api/match', async (req, res) => {
+    const { brand, channel } = req.body || {};
+    if (!brand || !channel) return res.status(400).json({ error: 'brand y channel son requeridos' });
+    if (!getChannelConfig(brand, channel)) return res.status(400).json({ error: 'brand/channel inválido' });
+    try {
+        console.log(`[match] Recalculando ${brand}/${channel}…`);
+        const result = await matchBrand(brand, channel);
+        const outPath = path.join(ROOT_DIR, `matches_${brand}_${channel}.json`);
+        fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
+        await uploadToGCS(outPath);
+        const data = buildComparison(brand, channel);
+        res.json({ message: 'Matches recalculados', data });
+    } catch (err) {
+        console.error('Error matching:', err);
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// Persist a human curation decision (confirm / reject / reassign)
+app.post('/api/matches/override', async (req, res) => {
+    const { brand, channel, ngrName, competitorId, action, product } = req.body || {};
+    if (!brand || !channel || !ngrName || !competitorId || !action) {
+        return res.status(400).json({ error: 'brand, channel, ngrName, competitorId y action son requeridos' });
+    }
+    if (!['confirm', 'reject', 'reassign', 'reset'].includes(action)) {
+        return res.status(400).json({ error: 'action inválida' });
+    }
+    try {
+        const overrides = loadOverrides(brand, channel);
+        const key = overrideKey(ngrName, competitorId);
+        if (action === 'reset') {
+            delete overrides[key];
+        } else {
+            overrides[key] = { action, product: action === 'reassign' ? product : undefined, at: new Date().toISOString() };
+        }
+        const fp = overridesFilePath(brand, channel);
+        fs.writeFileSync(fp, JSON.stringify(overrides, null, 2));
+        await uploadToGCS(fp);
+        res.json({ message: 'Override guardado', data: buildComparison(brand, channel) });
+    } catch (err) {
+        console.error('Error saving override:', err);
+        res.status(500).json({ error: err.message });
+    }
 });
 
 // ──────────────────────────────────────────────

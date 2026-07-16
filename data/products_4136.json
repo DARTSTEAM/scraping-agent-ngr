@@ -1,0 +1,618 @@
+[
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bomba Little Caesars",
+    "name": "Combo Personal",
+    "description": "1 Crazy Cheese Bread + 1 Pepsi 355ml",
+    "price": 18,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Nueva Pizza 3n1",
+    "name": "Tripack 3n1 Familiar",
+    "description": "1 Pizza familiar 3n1 (queso, pepperoni, jamon y salchicha italiana) + 2 pizzas familiares clásicas (pepperoni, jamón, queso o extra extra)",
+    "price": 100.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Nueva Pizza 3n1",
+    "name": "Dúo 3n1 Familiar",
+    "description": "1 Pizza familiar 3N1 (queso, pepperoni, jamon y salchicha italiana) + 1 pizza clásica familiar (pepperoni, jamón, queso o extra extra)",
+    "price": 66.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Nueva Pizza 3n1",
+    "name": "Combo 3n1 Familiar",
+    "description": "1 Pizza familiar 3N1 (queso, pepperoni, jamon y salchicha italiana) + 1 gaseosa 1LT",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Nueva Pizza 3n1",
+    "name": "3n1 Familiar",
+    "description": "1 pizza familiar 3n1 (queso, pepperoni, jamon y salchicha italiana)",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Rappi lunch",
+    "description": "1 Cheese bread mediano + 1 pepsi 355ml + 4 unidades de crazy bread o canelitas",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combinación única",
+    "description": "1 Pizza pepperoni familiar + canelitas combo x4",
+    "price": 42.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "2X1 Familiar pro",
+    "description": "2 Pizzas clásicas familiares a elección",
+    "price": 79.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Cu4tro familiar",
+    "description": "Pizza familiar de 8 porciones con 4 combinaciones: queso; pepperoni; salchicha italiana y pepperoni; pepperoni, jamón y pimentón verde.",
+    "price": 34.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo jamón familiar",
+    "description": "Pizza familiar de 8 porciones con salsa de tomate, cubierta de queso 100 mozzarella y cortes de jamón + 8 palitos de pan crazy bread con mantequilla de ajo y parmesano + bebida 1.5l.",
+    "price": 84.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo sch pepperoni familiar+crazy puffs",
+    "description": "Pizza familiar de 8 porciones con salsa de tomate, cubierta y borde relleno de queso 100 mozarella + 4 deliciosas porciones rellenas de pepperoni y queso 100 mozzarella + bebida 1.5l.",
+    "price": 95.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Pepperoni familiar + extra extra famili",
+    "description": "Pizza familiar de 8 porciones con salsa de tomate, cubierta de queso 100 mozzarella y pepperoni + pizza familiar de 8 porciones con salsa de tomate, cubierta de extra queso 100 mozzarella y extra pepperoni + bebida 1.5l.",
+    "price": 109.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo cu4tro familiar",
+    "description": "Pizza familiar de 8 porciones con 4 combinaciones: queso; pepperoni; salchicha italiana y pepperoni; pepperoni, jamón y pimentón verde + bebida 1.5l.",
+    "price": 79.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo pepperoni familiar +queso familiar",
+    "description": "Pizza familiar de 8 porciones con salsa de tomate, cubierta de queso 100 mozzarella y pepperoni + pizza familiar de 8 porciones con salsa de tomate, cubierta de extra queso 100 mozzarella",
+    "price": 75.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo especialida familiar + crazy puffs",
+    "description": "Pizza de especialidad (hula hawaiian, 3 meat treat, ultimate supreme o veggie) familiar de 8 porciones + 4 deliciosas porciones rellenas de pepperoni y queso 100 mozzarella.",
+    "price": 89.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo super cheese pepperoni familiar",
+    "description": "Pizza familiar de 8 porciones con salsa de tomate, cubierta y borde relleno de queso 100 mozarella + 8 palitos de pan crazy bread con mantequilla de ajo y parmesano + bebida 1.5l.",
+    "price": 103.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo jamón familiar +pepperoni familiar",
+    "description": "Pizza familiar de 8 porciones con salsa de tomate, cubierta de queso 100 mozzarella y cortes de jamón + pizza familiar de 8 porciones con salsa de tomate, cubierta de queso 100 mozzarella y pepperoni.",
+    "price": 89.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo pepperoni familiar",
+    "description": "Pizza familiar de 8 porciones con salsa de tomate, cubierta de queso 100 mozzarella y pepperoni + 8 palitos de pan crazy bread con mantequilla de ajo y parmesano + bebida 1.5l.",
+    "price": 73.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Pepperoni familiar",
+    "description": "Pizza familiar 36 cm., salsa de tomates, cubierta de queso 100 mozzarella, pepperoni.",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Comb esp familiar + extra extra familiar",
+    "description": "Pizza de especialidad (hula hawaiian, 3 meat treat, ultimate supreme o veggie) familiar de 8 porciones + pizza familiar de 8 porciones con salsa de tomate, cubierta de extra queso 100 mozzarella y extra pepperoni.",
+    "price": 119.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Rappi Promo",
+    "name": "Combo especial familiar + pepperoni fami",
+    "description": "Pizza de especialidad (hula hawaiian, 3 meat treat, ultimate supreme o veggie) familiar de 8 porciones + pizza familiar de 8 porciones con salsa de tomate, cubierta de queso 100 mozzarella y pepperoni.",
+    "price": 109.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Combo 3 meat + gratis crazy bread",
+    "description": "Pizza familiar de 8 porciones cubierta de queso 100 mozzarella, pepperoni, salchicha italiana y tocino + gratis 8 palitos de pan crazy bread con mantequilla de ajo y parmesano.",
+    "price": 69.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Combo Super Cheese Familiar",
+    "description": "Pizza familiar de 8 de pepperoni rellena de borde relleno de queso 100% mozarella + 12 pancitos recién horneados con 3 deliciosos quesos y un toque de mantequilla de ajo + bebida 1.5L.",
+    "price": 103.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Pepperoni + pepsi 1.5 l",
+    "description": "Pizza familiar con salsa de tomate, cubierta de queso 100 mozzarella y pepperoni. acompañada con pepsi 1.5 l",
+    "price": 38.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Super cheese pepperoni+gratis crazy brea",
+    "description": "Pizza familiar pepperoni con borde de abundante queso parmesano y mantequilla de ajo. acompañados con crazy breads",
+    "price": 49.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Pepperoni + crazy pops pepperoni",
+    "description": "Pepperoni + crazy pops pepperoni",
+    "price": 45.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Hula hawaiian + crazy pops hula",
+    "description": "Hula hawaiian + crazy pops hula",
+    "price": 55.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Super cheese hula hawaiian + pepsi",
+    "description": "Pizza con borde de abundante queso parmesano y mantequilla de ajo. acompañado con pepsi 1.5 l",
+    "price": 63.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Super Cheese Ultimate Supreme + Crazy Pops",
+    "description": "Pizza ultimate supreme con borde de abundante queso parmesano y mantequilla de ajo. Acompañado con 4 deliciosas porciones rellenas de pepperoni y queso",
+    "price": 70.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "3 Meat treat + pepsi 1.5 l",
+    "description": "Pizza 3 meat treat acompañado con pepsi 1.5 l ",
+    "price": 51.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Combo pepperoni",
+    "description": "Pizza familiar 36 cm. de pepperoni, bebida 500 ml a elección.",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Comida completa pepperoni",
+    "description": "Pizza familiar 36 cm. de pepperoni, 8 crazy breads, crazy sauce, bebida de 1.5 lt. a elección.",
+    "price": 47.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Comida Completa Crazy Pops",
+    "description": "Pizza Pepperoni, 4 unidades de Crazy Pops y bebida de 1.5 L. Solo se puede elegir 1 sabor de Crazy Pops",
+    "price": 52.3,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Combo fiesta pops",
+    "description": "2 Pizzas pepperoni, 4 unidades de crazy pops y bebida 2 l. solo se puede elegir 1 sabor de crazy pops",
+    "price": 81.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Super cheese pepperoni+crazy bread rell",
+    "description": "Pizza familiar pepperoni con borde de abundante queso parmesano y mantequilla de ajo. acompañados con crazy bread rellenos",
+    "price": 49.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Pizza Super Cheese + Canelitas Combo + Pepsi 2 L",
+    "description": "Pizza familiar Pepperoni con borde de abundante queso parmesano y mantequilla de ajo. Acompañado con Canelitas en combo y Pepsi 2 L",
+    "price": 63,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Combo pizza jamón",
+    "description": "Pizza familiar jamón, acompañamiento a elección, bebida 1,5 lt a elección",
+    "price": 41.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Combo pepperonis",
+    "description": "2 Pizzas familiares 36 cm. pepperoni, crazy breads, crazy sauce, bebida 1.5 l. a elección",
+    "price": 76.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Combo fiesta pepperoni",
+    "description": "2 Pizzas tamaño familiar de pepperoni, 1 crazy bread, crazy sauce, pepsi sabor original 2 lt.",
+    "price": 80.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Promoción crazy bread con bebida ",
+    "description": "8 Crazy Breads y Crazy Sauce y bebida a elección 500 ml.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Combos",
+    "name": "Super cheese pepperoni + canelitas combo",
+    "description": "Pizza familiar pepperoni con borde de abundante queso parmesano y mantequilla de ajo + canelitas combo.",
+    "price": 52.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Pizza Pepperoni",
+    "description": "Pizza familiar 36 cm., salsa de tomates, cubierta de queso 100% mozzarella, pepperoni.",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Pizza Jamón",
+    "description": "Pizza familiar 36 cm., salsa de tomates, cubierta de queso 100% mozzarella, cortes de jamón.",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Cu4tro Pizza",
+    "description": "Pizza familiar 36 cm, con 2 rebanadas de pepperoni, 2 de queso, 2 de salchicha con pepperoni, 2 de pimientos verdes con jamón",
+    "price": 34.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Pizza 3 Meat Treat",
+    "description": "Pizza familiar 36 cm., salsa de tomates, cubierta de queso 100% mozzarella, pepperoni, salchicha italiana y tocino.",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Pizza Hula Hawaiian",
+    "description": "Pizza familiar 36 cm, salsa de tomates, cubierta de queso 100% mozzarella, jamón y piña.",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Pizza Queso",
+    "description": "Pizza familiar (36cm),salsa de tomates, cubierta de queso 100% mozzarella.",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Pizza Especialidad Veggie",
+    "description": "Pizza familiar 36cm, salsa de tomate, cubierta de queso mozzarella, champiñones, pimientos verdes, cebolla blanca y aceitunas negras.",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Super Cheese Jamón",
+    "description": "Pizza familiar jamón con borde de abundante queso parmesano y mantequilla de ajo.",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Super Cheese Pepperoni",
+    "description": "Pizza familiar pepperoni con borde de abundante queso parmesano y mantequilla de ajo.",
+    "price": 39.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Super Cheese Queso",
+    "description": "Pizza familiar queso con borde de abundante queso parmesano y mantequilla de ajo.",
+    "price": 40.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Super Cheese Veggie",
+    "description": "Pizza familiar veggie con borde de abundante queso parmesano y mantequilla de ajo.",
+    "price": 54.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Pizzas ",
+    "name": "Super Cheese Hula Hawaiian",
+    "description": "Pizza familiar hula hawaiian con borde de abundante queso parmesano y mantequilla de ajo.",
+    "price": 54.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Canelitas Combo",
+    "description": "El combo incluye 8 unidades de Canelitas y 1 dip Dulce de Leche",
+    "price": 12.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Crazy Pops",
+    "description": "4 deliciosas porciones rellenas de pepperoni y queso",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Crazy Bread Relleno",
+    "description": "4 palitos de pan, rellenos de mucho queso",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Crazy Bread Relleno + Crazy Sause",
+    "description": "4 palitos de pan, rellenos de mucho queso + 1 dip de crazy sause",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Crazy Breads ",
+    "description": "8 palitos gigantes bañados en mantequilla de ajo y espolvoreado con queso parmesano. ",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Crazy Combo ",
+    "description": "8 Crazy Breads y Crazy Sauce. ",
+    "price": 12.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Hazlo Combo",
+    "description": "8 Crazy Breads o Canelitas, Dip a elección, Bebida 1.5lt a elección",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Crazy Cheese Bread",
+    "description": "12 Palitos de pan cubiertos con 3 quesos.",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Almuerzos",
+    "name": "Crazy Cheese Bread Pepperoni",
+    "description": "12 palitos de pan cubiertos con 3 quesos y pepperoni.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Almuerzos",
+    "name": "Crazy Cheese Bread + Adicional + Bebida 600ml",
+    "description": "Elige los sabores. ",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Almuerzos",
+    "name": "Crazy Cheese Bread + Dip + Bebida 600ml",
+    "description": "Elige los sabores. ",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Almuerzos",
+    "name": "Crazy Cheese Bread Bacon",
+    "description": "12 palitos de pan cubiertos con 3 quesos y bacon.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Almuerzos",
+    "name": "Crazy Cheese Bread + Bebida 600ml",
+    "description": "Elige el sabor de tu Crazy Cheese Bread. ",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Dips",
+    "name": "Dip X1",
+    "description": "Dip a elección",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Dips",
+    "name": "Dip Dulce de Leche",
+    "description": "Dip de dulce de leche",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Dips",
+    "name": "Crazy Sauce",
+    "description": "Salsa de tomate mezclada con especias",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Pepsi Sabor Original 2 L",
+    "description": "Gaseosa",
+    "price": 10,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Concordia Piña 1.5 L",
+    "description": "Gaseosa",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Pepsi Sabor Original 1.5  L",
+    "description": "Gaseosas",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "7Up Lima Limón Original 1.5 L",
+    "description": "Gaseosas",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "7Up Lima Limón Original 500 ml",
+    "description": "Gaseosas",
+    "price": 4.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Pepsi Sabor Original 500  ml",
+    "description": "Gaseosas",
+    "price": 4.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Concordia Piña 500 ml",
+    "description": "Gaseosas",
+    "price": 4.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Little Caesars - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "San Carlos Sin Gas 500 ml",
+    "description": "Aguas",
+    "price": 4.5,
+    "inStock": true
+  }
+]

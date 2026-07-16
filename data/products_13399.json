@@ -1,0 +1,522 @@
+[
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Rappi Promo",
+    "name": "Chaufa o aeropuerto + 1 bebida 300 ml",
+    "description": "Disfruta de nuestro chaufa o aeropuerto (personal) + 1 bebida 300 ml",
+    "price": 20.23,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Rappi Promo",
+    "name": "Combo Clásico Express",
+    "description": "Chaufa de pollo o aeropuerto + sopa wantan a la carta   o 6 wantanes .",
+    "price": 36.21,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Rappi Promo",
+    "name": "Dúo Sopa Express",
+    "description": "Escoge tus sopas favoritas: fuchifu, wantan de pollo o especial.",
+    "price": 38.36,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Rappi Promo",
+    "name": "Combo Aeropuerto Express",
+    "description": "Disfruta de nuestro aeropuerto personal + 3 spring roll + 1 gaseosa 300ml (a elección)",
+    "price": 27.42,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Rappi Promo",
+    "name": "Combo Dúo Combinado",
+    "description": "Combo de dos bowls con arroz frito, pollo en salsa y papas fritas.",
+    "price": 37.81,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combos",
+    "name": "Combo Express 1",
+    "description": "6 wantanes, chaufa de pollo familiar, plato a elección y 2 bebidas a elección.",
+    "price": 49.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combos",
+    "name": "Combo Express 2",
+    "description": "Arroz chaufa de pollo familiar, 6 wantanes,  2 platos y 2 gaseosas personales a elección.",
+    "price": 64.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combos",
+    "name": "Combo Express 3",
+    "description": "Chaufa de pollo familiar, tallarin de pollo, 1 plato a elección, 2 sopa wantán personales y 2 bebidas 500 ml.",
+    "price": 69.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combos",
+    "name": "Combo Express 4",
+    "description": "2 Chaufa de pollo familiares, 12 wantanes, 2 platos a elección, Inca Kola Sabor Original 1.5 L.",
+    "price": 94.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combos",
+    "name": "Maxicombo Express",
+    "description": "2 Chaufas de Pollo Familiar, 3 Platos a elección, 12 Wantanes e Inca Kola 1.5 Lt.",
+    "price": 105,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Wantan Frito de Chancho",
+    "description": "Masa wantán frita rellena de chancho.",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Wantan Frito de Langostino",
+    "description": "Masa wantán frita rellena de langostino.",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Siumai",
+    "description": "Clásico bocadito chino al vapor relleno de carne de cerdo con forma de saco.",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Spring Roll",
+    "description": "Pasta rellena de verduras en salsa oriental, acompañado de salsa de limón y canela china, 3 unidades.",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Chicharrón de Pollo",
+    "description": "Trozos de pura pechuga de pollo fritas, 3 unidades.",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Piernitas Al Limón",
+    "description": "Carne de pollo y cerdo , finamente molidas, mezcladas y empanizadas acompañadas de salsa de limón y canela china, 3 unidades.",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Minpao",
+    "description": "Bolillo de masa de trigo relleno de cerdo asado.",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Alitas de Ostión",
+    "description": "Alitas de pollo fritas, bañadas en salsa de ostión y rociadas con semillas de ajonjoli blanco tostado.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Alitas de Tamarindo",
+    "description": "Alitas de pollo fritas, bañadas en salsa de tamarindo y rociadas con semillas de ajonjoli blanco tostado.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Piqueo Express 1 (Para 2)",
+    "description": "4 siumai, 1 min pao y 3 spring rolls.",
+    "price": 32.72,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Entradas",
+    "name": "Piqueo Express 2 (para 4)",
+    "description": "8 siumai, 4 chicharrones de pollo y 3 spring roll.",
+    "price": 42.72,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combinados",
+    "name": "Combinado Chijaukay",
+    "description": "Arroz chaufa de pollo con pollo chijaukay y tiras de wantán frito.",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combinados",
+    "name": "Combinado Tipakay",
+    "description": "Arroz chaufa de pollo con pollo tipakay y tiras de wantán frito.",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combinados",
+    "name": "Combinado Pollo con Verduras",
+    "description": "Arroz chaufa de pollo con verduras y tiras de wantán frito.",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combinados",
+    "name": "Combinado Pollo con Piña",
+    "description": "Arroz chaufa de pollo, pollo con piña y tiras de wantán frito.",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Combinados",
+    "name": "Combinado Latkay",
+    "description": "Arroz chaufa de pollo, pollo picante  y tiras de wantán frito.",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Montados",
+    "name": "Montado de Lomo Saltado",
+    "description": "Arroz chaufa de pollo, lomo saltado, plátano maduro frito, huevo frito",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Montados",
+    "name": "Montado Parrillero",
+    "description": "Arroz chaufa hotdog ahumado, chorizo parrillero, plátano maduro frito, huevo frito",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Montados",
+    "name": "Montado de Pollo Saltado",
+    "description": "Arroz chaufa de pollo, pollo saltado, plátano maduro frito y huevo frito montado",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Montados",
+    "name": "Montado Charapa",
+    "description": "Arroz chaufa con cecina y chorizo selvático, plátano maduro frito, huevo frito montado..",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Chaufas",
+    "name": "Chaufa de Pollo",
+    "description": "Arroz frito con pollo, huevo y cebolla china. Tamaño a elección.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Chaufas",
+    "name": "Chaufa de Carne",
+    "description": "Arroz frito con trozos de carne, huevo, pimentón, holantao y cebolla china.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Chaufas",
+    "name": "Chaufa Especial",
+    "description": "Arroz frito con trozos de pollo, cerdo, langostino, huevo y cebolla china. Tamaño a elección.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Chaufas",
+    "name": "Chaufa de Chancho",
+    "description": "Arroz frito con trozos de cerdo, huevo y cebolla china. Tamaño a elección.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Chaufas",
+    "name": "Chaufa de Langostino",
+    "description": "Arroz frito con langostino, huevo y cebolla china. Tamaño a elección",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Chaufas",
+    "name": "Chaufa Mixto",
+    "description": "Arroz chaufa mixto con trozos de pollo, chancho, huevo y cebolla china.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Chaufas",
+    "name": "Aeropuerto",
+    "description": "Arroz frito, trozos de pechuga de pollo, huevo, fideo tallarín, frejol chino, huevo y cebolla china. Tamaño a elección.",
+    "price": 14.32,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Sopas",
+    "name": "Sopa Especial",
+    "description": "Caldo de pollo con laminas de pechuga de pollo, cerdo, langostino, huevo de codorniz, col china, wantán relleno de cerdo y fideo chino.",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Sopas",
+    "name": "Sopa Wantán de Pollo",
+    "description": "Caldo de pollo con laminas de pechuga de pollo, col china, wantan relleno de cerdo y fideo chino.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Sopas",
+    "name": "Sopa Fuchifú",
+    "description": "Fondo de pollo con pequeños cortes de pierna de pollo, col china y holantao acompañado de fideo de arroz.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Tallarines",
+    "name": "Tallarín de Pollo en Trozos",
+    "description": "Fideo chino salteado con trozos de pollo y verduras orientales, en salsa ostión",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Tallarines",
+    "name": "Tallarín Especial",
+    "description": "Fideo chino salteado con trozos de pierna de pollo, cerdo, langostino y verduras orientales en salsa ostión.",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Pollo Chijaukay",
+    "description": "Trozos de pierna de pollo crujientes y bañadas en salsa ostión salada.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Pollo Tipakay",
+    "description": "Trozos de pierna de pollo crujientes y bañadas en salsa tamarindo dulce.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Pollo con Verduras",
+    "description": "Pierna de pollo en trozos acompañado de verduras salteadas en salsa ostión y tausi de sabor salado.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Pollo con Piña",
+    "description": "Pierna de pollo en trozos acompañado de verduras salteadas con piña y salsa tamarindo dulce.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Pollo Limonkay",
+    "description": "Abundante trozos de pierna de pollo crujientes, bañadas en salsa de limón dulce.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Chancho Al Ajo",
+    "description": "Chancho salteado salteado al ajo con verduras.",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Chancho Al Tamarindo",
+    "description": "Chancho salteado con verduras y salsa tamarindo.",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Chancho con Verduras",
+    "description": "Chancho en láminas salteadas con verduras orientales.",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Pollos y Carnes",
+    "name": "Carne con Verduras",
+    "description": "Laminas de bola de lomo salteadas con una variedad de verduras orientales de sabor salado.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Especiales",
+    "name": "Langostino Dinamita",
+    "description": "Langostinos salteados con ajo y ají picante.",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Especiales",
+    "name": "Carne Al Estilo Mongol",
+    "description": "Laminas de bola de lomo salteadas con variedad de verduras orientales en salsa barbecue.",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Especiales",
+    "name": "Kam Lu Wantán",
+    "description": "Plato dulce con variedad de carnes, pollo y chancho, con verduras salteadas con piña y huevo de codorniz acompañado de wantan frito.",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Especiales",
+    "name": "Langostino con Verduras",
+    "description": "Langostinos salteados con verduras orientales.",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 450 ml",
+    "description": "Gaseosas",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Sabor Original 500 ml",
+    "description": "Gaseosas",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Sabor Original 1.5 Lt",
+    "description": "Gaseosas",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "Fanta Naranja 500 ml",
+    "description": "Gaseosa",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 500 ml",
+    "description": "Gaseosas",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 1.5 L",
+    "description": "Gaseosas",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sabor Original 500 ml",
+    "description": "Gaseosas",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sabor Original 1.5 L",
+    "description": "Gaseosas",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "San Luis Sin Gas 625 ml",
+    "description": "Agua",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Chifa Express - Chifa - Surquillo",
+    "category": "Bebidas",
+    "name": "San Luis con Gas 625 ml",
+    "description": "Agua",
+    "price": 4.9,
+    "inStock": true
+  }
+]

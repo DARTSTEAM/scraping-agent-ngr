@@ -1,0 +1,826 @@
+[
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Campana Mundial",
+    "name": "Combo Mundial Grande",
+    "description": "1 Grande Clasica + 1 Grande Singature/Especialidad + Gaseosa 1L",
+    "price": 113.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Campana Mundial",
+    "name": "Combo Full Cancha Grande",
+    "description": "2 Grande Clasica + 1 Grande Singature/Especialidad + Gaseosa 1.5L",
+    "price": 162.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Campana Mundial",
+    "name": "Duo Mundialero Familiar",
+    "description": "1 Familiar Clasica + 1 Familiar Singature/Especialidad + Gaseosa 1.5L",
+    "price": 136.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Campana Mundial",
+    "name": "Banquete Mundialero Familiar",
+    "description": "1 Familiar Clasica + 1 Familiar Singature/Especialidad + Cheesticks + Pack Salsa + Gaseosa 1.5L",
+    "price": 161.3,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Campana Mundial",
+    "name": "Combo Golazo Familiar",
+    "description": "2 Familiar Clasica + 1 Familiar Singature/Especialidad + Gaseosa 1.5L",
+    "price": 192.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi PJ Week",
+    "name": "Super Promo Papa Johns",
+    "description": "1 Pizza Grande Signature a Elección + 1 Gaseosa 500ml + Mini cheesesticks",
+    "price": 62.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi PJ Week",
+    "name": "Duo Papa Johns",
+    "description": "1 All the Meats Grande + 1 Pizza Grande Clasica a Elección",
+    "price": 77.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi PJ Week",
+    "name": "Duo Grande Papa Johns",
+    "description": "1 Hawaiana Grande + 1 Pizza Grande Clásica a Elección",
+    "price": 70.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi PJ Week",
+    "name": "Promo Papa Jonhs",
+    "description": "1 Pizza Grande Signature + 1 Gaseosa 1.5L",
+    "price": 57.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi PJ Week",
+    "name": "Bomba Viral Combo Grande",
+    "description": "1 pizza grande hawaiana + 1 pizza grande signature + 1 gaseosa 1L",
+    "price": 88.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Signature Mundialista",
+    "name": "Hawaiana Chicken BBQ",
+    "description": "Pizza con base de salsa BBQ, pollo, tocino, cebolla blanca, pina y queso mozzarella",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Signature Mundialista",
+    "name": "Chicken BBQ",
+    "description": "Pizza con base de salsa BBQ, pollo, tocino, cebolla blanca y queso mozzarella.",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Signature Mundialista",
+    "name": "The Works",
+    "description": "Pizza con pepperoni, salchicha italiana, jamon, pimientos verdes, cebolla blanca, champinones, aceitunas negras y queso mozzarella",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Signature Mundialista",
+    "name": "All the Meats",
+    "description": "Pizza con pepperoni, salchicha de cerdo, jamon, tocino, carne de res y queso mozzarella",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Signature Mundialista",
+    "name": "La Favorita",
+    "description": "Pizza con 3 tipos de quesos, salchicha, pepperoni y especias italianas",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Signature Mundialista",
+    "name": "Tocino 6 Quesos Grande",
+    "description": "Pizza con jamón, tocino, sazonador italiano y 6 tipos de queso.",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Signature Mundialista",
+    "name": "Crispy Chicken",
+    "description": "Pizza con crujientes chicken poppers, tomate italiano en cubos, cebolla roja, sazonador italiano, 4 tipos de quesos y base de salsa de ajo.",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Signature Mundialista",
+    "name": "Veggie 6 Quesos",
+    "description": "Pizza con 6 tipos de quesos, cebolla, pimientos verdes, tomates, aceitunas negras, champiñones y sazonador italiano.",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Especialidad Mundialista",
+    "name": "Hawaiana",
+    "description": "Pizza con jamon, pina y queso mozzarella extra",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Especialidad Mundialista",
+    "name": "Española",
+    "description": "Pizza con chorizo, cebolla blanca, aceitunas verdes, aceitunas negras, champinones, queso mozzarella y salsa de ajo en el fondo",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Especialidad Mundialista",
+    "name": "Continentalle",
+    "description": "Pizza con jamon, cebolla, champinones y queso mozarella",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Especialidad Mundialista",
+    "name": "Súper Margarita 6 Quesos",
+    "description": "Pizza con tomate, orégano y 6 tipos de queso.",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Clasica Mundialistas",
+    "name": "Americana",
+    "description": "Pizza con jamon y queso mozzarella",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Clasica Mundialistas",
+    "name": "Pepperoni",
+    "description": "Pizza con pepperoni y queso mozzarella",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Clasica Mundialistas",
+    "name": "Vegetariana",
+    "description": "Pizza con tomates, champinones, cebolla, pimientos, aceitunas negras y queso mozzarella",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Clasica Mundialistas",
+    "name": "Mozzarella",
+    "description": "Pizza con queso y mozzarella extra",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Cheddar",
+    "name": "PapaBox Cheddar",
+    "description": "1 Pizza Clásica Mediana + Rolls Cheddar x3 + Cup Cheddar + Rolls Pepperoni x3",
+    "price": 44.75,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Cheddar",
+    "name": "Combo Grande Cheddar",
+    "description": "1 Cheddar Grande + Rolls Cheddar x3 + Cup Cheddar",
+    "price": 67.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Cheddar",
+    "name": "Combo Grande Cheddar Extrema",
+    "description": "1 Cheddar Grande con Borde Cheddar + Rolls Cheddar x3 + Cup Cheddar",
+    "price": 79.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Cheddar",
+    "name": "Duo Familiar Cheddar",
+    "description": "1 Cheddar Familiar (Borde cheddar + S/.10) + Clasica Familiar + Rolls Cheddar x6 + Cup Cheddar",
+    "price": 131.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Menu Rappi",
+    "name": "Menú Mediana",
+    "description": "1 Pizza mediana + 1 gaseosa 500ml",
+    "price": 33.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Menu Rappi",
+    "name": "Menú Mediana Full",
+    "description": "2 Pizzas Medianas + 2 Gaseosas 500ml",
+    "price": 45.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Menu Rappi",
+    "name": "Menú Calzone",
+    "description": "1 Calzone y gaseosa 500ml",
+    "price": 38.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Menu Rappi",
+    "name": "Menú Papadia",
+    "description": "1 Papadia + 1 gaseosa 500ml",
+    "price": 27.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Masa Delgada Crocante",
+    "name": "Combo Grande Masa Delgada",
+    "description": "1 Pizza Grande Clásica Masa Delgada + 3 Rolls de Pepperoni + Bebida de 1L",
+    "price": 68.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Masa Delgada Crocante",
+    "name": "Duo Grande Masa Delgada",
+    "description": "2 Pizzas Grandes Clásicas Masa Delgada + 8 Nuditos de Ajo",
+    "price": 116.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Masa Delgada Crocante",
+    "name": "Duo Familiar Masa Delgada",
+    "description": "2 Pizzas Familiares Clásicas Masa Delgada + 8 Nuditos de Ajo",
+    "price": 133.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi Promos",
+    "name": "Festival Medianas",
+    "description": "3 Pizzas medianas Clasicas. Promoción válida todo el mes o hasta agotar stock, exclusivamente por Rappi. Stock mínimo de 500 unidades. No acumulable con otras promociones. RUC: 20505897812",
+    "price": 83.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi Promos",
+    "name": "Dupla Perf Especial Gaseosa",
+    "description": "2 Pizzas Grandes Seleccionadas + mini cheesesticks + 1 Gaseosa 1L",
+    "price": 119.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi Promos",
+    "name": "Duo Signature Gaseosa",
+    "description": "2 pizzas grandes Signature + 1 Gaseosa 1L",
+    "price": 127.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi Promos",
+    "name": "Duo Especial Familiar",
+    "description": "2 Pizzas Familiares Especialidad + 1 Gaseosa 1L",
+    "price": 129.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi Promos",
+    "name": "Combo grande con Gaseosa",
+    "description": "1 pizza grande clásica + 1 gaseosa 500ml",
+    "price": 53.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi Promos",
+    "name": "Combo Familiar",
+    "description": "1 pizza Familiar clásica + 1 gaseosa 1L",
+    "price": 63.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi Promos",
+    "name": "Duo Especialidad Grande",
+    "description": "2 pizzas grandes Especialidad + 1 gaseosa 1 litro",
+    "price": 109.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Rappi Promos",
+    "name": "Tripack Grande Especialidad",
+    "description": "3 Pizzas Grandes Seleccionadas y 1 Inca Kola 1.5 litros.",
+    "price": 163.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Papa Box",
+    "name": "Papa Box Personal",
+    "description": "1 Pizza Personal Clasica + 2 Adicionales",
+    "price": 33.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Papa Box",
+    "name": "Papa Box Mediano",
+    "description": "1 Pizza Mediana Clasica y 2 Adicionales. Stock mínimo de 300 unidades. No acumulable con otras promociones.RUC: 20505897812 Razón Social: CORPORACION PERUANA DE RESTAURANTES S.A.C.",
+    "price": 52.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Papa Box",
+    "name": "Papa Box Chicken Power",
+    "description": "1 Pizza Mediana Clasica + 2 Adicionales + 1 gaseosa",
+    "price": 57.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Sabor del Mes",
+    "name": "Sabor Del Mes Grande",
+    "description": "Signature del mes: Tocino 6 quesos",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Sabor del Mes",
+    "name": "Sabor Del Mes Familiar",
+    "description": "Signature del mes: Tocino 6 quesos",
+    "price": 54.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Sabor del Mes",
+    "name": "Combo Sabor Del Mes",
+    "description": "1 pizza grande Tocino 6 quesos con 1 gaseosa de 1L.",
+    "price": 54.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Promos Grupales",
+    "name": "Dupla Perfecta",
+    "description": "2 Pizzas Grandes Clásicas. Promoción válida todos los días o hasta agotar stock. Stock mínimo de 300 unidades. No acumulable con otras promociones. RAZON SOCIAL: CORPORACION PERUANA DE RESTAURANTES S.A.C. RUC: 20505897812",
+    "price": 91.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Promos Grupales",
+    "name": "Combinación Perfecta",
+    "description": "Pizza Grande Clásica + 3 rolls de pepperoni. Promoción válida todos los días o hasta agotar stock. Stock mínimo de 300 unidades. No acumulable con otras promociones. RAZON SOCIAL: CORPORACION PERUANA DE RESTAURANTES S.A.C. RUC: 20505897812",
+    "price": 53.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Promos Grupales",
+    "name": "Combinación Perfecta Full",
+    "description": "Pizza Grande Clásica + 3 rolls de pepperoni + 1 Gaseosa 1L. Promoción válida todos los días o hasta agotar stock. Stock mínimo de 300 unidades. No acumulable con otras promociones. RAZON SOCIAL: CORPORACION PERUANA DE RESTAURANTES S.A.C. RUC: 20505897812",
+    "price": 61.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Promos Grupales",
+    "name": "Triple Pack Familiar",
+    "description": "3 Pizzas Familiares Clásicas+ Adicional",
+    "price": 143.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Promos Personales",
+    "name": "Personal Full",
+    "description": "1 Pizza Personal Clásica+ Gaseosa Personal + 3 Rolls de Pepperoni",
+    "price": 25.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Pizzas Familiares",
+    "name": "Pizza Familiar Clásica",
+    "description": "Pizza Familiar Clásica a elección",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Pizzas Familiares",
+    "name": "Pizza Familiar Especialidad",
+    "description": "Pizza Familiar Especialidad a elección",
+    "price": 47.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Pizzas Familiares",
+    "name": "Pizza Familiar Signature",
+    "description": "Pizza Familiar Signature a elección",
+    "price": 54.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Pizzas Medianas",
+    "name": "Pizza Mediana Clásica",
+    "description": "Pizza Mediana Clásica a elección",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Pizzas Medianas",
+    "name": "Pizza Mediana Especialidad",
+    "description": "Pizza Mediana Especialidad a elección",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Pizzas Medianas",
+    "name": "Pizza Mediana Signature",
+    "description": "Pizza Mediana Signature a elección",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Combos",
+    "name": "Combo Doble Pizza Familiar",
+    "description": "2 Pizzas Familiares Clásicas, 1 adicional y Gaseosa 1.5 Lt. Promoción válida todos los días o hasta agotar stock. Stock mínimo de 300 unidades. No acumulable con otras promociones. RAZON SOCIAL: CORPORACION PERUANA DE RESTAURANTES S.A.C. RUC: 20505897812",
+    "price": 137.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Combos",
+    "name": "Combo Triple Pizza Familiar",
+    "description": "3 Pizzas Familiares Clasicas, Complemento y 1 Gaseosa 1.5L. Stock mínimo de 300 unidades. No acumulable con otras promociones.RUC: 20505897812 Razón Social: CORPORACION PERUANA DE RESTAURANTES S.A.C.",
+    "price": 154.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bordes Especiales",
+    "name": "Borde Parmesano Grande Clásica",
+    "description": "Pizza grande clásica a elección con un delicioso borde cubierto con parmesano gratinado en los bordes (no lleva relleno de queso) y salsa de ajo",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bordes Especiales",
+    "name": "Borde Parmesano Grande Signature",
+    "description": "Pizza grande signature a elección con un delicioso borde cubierto con parmesano gratinado en los bordes (no lleva relleno de queso) y salsa de ajo",
+    "price": 59.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bordes Especiales",
+    "name": "Borde Parmesano Familiar Clasico",
+    "description": "Pizza familiar clásica a elección con un delicioso borde cubierto con parmesano gratinado en los bordes (no lleva relleno de queso) y salsa de ajo",
+    "price": 55.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bordes Especiales",
+    "name": "Pizza Borde de Queso Grande Clásica",
+    "description": "Pizza con Borde de Queso Grande Clásica a elección",
+    "price": 55.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bordes Especiales",
+    "name": "Pizza Borde de Queso Grande Signature",
+    "description": "Pizza con Borde de Queso Grande Signature a elección",
+    "price": 69.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bordes Especiales",
+    "name": "Pizza Borde de Queso Familiar Clásica",
+    "description": "Pizza con Borde de Queso Familiar Clásica a elección",
+    "price": 65.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Cheesesticks",
+    "description": "Cheesesticks de masa fresca, salsa especial de ajo y 100% mozzarella",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Fugazza",
+    "description": "Masa recién horneada, cubierta con salsa de ajo y cebolla blanca.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Rolls de Jamon",
+    "description": "Rolls de jamón enrollados con nuestra masa especial",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Rolls de Pepperoni",
+    "description": "Rolls de pepperoni enrollados con nuestra masa especial",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "8 Chicken Poppers",
+    "description": "8 Pechuga de pollo en trozos empanizados, cocinados al horno",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Mini Cheesesticks",
+    "description": "Cheesesticks con nuestra masa fresca, exquisita salsa especial de ajo y 100% mozzarella",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Palitos a la Parmesana",
+    "description": "Palitos a la Parmesana con masa fresca recién horneada, cubierta con nuestra salsa de ajo y sazonados con queso parmesano, especias italianas, salsa especial de ajo",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Nuditos de Ajo",
+    "description": "Nuditos de pan hechos con fresca masa y bañados con nuestra deliciosa salsa de ajo y queso parmesano",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Rolls de Canela",
+    "description": "6 Rolls de Canela, rolls enrollados con dulce de canela, cubiertos con azucar glaseada.",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Chicken Popppers x12",
+    "description": "Trozos de pechuga de pollo ligeramente empanizados, cocinados al horno y acompañados de tu salsa favorita.",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "9 Alitas",
+    "description": "Alitas de pollo asadas al horno servidas con salsa BBQ o salsa Búffalo.",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "6 Alitas",
+    "description": "6 alitas de pollo asadas al horno con salsa BBQ o salsa Búffalo",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Mini Palitos a la Parmesana",
+    "description": "Masa fresca recién horneada, cubierta con nuestra salsa de ajo y sazonados con queso parmesano y especias italianas, acompañada con nuestra deliciosa salsa especial de ajo. Vienen 6 unidades. RUC: 20505897812 Razón Social: CORPORACION PERUANA DE RESTAURAN",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Rolls de Cheddar x6",
+    "description": "Rolls enrollados con queso cheddar y mozarella, cubiertos con salsa cheddar.",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Acompañamientos",
+    "name": "Cup Salsa Cheddar",
+    "description": "Salsa de queso cheddar",
+    "price": 2.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Coca Cola Sabor Original 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Coca Cola Sin Azúcar 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Inca Kola Sabor Original 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Fanta Sabor Original 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Sprite Sin Azúcar 500 ml",
+    "description": "Gaseosa",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Coca Cola Sin Azúcar 1.5 L",
+    "description": "Gaseosa",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 1.5 L",
+    "description": "Gaseosa",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sabor Original 1 L",
+    "description": "Gaseosa",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 1 L",
+    "description": "Gaseosa",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Inca Kola Sabor Original 1 L",
+    "description": "Gaseosa",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 1 L",
+    "description": "Gaseosa",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Bebidas",
+    "name": "Agua San Luis 750 ml",
+    "description": "Agua",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Extras",
+    "name": "Salsa BBQ Extra",
+    "description": "Salsa",
+    "price": 1.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Extras",
+    "name": "Salsa Buffalo Extra",
+    "description": "Salsa",
+    "price": 1.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Extras",
+    "name": "4 Pepperoncinis",
+    "description": "Pepperoncinis",
+    "price": 1.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Extras",
+    "name": "Salsa de Ajo Extra",
+    "description": "Salsa",
+    "price": 1.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Papa John's - Cercado",
+    "category": "Extras",
+    "name": "Salsa Rosa",
+    "description": "Salsa RAZON SOCIAL: CORPORACION PERUANA DE RESTAURANTES S.A.C. RUC: 20505897812",
+    "price": 1.9,
+    "inStock": true
+  }
+]

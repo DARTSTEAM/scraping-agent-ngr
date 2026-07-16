@@ -1,0 +1,618 @@
+[
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "PROMOCIONES UNICAS",
+    "name": "Rokybox",
+    "description": "1 Roky´s Burger Clásica + Papas Fritas + 6 Tequeños",
+    "price": 65.38,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "PROMOCIONES UNICAS",
+    "name": "Combo Presidencial",
+    "description": "1 Pollo a la Brasa + Papas Fritas Familiares + Ensalada Clásica Familiar + Arroz Oriental Familiar + Cajita Mágica Brasa (incluye juguete sorpresa)",
+    "price": 173.08,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "PROMOCIONES UNICAS",
+    "name": "Día Rokys",
+    "description": "1/2 Pollo a la Brasa + Papas Medianas + 2 Gaseosas Personales",
+    "price": 64.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wraps",
+    "name": "Wrap Crispy de Pollo",
+    "description": "1 Rokywrap Crispy",
+    "price": 18.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wraps",
+    "name": "Wrap de Pollo a la Brasa",
+    "description": "1 Rokywrap Pollo a la Brasa",
+    "price": 18.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wraps",
+    "name": "Wrap Crispy de Pollo + Gaseosa",
+    "description": "1 Rokywrap Crispy + gaseosa 500ml.",
+    "price": 22.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wraps",
+    "name": "Wrap de Pollo a la Brasa + Gaseosa",
+    "description": "1 Rokywrap Pollo a la Brasa + gaseosa 500ml.",
+    "price": 22.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "2 Wrap a Elección",
+    "description": "2 Rokywrap a elección (Crispy o pollo a la brasa)",
+    "price": 54,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "2 Wrap a Elección + 2 Gaseosas",
+    "description": "2 Rokywrap a elección (Crispy o pollo a la brasa) + 2 gaseosas 500ml.",
+    "price": 61.69,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Promo 1/4 Brasa",
+    "description": "1/4 Pollo a la Brasa + papas",
+    "price": 30.62,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Promo 1/4 Brasa + Gaseosa",
+    "description": "1/4 Pollo A La Brasa + Gaseosa Personal",
+    "price": 34.46,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Promo Personal",
+    "description": "1/4 De Pollo + Papas Personales + Ensalada Personal + Gaseosa",
+    "price": 46,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Promo Mostrito",
+    "description": "1/4 Pollo A La Brasa + Papas + Arroz Chaufa",
+    "price": 42.15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Promo Mostrito Brasa + Gaseosa",
+    "description": "1/4 Pollo A La Brasa + Papas + Arroz Chaufa + Gaseosa",
+    "price": 46,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Combo Mostriqueño Personal",
+    "description": "1 Mostrito + 3 Tequeños + 1 Gaseosa Personal",
+    "price": 57.69,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Oferta 1",
+    "description": "1 Pollo + Papas + Ensalada + 1 Gaseosa 1.5L",
+    "price": 151.85,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Megarokyto",
+    "description": "1 Pollo + 1/4 De Pollo + Papas + Ensalada + 1 Gaseosa 1.5L",
+    "price": 155.85,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Promo Para Compartir",
+    "description": "1/2 Pollo + Papas + Ensalada + 2 Gaseosas Personales",
+    "price": 73.08,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Promociones",
+    "name": "Rokys Burger Clásica",
+    "description": "1 Rokys Burger + Papas Onduladas",
+    "price": 28.77,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Combos",
+    "name": "Mega Banquete",
+    "description": "1 Pollo + 1/2 Pollo + Papas + Ensalada + Gaseosa 1.5L",
+    "price": 118.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Combos",
+    "name": "Combo Limonada",
+    "description": "1 Pollo A La Brasa + Papas Fritas + Ensalada Clásica + Limonada 2L + Salsas",
+    "price": 98.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Combos",
+    "name": "Combo Broaster X6",
+    "description": "6 Piezas Broaster + Porción De Papas + Ensalada De Col",
+    "price": 58.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Combos",
+    "name": "Combo Broaster X 10",
+    "description": "10 Piezas Broaster + Porción De Papas + Ensalada De Col",
+    "price": 86.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Combos",
+    "name": "Mega Banquete Broaster",
+    "description": "Balde Broaster x16 + Papas Familiares + Arroz Oriental + Ensalada de Col + gaseosa 1.5 LT",
+    "price": 123.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Combos",
+    "name": "Pack Refréscate",
+    "description": "1 Pollo + Papas Fritas + Ensalada Clásica + Salsa + Chicha Morada 2L",
+    "price": 108.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Parrillas",
+    "name": "Parrilla Clasica",
+    "description": "2 Bife 250G + 2 Frankfurter + 2 Chuleta 200G + 2 Chorizo + 1 Pechuga De Pollo 250G + Pancita O Mollejita + 2 Palito De Anticucho + Papas Fritas + Ensalada Parrillera Mediana + Ensalada Alemana Mediana",
+    "price": 191.3,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Parrillas",
+    "name": "1/2 Parrilla Brasa",
+    "description": "1 Bife 250G + 1 Chuleta 200G + 1/2 Pollo A La Brasa + 1 Chorizo + 1 Frankfurter + 1 Palito De Anticucho + Papas Fritas + Ensalada Parrillera Mediana + Ensalada Alemana Mediana",
+    "price": 118.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Parrillas",
+    "name": "Parrilla Para Dos",
+    "description": "1/2 Pollo A La Brasa + 2 Palitos De Anticucho + 1 Frankfurter + 1 Chorizo + Pancita O Mollejita + Papas Fritas + Ensalada Parrillera Mediana + Ensalada Alemana Mediana",
+    "price": 90,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Parrillas",
+    "name": "1/2 Parrilla Clásica",
+    "description": "1 Bife 250G + 1 Chuleta 200G + 1 Pechuga De Pollo 250G + 1 Chorizo + 1 Frankfurter + 1 Palito De Anticucho + Papas Fritas + Ensalada Parrillera Mediana + Ensalada Alemana Mediana",
+    "price": 122.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Parrillas",
+    "name": "Rokyllero Anticuchero",
+    "description": "Filete De Pierna Anticuchero + Papas Doradas + Choclo + Ensalada + Vaso De Chicha",
+    "price": 36.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Parrillas",
+    "name": "Rokyllero Pachamanquero",
+    "description": "Filete De Pierna Pachamanquero + Papas Doradas + Choclo + Ensalada + Vaso De Chicha",
+    "price": 36.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Fusión Criolla",
+    "name": "Lomo Saltado",
+    "description": "Lomo Saltado",
+    "price": 41.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Fusión Criolla",
+    "name": "Pollo Saltado",
+    "description": "Pollo Saltado - Papa Amarilla",
+    "price": 37.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Fusión Criolla",
+    "name": "Tallarin De Carne",
+    "description": "Tallarin De Carne",
+    "price": 41.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Fusión Criolla",
+    "name": "Chaufa De Pollo",
+    "description": "Chaufa De Pollo",
+    "price": 37.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa Parrillera",
+    "description": "Hamburguesa + Papas Onduladas + Chorizo + Lechuga Orgánica + Tomate + Salsa Chimi Churri",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa Extrema",
+    "description": "2 Hamburguesas + Papas Onduladas + Doble Queso + Lechuga Orgánica + Tomate + Tocino",
+    "price": 28.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa Suprema + Papas",
+    "description": "Hamburguesa + Papas Onduladas + Tocino + Lechuga Orgánica + Tomate + Salsa Honey Mustard",
+    "price": 23.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wings",
+    "name": "6 Alitas Hot Bbq",
+    "description": "6 Alitas Hot BBQ + papas",
+    "price": 26.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wings",
+    "name": "3 Rokys Wings + 3 Alitas Hot Bbq",
+    "description": "3 Rokys Wings + 3 Alitas Hot BBQ + papas",
+    "price": 26.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wings",
+    "name": "6 Rokys Wings + 6X Alitas Hot Bbq",
+    "description": "6 Rokys Wings + 6 Alitas Hot BBQ + papas",
+    "price": 48.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wings",
+    "name": "6 Rokys Wings+6 Alitas Hot Bbq+Gaseosa",
+    "description": "6 Rokys Wings + 6 Alitas Hot BBQ + papas + 2 gaseosas",
+    "price": 53.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wings",
+    "name": "6 Rokys Wings + Papas Fritas",
+    "description": "6 ALITAS PICANTES + PAPAS FRITAS",
+    "price": 22.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wings",
+    "name": "12 Alitas Hot Bbq",
+    "description": "12 Alitas Hot BBQ + papas",
+    "price": 48.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wings",
+    "name": "12 Rokys Wings + Papas Fritas",
+    "description": "12 Alitas Picantes + Papas Fritas",
+    "price": 37.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Wings",
+    "name": "Alitas Hot Bbq X12 + Gaseosa",
+    "description": "12 Alitas Hot BBQ + papas + 2 gaseosas",
+    "price": 53.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "2 Piezas Broaster",
+    "description": "2 Piezas Broaster + Papas",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "Crocante Mixto Doble",
+    "description": "2 Piezas Broaster + Arroz Oriental Personal + Porcion De Papas 120 Gr + Salsas",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "Salchipapa Clásica",
+    "description": "Papas Fritas + Salchicha",
+    "price": 21.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "Salchipapa Especial",
+    "description": "Papas Fritas + Salchicha + 2 Huevos",
+    "price": 23.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "Wantanes Hot Brasa X3",
+    "description": "3 wantanes hot brasa",
+    "price": 9.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "Wantanes Hot Brasa X6",
+    "description": "6 wantanes hot brasa",
+    "price": 18.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "Tequeños X3",
+    "description": "3 tequeños brasa",
+    "price": 7.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "Tequeños X6",
+    "description": "6 tequeños brasa",
+    "price": 13.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Piqueos",
+    "name": "Tequeño X12",
+    "description": "12 tequeños brasa",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Acompañamientos",
+    "name": "Ensalada Delicia De Palta",
+    "description": "Ensalada Delicia De Palta",
+    "price": 26.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Acompañamientos",
+    "name": "Ensalada Clasica",
+    "description": "Ensalada Clasica",
+    "price": 17.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Maracuyá 1L",
+    "description": "Maracuyá 1L",
+    "price": 26.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Limonada 1L",
+    "description": "Limonada 1L",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca Cola Personal",
+    "description": "Gaseosa Coca Cola De 500Ml",
+    "price": 7.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca Cola 1.5L",
+    "description": "Gaseosa Coca Cola De 1.5L",
+    "price": 17.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola 3L",
+    "description": "Gaseosa Inca Kola De 3L",
+    "price": 22.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca Cola 3L",
+    "description": "Gaseosa Coca Cola De 3L",
+    "price": 22.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Personal",
+    "description": "Gaseosa Inca Kola De 500Ml",
+    "price": 7.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola 1.5L",
+    "description": "Gaseosa Inca Kola De 1.5L",
+    "price": 17.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Bebidas",
+    "name": "Chicha Morada 1L",
+    "description": "Chicha Morada 1L",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Jugo Especial 1/2 L.",
+    "description": "Jugo Especial 1/2 L",
+    "price": 16.1,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Jugo De Fresa 1/2 L.",
+    "description": "Jugo De Fresa 1/2 L",
+    "price": 13.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Jugo De Naranja 1/2 L.",
+    "description": "Jugo De Naranja 1/2 L",
+    "price": 11.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Jugo Surtido 1",
+    "description": "Jugo Surtido 1/2L De Naranja + Piña + Fresa",
+    "price": 13.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Jugo Surtido 3",
+    "description": "Jugo Surtido 1/2L De Piña + Fresa + Plátano + Papaya",
+    "price": 13.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Sandwich Asado De Res",
+    "description": "Sandwich Asado De Res",
+    "price": 17.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Americano",
+    "description": "2 Huevos Fritos + Mantequilla + Mermelada + Tostada + Café",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Huachano",
+    "description": "Chicharrón + Camote Relleno + Salchicha Huachana + Pan + Café",
+    "price": 18.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Sandwich Butifarra",
+    "description": "\"Sandwich Jamón Del Pais + Lechuga + Sarsa Criolla + Café",
+    "price": 17.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Desayuno Rokys Especial",
+    "description": "Sandwich De Pollo Desmenuzado + Jamón + Tocino + Queso + Huevo + Papas Fritas + Café",
+    "price": 23.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Roky's - Surquillo",
+    "category": "Desayunos",
+    "name": "Sándwich Chicharrón sin café",
+    "description": "Sándwich Chicharrón sin café",
+    "price": 22.9,
+    "inStock": true
+  }
+]

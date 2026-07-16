@@ -1,0 +1,522 @@
+[
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Promos Wantásticas",
+    "name": "Dúo Mostro Casero",
+    "description": "2 Mostros Casero de pollo saltado, acompañados de 2 gaseosas personales.",
+    "price": 67.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Promos Wantásticas",
+    "name": "Dúo Combiwanta",
+    "description": "2 Combinados clásicos de chaufa y tallarín de pollo acompañado de 2 wantanes y su salsa tamarindo",
+    "price": 53.73,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Promos Wantásticas",
+    "name": "Promo Combo Chijaukay",
+    "description": "Chaufita de pollo + Pollo Chijaukay (ajá, es el salado!) + 2 Wantanes + Salsa Tamarindo",
+    "price": 30.87,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Promos Wantásticas",
+    "name": "Promo Combo Tipakay",
+    "description": "Chaufita de pollo + Pollo Tipakay (aja, es el dulce!) + 2 wantanes + Salsa Tamarindo",
+    "price": 30.87,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Promos Wantásticas",
+    "name": "Aeropuerto Picante",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y Pollo Picante",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Combiwanta",
+    "description": "Combinado clásico de chaufa y tallarín de pollo, 2 wantanes y 1 bebida personal.",
+    "price": 32.77,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Combo Mostrozo",
+    "description": "Disfruta nuestro mostro casero de pollo saltado con una bebida personal a elección",
+    "price": 33.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Combo Aeropuerto",
+    "description": "Elije tu Aeropuerto favorito: Chijaukay, tipakay, Kamlú Wantán o Chancho Tausi y acompáñalo de 01 gaseosa personal",
+    "price": 32.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Dupla Wanta",
+    "description": "Un chaufa de pollo y un plato a elección (chijaukay o tipakay)",
+    "price": 51.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Wanteamos",
+    "description": "6 Wantanes Clásicos, 6 Siu Kaos y 2 Chaufas de Pollo",
+    "price": 70.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Taypa Para 4",
+    "description": "6 Siu Mai, 2 Mostros Caseros y 2 Aeropuertos a elección (Chijaukay o Tipakay)",
+    "price": 125.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Mostrozo Casero",
+    "description": "1 Mostro Casero",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Aerowanta Chijaukay",
+    "description": "1 Aeropuerto Chijaukay",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Pack Wanta",
+    "description": "Chicharrón De Pollo Con Ají Chifero, Acompañado De Seis Wantanes Clásicos",
+    "price": 38.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Promo Wanta Casero",
+    "description": "Combinado de Chaufita de pollo con Saltado de Pollo",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Promo Wanta Chijaukay",
+    "description": "Combinado de Chaufita de pollo con Chijaukay",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Combinado Chijaukay",
+    "description": "1 Combinado de Arroz Chaufa y Chijaukay",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Combinado Tipakay",
+    "description": "1 Combinado de Arroz Chaufa y Tipakay",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Rappi Promos",
+    "name": "Taypá para 2",
+    "description": "6 Wantanes clásicos de Pollo + su salsa Tamarindo + 1 Arroz Chaufa de pollo + 1 Pollo Chijaukay",
+    "price": 66.7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Aeropuertos",
+    "name": "Aeropuerto Chijaukai",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y chijukay",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Aeropuertos",
+    "name": "Aeropuerto Tipakay",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y tipakay",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Aeropuertos",
+    "name": "Aeropuerto Kamlu Wantan",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y kam-lu con 2 wantanes.",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Aeropuertos",
+    "name": "Aeropuerto Chancho Tausí",
+    "description": "Chaufa y Tallarín de pollo saltados, tortilla de huevo y chancho al tausí.",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Mostros",
+    "name": "Mostro Hong Kong",
+    "description": "Base de arroz chaufa de pollo, montado con chancho asado, huevo frito y nabo encurtido.",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Mostros",
+    "name": "Mostro Casero",
+    "description": "Base de arroz chaufa de pollo, montado con saltado de pollo, papas fritas, platano frito y huevo frito.",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Mostros",
+    "name": "Mostro de Chicharrón",
+    "description": "Base de arroz chaufa de pollo, montado con chicharrón de Pollo, papas fritas, plátano frito y huevo frito.",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Arma Tu Wanta",
+    "name": "Arma tu Wanta",
+    "description": "Ármalo como a ti te guste. Base de chaufa. De tallarín saltado. ¡O de las dos cosas! Y puedes sumarle hasta dos fondos (Pollo Tipakay, Chijaukay, Cruyok, Picante o Chancho al Ajo). Viene con su infaltable gaseosa.",
+    "price": 48.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Wan",
+    "name": "Combo Wanta Chijaukay",
+    "description": "Chaufita de pollo + Pollo Chijaukay (ajá, es el salado!) + 2 wantanes + su gaseosa. ¡¡Tremendo combazo!!",
+    "price": 36.77,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Wan",
+    "name": "Combo Wanta Tipakay",
+    "description": "Chaufita de pollo + Pollo Tipakay (aja, es el dulce!) + 2 wantanes + su gaseosa. Ta bueno, ¿no?",
+    "price": 36.77,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Wan",
+    "name": "Combo Patita",
+    "description": "Chaufita de pollo + 2 wantanes + su gaseosa personal.",
+    "price": 19.82,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Wan",
+    "name": "Combinado a lo Pobre",
+    "description": "Un combinado de Arroz Chaufa y Tallarín Saltado de pollo, montado con plátano y huevo frito.",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Dos",
+    "name": "Dúo Combinados",
+    "description": "1 Combinado Tipakay + 1 Combinado Chijaukay + 4 Wantanes Clásicos + 2 Gaseosas Personales.",
+    "price": 62.23,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Dos",
+    "name": "Dúo de aeropuertos",
+    "description": "Elige tus dos aeropuertos favoritos: chijaukay, tipakay, kamlú wantán o chancho al ajo y acompáñalos con 2 bebidas personales",
+    "price": 65.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Dos",
+    "name": "Dúo Bocaditos",
+    "description": "Elige tus dos bocaditos favoritos: wantanes clásicos, rollitos primavera o siu kaos fritos",
+    "price": 39.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Dos",
+    "name": "Dúo Mostros",
+    "description": "Un Mostro de Chicharrón de Pollo y un Mostro Casero de Pollo Saltado.",
+    "price": 55.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Más",
+    "name": "Wanta Para 6",
+    "description": "6 Wantanes Clásicos, 1 Chaufa de Pollo, 1 Tallarin de Pollo y 2 Platos (Tipakay/Chijaukay/Cruyok/Picante)",
+    "price": 126.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Combos Pa'Más",
+    "name": "Wanta Para 4",
+    "description": "1 Chaufa de Pollo, 1 Tallarin de Pollo, 1 Plato a elección(TIPAKAY/ CHIJAUKAY/ CRUYOK O PICANTE) y 6 Wantanes Fritos de Pollo.",
+    "price": 92.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bocaditos & Piqueos",
+    "name": "Wantán Frito (6 un)",
+    "description": "6 Wantanes fritos re-llenos de pollo y su indispensable salsa tamarindo para wantearlos en cada bocado.",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bocaditos & Piqueos",
+    "name": "Siu Mai (6 un)",
+    "description": "6 Siu mais rellenos de chancho y hongos. Wantéalos en su rica salsa hoisin.",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bocaditos & Piqueos",
+    "name": "Spring Rolls (5 un)",
+    "description": "5 Rollitos rellenos de chancho y verduras, con salsa de limón y canela china. Aclaración: Son rollitos primavera pero se pueden comer todo el año.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bocaditos & Piqueos",
+    "name": "Bombitas Chinas de Chancho (4 un)",
+    "description": "4 Mini Baos con un lado al vapor y el otro doradito, rellenos de generoso chancho con piña. A estos los comes hasta con los ojos.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bocaditos & Piqueos",
+    "name": "Chanchito con Nabo",
+    "description": "Chanchito asado con nabo encurtido. Sabemos que va a dar que hablar",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bocaditos & Piqueos",
+    "name": "Chicharron de Pechuga",
+    "description": "Chicharrón de pechuga con su cremita de ají chifero.",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bocaditos & Piqueos",
+    "name": "Siu Kao (6 un)",
+    "description": "6 Siu Kaos rellenos de cerdo",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Chaufas",
+    "name": "Chaufa de Pollo",
+    "description": "Arroz salteado al wok con pollo, huevo y cebolla china. Ajá, el clásico chaufita de pollo.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Chaufas",
+    "name": "Chaufa de Chancho asado",
+    "description": "Arroz salteado al wok con chanchito asado, huevo y cebolla china. Ajá, el clásico chaufita de chancho asado.",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Chaufas",
+    "name": "Chaufa Vegetariano",
+    "description": "1 Chaufa Vegetariano a Base de Verduras",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Tallarines",
+    "name": "Tallarín de Pollo con Verduras",
+    "description": "Tallarín de Pollo al estilo del chifa antiguo, primero bien dorado, luego bien saltado y por último tu aporte: bien comido.",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Tallarines",
+    "name": "Tallarín de Chancho con Verduras",
+    "description": "Tallarín de Chancho asado con verduras, bien saltado, bien mezclado y bien rico.",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Tallarines",
+    "name": "Tallarín Vegetariano",
+    "description": "Tallarín Con Verduras",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Tallarines",
+    "name": "Tallarín Taypá",
+    "description": "Tallarín Con Pollo Chancho Y Verduras",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Clásicos",
+    "name": "Pollo Chijaukay (el salado!)",
+    "description": "El clásico de toda la vida, pierna crocante de pollo. Viene con salsa ajonjolí para darle un rico baño. Correcto, Chijaukay es el salado.",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Clásicos",
+    "name": "Pollo Tipakay (el dulce!)",
+    "description": "Pollo crocante con salsa Tipakay al tamarindo. Estabas en lo cierto, Tipakay es el dulce.",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Clásicos",
+    "name": "Pollo Cruyok",
+    "description": "Pollito crocante con salsa agridulce, verduras saltadas y piña. Si no te gusta lo agridulce, piña.",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Clásicos",
+    "name": "Pollo Picante",
+    "description": "Pollito saltado con jalapeño, pimientos, kión, cebolla china y maní. Este pica wantástico.",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Sopas",
+    "name": "Sopa Wantán",
+    "description": "Rica sopita con pollo, chancho, wantanes, huevito y verduras.",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Sopas",
+    "name": "Sopa Poderosa",
+    "description": "Sopa poderosa al estilo caldo de gallina",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 500 ml",
+    "description": "Coca-Cola Sin Azúcar 500 ml. Muchos dicen que chifa va con Inca... Pero la Coca-Cola Sin Azúcar no está tan de acuerdo.",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 500 ml",
+    "description": "Inca Kola Sin Azúcar 500 ml. Tu Inkacolita de siempre... en este caso sin azúcar y sin tanta culpa.",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Agua San Luis Sin Gas 625 ml",
+    "description": "Agua San Luis Sin Gas 625 ml. ¡Agüita para ti, wantita!",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 1.5 L",
+    "description": "Coca-Cola Sin Azúcar 1.5 L. Muchos dicen que chifa va con Inca... Pero la Coca-Cola Sin Azúcar no está tan de acuerdo.",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Bebidas",
+    "name": "Inca Kola Sin Azúcar 1.5 L",
+    "description": "Inca Kola Sin Azúcar 1.5 L. Tu Inkacolita de siempre... en este caso sin azúcar y sin tanta culpa.",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Bombitas Lay won (4 un)",
+    "description": "4 Bocaditos dulces rellenos de salsa Lay Won",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Salsas",
+    "name": "Salsa de Ají Chifero",
+    "description": "Salsa de ají chifero",
+    "price": 2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Wanta - Chifa - Chacarilla-Santa Cruz",
+    "category": "Salsas",
+    "name": "Salsa Tamarindo",
+    "description": "Salsa Tamarindo",
+    "price": 2,
+    "inStock": true
+  }
+]

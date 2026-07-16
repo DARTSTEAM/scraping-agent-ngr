@@ -1,0 +1,354 @@
+[
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Destacados",
+    "name": "Wrapper Chingon + Papas",
+    "description": "1 Wrapper chingon, 1 papas y 2 salsas. - imagen referencial",
+    "price": 35,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "3 Tenders",
+    "description": "3 Tenders y 1 una salsa. imagen referencial.",
+    "price": 17,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "3 Tenders + Papas",
+    "description": "3 Tenders, 1 papas  y 1 salsa - imagen referencial",
+    "price": 19,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "4 Tenders",
+    "description": "4 Tenders y 1 una salsa. imagen referencial.",
+    "price": 20,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "4 Tenders + Papas",
+    "description": "4 Tenders, 1 papas  y 1 salsa - imagen referencial",
+    "price": 26,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "6 Tenders",
+    "description": "6 Tenders y 1 una salsa. imagen referencial.",
+    "price": 26,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "6 Tenders + Papas",
+    "description": "6 Tenders, 1 papas y 2 salsa - imagen referencial",
+    "price": 32,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "Pack 8 Tenders",
+    "description": "8 Tenders, 2 papas , 2 salsas. imagen referencial.",
+    "price": 45,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "Pack 12 Tenders",
+    "description": "12 Tenders, 2 papas , 4 salsas. imagen referencial.",
+    "price": 54,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "Pack 18 Tenders",
+    "description": "18 Tenders, 2 papas , 6 salsas. imagen referencial.",
+    "price": 69,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Tenders",
+    "name": "Pack 24 Tenders",
+    "description": "24 Tenders, 2 papas , 8 salsas. imagen referencial.",
+    "price": 85,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Wrappers",
+    "name": "Wrapper Clásico",
+    "description": "3 Tenders, queso cheddar, tomate lechuga, mágica y 1 salsa. - imagen referencial.",
+    "price": 26,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Wrappers",
+    "name": "Wrapper Clasico + Papas",
+    "description": "1 Wrapper clasico, 1 papas y 2 salsas. - imagen referencial",
+    "price": 32,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Wrappers",
+    "name": "Wrapper Blt (con Doble Tocino) + Papas",
+    "description": "Wrapper blt (con doble tocino) 1 papas y 2 salsas. - imagen referencial.",
+    "price": 34,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Wrappers",
+    "name": "Wrapper Blt (con Doble Tocino)",
+    "description": "3 Tenders, doble tocino crocante, doble queso cheddar, tomate, lechuga, salsa mágica y 1 salsa. - imagen referencial.",
+    "price": 28,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Wrappers",
+    "name": "Wrapper Chingon + Papas",
+    "description": "1 Wrapper chingon, 1 papas y 2 salsas. - imagen referencial",
+    "price": 35,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Wrappers",
+    "name": "Wrapper Chingon",
+    "description": "3 Tenders, queso cheddar, guacamole, trozos de nachos, tocino crocante, salsa mágica, kétchup de jalapeños y 1 salsa. levemente picante. \n - imagen referencial",
+    "price": 29,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Wrappers",
+    "name": "2 Wrapper Clasicos",
+    "description": "2 Wrapper clasico y 2 salsas. - imagen referencial",
+    "price": 52,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salads",
+    "name": "Mexicana Salad  + Papas",
+    "description": "1 Mexicana salad, 1 papas y 2 salsas",
+    "price": 35,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salads",
+    "name": "Mexicana Salad",
+    "description": "3 Tenders, lechuga, pico de gallo, choclo americano, guacamole, queso mozzarella, nachos y 2 salsas",
+    "price": 29,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salads",
+    "name": "Bacon Mex + Papas",
+    "description": "1 Bacon mex, 1 papas y 2 salsas. - imagen referencial",
+    "price": 36,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salads",
+    "name": "Bacon Mex Salad",
+    "description": "Bacon mex salad",
+    "price": 30,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Sandwiches",
+    "name": "Sandwich Clásico",
+    "description": "2  Tenders, cheddar, tomate, lechuga, salsa mágica y pan martin's. - imagen referencial.",
+    "price": 23,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Sandwiches",
+    "name": "Sandwich Clásico + Papas ",
+    "description": "1 Sandwich clásico, 1 papas y 2 salsas. - imagen referencial.",
+    "price": 29,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Sandwiches",
+    "name": "Sandwich Blt (con Doble Tocino)",
+    "description": "2  Tenders, doble tocino crocante, queso cheddar, tomate, lechuga, salsa mágica y pan martin's. imagen referencial.",
+    "price": 25,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Sandwiches",
+    "name": "Sandwich Blt (con Doble Tocino) + Papas",
+    "description": "1 Sandwich blt (con doble tocino), 1 papas y 2 salsas. - imagen referencial.",
+    "price": 31,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Sandwiches",
+    "name": "Sandwich Chingón",
+    "description": "2 Tenders, queso cheddar, guacamole, trozos de nachos, tocino crocante, salsa mágica, kétchup de jalapeños y pan martin's. levemente picante. imagen refencial",
+    "price": 26,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Sandwiches",
+    "name": "Sandwich Chingón + Papas",
+    "description": "1 Sandwich chingón, 1 papas y 2 salsas. - imagen referencial.",
+    "price": 32,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Bebidas",
+    "name": "Limonada Pink",
+    "description": "Agua, limón, azúcar y extracto de betarraga. sin preservantes ni colorantes. \n",
+    "price": 6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Bebidas",
+    "name": "Limonada Og",
+    "description": "Agua, limón, azúcar y hierba buena. sin preservantes ni colorantes.\n",
+    "price": 6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Bebidas",
+    "name": "Inca Cola Original",
+    "description": "Inca cola original",
+    "price": 6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Bebidas",
+    "name": "Inca Cola Zero",
+    "description": "Inca cola zero",
+    "price": 6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Bebidas",
+    "name": "Coca Cola Original",
+    "description": "Coca cola original",
+    "price": 6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Bebidas",
+    "name": "Coca Cola Zero",
+    "description": "Coca cola zero",
+    "price": 6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Bebidas",
+    "name": "Sprite",
+    "description": "Sprite",
+    "price": 6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Papas",
+    "name": "Papas ",
+    "description": "Porción de papas. - imagen refencial",
+    "price": 7,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salsas",
+    "name": "Honey Mustard",
+    "description": "Honey mustard - imagen refencial",
+    "price": 2.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salsas",
+    "name": "Ranch",
+    "description": "Ranch - imagen refencial",
+    "price": 2.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salsas",
+    "name": "Aji Pollero",
+    "description": "Aji pollero - imagen refencial",
+    "price": 2.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salsas",
+    "name": "Magica",
+    "description": "Magica - imagen refencial",
+    "price": 2.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salsas",
+    "name": "Mayonesa",
+    "description": "Mayonesa - imagen refencial",
+    "price": 2.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salsas",
+    "name": "Vinagreta",
+    "description": "Vinagreta - imagen refencial",
+    "price": 2.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Salsas",
+    "name": "Ketchup",
+    "description": "Ketchup - imagen refencial",
+    "price": 2.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Yopo - Santa Cruz",
+    "category": "Postres",
+    "name": "Helado Cheesecake De Pistacho 5 Oz",
+    "description": "Helado pistacho 5 oz",
+    "price": 9,
+    "inStock": true
+  }
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Promos Juan Valdez",
+    "name": "Pack 2 nevados de café 16 oz",
+    "description": "Dos nevados de café medianos (16oz) a precio especial, preparados con café premium colombiano, mezcla láctea, hielo frappeado y chantilly",
+    "price": 22,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Promos Juan Valdez",
+    "name": "Combo el cajamarquinito",
+    "description": "Café americano 9 oz o café latte 9 oz + rosquillas cajamarquinas (5 und)",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Promos Juan Valdez",
+    "name": "Cappuccino 12 oz y ciabatta de pollo",
+    "description": "Cappuccino 12 oz y sándwich ciabatta de pollo.",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Promos Juan Valdez",
+    "name": "Americano 12 oz y lomito ahumado",
+    "description": "Café americano, tamaño 12oz y sándwich de lomito ahumado.",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas Calientes",
+    "name": "Café americano",
+    "description": "Café premium colombiano, ideal para cualquier momento del día.",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas Calientes",
+    "name": "Café cappuccino",
+    "description": "Café premium colombiano con leche vaporizada y espuma suave.",
+    "price": 10.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas Calientes",
+    "name": "Capuccino wicao",
+    "description": "Capuccino combinado con crema de whisky y licor de cacao, presentación pequeña (9 oz).",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas Calientes",
+    "name": "Café latte",
+    "description": "Suave y delicioso, el equilibrio perfecto entre café premium colombiano y leche.",
+    "price": 10.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas Calientes",
+    "name": "Latte de manjar blanco",
+    "description": "Suave y delicioso: café premium colombiano con el toque único del manjar blanco.",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas Calientes",
+    "name": "Latte caramelo",
+    "description": "El equilibrio ideal: café premium colombiano, leche y salsa de caramelo.",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas Calientes",
+    "name": "Latte vainilla canela",
+    "description": "Café premium colombiano, leche y el toque especial de la vainicanela.",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas Calientes",
+    "name": "Mocca caliente",
+    "description": "El balance perfecto entre nuestro café premium colombiano, leche vaporizada y salsa de chocolate.",
+    "price": 13.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado de café",
+    "description": "Preparado con café premium colombiano, mezcla láctea, hielo frappeado y chantilly",
+    "price": 12.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado chai balance",
+    "description": "Deliciosa mezcla de chai en polvo, mezcla láctea, hielo frappeado y decorado con chantilly",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado de proteína lab nutrition",
+    "description": "Combinamos café premium colombiano con proteína hidrolizada lab nutrition, hielo frappeado, mezcla láctea y decorado con chantilly.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado beauty glow",
+    "description": "Refrescante mezcla de arándanos con colágeno hidrolizado, un toque de limón, azúcar impalpable y un final cremoso de chantilly.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado manjar de cajamarca",
+    "description": "Combinamos café premium colombiano con hielo frappeado, mezcla láctea con manjar blanco cajamarquino y decorado con chantilly.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado de brownie",
+    "description": "Combinamos café premium colombiano con hielo frappeado, mezcla láctea, brownie y decorado con chantilly.",
+    "price": 16,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado de caramelo",
+    "description": "Combinamos café premium colombiano, salsa de caramelo, mezcla láctea, hielo frappeado, decorado con crema chantily y salsa de caramelo",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado de manjar blanco",
+    "description": "Café premium colombiano, hielo frappeado, mezcla láctea con manjar blanco decorado con chantilly.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado mocca",
+    "description": "Café premium colombiano con hielo frappeado, mezcla láctea, salsa de chocolate y la cremosidad irresistible del chantilly.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado chocolúcuma",
+    "description": "Café premium colombiano con hielo frappeado, mezcla láctea, pulpa de lúcuma, salsa de chocolate y chantilly.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Nevados",
+    "name": "Nevado de oreo",
+    "description": "Café premium colombiano, galleta oreo, base láctea, hielo frappeado, decorada con crema chantily.",
+    "price": 15,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas frías",
+    "name": "Camu camu summer cloud",
+    "description": "Refrescante bebida a base de pulpa de camu camu, ginger ale, jarabe de goma, hielo y un suave cold foam",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas frías",
+    "name": "Mango maracuyá cloud",
+    "description": "Refrescante bebida a base de pulpa de maracuyá y mango, jarabe de goma, hielo y un suave cold foam.",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas frías",
+    "name": "Maras caramel cloud",
+    "description": "Refrescante bebida a base de espresso, salsa de caramelo, saborizante de caramelo, hielo, cold foam y un toque de sal de maras.",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas frías",
+    "name": "Latte frío",
+    "description": "Café premium colombiano combinado con leche y servido con hielo",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas frías",
+    "name": "Mocca frío",
+    "description": "Café premium colombiano con leche fría y un toque de chocolate, servido con hielo",
+    "price": 14,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas frías",
+    "name": "Latte frío manjar cajamarquino",
+    "description": "Café premium colombiano mezclado con leche, servido con hielo y manjar de cajamarca",
+    "price": 14.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Bebidas frías",
+    "name": "Jugo de naranja natural",
+    "description": "Jugo de naranja recién exprimida, fresco, ligero y lleno de energía",
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Fruppes",
+    "name": "Fruppe de fresa",
+    "description": "Bebida fría, preparada con mezcla láctea, hielo y pulpa de fresa",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Fruppes",
+    "name": "Fruppe de lúcuma",
+    "description": "Bebida fría, preparada con mezcla láctea, hielo y pulpa de lúcuma",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Fruppes",
+    "name": "Fruppe de mango",
+    "description": "Bebida fría, preparada con mezcla láctea, hielo y pulpa de mango",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Fruppes",
+    "name": "Fruppe de maracuyá",
+    "description": "Bebida fría, preparada con mezcla láctea, hielo y pulpa de maracuyá.",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería salada",
+    "name": "Rosquillas cajamarquinas",
+    "description": "Sabor salado, textura crujiente (5 unid)",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería salada",
+    "name": "Croissant de mantequilla",
+    "description": "Croissant de mantequilla recién horneado",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería salada",
+    "name": "Ciabatta de pollo",
+    "description": "Pan ciabatta, relleno con pollo jugoso, mayonesa cremosa y el toque justo de mostaza.",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería salada",
+    "name": "Empanada de carne",
+    "description": "Empanada rellena de carne y huevo.",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería salada",
+    "name": "Empanada de pollo",
+    "description": "Empanada rellena de pollo desmenuzado.",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería salada",
+    "name": "Mini croissant mantequilla",
+    "description": "Croissant pequeño relleno de mantequilla, recién horneado (1 und)",
+    "price": 3,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería dulce",
+    "name": "Croissant de chocolate",
+    "description": "Croissant recién horneado, relleno con chocolate.",
+    "price": 6.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería dulce",
+    "name": "Torta de plátano",
+    "description": "Keke de plátano, suave y húmedo, con sabor natural y dulce, ideal para cualquier momento.",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería dulce",
+    "name": "Torta de zanahoria",
+    "description": "Torta de zanahoria con capas de bizcocho y crema. Ideal para disfrutar en cualquier ocasión.",
+    "price": 10.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería dulce",
+    "name": "Torta de chocolate",
+    "description": "Keke húmedo de chocolate, fudge, manjarblanco, y chocolate bitter",
+    "price": 12.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería dulce",
+    "name": "Muffin triple chocolate",
+    "description": "Muffin de chocolate, esponjoso y dulce, con intenso sabor a cacao, ideal para acompañar tu café",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería dulce",
+    "name": "Muffin yogurt y cranberry",
+    "description": "Muffin de yogurt, suave y esponjoso, con sabor ligero y delicado, ideal para cualquier momento.",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería dulce",
+    "name": "Galletón chocolate chips",
+    "description": "Galletón chocolate chips.",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Pastelería dulce",
+    "name": "Galletón avena y pasas",
+    "description": "Galletón avena y pasas",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café volcán grano 454g",
+    "description": "Aroma pronunciado, baja acidez y un cuerpo alto; rinde 65 tazas aprox.",
+    "price": 54,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café cumbre grano 454g",
+    "description": "Perfil intenso, con notas de uva semiseca, cocoa y té; rinde 65 tazas aprox.",
+    "price": 54,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café huila grano 454g",
+    "description": "Café de origen balanceado, con notas de sabor a naranja madura y dulce caramelo, rinde 65 tazas aprox.",
+    "price": 59,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café sierra nevada grano 454g",
+    "description": "Destaca por sus intensas notas de chocolate negro, dulce de caramelo y nuez tostada; rinde 65 tazas aprox.",
+    "price": 59,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café antioquia grano 454g",
+    "description": "Balanceado con notas de sabor a panela, ciruela roja y manzana roja; rinde 65 tazas aprox.",
+    "price": 59,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café orgánico grano 454g",
+    "description": "Café arábica orgánico 100 colombiano, de aroma intenso y cuerpo medio; rinde: 65 tazas aprox.",
+    "price": 63,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café finca grano 454g",
+    "description": "El café finca presenta un perfil de taza fuerte con notas vibrantes de limonaria y kiwi, rinde 65 tazas aprox.",
+    "price": 63,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café liofilizado clásico 95g",
+    "description": "Ingredientes: 95 café soluble liofilizado con 5 café tostado micromolido; rinde 63 tazas aprox.",
+    "price": 35,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café liofilizado descafeinado 95g",
+    "description": "Café tostado micromolido con saborizante natural de vainilla y canela; rinde 63 tazas aprox.",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café liofilizado vanicanela 95g",
+    "description": "Café tostado micromolido con saborizante natural de vainilla y canela, rinde 63 tazas aprox.",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café liofilizado chocolate 95g",
+    "description": "Café soluble liofilizado con café tostado micromolido con saborizante natural de chocolate; rinde 63 tazas aprox.",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café liofilizado avellana 95g",
+    "description": "Café soluble liofilizado con 5 café tostado micromolido con saborizante natural de avellana; rinde 63 tazas aprox.",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Café Empacado",
+    "name": "Café liofilizado dulce de leche 95g",
+    "description": "Café soluble liofilizado con café tostado micromolido con saborizante natural de dulce de leche; rinde 63 tazas aprox.",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Otras bebidas",
+    "name": "Beberash te verde",
+    "description": "Beberash te verde 480 ml",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Otras bebidas",
+    "name": "Beberash chicha morada",
+    "description": "Beberash sabor chicha morada 480 ml",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Otras bebidas",
+    "name": "Beberash emoliente",
+    "description": "Beberash sabor emoliente 480 ml",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Juan Valdez - Municipal",
+    "category": "Otras bebidas",
+    "name": "Beberash te de manzana",
+    "description": "Beberash sabor te de manzana 480 ml",
+    "price": 7.5,
+    "inStock": true
+  }
+]

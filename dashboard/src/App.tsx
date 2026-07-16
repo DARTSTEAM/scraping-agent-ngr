@@ -11,6 +11,7 @@ import {
 } from '@heroicons/react/24/outline';
 import axios from 'axios';
 import logoNgr from './assets/Logo-ngr.png';
+import Comparativa from './Comparativa';
 
 // In production the frontend is served by the same Express server,
 // so relative paths work. In dev, Vite proxies /api to localhost:3001.
@@ -156,7 +157,7 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [updating, setUpdating] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [activeTab, setActiveTab] = useState<'competitors' | 'own'>('competitors'); // New tabs
+  const [activeTab, setActiveTab] = useState<'competitors' | 'own' | 'comparativa'>('competitors'); // New tabs
 
   const fetchData = async () => {
     setLoading(true);
@@ -233,23 +234,25 @@ export default function App() {
               <p className="text-slate-500 font-medium">NGR Digital Intelligence Unit</p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
-            <button
-              onClick={handleDownload}
-              className="px-4 py-2.5 bg-white text-slate-700 border border-slate-200 rounded-xl hover:bg-slate-50 shadow-sm transition-all flex items-center gap-2 font-semibold"
-            >
-              <ArrowDownTrayIcon className="w-5 h-5" />
-              Descargar CSV
-            </button>
-            <button
-              onClick={handleUpdate}
-              disabled={updating || !selectedCompId}
-              className="px-5 py-2.5 bg-slate-900 text-white rounded-xl hover:bg-slate-800 shadow-lg shadow-slate-200 transition-all flex items-center gap-2 font-semibold disabled:opacity-50"
-            >
-              <ArrowPathIcon className={`w-5 h-5 ${updating ? 'animate-spin' : ''}`} />
-              {updating ? 'Actualizando...' : 'Actualizar Información'}
-            </button>
-          </div>
+          {activeTab !== 'comparativa' && (
+            <div className="flex items-center gap-3">
+              <button
+                onClick={handleDownload}
+                className="px-4 py-2.5 bg-white text-slate-700 border border-slate-200 rounded-xl hover:bg-slate-50 shadow-sm transition-all flex items-center gap-2 font-semibold"
+              >
+                <ArrowDownTrayIcon className="w-5 h-5" />
+                Descargar CSV
+              </button>
+              <button
+                onClick={handleUpdate}
+                disabled={updating || !selectedCompId}
+                className="px-5 py-2.5 bg-slate-900 text-white rounded-xl hover:bg-slate-800 shadow-lg shadow-slate-200 transition-all flex items-center gap-2 font-semibold disabled:opacity-50"
+              >
+                <ArrowPathIcon className={`w-5 h-5 ${updating ? 'animate-spin' : ''}`} />
+                {updating ? 'Actualizando...' : 'Actualizar Información'}
+              </button>
+            </div>
+          )}
         </header>
 
         {/* Tab Selection */}
@@ -266,8 +269,17 @@ export default function App() {
           >
             Locales Propios
           </button>
+          <button
+            onClick={() => setActiveTab('comparativa')}
+            className={`px-6 py-3 font-bold text-sm transition-all border-b-2 ${activeTab === 'comparativa' ? 'border-slate-900 text-slate-900' : 'border-transparent text-slate-400 hover:text-slate-600'}`}
+          >
+            Comparativa
+          </button>
         </div>
 
+        {activeTab === 'comparativa' ? (
+          <Comparativa />
+        ) : (
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
 
           {/* Selector Card */}
@@ -416,6 +428,7 @@ export default function App() {
             </div>
           </div>
         </div>
+        )}
 
       </div>
 

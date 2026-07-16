@@ -1,0 +1,618 @@
+[
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Chicken Supremas",
+    "name": "Combo Chicken Suprema Alitas",
+    "description": "¡Pío-Dúo! Llévate 2 Pizzas medianas Chicken Suprema, una bebida 1L y 6 Alitas.",
+    "price": 65.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Hut del Verano!",
+    "name": "Combo Tripack Grande Hut Cheese",
+    "description": "3 Pizzas Grandes Hut Cheese + 10 Palitos + 2 Bebidas 1L. ¡Un combo de full queso!",
+    "price": 102.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Hut del Verano!",
+    "name": "Combo Semi Full Familiar Hut Cheese",
+    "description": "2 Pizzas Familiares Hut Cheese + 10 Palitos a la Siciliana. ¡Para los amantes del queso!",
+    "price": 92.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Hut del Verano!",
+    "name": "Tripack Grande Hut Cheese",
+    "description": "3 Pizzas Grandes Hut Cheese + 10 Palitos a la Siciliana. ¡Para los verdaderos cheese lovers!",
+    "price": 97.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Pizza Week #2",
+    "description": "¡El gran banquete! Comparte 3 riquísimas pizzas grandes y 2 gaseosas 1L.",
+    "price": 79.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Combo Pizza Grande Rappi",
+    "description": "Pizza Hut combo, 1 Pizza Grande Americana o Pepperoni y 1 Bebida de 1L. ¡Alcanza para todo el grupo pídelo en Rappi!",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Pizza Week #3",
+    "description": "¡Tu antojo listo! 1 pizza mediana, 6 palitos a la siciliana y 1 gaseosa personal.",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Combo Full Grande",
+    "description": "2 Pizzas Grandes + 10 Palitos a la Siciliana + 1 Bebida 1L. ¡Ideal para todos!",
+    "price": 72.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Pizza Week #1",
+    "description": "¡El doble de sabor! Disfruta 2 deliciosas pizzas medianas y 1 gaseosa 1L.",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Pizza Week #4",
+    "description": "¡Clásico que no falla! Disfruta 1 contundente pizza grande y 1 gaseosa 1L.",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Rappi Promos",
+    "name": "Pizza Week #5",
+    "description": "¡La dupla ideal! Para compartir llévate 2 pizzas grandes y 1 gaseosa 1L.",
+    "price": 53.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Tripack Grande",
+    "description": "3 Pizzas Grandes + 6 Palitos a la Siciliana. ¡Una promo triplemente buena!",
+    "price": 82.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Doble o Nada Familiar Hut Cheese",
+    "description": "2 Pizzas Familiares en masa Hut Cheese a un precio especial.",
+    "price": 82.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Combo Semi Full Grande",
+    "description": "2 Pizzas Grandes + 10 Palitos a la Siciliana. ¡Ideal para compartir!",
+    "price": 62.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Combo Doble o Nada Grande",
+    "description": "2 Pizzas Grandes clásicas + 2 Bebidas de 1L. ¡Doble sabor, doble refresco!",
+    "price": 62.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Doble o Nada Grande",
+    "description": "2 Pizzas Grandes a un precio especial",
+    "price": 52.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Combo Doble o Nada Familiar",
+    "description": "2 Pizzas Familiares + 2 Bebidas 1L. ¡Disfruta el doble con este combo!",
+    "price": 85.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Combo Semi Full Familiar",
+    "description": "¡Banquete para todos! 2 Pizzas Familiares y 10 Palitos a la Siciliana",
+    "price": 82.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Combo Familiar Pizza Kit Kat",
+    "description": "1 Pizza Familiar + 1 Pizza Kit Kat Mediana + 1 Bebida de 1L. ¡Una combinación que celebra!",
+    "price": 59.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Combo Grande Pizza Kit Kat",
+    "description": "1 Pizza Grande + 1 Pizza Kit Kat Mediana + 1 Bebida de 1L. ¡Una combinación que celebra!",
+    "price": 49.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Triple Hut Box",
+    "description": "2 Pizzas Grandes + 16 Palitos a la Siciliana. ¡Un box lleno de sabor!",
+    "price": 67.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Combo Triple Hut Box",
+    "description": "2 Pizzas Grandes + 16 Palitos a la Siciliana + 1 Bebida de 1L. ¡Disfruta este combo completo!",
+    "price": 72.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Mega Promos",
+    "name": "Combo Pizza XL",
+    "description": "1 Pizza XL clásica de 4 sabores + 1 Bebida de 1L. ¡Imposible que entre en una caja!",
+    "price": 72.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Compartir",
+    "name": "Banquete Familiar",
+    "description": "1 Pizza Familiar + 6 Palitos a la Siciliana + 1 Bebida de 1L. ¡Ideal para reunir a todos!",
+    "price": 52.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Compartir",
+    "name": "Banquete Grande",
+    "description": "1 Pizza Grande + 6 Palitos a la Siciliana + 1 Bebida de 1L. ¡Un banquete para compartir!",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Compartir",
+    "name": "Banquete Grande Hut Cheese",
+    "description": "1 Pizza Grande Hut Cheese + 6 Palitos a la Siciliana + 1 Bebida de 1L. ¡Para los amantes del queso!",
+    "price": 48.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Compartir",
+    "name": "Combo Pizza Grande Hut Cheese",
+    "description": "1 Pizza Grande Hut Cheese + 1 Bebida de 1L. ¡Full queso, full sabor¡",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Compartir",
+    "name": "Hut Completo Mediano",
+    "description": "2 Pizzas Medianas clásicas + 6 Palitos a la Siciliana + 1 Bebibda de 1L. ¡No te faltará nada!",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Mí",
+    "name": "Dúo Lasagna Bolognesa",
+    "description": "1 Lasagna Bolognesa + 1 Bebida Personal. ¡Tu favorita de siempre!",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Mí",
+    "name": "Combo Mediano",
+    "description": "1 Pizza Mediana + 1 Bebida Personal.",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Mí",
+    "name": "Hut Combo Mediano",
+    "description": "1 Pizza Mediana + 4 Palitos a la Siciliana + 1 Bebida Personal.",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Mí",
+    "name": "My Box Clásico",
+    "description": "1 Pizza Personal + 3 Palitos a la Siciliana + 1 Pebida Personal.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Mí",
+    "name": "My Box Supremo",
+    "description": "1 Pizza Personal + 3 Alitas BBQ + 1 Bebida Personal",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Para Mí",
+    "name": "Hut Alitas",
+    "description": "Disfruta de tu almuerzo con 6 Alitas con tu Gaseosa Regular!",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Grande Artesanal",
+    "description": "Nueva Pizza Hut masa artesanal, suave, ligera y con mantequilla de ajo en el borde en tamaño grande. ¡Pizza Hut cerca de mí!",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Familiar Hut Cheese",
+    "description": "Nuestra Pizza Hut de especialidad Familiar Hut Cheese, la única Pizza Hut con borde relleno de delicioso queso. Perfecto para almuerzos o cenas en grupo.",
+    "price": 56.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Mediana Artesanal",
+    "description": "Pizza Hut nueva masa artesanal, suave, ligera y con mantequilla de ajo en el borde en tamaño mediana. ¡Pizza Hut cerca de mi!",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Personal Pan Pizza",
+    "description": "Nuestra favorita de todos los tiempos, horneada la perfección. Suave por dentro, crujiente por fuera, increíblemente deliciosa en tamaño personal.",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Grande Hut Cheese",
+    "description": "Pizza Hut nuestra especialidad Pizza Grande Hut Cheese es la única pizza con borde relleno de delicioso queso ¡Suave por dentro, crujiente por fuera!",
+    "price": 53.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Mediana Delgada",
+    "description": "Nuestra pizza más fina, ligera y crujiente en tamaño mediana.",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Mediana Hut Cheese",
+    "description": "Pizza Hut nuestra especialidad Pizza Mediana Hut Cheese es la única pizza con borde relleno de delicioso queso ¡Pizza Hut cerca de mi!",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Familiar Pan Pizza",
+    "description": "Pizza Pan en tamaño familiar. Masa suave y esponjosa por dentro, dorada y crujiente por fuera. Lista para disfrutar en cualquier ocasión. Escoge el sabor que más te guste.",
+    "price": 48.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Grande Delgada",
+    "description": "Nuestra pizza más fina, ligera y crujiente en tamaño grande.",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Mediana Pan Pizza",
+    "description": "Nuestra Pizza Hut favorita de todos los tiempos, masa esponjosa suave por dentro, crujiente por fuera y deliciosa en tamaño mediana.",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Grande Pan Pizza",
+    "description": "Nuestra Pizza Hut favorita, masa esponjosa suave por dentro y crujiente por fuera, increíblemente deliciosa en tamaño grande.",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Familiar Artesanal",
+    "description": "¡Nueva masa familiar artesanal en Pizza Hut! Suave, ligera y con mantequilla de ajo en el borde en tamaño familiar.",
+    "price": 55.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza XL Pan Pizza",
+    "description": "Pizza Hut XL Pan Pizza para compartir con tus 4 sabores favoritos Americana, Pepperoni, Hawaiana y Suprema. ¡Pizza cerca de mí!",
+    "price": 71.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Pizzas",
+    "name": "Pizza Familiar Delgada",
+    "description": "Nuestra pizza más fina, ligera y crujiente en tamaño familiar.",
+    "price": 48.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Salados",
+    "name": "Rolls de Jamón & Queso",
+    "description": "6 Rolls rellenos de Jamón y Queso.",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Salados",
+    "name": "Palitos a la Siciliana (6 un)",
+    "description": "Pack de palitos a la siciliana acompañados con salsa mediterránea.",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Salados",
+    "name": "Pan al Ajo (4 un)",
+    "description": "¡Súper crocantes!4 Panes al Ajo con el toque perfecto de orégano",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Salados",
+    "name": "Palitos a la Siciliana (10 un)",
+    "description": "10 Deliciosos palitos elaborados en masa pan cubiertos con orégano en polvo y horneados acompañados de Salsa Mediterránea",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Salados",
+    "name": "Pan al Ajo Especial (4 un)",
+    "description": "¡Agrégale queso!4 Panes al Ajo con delicoso queso y orégano",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Salados",
+    "name": "Alitas (9 un)",
+    "description": "9 Alitas bañadas en Salsa Hut dulce picante o Salsa BBQ con un toque de miel",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Salados",
+    "name": "Hut Bread (8 un)",
+    "description": "Pack de 8 palitos rellenos de queso. Disponible en 3 sabores.",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Salados",
+    "name": "Alitas (6 un)",
+    "description": "Pack de alitas bañadas en BBQ o Hut.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Dulces",
+    "name": "Rolls de Manjar",
+    "description": "Pack de 6 rolls rellenos de manjar blanco.",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Dulces",
+    "name": "Hut Churros",
+    "description": "¡Postre del día! 4 Hut Churros rellenos de dulce de leche y decorados con azúcar impalpable y canela",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Antojitos Dulces",
+    "name": "Pizza Kit Kat",
+    "description": "Pizza Mediana cubierta con untable de Kit Kat, acompañada de trozos de Kit Kat Fingers y un toque de fudge de chocolate en cada slice.",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Salsas",
+    "name": "Salsa Honey BBQ",
+    "description": "1 Salsa BBQ con toque de miel (Presentación 1 oz).",
+    "price": 1.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Salsas",
+    "name": "Salsa Mediterranea",
+    "description": "1 Salsa de tomate con hierbas y toque picante (Presentación 1 oz).",
+    "price": 1.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Salsas",
+    "name": "Salsa Chili Thai",
+    "description": "1 Salsa dulce y picante (Presentación 1 oz).",
+    "price": 1.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Salsas",
+    "name": "Salsa Aji de la Casa (1oz)",
+    "description": "1 Onza de Salsa Aji de la Casa",
+    "price": 1.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Salsas",
+    "name": "Salsa MayoHut",
+    "description": "1 Salsa a base de mostaza y mayonesa (Presentación 1 oz).",
+    "price": 1.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Personal S/Azúcar",
+    "description": "1 Inca Kola Personal Sin Azúcar 500 ml",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Bebidas",
+    "name": "Inca Kola Mediana S/Azúcar",
+    "description": "1 Inca Kola Mediana Sin Azúcar 1L.",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Bebidas",
+    "name": "Sprite personal",
+    "description": "1 Sprite Personal 500ml",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Bebidas",
+    "name": "Fanta personal",
+    "description": "1 Fanta Personal 500ml",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Personal S/Azúcar",
+    "description": "1 Coca-Cola Personal Sin Azúcar 500 ml",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Bebidas",
+    "name": "Agua San Luis S/Gas Personal",
+    "description": "1 Agua San Luis Personal Sin Gas 650 ml",
+    "price": 4.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Bebidas",
+    "name": "Coca-Cola Mediana S/Azúcar",
+    "description": "1 Coca-Cola Mediana Sin Azúcar 1L.",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Hut del Día",
+    "name": "Combo Tripack Familiar",
+    "description": "3 Pizzas Familiares + 10 Palitos a la Siciliana + 2 Bebidas 1L. ¡Lo tiene todo!",
+    "price": 115.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Hut del Día",
+    "name": "Combo Full Familiar",
+    "description": "¡Doblemente delicioso!2 Pizzas Familiares, 10 palitos a la siciliana y 1 Bebida de 1L.",
+    "price": 92.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Hut del Día",
+    "name": "Tripack Familiar",
+    "description": "3 Pizzas Familiares + 10 Palitos a la Siciliana. ¡Disfruta el triple de sabor!",
+    "price": 102.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Hut del Día",
+    "name": "Combo Full Familiar HutCheese",
+    "description": "¡El combo más power!2 Pizzas Familiares Hut Cheese, 10 palitos a la siciliana y 1 Bebida de 1L.",
+    "price": 102.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Cheesy Bites Dip & Crunch",
+    "name": "Combo Dip & Crunch",
+    "description": "Cheesy Bites + Salsas + Tocino crunch + 1 Bebida de 1L. ¡El combo perfecto para dipear!",
+    "price": 59.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Pizza Hut - Surquillo",
+    "category": "Cheesy Bites Dip & Crunch",
+    "name": "Nueva Dip & Crunch",
+    "description": "Cheesy Bites con sabor a elección + Salsas + Tocino crocante. ¡Dipea y Crunchea!",
+    "price": 52.9,
+    "inStock": true
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Promociones del Rey",
+    "name": "Dúo WHOPPER® Junior",
+    "description": "1 WHOPPER® Jr. y 1 Papa Jr.",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Promociones del Rey",
+    "name": "Dúo WHOPPER® + Shake OREO®",
+    "description": "1 WHOPPER®, 1 Papa Jr. y 1 Shake OREO® Vainilla",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Promociones del Rey",
+    "name": "Dúo Parrillero Personal",
+    "description": "1 Parrillera Jr. y 1 Papa Jr.",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Promociones del Rey",
+    "name": "Pack Para Compartir",
+    "description": "1 STACKER® Doble Jr., 1 WHOPPER® Jr., 2 Papas Jr. y 1 Bebida 1L.",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Promociones del Rey",
+    "name": "Duo Clasico",
+    "description": "1 Hamburguesa Clásica Jr. y 1 Papa Jr.",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Promociones del Rey",
+    "name": "Dúo Cheese Bacon",
+    "description": "1 Doble Cheese Bacon Jr. y 1 Papa Jr.",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Paquetes del Rey",
+    "name": "El Rey WHOPPER® Para 3",
+    "description": "3 WHOPPER®, 1 Papa Familiar y 1 Gaseosa 1L",
+    "price": 47.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Paquetes del Rey",
+    "name": "Fiesta WHOPPER®",
+    "description": "2 WHOPPER® Grande, 2 Papas Junior y 1 Bebida 1L",
+    "price": 36.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Paquetes del Rey",
+    "name": "Pack Para 4 Verano",
+    "description": "1 WHOPPER® Jr., 1 WHOPPER® Crispy Jr., 1 STACKER® Simple Jr., 1 Parrillera Jr., 1 Papa Familiar y 1 Bebida 1L.",
+    "price": 49.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo Bacon King",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla, queso, tocino, mayonesa y kétchup, 1 Papa Jr y 1 Bebida Personal",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo Maxima Crunch",
+    "description": "1 Maxima Crunch, 1 Papa Jr y 1 Bebida Personal",
+    "price": 36.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo Philly Cheese",
+    "description": "1 Philly Cheese Gr, 1 Papa Jr y 1 Bebida Personal",
+    "price": 36.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo Philly Cheese Junior",
+    "description": "1 Philly Cheese Jr, 1 Papa Jr y 1 Bebida Personal",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo Mega STACKER® Triple",
+    "description": "Triple hamburguesa 100% carne de res a la parrilla con nuestra exclusiva salsa BK STACKER®, queso y tocino, 1 Papa Jr y 1 Bebida Personal",
+    "price": 41.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo Mega STACKER®",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla con nuestra exclusiva salsa BK STACKER®, queso y tocino, 1 Papa Jr y 1 Bebida Personal",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo Mega Doble con Queso",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla, queso, pepinillos, mostaza y kétchup, 1 Papa Jr y 1 Bebida Personal",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo Mega STACKER® Cuádruple",
+    "description": "Cuádruple hamburguesa 100% carne de res a la parrilla con nuestra exclusiva salsa BK STACKER®, queso y tocino, 1 Papa Jr y 1 Bebida Personal.",
+    "price": 47.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo XT Parrillera",
+    "description": "Hamburguesa 100% carne de res, 75% más, papas al hilo, chorizo, ají y mayonesa, 1 Papa Personal y 1 Bebida Personal",
+    "price": 34.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo XT Steakhouse",
+    "description": "Hamburguesa 100% carne de res, 75% más, queso, lechuga, tomate, cebollitas crujientes, BBQ y mayonesa, 1 Papa Jr y 1 Bebida Personal",
+    "price": 36.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo XT Clásica",
+    "description": "Hamburguesa 100% carne de res, 75% más, lechuga, tomate, cebolla, kétchup y mayonesa, 1 Papa Jr y 1 Bebida Personal",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Contundentes",
+    "name": "Combo XT Queso & Tocino",
+    "description": "Hamburguesa 100% carne de res, 75% más, queso, tocino, lechuga, tomate y mayonesa, 1 Papa Jr y 1 Bebida Personal",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo Doble con Queso Junior",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla, queso, pepinillos, mostaza y kétchup, 1 Papa Jr y 1 Bebida Personal",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER® Cheese Junior",
+    "description": "Hamburguesa 100% carne de res a la parrilla, queso, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla, 1 Papa Jr y 1 Bebida Personal",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo Parrillera XL",
+    "description": "Hamburguesa 100% carne de res a la parrilla, chorizo, papitas al hilo, mayonesa y ají, 1 Papa Jr y 1 Bebida Personal",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER® Crispy",
+    "description": "Hamburguesa 100% carne de res a la parrilla, queso, cebollitas crujientes, BBQ, tomate, lechuga y mayonesa, 1 Papa Jr y 1 Bebida Personal",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER® Cheese Grande",
+    "description": "Hamburguesa 100% carne de res a la parrilla, queso, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla, 1 Papa Jr y 1 Bebida Personal",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER® Tejana Junior",
+    "description": "Hamburguesa 100% carne de res a la parrilla, queso, tocino, tomate, lechuga, mayonesa, BBQ, pepinillos y cebolla, 1 Papa Jr y 1 Bebida Personal",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER® Crispy Junior",
+    "description": "Hamburguesa 100% carne de res a la parrilla, queso, cebollitas crujientes, BBQ, tomate, lechuga y mayonesa, 1 Papa Jr y 1 Bebida Personal",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER®",
+    "description": "Hamburguesa 100% carne de res a la parrilla, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla, 1 Papa Jr y 1 Bebida Personal",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER® Tejana",
+    "description": "Hamburguesa 100% carne de res a la parrilla, queso, tocino, tomate, lechuga, mayonesa, BBQ, pepinillos y cebolla, 1 Papa Jr y 1 Bebida Personal",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER® Doble",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla, 1 Papa Jr y 1 Bebida Personal",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo WHOPPER® Junior",
+    "description": "Hamburguesa 100% carne de res a la parrilla, tomate, lechuga, mayonesa, kétchup, pepinillos y cebolla, 1 Papa Jr y 1 Bebida Personal",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Whopper",
+    "name": "Combo STACKER® Doble Junior",
+    "description": "Doble hamburguesa 100% carne de res a la parrilla con nuestra exclusiva salsa BK STACKER®, queso, tocino, 1 Papa Jr y 1 Bebida Personal",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Shake OREO® de Fresa",
+    "description": "Milkshake de fresa con trozos de galleta OREO®.",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Shake OREO® de Vainilla",
+    "description": "Milkshake de vainilla con trozos de galleta OREO®.",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Pie de Manzana",
+    "description": "Pie crocante relleno de trozos de manzana y canela",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Postres",
+    "name": "Shake",
+    "description": "Milkshake de vainilla, chocolate o fresa",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Papa Familiar",
+    "description": "Papas fritas crujientes para compartir.",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Papa Tumbay Mediana",
+    "description": "Papas tumbay crocantes, tamaño mediano.",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Papa Tumbay Grande",
+    "description": "Papas tumbay crocantes, tamaño grande.",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Papa Tumbay Familiar",
+    "description": "Papas tumbay crocantes para compartir.",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Coca Cola Sin Azucar 1 L",
+    "description": "1 Coca-Cola Mediana Sin Azúcar 1L",
+    "price": 9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Inca Kola Sin Azucar 1 L",
+    "description": "1 Inca-Kola Mediana Sin Azúcar 1L",
+    "price": 9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Camote Junior",
+    "description": "Camote frito crocante, tamaño junior.",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Camote Grande",
+    "description": "Camote frito crocante, tamaño grande.",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Camote Familiar",
+    "description": "Camote frito crujiente en tamaño familiar.",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Camote Mediano",
+    "description": "Camote Mediano",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "4 Onion Rings",
+    "description": "4 aros de cebolla empanizados y crujientes acompañados de un pirotín de salsa Bbq.",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "8 Onion Rings",
+    "description": "8 aros de cebolla empanizados y crujientes acompañados de un pirotín de salsa Bbq.",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "16 Onion Rings",
+    "description": "16 aros de cebolla empanizados y crujientes acompañados de dos pirotines de salsa Bbq.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Nuggets (6 un)",
+    "description": "6 Nuggets de pollo",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Papa Jr.",
+    "description": "Papas fritas doradas y crujientes en tamaño junior.",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Fanta 500 ml",
+    "description": "1 Fanta Personal 500ml",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Coca-Cola Sin Azucar 500 ml",
+    "description": "1 Coca-Cola Personal Sin Azúcar 500ml",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Inca Kola Sin Azucar 500 ml",
+    "description": "1 Inca-Kola Personal Sin Azúcar 500ml",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Complementos",
+    "name": "Agua San Luis Sin Gas 625 ml",
+    "description": "1 Agua San Luis Personal Sin Gas 750 ml",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Vegetales",
+    "name": "Combo WHOPPER® Vegetal",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con tomates, lechuga, mayonesa, ketchup, pepinillos y aros de cebolla, 1 papa personal, 1 gaseosa personal. Imagen referencial",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Vegetales",
+    "name": "Combo WHOPPER® Vegetal con Queso",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, tomates, lechuga, mayonesa, ketchup, pepinillos y aros de cebolla, 1 papa personal 1 gaseosa personal. Imagen referencial",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Vegetales",
+    "name": "Combo WHOPPER® Vegetal Crispy",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, cebollitas crujientes, salsa BBQ, tomate, lechuga y mayonesa, 1 papa personal, 1 gaseosa personal. Imagen referencial",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Burger King - Chacarilla-Santa Cruz",
+    "category": "Las Vegetales",
+    "name": "Combo WHOPPER® Vegetal Tejana",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, tocino, tomates, lechuga, mayonesa, salsa BBQ, pepinillos y aros de cebolla, 1 papa personal, 1 gaseosa personal. Imagen referencial",
+    "price": 33.9,
+    "inStock": true
+  }
+]

@@ -1,30 +1,653 @@
 [
-    {
-        "restaurant": "Pizza Hut",
-        "category": "Pizzas",
-        "name": "Pizza Mediana Hut Cheese",
-        "description": "Pizza con borde relleno de queso.",
-        "price": 35.90
-    },
-    {
-        "restaurant": "Pizza Hut",
-        "category": "Pizzas",
-        "name": "Pizza Familiar Hut Cheese",
-        "description": "Pizza tamaño familiar con borde relleno de queso.",
-        "price": 56.90
-    },
-    {
-        "restaurant": "Pizza Hut",
-        "category": "Combos",
-        "name": "Combo Viral",
-        "description": "Combo promocional.",
-        "price": 9.90
-    },
-    {
-        "restaurant": "Pizza Hut",
-        "category": "Combos",
-        "name": "Hut Lunch",
-        "description": "Combo para almuerzo.",
-        "price": 12.90
-    }
+  {
+    "name": "Pizza Pepperoni",
+    "description": "Pepperoni Americano con Queso Mozzarella. ¡Un sabor imcomparable!",
+    "price": 22.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Americana",
+    "description": "Jamón y Queso Mozzarella. ¡Una clásica combinación!",
+    "price": 22.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Hawaiana",
+    "description": "Jamón, Piña y Mozzarella. ¡Una Dulce y salada combinación!",
+    "price": 27.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Super Suprema",
+    "description": "Pepperoni Americano, Carne de Res, Carne de Cerdo, Jamón, Salchicha Italiana, Champiñones, Pimientos Verdes, Cebolla Roja, Aceitunas Verdes y Queso Mozzarella",
+    "price": 32.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "2x1 Pizza Mediana",
+    "description": "Lleva 2 Pizzas Medianas por el precio de una. ¡Ahorra y disfruta el doble!",
+    "price": 20.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Meat Lovers",
+    "description": "Pepperoni Americano, Res, Cerdo, Jamón y Mozzarella.",
+    "price": 32.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Mozzarella",
+    "description": "Queso Mozzarella Gratinado. ¡Ideal para los amantes del queso!",
+    "price": 22.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Pizza Crown",
+    "description": "Pizza Crown + Salsa mediterránea + Ají de la casa + 1 Bebida de 1L. ¡Sabor que corona tu antojo!",
+    "price": 54.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Days Duo Grande",
+    "description": "¡Hut Days! 2 Pizzas Grandes Artesanales + 6 Palitos.",
+    "price": 39.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Crown Cola",
+    "description": "1 Pizza Crown + 1 Pizza Familiar  + 2 bebidas de 1L. El combo perfecto para compartir.",
+    "price": 75.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Alitas Crown",
+    "description": "1 Pizza Crown  + Alitas BBQ o HUT+ 1 Bebida de 1L. ¡Una combinación irresistible!",
+    "price": 49.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Martes Doble o Nada Grande",
+    "description": "2 Pizzas Grandes a un precio especial. ¡Disfruta el doble!",
+    "price": 49.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza XXL",
+    "description": "¡No cabe en la mesa! Pizza XXL de veinticuatro porciones y salsas para dipear.",
+    "price": 79.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza XL",
+    "description": "¡Un monstruo de sabor! 1 Pizza XL con dieciséis porciones para compartir.",
+    "price": 59.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza L",
+    "description": "¡La medida exacta! Pide 1 Pizza L que rinde ocho porciones.",
+    "price": 39.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Grande Pizza Kit Kat",
+    "description": "1 Pizza Grande + 1 Pizza Kit Kat Mediana + 1 Bebida de 1L. ¡Una combinación que celebra!",
+    "price": 49.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Dip & Crunch",
+    "description": "Cheesy Bites + Salsas + Tocino crunch + 1 Bebida de 1L. ¡El combo perfecto para dipear!",
+    "price": 54.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Nueva Dip & Crunch",
+    "description": "Cheesy Bites con sabor a elección + Salsas + Tocino crocante. ¡Dipea y Crunchea!",
+    "price": 49.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Days Cheesy Duo",
+    "description": "¡Dipea el doble de sabor! 2 Pizzas Cheesy Bites calentitas y 1 bebida de 1L.",
+    "price": 85.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Days Doble Grande",
+    "description": "El doble de sabor para compartir con 2 Pizzas Grandes.",
+    "price": 35.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Days Banquete Grande",
+    "description": "¡Banquete total! 2 Pizzas Grandes, 10 Palitos a la siciliana y 2 bebidas de 1L.",
+    "price": 65.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Days Pizza XXL",
+    "description": "1 Pizza XXL + 2 Gaseosas 1L + 6 Alitas BBQ/Chili Hut + 6 Palitos a la siciliana",
+    "price": 82.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Chicken BBQ",
+    "description": "Pollo, Piña, Tocino y Salsa BBQ.",
+    "price": 32.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Chili Hut",
+    "description": "Pollo, Piña, Tocino y Salsa Chili Thai.",
+    "price": 32.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Continental",
+    "description": "Jamón, Champiñones, Cebolla Roja y Mozzarella. ¡Una deliciosa mixtura de sabor!",
+    "price": 27.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Suprema",
+    "description": "Pepperoni, Res, Cerdo, Champiñones, Pimientos y Mozzarella.",
+    "price": 27.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Vegetariana",
+    "description": "Champiñones, Aceitunas Verdes, Pimientos Verdes, Cebolla Roja y Mozzarella.",
+    "price": 27.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Con 3 Ingredientes",
+    "description": "Arma tu pizza con los ingredientes que prefieras.",
+    "price": 27.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza VIP",
+    "description": "Pizza Grande con 1 topping a tu elección. ¡Pídelo en Americana, Pepperoni o Mix de Carnes!",
+    "price": 25.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Completo Mediano",
+    "description": "2 Pizzas Medianas clásicas + 6 Palitos a la Siciliana + 1 Bebibda de 1L. ¡No te faltará nada!",
+    "price": 42.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Banquete Grande",
+    "description": "1 Pizza Grande + 6 Palitos a la Siciliana + 1 Bebida de 1L. ¡Un banquete para compartir!",
+    "price": 39.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Banquete Grande Hut Cheese",
+    "description": "1 Pizza Grande Hut Cheese + 6 Palitos a la Siciliana + 1 Bebida de 1L. ¡Para los amantes del queso!",
+    "price": 45.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Banquete Familiar",
+    "description": "1 Pizza Familiar + 6 Palitos a la Siciliana + 1 Bebida de 1L. ¡Ideal para reunir a todos!",
+    "price": 49.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Pizza Grande Hut Cheese",
+    "description": "1 Pizza Grande Hut Cheese + 1 Bebida de 1L. ¡Full queso, full sabor¡",
+    "price": 39.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Doble o Nada Familiar",
+    "description": "2 Pizzas Familiares clásicas a precio especial. ¡Para cuando hay mucha hambre!",
+    "price": 72.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Doble o Nada Familiar Hut Cheese",
+    "description": "2 Pizzas Familiares en masa Hut Cheese a un precio especial.",
+    "price": 79.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Tripack Grande Hut Cheese",
+    "description": "3 Pizzas Grandes Hut Cheese + 10 Palitos a la Siciliana. ¡Para los verdaderos cheese lovers!",
+    "price": 94.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Doble o Nada Grande",
+    "description": "2 Pizzas Grandes clásicas + 2 Bebidas de 1L. ¡Doble sabor, doble refresco!",
+    "price": 59.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Semi Full Grande",
+    "description": "2 Pizzas Grandes + 10 Palitos a la Siciliana. ¡Ideal para compartir!",
+    "price": 59.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Tripack Familiar",
+    "description": "3 Pizzas Familiares + 10 Palitos a la Siciliana. ¡Disfruta el triple de sabor!",
+    "price": 99.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Triple Hut Box",
+    "description": "2 Pizzas Grandes + 16 Palitos a la Siciliana. ¡Un box lleno de sabor!",
+    "price": 64.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Triple Hut Box",
+    "description": "2 Pizzas Grandes + 16 Palitos a la Siciliana + 1 Bebida de 1L. ¡Disfruta este combo completo!",
+    "price": 69.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Tripack Grande",
+    "description": "3 Pizzas Grandes + 6 Palitos a la Siciliana. ¡Una promo triplemente buena!",
+    "price": 79.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Tripack Grande Hut Cheese",
+    "description": "3 Pizzas Grandes Hut Cheese + 10 Palitos + 2 Bebidas 1L. ¡Un combo de full queso!",
+    "price": 99.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Semi Full Familiar",
+    "description": "¡Banquete para todos! 2 Pizzas Familiares y 10 Palitos a la Siciliana",
+    "price": 79.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Semi Full Familiar Hut Cheese",
+    "description": "2 Pizzas Familiares Hut Cheese + 10 Palitos a la Siciliana. ¡Para los amantes del queso!",
+    "price": 89.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Doble o Nada Familiar",
+    "description": "2 Pizzas Familiares + 2 Bebidas 1L. ¡Disfruta el doble con este combo!",
+    "price": 82.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Doble o Nada Familiar Hut Cheese",
+    "description": "2 Pizzas Familiares Hut Cheese + 2 bebidas 1L. ¡Más queso, más sabor!",
+    "price": 92.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Tripack Familiar",
+    "description": "3 Pizzas Familiares + 10 Palitos a la Siciliana + 2 Bebidas 1L. ¡Lo tiene todo!",
+    "price": 112.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Full Grande",
+    "description": "2 Pizzas Grandes + 10 Palitos a la Siciliana + 1 Bebida 1L. ¡Ideal para todos!",
+    "price": 69.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Doble o Nada Grande",
+    "description": "2 Pizzas Grandes a un precio especial",
+    "price": 54.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Cupón #5",
+    "description": "1 Pizza XL clásica y 1 Gaseosa 1L",
+    "price": 59.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Cupón #2",
+    "description": "1 Pizza Mediana clásica y 3 Pepperoni Rolls",
+    "price": 22.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Cupón #4",
+    "description": "3 pizzas Medianas Clásicas y 1 Bebida 1L",
+    "price": 39.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Cupón 3 l Volante Delivery",
+    "description": "",
+    "price": 29.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Cupón #6",
+    "description": "1 Pizza Familiar Cheesy Bites Dip&Crunch, 1 Pizza Grande Clásica y 1 Bebida 1L",
+    "price": 79.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Roll Hawaiano",
+    "description": "Pizza Roll con pollo, piña y queso. ¡Dulce y salado en equilibrio!",
+    "price": 15.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Roll Full Meat",
+    "description": "Pizza Roll con mix de carnes, jamón, queso y salsa boloñesa.",
+    "price": 13.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Roll Americano",
+    "description": "Pizza Roll relleno de jamón y queso. ¡Horneado al punto perfecto!",
+    "price": 12.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Roll Parrillero",
+    "description": "1 Pizza Roll con chorizo, queso y un toque de ají o mostaza.",
+    "price": 15.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Pizza Roll Hawaiana",
+    "description": "1 Pizza Roll Hawaiana + 1 Bebida Personal.",
+    "price": 16.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Pizza Roll Full Meat",
+    "description": "1 Pizza Roll Full Meat + 1 Bebida Personal.",
+    "price": 14.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Pizza Roll Americano",
+    "description": "1 Pizza Roll Americano + 1 Bebida Personal",
+    "price": 13.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Pizza Roll Parrillero",
+    "description": "1 Pizza Roll Parrillero + 1 Bebida Personal.",
+    "price": 16.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Duo Pizza Roll",
+    "description": "2 Pizza Rolls a elección + 1 Bebida de 1L. ¡Ideal para compartir!",
+    "price": 29.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "My Box Clásico",
+    "description": "1 Pizza Personal + 3 Palitos a la Siciliana + 1 Pebida Personal.",
+    "price": 14.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "My Box Supremo",
+    "description": "1 Pizza Personal + 3 Alitas BBQ + 1 Bebida Personal",
+    "price": 19.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Dúo Lasagna Bolognesa",
+    "description": "1 Lasagna Bolognesa +  1 Bebida Personal. ¡Tu favorita de siempre!",
+    "price": 24.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Combo Mediano",
+    "description": "1 Pizza Mediana + 1 Bebida Personal.",
+    "price": 21.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Combo Mediano",
+    "description": "1 Pizza Mediana + 4 Palitos a la Siciliana + 1 Bebida Personal.",
+    "price": 24.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Cheese Mediano",
+    "description": "1 Pizza Mediana Hut Cheese con bordes rellenos de queso.",
+    "price": 28.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Dúo Personal",
+    "description": "Llévate 2 Pizza Rolls con 4 panes al ajo y bebida 1L a un precio increíble",
+    "price": 29.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Kit Kat",
+    "description": "Pizza Mediana cubierta con untable de Kit Kat, acompañada de trozos de Kit Kat Fingers y un toque de fudge de chocolate en cada slice.",
+    "price": 19.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Palitos a la Siciliana",
+    "description": "Pack de palitos a la siciliana acompañados con salsa mediterránea.",
+    "price": 9.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pan al Ajo (4 un)",
+    "description": "¡Súper crocantes!\n4 Panes al Ajo con el toque perfecto de orégano",
+    "price": 10.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pan al Ajo Especial (4 un)",
+    "description": "¡Agrégale queso!\n4 Panes al Ajo con delicoso queso y orégano",
+    "price": 13.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Rolls de Jamón & Queso",
+    "description": "6 Rolls rellenos de Jamón y Queso.",
+    "price": 13.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Alitas",
+    "description": "Pack de alitas bañadas en BBQ o Hut.",
+    "price": 15.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Hut Bread (8 un)",
+    "description": "Pack de 8 palitos rellenos de queso. Disponible en 3 sabores.",
+    "price": 13.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Rolls de Manjar",
+    "description": "Pack de 6 rolls rellenos de manjar blanco.",
+    "price": 9.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Salsa Chili Thai",
+    "description": "1 Salsa dulce y picante (Presentación 1 oz).",
+    "price": 1.5,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Salsa Honey BBQ",
+    "description": "1 Salsa BBQ con toque de miel (Presentación 1 oz).",
+    "price": 1.5,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Salsa MayoHut",
+    "description": "1 Salsa a base de mostaza y mayonesa (Presentación 1 oz).",
+    "price": 1.5,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Salsa Mediterranea",
+    "description": "1 Salsa de tomate con hierbas y toque picante (Presentación 1 oz).",
+    "price": 1.5,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Agua San Luis S/Gas Personal",
+    "description": "1 Agua San Luis Personal Sin Gas 650 ml",
+    "price": 4.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Coca Cola Sin Azúcar",
+    "description": "1 Coca-Cola Mediana Sin Azúcar 1L.",
+    "price": 8.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Sprite personal",
+    "description": "1 Sprite Personal 500ml",
+    "price": 4.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Fanta personal",
+    "description": "1 Fanta Personal 500ml",
+    "price": 4.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Inca Kola Sin Azúcar",
+    "description": "1 Inca Kola Mediana Sin Azúcar 1L.",
+    "price": 8.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Banquete Yapero",
+    "description": "Solo con Yape",
+    "price": 35.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Pizza Familiar Yapera",
+    "description": "Solo con Yape",
+    "price": 32.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Dupla Yapera Familiar",
+    "description": "Solo con Yape",
+    "price": 79.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  },
+  {
+    "name": "Banquete Grande Yapero",
+    "description": "Solo con Yape",
+    "price": 39.9,
+    "category": "Bebidas",
+    "restaurant": "Pizza Hut"
+  }
 ]

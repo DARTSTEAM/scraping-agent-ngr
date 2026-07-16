@@ -43,3 +43,7 @@ pnpm-debug.log*
 # Root-level scraped product files (generated at runtime, stored in data/ for git)
 /products_*.csv
 /products_*.json
+
+# AI matching output & manual overrides (generated at runtime, persisted in GCS)
+/matches_*.json
+/overrides_*.json

@@ -47,6 +47,10 @@ COPY starbucks_scraper.js ./
 COPY rokys_scraper.js ./
 COPY kernel_browser.js ./
 COPY magento_scraper.js ./
+
+# Price comparison / AI matching engine
+COPY brand_config.js ./
+COPY product_matcher.js ./
 COPY check_mcd.js ./
 COPY dump_mcd.js ./
 COPY extract_nuxt.js ./

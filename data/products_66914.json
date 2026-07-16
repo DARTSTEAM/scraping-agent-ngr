@@ -1,0 +1,290 @@
+[
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Rappi Promo",
+    "name": "Pack para Compartir",
+    "description": "Pack 12 bonbites, 2 chillattas 12oz y sabores a elección.",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Rappi Promo",
+    "name": "Promo Duo Pack 12 Bonbites (24 Bonbites)",
+    "description": "24 Mini rolls llamados bon bites clásicos, cubiertos con glaseado de queso crema, 24 unidades.",
+    "price": 42.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Rappi Promo",
+    "name": "Promo Duo Pack 12 Chocobon Bites",
+    "description": "24 Chocobonbites rellenos de chocolate, cubiertos con forsting y cubiertos con chocolate.",
+    "price": 43.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Pack de 12 Bonbites",
+    "description": "Cinnamon mini rolls, llamados bonbites clásicos, cubiertos con glaseado de queso crema, 12 unidades",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Pack 12 Choco Bonbites",
+    "description": "12 Chocobon bites rellenos de chocolate y cubiertos con frosting y chocolate.",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Pack 12 Bonbites Mixtos",
+    "description": "12 Bonbites en los sabores de manjar blanco, chocolate y caramelo con pecanas.(4 manjas, 4 chocolate y 4 caramelo con pecanas)",
+    "price": 38.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Cinnapack x 4 Minibon",
+    "description": "Pack de 4 Rollos de canela en tamaño medianos llamados mínibon cubierto con nuestro clásico frosting",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Pack de 6 Minibon",
+    "description": "Cinnamon rolls medianos rellenos de canela llamados minibon cubiertos con frosting, 6 unid.",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Pack de 9 Minibon",
+    "description": "Cinnamon rolls medianos rellenos de canela llamados minibon cubiertos con frosting, 9 uds.",
+    "price": 58.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Pack de 3 Minibon 3 Chocobon",
+    "description": "Cinnamon rolls medianos llamados minibon con frosting 3 uds, minichocobon rellenos de chocolate, cubiertos de chocolate, frosting, 3 uds",
+    "price": 44.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Cinnapack 6 Minichocobon",
+    "description": "Cinnamon rolls medianos rellenos de chocolate llamados minichocobon, cubiertos de frosting, chocolate, 6 unidades",
+    "price": 46.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Pack 2 Minibon 2 Chocobon",
+    "description": "Cinnamon rolls medianos llamados minibon con frosting 2 uds, minichocobon de chocolate, cubiertos con chocolate, frosting, 2 uds",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Cinnapacks",
+    "name": "Pack 4 Cupcakes",
+    "description": "Cupcakes en los sabores variados de vainilla, chocolate, red velvet, 4 unidades",
+    "price": 39.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Minibon Pistacho",
+    "description": "Minibon de canela, cubierto con crema de pistacho y salsa de chocolate cubierto con trozos de pistachos.",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Cinnabon Pistacho",
+    "description": "Cinnabon de canela cubierto con crema de pistacho, salsa de chocolate y Pistacho en trozoz",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Cinnabon Clásico",
+    "description": "Cinnamon roll clásico cubierto con glaseado frosting.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Caramel Pecanbon",
+    "description": "Cinnamon roll clásico cubierto con frosting, caramelo y pecanas",
+    "price": 19.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Duo Cinnabon y Pecanbon",
+    "description": "Cinnamon roll clásico cubierto con frosting 1 ud, cinnamon roll clásico cubierto con frosting, caramelo, pecanas, 1 ud",
+    "price": 34.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Duo Cinnabon",
+    "description": "Cinnamon rolls clásicos cubiertos con glaseado frosting, 2 unidades",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Duo Minibon",
+    "description": "Cinnamon roll medianos llamados minibon cubierto con glaseado frosting, 2 unidades",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Duo Minibon y Minipecanbon",
+    "description": "Cinnamon roll cubierto con glaseado frosting 1 ud, cinnamon roll cubierto con frosting, caramelo, pecanas, 1 ud",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Duo Minichocobon",
+    "description": "Rollos de chocolate rellenos de chocolate, cubiertos frosting y fudge.",
+    "price": 18.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Dúo Minibon y Minichocobon",
+    "description": "Rollo de canela clásico tamaño Minibon cubierto con frosting 1 ud + Un rollo Mini Chocobon cubierto con chocolate, frosting.",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Cupcake Vainilla",
+    "description": "Cupcake de vainilla, chispas de chocolate, cubierto con glacé de vainilla",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Cupcake Chocolate",
+    "description": "Cupcake de chocolate, chispas de chocolate, cubierto con glacé de vainilla",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Cupcake Red Velvet",
+    "description": "Cupcake de red velvet, chispas de chocolate, cubierto con glacé de vainilla",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Roll On The Go",
+    "description": "Rollos de canela en trozos. Cubierto con nuestro clásico glaseado frosting.",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Baked Goods",
+    "name": "Chocobon Classic",
+    "description": "Rollo de chocolaterelleno de chocolate y cubierto con frosting y con lineas de chocolate en tamaño clásico.",
+    "price": 17.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Chillattas",
+    "name": "Chillatta Capuccino 12oz",
+    "description": "Bebida frappé sabor café con leche y con crema chantilly .",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Chillattas",
+    "name": "Chillatta Cookies And Cream 12oz",
+    "description": "Bebida frappé en el sabor de vainilla y galleta de oreo con crema chantilly.",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Chillattas",
+    "name": "Chillatta Strawberry Cookies 12oz",
+    "description": "Chillatta de cookies and cream con fresa. Incluye crema chantiyi",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Chillattas",
+    "name": "Chillatta Explosión Tropical 12oz",
+    "description": "Bebida frappé en el sabor de mango, maracuya y naranja con crema chantilly.",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Chillattas",
+    "name": "Chillatta de Fresa 12oz.",
+    "description": "Bebida frappé en el sabor de fresa con leche acompañado de crema chantilly.",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Chillattas",
+    "name": "Chillatta de Lúcuma 12oz",
+    "description": "Bebida frappé en el sabor de lúcuma con leche acompañado de crema chantilly.",
+    "price": 15.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Chillattas",
+    "name": "Chillatta Mocha 12oz",
+    "description": "Bebida frappé sabor mocha .",
+    "price": 16.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Cinnabon - Armendariz",
+    "category": "Chillattas",
+    "name": "Chillatta de Mango 12Oz",
+    "description": "Bebida frappé de sabor mango con leche.",
+    "price": 14.9,
+    "inStock": true
+  }
+]
