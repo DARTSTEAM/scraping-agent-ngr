@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo, Fragment } from 'react';
+import { useState, useEffect, useMemo, Fragment, useRef } from 'react';
 import {
   ArrowPathIcon,
   CheckCircleIcon,
@@ -6,7 +6,7 @@ import {
   ArrowsRightLeftIcon,
   MagnifyingGlassIcon,
   ExclamationTriangleIcon,
-  SparklesIcon,
+  Cog6ToothIcon,
   ArrowUpIcon,
   ArrowDownIcon,
   MinusIcon,
@@ -72,6 +72,8 @@ export default function Comparativa() {
   const [recalculating, setRecalculating] = useState(false);
   const [error, setError] = useState('');
   const [onlyPending, setOnlyPending] = useState(true);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const settingsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     axios.get<BrandInfo[]>(`${API_BASE}/brands`).then(r => {
@@ -79,6 +81,17 @@ export default function Comparativa() {
       if (r.data.length && !brand) setBrand(r.data[0].key);
     }).catch(() => setError('No se pudo cargar la lista de marcas.'));
   }, []);
+
+  useEffect(() => {
+    if (!settingsOpen) return;
+    const onDoc = (e: MouseEvent) => {
+      if (settingsRef.current && !settingsRef.current.contains(e.target as Node)) {
+        setSettingsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', onDoc);
+    return () => document.removeEventListener('mousedown', onDoc);
+  }, [settingsOpen]);
 
   const fetchMatches = async () => {
     if (!brand) return;
@@ -95,6 +108,7 @@ export default function Comparativa() {
   useEffect(() => { fetchMatches(); }, [brand, channel]);
 
   const recalcular = async () => {
+    setSettingsOpen(false);
     setRecalculating(true); setError('');
     try {
       const r = await axios.post(`${API_BASE}/match`, { brand, channel });
@@ -146,20 +160,42 @@ export default function Comparativa() {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 self-end lg:self-auto">
           {data?.generatedAt && (
-            <span className="text-[11px] text-slate-400 font-medium hidden md:block">
+            <span className="text-[11px] text-slate-400 font-medium">
               Último cálculo: {new Date(data.generatedAt).toLocaleString('es-PE')}
             </span>
           )}
-          <button
-            onClick={recalcular}
-            disabled={recalculating}
-            className="px-5 py-2.5 bg-slate-900 text-white rounded-xl hover:bg-slate-800 shadow-lg shadow-slate-200 transition-all flex items-center gap-2 font-semibold disabled:opacity-50 cursor-pointer"
-          >
-            <SparklesIcon className={`w-5 h-5 ${recalculating ? 'animate-pulse' : ''}`} />
-            {recalculating ? 'Cruzando con IA…' : 'Recalcular matches'}
-          </button>
+          {recalculating && (
+            <span className="text-[11px] text-slate-500 font-medium animate-pulse">Cruzando con IA…</span>
+          )}
+          <div className="relative" ref={settingsRef}>
+            <button
+              type="button"
+              onClick={() => setSettingsOpen(o => !o)}
+              aria-label="Opciones de matching"
+              aria-expanded={settingsOpen}
+              className="p-2 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400"
+            >
+              <Cog6ToothIcon className={`w-5 h-5 ${recalculating ? 'animate-spin' : ''}`} />
+            </button>
+            {settingsOpen && (
+              <div className="absolute right-0 top-full mt-1 z-20 min-w-[220px] rounded-xl border border-slate-200 bg-white py-1 shadow-sm">
+                <button
+                  type="button"
+                  onClick={recalcular}
+                  disabled={recalculating || !brand}
+                  className="w-full flex items-center gap-2 px-3 py-2.5 text-left text-sm text-slate-700 hover:bg-slate-50 disabled:opacity-50 cursor-pointer"
+                >
+                  <ArrowPathIcon className={`w-4 h-4 shrink-0 ${recalculating ? 'animate-spin' : ''}`} />
+                  {recalculating ? 'Recalculando…' : 'Recalcular matches'}
+                </button>
+                <p className="px-3 pb-2 text-[10px] leading-snug text-slate-400">
+                  Vuelve a cruzar NGR vs competidores con Gemini. Puede tardar y consumir tokens.
+                </p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
@@ -187,7 +223,12 @@ export default function Comparativa() {
       {loading ? (
         <div className="py-24 text-center text-slate-300 italic">Cargando comparativa…</div>
       ) : !data ? (
-        <EmptyState brandLabel={currentBrand?.label} channel={channel} onRecalc={recalcular} recalculating={recalculating} />
+        <EmptyState
+          brandLabel={currentBrand?.label}
+          channel={channel}
+          onRecalc={recalcular}
+          recalculating={recalculating}
+        />
       ) : subTab === 'dashboard' ? (
         <Dashboard data={data} competitors={competitors} brandLabel={currentBrand?.label || data.brand} />
       ) : (
@@ -203,20 +244,27 @@ function totalPending(data: Comparison) {
     acc + Object.values(row.matches).filter(c => c.status === 'pending').length, 0);
 }
 
-function EmptyState({ brandLabel, channel, onRecalc, recalculating }: any) {
+function EmptyState({ brandLabel, channel, onRecalc, recalculating }: {
+  brandLabel?: string;
+  channel: string;
+  onRecalc: () => void;
+  recalculating: boolean;
+}) {
   return (
-    <div className="bg-white rounded-2xl border border-dashed border-slate-200 py-20 text-center space-y-4">
-      <SparklesIcon className="w-12 h-12 text-slate-200 mx-auto" />
+    <div className="bg-white rounded-2xl border border-dashed border-slate-200 py-20 text-center space-y-3 px-6">
       <div>
         <p className="text-slate-600 font-bold">Todavía no hay cruce para {brandLabel} en {CHANNEL_LABEL[channel]}</p>
-        <p className="text-slate-400 text-sm mt-1">Ejecutá el matching con IA para generar la comparativa de precios.</p>
+        <p className="text-slate-400 text-sm mt-1 max-w-md mx-auto">
+          Generá el matching desde el ícono de engranaje arriba a la derecha, o con{' '}
+          <code className="text-slate-500">node product_matcher.js</code>.
+        </p>
       </div>
       <button
+        type="button"
         onClick={onRecalc}
         disabled={recalculating}
-        className="px-5 py-2.5 bg-slate-900 text-white rounded-xl hover:bg-slate-800 transition-all inline-flex items-center gap-2 font-semibold disabled:opacity-50 cursor-pointer"
+        className="text-sm font-semibold text-slate-500 underline-offset-2 hover:text-slate-800 hover:underline disabled:opacity-50 cursor-pointer"
       >
-        <SparklesIcon className={`w-5 h-5 ${recalculating ? 'animate-pulse' : ''}`} />
         {recalculating ? 'Cruzando con IA…' : 'Recalcular matches'}
       </button>
     </div>
@@ -628,20 +676,25 @@ function Review({ data, competitors, onlyPending, setOnlyPending, applyOverride 
       {rows.length === 0 ? (
         <div className="bg-white rounded-2xl border border-slate-100 py-16 text-center text-slate-400">
           <CheckCircleIcon className="w-10 h-10 text-emerald-300 mx-auto mb-2" />
-          No hay matches pendientes de revisión. 🎉
+          No hay matches pendientes de revisión.
         </div>
       ) : rows.map((row, i) => (
         <div key={i} className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
-          <div className="flex items-baseline gap-3 mb-4">
-            <p className="font-black text-slate-900">{row.ngr.name}</p>
-            <span className="text-sm font-bold text-slate-500">{money(row.ngr.price)}</span>
-            <span className="text-[11px] text-slate-400">{row.ngr.category}</span>
+          <div className="mb-4">
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <p className="font-black text-slate-900">{row.ngr.name}</p>
+              <span className="text-sm font-bold text-slate-500">{money(row.ngr.price)}</span>
+              {row.ngr.category && (
+                <span className="text-[11px] text-slate-400">{row.ngr.category}</span>
+              )}
+            </div>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
             {competitors.filter((c: Competitor) => c.hasData !== false).map((c: Competitor) => (
               <MatchEditor
                 key={c.id}
                 competitor={c}
+                ngr={row.ngr}
                 cell={row.matches[c.id]}
                 onAction={(action, product) => applyOverride(row.ngr.name, c.id, action, product)}
               />
@@ -653,7 +706,12 @@ function Review({ data, competitors, onlyPending, setOnlyPending, applyOverride 
   );
 }
 
-function MatchEditor({ competitor, cell, onAction }: { competitor: Competitor; cell: Cell; onAction: (a: string, p?: Product) => void }) {
+function MatchEditor({ competitor, ngr, cell, onAction }: {
+  competitor: Competitor;
+  ngr: Product;
+  cell: Cell;
+  onAction: (a: string, p?: Product) => void;
+}) {
   const [expanded, setExpanded] = useState(false);
   const [query, setQuery] = useState('');
   const [catalog, setCatalog] = useState<Product[] | null>(null);
@@ -684,18 +742,24 @@ function MatchEditor({ competitor, cell, onAction }: { competitor: Competitor; c
       </div>
 
       {cell.best ? (
-        <div className="mb-3">
+        <div className="mb-3 space-y-2">
           <div className="flex items-center justify-between gap-2">
             <p className="text-sm font-bold text-slate-800 leading-tight">{cell.best.name}</p>
             <span className="text-sm font-black text-slate-900 shrink-0">{money(cell.best.price)}</span>
           </div>
-          <div className="flex items-center gap-2 mt-1">
+          <div className="flex items-center gap-2">
             <DeltaBadge delta={cell.delta} deltaPct={cell.deltaPct} />
             <span className="text-[10px] text-slate-400 font-bold">confianza {cell.best.score}</span>
           </div>
+          <DescCompare ngrDesc={ngr.description} compDesc={cell.best.description} compLabel={competitor.name} />
         </div>
       ) : (
-        <p className="text-sm text-slate-400 italic mb-3">Sin equivalente asignado</p>
+        <div className="mb-3 space-y-2">
+          <p className="text-sm text-slate-400 italic">Sin equivalente asignado</p>
+          {ngr.description && (
+            <DescCompare ngrDesc={ngr.description} compDesc={undefined} compLabel={competitor.name} />
+          )}
+        </div>
       )}
 
       <div className="flex flex-wrap gap-2">
@@ -753,14 +817,42 @@ function MatchEditor({ competitor, cell, onAction }: { competitor: Competitor; c
   );
 }
 
+function DescCompare({ ngrDesc, compDesc, compLabel }: {
+  ngrDesc?: string;
+  compDesc?: string;
+  compLabel: string;
+}) {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 rounded-lg bg-white border border-slate-100 p-2.5">
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Descripción NGR</p>
+        <p className="text-xs text-slate-600 leading-snug whitespace-pre-wrap">
+          {ngrDesc?.trim() || <span className="italic text-slate-400">Sin descripción</span>}
+        </p>
+      </div>
+      <div>
+        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Descripción {compLabel}</p>
+        <p className="text-xs text-slate-600 leading-snug whitespace-pre-wrap">
+          {compDesc?.trim() || <span className="italic text-slate-400">Sin descripción</span>}
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function AltRow({ p, onPick, score }: { p: Product; onPick: () => void; score?: number }) {
   return (
-    <button onClick={onPick} className="w-full flex items-center justify-between gap-2 px-2 py-1.5 rounded-lg hover:bg-white text-left cursor-pointer group">
-      <span className="text-sm text-slate-700 group-hover:text-slate-900 leading-tight line-clamp-1">{p.name}</span>
-      <span className="flex items-center gap-2 shrink-0">
-        {typeof score === 'number' && <span className="text-[10px] text-slate-400 font-bold">{score}</span>}
-        <span className="text-sm font-bold text-slate-900">{money(p.price)}</span>
+    <button onClick={onPick} className="w-full flex flex-col gap-0.5 px-2 py-2 rounded-lg hover:bg-white text-left cursor-pointer group">
+      <span className="w-full flex items-center justify-between gap-2">
+        <span className="text-sm text-slate-700 group-hover:text-slate-900 leading-tight">{p.name}</span>
+        <span className="flex items-center gap-2 shrink-0">
+          {typeof score === 'number' && <span className="text-[10px] text-slate-400 font-bold">{score}</span>}
+          <span className="text-sm font-bold text-slate-900">{money(p.price)}</span>
+        </span>
       </span>
+      {p.description?.trim() && (
+        <span className="text-[11px] text-slate-400 leading-snug line-clamp-2">{p.description}</span>
+      )}
     </button>
   );
 }

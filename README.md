@@ -81,7 +81,7 @@ Los resultados se guardan como `products_<ID>.csv` y `products_<ID>.json`.
 
 La pestaña **Comparativa** cruza cada producto de una marca NGR con su equivalente en cada competidor usando IA, y muestra un dashboard de diferencias de precio.
 
-- **Motor de matching:** Gemini vía Vertex AI (`product_matcher.js`), disparado on-demand con el botón **Recalcular matches**. Los resultados se guardan como `matches_<marca>_<canal>.json` en GCS.
+- **Motor de matching:** Gemini vía Vertex AI (`product_matcher.js`). En el dashboard está bajo el ícono de engranaje (**Recalcular matches**); también se puede correr por CLI. Resultados en `matches_<marca>_<canal>.json` (GCS). La pestaña **Revisión manual** muestra descripciones NGR vs competidor lado a lado.
 - **Canales:** toggle entre **Rappi** y **Sitio Propio** (sets de matches independientes).
 - **Curación manual:** solapa de revisión para **Confirmar / Rechazar / Reasignar** cada match. Las decisiones humanas se guardan aparte (`overrides_<marca>_<canal>.json`) y **siempre ganan** sobre la IA al recalcular.
 - **KPIs:** índice de precio, % de SKUs más caros/baratos y Δ promedio por competidor.

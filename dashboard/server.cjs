@@ -442,7 +442,7 @@ app.get('/api/matches', (req, res) => {
     if (!brand || !channel) return res.status(400).json({ error: 'brand y channel son requeridos' });
     try {
         const data = buildComparison(String(brand), String(channel));
-        if (!data) return res.status(404).json({ error: 'Sin matches. Ejecutá "Recalcular matches" primero.' });
+        if (!data) return res.status(404).json({ error: 'Sin matches. Usá el engranaje → Recalcular matches, o node product_matcher.js.' });
         res.json(data);
     } catch (err) {
         console.error('Error building comparison:', err);
