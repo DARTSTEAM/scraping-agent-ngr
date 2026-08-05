@@ -4,8 +4,7 @@ const path = require('path');
 
 /**
  * Little Caesars Peru scraper — pe.littlecaesars.com/es-pe/menu/
- * React app — extracts products from DOM and __NEXT_DATA__ if available.
- * Always takes the CURRENT price, not promotional crossed-out prices.
+ * React/Next app. Intercepts menu APIs, falls back to __NEXT_DATA__ and DOM.
  */
 async function scrapeLittleCaesars(url = 'https://pe.littlecaesars.com/es-pe/menu/') {
     console.log(`Iniciando scraping de Little Caesars: ${url}`);
@@ -16,27 +15,59 @@ async function scrapeLittleCaesars(url = 'https://pe.littlecaesars.com/es-pe/men
 
     const page = await context.newPage();
     let results = [];
+    const apiPayloads = [];
+
+    page.on('response', async (res) => {
+        const resUrl = res.url();
+        if (!/menu|product|catalog|category/i.test(resUrl)) return;
+        if (!/\.json|\/api\/|graphql|gateway/i.test(resUrl) && !resUrl.includes('littlecaesars')) return;
+        try {
+            const ct = res.headers()['content-type'] || '';
+            if (!ct.includes('json') && !ct.includes('javascript')) return;
+            const json = await res.json();
+            if (json && typeof json === 'object') {
+                apiPayloads.push(json);
+            }
+        } catch (_) {}
+    });
 
     try {
-        await page.goto(url, { waitUntil: 'networkidle', timeout: 60000 });
-        await page.waitForTimeout(3000);
+        await page.goto(url, { waitUntil: 'networkidle', timeout: 90000 });
+        await page.waitForTimeout(4000);
 
-        // Try __NEXT_DATA__ first
-        const nextData = await page.evaluate(() => {
-            const script = document.getElementById('__NEXT_DATA__');
-            return script ? JSON.parse(script.textContent) : null;
-        });
+        // Dismiss age / cookie / location gates
+        await dismissGates(page);
+        await page.waitForTimeout(2000);
+        await autoScroll(page);
+        await page.waitForTimeout(2000);
 
-        if (nextData) {
-            console.log('Encontrado __NEXT_DATA__, extrayendo...');
-            results = parseNextData(nextData);
+        // 1) API payloads intercepted during load
+        for (const payload of apiPayloads) {
+            const fromApi = walkProducts(payload);
+            if (fromApi.length > results.length) {
+                console.log(`API payload: ${fromApi.length} productos`);
+                results = fromApi;
+            }
         }
 
-        // Fallback: DOM extraction
+        // 2) __NEXT_DATA__
+        if (results.length < 3) {
+            const nextData = await page.evaluate(() => {
+                const script = document.getElementById('__NEXT_DATA__');
+                return script ? JSON.parse(script.textContent) : null;
+            });
+            if (nextData) {
+                console.log('Encontrado __NEXT_DATA__, extrayendo...');
+                results = walkProducts(nextData);
+            }
+        }
+
+        // 3) DOM extraction — LC menu is a single scrollable page with category labels
         if (results.length < 3) {
             console.log('Extrayendo desde DOM...');
             await autoScroll(page);
-            results = await extractLCProducts(page);
+            results = await extractLCProducts(page, null);
+            console.log(`DOM: ${results.length} productos`);
         }
 
     } catch (err) {
@@ -48,42 +79,51 @@ async function scrapeLittleCaesars(url = 'https://pe.littlecaesars.com/es-pe/men
     return saveUnique(results, 'littlecaesars-pe');
 }
 
-function parseNextData(nextData) {
-    const results = [];
-    try {
-        // Walk through all keys looking for product arrays
-        const json = JSON.stringify(nextData);
-        const sections = nextData?.props?.pageProps;
-        if (!sections) return results;
+async function dismissGates(page) {
+    for (const sel of [
+        'button:has-text("Aceptar")', 'button:has-text("Accept")', 'button:has-text("Entendido")',
+        'button:has-text("Sí")', 'button:has-text("Continuar")', 'button:has-text("Cerrar")',
+        'button:has-text("Ordenar")', 'button:has-text("Order")', '[aria-label="Close"]',
+        '[aria-label="Cerrar"]', '.modal-close', '#onetrust-accept-btn-handler',
+    ]) {
+        try {
+            const btn = await page.$(sel);
+            if (btn) { await btn.click(); await page.waitForTimeout(500); }
+        } catch (_) {}
+    }
+}
 
-        // Recurse through the object looking for arrays with name+price
-        function walk(obj, category = 'General') {
-            if (!obj || typeof obj !== 'object') return;
-            if (Array.isArray(obj)) {
-                obj.forEach(item => walk(item, category));
-                return;
-            }
-            // Check if this object looks like a product
-            if ((obj.name || obj.title) && (obj.price !== undefined || obj.basePrice !== undefined)) {
-                const priceRaw = obj.price ?? obj.basePrice ?? obj.unitPrice ?? 0;
-                const price = typeof priceRaw === 'number'
-                    ? (priceRaw > 1000 ? priceRaw / 100 : priceRaw)  // handle cents
-                    : parseFloat(priceRaw) || 0;
-                results.push({
-                    restaurant: 'Little Caesars',
-                    category: obj.category ?? obj.categoryName ?? category,
-                    name: obj.name || obj.title,
-                    description: obj.description || obj.shortDescription || '',
-                    price,
-                });
-                return;
-            }
-            // Check if this object looks like a category
-            const catName = obj.categoryName ?? obj.category ?? obj.name ?? category;
-            Object.values(obj).forEach(v => walk(v, typeof catName === 'string' ? catName : category));
+function walkProducts(obj, category = 'General', results = []) {
+    if (!obj || typeof obj !== 'object') return results;
+    if (Array.isArray(obj)) {
+        obj.forEach(item => walkProducts(item, category, results));
+        return results;
+    }
+
+    const name = obj.name || obj.title || obj.productName;
+    const priceRaw = obj.price ?? obj.basePrice ?? obj.unitPrice ?? obj.amount ?? obj.productPrice;
+    if (name && priceRaw !== undefined && typeof name === 'string') {
+        let price = typeof priceRaw === 'number'
+            ? (priceRaw > 1000 ? priceRaw / 100 : priceRaw)
+            : parseFloat(String(priceRaw).replace(/[^\d.,]/g, '').replace(',', '.')) || 0;
+        if (price > 0 && name.length > 1 && name.length < 120) {
+            results.push({
+                restaurant: 'Little Caesars',
+                category: obj.categoryName || obj.category || category || 'General',
+                name,
+                description: obj.description || obj.shortDescription || '',
+                price,
+            });
+            return results;
         }
-        walk(sections);
-    } catch (_) {}
+    }
+
+    const catName = typeof (obj.categoryName ?? obj.category ?? obj.name) === 'string'
+        ? (obj.categoryName ?? obj.category ?? obj.name)
+        : category;
+    // Only treat as category context if it looks like a section (has nested products)
+    const nextCat = (obj.products || obj.items || obj.menuItems) ? (obj.name || obj.title || catName) : category;
+    Object.values(obj).forEach(v => walkProducts(v, typeof nextCat === 'string' ? nextCat : category, results));
     return results;
 }
 
@@ -102,94 +142,82 @@ async function autoScroll(page) {
     await page.waitForTimeout(1000);
 }
 
-async function extractLCProducts(page) {
-    return page.evaluate(() => {
+async function extractLCProducts(page, forcedCategory) {
+    return page.evaluate((forcedCat) => {
         const results = [];
-        let currentCategory = 'General';
+        const seen = new Set();
 
-        // LC uses section-based layout
-        const sections = document.querySelectorAll('section, [class*="category"], [class*="section"]');
-        sections.forEach(section => {
-            const header = section.querySelector('h2, h3, h4, [class*="title"]');
-            if (header) currentCategory = header.textContent?.trim() || currentCategory;
-
-            const cards = section.querySelectorAll('[class*="product"], [class*="item"], article, li');
-            cards.forEach(card => {
-                const nameEl = card.querySelector('h3, h4, h5, [class*="name"], [class*="title"]');
-                const productName = nameEl?.textContent?.trim() || '';
-                if (!productName || productName.length < 2) return;
-
-                // Skip strikethrough prices
-                const strikeEls = card.querySelectorAll('del, s, [class*="line-through"], [class*="old-price"], [class*="was"]');
-                const strikethroughPrices = new Set();
-                strikeEls.forEach(el => {
-                    const m = el.textContent.match(/[\d.,]+/);
-                    if (m) strikethroughPrices.add(parseFloat(m[0].replace(',', '.')));
-                });
-
-                // All price candidates in the card
-                const priceEls = card.querySelectorAll('[class*="price"], [class*="cost"], [class*="monto"]');
-                let price = 0;
-                priceEls.forEach(el => {
-                    if (el.closest('del, s')) return; // inside strikethrough
-                    const m = el.textContent.match(/[\d.,]+/);
-                    if (m) {
-                        const v = parseFloat(m[0].replace(',', '.'));
-                        if (!strikethroughPrices.has(v) && v > 0 && price === 0) price = v;
-                    }
-                });
-
-                // Fallback: regex on full text excluding strikethrough
-                if (price === 0) {
-                    const fullText = card.textContent || '';
-                    const matches = [...fullText.matchAll(/S\/\s*([\d.,]+)/g)];
-                    const prices = matches
-                        .map(m => parseFloat(m[1].replace(',', '.')))
-                        .filter(p => !isNaN(p) && !strikethroughPrices.has(p));
-                    price = prices.length > 0 ? prices[0] : 0;
-                }
-
-                if (price === 0) return;
-
-                const descEl = card.querySelector('[class*="desc"], p');
-                const description = descEl?.textContent?.trim() || '';
-
-                results.push({ restaurant: 'Little Caesars', category: currentCategory, name: productName, description, price });
-            });
+        // LC uses Emotion hashed classes. Compact cards look like:
+        //   "S/9.90Hot-N-Ready®CRAZY PUFFS4 Piezas"
+        // Prefer mid-level cards (contained in a larger priced parent) — they have
+        // cleaner name text without long descriptions.
+        const candidates = [...document.querySelectorAll('div')].filter(el => {
+            if (el.children.length < 1 || el.children.length > 4) return false;
+            const t = (el.textContent || '').replace(/\s+/g, ' ').trim();
+            if (t.length < 8 || t.length > 160) return false;
+            return /S\/\s*[\d.,]+/.test(t);
         });
 
-        // Fallback: full DOM scan
-        if (results.length === 0) {
-            document.querySelectorAll('article, [class*="menu-item"], [class*="product-card"]').forEach(card => {
-                const nameEl = card.querySelector('h2, h3, h4, [class*="name"]');
-                const name = nameEl?.textContent?.trim() || '';
-                if (!name) return;
+        for (const el of candidates) {
+            // Keep only mid-level: must be nested inside another candidate
+            const hasParentCandidate = candidates.some(o => o !== el && o.contains(el));
+            const hasChildCandidate = candidates.some(o => o !== el && el.contains(o));
+            if (!hasParentCandidate || hasChildCandidate) continue;
 
-                const strikeEls = card.querySelectorAll('del, s');
-                const striked = new Set();
-                strikeEls.forEach(e => {
-                    const m = e.textContent.match(/[\d.,]+/);
-                    if (m) striked.add(parseFloat(m[0].replace(',', '.')));
-                });
+            const raw = (el.textContent || '').replace(/\s+/g, ' ').trim();
+            const priceMatch = raw.match(/^S\/\s*([\d.,]+)/);
+            if (!priceMatch) continue;
+            const price = parseFloat(priceMatch[1].replace(',', '.'));
+            if (!price || price <= 0) continue;
 
-                const priceMatches = [...card.textContent.matchAll(/S\/\s*([\d.,]+)/g)];
-                const prices = priceMatches.map(m => parseFloat(m[1].replace(',', '.'))).filter(p => !isNaN(p) && !striked.has(p));
-                const price = prices[0] || 0;
-                if (price === 0) return;
+            let rest = raw.slice(priceMatch[0].length).trim();
+            let category = forcedCat || 'Pizzas';
+            if (/^Hot-N-Ready®?/i.test(rest)) {
+                category = 'Hot-N-Ready';
+                rest = rest.replace(/^Hot-N-Ready®?\s*/i, '');
+            }
 
-                results.push({ restaurant: 'Little Caesars', category: 'General', name, description: '', price });
+            // Strip trailing "N Piezas" / glued description starting with lowercase
+            let productName = rest
+                .replace(/\d+\s*Piezas.*$/i, '')
+                .replace(/(?<=[a-záéíóúñ])(?=[A-ZÁÉÍÓÚÑ])/g, '\n') // split CamelGlue
+                .split('\n')[0]
+                .trim();
+
+            // "Familiar PepperoniPepperoni" → after camel split first part may still
+            // be "Familiar Pepperoni" if we split on a-z→A-Z boundary
+            if (!productName) productName = rest.slice(0, 40).trim();
+
+            // Final cleanup: drop duplicated trailing word ("Familiar Pepperoni Pepperoni")
+            const words = productName.split(/\s+/);
+            if (words.length >= 2 && words[words.length - 1].toLowerCase() === words[words.length - 2].toLowerCase()) {
+                words.pop();
+                productName = words.join(' ');
+            }
+
+            if (!productName || productName.length < 2 || seen.has(productName)) continue;
+            if (/^(INICIO|MENÚ|MENU|ORDENA|START|S\/)/i.test(productName)) continue;
+
+            results.push({
+                restaurant: 'Little Caesars',
+                category,
+                name: productName,
+                description: '',
+                price,
             });
+            seen.add(productName);
         }
 
         return results;
-    });
+    }, forcedCategory || null);
 }
 
 function saveUnique(results, storeId) {
     const seen = new Set();
     const unique = results.filter(p => {
-        if (!p.name || seen.has(p.name)) return false;
-        seen.add(p.name);
+        const key = `${p.name}||${p.category || ''}`;
+        if (!p.name || seen.has(key)) return false;
+        seen.add(key);
         return true;
     });
 

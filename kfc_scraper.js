@@ -71,7 +71,7 @@ async function scrapeKFC(url = 'https://www.kfc.com.pe/carta') {
             return [...seen.values()];
         });
 
-        console.log(`Categorías detectadas: ${categories.length} → ${categories.map(c => c.name).join(', ')}`);
+        console.log(`Categorías Carta: ${categories.length} → ${categories.map(c => c.name).join(', ')}`);
 
         if (categories.length === 0) {
             results = await scrapeCategoryPages(page, 'https://www.kfc.com.pe/carta/ver-todo', 'General');
@@ -84,6 +84,39 @@ async function scrapeKFC(url = 'https://www.kfc.com.pe/carta') {
                 const catProducts = await scrapeCategoryPages(page, catUrl, cat.name);
                 results.push(...catProducts);
             }
+        }
+
+        // Promociones section (best-effort)
+        try {
+            await page.goto('https://www.kfc.com.pe/promociones', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await page.waitForTimeout(1500);
+            await handleStoreModal(page);
+            const promoCats = await page.evaluate(() => {
+                const seen = new Map();
+                for (const a of document.querySelectorAll('a[href*="/promociones/"]')) {
+                    const href = a.getAttribute('href') || '';
+                    const m = href.match(/^\/promociones\/([a-z0-9-]+)\/?$/i);
+                    if (!m || m[1].toLowerCase() === 'ver-todo') continue;
+                    let text = (a.textContent || '').trim();
+                    const half = text.slice(0, text.length / 2);
+                    if (text.length % 2 === 0 && half === text.slice(text.length / 2)) text = half;
+                    if (!seen.has(href) && text) seen.set(href, { href, name: text });
+                }
+                return [...seen.values()];
+            });
+            console.log(`Categorías Promociones: ${promoCats.length} → ${promoCats.map(c => c.name).join(', ')}`);
+            if (promoCats.length > 0) {
+                for (const cat of promoCats) {
+                    const catUrl = cat.href.startsWith('http') ? cat.href : `https://www.kfc.com.pe${cat.href}`;
+                    results.push(...await scrapeCategoryPages(page, catUrl, cat.name));
+                }
+            } else {
+                const promoProducts = await scrapeCategoryPages(page, 'https://www.kfc.com.pe/promociones', 'Promociones');
+                if (promoProducts.length > 0) results.push(...promoProducts);
+                else console.warn('Promociones: sin productos, continuando solo con Carta.');
+            }
+        } catch (promoErr) {
+            console.warn(`Promociones no disponible (${promoErr.message}); continuando solo con Carta.`);
         }
 
     } catch (error) {

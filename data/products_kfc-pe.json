@@ -1,58 +1,25 @@
 [
   {
-    "name": "Mega Futbolero: 7 Piezas",
-    "description": "7 Piezas de Pollo + 1 Complemento Familiar + 1 Bebida 1 L",
-    "price": 49.9,
-    "originalPrice": 81.9,
-    "category": "Modo Fútbol",
-    "restaurant": "KFC"
-  },
-  {
-    "name": "Mega Futbolero: 8 piezas",
-    "description": "8 Piezas de Pollo + 6 Nuggets + 1 Complemento Familiar + 1 Coca Cola 1.5L",
-    "price": 64.9,
-    "originalPrice": 110.8,
-    "category": "Modo Fútbol",
-    "restaurant": "KFC"
-  },
-  {
-    "name": "Mega Futbolero: 12 piezas",
-    "description": "12 Piezas de Pollo + 8 Nuggets + 1 Complemento Familiar + 1 Ensalada o Puré Familiar + 1 Coca Cola 1.5 L",
-    "price": 89.9,
-    "originalPrice": 162.5,
-    "category": "Modo Fútbol",
-    "restaurant": "KFC"
-  },
-  {
-    "name": "Mega Futbolero: 10 piezas",
-    "description": "10 Piezas de Pollo + 5 Nuggets + 1 Complemento Familiar + 1 Salsa Familiar + 1 Coca Cola 1.5L",
-    "price": 74.9,
-    "originalPrice": 129.3,
-    "category": "Modo Fútbol",
-    "restaurant": "KFC"
-  },
-  {
     "name": "Big Box Peruano",
     "description": "3 Piezas de Pollo, 4 Nuggets, 1 Complemento Regular, 1 Ensalada o Puré Regular, 1 Salsa Personal y 1 Bebida Personal",
     "price": 29.9,
     "originalPrice": 57,
-    "category": "Promos Patrias",
+    "category": "🔥Promos Patrias",
     "restaurant": "KFC"
   },
   {
     "name": "Chick'n Share Peruano con Bebidas",
-    "description": "8 Nuggets, 8 Hot Wings, 2 Complementos Regulares, 1 Salsa Familiar y 1 Bebida 1L",
+    "description": "8 Nuggets, 8 Hot Wings, 2 Complementos Regulares, 1 Salsa Familiar y 2 Bebidas Regulares",
     "price": 38.8,
-    "originalPrice": 68.7,
-    "category": "Promos Patrias",
+    "category": "🔥Promos Patrias",
     "restaurant": "KFC"
   },
   {
     "name": "Mega Peruano",
-    "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Complemento Familiar y 1 Salsa Familiar",
+    "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Yuquita Familiar y 1 Salsa Familiar.",
     "price": 49.9,
     "originalPrice": 86.7,
-    "category": "Promos Patrias",
+    "category": "🔥Promos Patrias",
     "restaurant": "KFC"
   },
   {
@@ -60,29 +27,77 @@
     "description": "8 Nuggets, 8 Hot Wings, 1 Salsa Familiar y 2 Complementos Regulares",
     "price": 34.9,
     "originalPrice": 61.7,
-    "category": "Promos Patrias",
+    "category": "🔥Promos Patrias",
     "restaurant": "KFC"
   },
   {
-    "name": "Mega Peruano con Gaseosas",
+    "name": "Mega Peruano con Bebidas",
     "description": "6 Piezas de Pollo, 6 Hot Wings o Nuggets, 1 Complemento Familiar, 1 Bebida 1L y 1 Salsa Familiar",
     "price": 55.8,
     "originalPrice": 93.7,
-    "category": "Promos Patrias",
+    "category": "🔥Promos Patrias",
     "restaurant": "KFC"
   },
   {
     "name": "Yuquita Familiar",
     "description": "15 Yuquitas Fritas",
     "price": 11.9,
-    "category": "Promos Patrias",
+    "category": "🔥Promos Patrias",
     "restaurant": "KFC"
   },
   {
     "name": "Yuquita Personal",
     "description": "5 Yuquitas Fritas",
     "price": 5.9,
-    "category": "Promos Patrias",
+    "category": "🔥Promos Patrias",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "AlaKFC Mega: 6 piezas",
+    "description": "6 Piezas de Pollo + 4 Hot Wings o Nuggets + 1 Complemento Familiar + 1 Salsa Alacena",
+    "price": 49.9,
+    "originalPrice": 83,
+    "category": "AlaKFC",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "AlaKFC Mega: 10 piezas",
+    "description": "10 Piezas de Pollo + 1 Complemento Familiar+ 1 Gaseosa 1L + 1 Salsa Alacena",
+    "price": 69.9,
+    "originalPrice": 106.8,
+    "category": "AlaKFC",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "AlaKFC Chick'n Share Tenders",
+    "description": "6 Tenders + 2 Complementos regulares + 1 Salsa Alacena",
+    "price": 36.9,
+    "originalPrice": 66.5,
+    "category": "AlaKFC",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "AlaKFC Mega: 8 piezas",
+    "description": "8 Piezas de Pollo + 1 Complemento Familiar + 1 Ensalada o Puré Familiar + 1 Salsa Alacena",
+    "price": 59.9,
+    "originalPrice": 99.8,
+    "category": "AlaKFC",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "AlaKFC Chick'n Share Snacks",
+    "description": "9 Hot Wings + 9 Nuggets + 2 Complementos regulares + 1 Salsa Alacena",
+    "price": 36.9,
+    "originalPrice": 68.45,
+    "category": "AlaKFC",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "AlaKFC Chick'n Share Mix",
+    "description": "4 Piezas de Pollo + 6 Nuggets + 2 Complementos regulares + 1 Salsa Alacena",
+    "price": 36.9,
+    "originalPrice": 69.6,
+    "category": "AlaKFC",
     "restaurant": "KFC"
   },
   {
@@ -533,23 +548,9 @@
     "restaurant": "KFC"
   },
   {
-    "name": "Bucket de Salsa Tartara Peruana",
-    "description": "1 Bucket de Salsa Tartara Peruana",
-    "price": 9.9,
-    "category": "Salsas",
-    "restaurant": "KFC"
-  },
-  {
     "name": "Rocoto Familiar",
     "description": "Salsa cremosa a base de crema de rocoto, de sabor intenso y picante (99 Gr aprox)",
     "price": 3.9,
-    "category": "Salsas",
-    "restaurant": "KFC"
-  },
-  {
-    "name": "Bucket de Salsa Secreta",
-    "description": "1 Bucket de Salsa Secreta",
-    "price": 9.9,
     "category": "Salsas",
     "restaurant": "KFC"
   },
@@ -561,9 +562,9 @@
     "restaurant": "KFC"
   },
   {
-    "name": "Tártara Peruana Familiar",
-    "description": "Salsa a base de mayonesa mezclada cebolla china y BBQ, con un toque ahumado y cremoso (99 Gr aprox)",
-    "price": 3.9,
+    "name": "Bucket de Salsa Secreta",
+    "description": "1 Bucket de Salsa Secreta",
+    "price": 9.9,
     "category": "Salsas",
     "restaurant": "KFC"
   },
@@ -677,6 +678,110 @@
     "description": "Agua Saborizada de Maracuyá",
     "price": 4.5,
     "category": "Bebidas",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Combinados: Krunchy + Pieza de Pollo",
+    "description": "1 Krunchy + 1 Pieza de Pollo + 1 Complemento Regular + 1 Bebida Personal",
+    "price": 22.9,
+    "originalPrice": 33.7,
+    "category": "Promociones",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Krunchy + Papas",
+    "description": "1 Krunchy + 1 Complemento Regular",
+    "price": 14.9,
+    "originalPrice": 19.8,
+    "category": "Promociones",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Promo Tenders",
+    "description": "3 Tenders (100% Pechuga de Pollo) + 1 Complemento Regular + 1 Salsa Personal",
+    "price": 19.9,
+    "originalPrice": 33.3,
+    "category": "Promociones",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Wings & Krunch: 18 Hot Wings",
+    "description": "18 Hot Wings + 1 Complemento Familiar",
+    "price": 37.9,
+    "originalPrice": 66.8,
+    "category": "Promos Grupales",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Dúo Twister XL + Papas",
+    "description": "2 Twisters XL Tradicionales + 2 Complementos Regulares",
+    "price": 39.9,
+    "originalPrice": 55.6,
+    "category": "Promos Grupales",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Delivery - 6 Piezas",
+    "description": "6 Piezas de Pollo + 1 Complemento Familiar",
+    "price": 39.9,
+    "originalPrice": 65.9,
+    "category": "Promos Grupales",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Delivery + Gaseosa",
+    "description": "6 Piezas de Pollo + 1 Complemento Familiar + 1 Bebida 1L",
+    "price": 45.8,
+    "originalPrice": 72.9,
+    "category": "Promos Grupales",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Promo - 8 Piezas",
+    "description": "8 Piezas de Pollo + 1 Complemento Familiar",
+    "price": 49.9,
+    "originalPrice": 83.9,
+    "category": "Promos Grupales",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Promo: 10 Piezas",
+    "description": "10 Piezas de Pollo + 1 Complemento Familiar + 1 Bebida 1.5L",
+    "price": 64.9,
+    "originalPrice": 111.9,
+    "category": "Promos Grupales",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Combo Hot Wings Yape + Salsa",
+    "description": "6 Hot Wings, 1 Complemento Regular & 1 Salsa Personal",
+    "price": 16.9,
+    "originalPrice": 26.7,
+    "category": "Yape Promos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Chick´n Share Yape: 4 Piezas",
+    "description": "4 Piezas de Pollo y 2 Complementos Regulares",
+    "price": 29.9,
+    "originalPrice": 47.8,
+    "category": "Yape Promos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Chick´n Share Yape: 4 Piezas + 4 Nuggets",
+    "description": "4 Piezas de Pollo, 4 Nuggets y 2 Complementos Regulares",
+    "price": 32.9,
+    "originalPrice": 58.6,
+    "category": "Yape Promos",
+    "restaurant": "KFC"
+  },
+  {
+    "name": "Mega Yape: 8 piezas",
+    "description": "8 Piezas de Pollo, 1 Complemento Familiar y 1 Salsa Familiar",
+    "price": 59.9,
+    "originalPrice": 87.8,
+    "category": "Yape Promos",
     "restaurant": "KFC"
   }
 ]

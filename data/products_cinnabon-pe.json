@@ -1,0 +1,261 @@
+[
+  {
+    "restaurant": "Cinnabon",
+    "category": "Los Favoritos",
+    "name": "Pack (2 Minibon + 2 Minichocobon)",
+    "description": "Rollos de canela medianos llamados minibon con frosting (2 unid) + rollos  rellenos de chocolate y cubiertos con frosting y chocolate (2 unid).",
+    "price": 29
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Los Favoritos",
+    "name": "Pack 12 Bonbites",
+    "description": "Rollos de canela llamados bonbites clásicos cubiertos con glaseado de queso crema (12 unidades).",
+    "price": 26
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Los Favoritos",
+    "name": "24 Bonbites clásicos (Duo Pack 12 bonbites)",
+    "description": "Rollos de canela llamados bonbites clásicos cubiertos con glaseado de queso crema (24 unidades).",
+    "price": 38
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Los Favoritos",
+    "name": "Pack Para Compartir",
+    "description": "Cinnapack 12 Bonbites + 2 Chillattas en los sabores de Fresa, Mango o Lucuma",
+    "price": 41.9
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Cinnabon Clásico",
+    "description": "Rollo de canela clásico cubierto con glaseado frosting.",
+    "price": 14.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Roll On The Go",
+    "description": "Rollos de canela en trozos cubierto con nuestro glaseado frosting.",
+    "price": 13
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Caramel Pecanbon",
+    "description": "Rollo de canela clásico cubierto con frosting, caramelo y pecanas.",
+    "price": 16.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Duo Minibon",
+    "description": "Rollos de canela medianos llamados minibon cubierto con glaseado frosting (2 unid).",
+    "price": 15
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Duo (Cinnabon + Pecanbon)",
+    "description": "Rollo de canela clásico cubierto con glaseado frosting (1 unid) +  rollo de canela clásico con frosting, caramelo, pecanas (1 unidad).",
+    "price": 29.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Duo (Minibon + Minichocobon)",
+    "description": "Rollo de canela clásico cubierto con frosting (1 unid) + rollo  relleno de chocolate y frosting (1 unidad).",
+    "price": 16
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Duo (Minibon + Minipecanbon)",
+    "description": "Rollos de canela cubierto con glaseado frosting (1 unid) +  rollo de canela cubierto con frosting, caramelo, pecanas (1 unidad).",
+    "price": 17
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Duo Cinnabon Clásico",
+    "description": "Rollos de canela clasico cubierto con glaseado frosting (2 unidades).",
+    "price": 27.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Duo Minichocobon",
+    "description": "Rollos rellenos de chocolate, cubiertos con chocolate, frosting. (2 unidades).",
+    "price": 17
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Chocobon Classic",
+    "description": "Rollo de chocolate relleno de chocolate cubierto con frosting y lineas de chocolate",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Cinnabon Caramel & Cookies",
+    "description": "Cinnabon Clásico de canela cubiero con nuestro frosting y acompañado de Caramelo y trocitos de galleta oreo.",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Cinnabon Choco & Cookies",
+    "description": "Cinnabon Clásico de canela cubiero con nuestro frosting y acompañado de Chocolate y trocitos de galleta oreo.",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Cinnabon Pistacho",
+    "description": "Cinnabon de canela cubierto con crema de pistacho, salsa de chocolate y pistacho en trozos.",
+    "price": 22.9
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Cinnabon Strawberry & Cookies",
+    "description": "Cinnabon Clásico de canela cubiero con nuestro frosting y acompapañado de jalea de fresa y trocitos de galleta oreo.",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Baked Goods",
+    "name": "Minibon Pistacho",
+    "description": "Minibo de canela cubierto con crema de pistacho, salsa de chocolate y pistacho en trozos.",
+    "price": 13.9
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "CinnaPromos",
+    "name": "24 Choco Bonbites (Duo Pack 12 bonbites)",
+    "description": "24 chocobon Bites rellenos de chocolate, cubiertos con frosting y chocolate.",
+    "price": 39
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Cinnapacks",
+    "name": "Pack 4 Minibon",
+    "description": "Rollos de canela medianos rellenos de canela llamados minibon cubiertos con frosting (4 unid).",
+    "price": 27
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Cinnapacks",
+    "name": "Pack 4 Cupcakes",
+    "description": "Cupcakes en los sabores variados de vainilla, chocolate, red velvet (4 unidades).",
+    "price": 30.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Cinnapacks",
+    "name": "Pack 6 Minibon",
+    "description": "Rollos de canela medianos rellenos de canela llamados minibon cubiertos con frosting (6 unidades).",
+    "price": 37
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Cinnapacks",
+    "name": "Pack (3 Minibon + 3 Chocobon)",
+    "description": "Rollos de canela medianos llamados minibon con frosting (3 unidades) + rollos rellenos de chocolate y cubiertos con frosting y chocolate (3 unidades).",
+    "price": 40
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Cinnapacks",
+    "name": "Pack 6 Minichocobon",
+    "description": "Rollos de chocolate llamados minichocobon cubiertos de frosting y chocolate (6 unidades).",
+    "price": 42
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Cinnapacks",
+    "name": "Pack 9 Minibon",
+    "description": "Rollos de canela medianos rellenos de canela llamados minibon cubiertos con frosting (9 unidades).",
+    "price": 52
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Cinnapacks",
+    "name": "Pack 12 Choco Bonbites",
+    "description": "12 chocobon Bites rellenos de chocolate, cubiertos con frosting y chocolate.",
+    "price": 27
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Chillattas",
+    "name": "Chillatta Capuccino",
+    "description": "Bebida frappé sabor café con crema chantilly.",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Chillattas",
+    "name": "Chillatta Cookies and Cream",
+    "description": "Bebida frappé en el sabor de vainilla y galleta de oreo con crema chantilly.",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Chillattas",
+    "name": "Chillatta Explosión Tropical",
+    "description": "Bebida frappé en el sabor de mango, maracuyá y naranja con crema chantilly.",
+    "price": 14
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Chillattas",
+    "name": "Chillatta Fresa",
+    "description": "Bebida frappé en el sabor de fresa con leche acompañado de crema chantilly.",
+    "price": 14
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Chillattas",
+    "name": "Chillatta Lúcuma",
+    "description": "Bebida frappé en el sabor de lúcuma con leche acompañado de crema chantilly.",
+    "price": 14
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Chillattas",
+    "name": "Chillatta Mango",
+    "description": "Bebida frappé de sabor mango con leche.",
+    "price": 14
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Chillattas",
+    "name": "Chillatta Mocha",
+    "description": "Bebida frappé sabor mocha.",
+    "price": 15.5
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Chillattas",
+    "name": "Chillatta Strawberry & Cookies",
+    "description": "Bebida frappé 12oz de Oreo licuado con syrup de fresa",
+    "price": 15.9
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Bebidas Frías",
+    "name": "Agua San Carlos Con Gas 500 ml",
+    "description": "",
+    "price": 3
+  },
+  {
+    "restaurant": "Cinnabon",
+    "category": "Bebidas Frías",
+    "name": "Agua San Carlos Sin Gas 500 ml",
+    "description": "",
+    "price": 3
+  }
+]

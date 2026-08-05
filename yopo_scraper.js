@@ -4,8 +4,9 @@ const path = require('path');
 
 /**
  * Yopo Peru scraper — yopo.pe/categorias/
- * Uses the same Digifood platform as Burger King / Wanta.
- * Always takes the CURRENT price, not promotional crossed-out prices.
+ * WordPress + Elementor + WooCommerce (NOT Digifood articles).
+ * Category anchors are empty #id divs; products are woo title/price widgets.
+ * Category is assigned by vertical position relative to those anchors.
  */
 async function scrapeYopo(url = 'https://yopo.pe/categorias/') {
     console.log(`Iniciando scraping de Yopo: ${url}`);
@@ -15,30 +16,131 @@ async function scrapeYopo(url = 'https://yopo.pe/categorias/') {
     });
 
     const page = await context.newPage();
-    const results = [];
+    let results = [];
 
     try {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
         await page.waitForTimeout(3000);
-
-        // Scroll to trigger lazy loading
+        try { await page.click('button:has-text("Aceptar todo")', { timeout: 4000 }); } catch (_) {}
+        try { await page.click('button:has-text("Aceptar")', { timeout: 2000 }); } catch (_) {}
+        await page.waitForTimeout(1500);
         await autoScroll(page);
 
-        const products = await extractDigifoodProducts(page, 'Yopo');
-        results.push(...products);
+        results = await page.evaluate(() => {
+            const docY = el => el.getBoundingClientRect().top + window.scrollY;
 
-        // If paginated, navigate through pages
-        let pageNum = 1;
-        while (true) {
-            const nextClicked = await clickNext(page);
-            if (!nextClicked) break;
-            pageNum++;
-            console.log(`Procesando página ${pageNum}...`);
-            await page.waitForTimeout(3000);
-            await autoScroll(page);
-            const moreProducts = await extractDigifoodProducts(page, 'Yopo');
-            results.push(...moreProducts);
-        }
+            const ANCHOR_LABELS = {
+                destacado: 'Destacado de la semana',
+                promociones: 'Promociones',
+                wrappers: 'Wrappers',
+                tendersynuggets: 'Tenders & Nuggets',
+                hamburguesas: 'Hamburguesas',
+                ensaladas: 'Ensaladas',
+                complementos: 'Complementos',
+                bowls: 'Bowls',
+                postres: 'Postres',
+                bebidas: 'Bebidas',
+            };
+
+            const headers = [];
+            for (const [id, name] of Object.entries(ANCHOR_LABELS)) {
+                const el = document.getElementById(id);
+                if (el) headers.push({ name, y: docY(el) });
+            }
+            // Also pick up visible section headings
+            for (const el of document.querySelectorAll('h1, h2, h3, .elementor-heading-title')) {
+                const t = (el.textContent || '').trim();
+                if (!t || t.length > 60) continue;
+                const match = Object.values(ANCHOR_LABELS).find(n => n.toLowerCase() === t.toLowerCase());
+                if (match) {
+                    const y = docY(el);
+                    if (!headers.some(h => h.name === match && Math.abs(h.y - y) < 80)) {
+                        headers.push({ name: match, y });
+                    }
+                }
+            }
+            headers.sort((a, b) => a.y - b.y);
+
+            // Product cards: containers that have both a woo title and a price
+            const titleWidgets = [...document.querySelectorAll(
+                '.elementor-widget-woocommerce-product-title, .woocommerce-loop-product__title, h2.product_title, .product-title'
+            )];
+
+            const results = [];
+            const seen = new Set();
+
+            for (const titleWidget of titleWidgets) {
+                const nameEl = titleWidget.querySelector('h1, h2, h3, a, .elementor-heading-title') || titleWidget;
+                const name = (nameEl.textContent || '').trim();
+                if (!name || name.length < 2 || seen.has(name)) continue;
+
+                // Find price nearby: sibling / parent container
+                const card = titleWidget.closest('.e-con, .elementor-element[data-element_type="container"], li.product, .product') || titleWidget.parentElement;
+                let price = 0;
+                const priceRoot = card || titleWidget.parentElement?.parentElement;
+                if (priceRoot) {
+                    const amount = priceRoot.querySelector('.woocommerce-Price-amount, .price .amount, p.price');
+                    if (amount) {
+                        const m = amount.textContent.match(/([\d.,]+)/);
+                        if (m) price = parseFloat(m[1].replace(',', '.'));
+                    }
+                }
+                if (price === 0) {
+                    // Walk forward siblings for a price widget
+                    let sib = titleWidget.parentElement;
+                    for (let i = 0; i < 6 && sib; i++) {
+                        sib = sib.nextElementSibling || sib.parentElement?.nextElementSibling;
+                        if (!sib) break;
+                        const m = (sib.textContent || '').match(/S\/\s*([\d.,]+)/);
+                        if (m) { price = parseFloat(m[1].replace(',', '.')); break; }
+                    }
+                }
+                if (price === 0) continue;
+
+                let description = '';
+                if (card) {
+                    const descEl = card.querySelector('.woocommerce-product-details__short-description, .elementor-widget-woocommerce-product-short-description, p');
+                    if (descEl && !descEl.classList.contains('price')) {
+                        description = descEl.textContent?.trim() || '';
+                    }
+                }
+
+                const y = docY(titleWidget);
+                let category = 'General';
+                for (const h of headers) {
+                    if (h.y <= y + 10) category = h.name;
+                    else break;
+                }
+
+                results.push({ restaurant: 'Yopo', category, name, description, price });
+                seen.add(name);
+            }
+
+            // Fallback: any element with woo price + nearby title text
+            if (results.length === 0) {
+                document.querySelectorAll('p.price, .woocommerce-Price-amount').forEach(priceEl => {
+                    const m = priceEl.textContent.match(/([\d.,]+)/);
+                    const price = m ? parseFloat(m[1].replace(',', '.')) : 0;
+                    if (price === 0) return;
+                    const card = priceEl.closest('.e-con, .product, .elementor-element') || priceEl.parentElement;
+                    const nameEl = card?.querySelector('h1, h2, h3, a.woocommerce-LoopProduct-link, .product_title');
+                    const name = nameEl?.textContent?.trim();
+                    if (!name || seen.has(name)) return;
+                    const y = docY(priceEl);
+                    let category = 'General';
+                    for (const h of headers) {
+                        if (h.y <= y + 10) category = h.name;
+                        else break;
+                    }
+                    results.push({ restaurant: 'Yopo', category, name, description: '', price });
+                    seen.add(name);
+                });
+            }
+
+            return results;
+        });
+
+        console.log(`Extraídos ${results.length} productos`);
 
     } catch (err) {
         console.error(`Error: ${err.message}`);
@@ -67,91 +169,28 @@ async function autoScroll(page) {
     await page.waitForTimeout(1000);
 }
 
-async function clickNext(page) {
-    return page.evaluate(() => {
-        const buttons = Array.from(document.querySelectorAll('button, a'));
-        const next = buttons.find(b => {
-            const txt = b.textContent?.trim();
-            const lbl = b.getAttribute('aria-label') || '';
-            return txt === '>' || txt === '›' || txt === '→' || txt === '»' ||
-                lbl.toLowerCase().includes('siguiente') || lbl.toLowerCase().includes('next');
-        });
-        if (next && !next.hasAttribute('disabled')) { next.click(); return true; }
-        return false;
-    });
-}
-
-async function extractDigifoodProducts(page, restaurantName) {
-    return page.evaluate((name) => {
-        const results = [];
-        let currentCategory = 'General';
-
-        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT);
-        while (walker.nextNode()) {
-            const el = walker.currentNode;
-
-            // Track section headers
-            if ((el.tagName === 'H1' || el.tagName === 'H2') && !el.closest('article')) {
-                const txt = el.textContent?.trim();
-                if (txt && txt.length > 1 && txt.length < 80) currentCategory = txt;
-            }
-
-            if (el.tagName === 'ARTICLE') {
-                const nameEl = el.querySelector('h3, h2, h4');
-                const productName = nameEl?.textContent?.trim() || '';
-                if (!productName) continue;
-
-                // Description: first <p> without price
-                const allPs = Array.from(el.querySelectorAll('p'));
-                const descEl = allPs.find(p => !p.textContent.includes('S/'));
-                const description = descEl?.textContent?.trim() || '';
-
-                // Price: prefer the NON-strikethrough price
-                // Crossed-out prices are in <del>, <s>, or have class 'line-through'/'old-price'
-                const strikeEls = el.querySelectorAll('del, s, [class*="line-through"], [class*="old-price"], [class*="original-price"], [class*="tachado"]');
-                const strikethroughPrices = new Set();
-                strikeEls.forEach(el => {
-                    const m = el.textContent.match(/[\d.,]+/);
-                    if (m) strikethroughPrices.add(parseFloat(m[0].replace(',', '.')));
-                });
-
-                const allPriceMatches = [...el.textContent.matchAll(/S\/\s*([\d.,]+)/g)];
-                const prices = allPriceMatches
-                    .map(m => parseFloat(m[1].replace(',', '.')))
-                    .filter(p => !isNaN(p) && !strikethroughPrices.has(p));
-
-                const price = prices.length > 0 ? prices[0] : 0;
-                if (price === 0) continue;
-
-                results.push({ restaurant: name, category: currentCategory, name: productName, description, price });
-            }
-        }
-        return results;
-    }, restaurantName);
-}
-
 function saveUnique(results, storeId) {
     const seen = new Set();
     const unique = results.filter(p => {
-        if (!p.name || seen.has(p.name)) return false;
-        seen.add(p.name);
+        const key = `${p.name}||${p.category || ''}`;
+        if (!p.name || seen.has(key)) return false;
+        seen.add(key);
         return true;
     });
 
     console.log(`\nTotal de productos únicos extraídos: ${unique.length}`);
+    const catCounts = {};
+    unique.forEach(p => { catCounts[p.category] = (catCounts[p.category] || 0) + 1; });
+    if (unique.length) console.log('Categorías:', Object.entries(catCounts).map(([k, v]) => `${k}(${v})`).join(', '));
 
     if (unique.length > 0) {
-        const jsonPath = path.join(__dirname, `products_${storeId}.json`);
-        fs.writeFileSync(jsonPath, JSON.stringify(unique, null, 2));
-        console.log(`JSON guardado en: ${jsonPath}`);
-
+        fs.writeFileSync(path.join(__dirname, `products_${storeId}.json`), JSON.stringify(unique, null, 2));
         const header = 'Restaurant,Category,Product Name,Description,Price';
         const rows = unique.map(p =>
             [esc(p.restaurant), esc(p.category), esc(p.name), esc(p.description), p.price].join(',')
         );
-        const csvPath = path.join(__dirname, `products_${storeId}.csv`);
-        fs.writeFileSync(csvPath, [header, ...rows].join('\n'));
-        console.log(`CSV guardado en: ${csvPath}`);
+        fs.writeFileSync(path.join(__dirname, `products_${storeId}.csv`), [header, ...rows].join('\n'));
+        console.log(`Guardado: products_${storeId}.json / .csv`);
     } else {
         console.error('No se extrajo ningún producto.');
         process.exit(1);

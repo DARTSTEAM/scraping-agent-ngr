@@ -2,38 +2,6 @@
   {
     "restaurant": "Popeyes",
     "category": "Personales",
-    "name": "Box Max Fútbol",
-    "description": "3 piezas de pollo o 4 tenders + 3 nuggets + 1 papa cajún regular + 1 gaseosa de 500 ml + 1 salsa de 3oz",
-    "price": 29.9,
-    "sku": "2146471617"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Festi Fútbol 6pz",
-    "description": "6 piezas de pollo + 6 nuggets + 1 papa cajun familiar +1 salsa de 3oz",
-    "price": 49.9,
-    "sku": "2146471618"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Festi Fútbol 8pz",
-    "description": "8 piezas de pollo +  1 papa cajún familiar +1 salsa de 3oz",
-    "price": 59.9,
-    "sku": "2146471619"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Dúos",
-    "name": "Dúo Salsatón Fútbol",
-    "description": "4 piezas de pollo crujiente + 2 papas cajún regular + 2 gaseosas 500 ml + 1 salsa de 3oz",
-    "price": 39.9,
-    "sku": "2146471616"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Personales",
     "name": "Dúo Tenders Fútbol",
     "description": "6 tenders o 12 nuggets, 2 papas regulares, 2 gaseosas 500 ml, 1 salsa 3oz",
     "price": 42.9,
@@ -57,91 +25,67 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Festi Crujiente Full Pack 5",
-    "description": "5 piezas de pollo crujiente y 8 alitas o nuggets. Agrega +2 soles 1 papa familiar",
-    "price": 39.9,
-    "sku": "2146471552"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Festi Crujiente Full Pack 7",
-    "description": "7 piezas de pollo crujiente y 10 alitas o nuggets. Agrega +2 soles 1 papa familiar",
-    "price": 49.9,
-    "sku": "2146471553"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Festi Crujiente Full Pack 9",
-    "description": "9 piezas de pollo crujiente y 12 alitas o nuggets. Agrega +2 soles 1 papa familiar",
-    "price": 59.9,
-    "sku": "2146471554"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Festi Crujiente Full Pack 11",
-    "description": "11 piezas de pollo crujiente, 2 papas cajún familiares y 2 chicharrón pop XL. Agrégale +9 soles un vasote Salsatón",
-    "price": 79.9,
-    "sku": "2146471555"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Bombazo Crujiente 8 Piezas",
-    "description": "8 piezas de pollo crujiente y 1 salsa 3oz familiar. Añade +8 soles 1 papa cajún familiar",
-    "price": 32.9,
-    "sku": "2146471382"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Bombazo Crujiente 10 Piezas",
-    "description": "10 piezas de pollo crujiente y 1 salsa 3oz familiar. Añade +8 soles 1 papa cajún familiar",
-    "price": 40.9,
-    "sku": "2146471383"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Bombazo Crujiente 6 Piezas",
-    "description": "6 piezas de pollo crujiente + 1 papa cajun familiar.",
+    "category": "Personales",
+    "name": "Box Max Fútbol",
+    "description": "3 piezas de pollo o 4 tenders + 3 nuggets + 1 papa cajún regular + 1 gaseosa de 500 ml + 1 salsa de 3oz",
     "price": 29.9,
-    "sku": "2146471751"
+    "sku": "2146471617"
   },
   {
     "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Finde Crujiente Bomba",
-    "description": "8 piezas de pollo. Agrégale +5 soles una papa familiar y +3 soles vive la experiencia Salsatón",
+    "category": "Dúos",
+    "name": "Dúo Salsatón Fútbol",
+    "description": "4 piezas de pollo crujiente + 2 papas cajún regular + 2 gaseosas 500 ml + 1 salsa de 3oz",
     "price": 39.9,
-    "sku": "2146470125"
+    "sku": "2146471616"
   },
   {
     "restaurant": "Popeyes",
     "category": "Familiares",
-    "name": "Finde Crujiente",
-    "description": "10 piezas + 5 soles papa familiar",
-    "price": 49.9,
-    "sku": "2146469860"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Finde Crujiente Pack x12",
-    "description": "12 piezas de pollo. Agrégale +5 soles una papa familiar y +3 soles vive la experiencia Salsatón",
+    "name": "Festi Fútbol 8pz",
+    "description": "8 piezas de pollo +  1 papa cajún familiar +1 salsa de 3oz",
     "price": 59.9,
-    "sku": "2146470126"
+    "sku": "2146471619"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Familiares",
+    "name": "Festi Fútbol 6pz",
+    "description": "6 piezas de pollo + 6 nuggets + 1 papa cajun familiar +1 salsa de 3oz",
+    "price": 49.9,
+    "sku": "2146471618"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Dúos",
+    "name": "Martes de Popeyes",
+    "description": "Hoy es martes de popeyes, por ello te mereces 6 piezas de pollo + 1 papa cajun familiar. Sumale la experiencia del salsaton por +5 soles vasote",
+    "price": 29.9,
+    "sku": "2146467183"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Familiares",
+    "name": "Martes de Popeyes 10 Piezas",
+    "description": "10 Piezas. Además +1 sol agrega 1 papa familiar",
+    "price": 49.9,
+    "sku": "2146468163"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Familiares",
+    "name": "Martes de Popeyes 8 Piezas",
+    "description": "8 Piezas. Además +1 sol agrega 1 papa familiar",
+    "price": 39.9,
+    "sku": "2146468618"
   },
   {
     "restaurant": "Popeyes",
     "category": "Cupones",
-    "name": "Yape Popeyes Dúo",
-    "description": "Con el código yape, por S/25.90 llévate 4 piezas de pollo crujiente y 2 papas cajún regular. +S/.4 agrega 2 gaseosas de 500ml",
-    "price": 51.4,
-    "sku": "2146471009"
+    "name": "Yape Cajún Dúo",
+    "description": "Con el código yape, por S/32.90 llévate 4 piezas, 4 nuggets y 2 papas cajún regulares.",
+    "price": 68.9,
+    "sku": "2146468564"
   },
   {
     "restaurant": "Popeyes",
@@ -170,10 +114,18 @@
   {
     "restaurant": "Popeyes",
     "category": "Cupones",
-    "name": "Yape Cajún Dúo",
-    "description": "Con el código yape, por S/32.90 llévate 4 piezas, 4 nuggets y 2 papas cajún regulares.",
-    "price": 68.9,
-    "sku": "2146468564"
+    "name": "Yape Popeyes Dúo",
+    "description": "Con el código yape, por S/25.90 llévate 4 piezas de pollo crujiente y 2 papas cajún regular. +S/.4 agrega 2 gaseosas de 500ml",
+    "price": 51.4,
+    "sku": "2146471009"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Cupones",
+    "name": "Full Box",
+    "description": "Con el código yape, por S/38.90 crea tu box eligiendo entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders. Como parte de la experiencia podras elegir 2 salsas de 2oz en el sabor que desees y papas para compartir",
+    "price": 59.9,
+    "sku": "2146471012"
   },
   {
     "restaurant": "Popeyes",
@@ -186,14 +138,6 @@
   {
     "restaurant": "Popeyes",
     "category": "Cupones",
-    "name": "Jueves Yape Popeyes 3 Piezas",
-    "description": "Con el código yape, por S/19.90 llévate 3 piezas de pollo crujiente + 3 nuggets + 1 papa cajun regular",
-    "price": 29.65,
-    "sku": "2146471677"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Cupones",
     "name": "Yape Popeyes 6 Piezas",
     "description": "Con el código yape, por S/49.90 llévate 6 piezas de pollo crujiente + 8 nuggets + 1 papa cajun familiar",
     "price": 74.35,
@@ -201,27 +145,43 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "Cupones",
-    "name": "Full Box",
-    "description": "Con el código yape, por S/38.90 crea tu box eligiendo entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders. Como parte de la experiencia podras elegir 2 salsas de 2oz en el sabor que desees y papas para compartir",
-    "price": 59.9,
-    "sku": "2146471012"
+    "category": "Personales",
+    "name": "Personal 3 Piezas Combo",
+    "description": "3 piezas de pollo crujiente, 1 papa cajún regular y1 gaseosa de 500ml",
+    "price": 26.9,
+    "sku": "2146471299"
   },
   {
     "restaurant": "Popeyes",
-    "category": "Familiares",
-    "name": "Cyber Day Festi Cajún",
-    "description": "8 piezas de pollo, 1 papa cajún familiar, 1 gaseosa de 1L y 1 salsa a eleccion de 3oz. Cambia tu salsa por el vasote +5 soles. No incluye otras salsas como mayonesa",
-    "price": 49.9,
-    "sku": "2146470162"
+    "category": "Personales",
+    "name": "Personal 2 Piezas Combo",
+    "description": "2 piezas de pollo crujiente, 1 papa cajún regular y1 gaseosa de 500ml",
+    "price": 20.9,
+    "sku": "2146471298"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Personales",
+    "name": "Pieza de Pollo x2",
+    "description": "2 piezas de pollo crujiente crispy. Elige entre tradicional o picante",
+    "price": 14.9,
+    "sku": "2146471297"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Personales",
+    "name": "2 Piezas y 1 Papa Regular",
+    "description": "2 piezas de pollo crujiente y 1 papa cajún regular",
+    "price": 23.4,
+    "sku": "2146471458"
   },
   {
     "restaurant": "Popeyes",
     "category": "Dúos",
-    "name": "Cyber Day Power Cajún",
-    "description": "6 piezas de pollo crujiente, 1 papa cajún familiar y 1 gaseosa de 1L",
-    "price": 39.9,
-    "sku": "2146470161"
+    "name": "Dúo 4 Piezas Combo",
+    "description": "4 piezas, 2 papa cajún regular y 2 gaseosas de 500ml",
+    "price": 38.9,
+    "sku": "2146471300"
   },
   {
     "restaurant": "Popeyes",
@@ -257,22 +217,6 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "Personales",
-    "name": "Personal 3 Piezas Combo",
-    "description": "3 piezas de pollo crujiente, 1 papa cajún regular y1 gaseosa de 500ml",
-    "price": 26.9,
-    "sku": "2146471299"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Personales",
-    "name": "Personal 2 Piezas Combo",
-    "description": "2 piezas de pollo crujiente, 1 papa cajún regular y1 gaseosa de 500ml",
-    "price": 20.9,
-    "sku": "2146471298"
-  },
-  {
-    "restaurant": "Popeyes",
     "category": "Familiares",
     "name": "Festi 6 Piezas Combo",
     "description": "6 piezas de pollo crujiente, 1 papa cajún familiar y 1 gaseosa de 1 litro",
@@ -281,31 +225,7 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "Dúos",
-    "name": "Dúo 4 Piezas Combo",
-    "description": "4 piezas, 2 papa cajún regular y 2 gaseosas de 500ml",
-    "price": 38.9,
-    "sku": "2146471300"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Personales",
-    "name": "Pieza de Pollo x2",
-    "description": "2 piezas de pollo crujiente crispy. Elige entre tradicional o picante",
-    "price": 14.9,
-    "sku": "2146471297"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Personales",
-    "name": "2 Piezas y 1 Papa Regular",
-    "description": "2 piezas de pollo crujiente y 1 papa cajún regular",
-    "price": 23.4,
-    "sku": "2146471458"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "General",
+    "category": "Full Box",
     "name": "Dúo Full Box",
     "description": "Crea tus 2 box eligiendo, en cada full box elige entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders + 2 salsas de 2oz  +2 papa cajún regular y/o camote cajún regular.",
     "price": 69.9,
@@ -313,7 +233,7 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "General",
+    "category": "Full Box",
     "name": "Dúo Full Box + Coca Cola",
     "description": "Crea tus 2 box eligiendo, en cada full box elige entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders + 2 salsas de 2oz  +2 papa cajún regular y/o camote cajún regular + 1 gaseosa de 1.5 litros.",
     "price": 79.9,
@@ -321,11 +241,51 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "General",
+    "category": "Full Box",
     "name": "Full Box + Coca Cola",
     "description": "Crea tu box eligiendo entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders + 2 salsas de 2oz  +2 papa cajún regular y/o camote cajún regular + 1 gaseosa de 1 litro.",
     "price": 45.9,
     "sku": "2146471623"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Full Box",
+    "name": "Full Box",
+    "description": "Con el código yape, por S/38.90 crea tu box eligiendo entre estas 3 diferentes opciones: 7 nuggets y/o 5 alitas y/o 4 tenders. Como parte de la experiencia podras elegir 2 salsas de 2oz en el sabor que desees y papas para compartir",
+    "price": 59.9,
+    "sku": "2146471012"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Alitas",
+    "name": "Alitas x4",
+    "description": "4 alitas picantes en receta cajún",
+    "price": 10.9,
+    "sku": "2146471317"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Alitas",
+    "name": "Alitas x8",
+    "description": "8 alitas picantes en receta cajún",
+    "price": 18.9,
+    "sku": "2146471318"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Alitas",
+    "name": "Personal 8 Alitas Combo",
+    "description": "8 alitas picantes en receta cajún, 1 papa cajún regular y 1 gaseosa 500ml. Agrega +2 soles una salsa familiar 3oz",
+    "price": 24.9,
+    "sku": "2146471319"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Alitas",
+    "name": "Dúo 16 Alitas Combo",
+    "description": "16 alitas  picantes en receta cajún, 2 papas cajún regular y 2 gaseosas 500ml. Agrega +2 soles una salsa familiar 3oz",
+    "price": 43.9,
+    "sku": "2146471320"
   },
   {
     "restaurant": "Popeyes",
@@ -362,18 +322,18 @@
   {
     "restaurant": "Popeyes",
     "category": "Tenders",
-    "name": "Personal 3 Tenders Salsatón",
-    "description": "3 tenders de pechuga crispy, 1 papa cajún regular y 1 salsa familiar 3oz",
-    "price": 16.9,
-    "sku": "2146471307"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Tenders",
     "name": "Personal 4 Tenders Salsatón",
     "description": "4 tenders de pechuga crispy, 1 papa cajún regular, 1 gaseosa 500ml y 1 salsa familiar 3oz",
     "price": 23.9,
     "sku": "2146471309"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Tenders",
+    "name": "Personal 3 Tenders Salsatón",
+    "description": "3 tenders de pechuga crispy, 1 papa cajún regular y 1 salsa familiar 3oz",
+    "price": 16.9,
+    "sku": "2146471307"
   },
   {
     "restaurant": "Popeyes",
@@ -425,38 +385,6 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "Alitas",
-    "name": "Alitas x4",
-    "description": "4 alitas picantes en receta cajún",
-    "price": 10.9,
-    "sku": "2146471317"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Alitas",
-    "name": "Alitas x8",
-    "description": "8 alitas picantes en receta cajún",
-    "price": 18.9,
-    "sku": "2146471318"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Alitas",
-    "name": "Personal 8 Alitas Combo",
-    "description": "8 alitas picantes en receta cajún, 1 papa cajún regular y 1 gaseosa 500ml. Agrega +2 soles una salsa familiar 3oz",
-    "price": 24.9,
-    "sku": "2146471319"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Alitas",
-    "name": "Dúo 16 Alitas Combo",
-    "description": "16 alitas  picantes en receta cajún, 2 papas cajún regular y 2 gaseosas 500ml. Agrega +2 soles una salsa familiar 3oz",
-    "price": 43.9,
-    "sku": "2146471320"
-  },
-  {
-    "restaurant": "Popeyes",
     "category": "Chicharrón Pop",
     "name": "Chicharrón Pop",
     "description": "1 chicharrón pop de pollo y 1 salsa de 2oz",
@@ -489,27 +417,11 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "Tosty",
-    "name": "Personal Tosty Salsatón",
-    "description": "Elige tu tosty favorito entre Tradicional o Crunch, 1 papa cajún regular y 1 salsa familiar 3oz",
-    "price": 19.9,
-    "sku": "2146471327"
-  },
-  {
-    "restaurant": "Popeyes",
     "category": "Sandwich",
     "name": "Personal Sandwich Salsatón",
     "description": "Elige tu chicken sandwich favorito (disponible en tres versiones: Tártara Golf, Mayo Especial o Ají Mix), 1 papa cajún regular y 1 salsa familiar 3oz",
     "price": 20.9,
     "sku": "2146471330"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Tosty",
-    "name": "Personal Tosty Combo",
-    "description": "Elige tu tosty favorito entre Tradicional o Crunch, 1 papa cajún regular y 1 gaseosa de 500ml",
-    "price": 21.9,
-    "sku": "2146471326"
   },
   {
     "restaurant": "Popeyes",
@@ -521,11 +433,19 @@
   },
   {
     "restaurant": "Popeyes",
+    "category": "Sandwich",
+    "name": "Sandwich x1",
+    "description": "Disfruta nuestro Sándwich de pechuga de pollo crujiente en pan brioche, disponible en tres versiones: Tártara Golf con papas al hilo, lechuga y salsa tártara golf; Mayo Especial con tomate, lechuga y mayonesa especial; y Ají Mix con tomate y lechuga",
+    "price": 17.9,
+    "sku": "2146471328"
+  },
+  {
+    "restaurant": "Popeyes",
     "category": "Tosty",
-    "name": "Personal Chicken Roll",
-    "description": "1 chicken roll (Tortilla pequeña con 1 tender, papas al hilo, tomate y mayonesa) y 1 papa cajún regular",
-    "price": 14.9,
-    "sku": "2146471322"
+    "name": "Personal Tosty Salsatón",
+    "description": "Elige tu tosty favorito entre Tradicional o Crunch, 1 papa cajún regular y 1 salsa familiar 3oz",
+    "price": 19.9,
+    "sku": "2146471327"
   },
   {
     "restaurant": "Popeyes",
@@ -537,11 +457,19 @@
   },
   {
     "restaurant": "Popeyes",
-    "category": "Sandwich",
-    "name": "Sandwich x1",
-    "description": "Disfruta nuestro Sándwich de pechuga de pollo crujiente en pan brioche, disponible en tres versiones: Tártara Golf con papas al hilo, lechuga y salsa tártara golf; Mayo Especial con tomate, lechuga y mayonesa especial; y Ají Mix con tomate y lechuga",
-    "price": 17.9,
-    "sku": "2146471328"
+    "category": "Tosty",
+    "name": "Personal Tosty Combo",
+    "description": "Elige tu tosty favorito entre Tradicional o Crunch, 1 papa cajún regular y 1 gaseosa de 500ml",
+    "price": 21.9,
+    "sku": "2146471326"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Tosty",
+    "name": "Personal Chicken Roll",
+    "description": "1 chicken roll (Tortilla pequeña con 1 tender, papas al hilo, tomate y mayonesa) y 1 papa cajún regular",
+    "price": 14.9,
+    "sku": "2146471322"
   },
   {
     "restaurant": "Popeyes",
@@ -633,6 +561,22 @@
   },
   {
     "restaurant": "Popeyes",
+    "category": "Salsas",
+    "name": "Vasote Salsatón",
+    "description": "¡Vive la experiencia Salsatón con lo más viral del momento: nuestro Vasote! Elige tu sabor favorito.",
+    "price": 9.9,
+    "sku": "2146469983"
+  },
+  {
+    "restaurant": "Popeyes",
+    "category": "Salsas",
+    "name": "Salsa 3 oz",
+    "description": "¡Vive la experiencia Salsatón con lo más viral del momento: nuestra salsa de 3oz! Elige tu sabor favorito.",
+    "price": 3,
+    "sku": "2146469984"
+  },
+  {
+    "restaurant": "Popeyes",
     "category": "Bebidas",
     "name": "Coca Cola 500ml",
     "description": "Coca Cola sabor original 500ml",
@@ -702,21 +646,5 @@
     "description": "San Luis sin Gas 750ml.",
     "price": 4.9,
     "sku": "2146464554"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Salsas",
-    "name": "Vasote Salsatón",
-    "description": "¡Vive la experiencia Salsatón con lo más viral del momento: nuestro Vasote! Elige tu sabor favorito.",
-    "price": 9.9,
-    "sku": "2146469983"
-  },
-  {
-    "restaurant": "Popeyes",
-    "category": "Salsas",
-    "name": "Salsa 3 oz",
-    "description": "¡Vive la experiencia Salsatón con lo más viral del momento: nuestra salsa de 3oz! Elige tu sabor favorito.",
-    "price": 3,
-    "sku": "2146469984"
   }
 ]

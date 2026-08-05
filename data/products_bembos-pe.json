@@ -9,35 +9,11 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
-    "name": "Bembonera Regular",
-    "description": "4 Hamburguesas regulares a elección entre Clásica, Cheese o Queso Tocino (máximo 2 unidades por tipo), 4 papas regulares, nuggets x6, 1 ají de 3 oz y 1 tártara golf de 3 oz. Agrega gaseosas personales por solo +S/ 3.50 cada una",
-    "price": 59.9,
-    "sku": "BB2146473170"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
-    "name": "Bembonera Mediana",
-    "description": "4 Hamburguesas medianas a elección entre Clásica, Cheese o Queso Tocino (máximo 2 unidades por tipo), 4 papas medianas, 2 nuggets x4, 1 ají de 3 oz y 1 tártara golf de 3 oz. Agrega personales por solo +S/ 3.50 cada una.",
-    "price": 79.9,
-    "sku": "BB2146473176"
-  },
-  {
-    "restaurant": "Bembos",
     "category": "Promociones para 2",
-    "name": "Dúo Futbolero",
-    "description": "1 cheese regular, 1 clásica regular, 2 papa regulares y 2 gaseosas personales",
-    "price": 27.9,
-    "sku": "BB2146471338"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
-    "name": "Trío Futbolero",
-    "description": "2 Queso Tocino regulares, 1 Cheese regular, 3 papas regulares, 3 gaseosas personales",
-    "price": 43.9,
-    "sku": "BB2146472801"
+    "name": "Martes y Jueves",
+    "description": "1 Queso Tocino regular, 1 Cheese regular, 2 papas regulares, Nuggets x4",
+    "price": 25.9,
+    "sku": "BB2146469022"
   },
   {
     "restaurant": "Bembos",
@@ -57,11 +33,59 @@
   },
   {
     "restaurant": "Bembos",
+    "category": "Promociones para 2",
+    "name": "Dúo Huachano",
+    "description": "1  Huachana reg + 1 Churrita reg + 2 papas reg + 1 crema, anticuchera, ocopa o ají Bembos",
+    "price": 29.9,
+    "sku": "BB2146473643"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promociones para 2",
+    "name": "Dúo Chicharronero",
+    "description": "1 Chicharronera reg + 1 Churrita reg + 2 papas reg + 1 crema anticuchera, ocopa o ají Bembos",
+    "price": 28.9,
+    "sku": "BB2146473642"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promociones para 2",
+    "name": "Dúo Blanquirrojo",
+    "description": "1  Chicharronera reg + 1 Huachana reg + 2 papas reg + 2  gaseosas personales + 2 cremas anticuchera, ocopa o ají Bembos",
+    "price": 44.9,
+    "sku": "BB2146473644"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promociones para 2",
+    "name": "Dúo Futbolero",
+    "description": "1 cheese regular, 1 clásica regular, 2 papa regulares y 2 gaseosas personales",
+    "price": 27.9,
+    "sku": "BB2146471338"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promociones Personales",
+    "name": "Combo Power",
+    "description": "1 Queso Tocino regular, 1 papa regular, 1 gaseosa personal y nuggets x4",
+    "price": 19.9,
+    "sku": "BB2146472309"
+  },
+  {
+    "restaurant": "Bembos",
     "category": "Promociones Personales",
     "name": "Promo Doble Queso Tocino",
     "description": "1 Doble queso tocino regular, 1 papa regular, gaseosa personal.",
     "price": 19.9,
     "sku": "BB2146469956"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promociones Personales",
+    "name": "Personal Churrita",
+    "description": "1 Churrita mediana, 1 papa regular",
+    "price": 16.9,
+    "sku": "BB2146469331"
   },
   {
     "restaurant": "Bembos",
@@ -73,11 +97,27 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones Personales",
-    "name": "Combo Power",
-    "description": "1 Queso Tocino regular, 1 papa regular, 1 gaseosa personal y nuggets x4",
-    "price": 19.9,
-    "sku": "BB2146472309"
+    "category": "Promociones para Compartir",
+    "name": "Bembonera Regular",
+    "description": "4 Hamburguesas regulares a elección entre Clásica, Cheese o Queso Tocino (máximo 2 unidades por tipo), 4 papas regulares, nuggets x6, 1 ají de 3 oz y 1 tártara golf de 3 oz. Agrega gaseosas personales por solo +S/ 3.50 cada una",
+    "price": 59.9,
+    "sku": "BB2146473170"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promociones para Compartir",
+    "name": "Bembonera Mediana",
+    "description": "4 Hamburguesas medianas a elección entre Clásica, Cheese o Queso Tocino (máximo 2 unidades por tipo), 4 papas medianas, 2 nuggets x4, 1 ají de 3 oz y 1 tártara golf de 3 oz. Agrega personales por solo +S/ 3.50 cada una.",
+    "price": 79.9,
+    "sku": "BB2146473176"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promociones para Compartir",
+    "name": "Trío Futbolero",
+    "description": "2 Queso Tocino regulares, 1 Cheese regular, 3 papas regulares, 3 gaseosas personales",
+    "price": 43.9,
+    "sku": "BB2146472801"
   },
   {
     "restaurant": "Bembos",
@@ -102,22 +142,6 @@
     "description": "2 Extremas regulares, 2 Queso Tocino regulares, 4 papas regulares",
     "price": 56.9,
     "sku": "BB2146468990"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Promociones Personales",
-    "name": "Personal Churrita",
-    "description": "1 Churrita mediana, 1 papa regular",
-    "price": 16.9,
-    "sku": "BB2146469331"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Cupones",
-    "name": "Dúo Clásico Yape",
-    "description": "Con el código yape, por S/16.50 llévate 2 clásicas regulares y 2 papas regulares",
-    "price": 39.6,
-    "sku": "BB2146473504"
   },
   {
     "restaurant": "Bembos",
@@ -169,15 +193,15 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Huachana",
-    "description": "1 Huachana mediana, 1 papa mediana, 1 gaseosa personal",
-    "price": 30.9,
+    "description": "1 Huchana mediana, 1 papa mediana, 1 gaseosa personal. Incluye una crema chorreo",
+    "price": 31.9,
     "sku": "BB2146473463"
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Extrema",
     "description": "Hamburguesa Extrema a la parrilla: Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa. Papa mediana y gaseosa de 500ml",
     "price": 30.9,
@@ -185,7 +209,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Parrillera",
     "description": "Hamburguesa parrillera a la parrilla: Hamburguesa y chorizo a la parrilla, chimichurri, tomate, mayonesa y mostaza. Papa mediana y gaseosa de 500ml",
     "price": 30.9,
@@ -193,7 +217,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Queso Tocino",
     "description": "Hamburguesa a la parrilla, doble tocino, queso Edam, tomate en rodajas, lechuga y mayonesa, viene con papa mediana y gaseosa personal.",
     "price": 24.9,
@@ -201,7 +225,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo A lo Pobre",
     "description": "Hamburguesa A lo Pobre a la parrilla: Hamburguesa a la parrilla, huevo frito, plátano frito, cebolla blanca, tomate y mayonesa. Papa mediana y gaseosa de 500ml",
     "price": 28.9,
@@ -209,7 +233,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Royal",
     "description": "Bembos a la parrilla, huevo, queso Edam, tomate, lechuga y mayonesa, viene con papa mediana y gaseosa personal.",
     "price": 24.9,
@@ -217,7 +241,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Mexicana",
     "description": "Hamburguesa a la parrilla, queso, salsa guacamole, doritos, tomate, y mayonesa. Papa mediana y gaseosa 500ml",
     "price": 26.9,
@@ -225,7 +249,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Churrita",
     "description": "Hamburguesa Churrita a la parrilla: Hamburguesa, tocino, papas al hilo y mayonesa de chimichurri. Papa mediana y gaseosa de 500ml",
     "price": 28.9,
@@ -233,15 +257,15 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Chicharronera",
-    "description": "1 Chicharronera mediana, 1 papa mediana, 1 gaseosa personal.",
+    "description": "1 Chicharronera mediana, 1 papa mediana, 1 gaseosa personal. Incluye una crema chorreo.",
     "price": 30.9,
     "sku": "BB2146473447"
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Cheese",
     "description": "Hamburguesa Cheese a la parrilla: Hamburguesa a la parrilla, lechuga, tomate, mayonesa y queso. Papa mediana y gaseosa de 500ml",
     "price": 22.9,
@@ -249,7 +273,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Hawaiana",
     "description": "1 Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa. Papa mediana y gaseosa 500ml",
     "price": 28.9,
@@ -257,7 +281,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Clásica",
     "description": "Hamburguesa Clásica a la parrilla: Hamburguesa a la parrilla, lechuga, tomate y mayonesa. Papa mediana y gaseosa de 500ml",
     "price": 22.9,
@@ -265,7 +289,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Pollo Parrillero",
     "description": "Filete de pollo estilo parrillero, papas al hilo, mayonesa, lechuga y tomate; papa mediana y gaseosa personal",
     "price": 21.9,
@@ -273,7 +297,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Chicken Grill",
     "description": "Pechuga de pollo marinada a la parrilla, lechuga, tomate y mayonesa, papas fritas y gaseosa personal",
     "price": 23.9,
@@ -281,7 +305,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
     "name": "Combo Bembroster Clásica",
     "description": "Sandwich regular de pollo crocante, mayonesa, lechuga y tomate, papas fritas y gaseosa personal",
     "price": 20.9,
@@ -289,15 +313,23 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Combos",
+    "name": "Combo La Tumbay",
+    "description": "Hamburguesa a la parrilla, huevo frito, tocino, papas tumbay, salsa de chimichurri y lechuga; papa mediana y gaseosa 500ml.",
+    "price": 26.9,
+    "sku": "BB2146470245"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Huachana",
-    "description": "Deliciosa hamburguesa a la parrilla, huevo, huachana, papas al hilo y mayonesa.",
-    "price": 24.9,
+    "description": "Deliciosa hamburguesa a la parrilla, huevo, huachana, papas al hilo y mayonesa. Incluye una crema chorreo.",
+    "price": 25.9,
     "sku": "BB2146473462"
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Extrema",
     "description": "Hamburguesa doble a la parrilla con queso edam, tocino, tomate, lechuga y mayonesa",
     "price": 24.9,
@@ -305,7 +337,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Parrillera",
     "description": "Hamburguesa a la parrilla, chorizo a la parrilla, chimichurri, tomate, mayonesa y mostaza",
     "price": 24.9,
@@ -313,7 +345,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Queso Tocino",
     "description": "Hamburguesa a la parrilla, doble tocino, queso Edam, tomate en rodajas, lechuga y mayonesa",
     "price": 18.9,
@@ -321,7 +353,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa A lo Pobre",
     "description": "Hamburguesa a la parrilla, huevo frito, plátano frito, cebolla blanca, tomate y mayonesa",
     "price": 22.9,
@@ -329,15 +361,15 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Chicharronera",
-    "description": "Deliciosa hamburguesa de carne de res, chicharrón, camotes al hilo, cebolla morada y salsa de rocoto",
+    "description": "Deliciosa hamburguesa de carne de res, chicharrón, camotes al hilo, cebolla morada y salsa de rocoto. Incluye una crema chorreo.",
     "price": 24.9,
     "sku": "BB2146473445"
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Royal",
     "description": "Bembos a la parrilla, huevo, queso Edam, tomate, lechuga y mayonesa",
     "price": 18.9,
@@ -345,7 +377,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Mexicana",
     "description": "Hamburguesa a la parrilla, queso, salsa guacamole, doritos, tomate, y mayonesa",
     "price": 20.9,
@@ -353,7 +385,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa La Churrita",
     "description": "Hamburguesa a la parrilla, tocino, papas al hilo y mayonesa de chimichurri",
     "price": 22.9,
@@ -361,7 +393,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Cheese",
     "description": "Hamburguesa a la parrilla, lechuga, tomate, mayonesa y queso",
     "price": 18.9,
@@ -369,7 +401,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Hawaiana",
     "description": "1 Hamburguesa a la parrilla, queso, jamón inglés, piña en almíbar y mayonesa",
     "price": 22.9,
@@ -377,7 +409,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
     "name": "Hamburguesa Clásica",
     "description": "Hamburguesa a la parrilla, lechuga, tomate y mayonesa",
     "price": 16.9,
@@ -385,7 +417,15 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa La Tumbay",
+    "description": "Hamburguesa a la parrilla, huevo frito, tocino, papas tumbay, salsa de chimichurri y lechuga.",
+    "price": 20.9,
+    "sku": "BB2146470247"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Menús Bembos",
     "name": "Menú Taypá",
     "description": "Deliciosa hamburguesa a la parrilla, chorizo, papas fritas, huevo frito, arroz, lechuga orgánica, tomate, zanahoria y salsa vinagreta",
     "price": 21.9,
@@ -393,7 +433,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Menús Bembos",
     "name": "Menú A Lo Pobre",
     "description": "Deliciosa hamburguesa a la parrilla, papas fritas, huevo frito, plátano frito, arroz, lechuga orgánica, tomate, zanahoria y salsa vinagreta",
     "price": 20.9,
@@ -401,7 +441,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Menús Bembos",
     "name": "Burger Menú",
     "description": "Deliciosa hamburguesa a la parrilla, papas fritas, huevo frito, arroz, lechuga orgánica, tomate, zanahoria y salsa vinagreta",
     "price": 15.9,
@@ -409,11 +449,35 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Menús Bembos",
     "name": "Menú Pechugón",
     "description": "Delicioso pollo a la parrilla, papas fritas, arroz, lechuga orgánica, tomate, zanahoria y salsa vinagreta",
     "price": 17.9,
     "sku": "BB2146468482"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Snacks",
+    "name": "Salchinuggets",
+    "description": "Porción familiar de papas fritas con Hot dog y Nuggets x4",
+    "price": 17.9,
+    "sku": "BB2146471003"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Snacks",
+    "name": "Salchipapa",
+    "description": "Porción familiar de papas fritas con Hot dog",
+    "price": 10.9,
+    "sku": "BB2146471002"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Snacks",
+    "name": "Papas Fritas",
+    "description": "¡Prueba nuestras crujientes papas fritas, no olvides agrandarlas!",
+    "price": 6.9,
+    "sku": "BB2146464253"
   },
   {
     "restaurant": "Bembos",
@@ -434,34 +498,10 @@
   {
     "restaurant": "Bembos",
     "category": "Snacks",
-    "name": "Papas Fritas",
-    "description": "¡Prueba nuestras crujientes papas fritas, no olvides agrandarlas!",
-    "price": 6.9,
-    "sku": "BB2146464253"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Snacks",
-    "name": "Salchipapa",
-    "description": "Porción familiar de papas fritas con Hot dog",
-    "price": 10.9,
-    "sku": "BB2146471002"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Snacks",
     "name": "Nuggetspapa",
     "description": "Porción familiar de papas fritas con Nuggets x5",
     "price": 15.9,
     "sku": "BB2146471004"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Snacks",
-    "name": "Salchinuggets",
-    "description": "Porción familiar de papas fritas con Hot dog y Nuggets x4",
-    "price": 17.9,
-    "sku": "BB2146471003"
   },
   {
     "restaurant": "Bembos",
@@ -470,14 +510,6 @@
     "description": "Delicioso helado cremoso con manjar blanco , trozos de suspiros y canela en polvo",
     "price": 7.9,
     "sku": "BB2146473192"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Helados",
-    "name": "Sundae Chocomaracuyá",
-    "description": "Delicioso helado cremoso con salsa de maracuyá, gotas de chocolate y cobertura de chocolate crocante",
-    "price": 7.9,
-    "sku": "BB2146472642"
   },
   {
     "restaurant": "Bembos",
@@ -494,6 +526,14 @@
     "description": "Delicioso helado cremoso con salsa de lúcuma y trocitos de brownie, cubierto con chocolate crocante",
     "price": 7.9,
     "sku": "BB2146471887"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Helados",
+    "name": "Sundae Chocomaracuyá",
+    "description": "Delicioso helado cremoso con salsa de maracuyá, gotas de chocolate y cobertura de chocolate crocante",
+    "price": 7.9,
+    "sku": "BB2146472642"
   },
   {
     "restaurant": "Bembos",
@@ -514,14 +554,6 @@
   {
     "restaurant": "Bembos",
     "category": "Bebidas",
-    "name": "Inca kola Sin Azúcar 500 ml",
-    "description": "Si quieres hacer tu combo más saludable Bembos te da la opción de agregar como bebida Inka Kola Sin Azúcar de 500ml",
-    "price": 5.9,
-    "sku": "BB2146469605"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Bebidas",
     "name": "Inca Kola Sabor Original 500 ml",
     "description": "Acompaña tu combo con una Inka Kola sabor original de 500ml",
     "price": 5.9,
@@ -530,18 +562,10 @@
   {
     "restaurant": "Bembos",
     "category": "Bebidas",
-    "name": "Agua San Luis sin gas 625 ml",
-    "description": "Si quieres un combo más saludable Bembos te da la opción de agregar como bebida el Agua mineral San Luis de 625 ml.",
-    "price": 4.9,
-    "sku": "BB2146469608"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Salsas",
-    "name": "Mix salsas",
-    "description": "Rocoto dulce 35 gr, Tártara golf 35 gr y Ají limo 35gr",
+    "name": "Inca kola Sin Azúcar 500 ml",
+    "description": "Si quieres hacer tu combo más saludable Bembos te da la opción de agregar como bebida Inka Kola Sin Azúcar de 500ml",
     "price": 5.9,
-    "sku": "BB2146472745"
+    "sku": "BB2146469605"
   },
   {
     "restaurant": "Bembos",
@@ -561,7 +585,39 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Bebidas",
+    "name": "Agua San Luis sin gas 625 ml",
+    "description": "Si quieres un combo más saludable Bembos te da la opción de agregar como bebida el Agua mineral San Luis de 625 ml.",
+    "price": 4.9,
+    "sku": "BB2146469608"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Salsas",
+    "name": "Ají Bembos 3oz",
+    "description": "Delicioso ají Bembos",
+    "price": 4.5,
+    "sku": "BB2146473633"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Salsas",
+    "name": "Anticuchera 3oz",
+    "description": "Deliciosa crema anticuchera",
+    "price": 4.5,
+    "sku": "BB2146473632"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Salsas",
+    "name": "Ocopa 3oz",
+    "description": "Deliciosa crema ocopa.",
+    "price": 4.5,
+    "sku": "BB2146473631"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Pollo",
     "name": "Pollo Parrillero",
     "description": "Filete de pollo estilo parrillero, papas al hilo, mayonesa, lechuga y tomate",
     "price": 16.9,
@@ -569,7 +625,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Pollo",
     "name": "Chicken Grill",
     "description": "Pechuga de pollo marinada a la parrilla, lechuga, tomate y mayonesa. Mayonesa x1, Ketchup x1, Ají Bembos x1",
     "price": 18.9,
@@ -577,7 +633,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Pollo",
     "name": "Bembroster Clásica",
     "description": "Sandwich regular de pollo crocante, mayonesa, lechuga y tomate. Mayonesa x1, Ketchup x1, Ají Bembos x1",
     "price": 15.9,
@@ -585,7 +641,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Loncheritas",
     "name": "Loncherita Faber Hamburguesa",
     "description": "1 Hamburguesa regular, 1 papa regular, 1 frugos 1 caja de plumones Faber x6 neón o pastel",
     "price": 19.9,
@@ -593,7 +649,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "General",
+    "category": "Loncheritas",
     "name": "Loncherita Faber Nuggets",
     "description": "Nuggets x4, 1 papa regular, 1 frugos, 1 caja de plumones Faber x6 neón o pastel",
     "price": 19.9,

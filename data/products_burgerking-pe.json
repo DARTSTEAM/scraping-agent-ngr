@@ -126,13 +126,6 @@
     "restaurant": "Burger King"
   },
   {
-    "name": "Shake de Pistacho",
-    "description": "1  Shake sabor pistacho",
-    "price": 17.9,
-    "category": "Postres",
-    "restaurant": "Burger King"
-  },
-  {
     "name": "Philly Cheese",
     "description": "Doble carne 100% a la parrilla con 4 slides de queso, tocino, cebolla frita y nuestra exclusiva \"Cheese sauce\". Disponible sola o en combo.",
     "price": 29.9,
@@ -151,13 +144,6 @@
     "description": "Papas tumbay crocantes, tamaño mediano.",
     "price": 7.9,
     "category": "Complementos",
-    "restaurant": "Burger King"
-  },
-  {
-    "name": "King Fusion OREO®",
-    "description": "Cremoso helado de vainilla, chocolate o mixto con trozos de galleta OREO® y fudge, en presentación de 10 oz.",
-    "price": 8.5,
-    "category": "Postres",
     "restaurant": "Burger King"
   },
   {
@@ -378,6 +364,13 @@
     "restaurant": "Burger King"
   },
   {
+    "name": "WHOPPER® Vegetal Tejana",
+    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, tocino, tomates, lechuga, mayonesa, salsa BBQ, pepinillos y aros de cebolla. Disponible sola o en combo.",
+    "price": 26.9,
+    "category": "Whopper Vegetal",
+    "restaurant": "Burger King"
+  },
+  {
     "name": "WHOPPER® Vegetal Crispy",
     "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, cebollitas crujientes, salsa BBQ, tomate, lechuga y mayonesa. Disponible sola o en combo.",
     "price": 25.9,
@@ -385,10 +378,122 @@
     "restaurant": "Burger King"
   },
   {
-    "name": "WHOPPER® Vegetal Tejana",
-    "description": "Hamburguesa grande hecha a base de plantas a la parrilla con queso, tocino, tomates, lechuga, mayonesa, salsa BBQ, pepinillos y aros de cebolla. Disponible sola o en combo.",
+    "name": "Dúo WHOPPER® Junior",
+    "description": "1 WHOPPER® Jr. y 1 Papa Jr.",
+    "price": 11.9,
+    "category": "Promos Para Uno",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Dúo Parrillero Personal",
+    "description": "1 Parrillera Jr. y 1 Papa Jr.",
+    "price": 14,
+    "category": "Promos Para Uno",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Dúo WHOPPER® + Shake OREO®",
+    "description": "1 WHOPPER®, 1 Papa Jr. y 1 Shake OREO® Vainilla",
+    "price": 18.9,
+    "category": "Promos Para Uno",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Chicken Dúo",
+    "description": "2 Chicken Cheese y 2 Papa Jr",
+    "price": 22.9,
+    "category": "Promos Para Dos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Fiesta WHOPPER®",
+    "description": "2 WHOPPER® Grande, 2 Papas Junior y 1 Bebida 1L",
+    "price": 36.9,
+    "category": "Promos Para Dos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Dúo STACKER®",
+    "description": "2 Stacker® Simple y 2 Papas Jr",
+    "price": 25.9,
+    "category": "Promos Para Dos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Pack Parrillero",
+    "description": "2 Parrilleras Jr y 2 Papas Jr",
+    "price": 23.9,
+    "category": "Promos Para Dos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Pack Para Compartir",
+    "description": "1 STACKER® Doble Jr., 1 WHOPPER® Jr., 2 Papas Jr. y 1 Bebida 1L.",
+    "price": 29.9,
+    "category": "Promos Para Dos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "King Para 3",
+    "description": "1 Whopper® Jr, 1 Chicken Cheese, 1 Parrillera Jr y 1 Papa Familiar",
+    "price": 32.9,
+    "category": "Promos Grupales",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "El Rey WHOPPER® Para 4 + Papa Familiar",
+    "description": "4 WHOPPER® Grande y 1 Papa Familiar",
+    "price": 54.9,
+    "category": "Promos Grupales",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "King Para 4",
+    "description": "1 Whopper® Jr, 1 Stacker® Simple, 2 Parrillera Jr y 1 Papa Familiar",
+    "price": 42.9,
+    "category": "Promos Grupales",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "El Rey WHOPPER® Para 3",
+    "description": "3 WHOPPER®, 1 Papa Familiar y 1 Gaseosa 1L",
+    "price": 44.9,
+    "category": "Promos Grupales",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Combo Cheese Jr Yape",
+    "description": "1 Whopper Cheese Jr, 1 Papa Mediana y 1 Gaseosa de 500 ml.",
+    "price": 18.9,
+    "category": "Yape Promos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Yape Dúo Cheese",
+    "description": "2 Chicken Cheese, 2 Papa Mediana y 4 Nuggets",
+    "price": 25.9,
+    "category": "Yape Promos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Yape Burger Dúo",
+    "description": "1 Cheesebacon Jr, 1 Parrillera Jr, 2 Papa Mediana",
     "price": 26.9,
-    "category": "Whopper Vegetal",
+    "category": "Yape Promos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Yape Trío Burger",
+    "description": "1 Whopper Crispy Jr, 1 Whopper Tejana Jr, 1 Chesebacon Jr y 1 Papa Familiar",
+    "price": 35.9,
+    "category": "Yape Promos",
+    "restaurant": "Burger King"
+  },
+  {
+    "name": "Promo Yape Gamer",
+    "description": "1 Whopper ® Grande, 1 Papa Jr, 1 Pie de Manzana y 1 Bebida de 500 Ml.",
+    "price": 21.9,
+    "category": "Yape Promos",
     "restaurant": "Burger King"
   }
 ]

@@ -24,21 +24,25 @@ async function scrapeDigifood(url, restaurantName, storeId) {
 
     try {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-        await page.waitForSelector('article', { timeout: 20000 }).catch(() => {});
         await page.waitForTimeout(2000);
+        await dismissModals(page);
+        await handleStoreModal(page);
+        await page.waitForSelector('article, .product-card, a[href*="/pedir/"], h3.categoryTitle', { timeout: 25000 }).catch(() => {});
+        await page.waitForTimeout(1500);
 
-        // On /carta sites (Wanta & other BK-style Digifood menus) each category is a
-        // route /carta/<slug>. Scrape per-category so products carry a real category.
+        // Discover /carta/<slug> or /pedir/<slug> category routes
         const categories = await page.evaluate(() => {
             const seen = new Map();
-            for (const a of document.querySelectorAll('a[href*="/carta/"]')) {
+            for (const a of document.querySelectorAll('a[href]')) {
                 const href = a.getAttribute('href') || '';
-                const m = href.match(/^\/carta\/([a-z0-9-]+)\/?$/i);
-                if (!m || m[1].toLowerCase() === 'ver-todo') continue;
+                const m = href.match(/^\/(carta|pedir|categorias)\/([a-z0-9-]+)\/?$/i);
+                if (!m) continue;
+                const slug = m[2].toLowerCase();
+                if (slug === 'ver-todo' || slug === 'todas') continue;
                 let text = (a.textContent || '').trim();
                 const half = text.slice(0, text.length / 2);
-                if (text.length % 2 === 0 && half === text.slice(text.length / 2)) text = half; // de-double
-                if (!seen.has(href) && text) seen.set(href, { href, name: text });
+                if (text.length % 2 === 0 && half === text.slice(text.length / 2)) text = half;
+                if (!seen.has(href) && text && text.length < 80) seen.set(href, { href, name: text, section: m[1].toLowerCase() });
             }
             return [...seen.values()];
         });
@@ -46,36 +50,43 @@ async function scrapeDigifood(url, restaurantName, storeId) {
         if (categories.length > 0 && origin) {
             console.log(`Categorías detectadas: ${categories.length} → ${categories.map(c => c.name).join(', ')}`);
             const nameToCategory = new Map();
+            const perCatProducts = [];
             for (const cat of categories) {
                 const catUrl = cat.href.startsWith('http') ? cat.href : `${origin}${cat.href}`;
                 const catProducts = await scrapeCategoryPage(page, catUrl, cat.name, restaurantName);
                 console.log(`  → ${cat.name}: ${catProducts.length} productos`);
-                for (const p of catProducts) if (!nameToCategory.has(p.name)) nameToCategory.set(p.name, cat.name);
+                for (const p of catProducts) {
+                    if (!nameToCategory.has(p.name)) nameToCategory.set(p.name, cat.name);
+                    perCatProducts.push(p);
+                }
             }
-            // Full ver-todo pass for coverage; tag with the mapped category.
-            const all = await scrapeCategoryPage(page, `${origin}/carta/ver-todo`, 'Otros', restaurantName);
-            results = all.map(p => ({ ...p, category: nameToCategory.get(p.name) || 'Otros' }));
-            console.log(`Cobertura ver-todo: ${all.length} · con categoría mapeada: ${all.filter(p => nameToCategory.has(p.name)).length}`);
+            // Coverage pass for Carta-style menus
+            if (categories.some(c => c.section === 'carta')) {
+                const all = await scrapeCategoryPage(page, `${origin}/carta/ver-todo`, 'Otros', restaurantName);
+                results = all.map(p => ({ ...p, category: nameToCategory.get(p.name) || 'Otros' }));
+                console.log(`Cobertura ver-todo: ${all.length} · con categoría mapeada: ${all.filter(p => nameToCategory.has(p.name)).length}`);
+            } else {
+                // /pedir (or categorias) routes already cover the menu
+                results = perCatProducts;
+            }
         } else {
-            // /pedir sites (Chifa Express, Cinnabon): flat paginated flow.
-            let totalPages = 1;
-            try {
-                const pageNums = await page.$$eval(
-                    'nav button, [class*="pagination"] button, [class*="pager"] button',
-                    btns => btns.map(b => parseInt(b.textContent?.trim())).filter(n => !isNaN(n) && n > 0)
-                );
-                if (pageNums.length > 0) totalPages = Math.max(...pageNums);
-            } catch (_) {}
+            // /pedir Justo sites (Chifa Express, Cinnabon): single long page with
+            // h3.categoryTitle sections and .product-card links — no Digifood articles.
+            console.log('Flujo /pedir (Justo / product-card)...');
+            await autoScroll(page);
+            await page.waitForTimeout(1500);
+            results = await extractProducts(page, restaurantName);
+            console.log(`  → ${results.length} productos en página única`);
 
-            console.log(`Total de páginas: ${totalPages}`);
-            for (let p = 1; p <= totalPages; p++) {
-                console.log(`Procesando página ${p} de ${totalPages}...`);
-                await page.waitForSelector('article', { timeout: 15000 }).catch(() => {});
-                await autoScroll(page);
-                const pageProducts = await extractProducts(page, restaurantName);
-                console.log(`  → ${pageProducts.length} productos en página ${p}`);
-                results.push(...pageProducts);
-                if (p < totalPages) {
+            // If still empty, try Digifood article pagination as last resort
+            if (results.length === 0) {
+                console.log('Sin product-cards; intentando paginación Digifood...');
+                for (let p = 1; p <= 40; p++) {
+                    await page.waitForSelector('article', { timeout: 10000 }).catch(() => {});
+                    await autoScroll(page);
+                    const pageProducts = await extractProducts(page, restaurantName);
+                    console.log(`  → página ${p}: ${pageProducts.length}`);
+                    results.push(...pageProducts);
                     const clicked = await clickNext(page);
                     if (!clicked) break;
                     await page.waitForTimeout(3000);
@@ -92,9 +103,48 @@ async function scrapeDigifood(url, restaurantName, storeId) {
     return saveUnique(results, storeId, restaurantName);
 }
 
+async function dismissModals(page) {
+    for (const sel of [
+        '[data-testid="modal-close"]', 'button[aria-label="Close"]', 'button[aria-label="Cerrar"]',
+        '.modal-close', '[class*="dismiss"]', 'button:has-text("Aceptar")', 'button:has-text("Entendido")',
+        'button:has-text("Cerrar")',
+    ]) {
+        try {
+            const btn = await page.$(sel);
+            if (btn) { await btn.click(); await page.waitForTimeout(400); }
+        } catch (_) {}
+    }
+}
+
+async function handleStoreModal(page) {
+    try {
+        await page.waitForTimeout(1000);
+        for (const sel of [
+            'text=Para llevar', 'text=Recoger', 'text=Delivery', 'text=Pedir ahora',
+            'text=Continuar', 'text=Ordenar', '[data-testid*="takeaway"]', '[data-testid*="pickup"]',
+        ]) {
+            try {
+                const btn = await page.$(sel);
+                if (btn) { await btn.click(); await page.waitForTimeout(1000); break; }
+            } catch (_) {}
+        }
+        for (const sel of [
+            '.store-item:first-child', '[class*="store"]:first-child button',
+            '[class*="location"]:first-child', '[class*="tienda"]:first-child',
+            'button:has-text("Seleccionar")',
+        ]) {
+            try {
+                const item = await page.$(sel);
+                if (item) { await item.click(); await page.waitForTimeout(2000); break; }
+            } catch (_) {}
+        }
+    } catch (_) {}
+}
+
 // Navigate to a category route, load all cards, and return its products.
 async function scrapeCategoryPage(page, categoryUrl, categoryName, restaurantName) {
     await page.goto(categoryUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await dismissModals(page);
     await page.waitForSelector('article', { timeout: 20000 }).catch(() => {});
     await page.waitForTimeout(1500);
     const out = [];
@@ -143,39 +193,91 @@ async function clickNext(page) {
 async function extractProducts(page, restaurantName) {
     return page.evaluate((name) => {
         const results = [];
+        const seen = new Set();
         let currentCategory = 'General';
 
+        function parsePrice(el) {
+            const strikeEls = el.querySelectorAll('del, s, [class*="line-through"], [class*="old-price"], [class*="original"], [class*="tachado"], [class*="before"]');
+            const striked = new Set();
+            strikeEls.forEach(se => {
+                const m = se.textContent.match(/([\d.,]+)/);
+                if (m) striked.add(parseFloat(m[0].replace(',', '.')));
+            });
+            const priceMatches = [...(el.textContent || '').matchAll(/S\/?\s*([\d.,]+)/g)];
+            const valid = priceMatches
+                .map(m => parseFloat(m[1].replace(',', '.')))
+                .filter(p => !isNaN(p) && p > 0 && !striked.has(p));
+            if (valid.length === 0) return 0;
+            // Promo cards often show regular + promo → take lowest current price
+            return Math.min(...valid);
+        }
+
+        // Path A: Justo /pedir product-cards (Chifa Express, Cinnabon)
+        const justoCards = document.querySelectorAll(
+            '.product-card a[href*="/pedir/"], a[href*="/pedir/"][class*="card"], a.rounded-lg[href*="/pedir/"]'
+        );
+        if (justoCards.length > 0) {
+            const docY = el => el.getBoundingClientRect().top + window.scrollY;
+            const headers = [...document.querySelectorAll('h3.categoryTitle, h3[class*="categoryTitle"]')]
+                .map(h => ({ name: h.textContent?.trim(), y: docY(h) }))
+                .filter(h => h.name && h.name.length < 80)
+                .sort((a, b) => a.y - b.y);
+
+            for (const a of justoCards) {
+                if (!/\/pedir\/[A-Za-z0-9]+\//.test(a.getAttribute('href') || '')) continue;
+                // Prefer img title/alt as clean product name
+                const img = a.querySelector('img[title], img[alt]');
+                let productName = (img?.getAttribute('title') || img?.getAttribute('alt') || '').trim();
+                if (!productName) {
+                    // First substantial text line that isn't a discount badge
+                    const lines = (a.innerText || '').split('\n').map(l => l.trim()).filter(Boolean);
+                    productName = lines.find(l => l.length > 3 && !/^-?\d+%$/.test(l) && !/^S\//.test(l)) || '';
+                }
+                if (!productName || seen.has(productName)) continue;
+
+                const price = parsePrice(a);
+                // Some promo cards only show discount % without S/ — skip those without price
+                if (price === 0) continue;
+
+                const y = docY(a);
+                let category = 'General';
+                for (const h of headers) {
+                    if (h.y <= y + 5) category = h.name;
+                    else break;
+                }
+
+                const lines = (a.innerText || '').split('\n').map(l => l.trim()).filter(Boolean);
+                const description = lines.find(l =>
+                    l !== productName && l.length > 10 && !/^S\//.test(l) && !/^-?\d+%$/.test(l)
+                ) || '';
+
+                results.push({ restaurant: name, category, name: productName, description, price });
+                seen.add(productName);
+            }
+            if (results.length > 0) return results;
+        }
+
+        // Path B: Digifood <article> cards (Wanta / BK-style)
         const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT);
         while (walker.nextNode()) {
             const el = walker.currentNode;
 
-            // Track category from H1/H2 outside of article
-            if ((el.tagName === 'H1' || el.tagName === 'H2') && !el.closest('article')) {
+            if ((el.tagName === 'H1' || el.tagName === 'H2' || el.tagName === 'H3') &&
+                !el.closest('article') && (el.classList?.contains('categoryTitle') || true)) {
                 const txt = el.textContent?.trim();
-                if (txt && txt.length > 1 && txt.length < 80) currentCategory = txt;
+                if (txt && txt.length > 1 && txt.length < 80 &&
+                    !/pol[ií]tica|cookie|cuenta|redes|con[oó]cenos/i.test(txt)) {
+                    currentCategory = txt;
+                }
             }
 
             if (el.tagName !== 'ARTICLE') continue;
 
             const nameEl = el.querySelector('h3, h2, h4');
             const productName = nameEl?.textContent?.trim() || '';
-            if (!productName) continue;
+            if (!productName || seen.has(productName)) continue;
 
-            // Identify strikethrough (promotional old) prices
-            const strikeEls = el.querySelectorAll('del, s, [class*="line-through"], [class*="old-price"], [class*="original"], [class*="tachado"], [class*="before"]');
-            const strikedPrices = new Set();
-            strikeEls.forEach(se => {
-                const m = se.textContent.match(/[\d.,]+/);
-                if (m) strikedPrices.add(parseFloat(m[0].replace(',', '.')));
-            });
-
-            // Extract all S/ prices from the card and exclude crossed-out ones
-            const priceMatches = [...el.textContent.matchAll(/S\/\s*([\d.,]+)/g)];
-            const validPrices = priceMatches
-                .map(m => parseFloat(m[1].replace(',', '.')))
-                .filter(p => !isNaN(p) && p > 0 && !strikedPrices.has(p));
-
-            const price = validPrices.length > 0 ? validPrices[0] : 0;
+            const price = parsePrice(el);
             if (price === 0) continue;
 
             const allPs = Array.from(el.querySelectorAll('p'));
@@ -183,6 +285,7 @@ async function extractProducts(page, restaurantName) {
             const description = descEl?.textContent?.trim() || '';
 
             results.push({ restaurant: name, category: currentCategory, name: productName, description, price });
+            seen.add(productName);
         }
         return results;
     }, restaurantName);

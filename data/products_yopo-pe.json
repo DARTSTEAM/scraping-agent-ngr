@@ -1,0 +1,219 @@
+[
+  {
+    "restaurant": "Yopo",
+    "category": "Destacado de la semana",
+    "name": "Cheesecake De Pistacho 5 Oz",
+    "description": "",
+    "price": 7
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Destacado de la semana",
+    "name": "Cookies & Cream 5 Oz",
+    "description": "",
+    "price": 7
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Destacado de la semana",
+    "name": "Lúcuma & Brownie 5 Oz",
+    "description": "",
+    "price": 7
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Wrappers",
+    "name": "Wrapper Chingón",
+    "description": "",
+    "price": 29
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Wrappers",
+    "name": "Wrapper Chingón + Papas",
+    "description": "",
+    "price": 35
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Wrappers",
+    "name": "Wrapper BLT",
+    "description": "",
+    "price": 28
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Wrappers",
+    "name": "Wrapper BLT + Papas",
+    "description": "",
+    "price": 34
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Wrappers",
+    "name": "Wrapper Clásico",
+    "description": "",
+    "price": 26
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Wrappers",
+    "name": "Wrapper Clásico + Papas",
+    "description": "",
+    "price": 32
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "3 Tenders",
+    "description": "",
+    "price": 17
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "3 Tenders + Papas",
+    "description": "",
+    "price": 23
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "4 Tenders",
+    "description": "",
+    "price": 20
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "4 Tenders + Papas",
+    "description": "",
+    "price": 26
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "6 Tenders",
+    "description": "",
+    "price": 26
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "6 Tenders + Papas",
+    "description": "",
+    "price": 32
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "Pack 8 Tenders",
+    "description": "",
+    "price": 52
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "Pack 12 Tenders",
+    "description": "",
+    "price": 64
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "Pack 18 tenders",
+    "description": "",
+    "price": 90
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Tenders & Nuggets",
+    "name": "Pack 24 Tenders",
+    "description": "",
+    "price": 116
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Ensaladas",
+    "name": "Bacon Mex",
+    "description": "",
+    "price": 30
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Ensaladas",
+    "name": "Bacon Mex + Papas",
+    "description": "",
+    "price": 36
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Ensaladas",
+    "name": "Mexicana Salad",
+    "description": "",
+    "price": 29
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Ensaladas",
+    "name": "Mexicana + Papas",
+    "description": "",
+    "price": 35
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Complementos",
+    "name": "Papas Fritas",
+    "description": "",
+    "price": 7
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Bebidas",
+    "name": "Limonada Og",
+    "description": "",
+    "price": 6
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Bebidas",
+    "name": "Limonada Pink",
+    "description": "",
+    "price": 6
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Bebidas",
+    "name": "Inca cola sin azúcar 500 ml.",
+    "description": "",
+    "price": 6
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Bebidas",
+    "name": "Inca Cola Original 500 ml",
+    "description": "",
+    "price": 6
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Bebidas",
+    "name": "Sprite 500 ml",
+    "description": "",
+    "price": 6
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Bebidas",
+    "name": "Coca Cola Sin Azúcar 500 ml",
+    "description": "",
+    "price": 6
+  },
+  {
+    "restaurant": "Yopo",
+    "category": "Bebidas",
+    "name": "Coca Cola Original 500 ml",
+    "description": "",
+    "price": 6
+  }
+]

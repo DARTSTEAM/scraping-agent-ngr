@@ -85,10 +85,30 @@ async function scrapeCategoryPages(page, categoryUrl, categoryName) {
     return out.map(p => ({ ...p, category: categoryName, restaurant: 'Burger King' }));
 }
 
+/** Discover Digifood section routes (/carta/<slug> or /promociones/<slug>). */
+async function discoverSectionCategories(page, section) {
+    return page.evaluate((sec) => {
+        const seen = new Map();
+        const re = new RegExp(`^\\/${sec}\\/([a-z0-9-]+)\\/?$`, 'i');
+        for (const a of document.querySelectorAll(`a[href*="/${sec}/"]`)) {
+            const href = a.getAttribute('href') || '';
+            const m = href.match(re);
+            if (!m) continue;
+            const slug = m[1].toLowerCase();
+            if (slug === 'ver-todo') continue;
+            let text = (a.textContent || '').trim();
+            const half = text.slice(0, text.length / 2);
+            if (text.length % 2 === 0 && half === text.slice(text.length / 2)) text = half;
+            if (!seen.has(href) && text) seen.set(href, { href, name: text });
+        }
+        return [...seen.values()];
+    }, section);
+}
+
 /**
- * Burger King Peru scraper — burgerking.pe/carta
- * Discovers per-category routes (/carta/<slug>) from the menu and scrapes each
- * one so every product carries its real category (instead of a single bucket).
+ * Burger King Peru scraper — burgerking.pe/carta + /promociones
+ * Discovers per-category routes from Carta and Promociones and scrapes each
+ * so every product carries its real category.
  */
 async function scrapeBurgerKing(url = 'https://www.burgerking.pe/carta') {
     console.log(`Iniciando scraping de Burger King: ${url}`);
@@ -101,6 +121,7 @@ async function scrapeBurgerKing(url = 'https://www.burgerking.pe/carta') {
 
     const page = await context.newPage();
     let results = [];
+    const origin = 'https://www.burgerking.pe';
 
     try {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
@@ -108,44 +129,46 @@ async function scrapeBurgerKing(url = 'https://www.burgerking.pe/carta') {
         console.log('Página cargada.');
         await page.waitForTimeout(2000);
 
-        // Discover category routes: /carta/<slug>, excluding the flat "ver-todo" view.
-        const categories = await page.evaluate(() => {
-            const seen = new Map();
-            for (const a of document.querySelectorAll('a[href*="/carta/"]')) {
-                const href = a.getAttribute('href') || '';
-                const m = href.match(/^\/carta\/([a-z0-9-]+)\/?$/i);
-                if (!m) continue;
-                const slug = m[1].toLowerCase();
-                if (slug === 'ver-todo') continue;
-                // De-dupe doubled labels ("King Jr.King Jr.") and trim.
-                let text = (a.textContent || '').trim();
-                const half = text.slice(0, text.length / 2);
-                if (text.length % 2 === 0 && half === text.slice(text.length / 2)) text = half;
-                if (!seen.has(href) && text) seen.set(href, { href, name: text });
-            }
-            return [...seen.values()];
-        });
-
-        console.log(`Categorías detectadas: ${categories.length} → ${categories.map(c => c.name).join(', ')}`);
+        const categories = await discoverSectionCategories(page, 'carta');
+        console.log(`Categorías Carta: ${categories.length} → ${categories.map(c => c.name).join(', ')}`);
 
         if (categories.length === 0) {
-            // Fallback: no category routes found → scrape the flat "ver-todo" view.
             console.warn('No se detectaron categorías; usando /carta/ver-todo como respaldo.');
-            results = await scrapeCategoryPages(page, 'https://www.burgerking.pe/carta/ver-todo', 'Ver Todo');
+            results = await scrapeCategoryPages(page, `${origin}/carta/ver-todo`, 'Ver Todo');
         } else {
-            // 1) Per-category pass → real category for each product (name → category).
             const nameToCategory = new Map();
             for (const cat of categories) {
-                const catUrl = cat.href.startsWith('http') ? cat.href : `https://www.burgerking.pe${cat.href}`;
+                const catUrl = cat.href.startsWith('http') ? cat.href : `${origin}${cat.href}`;
                 const catProducts = await scrapeCategoryPages(page, catUrl, cat.name);
                 for (const p of catProducts) {
-                    if (!nameToCategory.has(p.name)) nameToCategory.set(p.name, p.name && cat.name);
+                    if (!nameToCategory.has(p.name)) nameToCategory.set(p.name, cat.name);
                 }
             }
-            // 2) Full "ver-todo" pass → complete coverage; tag with the mapped category.
-            const allProducts = await scrapeCategoryPages(page, 'https://www.burgerking.pe/carta/ver-todo', 'Otros');
+            const allProducts = await scrapeCategoryPages(page, `${origin}/carta/ver-todo`, 'Otros');
             results = allProducts.map(p => ({ ...p, category: nameToCategory.get(p.name) || 'Otros' }));
             console.log(`Cobertura ver-todo: ${allProducts.length} · con categoría mapeada: ${allProducts.filter(p => nameToCategory.has(p.name)).length}`);
+        }
+
+        // Promociones section (best-effort — skip if unavailable)
+        try {
+            await page.goto(`${origin}/promociones`, { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await page.waitForTimeout(1500);
+            const promoCats = await discoverSectionCategories(page, 'promociones');
+            console.log(`Categorías Promociones: ${promoCats.length} → ${promoCats.map(c => c.name).join(', ')}`);
+
+            if (promoCats.length > 0) {
+                for (const cat of promoCats) {
+                    const catUrl = cat.href.startsWith('http') ? cat.href : `${origin}${cat.href}`;
+                    const catProducts = await scrapeCategoryPages(page, catUrl, cat.name);
+                    results.push(...catProducts);
+                }
+            } else {
+                const promoProducts = await scrapeCategoryPages(page, `${origin}/promociones`, 'Promociones');
+                if (promoProducts.length > 0) results.push(...promoProducts);
+                else console.warn('Promociones: sin productos detectados, continuando solo con Carta.');
+            }
+        } catch (promoErr) {
+            console.warn(`Promociones no disponible (${promoErr.message}); continuando solo con Carta.`);
         }
 
     } catch (error) {

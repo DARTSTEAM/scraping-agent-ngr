@@ -1,0 +1,107 @@
+[
+  {
+    "restaurant": "Little Caesars",
+    "category": "Hot-N-Ready",
+    "name": "CRAZY PUFFS",
+    "description": "",
+    "price": 9.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Hot-N-Ready",
+    "name": "Familiar Pepperoni",
+    "description": "",
+    "price": 19.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Hot-N-Ready",
+    "name": "Familiar Queso",
+    "description": "",
+    "price": 19.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Hot-N-Ready",
+    "name": "EXTRA!",
+    "description": "",
+    "price": 22.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Pizzas",
+    "name": "Familiar 4N1",
+    "description": "",
+    "price": 26.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Pizzas",
+    "name": "Familiar Jamón",
+    "description": "",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Pizzas",
+    "name": "Familiar 3 Meat Treat",
+    "description": "",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Pizzas",
+    "name": "Familiar Ultimate Supreme",
+    "description": "",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Pizzas",
+    "name": "Familiar Hula Hawaiian",
+    "description": "",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Pizzas",
+    "name": "Familiar Vegetariana",
+    "description": "",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Hot-N-Ready",
+    "name": "Crazy Combo",
+    "description": "",
+    "price": 5
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Hot-N-Ready",
+    "name": "CANELITAS",
+    "description": "",
+    "price": 5
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Pizzas",
+    "name": "CRAZY CHEESE BREAD",
+    "description": "",
+    "price": 13.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Hot-N-Ready",
+    "name": "Comida Completa",
+    "description": "",
+    "price": 29.9
+  },
+  {
+    "restaurant": "Little Caesars",
+    "category": "Hot-N-Ready",
+    "name": "Combo Fiesta",
+    "description": "",
+    "price": 49.9
+  }
+]

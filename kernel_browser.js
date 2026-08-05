@@ -1,10 +1,13 @@
 /**
  * kernel_browser.js
- * 
+ *
  * Helper to create a Playwright browser connected via Kernel's cloud
  * using a residential proxy. Requires:
  *   - KERNEL_API_KEY environment variable
  *   - @onkernel/sdk package (npm install @onkernel/sdk)
+ *
+ * When KERNEL_API_KEY is missing, falls back to a local Chromium browser
+ * (useful for offline/dev verification; geo-blocked sites may fail).
  *
  * Proxy IDs (from dashboard.onkernel.com):
  *   - ngr-peru  → zjvah9ffg1n2yk0lshnupv7v  (Residential, Peru)
@@ -12,7 +15,6 @@
  */
 
 const { chromium } = require('playwright');
-const Kernel = require('@onkernel/sdk').default || require('@onkernel/sdk');
 
 // Map of friendly proxy names to their Kernel proxy IDs
 const PROXY_IDS = {
@@ -22,22 +24,26 @@ const PROXY_IDS = {
 
 /**
  * Create a remote Kernel browser with a residential proxy.
- * Returns { browser, kernelBrowser, kernel } so the caller can close both.
+ * Returns { browser, context, kernelBrowser, kernel } so the caller can close both.
  *
  * @param {object} options
  * @param {string} [options.proxy='ngr-peru'] - Friendly proxy name or a raw proxy_id
  * @param {boolean} [options.stealth=true]    - Enable Kernel's stealth mode
- * @returns {Promise<{ browser: import('playwright').Browser, kernelBrowser: object, kernel: object }>}
+ * @returns {Promise<{ browser: import('playwright').Browser, context: import('playwright').BrowserContext, kernelBrowser: object|null, kernel: object|null }>}
  */
 async function createKernelBrowser({ proxy = 'ngr-peru', stealth = true } = {}) {
   if (!process.env.KERNEL_API_KEY) {
-    throw new Error(
-      'KERNEL_API_KEY environment variable is not set.\n' +
-      'Get your key from: https://dashboard.onkernel.com/settings/api-keys\n' +
-      'Then run: export KERNEL_API_KEY=sk_...'
-    );
+    console.warn('[Kernel] KERNEL_API_KEY not set — using local Chromium (no Peru residential proxy).');
+    const browser = await chromium.launch({ headless: true });
+    const context = await browser.newContext({
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+      locale: 'es-PE',
+      timezoneId: 'America/Lima',
+    });
+    return { browser, context, kernelBrowser: null, kernel: null };
   }
 
+  const Kernel = require('@onkernel/sdk').default || require('@onkernel/sdk');
   const kernel = new Kernel({ apiKey: process.env.KERNEL_API_KEY });
 
   const proxyId = PROXY_IDS[proxy] || proxy; // accept raw IDs too
@@ -66,18 +72,20 @@ async function createKernelBrowser({ proxy = 'ngr-peru', stealth = true } = {}) 
  *
  * @param {object} params
  * @param {import('playwright').Browser} params.browser
- * @param {object} params.kernelBrowser
- * @param {object} params.kernel
+ * @param {object|null} params.kernelBrowser
+ * @param {object|null} params.kernel
  */
 async function closeKernelBrowser({ browser, kernelBrowser, kernel }) {
   try {
     await browser.close();
   } catch (_) {}
-  try {
-    await kernel.browsers.deleteByID(kernelBrowser.session_id);
-    console.log(`[Kernel] Session ${kernelBrowser.session_id} terminated.`);
-  } catch (e) {
-    console.warn(`[Kernel] Could not delete session: ${e.message}`);
+  if (kernel && kernelBrowser?.session_id) {
+    try {
+      await kernel.browsers.deleteByID(kernelBrowser.session_id);
+      console.log(`[Kernel] Session ${kernelBrowser.session_id} terminated.`);
+    } catch (e) {
+      console.warn(`[Kernel] Could not delete session: ${e.message}`);
+    }
   }
 }
 

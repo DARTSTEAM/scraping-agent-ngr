@@ -1,0 +1,548 @@
+[
+  {
+    "restaurant": "Chifa Express",
+    "category": "Promos semana Express",
+    "name": "Promo Martes y Jueves - Express Especial",
+    "description": "Todos los martes y jueves llévate cualquier plato especial a S/.21.90",
+    "price": 0.21
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Promos semana Express",
+    "name": "Promo Viernes - Montados & Combinados",
+    "description": "Promoción exclusiva los Viernes.",
+    "price": 3
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Promociones",
+    "name": "Combo Clásico Express",
+    "description": "1 combinado a elección o chaufa de pollo personal o aeropuerto personal + 3 wantanes o sopa wantán de pollo personal + 1 bebida 300ml. Agranda tus bebidas a 500ml +S/2 c/u.",
+    "price": 2
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Promociones",
+    "name": "Combo chaufa y alitas express",
+    "description": "Arroz chaufa  + 3 alitas de ostión o tamarindo + gaseosa 300ml",
+    "price": 22.95
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Promociones",
+    "name": "The Dragon Express",
+    "description": "Aeropuerto o Chaufa Charapa + Montado a elección + 2 inca kola 300ml",
+    "price": 36
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combos Express",
+    "name": "Combo Express 2",
+    "description": "6 wantanes + 1 Chaufa de Pollo Familiar + 2 Platos de Pollos a elección + 2 bebidas a elección.",
+    "price": 64.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combos Express",
+    "name": "Maxi Combo Express",
+    "description": "12 wantanes + 2 chaufas de pollo familiar + 3 pollos a elección + inca kola 1.5 lt.",
+    "price": 105
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combos Express",
+    "name": "Combo Express 3",
+    "description": "2 sopas wantanes personales (500ml c/u) + Chaufa de Pollo Familiar + Tallarín de Pollo + Pollo a elección + 2 bebidas a elección.",
+    "price": 69.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combos Express",
+    "name": "Combo Express 1",
+    "description": "6 wantanes + 1 Chaufa de Pollo Familiar + 1 Plato de Pollo a elección + 2 bebidas a elección.",
+    "price": 49.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combos Express",
+    "name": "Combo Express 4",
+    "description": "12 wantanes + 2 Chaufas de Pollo Familiares + 2 Platos de Pollos a elección + Inca Kola 1.5L.",
+    "price": 94.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Los favoritos de Chifa Express",
+    "name": "Wantan Frito",
+    "description": "Masa wantán frita rellena de chancho.",
+    "price": 8.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Los favoritos de Chifa Express",
+    "name": "Sopa Wantan de Pollo",
+    "description": "Caldo de pollo con laminas de pechuga de pollo, col china, wantan relleno de cerdo y fideo chino (900ml).",
+    "price": 15.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Los favoritos de Chifa Express",
+    "name": "Combinado Tipakay",
+    "description": "Arroz chaufa de pollo con pollo tipakay y tiras de wantán frito",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Los favoritos de Chifa Express",
+    "name": "Tallarin de Pollo en Trozos",
+    "description": "Fideo chino salteado con trozos de pollo y verduras orientales en salsa ostión.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Los favoritos de Chifa Express",
+    "name": "Combinado Chijaukay",
+    "description": "Arroz chaufa de pollo con pollo chijaukay y tiras de wantán frito",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Los favoritos de Chifa Express",
+    "name": "Montado Parrillero",
+    "description": "Arroz chaufa de hot dog ahumado, chorizo parrillero, plátano maduro frito, huevo frito montado.",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Banquetes Domingueros",
+    "name": "Banquete Express 1",
+    "description": "6 wantanes + 3 spring rolls + 1 min pao + chaufa de pollo familiar o tallarin de pollo en trozos + 2 pollos a elección + 2 bebidas",
+    "price": 64.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Banquetes Domingueros",
+    "name": "Banquete Express 2",
+    "description": "2 sopas wantán personales o 12 wantanes + chaufa de Pollo Familiar o aeropuerto familiar + tallarín de pollo en trozos + 1 pollo a elección + 1 gaseosa de 1.5L",
+    "price": 69.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Banquetes Domingueros",
+    "name": "Banquete Express 3",
+    "description": "6 wantanes + 4 siumai + 1 minpao + 3 spring rolls + 2 chaufas de pollo familiar o aeropuertos familiares + 1 pollo a elección + 1 plato especial + Inca Kola 1.5 Lt.",
+    "price": 94.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combinados",
+    "name": "Combinado Clásico",
+    "description": "Arroz chaufa de pollo y  tallarín salteado de pollo con verduras",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combinados",
+    "name": "Combinado Latkay",
+    "description": "Arroz chaufa de pollo, pollo picante  y tiras de wantán frito",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combinados",
+    "name": "Combinado de Pollo con Piña",
+    "description": "Arroz chaufa de pollo, pollo con piña y tiras de wantán frito",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Combinados",
+    "name": "Combinado de Pollo con Verduras",
+    "description": "Arroz chaufa de pollo con verduras y tiras de wantán frito",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Montados",
+    "name": "Montado Charapa",
+    "description": "Arroz chaufa con cecina y chorizo selvático, plátano maduro frito, huevo frito montado.",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Montados",
+    "name": "Montado Pollo Saltado",
+    "description": "Arroz chaufa de pollo, pollo saltado, plátano maduro frito, huevo frito montado.",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Montados",
+    "name": "Montado de Lomo Saltado",
+    "description": "Arroz chaufa de pollo, lomo saltado, plátano maduro frito, huevo frito montado.",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Siumai",
+    "description": "Clásico bocadito chino al vapor relleno de carne de cerdo con forma de saco.",
+    "price": 7.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Wantan de Langostino",
+    "description": "Masa wantán frita rellena de langostino.",
+    "price": 9.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Spring Roll",
+    "description": "Pasta rellena de verduras en salsa oriental, acompañado de salsa de limón y canela china.",
+    "price": 8.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Piernitas al Limón",
+    "description": "Carne de pollo y cerdo , finamente molidas, mezcladas y empanizadas acompañadas de salsa de limón y canela china, 3 unidades.",
+    "price": 9.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Chicharrón de Pollo",
+    "description": "Trozos de pura pechuga de pollo fritas.",
+    "price": 8.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "MinPao",
+    "description": "Bolillo de masa de trigo relleno de cerdo asado, 1 unidad.",
+    "price": 7.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Alitas de Ostión",
+    "description": "Alitas de pollo fritas, bañadas en salsa de ostión y rociadas con semillas de ajonjoli blanco tostado.",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Alitas Tamarindo",
+    "description": "Alitas de pollo fritas, bañadas en salsa de tamarindo y rociadas con semillas de ajonjoli blanco tostado",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Piqueo Express 1 (para 2)",
+    "description": "4 siumai + 1 minpau + 3 spring rolls.",
+    "price": 22.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bocaditos chinos",
+    "name": "Piqueo express 2 (para 4)",
+    "description": "8 siumai + 4 chicharrones de pollo + 3 spring roll.",
+    "price": 29.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Sopas",
+    "name": "Sopa Especial",
+    "description": "Caldo de pollo con laminas de pechuga de pollo, cerdo, langostino, huevo de codorniz, col china, wantán relleno de cerdo y fideo chino (900ml).",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Sopas",
+    "name": "Sopa Fuchifu",
+    "description": "Fondo de pollo con pequeños cortes de pierna de pollo, col china y holantao acompañado de fideo de arroz (900ml).",
+    "price": 15.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Arroces",
+    "name": "Aeropuerto",
+    "description": "Arroz frito con trozos de pechuga de pollo, huevo, fideo tallarín, frejol chino, huevo y cebolla china.",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Arroces",
+    "name": "Chaufa Especial",
+    "description": "Arroz frito con pequeños trozos de pollo, cerdo, langostino, huevo y cebolla china.",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Arroces",
+    "name": "Chaufa Mixto",
+    "description": "Arroz chaufa con trozos de pollo y chancho.",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Arroces",
+    "name": "Chaufa de Chancho",
+    "description": "Arroz frito con pequeños trozos de cerdo huevo y cebolla china.",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Arroces",
+    "name": "Chaufa de Langostinos",
+    "description": "Arroz frito con langostino, huevo y cebolla china.",
+    "price": 18.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Arroces",
+    "name": "Chaufa de Pollo",
+    "description": "Arroz frito con pollo, huevo y cebolla china.",
+    "price": 16.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Arroces",
+    "name": "Chaufa de carne",
+    "description": "Arroz frito con trozos de carne, huevo, pimentón, holantao y cebolla china.",
+    "price": 17.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Tallarines",
+    "name": "Tallarin Especial",
+    "description": "Fideo chino salteado con trozos de pierna de pollo, cerdo, langostino y verduras orientales en salsa ostión.",
+    "price": 26.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Carne con Verduras",
+    "description": "Laminas de bola de lomo salteadas con una variedad de verduras orientales de sabor salado.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Chancho al Ajo",
+    "description": "Chancho salteado salteado al ajo con verduras.",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Chancho con Tamarindo",
+    "description": "Chancho salteado con verduras y salsa tamarindo.",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Chancho con Verduras",
+    "description": "Chancho en láminas salteadas con verduras orientales.",
+    "price": 25.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Pollo Chikaukay",
+    "description": "Trozos de pierna de pollo crujientes y bañadas en salsa ostión salada.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Pollo Enrollado",
+    "description": "Pollo crocante enrollado con salsa agridulce.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Pollo Limonkay",
+    "description": "Abundante trozos de pierna de pollo crujientes, bañadas en salsa de limón dulce.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Pollo Tipakay",
+    "description": "Trozos de pierna de pollo crujientes y bañadas en salsa tamarindo dulce.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Pollo con Piña",
+    "description": "Pierna de pollo en trozos acompañado de verduras salteadas con piña y salsa tamarindo dulce.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Carnes y pollos",
+    "name": "Pollo con Verduras",
+    "description": "Pierna de pollo en trozos acompañado de verduras salteadas en salsa ostión y tausi de sabor salado.",
+    "price": 24.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Platos especiales",
+    "name": "Carne al Estilo Mongol",
+    "description": "Laminas de bola de lomo salteadas con variedad de verduras orientales en salsa barbecue.",
+    "price": 26.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Platos especiales",
+    "name": "Kam Lu Wantan",
+    "description": "Plato dulce con variedad de carnes, pollo y chancho, con verduras salteadas con piña y huevo de codorniz acompañado de wantan frito.",
+    "price": 29.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Platos especiales",
+    "name": "Langostino Dinamita",
+    "description": "Langostinos salteados con ajo y ají picante.",
+    "price": 32.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Platos especiales",
+    "name": "Langostino con Verduras",
+    "description": "Langostinos salteados con verduras orientales.",
+    "price": 29.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Platos especiales",
+    "name": "Taypa",
+    "description": "Plato salado con variedad de carnes, pollo, chancho, carne y langostino, acompañado de verduras salteadas y huevo de codorniz.",
+    "price": 29.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Agua San Luis Sin Gas 625 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Agua San Luis con Gas 625 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Chicha Frugos del Valle 300ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Coca-Cola Original 1.5L",
+    "description": "",
+    "price": 10.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Coca-Cola Original 500 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Coca-Cola Sin Azúcar 500 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Fanta 500ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Free Tee Durazno 500ml",
+    "description": "Free Tea de Durazno",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Free Tee Frutos Rojos 500ml",
+    "description": "Free Tee Frutos Rojos",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Free Tee Limón 500ml",
+    "description": "Free Tee Limón",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Inca Kola Original 1.5L",
+    "description": "",
+    "price": 10.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Inca Kola Original 500 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero 500 ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Jugo Natural Epic Arándanos Piña 250ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Jugo Natural Epic Mango Maracuyá  250ml",
+    "description": "Jugo Natural Epic Mango Maracuyá 250ml",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Jugo Natural Epic Naranja 250ml",
+    "description": "",
+    "price": 4.9
+  },
+  {
+    "restaurant": "Chifa Express",
+    "category": "Bebidas",
+    "name": "Jugo Natural Epic Zanahoria Naranja 250ml",
+    "description": "",
+    "price": 4.9
+  }
+]

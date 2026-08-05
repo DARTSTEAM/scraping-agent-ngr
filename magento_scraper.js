@@ -7,12 +7,12 @@ const path = require('path');
  * All 6 brands (Bembos, Popeyes, Papa Johns, Dunkin, Don Belisario, Chinawok)
  * share the same Magento/SummaTheme frontend with identical DOM structure.
  *
- * Products are server-rendered in <li class="product-item"> elements.
- * Categories use a grouped layout with <h2> headers and subcategory filters.
- * Prices use data-price-amount attributes (finalPrice vs oldPrice).
+ * Categories:
+ *   - Parent sections are /menu/<slug> (Combos, Hamburguesas, …)
+ *   - Subcategory filters (grouped-subcategory-filter) give finer labels when present
+ *   - Prefer subcategory; fall back to parent section name (never lump into "General")
  */
 
-// Brand dispatch map
 const BRAND_MAP = {
     'bembos.com.pe':       { name: 'Bembos',        storeId: 'bembos-pe' },
     'popeyes.com.pe':      { name: 'Popeyes',       storeId: 'popeyes-pe' },
@@ -29,6 +29,87 @@ function detectBrand(url) {
     return { name: 'Restaurant', storeId: 'ngr-generic' };
 }
 
+/** Extract products from the current page; parentCategory is the section fallback. */
+function extractMagentoProductsBrowser({ restaurantName, parentCategory }) {
+    const results = [];
+    const seen = new Set();
+
+    const catMap = {};
+    document.querySelectorAll('[data-role="grouped-subcategory-filter"]').forEach(a => {
+        const id = a.getAttribute('data-id');
+        const title = a.getAttribute('title') || a.textContent?.trim();
+        if (id && title && title.toLowerCase() !== 'todos') catMap[id] = title;
+    });
+
+    // Parent title from section H2 inside each grouped block (overrides arg when walking)
+    const sectionParentByItem = new WeakMap();
+    document.querySelectorAll('[data-role="grouped-category-section"], .products-category-grouped').forEach(section => {
+        const h2 = section.querySelector('.category-grouped-title h2, h2');
+        const parent = h2?.textContent?.trim();
+        if (!parent) return;
+        section.querySelectorAll('li.product-item').forEach(item => {
+            sectionParentByItem.set(item, parent);
+        });
+    });
+
+    // Also map via document-order: .category-grouped-title h2 then following products
+    let walkParent = parentCategory || null;
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT);
+    while (walker.nextNode()) {
+        const el = walker.currentNode;
+
+        if (el.classList && el.classList.contains('category-grouped-title')) {
+            const h2 = el.querySelector('h2') || (el.tagName === 'H2' ? el : null);
+            const text = (h2 || el).textContent?.trim();
+            if (text && text.length > 1 && text.length < 80 && !/preguntas frecuentes/i.test(text)) {
+                walkParent = text;
+            }
+        }
+
+        if (el.tagName !== 'LI' || !el.classList || !el.classList.contains('product-item')) continue;
+
+        const nameEl = el.querySelector('.product-item-name a, .product-item-link');
+        const name = nameEl?.textContent?.trim();
+        if (!name) continue;
+
+        const descEl = el.querySelector('.product-item-description p, .product-item-description');
+        const description = descEl?.textContent?.trim() || '';
+
+        const finalPriceEl = el.querySelector('[data-price-type="finalPrice"]');
+        const oldPriceEl = el.querySelector('[data-price-type="oldPrice"]');
+        let price = 0;
+        if (finalPriceEl) {
+            price = parseFloat(finalPriceEl.getAttribute('data-price-amount')) || 0;
+        } else if (oldPriceEl) {
+            price = parseFloat(oldPriceEl.getAttribute('data-price-amount')) || 0;
+        } else {
+            const priceText = el.querySelector('.price')?.textContent || '';
+            const match = priceText.match(/S\/\s*([\d.,]+)/);
+            if (match) price = parseFloat(match[1].replace(',', '.'));
+        }
+        if (price === 0) continue;
+
+        const className = el.className || '';
+        const catIds = [...className.matchAll(/cat-(\d+)/g)].map(m => m[1]);
+        let subcategory = null;
+        for (const id of catIds) {
+            if (catMap[id]) { subcategory = catMap[id]; break; }
+        }
+
+        const parent = sectionParentByItem.get(el) || walkParent || parentCategory || null;
+        const category = subcategory || parent || 'General';
+
+        const key = `${name}||${category}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+
+        const sku = el.querySelector('[data-product-sku]')?.getAttribute('data-product-sku') || '';
+        results.push({ restaurant: restaurantName, category, name, description, price, sku });
+    }
+
+    return results;
+}
+
 async function scrapeMagento(url) {
     const brand = detectBrand(url);
     console.log(`Iniciando scraping de ${brand.name}: ${url}`);
@@ -40,151 +121,123 @@ async function scrapeMagento(url) {
 
     const page = await context.newPage();
     const allProducts = [];
+    const origin = (() => { try { return new URL(url).origin; } catch { return ''; } })();
 
     try {
-        // Navigate to menu page
         console.log('Navegando a la página de menú...');
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-        await page.waitForSelector('.product-item', { timeout: 20000 }).catch(() => {});
+        await page.waitForSelector('.product-item, [data-role="grouped-category-anchor"]', { timeout: 20000 }).catch(() => {});
         await page.waitForTimeout(2000);
-
-        // Scroll to load lazy images and deferred content
         await autoScroll(page);
 
-        // Extract all products from the page
-        const products = await page.evaluate((restaurantName) => {
-            const results = [];
-            const seen = new Set();
-
-            // Try to build a category map from grouped subcategory filters
-            // Format: <a data-id="607" title="Promociones para 2">
-            const catMap = {};
-            document.querySelectorAll('[data-role="grouped-subcategory-filter"]').forEach(a => {
-                const id = a.getAttribute('data-id');
-                const title = a.getAttribute('title') || a.textContent?.trim();
-                if (id && title) catMap[id] = title;
-            });
-
-            // Also check H2 section headers for category context
-            // Magento grouped layout: <h2><span>Category Name</span></h2> followed by product grid
-            const sectionHeaders = {};
-            document.querySelectorAll('.category-title h2, .grouped-category h2, .category-header h2').forEach(h2 => {
-                const text = h2.textContent?.trim();
-                if (text) {
-                    // Try to find the next product list
-                    const section = h2.closest('.category-section, .grouped-category, [class*="category"]');
-                    if (section) {
-                        section.querySelectorAll('.product-item').forEach(item => {
-                            const itemId = item.querySelector('[data-product-id]')?.getAttribute('data-product-id');
-                            if (itemId) sectionHeaders[itemId] = text;
-                        });
-                    }
+        // Discover parent category routes: /menu/<slug>
+        const parentCategories = await page.evaluate(() => {
+            const seen = new Map();
+            const anchors = document.querySelectorAll(
+                '[data-role="grouped-category-anchor"], a[href*="/menu/"]'
+            );
+            for (const a of anchors) {
+                const href = a.getAttribute('href') || '';
+                let path = href;
+                try { path = new URL(href, location.origin).pathname; } catch (_) {}
+                const m = path.match(/^\/menu\/([a-z0-9-]+)\/?$/i);
+                if (!m) continue;
+                const slug = m[1].toLowerCase();
+                if (slug === 'ver-todo') continue;
+                let name = (a.getAttribute('title') || a.textContent || '').trim();
+                // Clean "Combos Ver todo" / doubled labels
+                name = name.replace(/\s*Ver todo\s*/gi, '').trim();
+                const half = name.slice(0, name.length / 2);
+                if (name.length % 2 === 0 && half === name.slice(name.length / 2)) name = half;
+                if (!name) {
+                    name = slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
                 }
-            });
-
-            // Extract products
-            document.querySelectorAll('li.product-item').forEach(item => {
-                // Product name
-                const nameEl = item.querySelector('.product-item-name a, .product-item-link');
-                const name = nameEl?.textContent?.trim();
-                if (!name || seen.has(name)) return;
-                seen.add(name);
-
-                // Description
-                const descEl = item.querySelector('.product-item-description p, .product-item-description');
-                const description = descEl?.textContent?.trim() || '';
-
-                // Price — use data-price-amount for accuracy, prefer finalPrice over oldPrice
-                const finalPriceEl = item.querySelector('[data-price-type="finalPrice"]');
-                const oldPriceEl = item.querySelector('[data-price-type="oldPrice"]');
-                let price = 0;
-
-                if (finalPriceEl) {
-                    price = parseFloat(finalPriceEl.getAttribute('data-price-amount')) || 0;
-                } else if (oldPriceEl) {
-                    price = parseFloat(oldPriceEl.getAttribute('data-price-amount')) || 0;
-                } else {
-                    // Fallback: extract from text S/XX.XX
-                    const priceText = item.querySelector('.price')?.textContent || '';
-                    const match = priceText.match(/S\/\s*([\d.,]+)/);
-                    if (match) price = parseFloat(match[1].replace(',', '.'));
+                if (!seen.has(slug) && name.length < 80) {
+                    seen.set(slug, { href: path, slug, name });
                 }
-
-                if (price === 0) return;
-
-                // Category — try multiple sources
-                const productId = item.querySelector('[data-product-id]')?.getAttribute('data-product-id');
-                const catClass = item.className.match(/cat-(\d+)/);
-                const catId = catClass?.[1];
-                let category = catMap[catId] || sectionHeaders[productId] || 'General';
-
-                // SKU
-                const sku = item.querySelector('[data-product-sku]')?.getAttribute('data-product-sku') || '';
-
-                results.push({
-                    restaurant: restaurantName,
-                    category,
-                    name,
-                    description,
-                    price,
-                    sku,
-                });
+            }
+            // Also from section H2 titles paired with nearby "Ver todo" links
+            document.querySelectorAll('.category-grouped-title h2').forEach(h2 => {
+                const name = h2.textContent?.trim();
+                if (!name || /preguntas frecuentes/i.test(name)) return;
+                const section = h2.closest('[data-role="grouped-category-section"], .products-category-grouped, section, div');
+                const link = section?.querySelector('a[href*="/menu/"]');
+                if (!link) return;
+                let path = link.getAttribute('href') || '';
+                try { path = new URL(path, location.origin).pathname; } catch (_) {}
+                const m = path.match(/^\/menu\/([a-z0-9-]+)\/?$/i);
+                if (!m) return;
+                const slug = m[1].toLowerCase();
+                if (!seen.has(slug)) seen.set(slug, { href: path, slug, name });
             });
+            return [...seen.values()];
+        });
 
-            return results;
-        }, brand.name);
+        console.log(`Categorías padre: ${parentCategories.length} → ${parentCategories.map(c => c.name).join(', ')}`);
 
-        allProducts.push(...products);
-        console.log(`Extraídos ${products.length} productos de la página principal.`);
+        if (parentCategories.length > 0 && origin) {
+            for (const cat of parentCategories) {
+                const catUrl = `${origin}${cat.href}`;
+                console.log(`Scrapeando: ${cat.name} (${catUrl})`);
+                try {
+                    await page.goto(catUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
+                    await page.waitForSelector('.product-item', { timeout: 15000 }).catch(() => {});
+                    await page.waitForTimeout(1200);
+                    await autoScroll(page);
+                    const products = await page.evaluate(extractMagentoProductsBrowser, {
+                        restaurantName: brand.name,
+                        parentCategory: cat.name,
+                    });
+                    console.log(`  → ${cat.name}: ${products.length} productos`);
+                    allProducts.push(...products);
+                } catch (err) {
+                    console.warn(`  ⚠ ${cat.name}: ${err.message}`);
+                }
+            }
+        }
 
-        // Check if there are more pages (Magento pagination)
+        // Coverage pass on the full /menu page
+        console.log('Cobertura: página /menu completa...');
+        await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+        await page.waitForSelector('.product-item', { timeout: 20000 }).catch(() => {});
+        await autoScroll(page);
+        const mainProducts = await page.evaluate(extractMagentoProductsBrowser, {
+            restaurantName: brand.name,
+            parentCategory: null,
+        });
+        console.log(`  → menú completo: ${mainProducts.length} productos`);
+        // Prefer already-tagged products from per-category passes; add only new names
+        const seenNames = new Set(allProducts.map(p => p.name));
+        for (const p of mainProducts) {
+            if (!seenNames.has(p.name)) {
+                allProducts.push(p);
+                seenNames.add(p.name);
+            }
+        }
+
+        // Magento pagination on main menu (rare)
         const hasPages = await page.$$eval(
             '.pages-items .item a, .toolbar-products .pages a',
             links => links.map(a => a.getAttribute('href')).filter(Boolean)
         ).catch(() => []);
-
-        // Get unique page URLs (skip current page)
         const currentUrl = page.url();
         const pageUrls = [...new Set(hasPages)].filter(u => u !== currentUrl && u.includes('p='));
-
         for (const pageUrl of pageUrls) {
             console.log(`Navegando a página: ${pageUrl}`);
             try {
                 await page.goto(pageUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
                 await page.waitForSelector('.product-item', { timeout: 15000 }).catch(() => {});
                 await autoScroll(page);
-
-                const pageProducts = await page.evaluate((restaurantName) => {
-                    const results = [];
-                    document.querySelectorAll('li.product-item').forEach(item => {
-                        const nameEl = item.querySelector('.product-item-name a, .product-item-link');
-                        const name = nameEl?.textContent?.trim();
-                        if (!name) return;
-
-                        const descEl = item.querySelector('.product-item-description p, .product-item-description');
-                        const description = descEl?.textContent?.trim() || '';
-
-                        const finalPriceEl = item.querySelector('[data-price-type="finalPrice"]');
-                        let price = 0;
-                        if (finalPriceEl) {
-                            price = parseFloat(finalPriceEl.getAttribute('data-price-amount')) || 0;
-                        } else {
-                            const priceText = item.querySelector('.price')?.textContent || '';
-                            const match = priceText.match(/S\/\s*([\d.,]+)/);
-                            if (match) price = parseFloat(match[1].replace(',', '.'));
-                        }
-                        if (price === 0) return;
-
-                        const catClass = item.className.match(/cat-(\d+)/);
-                        const category = catClass?.[1] || 'General';
-
-                        results.push({ restaurant: restaurantName, category, name, description, price });
-                    });
-                    return results;
-                }, brand.name);
-
-                console.log(`  → ${pageProducts.length} productos en página adicional`);
-                allProducts.push(...pageProducts);
+                const pageProducts = await page.evaluate(extractMagentoProductsBrowser, {
+                    restaurantName: brand.name,
+                    parentCategory: null,
+                });
+                for (const p of pageProducts) {
+                    if (!seenNames.has(p.name)) {
+                        allProducts.push(p);
+                        seenNames.add(p.name);
+                    }
+                }
             } catch (err) {
                 console.warn(`Error en página ${pageUrl}: ${err.message}`);
             }
@@ -196,28 +249,27 @@ async function scrapeMagento(url) {
         await closeKernelBrowser({ browser, kernelBrowser, kernel });
     }
 
-    // Deduplicate by name
     const seen = new Set();
     const unique = allProducts.filter(p => {
-        if (seen.has(p.name)) return false;
-        seen.add(p.name);
+        const key = `${p.name}||${p.category}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
         return true;
     });
 
     console.log(`\nTotal de productos únicos (${brand.name}): ${unique.length}`);
+    const catCounts = {};
+    unique.forEach(p => { catCounts[p.category] = (catCounts[p.category] || 0) + 1; });
+    console.log('Categorías:', Object.entries(catCounts).map(([k, v]) => `${k}(${v})`).join(', '));
 
     if (unique.length > 0) {
         const jsonPath = path.join(__dirname, `products_${brand.storeId}.json`);
         fs.writeFileSync(jsonPath, JSON.stringify(unique, null, 2));
-
         const header = 'Restaurant,Category,Product Name,Description,Price';
         const rows = unique.map(p =>
             [esc(p.restaurant), esc(p.category), esc(p.name), esc(p.description), p.price].join(',')
         );
-        fs.writeFileSync(
-            path.join(__dirname, `products_${brand.storeId}.csv`),
-            [header, ...rows].join('\n')
-        );
+        fs.writeFileSync(path.join(__dirname, `products_${brand.storeId}.csv`), [header, ...rows].join('\n'));
         console.log(`Guardado: products_${brand.storeId}.json / .csv`);
     } else {
         console.error('No se extrajo ningún producto.');
@@ -247,7 +299,6 @@ function esc(str) {
     return `"${String(str).replace(/"/g, '""')}"`;
 }
 
-// Entry point
 const targetUrl = process.argv[2];
 if (!targetUrl) {
     console.error('Usage: node magento_scraper.js <url>');
