@@ -120,7 +120,8 @@ const STORE_METADATA = {
     'donbelisario-pe':     { name: "Don Belisario",             platform: 'Propio' },
     'chinawok-pe':         { name: "Chinawok",                  platform: 'Propio' },
     // ── Propios – Competencia vs. Bembos ────────
-    'mcd-izaguirre-iza':   { name: "McDonald's - Izaguirre",   platform: 'Propio' },
+    'mcd-benavides-aurora-bau': { name: "McDonald's - Benavides Aurora", platform: 'Propio' },
+    'mcd-izaguirre-iza':       { name: "McDonald's - Izaguirre",        platform: 'Propio' },
     'burgerking-pe':       { name: "Burger King",               platform: 'Propio' },
     // Propios – Competencia vs. Popeyes
     'kfc-pe':              { name: "KFC",                       platform: 'Propio' },
@@ -272,6 +273,7 @@ app.post('/api/update', (req, res) => {
     const HEAVY_SCRAPERS = new Set([
         'kfc_scraper.js', 'burgerking_scraper.js', 'pizzahut_scraper.js',
         'digifood_scraper.js', 'rokys_scraper.js', 'magento_scraper.js',
+        'mcdonalds_scraper.js',
     ]);
     const execTimeout = scriptName === 'pedidosya_scraper.js' ? 180000
         : HEAVY_SCRAPERS.has(scriptName) ? 270000
@@ -333,7 +335,7 @@ function loadOverrides(brand, channel) {
 }
 
 // Confidence below this drops a match into the manual review queue.
-const REVIEW_THRESHOLD = 70;
+const REVIEW_THRESHOLD = 80;
 const overrideKey = (ngrName, competitorId) => `${ngrName}||${competitorId}`;
 
 /** Merge AI matches with human overrides and compute deltas + status per cell. */
@@ -355,8 +357,10 @@ function buildComparison(brand, channel) {
                 if (ov.action === 'reject') { best = null; status = 'rejected'; }
                 else if (ov.action === 'reassign') { best = ov.product; status = 'confirmed'; }
                 else { status = 'confirmed'; } // confirm
+            } else if (!best) {
+                status = 'rejected'; // no candidate — not a review item
             } else {
-                status = best && best.score >= REVIEW_THRESHOLD ? 'auto' : 'pending';
+                status = best.score >= REVIEW_THRESHOLD ? 'auto' : 'pending';
             }
 
             let delta = null, deltaPct = null;
@@ -369,14 +373,14 @@ function buildComparison(brand, channel) {
         return { ngr: row.ngr, matches: cells };
     });
 
-    // KPIs per competitor (over rows with a resolved best match)
+    // KPIs: only auto/confirmed matches (pending excluded from price index).
     const kpis = {};
     for (const comp of raw.competitors) {
         let cheaper = 0, pricier = 0, equal = 0, sumNgr = 0, sumComp = 0, matched = 0, pending = 0;
         for (const row of rows) {
             const c = row.matches[comp.id];
-            if (c.status === 'pending') pending++;
-            if (!c.best || typeof c.best.price !== 'number' || !row.ngr.price) continue;
+            if (c.status === 'pending') { pending++; continue; }
+            if (c.status === 'rejected' || !c.best || typeof c.best.price !== 'number' || !row.ngr.price) continue;
             matched++;
             sumNgr += row.ngr.price;
             sumComp += c.best.price;
@@ -413,7 +417,12 @@ app.get('/api/catalog', (req, res) => {
     if (!fp) return res.status(404).json({ error: `Sin datos para ${id}` });
     try {
         const products = JSON.parse(fs.readFileSync(fp, 'utf8'));
-        res.json(products.map(p => ({ name: p.name, category: p.category || '', price: p.price })));
+        res.json(products.map(p => ({
+            name: p.name,
+            category: p.category || '',
+            price: p.price,
+            description: p.description || '',
+        })));
     } catch (err) {
         res.status(500).json({ error: err.message });
     }

@@ -2,8 +2,6 @@ import { useState, useEffect, useMemo, Fragment, useRef } from 'react';
 import {
   ArrowPathIcon,
   CheckCircleIcon,
-  XCircleIcon,
-  ArrowsRightLeftIcon,
   MagnifyingGlassIcon,
   ExclamationTriangleIcon,
   Cog6ToothIcon,
@@ -48,20 +46,6 @@ const STATUS_BADGE: Record<Status, { label: string; cls: string }> = {
   rejected:  { label: 'Sin equiv.', cls: 'bg-rose-100 text-rose-600' },
 };
 
-function DeltaBadge({ delta, deltaPct }: { delta: number | null; deltaPct: number | null }) {
-  if (delta === null || deltaPct === null) return <span className="text-slate-300">—</span>;
-  const pricier = delta > 0.05;
-  const cheaper = delta < -0.05;
-  const cls = pricier ? 'text-rose-600 bg-rose-50' : cheaper ? 'text-emerald-600 bg-emerald-50' : 'text-slate-500 bg-slate-50';
-  const Icon = pricier ? ArrowUpIcon : cheaper ? ArrowDownIcon : MinusIcon;
-  return (
-    <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[11px] font-bold ${cls}`} title="NGR vs competidor">
-      <Icon className="w-3 h-3" />
-      {deltaPct > 0 ? '+' : ''}{deltaPct.toFixed(0)}%
-    </span>
-  );
-}
-
 export default function Comparativa() {
   const [brands, setBrands] = useState<BrandInfo[]>([]);
   const [brand, setBrand] = useState('');
@@ -71,7 +55,7 @@ export default function Comparativa() {
   const [loading, setLoading] = useState(false);
   const [recalculating, setRecalculating] = useState(false);
   const [error, setError] = useState('');
-  const [onlyPending, setOnlyPending] = useState(true);
+  const [onlyPending, setOnlyPending] = useState(false);
   const [settingsOpen, setSettingsOpen] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
 
@@ -124,6 +108,7 @@ export default function Comparativa() {
       setData(r.data.data);
     } catch (err: any) {
       setError(err.response?.data?.error || 'Error al guardar la decisión.');
+      throw err;
     }
   };
 
@@ -233,7 +218,7 @@ export default function Comparativa() {
         <Dashboard data={data} competitors={competitors} brandLabel={currentBrand?.label || data.brand} />
       ) : (
         <Review data={data} competitors={competitors} onlyPending={onlyPending} setOnlyPending={setOnlyPending}
-                brand={brand} channel={channel} applyOverride={applyOverride} />
+                applyOverride={applyOverride} />
       )}
     </div>
   );
@@ -274,24 +259,28 @@ function EmptyState({ brandLabel, channel, onRecalc, recalculating }: {
 // ──────────────────────────────────────────────
 // Dashboard
 // ──────────────────────────────────────────────
-// Variation of a competitor price RELATIVE TO the NGR price.
-// +% (competitor more expensive → NGR cheaper) is good for NGR → green up.
-// -% (competitor cheaper) → red down.
+// Variation of NGR vs competitor: (ngr − comp) / comp.
+// +% = NGR pricier (rose) · −% = NGR cheaper (emerald). Same formula as KPI/scatter.
 function variationPct(ngrPrice: number | undefined, compPrice: number | null | undefined): number | null {
-  if (!ngrPrice || typeof compPrice !== 'number') return null;
-  return ((compPrice - ngrPrice) / ngrPrice) * 100;
+  if (!ngrPrice || typeof compPrice !== 'number' || compPrice <= 0) return null;
+  return ((ngrPrice - compPrice) / compPrice) * 100;
 }
 
 function VariationBadge({ pct }: { pct: number | null }) {
   if (pct == null) return <span className="text-slate-300">—</span>;
-  const up = pct > 0.05, down = pct < -0.05;
-  const cls = up ? 'text-emerald-600' : down ? 'text-rose-600' : 'text-slate-400';
-  const Icon = up ? ArrowUpIcon : down ? ArrowDownIcon : MinusIcon;
+  const pricier = pct > 0.05, cheaper = pct < -0.05;
+  const cls = pricier ? 'text-rose-600' : cheaper ? 'text-emerald-600' : 'text-slate-400';
+  const Icon = pricier ? ArrowUpIcon : cheaper ? ArrowDownIcon : MinusIcon;
   return (
     <span className={`inline-flex items-center justify-end gap-0.5 font-bold tabular-nums ${cls}`}>
       <Icon className="w-3.5 h-3.5" />{Math.abs(pct).toFixed(0)}%
     </span>
   );
+}
+
+/** Price KPIs / scatter only use auto or human-confirmed matches. */
+function isPriceReady(cell?: Cell | null): boolean {
+  return !!cell?.best && (cell.status === 'auto' || cell.status === 'confirmed');
 }
 
 // Validated categorical palette (dataviz skill), fixed order per competitor.
@@ -316,11 +305,15 @@ function PriceScatter({ rows, comps, brandLabel }: { rows: Row[]; comps: Competi
     comps.forEach((c, ci) => {
       const color = SERIES_COLORS[ci % SERIES_COLORS.length];
       for (const row of rows) {
-        const p = row.matches[c.id]?.best?.price;
+        const cell = row.matches[c.id];
+        if (!isPriceReady(cell)) continue;
+        const p = cell!.best!.price;
         if (typeof p === 'number' && row.ngr.price) {
+          const pct = variationPct(row.ngr.price, p);
+          if (pct == null) continue;
           pts.push({
-            price: row.ngr.price, pct: ((row.ngr.price - p) / p) * 100, color,
-            name: row.ngr.name, compName: row.matches[c.id]!.best!.name, compPrice: p, compLabel: c.name,
+            price: row.ngr.price, pct, color,
+            name: row.ngr.name, compName: cell!.best!.name, compPrice: p, compLabel: c.name,
           });
         }
       }
@@ -333,9 +326,8 @@ function PriceScatter({ rows, comps, brandLabel }: { rows: Row[]; comps: Competi
   const zeroY = m.top + ih / 2;
 
   const xMax = niceCeil(Math.max(10, ...points.map(p => p.price)));
-  const absSorted = points.map(p => Math.abs(p.pct)).sort((a, b) => a - b);
-  const p90 = absSorted.length ? absSorted[Math.floor(absSorted.length * 0.9)] : 50;
-  const D = clampN(niceCeil(p90 * 1.1), 25, 200);
+  // Fixed ±100% axis; outliers are drawn at the edge (still show real % in tooltip).
+  const D = 100;
 
   const xOf = (price: number) => m.left + (price / xMax) * iw;
   const yOf = (pct: number) => zeroY - (clampN(pct, -D, D) / D) * (ih / 2);
@@ -352,7 +344,7 @@ function PriceScatter({ rows, comps, brandLabel }: { rows: Row[]; comps: Competi
       <div className="flex flex-wrap items-center justify-between gap-2 mb-1">
         <div>
           <h2 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Dispersión de precios</h2>
-          <p className="text-[11px] text-slate-400 mt-0.5">cada punto = un producto · Y: {brandLabel} vs competidor (%) · X: precio {brandLabel} (S/)</p>
+          <p className="text-[11px] text-slate-400 mt-0.5">cada punto = un producto · Y: {brandLabel} vs competidor (%), eje ±100% (outliers al borde) · X: precio {brandLabel} (S/)</p>
         </div>
         <div className="flex flex-wrap items-center gap-3">
           {comps.map((c, ci) => (
@@ -397,7 +389,11 @@ function PriceScatter({ rows, comps, brandLabel }: { rows: Row[]; comps: Competi
             style={{ cursor: 'pointer' }}
             onMouseEnter={e => setTip({
               x: e.clientX, y: e.clientY, color: pt.color,
-              lines: [pt.name, `${brandLabel} S/ ${pt.price.toFixed(2)} · ${pt.compLabel} S/ ${pt.compPrice.toFixed(2)}`, `${pt.pct > 0 ? '+' : ''}${pt.pct.toFixed(0)}% (${pt.pct > 0 ? 'más caro' : 'más barato'} que ${pt.compLabel})`],
+              lines: [
+                pt.name,
+                `${brandLabel} S/ ${pt.price.toFixed(2)} · ${pt.compLabel} S/ ${pt.compPrice.toFixed(2)}`,
+                `${pt.pct > 0 ? '+' : ''}${pt.pct.toFixed(0)}% (${Math.abs(pt.pct) < 0.5 ? 'similar' : pt.pct > 0 ? `${brandLabel} más caro` : `${brandLabel} más barato`})`,
+              ],
             })}
             onMouseLeave={() => setTip(null)}
           />
@@ -418,14 +414,29 @@ function PriceScatter({ rows, comps, brandLabel }: { rows: Row[]; comps: Competi
 type SortState = { key: string; dir: 'asc' | 'desc' };
 
 function Dashboard({ data, competitors, brandLabel }: { data: Comparison; competitors: Competitor[]; brandLabel: string }) {
-  const comps = competitors.filter(c => c.hasData !== false);
+  const comps = useMemo(
+    () => competitors.filter(c => c.hasData !== false),
+    [competitors],
+  );
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('all');
+  const [competitorId, setCompetitorId] = useState('all');
   const [onlyMatched, setOnlyMatched] = useState(false);
   const [sort, setSort] = useState<SortState>({ key: 'ngr', dir: 'asc' });
   // Custom instant tooltip (native `title` is slow). Positioned at the cursor on
   // enter only — no per-move re-render, so the big table stays snappy.
   const [tip, setTip] = useState<{ x: number; y: number; name: string; desc: string } | null>(null);
+
+  const tableComps = useMemo(
+    () => (competitorId === 'all' ? comps : comps.filter(c => c.id === competitorId)),
+    [comps, competitorId],
+  );
+
+  useEffect(() => {
+    if (competitorId !== 'all' && !comps.some(c => c.id === competitorId)) {
+      setCompetitorId('all');
+    }
+  }, [comps, competitorId]);
   const showTip = (e: { clientX: number; clientY: number }, name: string, desc: string) =>
     setTip({ x: e.clientX, y: e.clientY, name, desc: desc || '' });
   const hideTip = () => setTip(null);
@@ -448,7 +459,7 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
     const list = data.rows.filter(r =>
       (!q || r.ngr.name.toLowerCase().includes(q) || (r.ngr.category || '').toLowerCase().includes(q)) &&
       (category === 'all' || r.ngr.category === category) &&
-      (!onlyMatched || comps.some(c => r.matches[c.id]?.best))
+      (!onlyMatched || tableComps.some(c => r.matches[c.id]?.best))
     );
     const mult = sort.dir === 'asc' ? 1 : -1;
     return [...list].sort((a, b) => {
@@ -461,7 +472,7 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
       if (typeof va === 'string' && typeof vb === 'string') return va < vb ? -mult : va > vb ? mult : 0;
       return ((va as number) - (vb as number)) * mult;
     });
-  }, [data, query, category, onlyMatched, sort, comps]);
+  }, [data, query, category, onlyMatched, sort, tableComps]);
 
   // Per-competitor KPI: MEAN of per-product % (NGR vs competitor), equal-weighted.
   // +avg = NGR pricier on average; −avg = cheaper. (Distinct from the basket index,
@@ -471,9 +482,13 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
     for (const c of comps) {
       let sumPct = 0, n = 0, sumNgr = 0, sumComp = 0;
       for (const row of data.rows) {
-        const p = row.matches[c.id]?.best?.price;
+        const cell = row.matches[c.id];
+        if (!isPriceReady(cell)) continue;
+        const p = cell!.best!.price;
         if (typeof p === 'number' && row.ngr.price) {
-          sumPct += ((row.ngr.price - p) / p) * 100;
+          const pct = variationPct(row.ngr.price, p);
+          if (pct == null) continue;
+          sumPct += pct;
           sumNgr += row.ngr.price; sumComp += p; n++;
         }
       }
@@ -537,7 +552,10 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 mb-4">
           <div>
             <h2 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Tabla Comparativa</h2>
-            <p className="text-[11px] text-slate-400 mt-0.5">Precios en S/ · variación = competidor vs {brandLabel} · {rows.length} productos</p>
+            <p className="text-[11px] text-slate-400 mt-0.5">
+              Precios en S/ · variación = {brandLabel} vs competidor · {rows.length} productos
+              {tableComps.length === 1 ? ` · vs ${tableComps[0].name}` : ''}
+            </p>
           </div>
           <div className="flex flex-wrap items-center gap-2">
             <div className="relative">
@@ -549,6 +567,15 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
                 className="pl-9 pr-3 py-2 bg-slate-50 border-0 rounded-lg text-sm w-48 focus:ring-2 focus:ring-slate-200"
               />
             </div>
+            <select
+              value={competitorId}
+              onChange={e => setCompetitorId(e.target.value)}
+              aria-label="Filtrar por competidor"
+              className="py-2 px-3 bg-slate-50 border-0 rounded-lg text-sm font-medium cursor-pointer focus:ring-2 focus:ring-slate-200 max-w-[200px]"
+            >
+              <option value="all">Todos los competidores</option>
+              {comps.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+            </select>
             <select
               value={category}
               onChange={e => setCategory(e.target.value)}
@@ -574,7 +601,7 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
                 <th onClick={() => toggleSort('ngrprice')} className={`${thBase} text-right text-slate-700`}>
                   <span className="inline-flex items-center gap-1 justify-end">Precio{arrow('ngrprice')}</span>
                 </th>
-                {comps.map(c => (
+                {tableComps.map(c => (
                   <Fragment key={c.id}>
                     <th onClick={() => toggleSort(`price:${c.id}`)} className={`${thBase} text-right text-slate-500 border-l border-slate-200`}>
                       <span className="inline-flex items-center gap-1 justify-end">{c.name}{arrow(`price:${c.id}`)}</span>
@@ -588,7 +615,7 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
             </thead>
             <tbody>
               {rows.length === 0 ? (
-                <tr><td colSpan={2 + comps.length * 2} className="py-12 text-center text-slate-400 italic">Sin resultados para el filtro.</td></tr>
+                <tr><td colSpan={2 + tableComps.length * 2} className="py-12 text-center text-slate-400 italic">Sin resultados para el filtro.</td></tr>
               ) : rows.map((row, i) => (
                 <tr key={i} className="group">
                   <td
@@ -601,7 +628,7 @@ function Dashboard({ data, competitors, brandLabel }: { data: Comparison; compet
                   <td className="py-2 px-3 border-b border-slate-100 text-right font-bold text-slate-900 tabular-nums group-hover:bg-slate-50">
                     {typeof row.ngr.price === 'number' ? row.ngr.price.toFixed(2) : '—'}
                   </td>
-                  {comps.map(c => {
+                  {tableComps.map(c => {
                     const cell = row.matches[c.id];
                     const p = cell?.best?.price;
                     const v = variationPct(row.ngr.price, typeof p === 'number' ? p : null);
@@ -654,21 +681,71 @@ function Stat({ n, label, cls }: { n: number; label: string; cls: string }) {
 }
 
 // ──────────────────────────────────────────────
-// Review (manual curation)
+// Review (manual curation) — table of NGR × competitors
 // ──────────────────────────────────────────────
-function Review({ data, competitors, onlyPending, setOnlyPending, applyOverride }: any) {
+function Review({ data, competitors, onlyPending, setOnlyPending, applyOverride }: {
+  data: Comparison;
+  competitors: Competitor[];
+  onlyPending: boolean;
+  setOnlyPending: (v: boolean) => void;
+  applyOverride: (ngrName: string, competitorId: string, action: string, product?: Product) => Promise<void> | void;
+}) {
+  const comps = useMemo(
+    () => competitors.filter(c => c.hasData !== false),
+    [competitors],
+  );
+
   const rows: Row[] = useMemo(() => {
     const list = data.rows as Row[];
     if (!onlyPending) return list;
     return list.filter(r => Object.values(r.matches).some(c => c.status === 'pending'));
   }, [data, onlyPending]);
 
+  // Preload every competitor catalog once for the dropdowns.
+  const [catalogs, setCatalogs] = useState<Record<string, Product[] | null>>({});
+  const compIds = comps.map(c => c.id).join('|');
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const next: Record<string, Product[] | null> = {};
+      await Promise.all(comps.map(async c => {
+        try {
+          const r = await axios.get<Product[]>(`${API_BASE}/catalog`, { params: { id: c.id } });
+          if (!cancelled) next[c.id] = r.data;
+        } catch {
+          if (!cancelled) next[c.id] = [];
+        }
+      }));
+      if (!cancelled) setCatalogs(prev => ({ ...prev, ...next }));
+    })();
+    return () => { cancelled = true; };
+  }, [compIds]);
+
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between">
-        <p className="text-sm text-slate-500 font-medium">{rows.length} productos NGR · umbral de confianza {data.reviewThreshold}</p>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="space-y-1">
+          <p className="text-sm text-slate-500 font-medium">
+            {rows.length} productos NGR · elegí el match en cada columna · los cambios se guardan
+          </p>
+          <div className="flex flex-wrap gap-3 text-[11px] text-slate-500">
+            <span className="inline-flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-sm bg-amber-100 border border-amber-200" aria-hidden />
+              Amarillo = revisar
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-sm bg-rose-100 border border-rose-200" aria-hidden />
+              Rojo = sin match
+            </span>
+          </div>
+        </div>
         <label className="flex items-center gap-2 text-sm font-bold text-slate-600 cursor-pointer">
-          <input type="checkbox" checked={onlyPending} onChange={e => setOnlyPending(e.target.checked)} className="rounded accent-slate-900 w-4 h-4" />
+          <input
+            type="checkbox"
+            checked={onlyPending}
+            onChange={e => setOnlyPending(e.target.checked)}
+            className="rounded accent-slate-900 w-4 h-4"
+          />
           Solo pendientes
         </label>
       </div>
@@ -676,183 +753,245 @@ function Review({ data, competitors, onlyPending, setOnlyPending, applyOverride 
       {rows.length === 0 ? (
         <div className="bg-white rounded-2xl border border-slate-100 py-16 text-center text-slate-400">
           <CheckCircleIcon className="w-10 h-10 text-emerald-300 mx-auto mb-2" />
-          No hay matches pendientes de revisión.
+          No hay productos para mostrar.
         </div>
-      ) : rows.map((row, i) => (
-        <div key={i} className="bg-white rounded-2xl p-5 border border-slate-100 shadow-sm">
-          <div className="mb-4">
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-              <p className="font-black text-slate-900">{row.ngr.name}</p>
-              <span className="text-sm font-bold text-slate-500">{money(row.ngr.price)}</span>
-              {row.ngr.category && (
-                <span className="text-[11px] text-slate-400">{row.ngr.category}</span>
-              )}
-            </div>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
-            {competitors.filter((c: Competitor) => c.hasData !== false).map((c: Competitor) => (
-              <MatchEditor
-                key={c.id}
-                competitor={c}
-                ngr={row.ngr}
-                cell={row.matches[c.id]}
-                onAction={(action, product) => applyOverride(row.ngr.name, c.id, action, product)}
-              />
-            ))}
+      ) : (
+        <div className="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <div className="overflow-x-auto custom-scrollbar">
+            <table className="w-full text-sm border-collapse min-w-[720px]">
+              <thead>
+                <tr className="bg-slate-50 text-left">
+                  <th className="sticky left-0 z-10 bg-slate-50 py-3 px-4 text-[10px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-200 min-w-[220px]">
+                    Producto NGR
+                  </th>
+                  <th className="py-3 px-3 text-[10px] font-bold uppercase tracking-wider text-slate-400 border-b border-slate-200 text-right w-24">
+                    Precio
+                  </th>
+                  {comps.map(c => (
+                    <th
+                      key={c.id}
+                      className="py-3 px-3 text-[10px] font-bold uppercase tracking-wider text-slate-400 border-b border-l border-slate-200 min-w-[260px]"
+                    >
+                      {c.name}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row, i) => (
+                  <tr key={`${row.ngr.name}-${i}`} className="group align-top hover:bg-slate-50/60">
+                    <td className="sticky left-0 z-10 bg-white group-hover:bg-slate-50 py-3 px-4 border-b border-slate-100 min-w-[220px]">
+                      <p className="font-bold text-slate-900 leading-snug">{row.ngr.name}</p>
+                      {row.ngr.category && (
+                        <p className="text-[11px] text-slate-400 mt-0.5">{row.ngr.category}</p>
+                      )}
+                      {row.ngr.description?.trim() && (
+                        <p className="text-[11px] text-slate-500 mt-1 leading-snug line-clamp-2" title={row.ngr.description}>
+                          {row.ngr.description}
+                        </p>
+                      )}
+                    </td>
+                    <td className="py-3 px-3 border-b border-slate-100 text-right font-bold text-slate-900 tabular-nums whitespace-nowrap">
+                      {money(row.ngr.price)}
+                    </td>
+                    {comps.map(c => {
+                      const cell = row.matches[c.id];
+                      const noMatch = !cell?.best;
+                      const needsReview = !noMatch && cell?.status === 'pending';
+                      const cellTone = noMatch
+                        ? 'bg-rose-50/90'
+                        : needsReview
+                          ? 'bg-amber-50/90'
+                          : '';
+                      return (
+                        <td
+                          key={c.id}
+                          className={`py-2 px-3 border-b border-l border-slate-100 ${cellTone}`}
+                        >
+                          <MatchSelect
+                            competitor={c}
+                            cell={cell}
+                            catalog={catalogs[c.id] ?? null}
+                            onChange={(action, product) => applyOverride(row.ngr.name, c.id, action, product)}
+                          />
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
-      ))}
+      )}
     </div>
   );
 }
 
-function MatchEditor({ competitor, ngr, cell, onAction }: {
+function MatchSelect({ competitor, cell, catalog, onChange }: {
   competitor: Competitor;
-  ngr: Product;
-  cell: Cell;
-  onAction: (a: string, p?: Product) => void;
+  cell?: Cell;
+  catalog: Product[] | null;
+  onChange: (action: string, product?: Product) => void;
 }) {
-  const [expanded, setExpanded] = useState(false);
+  const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
-  const [catalog, setCatalog] = useState<Product[] | null>(null);
-  const badge = STATUS_BADGE[cell.status];
+  const [saving, setSaving] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const current = cell?.best;
+  const badge = STATUS_BADGE[!current ? 'rejected' : (cell?.status || 'pending')];
 
-  const openReassign = async () => {
-    setExpanded(!expanded);
-    if (!catalog) {
-      try {
-        const r = await axios.get<Product[]>(`${API_BASE}/catalog`, { params: { id: competitor.id } });
-        setCatalog(r.data);
-      } catch { setCatalog([]); }
+  useEffect(() => {
+    if (!open) return;
+    const onDoc = (e: MouseEvent) => {
+      if (rootRef.current && !rootRef.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener('mousedown', onDoc);
+    return () => document.removeEventListener('mousedown', onDoc);
+  }, [open]);
+
+  const filtered = useMemo(() => {
+    if (!catalog) return [];
+    const q = query.toLowerCase().trim();
+    if (!q) return catalog;
+    return catalog.filter(p =>
+      p.name.toLowerCase().includes(q) ||
+      (p.category || '').toLowerCase().includes(q) ||
+      (p.description || '').toLowerCase().includes(q),
+    );
+  }, [catalog, query]);
+
+  const pick = async (action: string, product?: Product) => {
+    setSaving(true);
+    try {
+      await onChange(action, product);
+      setOpen(false);
+      setQuery('');
+    } finally {
+      setSaving(false);
     }
   };
 
-  const searchResults = useMemo(() => {
-    if (!catalog) return [];
-    const q = query.toLowerCase().trim();
-    const base = q ? catalog.filter(p => p.name.toLowerCase().includes(q) || p.category.toLowerCase().includes(q)) : catalog;
-    return base.slice(0, 30);
-  }, [catalog, query]);
+  const currentLabel = current
+    ? `${current.name} · ${money(current.price)}`
+    : 'Sin equivalente';
 
   return (
-    <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/40">
-      <div className="flex items-center justify-between mb-2">
-        <span className="text-[11px] font-black text-slate-500 uppercase tracking-wider">{competitor.name}</span>
-        <span className={`text-[10px] font-bold px-2 py-0.5 rounded ${badge.cls}`}>{badge.label}{cell.edited ? ' ✎' : ''}</span>
-      </div>
-
-      {cell.best ? (
-        <div className="mb-3 space-y-2">
-          <div className="flex items-center justify-between gap-2">
-            <p className="text-sm font-bold text-slate-800 leading-tight">{cell.best.name}</p>
-            <span className="text-sm font-black text-slate-900 shrink-0">{money(cell.best.price)}</span>
+    <div className="relative" ref={rootRef}>
+      <button
+        type="button"
+        onClick={() => setOpen(o => !o)}
+        disabled={saving}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label={`Match ${competitor.name}`}
+        className={`w-full min-h-[44px] text-left rounded-lg border px-2.5 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-slate-400 cursor-pointer disabled:opacity-50 active:scale-[0.99] transition-transform ${
+          !current
+            ? 'border-rose-200 bg-rose-50/50 hover:border-rose-300'
+            : cell?.status === 'pending'
+              ? 'border-amber-200 bg-amber-50/40 hover:border-amber-300'
+              : 'border-slate-200 bg-white hover:border-slate-300'
+        }`}
+      >
+        <div className="flex items-start justify-between gap-2">
+          <div className="min-w-0">
+            <p className={`text-sm leading-snug line-clamp-2 ${current ? 'font-semibold text-slate-800' : 'italic text-slate-500'}`}>
+              {current ? current.name : 'Sin equivalente'}
+            </p>
+            <div className="flex flex-wrap items-center gap-1.5 mt-1">
+              {current && (
+                <span className="text-xs font-bold text-slate-900 tabular-nums">{money(current.price)}</span>
+              )}
+              <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded ${badge.cls}`}>
+                {badge.label}{cell?.edited ? ' ✎' : ''}
+              </span>
+              {typeof current?.score === 'number' && !cell?.edited && (
+                <span className="text-[10px] text-slate-400 font-bold">{current.score}</span>
+              )}
+            </div>
+            {current?.description?.trim() ? (
+              <p className="text-[11px] text-slate-500 mt-1.5 leading-snug line-clamp-3" title={current.description}>
+                {current.description}
+              </p>
+            ) : current ? (
+              <p className="text-[11px] text-slate-400 mt-1.5 italic">Sin descripción</p>
+            ) : null}
           </div>
-          <div className="flex items-center gap-2">
-            <DeltaBadge delta={cell.delta} deltaPct={cell.deltaPct} />
-            <span className="text-[10px] text-slate-400 font-bold">confianza {cell.best.score}</span>
+          <span className="text-slate-400 text-xs shrink-0 mt-0.5" aria-hidden>▾</span>
+        </div>
+      </button>
+
+      {open && (
+        <div className="absolute z-30 left-0 right-0 mt-1 rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden min-w-[280px]">
+          <div className="relative border-b border-slate-100">
+            <MagnifyingGlassIcon className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+            <input
+              autoFocus
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              placeholder={`Buscar en ${competitor.name}…`}
+              className="w-full pl-9 pr-3 py-2.5 text-sm bg-white focus:outline-none"
+            />
           </div>
-          <DescCompare ngrDesc={ngr.description} compDesc={cell.best.description} compLabel={competitor.name} />
-        </div>
-      ) : (
-        <div className="mb-3 space-y-2">
-          <p className="text-sm text-slate-400 italic">Sin equivalente asignado</p>
-          {ngr.description && (
-            <DescCompare ngrDesc={ngr.description} compDesc={undefined} compLabel={competitor.name} />
-          )}
-        </div>
-      )}
-
-      <div className="flex flex-wrap gap-2">
-        {cell.best && cell.status !== 'confirmed' && (
-          <button onClick={() => onAction('confirm')} className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-emerald-50 text-emerald-700 rounded-lg text-xs font-bold hover:bg-emerald-100 cursor-pointer">
-            <CheckCircleIcon className="w-4 h-4" /> Confirmar
-          </button>
-        )}
-        {cell.status !== 'rejected' && (
-          <button onClick={() => onAction('reject')} className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-rose-50 text-rose-600 rounded-lg text-xs font-bold hover:bg-rose-100 cursor-pointer">
-            <XCircleIcon className="w-4 h-4" /> Rechazar
-          </button>
-        )}
-        <button onClick={openReassign} className="inline-flex items-center gap-1 px-2.5 py-1.5 bg-slate-100 text-slate-600 rounded-lg text-xs font-bold hover:bg-slate-200 cursor-pointer">
-          <ArrowsRightLeftIcon className="w-4 h-4" /> Reasignar
-        </button>
-        {cell.edited && (
-          <button onClick={() => onAction('reset')} className="inline-flex items-center gap-1 px-2.5 py-1.5 text-slate-400 rounded-lg text-xs font-bold hover:text-slate-600 cursor-pointer">
-            <ArrowPathIcon className="w-4 h-4" /> Deshacer
-          </button>
-        )}
-      </div>
-
-      {expanded && (
-        <div className="mt-3 border-t border-slate-100 pt-3 space-y-2">
-          {cell.alternatives.length > 0 && (
-            <div>
-              <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider mb-1">Alternativas sugeridas</p>
-              {cell.alternatives.map((alt, j) => (
-                <AltRow key={j} p={alt} onPick={() => { onAction('reassign', alt); setExpanded(false); }} score={alt.score} />
-              ))}
-            </div>
-          )}
-          <div>
-            <div className="relative">
-              <MagnifyingGlassIcon className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-              <input
-                value={query}
-                onChange={e => setQuery(e.target.value)}
-                placeholder={`Buscar cualquier producto de ${competitor.name}…`}
-                className="w-full pl-9 pr-3 py-2 bg-white border border-slate-200 rounded-lg text-sm focus:ring-2 focus:ring-slate-100"
-              />
-            </div>
-            <div className="max-h-48 overflow-auto mt-2 custom-scrollbar">
-              {catalog === null ? (
-                <p className="text-xs text-slate-400 italic py-2">Cargando catálogo…</p>
-              ) : searchResults.map((p, j) => (
-                <AltRow key={j} p={p} onPick={() => { onAction('reassign', p); setExpanded(false); }} />
-              ))}
-            </div>
+          <div className="max-h-64 overflow-y-auto custom-scrollbar" role="listbox" aria-label={currentLabel}>
+            {current && cell?.status === 'pending' && (
+              <button
+                type="button"
+                role="option"
+                onClick={() => pick('confirm')}
+                className="w-full text-left px-3 py-2.5 text-sm text-emerald-700 font-semibold hover:bg-emerald-50 cursor-pointer border-b border-slate-50"
+              >
+                Confirmar sugerencia
+              </button>
+            )}
+            <button
+              type="button"
+              role="option"
+              onClick={() => pick('reject')}
+              className="w-full text-left px-3 py-2.5 text-sm text-rose-600 hover:bg-rose-50 cursor-pointer border-b border-slate-50"
+            >
+              Sin equivalente
+            </button>
+            {cell?.edited && (
+              <button
+                type="button"
+                role="option"
+                onClick={() => pick('reset')}
+                className="w-full text-left px-3 py-2.5 text-sm text-slate-500 hover:bg-slate-50 cursor-pointer border-b border-slate-50"
+              >
+                Restaurar sugerencia IA
+              </button>
+            )}
+            {catalog === null ? (
+              <p className="px-3 py-3 text-xs text-slate-400 italic">Cargando catálogo…</p>
+            ) : filtered.length === 0 ? (
+              <p className="px-3 py-3 text-xs text-slate-400 italic">Sin resultados</p>
+            ) : filtered.map((p, j) => {
+              const selected = current?.name === p.name;
+              return (
+                <button
+                  key={`${p.name}-${j}`}
+                  type="button"
+                  role="option"
+                  aria-selected={selected}
+                  onClick={() => pick('reassign', p)}
+                  className={`w-full text-left px-3 py-2 hover:bg-slate-50 cursor-pointer border-b border-slate-50 last:border-0 ${selected ? 'bg-slate-50' : ''}`}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <span className={`text-sm leading-snug ${selected ? 'font-bold text-slate-900' : 'text-slate-700'}`}>
+                      {p.name}
+                    </span>
+                    <span className="text-xs font-bold text-slate-900 tabular-nums shrink-0">{money(p.price)}</span>
+                  </div>
+                  {p.description?.trim() && (
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug line-clamp-2">{p.description}</p>
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
       )}
     </div>
-  );
-}
-
-function DescCompare({ ngrDesc, compDesc, compLabel }: {
-  ngrDesc?: string;
-  compDesc?: string;
-  compLabel: string;
-}) {
-  return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 rounded-lg bg-white border border-slate-100 p-2.5">
-      <div>
-        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Descripción NGR</p>
-        <p className="text-xs text-slate-600 leading-snug whitespace-pre-wrap">
-          {ngrDesc?.trim() || <span className="italic text-slate-400">Sin descripción</span>}
-        </p>
-      </div>
-      <div>
-        <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-1">Descripción {compLabel}</p>
-        <p className="text-xs text-slate-600 leading-snug whitespace-pre-wrap">
-          {compDesc?.trim() || <span className="italic text-slate-400">Sin descripción</span>}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function AltRow({ p, onPick, score }: { p: Product; onPick: () => void; score?: number }) {
-  return (
-    <button onClick={onPick} className="w-full flex flex-col gap-0.5 px-2 py-2 rounded-lg hover:bg-white text-left cursor-pointer group">
-      <span className="w-full flex items-center justify-between gap-2">
-        <span className="text-sm text-slate-700 group-hover:text-slate-900 leading-tight">{p.name}</span>
-        <span className="flex items-center gap-2 shrink-0">
-          {typeof score === 'number' && <span className="text-[10px] text-slate-400 font-bold">{score}</span>}
-          <span className="text-sm font-bold text-slate-900">{money(p.price)}</span>
-        </span>
-      </span>
-      {p.description?.trim() && (
-        <span className="text-[11px] text-slate-400 leading-snug line-clamp-2">{p.description}</span>
-      )}
-    </button>
   );
 }
