@@ -1,12 +1,18 @@
 // Recalculate matches for every brand/channel with data; print token + cost summary.
+// Uploads each matches_*.json to GCS so Cloud Run picks them up on next sync/restart.
 const fs = require('fs');
 const path = require('path');
+const { Storage } = require('@google-cloud/storage');
 const { BRANDS, getChannelConfig } = require('./brand_config');
 const { matchBrand, outputPath } = require('./product_matcher');
 
 // gemini-2.5-flash standard (Vertex / Google AI) — Aug 2026
 const PRICE_IN_PER_M = 0.30;
 const PRICE_OUT_PER_M = 2.50;
+const GCS_BUCKET = process.env.GCS_BUCKET || 'ngr-scraping-data';
+const UPLOAD_GCS = process.env.SKIP_GCS_UPLOAD !== '1';
+
+const gcs = new Storage();
 
 function load(id) {
   for (const p of [
@@ -20,6 +26,13 @@ function load(id) {
 
 function costUsd(promptTokens, candidateTokens) {
   return (promptTokens / 1e6) * PRICE_IN_PER_M + (candidateTokens / 1e6) * PRICE_OUT_PER_M;
+}
+
+async function uploadToGCS(localPath) {
+  if (!UPLOAD_GCS) return;
+  const fileName = path.basename(localPath);
+  await gcs.bucket(GCS_BUCKET).upload(localPath, { destination: fileName });
+  console.log(`   [GCS] gs://${GCS_BUCKET}/${fileName}`);
 }
 
 async function main() {
@@ -40,6 +53,7 @@ async function main() {
 
   console.log(`[batch] ${jobs.length} jobs · skip: ${skipped.join(', ') || '—'}`);
   console.log(`[batch] pricing assumption: $${PRICE_IN_PER_M}/M in · $${PRICE_OUT_PER_M}/M out (${process.env.VERTEX_MODEL || 'gemini-2.5-flash'})`);
+  console.log(`[batch] GCS upload: ${UPLOAD_GCS ? GCS_BUCKET : 'skipped (SKIP_GCS_UPLOAD=1)'}`);
 
   const totals = { prompt: 0, candidates: 0, total: 0, calls: 0, promptChars: 0, usd: 0 };
   const rows = [];
@@ -52,6 +66,11 @@ async function main() {
       const result = await matchBrand(brand, channel);
       const out = outputPath(brand, channel);
       fs.writeFileSync(out, JSON.stringify(result, null, 2));
+      try {
+        await uploadToGCS(out);
+      } catch (uploadErr) {
+        console.warn(`   [GCS] upload falló: ${uploadErr.message}`);
+      }
       const matched = result.rows.filter(r => Object.values(r.matches).some(m => m.best)).length;
       const u = result.usage || { prompt: 0, candidates: 0, total: 0, calls: 0, promptChars: 0 };
       const usd = costUsd(u.prompt, u.candidates);

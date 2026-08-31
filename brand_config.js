@@ -27,7 +27,7 @@ const BRANDS = [
       propio: {
         anchorId: 'bembos-pe',
         competitors: [
-          { id: 'mcd-izaguirre-iza', name: "McDonald's" },
+          { id: 'mcd-benavides-aurora-bau', name: "McDonald's" },
           { id: 'burgerking-pe',     name: 'Burger King' },
         ],
       },

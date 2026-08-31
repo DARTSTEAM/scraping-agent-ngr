@@ -27,4 +27,4 @@ async function interceptAPI(url) {
     }
 }
 
-interceptAPI(process.argv[2] || "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos");
+interceptAPI(process.argv[2] || "https://www.mcdonalds.com.pe/restaurantes/lima/benavides-aurora-bau/pedidos");

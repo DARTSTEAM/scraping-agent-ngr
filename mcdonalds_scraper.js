@@ -2,10 +2,13 @@ const { createKernelBrowser, closeKernelBrowser } = require('./kernel_browser');
 const fs = require('fs');
 const path = require('path');
 
+const DEFAULT_URL =
+  'https://www.mcdonalds.com.pe/restaurantes/lima/benavides-aurora-bau/pedidos';
+
 /**
  * McDonald's Peru own-site scraper.
- * Intercepts catalog API responses, keeps the fullest payload, and filters
- * categories that are inactive or not shown in the live UI nav.
+ * Intercepts catalog API responses and keeps every category with products
+ * (no UI-nav / daypart filtering).
  */
 async function scrapeMcDonalds(url) {
     console.log(`Iniciando scraping de McDonald's (Own): ${url}`);
@@ -61,34 +64,13 @@ async function scrapeMcDonalds(url) {
             return { ...r, productCount, isFeatured };
         });
         scored.sort((a, b) => {
-            // Prefer non-featured when product counts are close
             if (a.isFeatured !== b.isFeatured && Math.abs(a.productCount - b.productCount) < 10) {
                 return a.isFeatured ? 1 : -1;
             }
             return b.productCount - a.productCount || b.data.length - a.data.length;
         });
-        let catalogData = scored[0].data;
+        const catalogData = scored[0].data;
         console.log(`Catálogo elegido: ${scored[0].url} (${scored[0].data.length} cats, ${scored[0].productCount} productos)`);
-
-        // Visible category labels in the UI nav (if present)
-        const visibleCategories = await page.evaluate(() => {
-            const labels = new Set();
-            const selectors = [
-                'nav a', 'nav button', '[role="tab"]', '[role="tablist"] a', '[role="tablist"] button',
-                '[class*="categor"] a', '[class*="Categor"] a', '[class*="menu-nav"] a',
-                '[class*="sidebar"] a', '[class*="category-list"] a', '[class*="Category"] button',
-            ];
-            for (const sel of selectors) {
-                document.querySelectorAll(sel).forEach(el => {
-                    const t = (el.textContent || '').trim();
-                    if (t && t.length > 1 && t.length < 60) labels.add(t);
-                });
-            }
-            return [...labels];
-        });
-        if (visibleCategories.length > 0) {
-            console.log(`Categorías visibles en UI: ${visibleCategories.join(', ')}`);
-        }
 
         const restaurantMatch = url.match(/\/restaurantes\/[^\/]+\/([^\/]+)/);
         const restaurantName = restaurantMatch ? `McDonalds ${restaurantMatch[1]}` : 'McDonalds Own';
@@ -105,56 +87,19 @@ async function scrapeMcDonalds(url) {
                 continue;
             }
 
-            // Drop out-of-daypart clones like "McCombos (Desayuno)" from outdaypart=true
+            // Daypart clones (outdaypart=true) duplicate lunch items under "(Desayuno)".
             if (/\(\s*desayuno\s*\)/i.test(title)) {
                 droppedCategories.push(`${title} (daypart clone)`);
                 continue;
             }
 
-            // Drop categories marked unavailable / closed by schedule
-            if (category.available === false || category.isAvailable === false || category.enabled === false) {
-                droppedCategories.push(`${title} (unavailable)`);
-                continue;
-            }
-            if (category.isOpen === false || category.open === false) {
-                droppedCategories.push(`${title} (cerrada)`);
-                continue;
-            }
-
-            // Standalone "Desayunos" only during breakfast hours (Lima) or if UI nav shows it
-            if (/^desayunos$/i.test(title)) {
-                const limaHour = Number(new Date().toLocaleString('en-US', {
-                    timeZone: 'America/Lima', hour: 'numeric', hour12: false,
-                }));
-                const inNav = visibleCategories.some(v => v.toLowerCase() === 'desayunos');
-                const breakfastHours = limaHour >= 5 && limaHour < 11;
-                if (!breakfastHours && !inNav) {
-                    droppedCategories.push(`${title} (fuera de horario)`);
-                    continue;
-                }
-            }
-
-            // If UI nav is present, keep only categories that appear there
-            if (visibleCategories.length >= 3) {
-                const inNav = visibleCategories.some(v =>
-                    v.toLowerCase() === title.toLowerCase() ||
-                    v.toLowerCase().includes(title.toLowerCase()) ||
-                    title.toLowerCase().includes(v.toLowerCase())
-                );
-                if (!inNav) {
-                    droppedCategories.push(`${title} (no en UI)`);
-                    continue;
-                }
-            }
-
             for (const product of products) {
+                // Keep unavailable items out of pricing, but do not drop whole categories.
                 if (product.available === false || product.inStock === false || product.enabled === false) {
                     continue;
                 }
                 const amount = product.price?.amount ?? product.price ?? 0;
-                const price = typeof amount === 'number'
-                    ? (amount > 1000 ? amount / 100 : amount)
-                    : parseFloat(amount) || 0;
+                const price = normalizeMcDPrice(amount);
                 if (price === 0) continue;
 
                 extractedProducts.push({
@@ -172,16 +117,16 @@ async function scrapeMcDonalds(url) {
             console.log(`Categorías omitidas: ${droppedCategories.join('; ')}`);
         }
 
-        const storeIdMatch = url.match(/\/([^\/]+)\/pedidos/);
+        const storeIdMatch = url.match(/\/([^\/]+)\/pedidos\/?$/);
         const storeId = storeIdMatch ? `mcd-${storeIdMatch[1]}` : 'mcd-own';
 
         if (extractedProducts.length === 0) {
-            throw new Error('Catálogo interceptado pero sin productos activos tras el filtrado.');
+            throw new Error('Catálogo interceptado pero sin productos con precio tras el filtrado.');
         }
 
         const catCounts = {};
         extractedProducts.forEach(p => { catCounts[p.category] = (catCounts[p.category] || 0) + 1; });
-        console.log(`Productos: ${extractedProducts.length} · Categorías: ${Object.entries(catCounts).map(([k, v]) => `${k}(${v})`).join(', ')}`);
+        console.log(`Productos: ${extractedProducts.length} · Categorías (${Object.keys(catCounts).length}): ${Object.entries(catCounts).map(([k, v]) => `${k}(${v})`).join(', ')}`);
 
         saveData(extractedProducts, storeId);
 
@@ -191,6 +136,17 @@ async function scrapeMcDonalds(url) {
     } finally {
         await closeKernelBrowser({ browser, kernelBrowser, kernel });
     }
+}
+
+/**
+ * McD PE ecommerce mixes soles floats (19.9) and integer cents (990 → 9.90).
+ * Integers ≥ 100 are always cents; smaller integers are already soles.
+ */
+function normalizeMcDPrice(amount) {
+    const n = typeof amount === 'number' ? amount : parseFloat(amount);
+    if (!Number.isFinite(n) || n <= 0) return 0;
+    if (Number.isInteger(n) && n >= 100) return n / 100;
+    return n;
 }
 
 function saveData(products, storeId) {
@@ -214,9 +170,5 @@ function escapeCsv(str) {
     return str.replace(/"/g, '""');
 }
 
-const targetUrl = process.argv[2];
-if (targetUrl) {
-    scrapeMcDonalds(targetUrl);
-} else {
-    console.log('Uso: node mcdonalds_scraper.js <URL>');
-}
+const targetUrl = process.argv[2] || DEFAULT_URL;
+scrapeMcDonalds(targetUrl);

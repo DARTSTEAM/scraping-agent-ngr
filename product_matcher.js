@@ -35,7 +35,7 @@ const DATA_DIR = path.join(ROOT_DIR, 'data');
 // Anchor products per model call, and how many calls run at once.
 // Concurrency is kept low so we stay under Vertex's per-minute request/token
 // quota (429 RESOURCE_EXHAUSTED); transient 429/503 are retried with backoff.
-const CHUNK_SIZE = 40;
+const CHUNK_SIZE = 20;
 const CONCURRENCY = 2;
 const MAX_ALTERNATIVES = 3;
 const MAX_RETRIES = 5;
@@ -43,10 +43,17 @@ const RETRY_BASE_MS = 4000;
 
 /** Description length after cleaning (keep full bill-of-materials when possible). */
 const DESC_MAX_CHARS = 300;
-/** Matches below this are dropped (not kept as best). Aligns with UI REVIEW_THRESHOLD. */
-const ACCEPT_SCORE = 70;
+/**
+ * Floor to keep a candidate as `best` (shown in UI for human review).
+ * Below this → no match. Auto-accept still uses REVIEW_THRESHOLD in the dashboard (80).
+ */
+const SUGGEST_SCORE = 65;
+/** Soft target for high-confidence matches (logged / documented; UI uses 80). */
+const ACCEPT_SCORE = 80;
 /** Reject when max(price)/min(price) exceeds this. */
 const MAX_PRICE_RATIO = 2.5;
+/** Minimum Jaccard overlap — only enforced when both sides have enough tokens. */
+const MIN_TOKEN_OVERLAP = 0.05;
 
 // ──────────────────────────────────────────────
 // Description cleaning & format tagging
@@ -122,31 +129,88 @@ const FORMAT_INCOMPATIBLE = new Set([
   'side|share', 'share|side',
   'side|solo', 'solo|side',
   'duo|share', 'share|duo',
+  // combo↔duo intentionally allowed — promos often land on either side cross-brand
 ]);
 
 function formatsCompatible(a, b) {
   if (!a || !b || a === 'unknown' || b === 'unknown') return true;
   if (a === b) return true;
-  // combo ↔ duo is sometimes legitimate (menú vs dúo of same burger) — allow, rely on description
-  if ((a === 'combo' && b === 'duo') || (a === 'duo' && b === 'combo')) return true;
   return !FORMAT_INCOMPATIBLE.has(`${a}|${b}`);
 }
 
-/** Piece counts + coarse protein cues for content conflicts. */
-function extractContentSignals(name, description) {
+const STOP_TOKENS = new Set([
+  'de', 'del', 'la', 'el', 'los', 'las', 'un', 'una', 'y', 'con', 'en', 'a', 'al',
+  'para', 'por', 'o', 'u', 'the', 'and', 'of', 'con', 'sin', 'mas', 'más',
+  'grande', 'mediana', 'mediano', 'regular', 'pequeña', 'pequena', 'jr', 'junior',
+]);
+
+/** Meaningful tokens from name + cleaned description for overlap checks. */
+function contentTokens(name, description) {
   const text = `${name || ''} ${description || ''}`.toLowerCase()
+    .normalize('NFD').replace(/\p{M}/gu, '')
+    .replace(/[^a-z0-9ñ\s]/g, ' ');
+  return new Set(
+    text.split(/\s+/)
+      .map(t => t.trim())
+      .filter(t => t.length >= 3 && !STOP_TOKENS.has(t) && !/^\d+$/.test(t)),
+  );
+}
+
+function tokenOverlap(a, b) {
+  if (!a.size || !b.size) return null; // unknown — don't gate
+  let inter = 0;
+  for (const t of a) if (b.has(t)) inter++;
+  const union = a.size + b.size - inter;
+  return union ? inter / union : 0;
+}
+
+/** Piece counts + coarse protein / food-family cues for content conflicts. */
+function extractContentSignals(name, description, category) {
+  const text = `${name || ''} ${description || ''} ${category || ''}`.toLowerCase()
     .normalize('NFD').replace(/\p{M}/gu, '');
+  const nameLc = `${name || ''}`.toLowerCase().normalize('NFD').replace(/\p{M}/gu, '');
   const pieces = [...text.matchAll(/(\d+)\s*(?:pz|pzas?|piezas?|unidades?|u\.?)\b/g)]
     .map(m => Number(m[1]))
     .filter(n => n > 0 && n < 100);
-  const hasChicken = /\b(nugget|pollo|chicken|alitas?|tenders?|wings?|crispy chicken)\b/.test(text);
-  const hasBeef = /\b(carne|res|whopper|royal|cuart[oa]|bacon|parrill|hamburguesa)\b/.test(text);
-  const hasPizza = /\b(pizza|familiar clasica|pepperoni|hawaiana)\b/.test(text);
+  const qtyLines = [...text.matchAll(/\b(\d+)\s+([a-záéíóúñ][\wáéíóúñ]*)/g)]
+    .map(m => ({ qty: Number(m[1]), item: m[2] }))
+    .filter(x => x.qty > 0 && x.qty < 50 && x.item.length >= 3 && !STOP_TOKENS.has(x.item));
+  const hasChicken = /\b(nugget|mcnugget|pollo|chicken|alitas?|tenders?|wings?|crispy chicken|cajita feliz)\b/.test(text);
+  const hasBeef = /\b(carne|res|whopper|royal|cuart[oa]|bacon|parrill|hamburguesa|big mac|mcnifica)\b/.test(text);
+  const hasPizza = /\b(pizza|pepperoni|hawaiana|americana|vegetariana)\b/.test(text);
+  const hasCoffee = /\b(cafe|café|latte|capuccino|cappuccino|espresso|frap|mocha|doughnut|donut|donas?)\b/.test(text);
+  const hasDessert = /\b(helado|postre|shake|milkshake|mcflurry|sundae|cono|ice\s*cream|vainilla|oreo|grimace|flurry)\b/.test(text)
+    || /\b(postres|helados)\b/.test(text);
+  const isPotatoPlate = /\b(salchipapa|salchinugget)\b/.test(text)
+    || (/\b(papa|papas)\b/.test(text) && /\b(hot\s*dog|salchi|frankfurter)\b/.test(text));
+  const isCheeseStick = /\b(cheese\s*fingers?|fingers?\s*de\s*queso|dedos?\s*de\s*queso|teque[nñ]os?|mozzarella\s*sticks?|mozarella\s*sticks?)\b/.test(text);
+  const isNuggetPlate = /\b(nugget|mcnugget)\b/.test(text)
+    && !/\b(salchi|combo|menu|men[uú]|promo)\b/.test(nameLc);
+  const isDrink = (
+    (/\b(gaseosa|bebida|soda|refresco|coca|sprite|fanta|inca\s*kola|agua|jugo)\b/.test(nameLc)
+      || /\bbebidas?\b/.test(`${category || ''}`.toLowerCase()))
+    && !hasDessert
+    && !hasBeef && !hasChicken
+    && !/\b(combo|menu|men[uú]|promo|hamburguesa|papa|nugget|whopper|royal)\b/.test(nameLc)
+  );
+  const isBreakfast = /\b(desayuno|huevo|tostado|pancake|hash\s*brown|mcmuffin|caf[eé])\b/.test(text)
+    || /\bdesayunos?\b/.test(text);
+  const isSavorySide = isPotatoPlate || isCheeseStick || isNuggetPlate
+    || /\b(complementos?|para acompa[nñ]ar|antojos?)\b/.test(text);
   return {
     pieces: pieces.length ? Math.max(...pieces) : null,
+    qtySum: qtyLines.length ? qtyLines.reduce((s, x) => s + x.qty, 0) : null,
     hasChicken,
     hasBeef,
     hasPizza,
+    hasCoffee,
+    hasDessert,
+    isPotatoPlate,
+    isCheeseStick,
+    isNuggetPlate,
+    isDrink,
+    isBreakfast,
+    isSavorySide,
   };
 }
 
@@ -156,11 +220,27 @@ function contentsCompatible(a, b) {
     const lo = Math.min(a.pieces, b.pieces);
     if (lo > 0 && hi / lo >= 2) return false;
   }
-  // Clear protein category clash (burger promo vs chicken feast)
+  if (a.qtySum != null && b.qtySum != null) {
+    const hi = Math.max(a.qtySum, b.qtySum);
+    const lo = Math.min(a.qtySum, b.qtySum);
+    if (lo > 0 && hi / lo >= 2.5) return false;
+  }
   if (a.hasChicken && !a.hasBeef && b.hasBeef && !b.hasChicken) return false;
   if (b.hasChicken && !b.hasBeef && a.hasBeef && !a.hasChicken) return false;
-  if (a.hasPizza && (b.hasChicken || b.hasBeef) && !b.hasPizza) return false;
-  if (b.hasPizza && (a.hasChicken || a.hasBeef) && !a.hasPizza) return false;
+  if (a.hasPizza && (b.hasChicken || b.hasBeef || b.hasCoffee || b.hasDessert) && !b.hasPizza) return false;
+  if (b.hasPizza && (a.hasChicken || a.hasBeef || a.hasCoffee || a.hasDessert) && !a.hasPizza) return false;
+  if (a.hasCoffee && (b.hasBeef || b.hasChicken || b.hasPizza) && !b.hasCoffee) return false;
+  if (b.hasCoffee && (a.hasBeef || a.hasChicken || a.hasPizza) && !a.hasCoffee) return false;
+  // Dessert / shake never matches savory food
+  if (a.hasDessert !== b.hasDessert) return false;
+  if (a.isCheeseStick && (b.hasDessert || b.isDrink || b.isBreakfast || b.isNuggetPlate || b.isPotatoPlate || b.hasPizza || b.hasBeef || b.hasChicken || b.hasCoffee)) return false;
+  if (b.isCheeseStick && (a.hasDessert || a.isDrink || a.isBreakfast || a.isNuggetPlate || a.isPotatoPlate || a.hasPizza || a.hasBeef || a.hasChicken || a.hasCoffee)) return false;
+  if (a.isPotatoPlate && (b.hasDessert || b.isDrink || b.isBreakfast || b.isNuggetPlate || b.isCheeseStick || b.hasBeef || b.hasChicken || b.hasCoffee || b.hasPizza)) return false;
+  if (b.isPotatoPlate && (a.hasDessert || a.isDrink || a.isBreakfast || a.isNuggetPlate || a.isCheeseStick || a.hasBeef || a.hasChicken || a.hasCoffee || a.hasPizza)) return false;
+  if (a.isNuggetPlate && (b.isPotatoPlate || b.isCheeseStick || b.hasDessert || b.isDrink || b.hasBeef)) return false;
+  if (b.isNuggetPlate && (a.isPotatoPlate || a.isCheeseStick || a.hasDessert || a.isDrink || a.hasBeef)) return false;
+  if (a.isDrink && !a.hasDessert && (b.hasBeef || b.hasChicken || b.isSavorySide)) return false;
+  if (b.isDrink && !b.hasDessert && (a.hasBeef || a.hasChicken || a.isSavorySide)) return false;
   return true;
 }
 
@@ -171,7 +251,7 @@ function priceRatioOk(p1, p2) {
 
 /**
  * Whether an NGR product may be paired with a competitor product.
- * Checks format, cleaned-description content signals, and price band.
+ * Checks format, cleaned-description content signals, token overlap, and price band.
  */
 function pairAllowed(ngrProduct, compProduct) {
   const nDesc = cleanDescription(ngrProduct.description);
@@ -180,13 +260,23 @@ function pairAllowed(ngrProduct, compProduct) {
   const cFmt = detectFormat(compProduct.name, cDesc);
   if (!formatsCompatible(nFmt, cFmt)) return { ok: false, reason: `format ${nFmt}≠${cFmt}` };
   if (!contentsCompatible(
-    extractContentSignals(ngrProduct.name, nDesc),
-    extractContentSignals(compProduct.name, cDesc),
+    extractContentSignals(ngrProduct.name, nDesc, ngrProduct.category),
+    extractContentSignals(compProduct.name, cDesc, compProduct.category),
   )) {
     return { ok: false, reason: 'content conflict' };
   }
   if (!priceRatioOk(ngrProduct.price, compProduct.price)) {
     return { ok: false, reason: 'price ratio' };
+  }
+  const overlap = tokenOverlap(
+    contentTokens(ngrProduct.name, nDesc),
+    contentTokens(compProduct.name, cDesc),
+  );
+  // Only gate when both sides have enough signal; cross-brand names often share little.
+  const nTok = contentTokens(ngrProduct.name, nDesc);
+  const cTok = contentTokens(compProduct.name, cDesc);
+  if (nTok.size >= 4 && cTok.size >= 4 && overlap != null && overlap < MIN_TOKEN_OVERLAP) {
+    return { ok: false, reason: `token overlap ${overlap.toFixed(2)}` };
   }
   return { ok: true };
 }
@@ -280,21 +370,26 @@ const RESPONSE_SCHEMA = {
 };
 
 function buildPrompt(brandLabel, competitorName, anchorItems, competitorItems) {
-  return `Sos analista de pricing de fast-food en Perú. Para cada producto de la marca "${brandLabel}", encontrá su equivalente en la cadena "${competitorName}".
+  return `Sos analista de pricing de fast-food en Perú. Para cada producto de la marca "${brandLabel}", encontrá SOLO su equivalente directo en "${competitorName}".
 
-SEÑAL PRINCIPAL = la descripción (lista de contenidos / bill of materials). El nombre es marketing; la descripción dice qué incluye (ej. "1 Royal + 1 papa", "6 piezas + Cajita Feliz").
-1. Compará primero las descripciones: mismos tipos de ítems, cantidades y porciones comparables.
-2. Si los contenidos no alinean (ej. 1 hamburguesa+papa vs banquete de pollo 6 piezas), NO es match → bestRef "" y bestScore 0.
-3. Campo "format" ya tipifica el producto (combo|duo|share|side|solo). Respetalo: no cruces formatos incompatibles (solo↔combo, side↔combo, etc.).
-4. Mismo formato + contenidos alineados + precio en banda razonable.
+REGLA DE ORO — la descripción manda:
+- Equivalente = mismo rol para el cliente: mismos tipos de ítems en la descripción, cantidades/porciones parecidas, mismo formato.
+- Compará SIEMPRE las descripciones (bill of materials) antes que el nombre marketing.
+- Ejemplos de NO match: "1 Royal + 1 papa" ≠ "6 piezas de pollo"; "Personal Clásica" (ítem suelto) ≠ "Dúo WHOPPER"; promo familiar ≠ combo individual; cheese fingers/tequeños ≠ shakes/helados; salchipapa ≠ nuggets.
+- Preferí vacío a un match de otra familia de producto (postre↔salado, papa↔nugget, bebida↔comida).
 
-Scoring (sé estricto, no infles; no uses 60 como piso por defecto):
-- 85-100: descripciones equivalentes (mismos contenidos y formato).
-- 70-84: mismo formato y contenidos cercanos (porción o 1 ítem distinto).
-- 1-69: dudosa — preferí bestRef "" si no estás seguro.
-- Si NO hay equivalente razonable: bestRef "" y bestScore 0.
+FORMATO (campo format): combo|duo|share|side|solo.
+- Solo cruzá el MISMO format (combo↔duo sí está permitido). Nunca solo↔combo, solo↔duo, side↔comida, share↔solo.
 
-Devolvé además hasta ${MAX_ALTERNATIVES} alternativas (otros candidatos plausibles) ordenadas por score desc. Usá EXCLUSIVAMENTE los valores "ref" dados; nunca inventes uno.
+PRECIO: si la diferencia es absurda (>~2×), probablemente no es el mismo producto.
+
+Scoring (sé honesto — el humano revisa 65–79):
+- 90-100: descripciones casi idénticas en contenido y formato.
+- 80-89: mismo formato, contenidos muy cercanos (tal vez 1 ítem o tamaño distinto) → best seguro.
+- 65-79: candidato plausible pero imperfecto → ASIGNALO igual con ese score (revisión manual).
+- <65 o sin equivalente real: bestRef "" y bestScore 0.
+
+Devolvé hasta ${MAX_ALTERNATIVES} alternativas ordenadas por score desc. Usá EXCLUSIVAMENTE los "ref" dados.
 
 ## Productos "${brandLabel}"
 ${JSON.stringify(anchorItems)}
@@ -302,7 +397,7 @@ ${JSON.stringify(anchorItems)}
 ## Catálogo de "${competitorName}"
 ${JSON.stringify(competitorItems)}
 
-Devolvé JSON { "results": [ {ngrRef, bestRef, bestScore, alternatives:[{ref,score}]} ] } con un elemento por cada producto de "${brandLabel}".`;
+JSON: { "results": [ {ngrRef, bestRef, bestScore, alternatives:[{ref,score}]} ] } — un elemento por cada producto de "${brandLabel}".`;
 }
 
 let _ai = null;
@@ -460,6 +555,7 @@ async function callGemini(prompt, attempt = 0) {
 /**
  * Build a scored candidate list for one cell, applying hard gates.
  * Returns { best, alternatives } with best already score-gated.
+ * No lexical fallback — weak token overlap was pairing cheese sticks with shakes.
  */
 function buildGatedCell(ngrProduct, comp, modelResult) {
   const resolve = (ref) => {
@@ -470,29 +566,31 @@ function buildGatedCell(ngrProduct, comp, modelResult) {
   };
 
   const ranked = [];
+  const push = (ref, score) => {
+    const p = resolve(ref);
+    if (!p) return;
+    const gate = pairAllowed(ngrProduct, p._raw);
+    if (!gate.ok) return;
+    const s = Math.round(score ?? 0);
+    if (s < SUGGEST_SCORE) return;
+    if (ranked.some(x => x.name === p.name)) return;
+    ranked.push({
+      name: p.name,
+      category: p.category,
+      price: p.price,
+      description: p.description,
+      score: s,
+    });
+  };
+
   if (modelResult) {
-    const push = (ref, score) => {
-      const p = resolve(ref);
-      if (!p) return;
-      const gate = pairAllowed(ngrProduct, p._raw);
-      if (!gate.ok) return;
-      const s = Math.round(score ?? 0);
-      if (s < 1) return;
-      if (ranked.some(x => x.name === p.name)) return;
-      ranked.push({
-        name: p.name,
-        category: p.category,
-        price: p.price,
-        description: p.description,
-        score: s,
-      });
-    };
     push(modelResult.bestRef, modelResult.bestScore);
     for (const alt of modelResult.alternatives || []) push(alt.ref, alt.score);
   }
+
   ranked.sort((a, b) => b.score - a.score);
 
-  const best = ranked.find(c => c.score >= ACCEPT_SCORE) || null;
+  const best = ranked[0] || null;
   const alternatives = ranked
     .filter(c => !best || c.name !== best.name)
     .slice(0, MAX_ALTERNATIVES);
@@ -520,7 +618,7 @@ function enforceUniqueAssignments(rows, competitorIds) {
     const claims = [];
     for (let i = 0; i < rows.length; i++) {
       for (const c of pools[i]) {
-        if (c.score >= ACCEPT_SCORE) {
+        if (c.score >= SUGGEST_SCORE) {
           claims.push({ row: i, name: c.name, score: c.score, candidate: c });
         }
       }
@@ -666,7 +764,7 @@ async function matchBrand(brandKey, channel) {
   });
 
   const uniqueDropped = enforceUniqueAssignments(rows, competitors.map(c => c.id));
-  console.log(`[match] post-gates: ${gatedOut} bests rechazados (formato/precio/contenido/score<${ACCEPT_SCORE}); ${uniqueDropped} reasignados/cleared por 1:1`);
+  console.log(`[match] post-gates: ${gatedOut} bests rechazados (formato/precio/contenido/score<${SUGGEST_SCORE}); ${uniqueDropped} reasignados/cleared por 1:1`);
   console.log(`[match] tokens: ${usage.calls} ok calls · in=${usage.prompt} out=${usage.candidates} total=${usage.total} · promptChars=${usage.promptChars}`);
 
   return {
@@ -675,6 +773,7 @@ async function matchBrand(brandKey, channel) {
     generatedAt: new Date().toISOString(),
     model: MODEL,
     acceptScore: ACCEPT_SCORE,
+    suggestScore: SUGGEST_SCORE,
     usage,
     competitors: cfg.competitors.map(c => ({
       id: c.id,
@@ -727,5 +826,6 @@ module.exports = {
   buildGatedCell,
   enforceUniqueAssignments,
   ACCEPT_SCORE,
+  SUGGEST_SCORE,
   MAX_PRICE_RATIO,
 };

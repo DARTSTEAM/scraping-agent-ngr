@@ -56,8 +56,9 @@ COPY dump_mcd.js ./
 COPY extract_nuxt.js ./
 COPY intercept_mcd.js ./
 
-# Copy scraped product data (committed to git as baseline dataset)
-COPY data/ ./
+# Baseline products live in data/ — GCS sync writes here too.
+# Fresh scrapes still land in /app (cwd) and override via findProductFiles.
+COPY data/ ./data/
 
 # Set up dashboard directory
 RUN mkdir -p dashboard

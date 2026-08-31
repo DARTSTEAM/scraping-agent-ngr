@@ -20,4 +20,4 @@ async function checkProducts(url) {
     }
 }
 
-checkProducts(process.argv[2] || "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos");
+checkProducts(process.argv[2] || "https://www.mcdonalds.com.pe/restaurantes/lima/benavides-aurora-bau/pedidos");

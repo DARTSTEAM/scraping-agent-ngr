@@ -81,7 +81,7 @@ const NGR_OWN_GROUPS = [
     ngrLocal: 'Bembos',
     stores: [
       { name: "Bembos",                 url: "https://www.bembos.com.pe/menu",                                                  id: 'bembos-pe',           platform: 'Propio' },
-      { name: "McDonald's (Izaguirre)", url: "https://www.mcdonalds.com.pe/restaurantes/independencia/izaguirre-iza/pedidos",    id: 'mcd-izaguirre-iza',   platform: 'Propio' },
+      { name: "McDonald's (Benavides)", url: "https://www.mcdonalds.com.pe/restaurantes/lima/benavides-aurora-bau/pedidos", id: 'mcd-benavides-aurora-bau', platform: 'Propio' },
       { name: "Burger King",            url: "https://www.burgerking.pe/carta",                                                  id: 'burgerking-pe',       platform: 'Propio' },
     ]
   },
