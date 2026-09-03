@@ -48,6 +48,7 @@ COPY rokys_scraper.js ./
 COPY kernel_browser.js ./
 COPY magento_scraper.js ./
 COPY scrape_meta.js ./
+COPY pedidosya_stores.js ./
 
 # Price comparison / AI matching engine
 COPY brand_config.js ./

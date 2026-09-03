@@ -9,6 +9,7 @@ const { Storage } = require('@google-cloud/storage');
 const { matchBrand } = require('../product_matcher');
 const { BRANDS, CHANNELS, getChannelConfig } = require('../brand_config');
 const scrapeMeta = require('../scrape_meta');
+const { STORES: PEYA_STORES } = require('../pedidosya_stores');
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -124,7 +125,6 @@ const STORE_METADATA = {
     // ── Propios – Competencia vs. Bembos ────────
     'mcd-benavides-aurora-bau': { name: "McDonald's - Benavides Aurora", platform: 'Propio' },
     'mcd-izaguirre-iza':       { name: "McDonald's - Izaguirre",        platform: 'Propio' },
-    'mcd-ovalo-gutierrez':     { name: "McDonald's - Óvalo Gutiérrez",  platform: 'PedidosYa' },
     'burgerking-pe':       { name: "Burger King",               platform: 'Propio' },
     // Propios – Competencia vs. Popeyes
     'kfc-pe':              { name: "KFC",                       platform: 'Propio' },
@@ -142,17 +142,26 @@ const STORE_METADATA = {
     'rokys-pe':            { name: "Rokys",                     platform: 'Propio' },
 };
 
+// PedidosYa aggregator stores (same brands as Rappi)
+for (const s of PEYA_STORES) {
+    if (!s?.id) continue;
+    STORE_METADATA[s.id] = { name: s.name, platform: 'PedidosYa' };
+}
+
 /**
  * Map scrape target URL → products_<storeId>.json storeId.
  */
 function resolveStoreIdFromUrl(url) {
-    const PEDIDOSYA_STORES = {
-        'mcdonalds-ovalo-gutierrez': 'mcd-ovalo-gutierrez',
-    };
-
     if (url.includes('pedidosya.com.pe')) {
-        const slug = url.split('/').pop()?.replace(/-menu$/, '').replace(/-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/, '') || '';
-        return PEDIDOSYA_STORES[slug] || (slug.startsWith('mcdonalds') ? 'mcd-ovalo-gutierrez' : slug || 'mcd-ovalo-gutierrez');
+        const hit = PEYA_STORES.find(s => s.url && url.includes(s.url.split('/').pop()));
+        if (hit) return hit.id;
+        const byPartial = PEYA_STORES.find(s => s.url && (url.startsWith(s.url) || s.url.startsWith(url)));
+        if (byPartial) return byPartial.id;
+        // Fallback: match path slug loosely
+        const path = (() => { try { return new URL(url).pathname; } catch { return url; } })();
+        const soft = PEYA_STORES.find(s => s.url && path && new URL(s.url).pathname.split('/').pop() === path.split('/').pop());
+        if (soft) return soft.id;
+        return null;
     }
 
     if (url.includes('papajohns.com.pe')) return 'papajohns-pe';
@@ -305,13 +314,7 @@ app.post('/api/update', (req, res) => {
         PLAYWRIGHT_CHROMIUM_LAUNCH_OPTIONS: JSON.stringify({ args: ['--no-sandbox', '--disable-setuid-sandbox'] })
     };
 
-    const PEDIDOSYA_STORES = {
-        'mcdonalds-ovalo-gutierrez': 'mcd-ovalo-gutierrez',
-    };
-    const urlSlug = url.split('/').pop()?.replace(/-menu$/, '').replace(/-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/, '') || '';
-    const pedidosYaStoreId = PEDIDOSYA_STORES[urlSlug]
-        || (urlSlug.startsWith('mcdonalds') ? 'mcd-ovalo-gutierrez' : null)
-        || 'mcd-ovalo-gutierrez';
+    const pedidosYaStoreId = resolveStoreIdFromUrl(url) || 'peya-mcdonalds';
     const scriptArgs = scriptName === 'pedidosya_scraper.js'
         ? `"${scriptPath}" "${url}" "${pedidosYaStoreId}"`
         : `"${scriptPath}" "${url}"`;

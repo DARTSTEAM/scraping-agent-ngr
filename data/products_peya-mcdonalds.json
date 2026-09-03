@@ -1,0 +1,1354 @@
+[
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Días Bomba",
+    "name": "2 Big Mac y 2 papas",
+    "description": "",
+    "price": 51.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Antojos Mc",
+    "name": "2do McFlurry Oreo a S/1",
+    "description": "",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Antojos Mc",
+    "name": "2 Pie de manzana",
+    "description": "",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombo del Día",
+    "name": "McCombo grande Clásica",
+    "description": "",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombo del Día",
+    "name": "McCombo mediano Clásica",
+    "description": "",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombo del Día",
+    "name": "McCombo regular Clásica",
+    "description": "",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombo del Día",
+    "name": "Clásica",
+    "description": "",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combo PeYa PLUS",
+    "name": "Combo Plus Big Power",
+    "description": "",
+    "price": 43.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combo PeYa PLUS",
+    "name": "Combo Plus M&M y Nuggets",
+    "description": "",
+    "price": 43.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combo PeYa",
+    "name": "Combo PeYa Doble Burger",
+    "description": "",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combo PeYa",
+    "name": "Combo PeYa Nuggets Pack",
+    "description": "",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "BigMac + McPollo + papas",
+    "description": "",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "2 Combos Hamburguesa con queso",
+    "description": "",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "Dupla Doble Hamburguesa",
+    "description": "",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "2 McBacon, 2 Doble Hamburguesa y 4 papas",
+    "description": "",
+    "price": 38.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "Combo Bigmac y combo Doble Hamburguesa",
+    "description": "",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "McLovers Duo",
+    "description": "",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "2 Hamburguesas con queso y 2 papas",
+    "description": "",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "2 Big Mac y 2 papas",
+    "description": "",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "Cuarto de libra, 10 McNuggets y 2 papas",
+    "description": "",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "2 Big Mac, 2 papas y 2 sundaes",
+    "description": "",
+    "price": 34.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Combos Compartir - Weekdays",
+    "name": "Box Chicken McNuggets",
+    "description": "",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "2 McFlurry Tres Leches Vainilla",
+    "description": "",
+    "price": 19,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "McCombo Big Mac y McFlurry Tres Leches",
+    "description": "",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Dupla Cuarto",
+    "description": "",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "10 McNuggets con papas",
+    "description": "",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "2 piezas de pollo con papas",
+    "description": "",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Duo Shakes Oreo y Fresa",
+    "description": "",
+    "price": 24.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Super combo BigMac",
+    "description": "",
+    "price": 36.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Banquete Mix 6 piezas",
+    "description": "",
+    "price": 58.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "4 McCombos y 4 Juguetes Sorpresa",
+    "description": "",
+    "price": 79.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "3 McCombos y 3 Juguetes Sorpresa",
+    "description": "",
+    "price": 59.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "2 McCombos y 2 Juguetes Sorpresa",
+    "description": "",
+    "price": 42.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Banquete 6 piezas y 3 Juguetes Sorpresa",
+    "description": "",
+    "price": 59.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Banquete 9 piezas y 4 Juguetes Sorpresa",
+    "description": "",
+    "price": 78.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Banquete con 2 Cajitas Feliz",
+    "description": "",
+    "price": 79.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Banquete x 6 piezas con 1 Cajita Feliz",
+    "description": "",
+    "price": 65.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Banquete Power x6 pzas con gaseosas",
+    "description": "",
+    "price": 49.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Banquete Power x6 pzas",
+    "description": "",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "McLover Doble para 2",
+    "description": "",
+    "price": 60.6,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "Banquete Mix 8 piezas",
+    "description": "",
+    "price": 45.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "McBacon, papas y sundae",
+    "description": "",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "McPollo con papas",
+    "description": "",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "3 Pie de manzana",
+    "description": "",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "2 McFlurry Biscolata chocolate",
+    "description": "",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "McFlurry Tres Leches chocolate y papas",
+    "description": "",
+    "price": 17.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Promos Top",
+    "name": "McFlurry Tres Leches Vainilla y papas",
+    "description": "",
+    "price": 17.4,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Bacon Cheddar McMelt Doble",
+    "description": "",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Bacon Cheddar McMelt 1 Carne",
+    "description": "",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Bacon Cheddar McMelt Triple",
+    "description": "",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Argentina doble",
+    "description": "",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande USA doble",
+    "description": "",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Argentina simple",
+    "description": "",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande USA 1 simple",
+    "description": "",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Argentina doble",
+    "description": "",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano USA doble",
+    "description": "",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Argentina simple",
+    "description": "",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano USA simple",
+    "description": "",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande BBQ",
+    "description": "",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano BBQ",
+    "description": "",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Cuarto de Libra con Queso",
+    "description": "",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Big Mac",
+    "description": "",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo Grande McNifica",
+    "description": "",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande McBacon",
+    "description": "",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Doble Hamburguesa con queso",
+    "description": "",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Doble Cuarto de Libra Bacon",
+    "description": "",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Doble Cuarto de Libra con Queso",
+    "description": "",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Chicken McNuggets 10 unidades",
+    "description": "",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Chicken McNuggets 6 unidades",
+    "description": "",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande McPollo Bacon",
+    "description": "",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande McPollo con queso",
+    "description": "",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande McPollo Deluxe",
+    "description": "",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo grande Clásica carne",
+    "description": "",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Clásica carne",
+    "description": "",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Bacon Cheddar McMelt Doble",
+    "description": "",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Bacon Cheddar McMelt 1 carne",
+    "description": "",
+    "price": 27.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Bacon Cheddar McMelt Triple",
+    "description": "",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Cuarto de Libra con Queso",
+    "description": "",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Big Mac",
+    "description": "",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano McBacon",
+    "description": "",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Doble Hamburguesa con Queso",
+    "description": "",
+    "price": 21.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Doble Cuarto de Libra con Queso",
+    "description": "",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Doble Cuarto Libra Bacon",
+    "description": "",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Chicken McNuggets 10 unidades",
+    "description": "",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Chicken McNuggets 6 unidades",
+    "description": "",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano Doble McPollo Bacon",
+    "description": "",
+    "price": 29.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano McPollo Bacon",
+    "description": "",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano McPollo con queso",
+    "description": "",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano  McPollo",
+    "description": "",
+    "price": 22.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "McCombos",
+    "name": "McCombo mediano McPollo Deluxe",
+    "description": "",
+    "price": 23.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Cajita Feliz",
+    "name": "Cajita Feliz Hamburguesa",
+    "description": "",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Cajita Feliz",
+    "name": "Cajita Feliz Chicken McNuggets 4 unidades",
+    "description": "",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Cajita Feliz",
+    "name": "Cajita Feliz 1 pieza de pollo",
+    "description": "",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Cajita Feliz",
+    "name": "Cajita Feliz McFiesta Jr.",
+    "description": "",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Cajita Feliz",
+    "name": "Cajita Feliz Hamburguesa con Queso",
+    "description": "",
+    "price": 20.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo mediano Contundente",
+    "description": "",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo grande Contundente",
+    "description": "",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Banquete Full (x8 piezas)",
+    "description": "",
+    "price": 81.3,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Banquete Extremo (x10 piezas)",
+    "description": "",
+    "price": 94.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Banquete Supremo (x12 piezas)",
+    "description": "",
+    "price": 103.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Banquete Full (x8 piezas) con gaseosas",
+    "description": "",
+    "price": 115.3,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Banquete Extremo (x10 piezas) con gaseosas",
+    "description": "",
+    "price": 128.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Banquete Supremo (x12 piezas) con gaseosas",
+    "description": "",
+    "price": 137.2,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Combo grande 3 piezas de pollo crispy",
+    "description": "",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo grande Sorprendente",
+    "description": "",
+    "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo grande Imponente",
+    "description": "",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Combo mediano 3 piezas de pollo crispy",
+    "description": "",
+    "price": 26.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo mediano Sorprendente",
+    "description": "",
+    "price": 31.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo mediano Imponente",
+    "description": "",
+    "price": 28.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "2 Piezas de Pollo Crispy",
+    "description": "",
+    "price": 15.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "3 Piezas de pollo crispy",
+    "description": "",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Chicken McNuggets 10 unidades",
+    "description": "",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Chicken McNuggets 6 unidades",
+    "description": "",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Grand Bacon Cheddar McMelt Doble",
+    "description": "",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Grand Bacon Cheddar McMelt 1 carne",
+    "description": "",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Grand Bacon Cheddar McMelt Triple",
+    "description": "",
+    "price": 36.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Argentina doble",
+    "description": "",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "USA doble",
+    "description": "",
+    "price": 30.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Argentina simple",
+    "description": "",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "USA simple",
+    "description": "",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa BBQ",
+    "description": "",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa clásica",
+    "description": "",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Big Mac",
+    "description": "",
+    "price": 18.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Cuarto de Libra con Queso",
+    "description": "",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Doble Cuarto de Libra con Queso",
+    "description": "",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Doble Cuarto de Libra Bacon",
+    "description": "",
+    "price": 25.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Doble Hamburguesa con queso",
+    "description": "",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "McNifica",
+    "description": "",
+    "price": 19.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "McBacon",
+    "description": "",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "McPollo Deluxe",
+    "description": "",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "McPollo",
+    "description": "",
+    "price": 16.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "McPollo con queso",
+    "description": "",
+    "price": 17.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Doble McPollo Bacon",
+    "description": "",
+    "price": 24.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Hamburguesas",
+    "name": "Hamburguesa con Queso",
+    "description": "",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Para acompañar",
+    "name": "Papas grandes",
+    "description": "",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Para acompañar",
+    "name": "Papas medianas",
+    "description": "",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McFlurry Tres Leches Manjar",
+    "description": "",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McFlurry Tres Leches Chocolate",
+    "description": "",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McShake Oreo",
+    "description": "",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McShake Fresa",
+    "description": "",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McShake Manjar",
+    "description": "",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McShake Chocolate",
+    "description": "",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McFlurry Biscolata Chocolate",
+    "description": "",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McFlurry Biscolata Manjar",
+    "description": "",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McFlurry Oreo",
+    "description": "",
+    "price": 8.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McFlurry Mini M&M's Manjar",
+    "description": "",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McFlurry mini M&M's Chocolate",
+    "description": "",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "McFlurry Sublime",
+    "description": "",
+    "price": 9.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "Sundae Doble Chocolate",
+    "description": "",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "Sundae Doble Fresa",
+    "description": "",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "Sundae Doble Manjar",
+    "description": "",
+    "price": 7.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "Sundae Chocolate",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "Sundae Fresa",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Postres",
+    "name": "Sundae Manjar",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Splash x Sprite",
+    "description": "",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Coca-Cola grande",
+    "description": "",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Inca Kola grande",
+    "description": "",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero Azúcar grande",
+    "description": "",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero Azúcar grande",
+    "description": "",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Sprite grande",
+    "description": "",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Fanta grande",
+    "description": "",
+    "price": 7.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Coca-Cola mediana",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Coca-Cola Zero Azúcar mediana",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Inca Kola mediana",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Inca Kola Zero Azúcar mediana",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Sprite mediana",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Fanta mediana",
+    "description": "",
+    "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Agua San Luis",
+    "description": "",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "Menú de McDonald´s Ovalo Gutierrez",
+    "category": "Bebidas",
+    "name": "Café Pasado",
+    "description": "",
+    "price": 5.9,
+    "inStock": true
+  }
+]

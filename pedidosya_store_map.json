@@ -1,0 +1,328 @@
+{
+  "bembos": {
+    "storeId": "peya-bembos",
+    "name": "Bembos",
+    "query": "Bembos",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/bembos-ovalo-gutierrez-menu",
+    "partnerId": null,
+    "matchText": "Bembos Ovalo Gutierrez4.3Recibes en15-30 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Bembos Ovalo Gutierrez4.3Recibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/bembos-ovalo-gutierrez-menu"
+      }
+    ]
+  },
+  "popeyes": {
+    "storeId": "peya-popeyes",
+    "name": "Popeyes",
+    "query": "Popeyes",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/popeyes-larco-menu",
+    "partnerId": null,
+    "matchText": "Popeyes Larco4.3Recibes en20-35 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Popeyes Larco4.3Recibes en20-35 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/popeyes-larco-menu"
+      }
+    ]
+  },
+  "dunkin": {
+    "storeId": "peya-dunkin",
+    "name": "Dunkin'",
+    "query": "Dunkin",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/dunkin-donuts--plaza-vea-dasso-94678500-43d1-416f-952b-3324db81f862-menu",
+    "partnerId": null,
+    "matchText": "Dunkin Donuts - Plaza Vea Dasso4.6Recibes en5-20 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Dunkin Donuts - Plaza Vea Dasso4.6Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/dunkin-donuts--plaza-vea-dasso-94678500-43d1-416f-952b-3324db81f862-menu"
+      }
+    ]
+  },
+  "papajohns": {
+    "storeId": "peya-papajohns",
+    "name": "Papa Johns",
+    "query": "Papa Johns",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/papa-johns-comandante-espinar-menu",
+    "partnerId": null,
+    "matchText": "Papa John's Comandante Espinar4.5Recibes en15-30 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Papa John's Comandante Espinar4.5Recibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/papa-johns-comandante-espinar-menu"
+      }
+    ]
+  },
+  "donbelisario": {
+    "storeId": "peya-donbelisario",
+    "name": "Don Belisario",
+    "query": "Don Belisario",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/don-belisario-larco-93da4fb3-c49b-4607-ae33-4733f1343acc-menu",
+    "partnerId": null,
+    "matchText": "Don Belisario Larco4.3Recibes en20-35 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Don Belisario Larco4.3Recibes en20-35 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/don-belisario-larco-93da4fb3-c49b-4607-ae33-4733f1343acc-menu"
+      },
+      {
+        "text": "Don Gallero Brasas4.4Recibes en25-40 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/don-gallero-brasas-029140a7-614f-4425-86b0-3021d4a688d8-menu"
+      },
+      {
+        "text": "Pollos De McDonald's Ovalo Gutierrez4.4Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/pollos-de-mcdonalds-ovalo-gutierrez-b9d1cf19-003d-4dbe-b730-940e6e46b097-menu"
+      }
+    ]
+  },
+  "chinawok": {
+    "storeId": "peya-chinawok",
+    "name": "Chinawok",
+    "query": "Chinawok",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/chinawok-patio-larco-menu",
+    "partnerId": null,
+    "matchText": "Chinawok Patio Larco4.4Recibes en15-30 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Chinawok Patio Larco4.4Recibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/chinawok-patio-larco-menu"
+      }
+    ]
+  },
+  "mcdonalds": {
+    "storeId": "peya-mcdonalds",
+    "name": "McDonald's",
+    "query": "McDonald's",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/mcdonalds-ovalo-gutierrez-e6b6652e-45c6-44f7-8976-e376edf475a8-menu",
+    "partnerId": null,
+    "matchText": "McDonald's Ovalo Gutierrez4.4Recibes en5-20 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "McDonald's Ovalo Gutierrez4.4Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/mcdonalds-ovalo-gutierrez-e6b6652e-45c6-44f7-8976-e376edf475a8-menu"
+      },
+      {
+        "text": "Pollos De McDonald's Ovalo Gutierrez4.4Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/pollos-de-mcdonalds-ovalo-gutierrez-b9d1cf19-003d-4dbe-b730-940e6e46b097-menu"
+      }
+    ]
+  },
+  "burgerking": {
+    "storeId": "peya-burgerking",
+    "name": "Burger King",
+    "query": "Burger King",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/burger-king-cavenecia-menu",
+    "partnerId": null,
+    "matchText": "Burger King - Cavenecia4.2Recibes en5-20 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Burger King - Cavenecia4.2Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/burger-king-cavenecia-menu"
+      },
+      {
+        "text": "Up Burger - Alpina4.3Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/up-burger-alpina-menu"
+      },
+      {
+        "text": "Big Bro Burger4.5Recibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/big-bro-burger-dacf9ca4-f504-4ade-a4a0-2522be9ec004-menu"
+      },
+      {
+        "text": "Blast Smash Burgers - MirafloresRecibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/blast-smash-burgers--miraflores-cb3349f9-f1c3-4c47-9b95-1fa36282f9e5-menu"
+      },
+      {
+        "text": "Burgerboy - La Mar4.7Recibes en10-25 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/burgerboy-la-mar-a26c1439-688b-411e-a099-4656bbee098f-menu"
+      }
+    ]
+  },
+  "kfc": {
+    "storeId": "peya-kfc",
+    "name": "KFC",
+    "query": "KFC",
+    "url": null,
+    "error": "not found",
+    "candidates": []
+  },
+  "yopo": {
+    "storeId": "peya-yopo",
+    "name": "Yopo",
+    "query": "Yopo",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/yopo--comandante-espinar-dd561e26-1e20-4821-8de0-0600196ca88f-menu",
+    "partnerId": null,
+    "matchText": "Yopo - Comandante Espinar4.7Recibes en5-20 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Yopo - Comandante Espinar4.7Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/yopo--comandante-espinar-dd561e26-1e20-4821-8de0-0600196ca88f-menu"
+      }
+    ]
+  },
+  "pizzahut": {
+    "storeId": "peya-pizzahut",
+    "name": "Pizza Hut",
+    "query": "Pizza Hut",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/pizza-hut-espinar-menu",
+    "partnerId": null,
+    "matchText": "Pizza Hut - Espinar4.2Recibes en20-35 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Pizza Hut - Espinar4.2Recibes en20-35 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/pizza-hut-espinar-menu"
+      },
+      {
+        "text": "Little Caesars' Pizza - Miraflores4.6Recibes en10-25 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/little-caesars-pizza-miraflores-menu"
+      },
+      {
+        "text": "Mamma Tomato Pizza - Miraflores4.5Recibes en20-35 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/mamma-tomato-pizza-miraflores-menu"
+      },
+      {
+        "text": "Pizza Raul- Cavenecia4.3Recibes en10-25 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/pizza-raul-cavenecia-f6eb33a1-4f5e-4cb9-9426-17cf6545272e-menu"
+      },
+      {
+        "text": "La Caleta - Pizzas Y Pastas4.6Recibes en20-35 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/la-caleta-pizzas-y-pastas-a6695d19-48dd-4c4d-98b9-4172569dbd06-menu"
+      }
+    ]
+  },
+  "dominos": {
+    "storeId": "peya-dominos",
+    "name": "Domino's Pizza",
+    "query": "Domino's",
+    "url": null,
+    "error": "not found",
+    "candidates": []
+  },
+  "littlecaesars": {
+    "storeId": "peya-littlecaesars",
+    "name": "Little Caesars",
+    "query": "Little Caesars",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/little-caesars-pizza-miraflores-menu",
+    "partnerId": null,
+    "matchText": "Little Caesars' Pizza - Miraflores4.6Recibes en10-25 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Little Caesars' Pizza - Miraflores4.6Recibes en10-25 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/little-caesars-pizza-miraflores-menu"
+      }
+    ]
+  },
+  "wanta": {
+    "storeId": "peya-wanta",
+    "name": "Wanta Chifa",
+    "query": "Wanta",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/wanta-chifa-santa-cruz-add0b531-7c31-4784-9248-c5ad98760f27-menu",
+    "partnerId": null,
+    "matchText": "Wanta Chifa - Santa Cruz4.1Recibes en10-25 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Wanta Chifa - Santa Cruz4.1Recibes en10-25 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/wanta-chifa-santa-cruz-add0b531-7c31-4784-9248-c5ad98760f27-menu"
+      }
+    ]
+  },
+  "chifaexpress": {
+    "storeId": "peya-chifaexpress",
+    "name": "Chifa Express",
+    "query": "Chifa Express",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/chifa-express-6-menu",
+    "partnerId": null,
+    "matchText": "Chifa Express - Comandante Espinar4.4Recibes en15-30 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Chifa Express - Comandante Espinar4.4Recibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/chifa-express-6-menu"
+      },
+      {
+        "text": "Chifa Express - Lince.Recibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/chifa-express-lince-614df771-a3cd-4b66-b8c6-9817158423fb-menu"
+      },
+      {
+        "text": "Chifa Brasil4.4Recibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/chifa-brasil-menu"
+      },
+      {
+        "text": "Chifa Jin Kao4.3Recibes en40-60 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/chifa-jin-kao-6f16e6bc-b8c8-4d18-9d29-cf08a191e522-menu"
+      },
+      {
+        "text": "Chifa Hong Kon Aramburu3.8Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/chifa-hong-kon-aramburu-menu"
+      }
+    ]
+  },
+  "starbucks": {
+    "storeId": "peya-starbucks",
+    "name": "Starbucks",
+    "query": "Starbucks",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/starbucks-dasso-1d98eee0-22b6-4f5d-bc6f-5bab57b685d3-menu",
+    "partnerId": null,
+    "matchText": "Starbucks - Dasso4.2Recibes en5-20 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Starbucks - Dasso4.2Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/starbucks-dasso-1d98eee0-22b6-4f5d-bc6f-5bab57b685d3-menu"
+      }
+    ]
+  },
+  "juanvaldez": {
+    "storeId": "peya-juanvaldez",
+    "name": "Juan Valdez",
+    "query": "Juan Valdez",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/juan-valdez--pardo-e98f160c-e5d8-4391-8697-db1976868a4c-menu",
+    "partnerId": null,
+    "matchText": "Juan Valdez - Pardo4.4Recibes en10-25 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Juan Valdez - Pardo4.4Recibes en10-25 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/juan-valdez--pardo-e98f160c-e5d8-4391-8697-db1976868a4c-menu"
+      }
+    ]
+  },
+  "cinnabon": {
+    "storeId": "peya-cinnabon",
+    "name": "Cinnabon",
+    "query": "Cinnabon",
+    "url": null,
+    "error": "not found",
+    "candidates": []
+  },
+  "pardos": {
+    "storeId": "peya-pardos",
+    "name": "Pardos Chicken",
+    "query": "Pardos Chicken",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/pardos-chicken-santa-cruz-menu",
+    "partnerId": null,
+    "matchText": "Pardos Chicken - Santa Cruz4.5Recibes en5-20 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Pardos Chicken - Santa Cruz4.5Recibes en5-20 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/pardos-chicken-santa-cruz-menu"
+      }
+    ]
+  },
+  "rokys": {
+    "storeId": "peya-rokys",
+    "name": "Rokys",
+    "query": "Rokys",
+    "url": "https://www.pedidosya.com.pe/restaurantes/lima/rokys-angamos-este-menu",
+    "partnerId": null,
+    "matchText": "Roky's - Angamos Este4.3Recibes en15-30 minEnvíoGratis",
+    "alternatives": [
+      {
+        "text": "Roky's - Angamos Este4.3Recibes en15-30 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/rokys-angamos-este-menu"
+      },
+      {
+        "text": "Roky's Desayunos - Rebagliati4.5Recibes en20-35 minEnvíoGratis",
+        "href": "https://www.pedidosya.com.pe/restaurantes/lima/rokys-desayunos-rebagliati-cff5638a-ce5d-4018-a8a6-c71e6b5be704-menu"
+      }
+    ]
+  }
+}

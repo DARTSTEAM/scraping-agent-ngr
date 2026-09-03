@@ -76,6 +76,63 @@ const NGR_OWN_RAPPI = [
   { name: "Chinawok",      url: "https://www.rappi.com.pe/restaurantes/10266-chinawok-chifa",  id: '10266', platform: 'Rappi' },
 ];
 
+// PedidosYa — same brand set (Miraflores / Óvalo Gutiérrez area)
+const NGR_OWN_PEYA = [
+  { name: "Bembos",        url: "https://www.pedidosya.com.pe/restaurantes/lima/bembos-ovalo-gutierrez-menu", id: 'peya-bembos', platform: 'PedidosYa' },
+  { name: "Popeyes",       url: "https://www.pedidosya.com.pe/restaurantes/lima/popeyes-larco-menu", id: 'peya-popeyes', platform: 'PedidosYa' },
+  { name: "Dunkin'",       url: "https://www.pedidosya.com.pe/restaurantes/lima/dunkin-donuts--plaza-vea-dasso-94678500-43d1-416f-952b-3324db81f862-menu", id: 'peya-dunkin', platform: 'PedidosYa' },
+  { name: "Papa Johns",    url: "https://www.pedidosya.com.pe/restaurantes/lima/papa-johns-comandante-espinar-menu", id: 'peya-papajohns', platform: 'PedidosYa' },
+  { name: "Don Belisario", url: "https://www.pedidosya.com.pe/restaurantes/lima/don-belisario-larco-93da4fb3-c49b-4607-ae33-4733f1343acc-menu", id: 'peya-donbelisario', platform: 'PedidosYa' },
+  { name: "Chinawok",      url: "https://www.pedidosya.com.pe/restaurantes/lima/chinawok-patio-larco-menu", id: 'peya-chinawok', platform: 'PedidosYa' },
+];
+
+const NGR_GROUPS_PEYA = [
+  {
+    ngrLocal: 'Bembos',
+    competitors: [
+      { name: "McDonald's",  url: "https://www.pedidosya.com.pe/restaurantes/lima/mcdonalds-ovalo-gutierrez-e6b6652e-45c6-44f7-8976-e376edf475a8-menu", id: 'peya-mcdonalds', platform: 'PedidosYa' },
+      { name: "Burger King", url: "https://www.pedidosya.com.pe/restaurantes/lima/burger-king-cavenecia-menu", id: 'peya-burgerking', platform: 'PedidosYa' },
+    ]
+  },
+  {
+    ngrLocal: 'Popeyes',
+    competitors: [
+      { name: "KFC",  url: "https://www.pedidosya.com.pe/restaurantes/lima/kfc-cavenecia-b16e2057-319a-4649-8b55-e0a9f2819f25-menu", id: 'peya-kfc', platform: 'PedidosYa' },
+      { name: "Yopo", url: "https://www.pedidosya.com.pe/restaurantes/lima/yopo--comandante-espinar-dd561e26-1e20-4821-8de0-0600196ca88f-menu", id: 'peya-yopo', platform: 'PedidosYa' },
+    ]
+  },
+  {
+    ngrLocal: 'Papa Johns',
+    competitors: [
+      { name: "Pizza Hut",      url: "https://www.pedidosya.com.pe/restaurantes/lima/pizza-hut-espinar-menu", id: 'peya-pizzahut', platform: 'PedidosYa' },
+      // Domino's: no local encontrado cerca de Óvalo Gutiérrez aún
+      { name: "Little Caesars", url: "https://www.pedidosya.com.pe/restaurantes/lima/little-caesars-pizza-miraflores-menu", id: 'peya-littlecaesars', platform: 'PedidosYa' },
+    ]
+  },
+  {
+    ngrLocal: 'Chinawok',
+    competitors: [
+      { name: "Wanta Chifa",   url: "https://www.pedidosya.com.pe/restaurantes/lima/wanta-chifa-santa-cruz-add0b531-7c31-4784-9248-c5ad98760f27-menu", id: 'peya-wanta', platform: 'PedidosYa' },
+      { name: "Chifa Express", url: "https://www.pedidosya.com.pe/restaurantes/lima/chifa-express-6-menu", id: 'peya-chifaexpress', platform: 'PedidosYa' },
+    ]
+  },
+  {
+    ngrLocal: 'Dunkin',
+    competitors: [
+      { name: "Starbucks",   url: "https://www.pedidosya.com.pe/restaurantes/lima/starbucks-dasso-1d98eee0-22b6-4f5d-bc6f-5bab57b685d3-menu", id: 'peya-starbucks', platform: 'PedidosYa' },
+      { name: "Juan Valdez", url: "https://www.pedidosya.com.pe/restaurantes/lima/juan-valdez--pardo-e98f160c-e5d8-4391-8697-db1976868a4c-menu", id: 'peya-juanvaldez', platform: 'PedidosYa' },
+      { name: "Cinnabon",    url: "https://www.pedidosya.com.pe/restaurantes/lima/cinnabon--larcomar-ce7504bd-203c-40d6-baca-da72f1c94b2c-menu", id: 'peya-cinnabon', platform: 'PedidosYa' },
+    ]
+  },
+  {
+    ngrLocal: 'Don Belisario',
+    competitors: [
+      { name: "Pardos Chicken", url: "https://www.pedidosya.com.pe/restaurantes/lima/pardos-chicken-santa-cruz-menu", id: 'peya-pardos', platform: 'PedidosYa' },
+      { name: "Rokys",         url: "https://www.pedidosya.com.pe/restaurantes/lima/rokys-angamos-este-menu", id: 'peya-rokys', platform: 'PedidosYa' },
+    ]
+  },
+];
+
 // NGR own brands and their own-site menus, grouped by brand
 const NGR_OWN_GROUPS = [
   {
@@ -131,6 +188,8 @@ const NGR_OWN_GROUPS = [
 const COMPETITORS = [
   ...NGR_OWN_RAPPI,
   ...NGR_GROUPS.flatMap(g => g.competitors),
+  ...NGR_OWN_PEYA,
+  ...NGR_GROUPS_PEYA.flatMap(g => g.competitors),
   ...NGR_OWN_GROUPS.flatMap(g => g.stores),
 ];
 
@@ -158,7 +217,8 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [updating, setUpdating] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const [activeTab, setActiveTab] = useState<'competitors' | 'own' | 'comparativa'>('competitors'); // New tabs
+  const [activeTab, setActiveTab] = useState<'competitors' | 'own' | 'comparativa'>('competitors');
+  const [aggregator, setAggregator] = useState<'Rappi' | 'PedidosYa'>('Rappi');
 
   const fetchData = async () => {
     setLoading(true);
@@ -177,7 +237,7 @@ export default function App() {
 
   const filteredCompetitors = COMPETITORS.filter(c =>
     activeTab === 'competitors'
-      ? c.platform === 'Rappi'
+      ? c.platform === aggregator
       : c.platform === 'Propio'
   );
 
@@ -189,7 +249,7 @@ export default function App() {
     if (filteredCompetitors.length > 0 && !filteredCompetitors.find(c => c.id === selectedCompId)) {
       setSelectedCompId(filteredCompetitors[0].id);
     }
-  }, [activeTab, data]);
+  }, [activeTab, aggregator, data]);
 
   const handleUpdate = async () => {
     const comp = COMPETITORS.find(c => c.id === selectedCompId) || { url: `https://www.rappi.com.pe/restaurantes/${selectedCompId}` };
@@ -287,6 +347,27 @@ export default function App() {
           <div className="md:col-span-4 bg-white rounded-2xl p-6 border border-slate-100 shadow-sm space-y-4">
             <h2 className="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Selección de Local</h2>
             <div className="space-y-4 pt-2">
+              {activeTab === 'competitors' && (
+                <div>
+                  <label className="block text-[10px] font-bold text-slate-500 uppercase mb-2 tracking-wider">Agregador</label>
+                  <div className="grid grid-cols-2 gap-2">
+                    {(['Rappi', 'PedidosYa'] as const).map(opt => (
+                      <button
+                        key={opt}
+                        type="button"
+                        onClick={() => setAggregator(opt)}
+                        className={`py-2.5 rounded-xl text-sm font-bold transition-all cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400 ${
+                          aggregator === opt
+                            ? 'bg-slate-900 text-white shadow-sm'
+                            : 'bg-slate-50 text-slate-600 hover:bg-slate-100'
+                        }`}
+                      >
+                        {opt}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
               <div>
                 <label className="block text-[10px] font-bold text-slate-500 uppercase mb-2 tracking-wider">Punto de Venta / Competidor</label>
                 <div className="relative">
@@ -299,11 +380,11 @@ export default function App() {
                     {activeTab === 'competitors' ? (
                       <>
                         <optgroup label="MARCAS PROPIAS">
-                          {NGR_OWN_RAPPI.map(brand => (
+                          {(aggregator === 'Rappi' ? NGR_OWN_RAPPI : NGR_OWN_PEYA).map(brand => (
                             <option key={brand.id} value={brand.id}>{brand.name}</option>
                           ))}
                         </optgroup>
-                        {NGR_GROUPS.map(group => (
+                        {(aggregator === 'Rappi' ? NGR_GROUPS : NGR_GROUPS_PEYA).map(group => (
                           <optgroup key={group.ngrLocal} label={`vs. ${group.ngrLocal.toUpperCase()}`}>
                             {group.competitors.map(comp => (
                               <option key={comp.id} value={comp.id}>{comp.name}</option>
@@ -339,7 +420,13 @@ export default function App() {
 
               <div className="p-4 bg-slate-50 rounded-xl flex items-center gap-4">
                 <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center border border-slate-200">
-                  {currentCompData?.platform === 'Rappi' ? <GlobeAltIcon className="w-5 h-5 text-orange-400" /> : <GlobeAltIcon className="w-5 h-5 text-rose-400" />}
+                  {currentCompData?.platform === 'Rappi' ? (
+                    <GlobeAltIcon className="w-5 h-5 text-orange-400" />
+                  ) : currentCompData?.platform === 'PedidosYa' ? (
+                    <GlobeAltIcon className="w-5 h-5 text-pink-500" />
+                  ) : (
+                    <GlobeAltIcon className="w-5 h-5 text-rose-400" />
+                  )}
                 </div>
                 <div>
                   <p className="text-[10px] font-bold text-slate-500 uppercase">{activeTab === 'own' ? 'Canal / Plataforma' : 'Agregador'}</p>
