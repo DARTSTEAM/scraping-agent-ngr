@@ -238,7 +238,8 @@ app.get('/api/results', (req, res) => {
                 name: meta.name,
                 platform: meta.platform,
                 local: content[0]?.restaurant || 'Sin información de local',
-                lastUpdated: scrapeTimes[storeId] || mtime,
+                // Never use the local mtime: GCS downloads reset it on every deploy.
+                lastUpdated: scrapeTimes[storeId] || null,
                 products: content,
                 csvFile: `products_${storeId}.csv`
             });
