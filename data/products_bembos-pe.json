@@ -1,15 +1,7 @@
 [
   {
     "restaurant": "Bembos",
-    "category": "Promociones para 2",
-    "name": "Dúo Bembástico",
-    "description": "2 Queso tocinos regulares, 2 papas regulares.",
-    "price": 19.9,
-    "sku": "BB2146473540"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Promociones para 2",
+    "category": "Promos Exclusivas",
     "name": "Martes y Jueves",
     "description": "1 Queso Tocino regular, 1 Cheese regular, 2 papas regulares, Nuggets x4",
     "price": 25.9,
@@ -17,7 +9,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para 2",
+    "category": "Promos Exclusivas",
     "name": "Dúo Imperdible",
     "description": "1 Clásica regular, 1 Churrita regular, 2 papas regulares",
     "price": 19.9,
@@ -25,7 +17,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para 2",
+    "category": "Promos Exclusivas",
     "name": "Dúo Sabroso",
     "description": "2 A lo Pobre regulares, 2 papas regulares, 2 gaseosas personales",
     "price": 28.9,
@@ -33,7 +25,23 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para 2",
+    "category": "Promos Exclusivas",
+    "name": "Dúo Queso Tocino",
+    "description": "2 Queso Tocino regulares, 2 papas regulares",
+    "price": 25.9,
+    "sku": "BB2146469335"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promos Exclusivas",
+    "name": "Dúo del barrio",
+    "description": "1 Tártara regular + 1 Épica regular 2 papas regulares + 2 gaseosas personales",
+    "price": 33.9,
+    "sku": "BB2146473747"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promos Exclusivas",
     "name": "Dúo Huachano",
     "description": "1  Huachana reg + 1 Churrita reg + 2 papas reg + 1 crema, anticuchera, ocopa o ají Bembos",
     "price": 29.9,
@@ -41,23 +49,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para 2",
-    "name": "Dúo Chicharronero",
-    "description": "1 Chicharronera reg + 1 Churrita reg + 2 papas reg + 1 crema anticuchera, ocopa o ají Bembos",
-    "price": 28.9,
-    "sku": "BB2146473642"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Promociones para 2",
-    "name": "Dúo Blanquirrojo",
-    "description": "1  Chicharronera reg + 1 Huachana reg + 2 papas reg + 2  gaseosas personales + 2 cremas anticuchera, ocopa o ají Bembos",
-    "price": 44.9,
-    "sku": "BB2146473644"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Promociones para 2",
+    "category": "Promos Exclusivas",
     "name": "Dúo Futbolero",
     "description": "1 cheese regular, 1 clásica regular, 2 papa regulares y 2 gaseosas personales",
     "price": 27.9,
@@ -65,7 +57,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones Personales",
+    "category": "Promos Exclusivas",
     "name": "Combo Power",
     "description": "1 Queso Tocino regular, 1 papa regular, 1 gaseosa personal y nuggets x4",
     "price": 19.9,
@@ -73,7 +65,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones Personales",
+    "category": "Promos Exclusivas",
     "name": "Promo Doble Queso Tocino",
     "description": "1 Doble queso tocino regular, 1 papa regular, gaseosa personal.",
     "price": 19.9,
@@ -81,7 +73,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones Personales",
+    "category": "Promos Exclusivas",
     "name": "Personal Churrita",
     "description": "1 Churrita mediana, 1 papa regular",
     "price": 16.9,
@@ -89,7 +81,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones Personales",
+    "category": "Promos Exclusivas",
     "name": "Personal Clásica",
     "description": "Promoción de 1 Hamburguesa Clásica regular y 1 papa mediana",
     "price": 12.9,
@@ -97,7 +89,23 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
+    "category": "Promos Exclusivas",
+    "name": "Promo Tártara",
+    "description": "1 Tártara regular + 1 papa regular + 1 gaseosa personal",
+    "price": 16.9,
+    "sku": "BB2146473746"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promos Exclusivas",
+    "name": "Promo La Épica",
+    "description": "1 Épica regular + 1 papa regular + 1 gaseosa personal",
+    "price": 17.9,
+    "sku": "BB2146473745"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Promos Exclusivas",
     "name": "Bembonera Regular",
     "description": "4 Hamburguesas regulares a elección entre Clásica, Cheese o Queso Tocino (máximo 2 unidades por tipo), 4 papas regulares, nuggets x6, 1 ají de 3 oz y 1 tártara golf de 3 oz. Agrega gaseosas personales por solo +S/ 3.50 cada una",
     "price": 59.9,
@@ -105,7 +113,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
+    "category": "Promos Exclusivas",
     "name": "Bembonera Mediana",
     "description": "4 Hamburguesas medianas a elección entre Clásica, Cheese o Queso Tocino (máximo 2 unidades por tipo), 4 papas medianas, 2 nuggets x4, 1 ají de 3 oz y 1 tártara golf de 3 oz. Agrega personales por solo +S/ 3.50 cada una.",
     "price": 79.9,
@@ -113,7 +121,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
+    "category": "Promos Exclusivas",
     "name": "Trío Futbolero",
     "description": "2 Queso Tocino regulares, 1 Cheese regular, 3 papas regulares, 3 gaseosas personales",
     "price": 43.9,
@@ -121,7 +129,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
+    "category": "Promos Exclusivas",
     "name": "Familiar Perfecto",
     "description": "2 Clásicas regulares, 2 Cheese regulares, 4 papas regulares, 4 gaseosas personales",
     "price": 50.9,
@@ -129,7 +137,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
+    "category": "Promos Exclusivas",
     "name": "Combo Trío",
     "description": "1 Royal regular, 2 Cheese regulares, 3 papas regulares",
     "price": 39.9,
@@ -137,7 +145,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Promociones para Compartir",
+    "category": "Promos Exclusivas",
     "name": "Compartir Extremo",
     "description": "2 Extremas regulares, 2 Queso Tocino regulares, 4 papas regulares",
     "price": 56.9,
@@ -145,7 +153,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Cupones",
+    "category": "Promos Exclusivas",
     "name": "Yape Dúo",
     "description": "Con el código yape, por S/20.90 llévate 1 clásica regular, 1 cheese regular y 2 papas regulares",
     "price": 43.6,
@@ -153,7 +161,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Cupones",
+    "category": "Promos Exclusivas",
     "name": "Familiar Yape",
     "description": "Con el código yape, por S/39.90 llévate 4 clásicas regulares y 4 papas regulares",
     "price": 81.2,
@@ -161,7 +169,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Cupones",
+    "category": "Promos Exclusivas",
     "name": "Yape Queso Tocino",
     "description": "Con el código yape, por S/18.90 llévate 1 queso tocino mediana y 1 papa mediana.",
     "price": 28.8,
@@ -169,7 +177,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Cupones",
+    "category": "Promos Exclusivas",
     "name": "Entel 2x1 Parrilleras",
     "description": "2 Parrilleras medianas, 2 papas medianas a S/30.80",
     "price": 61.6,
@@ -177,7 +185,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Cupones",
+    "category": "Promos Exclusivas",
     "name": "Entel 2x1 Royal",
     "description": "2 Royal medianas, 2 papas medianas a S/26.80",
     "price": 55.6,
@@ -185,7 +193,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Cupones",
+    "category": "Promos Exclusivas",
     "name": "Entel 2x1 Clásica",
     "description": "2 Clásicas medianas, 2 papas medianas a S/24.80",
     "price": 49.6,
@@ -254,14 +262,6 @@
     "description": "Hamburguesa Churrita a la parrilla: Hamburguesa, tocino, papas al hilo y mayonesa de chimichurri. Papa mediana y gaseosa de 500ml",
     "price": 28.9,
     "sku": "BB2146468233"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Combos",
-    "name": "Combo Chicharronera",
-    "description": "1 Chicharronera mediana, 1 papa mediana, 1 gaseosa personal. Incluye una crema chorreo.",
-    "price": 30.9,
-    "sku": "BB2146473447"
   },
   {
     "restaurant": "Bembos",
@@ -362,14 +362,6 @@
   {
     "restaurant": "Bembos",
     "category": "Hamburguesas",
-    "name": "Hamburguesa Chicharronera",
-    "description": "Deliciosa hamburguesa de carne de res, chicharrón, camotes al hilo, cebolla morada y salsa de rocoto. Incluye una crema chorreo.",
-    "price": 24.9,
-    "sku": "BB2146473445"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Hamburguesas",
     "name": "Hamburguesa Royal",
     "description": "Bembos a la parrilla, huevo, queso Edam, tomate, lechuga y mayonesa",
     "price": 18.9,
@@ -457,7 +449,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Snacks",
+    "category": "Complementos",
     "name": "Salchinuggets",
     "description": "Porción familiar de papas fritas con Hot dog y Nuggets x4",
     "price": 17.9,
@@ -465,7 +457,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Snacks",
+    "category": "Complementos",
     "name": "Salchipapa",
     "description": "Porción familiar de papas fritas con Hot dog",
     "price": 10.9,
@@ -473,7 +465,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Snacks",
+    "category": "Complementos",
     "name": "Papas Fritas",
     "description": "¡Prueba nuestras crujientes papas fritas, no olvides agrandarlas!",
     "price": 6.9,
@@ -481,7 +473,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Snacks",
+    "category": "Complementos",
     "name": "Cheese Fingers",
     "description": "¡Prueba nuestros deliciosos Cheese Fingers!",
     "price": 13.9,
@@ -489,7 +481,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Snacks",
+    "category": "Complementos",
     "name": "Nuggets",
     "description": "¡Prueba nuestros deliciosos Nuggets de pollo!",
     "price": 12.9,
@@ -497,7 +489,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Snacks",
+    "category": "Complementos",
     "name": "Nuggetspapa",
     "description": "Porción familiar de papas fritas con Nuggets x5",
     "price": 15.9,
@@ -505,15 +497,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Helados",
-    "name": "Sundae Suspiro",
-    "description": "Delicioso helado cremoso con manjar blanco , trozos de suspiros y canela en polvo",
-    "price": 7.9,
-    "sku": "BB2146473192"
-  },
-  {
-    "restaurant": "Bembos",
-    "category": "Helados",
+    "category": "Complementos",
     "name": "Sundae Chocoteja",
     "description": "Delicioso helado cremoso con manjar blanco y pecanas, cubierto con chocolate crocante",
     "price": 7.9,
@@ -521,7 +505,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Helados",
+    "category": "Complementos",
     "name": "Sundae Chocolúcuma",
     "description": "Delicioso helado cremoso con salsa de lúcuma y trocitos de brownie, cubierto con chocolate crocante",
     "price": 7.9,
@@ -529,7 +513,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Helados",
+    "category": "Complementos",
     "name": "Sundae Chocomaracuyá",
     "description": "Delicioso helado cremoso con salsa de maracuyá, gotas de chocolate y cobertura de chocolate crocante",
     "price": 7.9,
@@ -537,7 +521,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Bebidas",
+    "category": "Complementos",
     "name": "Coca Cola Sabor Original 500 ml",
     "description": "Acompaña tu combo con una Coca Cola sabor original de 500ml",
     "price": 5.9,
@@ -545,7 +529,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Bebidas",
+    "category": "Complementos",
     "name": "Coca Cola Sin Azúcar 500 ml",
     "description": "Si quieres hacer tu combo más saludable Bembos te da la opción de agregar como bebida Coca Cola Sin Azúcar de 500ml",
     "price": 5.9,
@@ -553,7 +537,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Bebidas",
+    "category": "Complementos",
     "name": "Inca Kola Sabor Original 500 ml",
     "description": "Acompaña tu combo con una Inka Kola sabor original de 500ml",
     "price": 5.9,
@@ -561,7 +545,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Bebidas",
+    "category": "Complementos",
     "name": "Inca kola Sin Azúcar 500 ml",
     "description": "Si quieres hacer tu combo más saludable Bembos te da la opción de agregar como bebida Inka Kola Sin Azúcar de 500ml",
     "price": 5.9,
@@ -569,7 +553,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Bebidas",
+    "category": "Complementos",
     "name": "Sprite 500 ml",
     "description": "Acompaña tu combo con una Sprite sabor original de 500ml",
     "price": 5.9,
@@ -577,7 +561,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Bebidas",
+    "category": "Complementos",
     "name": "Fanta 500ml",
     "description": "Acompaña tu combo con una Fanta sabor original de 500ml",
     "price": 5.9,
@@ -585,7 +569,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Bebidas",
+    "category": "Complementos",
     "name": "Agua San Luis sin gas 625 ml",
     "description": "Si quieres un combo más saludable Bembos te da la opción de agregar como bebida el Agua mineral San Luis de 625 ml.",
     "price": 4.9,
@@ -593,7 +577,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Salsas",
+    "category": "Complementos",
     "name": "Ají Bembos 3oz",
     "description": "Delicioso ají Bembos",
     "price": 4.5,
@@ -601,7 +585,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Salsas",
+    "category": "Complementos",
     "name": "Anticuchera 3oz",
     "description": "Deliciosa crema anticuchera",
     "price": 4.5,
@@ -609,7 +593,7 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Salsas",
+    "category": "Complementos",
     "name": "Ocopa 3oz",
     "description": "Deliciosa crema ocopa.",
     "price": 4.5,
@@ -641,18 +625,34 @@
   },
   {
     "restaurant": "Bembos",
-    "category": "Loncheritas",
-    "name": "Loncherita Faber Hamburguesa",
+    "category": "Loncherita por la Educación",
+    "name": "Loncherita por la educación - Faber Hamburguesa",
     "description": "1 Hamburguesa regular, 1 papa regular, 1 frugos 1 caja de plumones Faber x6 neón o pastel",
-    "price": 19.9,
+    "price": 20.9,
     "sku": "BB2146471161"
   },
   {
     "restaurant": "Bembos",
-    "category": "Loncheritas",
-    "name": "Loncherita Faber Nuggets",
+    "category": "Loncherita por la Educación",
+    "name": "Loncherita por la educación - Faber Nuggets",
     "description": "Nuggets x4, 1 papa regular, 1 frugos, 1 caja de plumones Faber x6 neón o pastel",
-    "price": 19.9,
+    "price": 20.9,
     "sku": "BB2146471162"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Loncherita por la Educación",
+    "name": "Loncherita por la educación - Sundae Nuggets",
+    "description": "Nuggets x4 + Papa regular + Frugos + Sundae chocolúcuma",
+    "price": 20.9,
+    "sku": "BB2146473713"
+  },
+  {
+    "restaurant": "Bembos",
+    "category": "Loncherita por la Educación",
+    "name": "Loncherita por la educación - Sundae Hamburguesa",
+    "description": "1 Hamburguesa básica regular + Papa regular + Frugos + Sundae chocolúcuma",
+    "price": 20.9,
+    "sku": "BB2146473712"
   }
 ]

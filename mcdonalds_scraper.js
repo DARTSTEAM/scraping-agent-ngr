@@ -1,4 +1,5 @@
 const { createKernelBrowser, closeKernelBrowser } = require('./kernel_browser');
+const { stamp } = require('./scrape_meta');
 const fs = require('fs');
 const path = require('path');
 
@@ -7,9 +8,87 @@ const DEFAULT_URL =
 
 /**
  * McDonald's Peru own-site scraper.
- * Intercepts catalog API responses and keeps every category with products
- * (no UI-nav / daypart filtering).
+ * Intercepts every /catalog API response, merges categories from the
+ * in-daypart (currently visible) catalogs, and drops breakfast-only
+ * sections when they are not in the primary menu.
  */
+
+function categoryTitle(category) {
+    return (category.title || category.name || '').trim();
+}
+
+function isDaypartCloneTitle(title) {
+    return /\(\s*desayuno\s*\)/i.test(title);
+}
+
+function isBreakfastCategoryTitle(title) {
+    return /^desayunos?$/i.test(title);
+}
+
+function catalogFlags(url) {
+    return {
+        isFeatured: /featured/i.test(url),
+        isOutDaypart: /outdaypart=true|out_of_daypart=true|daypart=breakfast/i.test(url),
+    };
+}
+
+function pickPrimaryCatalog(catalogResponses) {
+    const scored = catalogResponses.map(r => {
+        const productCount = r.data.reduce((n, c) => n + (c.products?.length || 0), 0);
+        return { ...r, productCount, ...catalogFlags(r.url) };
+    });
+    // McD PE always fetches ?outdaypart=true. Prefer the full menu over featured.
+    const preferred = scored.filter(r => !r.isFeatured);
+    const list = preferred.length > 0 ? preferred : scored;
+    list.sort((a, b) => b.productCount - a.productCount || b.data.length - a.data.length);
+    return { primary: list[0], scored };
+}
+
+function isPeruBreakfastWindow(now = new Date()) {
+    const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/Lima',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: false,
+    }).formatToParts(now);
+    const hour = Number(parts.find(p => p.type === 'hour')?.value || 0);
+    const minute = Number(parts.find(p => p.type === 'minute')?.value || 0);
+    return hour * 60 + minute < 11 * 60 + 45;
+}
+
+function allowedMcDCategories(scored, primary, now = new Date()) {
+    const breakfastActive = isPeruBreakfastWindow(now);
+    const allowed = new Set();
+
+    for (const r of scored) {
+        for (const category of r.data) {
+            const title = categoryTitle(category);
+            if (!title || isDaypartCloneTitle(title)) continue;
+            if (!(category.products || []).length) continue;
+            if (isBreakfastCategoryTitle(title) && !breakfastActive) continue;
+            allowed.add(title);
+        }
+    }
+
+    const dropped = [];
+    const seenTitles = new Set();
+    for (const r of scored) {
+        for (const category of r.data) {
+            const title = categoryTitle(category) || '(sin título)';
+            if (seenTitles.has(title)) continue;
+            seenTitles.add(title);
+            if (allowed.has(title)) continue;
+            let reason = 'fuera del menú visible';
+            if (title === '(sin título)' || !(category.products || []).length) reason = 'vacía';
+            else if (isDaypartCloneTitle(title)) reason = 'daypart clone';
+            else if (isBreakfastCategoryTitle(title) && !breakfastActive) reason = 'desayuno inactivo';
+            dropped.push(`${title} (${reason})`);
+        }
+    }
+
+    return { allowed, dropped };
+}
+
 async function scrapeMcDonalds(url) {
     console.log(`Iniciando scraping de McDonald's (Own): ${url}`);
     console.log(`🌐 Conectando al navegador remoto en Kernel (proxy residencial Perú)...`);
@@ -57,64 +136,49 @@ async function scrapeMcDonalds(url) {
             throw new Error('Se cargó la página pero no se detectaron llamadas API válidas de catálogo.');
         }
 
-        // Prefer non-featured full catalog when present; otherwise fullest by product count
-        const scored = catalogResponses.map(r => {
-            const productCount = r.data.reduce((n, c) => n + (c.products?.length || 0), 0);
-            const isFeatured = r.url.includes('featured');
-            return { ...r, productCount, isFeatured };
-        });
-        scored.sort((a, b) => {
-            if (a.isFeatured !== b.isFeatured && Math.abs(a.productCount - b.productCount) < 10) {
-                return a.isFeatured ? 1 : -1;
-            }
-            return b.productCount - a.productCount || b.data.length - a.data.length;
-        });
-        const catalogData = scored[0].data;
-        console.log(`Catálogo elegido: ${scored[0].url} (${scored[0].data.length} cats, ${scored[0].productCount} productos)`);
+        const { primary, scored } = pickPrimaryCatalog(catalogResponses);
+        const { allowed, dropped } = allowedMcDCategories(scored, primary);
+        console.log(`Catálogo primario: ${primary.url} (${primary.data.length} cats, ${primary.productCount} productos)`);
+        console.log(`Categorías visibles (merge): ${[...allowed].join(', ') || '(ninguna)'}`);
+        if (dropped.length > 0) {
+            console.log(`Categorías omitidas: ${dropped.join('; ')}`);
+        }
 
         const restaurantMatch = url.match(/\/restaurantes\/[^\/]+\/([^\/]+)/);
         const restaurantName = restaurantMatch ? `McDonalds ${restaurantMatch[1]}` : 'McDonalds Own';
 
         const extractedProducts = [];
-        const droppedCategories = [];
+        const seen = new Set();
+        const ordered = [primary, ...scored.filter(r => r.url !== primary.url)];
 
-        for (const category of catalogData) {
-            const title = (category.title || category.name || '').trim();
-            const products = category.products || [];
+        for (const response of ordered) {
+            for (const category of response.data) {
+                const title = categoryTitle(category);
+                if (!allowed.has(title)) continue;
 
-            if (!title || products.length === 0) {
-                droppedCategories.push(`${title || '(sin título)'} (vacía)`);
-                continue;
-            }
+                for (const product of category.products || []) {
+                    if (product.available === false || product.inStock === false || product.enabled === false) {
+                        continue;
+                    }
+                    const name = product.name || '';
+                    const key = `${name}||${title}`;
+                    if (!name || seen.has(key)) continue;
 
-            // Daypart clones (outdaypart=true) duplicate lunch items under "(Desayuno)".
-            if (/\(\s*desayuno\s*\)/i.test(title)) {
-                droppedCategories.push(`${title} (daypart clone)`);
-                continue;
-            }
+                    const amount = product.price?.amount ?? product.price ?? 0;
+                    const price = normalizeMcDPrice(amount);
+                    if (price === 0) continue;
 
-            for (const product of products) {
-                // Keep unavailable items out of pricing, but do not drop whole categories.
-                if (product.available === false || product.inStock === false || product.enabled === false) {
-                    continue;
+                    seen.add(key);
+                    extractedProducts.push({
+                        restaurant: restaurantName,
+                        category: title,
+                        name,
+                        description: product.description || '',
+                        price,
+                        inStock: true,
+                    });
                 }
-                const amount = product.price?.amount ?? product.price ?? 0;
-                const price = normalizeMcDPrice(amount);
-                if (price === 0) continue;
-
-                extractedProducts.push({
-                    restaurant: restaurantName,
-                    category: title || 'General',
-                    name: product.name || '',
-                    description: product.description || '',
-                    price,
-                    inStock: true,
-                });
             }
-        }
-
-        if (droppedCategories.length > 0) {
-            console.log(`Categorías omitidas: ${droppedCategories.join('; ')}`);
         }
 
         const storeIdMatch = url.match(/\/([^\/]+)\/pedidos\/?$/);
@@ -162,6 +226,7 @@ function saveData(products, storeId) {
     }).join('\n');
 
     fs.writeFileSync(csvPath, csvHeader + csvRows);
+    stamp(storeId);
     console.log(`Datos guardados en CSV: ${csvPath}`);
 }
 
@@ -170,5 +235,16 @@ function escapeCsv(str) {
     return str.replace(/"/g, '""');
 }
 
-const targetUrl = process.argv[2] || DEFAULT_URL;
-scrapeMcDonalds(targetUrl);
+module.exports = {
+    scrapeMcDonalds,
+    pickPrimaryCatalog,
+    allowedMcDCategories,
+    isPeruBreakfastWindow,
+    isBreakfastCategoryTitle,
+    categoryTitle,
+};
+
+if (require.main === module) {
+    const targetUrl = process.argv[2] || DEFAULT_URL;
+    scrapeMcDonalds(targetUrl);
+}

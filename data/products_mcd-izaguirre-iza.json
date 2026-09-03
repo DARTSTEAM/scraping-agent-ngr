@@ -1,46 +1,6 @@
 [
   {
     "restaurant": "McDonalds izaguirre-iza",
-    "category": "Clásicos del día",
-    "name": "McCombo grande Cuarto de Libra",
-    "description": "01 Cuarto de Libra, 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Imágenes referenciales",
-    "price": 16.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Clásicos del día",
-    "name": "McCombo mediano Cuarto de Libra con Queso",
-    "description": "01 Cuarto de Libra, 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Imágenes referenciales",
-    "price": 14.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Clásicos del día",
-    "name": "McCombo regular Cuarto de Libra",
-    "description": "01 Cuarto de Libra, 01 papa regular y 01 gaseosa regular de 12oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Imágenes referenciales",
-    "price": 12.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Clásicos del día",
-    "name": "Cuarto de Libra con Queso",
-    "description": "01 Cuarto de Libra. Sujeto a stock de local. Válido solo hoy. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 790,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Promociones",
-    "name": "Banquete Patrio",
-    "description": "8 piezas de pollo crujiente, 10 chicken McNuggets y 3 papas regulares. Las piezas de pollo son aleatorias. Sujeto a stock de local. Válida hasta el 31 de julio. Stock: 2,000 unds total país. Imágenes referenciales",
-    "price": 45.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
     "category": "Promociones",
     "name": "McCombo Big Mac y McFlurry Tres Leches",
     "description": "01 McCombo mediano Big Mac y 01 McFlurry Tres Leches base vainilla. McFlurry es de: helado de vainilla, keke de vainilla triturado, cobertura líquida sabor a leche condensada, cobertura líquida sabor a manjar y canela en polvo.Tamaño personal. Válido hoy. Sujeto a stock: 5mil uds país. Las gaseosas vienen con hielo. Imagen referencial",
@@ -61,22 +21,6 @@
     "name": "Pack x3: 3 elecciones y 3 papas",
     "description": "3 hamburguesas a elección entre Big Mac o Cuarto de Libra y 3 papas regulares. Sujeto a stock de local. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales",
     "price": 39.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Promociones",
-    "name": "6 Hamburguesas con queso",
-    "description": "6 hamburguesas con queso. Sujeto a stock de local. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales",
-    "price": 29.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Promociones",
-    "name": "6 Piezas de Pollo Crujiente",
-    "description": "6 piezas de pollo crujiente. Piezas de pollo aleatorias. Sujeto a stock de local. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales",
-    "price": 29.9,
     "inStock": true
   },
   {
@@ -172,7 +116,7 @@
     "category": "Promociones",
     "name": "McFlurry Tres Leches Vainilla",
     "description": "Helado de vainilla, keke de vainilla triturado, cobertura líquida sabor a leche condensada, cobertura líquida sabor a manjar y canela en polvo.Tamaño personal. Imagen referencial",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -180,7 +124,7 @@
     "category": "Promociones",
     "name": "McFlurry Tres Leches Chocolate",
     "description": "Helado de chocolate, keke de vainilla triturado, cobertura líquida sabor a leche condensada, cobertura líquida sabor a chocolate y canela en polvo. Tamaño personal. Imagen referencial",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -292,7 +236,7 @@
     "category": "Promociones",
     "name": "Hamburguesa y papas",
     "description": "1 papa regular y 1 hamburguesa de: carne de res, queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan sin ajonjolí. Válida de 1/09 al 31/10/24 o hasta agotar un stock de 50000 unds. Imagen referencial",
-    "price": 990,
+    "price": 9.9,
     "inStock": true
   },
   {
@@ -308,7 +252,7 @@
     "category": "Promociones",
     "name": "McFlurry Oreo",
     "description": "1 helado McFlurry Oreo. Imagen referencial",
-    "price": 650,
+    "price": 6.5,
     "inStock": true
   },
   {
@@ -316,7 +260,7 @@
     "category": "Promociones",
     "name": "Exclusivo: 2do McFlurry Oreo a S/1",
     "description": "2 McFlurry Oreo. Promoción válida todo el mes. Imagen referencial. Máximo 3 promociones por día por usuario",
-    "price": 890,
+    "price": 8.9,
     "inStock": true
   },
   {
@@ -324,7 +268,7 @@
     "category": "Promociones",
     "name": "SUPERCONO",
     "description": "1 helado supercono. Imagen referencial",
-    "price": 290,
+    "price": 2.9,
     "inStock": true
   },
   {
@@ -332,7 +276,7 @@
     "category": "Promociones",
     "name": "Sundae",
     "description": "1 helado sundae, sabor de topping líquido a elección. Imagen referencial",
-    "price": 390,
+    "price": 3.9,
     "inStock": true
   },
   {
@@ -340,7 +284,7 @@
     "category": "Promociones",
     "name": "2 Pies de Manzana",
     "description": "2 pies de manzana. Ver descripción en la sección \"Postres\". Válida durante el mes. Imagenes referenciales. Stock: 3,000 unds",
-    "price": 790,
+    "price": 7.9,
     "inStock": true
   },
   {
@@ -348,7 +292,7 @@
     "category": "Promociones",
     "name": "McFlurry Biscolata Chocolate",
     "description": "Helado de vainilla, galletas Biscolata rellenas con chocolate y crema de avellanas, con cobertura líquida de chocolate. Tamaño personal. Imagen referencial",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -356,7 +300,7 @@
     "category": "Promociones",
     "name": "McFlurry Biscolata Manjar",
     "description": "Helado de vainilla, galletas Biscolata rellenas con chocolate y crema de avellanas, con cobertura líquida de manjar. Tamaño personal. Imagen referencial",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -372,47 +316,87 @@
     "category": "Promociones",
     "name": "CONO",
     "description": "Cono de Helado de Vainilla, Chocolate o Base Combinada. Válido todo el mes y/o hasta agotar stock de 3,000 unidades. Imágenes referenciales",
-    "price": 200,
+    "price": 2,
     "inStock": true
   },
   {
     "restaurant": "McDonalds izaguirre-iza",
-    "category": "Combos Inca Kola",
-    "name": "McCombo grande Cuarto de Libra con Queso",
-    "description": "Hamburguesa de carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
-    "price": 24.9,
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Grande Nuggetsx10 Huntr/x",
+    "description": "10 Chicken McNuggets, 1 papas grandes McShaker con sazonador Ramyeon, 2 salsas Hunter, 1 bebida de perlas Blueberry x Sprite y 1 sobre de photocards Huntr/x. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 33.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds izaguirre-iza",
-    "category": "Combos Inca Kola",
-    "name": "McCombo grande Big Mac",
-    "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande de 21 oz, a elección. Imagen referencial",
-    "price": 23.9,
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Grande Cuarto BLT Saja Boys",
+    "description": "1 Cuarto de Libra BLT compuesta por carne de res, lechuga, tocino, tomate, queso, pan, cebolla, ketchup, mayonesa, pepinillos y mostaza; 1 papas medianas McShaker con sazonador Ramyeon; 1 salsa Demon; 1 bebida de perlas Blueberry x Sprite y 1 sobre de photocards Saja Boys. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 33.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds izaguirre-iza",
-    "category": "Combos Inca Kola",
-    "name": "McCombo grande McPollo con queso",
-    "description": "Hamburguesa de pollo apanado, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
-    "price": 23.9,
+    "category": "Kpop Demon Hunters",
+    "name": "Derpy Sundae con perlas de Blueberry",
+    "description": "Sundae con perlas de Blueberry. Helado de base vainilla. Imagen referencial",
+    "price": 5.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds izaguirre-iza",
-    "category": "Combos Inca Kola",
-    "name": "Combo grande 3 piezas de pollo crispy",
-    "description": "3 piezas de pollo crispy (enharinado y frito) con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
-    "price": 26.9,
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Grande Huntr/x + Derpy Sundae",
+    "description": "10 Chicken McNuggets, 1 papas grandes McShaker con sazonador Ramyeon, 2 salsas Hunter, 1 bebida de perlas Blueberry x Sprite, 1 sobre de photocards Huntr/x y 1 Derpy Sundae con perlas de Blueberry. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 38.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds izaguirre-iza",
-    "category": "Combos Inca Kola",
-    "name": "McCombo mediano Cuarto de Libra con Queso",
-    "description": "Hamburguesa de carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
-    "price": 22.9,
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Grande Saja Boys + Derpy Sundae",
+    "description": "1 Cuarto de Libra BLT compuesta por carne de res, lechuga, tocino, tomate, queso, pan, cebolla, ketchup, mayonesa, pepinillos y mostaza; 1 papas medianas McShaker con sazonador Ramyeon; 1 salsa Demon; 1 bebida de perlas Blueberry x Sprite; 1 sobre de photocards Saja Boys y 1 Derpy Sundae con perlas de Blueberry. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 38.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Mediano Huntr/x + Derpy Sundae",
+    "description": "10 Chicken McNuggets, 1 papas medianas McShaker con sazonador Ramyeon, 2 salsas Hunter, 1 bebida de perlas Blueberry x Sprite, 1 sobre de photocards Huntr/x y 1 Derpy Sundae con perlas de Blueberry. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Mediano Saja Boys + Derpy Sundae",
+    "description": "1 Cuarto de Libra BLT compuesta por carne de res, lechuga, tocino, tomate, queso, pan, cebolla, ketchup, mayonesa, pepinillos y mostaza; 1 papas medianas McShaker con sazonador Ramyeon; 1 salsa Demon; 1 bebida de perlas Blueberry x Sprite; 1 sobre de photocards Saja Boys y 1 Derpy Sundae con perlas de Blueberry. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Mediano Nuggetsx10 Huntr/x",
+    "description": "10 Chicken McNuggets, 1 papas medianas McShaker con sazonador Ramyeon, 2 salsas Hunter, 1 bebida de perlas Blueberry x Sprite y 1 sobre de photocards Huntr/x. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Mediano Cuarto BLT Saja Boys",
+    "description": "1 Cuarto de Libra BLT compuesta por carne de res, lechuga, tocino, tomate, queso, pan, cebolla, ketchup, mayonesa, pepinillos y mostaza; 1 papas medianas McShaker con sazonador Ramyeon; 1 salsa Demon; 1 bebida de perlas Blueberry x Sprite y 1 sobre de photocards Saja Boys. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Kpop Demon Hunters",
+    "name": "Bebida con perlas de Blueberry",
+    "description": "Bebida de perlas de Blueberry hecha con Sprite. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -425,26 +409,10 @@
   },
   {
     "restaurant": "McDonalds izaguirre-iza",
-    "category": "Combos Inca Kola",
-    "name": "McCombo mediano McPollo con queso",
-    "description": "Hamburguesa de pollo apanado, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
-    "price": 21.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Combos Inca Kola",
-    "name": "Combo mediano 3 piezas de pollo crispy",
-    "description": "3 piezas de pollo crispy (enharinado y frito) con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
-    "price": 24.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
     "category": "McCombos",
     "name": "McCombo grande Bacon Cheddar McMelt Doble",
     "description": "Hamburguesa Grand Bacon Cheddar McMelt de dos carnes, 1 gaseosa grande 21 oz sabor a elección y 1 papas grandes. Imagen referencial",
-    "price": 33.9,
+    "price": 30.9,
     "inStock": true
   },
   {
@@ -460,7 +428,7 @@
     "category": "McCombos",
     "name": "McCombo grande Bacon Cheddar McMelt Triple",
     "description": "Hamburguesa Grand Bacon Cheddar McMelt de tres carnes, 1 gaseosa grande 21 oz sabor a elección y 1 papas grandes. Imagen referencial",
-    "price": 39.9,
+    "price": 33.9,
     "inStock": true
   },
   {
@@ -468,7 +436,7 @@
     "category": "McCombos",
     "name": "McCombo grande Argentina doble",
     "description": "01 hamburguesa \"Argentina\", 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 33.9,
+    "price": 30.9,
     "inStock": true
   },
   {
@@ -476,15 +444,7 @@
     "category": "McCombos",
     "name": "McCombo grande USA doble",
     "description": "01 hamburguesa \"Usa\", 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 33.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "McCombos",
-    "name": "McCombo grande Mexico",
-    "description": "01 hamburguesa \"México\", 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 27.9,
+    "price": 30.9,
     "inStock": true
   },
   {
@@ -508,7 +468,7 @@
     "category": "McCombos",
     "name": "McCombo mediano Argentina doble",
     "description": "01 hamburguesa \"Argentina\", 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 31.9,
+    "price": 28.9,
     "inStock": true
   },
   {
@@ -516,15 +476,7 @@
     "category": "McCombos",
     "name": "McCombo mediano USA doble",
     "description": "01 hamburguesa \"Usa\", 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 31.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "McCombos",
-    "name": "McCombo mediano Mexico",
-    "description": "01 hamburguesa \"México\", 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 25.9,
+    "price": 28.9,
     "inStock": true
   },
   {
@@ -644,7 +596,7 @@
     "category": "McCombos",
     "name": "McCombo mediano Bacon Cheddar McMelt Doble",
     "description": "Hamburguesa Grand Bacon Cheddar McMelt de dos carnes, 1 gaseosa mediana 16 oz sabor a elección y 1 papas medianas. Imagen referencial",
-    "price": 31.9,
+    "price": 28.9,
     "inStock": true
   },
   {
@@ -660,7 +612,7 @@
     "category": "McCombos",
     "name": "McCombo mediano Bacon Cheddar McMelt Triple",
     "description": "Hamburguesa Grand Bacon Cheddar McMelt de tres carnes, 1 gaseosa mediana 16 oz sabor a elección y 1 papas medianas. Imagen referencial",
-    "price": 37.9,
+    "price": 31.9,
     "inStock": true
   },
   {
@@ -867,7 +819,7 @@
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Cajita Feliz",
     "name": "Cajita Feliz Hamburguesa",
-    "description": "Cajita Feliz™ hamburguesa, pepinillos, mostaza, ketchup, cebolla fresca. Papa kids, 1agua, 1yogurt, 1juguete. ©2026McDonald’s © &™2026 MARVEL. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 07.07 al 10.08.26 y/o hasta agotar stock de 142 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
+    "description": "Cajita Feliz™ hamburguesa, pepinillos, mostaza, ketchup, cebolla fresca. Papa kids, 1agua, 1yogurt, 1juguete.©2026McDonald’s ©2026 Crocs, Inc. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 11.08 al 14.09.26 y/o hasta agotar stock de 189 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
     "price": 19.9,
     "inStock": true
   },
@@ -875,7 +827,7 @@
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Cajita Feliz",
     "name": "Cajita Feliz Hamburguesa con Queso",
-    "description": "Cajita Feliz™ hamburguesa, queso, pepinillos, mostaza, ketchup, cebolla fresca. Papa kids, 1agua, 1yogurt, 1juguete. ©2026McDonald’s © &™2026 MARVEL. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 07.07 al 10.08.26 y/o hasta agotar stock de 142 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
+    "description": "Cajita Feliz™ hamburguesa,queso,pepinillos,mostaza,ketchup,cebolla fresca. Papa kids, 1agua, 1yogurt,1juguete.©2026McDonald’s ©2026 Crocs, Inc. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 11.08 al 14.09.26 y/o hasta agotar stock de 189 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
     "price": 19.9,
     "inStock": true
   },
@@ -883,7 +835,7 @@
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Cajita Feliz",
     "name": "Cajita Feliz Chicken McNuggets 4 unidades",
-    "description": "Cajita Feliz™:4 nuggets de pechuga de pollo, 1papa kids, 1agua, 1yogurt, 1juguete. ©2026McDonald’s © & ™ 2026 MARVEL. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 07.07.26 al 10.08.26 y/o hasta agotar stock de 142 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
+    "description": "Cajita Feliz™:4 nuggets de pechuga de pollo, 1papa kids, 1agua, 1yogurt, 1juguete.©2026McDonald’s ©2026 Crocs, Inc. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 11.08 al 14.09.26 y/o hasta agotar stock de 189 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
     "price": 19.9,
     "inStock": true
   },
@@ -891,7 +843,7 @@
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Cajita Feliz",
     "name": "Cajita Feliz 1 pieza de pollo",
-    "description": "Cajita Feliz™: 1 pieza de pollo crispy (enharinado y frito), 1papa kids, 1agua, 1yogurt, 1juguete. ©2026McDonald’s © & ™ 2026 MARVEL. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 07.07.26 al 10.08.26 y/o hasta agotar stock de 142 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
+    "description": "Cajita Feliz™: 1 pieza de pollo crispy (enharinado y frito), 1papa kids, 1agua, 1yogurt, 1juguete.©2026McDonald’s ©2026 Crocs, Inc. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 11.08 al 14.09.26 y/o hasta agotar stock de 189 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
     "price": 19.9,
     "inStock": true
   },
@@ -899,7 +851,7 @@
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Cajita Feliz",
     "name": "Cajita Feliz McFiesta Jr",
-    "description": "Cajita Feliz™ con hamburguesa de res, tomate, lechuga en pan sin ajonjolí; 1papa kids, 1agua, 1yogurt, 1juguete. ©2026McDonald’s © &™2026 MARVEL.©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 07.07 al 10.08.26 y/o hasta agotar stock de 142 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
+    "description": "Cajita Feliz™ con hamburguesa de res,tomate,lechuga en pan sin ajonjolí; 1papa kids, 1agua, 1yogurt, 1juguete.©2026McDonald’s ©2026 Crocs, Inc. ©2026 CPII & TSG. ©2025/2026 ROBERTO GÓMEZ FERNÁNDEZ all rights reserved. Del 11.08 al 14.09.26 y/o hasta agotar stock de 189 mil unds y/o lo que ocurra primero. Juguete sujeto a stock y sin posibilidad de cambio. Yogurt refrigerado. Imagen referencial",
     "price": 19.9,
     "inStock": true
   },
@@ -1026,81 +978,9 @@
   {
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Postres",
-    "name": "McFlurry Sublime",
-    "description": "Helado de vainilla, trozos de chocolate sublime y cobertura líquida de chocolate. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 850,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
-    "name": "Sundae Fresa",
-    "description": "Helado de vainilla con cobertura líquida de fresa. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 590,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
-    "name": "Super Cono ChocoTwist",
-    "description": "Incluye helado sabor vainilla, helado sabor chocolate, un barquillo de chocolate y 1 stick de vainilla y chocolate. Imagenes referenciales",
-    "price": 400,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
-    "name": "Super Cono Combinado",
-    "description": "Helado de vainilla y chocolate en barquillo. Imagen referencial",
-    "price": 350,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
-    "name": "Super Cono de Vainilla",
-    "description": "Helado de vainilla en barquillo. Imagen referencial",
-    "price": 350,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
-    "name": "Super Cono de Chocolate",
-    "description": "Helado de chocolate en barquillo. Imagen referencial",
-    "price": 350,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
-    "name": "Cono ChocoTwist",
-    "description": "Incluye helado sabor vainilla, helado sabor chocolate, un barquillo de chocolate y 1 stick de vainilla y chocolate. Imagenes referenciales",
-    "price": 350,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
-    "name": "Cono Combinado",
-    "description": "Helado de vainilla y chocolate en barquillo. Imagen referencial",
-    "price": 290,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
-    "name": "Cono de Chocolate",
-    "description": "Helado de chocolate en barquillo. Imagen referencial",
-    "price": 290,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Postres",
     "name": "McFlurry Tres Leches Manjar",
     "description": "Helado de vainilla, keke de vainilla triturado, cobertura líquida sabor a leche condensada, cobertura líquida sabor a manjar y canela en polvo.Tamaño personal. Imagen referencial",
-    "price": 850,
+    "price": 8.5,
     "inStock": true
   },
   {
@@ -1108,7 +988,7 @@
     "category": "Postres",
     "name": "McFlurry Tres Leches Chocolate",
     "description": "Helado de chocolate, keke de vainilla triturado, cobertura líquida sabor a leche condensada, cobertura líquida sabor a chocolate y canela en polvo. Tamaño personal. Imagen referencial",
-    "price": 850,
+    "price": 8.5,
     "inStock": true
   },
   {
@@ -1116,7 +996,7 @@
     "category": "Postres",
     "name": "McShake Oreo",
     "description": "Helado de vainilla, trocitos de Oreo y topping de chocolate. Tamaño personal. Imagen referencial",
-    "price": 990,
+    "price": 9.9,
     "inStock": true
   },
   {
@@ -1124,7 +1004,7 @@
     "category": "Postres",
     "name": "McShake Fresa",
     "description": "Helado de vainilla y topping líquido de fresa. Tamaño personal. Imagen referencial",
-    "price": 890,
+    "price": 8.9,
     "inStock": true
   },
   {
@@ -1132,7 +1012,7 @@
     "category": "Postres",
     "name": "McShake Manjar",
     "description": "Helado de vainilla y topping líquido de manjar. Tamaño personal. Imagen referencial",
-    "price": 890,
+    "price": 8.9,
     "inStock": true
   },
   {
@@ -1140,7 +1020,7 @@
     "category": "Postres",
     "name": "McShake Chocolate",
     "description": "Helado de vainilla y topping líquido de chocolate. Tamaño personal. Imagen referencial",
-    "price": 890,
+    "price": 8.9,
     "inStock": true
   },
   {
@@ -1148,7 +1028,7 @@
     "category": "Postres",
     "name": "McFlurry Biscolata Chocolate",
     "description": "Helado de vainilla, galletas Biscolata rellenas con chocolate y crema de avellanas, con cobertura líquida de chocolate. Tamaño personal. Imagen referencial",
-    "price": 850,
+    "price": 8.5,
     "inStock": true
   },
   {
@@ -1156,7 +1036,7 @@
     "category": "Postres",
     "name": "McFlurry Biscolata Manjar",
     "description": "Helado de vainilla, galletas Biscolata rellenas con chocolate y crema de avellanas, con cobertura líquida de manjar. Tamaño personal. Imagen referencial",
-    "price": 850,
+    "price": 8.5,
     "inStock": true
   },
   {
@@ -1164,7 +1044,7 @@
     "category": "Postres",
     "name": "McFlurry Oreo",
     "description": "Helado de vainilla, trozos de galleta oreo y cobertura líquida de chocolate. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 790,
+    "price": 7.9,
     "inStock": true
   },
   {
@@ -1172,7 +1052,7 @@
     "category": "Postres",
     "name": "McFlurry mini M&M's Chocolate",
     "description": "Helado de vainilla, chocolate mini m&m y cobertura líquida de chocolate en delivery. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 850,
+    "price": 8.5,
     "inStock": true
   },
   {
@@ -1180,7 +1060,15 @@
     "category": "Postres",
     "name": "McFlurry Mini M&M's Manjar",
     "description": "Helado de vainilla, chocolate mini m&m y cobertura líquida de manjar. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 850,
+    "price": 8.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "McFlurry Sublime",
+    "description": "Helado de vainilla, trozos de chocolate sublime y cobertura líquida de chocolate. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 8.5,
     "inStock": true
   },
   {
@@ -1188,7 +1076,7 @@
     "category": "Postres",
     "name": "Sundae Doble Chocolate",
     "description": "Helado de vainilla con doble cobertura líquida de chocolate. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 650,
+    "price": 6.5,
     "inStock": true
   },
   {
@@ -1196,7 +1084,7 @@
     "category": "Postres",
     "name": "Sundae Doble Fresa",
     "description": "Helado de vainilla con doble cobertura líquida de fresa. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 650,
+    "price": 6.5,
     "inStock": true
   },
   {
@@ -1204,7 +1092,15 @@
     "category": "Postres",
     "name": "Sundae Doble Manjar",
     "description": "Helado de vainilla con doble cobertura líquida de manjar. Tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 650,
+    "price": 6.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Sundae Fresa",
+    "description": "Helado de vainilla con cobertura líquida de fresa. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1212,7 +1108,7 @@
     "category": "Postres",
     "name": "Sundae Chocolate",
     "description": "Helado de vainilla con cobertura líquida de chocolate. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1220,7 +1116,7 @@
     "category": "Postres",
     "name": "Sundae Manjar",
     "description": "Helado de vainilla con cobertura líquida de manjar. tamaño personal. Los extras se agregan en el fondo del envase. Imagen referencial",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1228,7 +1124,7 @@
     "category": "Postres",
     "name": "McColoso Mini M&M's",
     "description": "Helado de vainilla en cono con topping de manjar y chocolate mini M&M. Imagen referencial",
-    "price": 490,
+    "price": 4.9,
     "inStock": true
   },
   {
@@ -1236,7 +1132,7 @@
     "category": "Postres",
     "name": "McColoso Selva negra",
     "description": "Helado de vainilla en cono con topping de fresa y trozos de galleta oreo. Imagen referencial",
-    "price": 450,
+    "price": 4.5,
     "inStock": true
   },
   {
@@ -1244,7 +1140,7 @@
     "category": "Postres",
     "name": "McColoso Oreo",
     "description": "Helado de vainilla en cono con topping de chocolate y trozos de galleta oreo. Imagen referencial",
-    "price": 450,
+    "price": 4.5,
     "inStock": true
   },
   {
@@ -1252,7 +1148,55 @@
     "category": "Postres",
     "name": "McColoso Sublime",
     "description": "Helado de vainilla en cono con topping de chocolate y trozos de chocolate sublime. Imagen referencial",
-    "price": 450,
+    "price": 4.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Super Cono ChocoTwist",
+    "description": "Incluye helado sabor vainilla, helado sabor chocolate, un barquillo de chocolate y 1 stick de vainilla y chocolate. Imagenes referenciales",
+    "price": 4,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Super Cono Combinado",
+    "description": "Helado de vainilla y chocolate en barquillo. Imagen referencial",
+    "price": 3.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Super Cono de Vainilla",
+    "description": "Helado de vainilla en barquillo. Imagen referencial",
+    "price": 3.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Super Cono de Chocolate",
+    "description": "Helado de chocolate en barquillo. Imagen referencial",
+    "price": 3.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Cono ChocoTwist",
+    "description": "Incluye helado sabor vainilla, helado sabor chocolate, un barquillo de chocolate y 1 stick de vainilla y chocolate. Imagenes referenciales",
+    "price": 3.5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Cono Combinado",
+    "description": "Helado de vainilla y chocolate en barquillo. Imagen referencial",
+    "price": 2.9,
     "inStock": true
   },
   {
@@ -1260,15 +1204,23 @@
     "category": "Postres",
     "name": "Cono de Vainilla",
     "description": "Helado de vainilla en barquillo. Imagen referencial",
-    "price": 290,
+    "price": 2.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Postres",
+    "name": "Cono de Chocolate",
+    "description": "Helado de chocolate en barquillo. Imagen referencial",
+    "price": 2.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Postres",
     "name": "Pie + Café",
-    "description": "Un café americano de 14 oz con un pie de manzana. Ver detalle en postres. Válido durante el mes, sujeto a stock. Stock: 2 mil. Imágenes referenciales",
-    "price": 890,
+    "description": "Café pasado de 12 oz con un pie de manzana (ver detalle en Postres). Sujeto a stock en local. Imagen referencial",
+    "price": 8.9,
     "inStock": true
   },
   {
@@ -1276,7 +1228,7 @@
     "category": "Postres",
     "name": "Pie de Manzana",
     "description": "Delicioso pastel de manzana caliente con un toque de canela envuelto en hojaldre. Válido durante el mes, sujeto a stock. Stock: 2mil. Imágenes referenciales",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1317,14 +1269,6 @@
     "name": "USA doble",
     "description": "Doble carne de res en pan con ajonjolí, salsa BBQ, pepinillos, tiras de tocino, queso, cebolla grillada y mayonesa. Imagen referencial",
     "price": 26.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Hamburguesas",
-    "name": "Mexico",
-    "description": "Hamburguesa de pollo en pan con ajonjolí, salsa mayopalta, tomate, lechuga, tiras de tocino, queso, tostitos y cebolla grillada. Imagen referencial",
-    "price": 20.9,
     "inStock": true
   },
   {
@@ -1450,17 +1394,9 @@
   {
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Para acompañar",
-    "name": "Papas Bravas",
-    "description": "01 porción de papas medianas con nueva salsa brava. Imagen referencial",
-    "price": 10.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds izaguirre-iza",
-    "category": "Para acompañar",
     "name": "Papas regulares",
     "description": "Papas fritas en tamaño regular. Imágenes referenciales",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1468,7 +1404,7 @@
     "category": "Para acompañar",
     "name": "Papas grandes",
     "description": "Papas fritas en tamaño grande",
-    "price": 790,
+    "price": 7.9,
     "inStock": true
   },
   {
@@ -1476,7 +1412,7 @@
     "category": "Para acompañar",
     "name": "Papas medianas",
     "description": "Papas fritas en tamaño mediano",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -1484,7 +1420,7 @@
     "category": "Bebidas",
     "name": "Splash x Sprite",
     "description": "16oz.Bebida gasificada con sprite y jaraba de frutos rojos. La bebida incluye hielo. Imagen referencial",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -1492,7 +1428,7 @@
     "category": "Bebidas",
     "name": "Coca-Cola grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -1500,7 +1436,7 @@
     "category": "Bebidas",
     "name": "Inca Kola grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -1508,7 +1444,7 @@
     "category": "Bebidas",
     "name": "Coca-Cola Zero Azúcar grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -1516,7 +1452,7 @@
     "category": "Bebidas",
     "name": "Inca Kola Zero Azúcar grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -1524,7 +1460,7 @@
     "category": "Bebidas",
     "name": "Sprite grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -1532,7 +1468,7 @@
     "category": "Bebidas",
     "name": "Fanta grande",
     "description": "21 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 690,
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -1540,7 +1476,7 @@
     "category": "Bebidas",
     "name": "Coca-Cola Zero Azúcar mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1548,7 +1484,7 @@
     "category": "Bebidas",
     "name": "Coca-Cola mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1556,7 +1492,7 @@
     "category": "Bebidas",
     "name": "Inca Kola Zero Azúcar mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1564,7 +1500,7 @@
     "category": "Bebidas",
     "name": "Inca Kola mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1572,7 +1508,7 @@
     "category": "Bebidas",
     "name": "Sprite mediana",
     "description": "16 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1580,15 +1516,15 @@
     "category": "Bebidas",
     "name": "Fanta mediana",
     "description": "16 oz. Imagen referencial",
-    "price": 590,
+    "price": 5.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds izaguirre-iza",
     "category": "Bebidas",
     "name": "Café Pasado",
-    "description": "Café americano de 14 oz. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
-    "price": 590,
+    "description": "Café pasado de 12 oz. Sujeto a stock en local. Imagen referencial",
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1596,7 +1532,7 @@
     "category": "Bebidas",
     "name": "Coca-Cola Zero Azúcar regular",
     "description": "12 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 490,
+    "price": 4.9,
     "inStock": true
   },
   {
@@ -1604,7 +1540,7 @@
     "category": "Bebidas",
     "name": "Inca Kola Zero Azúcar regular",
     "description": "12 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 490,
+    "price": 4.9,
     "inStock": true
   },
   {
@@ -1612,7 +1548,7 @@
     "category": "Bebidas",
     "name": "Coca-Cola regular",
     "description": "12 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 490,
+    "price": 4.9,
     "inStock": true
   },
   {
@@ -1620,7 +1556,7 @@
     "category": "Bebidas",
     "name": "Inca Kola regular",
     "description": "12 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 490,
+    "price": 4.9,
     "inStock": true
   },
   {
@@ -1628,7 +1564,7 @@
     "category": "Bebidas",
     "name": "Sprite regular",
     "description": "12 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 490,
+    "price": 4.9,
     "inStock": true
   },
   {
@@ -1636,7 +1572,7 @@
     "category": "Bebidas",
     "name": "Fanta regular",
     "description": "12 oz. La bebida incluye hielo. Imágenes referenciales",
-    "price": 490,
+    "price": 4.9,
     "inStock": true
   },
   {
@@ -1644,7 +1580,7 @@
     "category": "Bebidas",
     "name": "Agua San Luis",
     "description": "500 ml",
-    "price": 490,
+    "price": 4.9,
     "inStock": true
   },
   {
@@ -1652,7 +1588,135 @@
     "category": "Bebidas",
     "name": "Café con Leche",
     "description": "Café con Leche. Sujeto a stock. Imágenes Referenciales",
-    "price": 590,
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Sándwich Queso, Huevo y Tocino",
+    "description": "Sándwich con queso cheddar, huevo frito y tocino",
+    "price": 10,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McHuevo Deluxe",
+    "description": "Sándwich con un huevo frito, una carne de res y mayonesa en pan sin ajonjolí",
+    "price": 12,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Tostado, Tocino y Queso",
+    "description": "Sándwich tostado con tocino y queso cheddar amarillo. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 8,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Tostado Tocino y Queso + Café",
+    "description": "Sándwich tostado tocino y queso y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Doble Huevo + Café",
+    "description": "Café americano de 14 oz. más un sándwich con dos huevos fritos y doble queso cheddar amarillo en pan sin ajonjolí. Producto válido hasta las 11:45 a.m. o sujeto a stock. Imagen referencial",
+    "price": 13.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McHuevo + Café",
+    "description": "Sándwich McHuevo y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Café con Hamburguesa con queso",
+    "description": "Café americano de 14 oz. más un sándwich de hamburguesa de res, un queso cheddar amarillo, pepinillos, mostaza, ketchup, cebolla fresca en pan sin ajonjolí. Imagen referencial",
+    "price": 11.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McQueso + Café",
+    "description": "Un sándwich McQueso y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 9.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Sándwich Queso, Huevo y Tocino + Café",
+    "description": "Sándwich Queso, Huevo y Tocino y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
+    "price": 12.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McHuevo Deluxe + Café",
+    "description": "Sándwich con un huevo frito, una carne de res y mayonesa en pan sin ajonjolí. y un café de 14 oz",
+    "price": 14.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Doble Huevo",
+    "description": "Sándwich con dos huevos fritos y doble queso cheddar amarillo en pan sin ajonjolí. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "price": 11,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McHuevo",
+    "description": "Sándwich con un huevo frito, una carne de res y mayonesa en pan sin ajonjolí. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "price": 9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Hamburguesa con Queso",
+    "description": "Sándwich de hamburguesa de res, un queso cheddar amarillo, pepinillos, mostaza, ketchup, cebolla fresca en pan sin ajonjolí. Imagen referencial",
+    "price": 10.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "McQueso",
+    "description": "Sándwich tostado con un queso cheddar amarillo. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "price": 5,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Café Pasado",
+    "description": "Café pasado de 12 oz. Sujeto a stock en local. Imagen referencial",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds izaguirre-iza",
+    "category": "Desayunos",
+    "name": "Café con Leche",
+    "description": "Café con Leche. Sujeto a stock. Imágenes Referenciales",
+    "price": 5.9,
     "inStock": true
   }
 ]

@@ -1,4 +1,5 @@
 const { createKernelBrowser, closeKernelBrowser } = require('./kernel_browser');
+const { stamp } = require('./scrape_meta');
 const fs = require('fs');
 const path = require('path');
 
@@ -8,9 +9,9 @@ const path = require('path');
  * share the same Magento/SummaTheme frontend with identical DOM structure.
  *
  * Categories:
- *   - Parent sections are /menu/<slug> (Combos, Hamburguesas, …)
- *   - Subcategory filters (grouped-subcategory-filter) give finer labels when present
- *   - Prefer subcategory; fall back to parent section name (never lump into "General")
+ *   - Parent sections are /menu/<slug> (Combos, Hamburguesas, Promociones, …)
+ *   - Subcategory filters (Personales, Para 2, …) are ignored when a parent exists
+ *   - Prefer the general/parent category; never emit "General"
  */
 
 const BRAND_MAP = {
@@ -96,8 +97,20 @@ function extractMagentoProductsBrowser({ restaurantName, parentCategory }) {
             if (catMap[id]) { subcategory = catMap[id]; break; }
         }
 
-        const parent = sectionParentByItem.get(el) || walkParent || parentCategory || null;
-        const category = subcategory || parent || 'General';
+        const parentFromPath = (() => {
+            try {
+                const m = location.pathname.match(/^\/menu\/([a-z0-9-]+)\/?$/i);
+                if (!m) return null;
+                const slug = m[1].toLowerCase();
+                if (slug === 'ver-todo' || slug === 'menu') return null;
+                return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+            } catch (_) {
+                return null;
+            }
+        })();
+        const parent = parentCategory || sectionParentByItem.get(el) || walkParent || parentFromPath || null;
+        const category = parent || subcategory || null;
+        if (!category) continue;
 
         const key = `${name}||${category}`;
         if (seen.has(key)) continue;
@@ -251,6 +264,7 @@ async function scrapeMagento(url) {
 
     const seen = new Set();
     const unique = allProducts.filter(p => {
+        if (!p.category || p.category === 'General') return false;
         const key = `${p.name}||${p.category}`;
         if (seen.has(key)) return false;
         seen.add(key);
@@ -270,6 +284,7 @@ async function scrapeMagento(url) {
             [esc(p.restaurant), esc(p.category), esc(p.name), esc(p.description), p.price].join(',')
         );
         fs.writeFileSync(path.join(__dirname, `products_${brand.storeId}.csv`), [header, ...rows].join('\n'));
+        stamp(brand.storeId);
         console.log(`Guardado: products_${brand.storeId}.json / .csv`);
     } else {
         console.error('No se extrajo ningún producto.');

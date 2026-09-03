@@ -1,7 +1,7 @@
 [
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
     "name": "Promo Familiar",
     "description": "1 Pollo Brasa Don Beli + Papas fritas Familiares  + Salsas.",
     "price": 69.9,
@@ -9,7 +9,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
     "name": "Combo Pollero",
     "description": "1 pollo a la brasa + papas fritas + bot. gaseosa + salsas.",
     "price": 73.9,
@@ -17,15 +17,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
-    "name": "Clásico Combo Contundente",
-    "description": "1 pollo a la brasa + 1/4 pollo + papas familiares + ensalada fresca familiar + 1 bot. gaseosa 1.5L + salsas.",
-    "price": 79.9,
-    "sku": "DB2146467300"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
     "name": "Combo Familiar",
     "description": "1 Pollo Brasa Don Beli + Papas fritas Familiares  + Ensalada fresca + Gaseosa 1.5L + Salsas.",
     "price": 79.9,
@@ -33,7 +25,15 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
+    "name": "Clásico Combo Contundente",
+    "description": "1 pollo a la brasa + 1/4 pollo + papas familiares + ensalada fresca familiar + 1 bot. gaseosa 1.5L + salsas.",
+    "price": 79.9,
+    "sku": "DB2146467300"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
     "name": "Banquete Pollero",
     "description": "1 pollo a la brasa + 2 papas fritas + 1 arroz chaufa + 1 camote + bot. gaseosa + salsas.",
     "price": 89.9,
@@ -41,15 +41,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
-    "name": "Super Combo Patrio",
-    "description": "1 pollo a la brasa + 1/2 pollo a la brasa + papas familiares + gaseosa 1.5L + salsas.",
-    "price": 99.9,
-    "sku": "DB2146467294"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
     "name": "Mega Pollero",
     "description": "1 pollo a la brasa + 1/4 pollo (solo) + papas fritas + ensalada + bot. gaseosa + tequeños x4 + salsas.",
     "price": 102.9,
@@ -57,111 +49,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para 2",
-    "name": "Arma tu 1/2",
-    "description": "1/2 pollo a la brasa, escoge tu guarnición mediana a elección, salsas.",
-    "price": 30.9,
-    "sku": "DB2146467270"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones para 2",
-    "name": "Dúo de Locura",
-    "description": "Dos 1/4 de pollo, 2 papas fritas menú, 2 botellas de gaseosa de 500ml y salsas",
-    "price": 39.9,
-    "sku": "DB2146466959"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones para 2",
-    "name": "Clásico Medicombo",
-    "description": "1/2 pollo a la brasa + papas medianas + ensalada fresca mediana +2 bot. gaseosa 500ml + salsas.",
-    "price": 43.9,
-    "sku": "DB2146467302"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones para 2",
-    "name": "Dúo Patrio",
-    "description": "1/2 pollo a la brasa + 2 guarniciones a elección + 2 bot. gaseosa + salsas.",
-    "price": 44.9,
-    "sku": "DB2146467293"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "Arma tu 1/4",
-    "description": "1/4 pollo a la brasa, escoge tu guarnición menú a elección, salsas.",
-    "price": 16.9,
-    "sku": "DB2146467269"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "Promo Personal",
-    "description": "1/4 Pollo Brasa Don Beli, Papas fritas Menú y Salsas.",
-    "price": 17.9,
-    "sku": "DB2146466361"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "Combo Personal",
-    "description": "1/4 Pollo a la brasa, papa menú , gaseosa 500 ml, salsas",
-    "price": 21.9,
-    "sku": "DB2146467331"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "Mostrito Personal",
-    "description": "1/4 Pollo a la brasa, papa menú, arroz Chaufa menú, salsas",
-    "price": 23.9,
-    "sku": "DB2146467332"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "BeliClásico",
-    "description": "1/4 Brasa Don Beli, 1 Papa Crocantita Menú, 1 Ensalada Fresca Personal, 1 Gaseosa Personal, Salsas",
-    "price": 25.9,
-    "sku": "DB2146465435"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "BeliMostro",
-    "description": "1/4 Brasa Don Beli, 1 Papa Crocantita Menú, 1 Arroz Chaufa Menú, 1 Gaseosa Personal, Salsas",
-    "price": 26.9,
-    "sku": "DB2146465436"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "Mostrito del Hincha",
-    "description": "1/4 pollo + papas personales + chaufa personal + 1 salsa",
-    "price": 19.9,
-    "sku": "DB2146467559"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "Arrocero del Hincha",
-    "description": "1/4 pollo + arroz c/choclo personal + 1 salsa",
-    "price": 19.9,
-    "sku": "DB2146467558"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "Clásico del Hincha",
-    "description": "1/4 pollo + papas personales + 1 salsa",
-    "price": 19.9,
-    "sku": "DB2146467557"
-  },
-  {
-    "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
     "name": "Extra Campeones",
     "description": "1 pollo + 1/4 pollo + papas familiares + ensalada familiar + botella 1.5 litros + 4 salsas",
     "price": 109.9,
@@ -169,7 +57,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
     "name": "Semi Campeones",
     "description": "1 pollo + 1/2 pollo + papas familiares + ensalada familiar + botella 1.5 litros + 5 salsas",
     "price": 119.9,
@@ -177,7 +65,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
     "name": "Final de Campeones",
     "description": "2 pollos + 2 papas familiares + 2 ensaladas familiares + 2 botellas 1 litro + 6 salsas",
     "price": 159.9,
@@ -185,7 +73,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
+    "category": "Promociones",
     "name": "Mega Banquete Campeón",
     "description": "2 pollo + 4 papas personales + 2 camote personales + 2 chaufa personales + 2 ensaladas familiares + 2 botellas 1 litro + 6 salsas",
     "price": 199.9,
@@ -193,39 +81,79 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
-    "name": "Jueves de Parejas",
-    "description": "1/2 pollo a la brasa + papas fritas + 2 bot. gaseosa + salsas.",
-    "price": 35.9,
-    "sku": "DB2146466508"
+    "category": "Promociones",
+    "name": "Arma tu 1/2",
+    "description": "1/2 pollo a la brasa, escoge tu guarnición mediana a elección, salsas.",
+    "price": 30.9,
+    "sku": "DB2146467270"
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones Personales",
-    "name": "Cyber Personal",
-    "description": "1/4 pollo, papas fritas, gaseosa 500ml y salsas.",
-    "price": 15.9,
-    "sku": "DB2146466760"
+    "category": "Promociones",
+    "name": "Dúo de Locura",
+    "description": "Dos 1/4 de pollo, 2 papas fritas menú, 2 botellas de gaseosa de 500ml y salsas",
+    "price": 39.9,
+    "sku": "DB2146466959"
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para 2",
-    "name": "Cyber Dúo",
-    "description": "1/2 pollo , papas fritas medianas, 2 inca kola 500ml y salsas.",
-    "price": 29.9,
-    "sku": "DB2146466762"
+    "category": "Promociones",
+    "name": "Clásico Medicombo",
+    "description": "1/2 pollo a la brasa + papas medianas + ensalada fresca mediana +2 bot. gaseosa 500ml + salsas.",
+    "price": 43.9,
+    "sku": "DB2146467302"
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Promociones para Compartir",
-    "name": "Cyber Familiar",
-    "description": "1 pollo, papas fritas familiares, gaseosa 1.5L y salsas.",
-    "price": 59.9,
-    "sku": "DB2146466759"
+    "category": "Promociones",
+    "name": "Arma tu 1/4",
+    "description": "1/4 pollo a la brasa, escoge tu guarnición menú a elección, salsas.",
+    "price": 16.9,
+    "sku": "DB2146467269"
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Promociones",
+    "name": "Promo Personal",
+    "description": "1/4 Pollo Brasa Don Beli, Papas fritas Menú y Salsas.",
+    "price": 17.9,
+    "sku": "DB2146466361"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
+    "name": "Combo Personal",
+    "description": "1/4 Pollo a la brasa, papa menú , gaseosa 500 ml, salsas",
+    "price": 21.9,
+    "sku": "DB2146467331"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
+    "name": "Mostrito Personal",
+    "description": "1/4 Pollo a la brasa, papa menú, arroz Chaufa menú, salsas",
+    "price": 23.9,
+    "sku": "DB2146467332"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
+    "name": "BeliClásico",
+    "description": "1/4 Brasa Don Beli, 1 Papa Crocantita Menú, 1 Ensalada Fresca Personal, 1 Gaseosa Personal, Salsas",
+    "price": 25.9,
+    "sku": "DB2146465435"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
+    "name": "BeliMostro",
+    "description": "1/4 Brasa Don Beli, 1 Papa Crocantita Menú, 1 Arroz Chaufa Menú, 1 Gaseosa Personal, Salsas",
+    "price": 26.9,
+    "sku": "DB2146465436"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Carta",
     "name": "1 Pollo con guarnición y ensalada",
     "description": "1 pollo a la brasa, guarnición familiar a elección, ensalada fresca familiar y salsas.",
     "price": 89.9,
@@ -233,7 +161,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Carta",
     "name": "1/2 Pollo con guarnición y ensalada",
     "description": "1/2 de pollo a la brasa, guarnición mediana a elección, ensalada fresca mediana y salsas.",
     "price": 48.9,
@@ -241,7 +169,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Carta",
     "name": "1/4 Pollo con guarnición y ensalada",
     "description": "1/4 de pollo a la brasa, guarnición personal a elección, ensalada fresca personal y salsas.",
     "price": 29.9,
@@ -249,7 +177,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Parrilleros",
     "name": "Pechuga Parrillera",
     "description": "1 filete de pechuga marinada con salsa chimichurri, guarnición personal a elección, ensalada fresca personal y salsas.",
     "price": 33.9,
@@ -257,7 +185,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Parrilleros",
     "name": "Pierna Parrillera",
     "description": "1 filete de pierna marinada con salsa chimichurri, guarnición personal a elección, ensalada fresca personal y salsas",
     "price": 32.9,
@@ -265,7 +193,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Acompañamientos",
     "name": "Papas Crocantitas",
     "description": "Nuestra especialidad ¡Perfectas y saladitas!",
     "price": 11.9,
@@ -273,7 +201,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Acompañamientos",
     "name": "Arroz Chaufa Personal",
     "description": "Arroz Chaufa al estilo Don Belisario.",
     "price": 11.9,
@@ -281,7 +209,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Acompañamientos",
     "name": "Arrocito de la Cacerola Personal",
     "description": "Delicioso arroz graneadito, aderezado con mantequilla al ajo y tierno choclito desgranado.",
     "price": 11.9,
@@ -289,7 +217,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Acompañamientos",
     "name": "Papas del Caporal Personal",
     "description": "Papas Tumbay en gajos con queso gratinado y un toque de chimichurri de la casa.",
     "price": 14.9,
@@ -297,7 +225,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Acompañamientos",
     "name": "Camotitos de la Abuelita Personal",
     "description": "Crocantes tiras de camote frito con un secretito de antaño.",
     "price": 14.9,
@@ -305,7 +233,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Acompañamientos",
     "name": "Ensalada Fresca",
     "description": "Lechuga y tomate acompañados con zanahoria rallada y aderezados con nuestra vinagreta de la casa.",
     "price": 19.9,
@@ -313,7 +241,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Acompañamientos",
     "name": "Ensalada Cocida",
     "description": "La preferida de Doña Enriqueta. Vegetales cocidos (beterraga, vainita y zanahoria), acompañados de palta y nuestra vinagreta de la casa.",
     "price": 19.9,
@@ -321,7 +249,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Entradas y Piqueos",
+    "category": "Piqueos",
     "name": "Anticuchos Doble",
     "description": "2 palitos de anticucho, 2 rodajas de choclo, papas crocantitas personal y salsas.",
     "price": 27.9,
@@ -329,7 +257,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Entradas y Piqueos",
+    "category": "Piqueos",
     "name": "Alitas x5 Don Beli",
     "description": "Alitas x5 (BBQ o De la Casa)",
     "price": 19.9,
@@ -337,7 +265,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Entradas y Piqueos",
+    "category": "Piqueos",
     "name": "Tequeños brasa x8",
     "description": "",
     "price": 19.9,
@@ -345,7 +273,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "Entradas y Piqueos",
+    "category": "Piqueos",
     "name": "Tequeños brasa x4",
     "description": "",
     "price": 11.9,
@@ -353,7 +281,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "Inca Kola Sabor Original 500ml",
     "description": "Inca kola 500ml",
     "price": 5.9,
@@ -361,7 +289,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "Inca Kola Sin Azúcar 500ml",
     "description": "Inca kola Zero 500 ml",
     "price": 5.9,
@@ -369,7 +297,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "Coca-Cola Sabor Original 500ml",
     "description": "Coca cola 500ml",
     "price": 5.9,
@@ -377,7 +305,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "Coca-Cola Sin Azúcar 500ml",
     "description": "Coca cola zero 500 ml",
     "price": 5.9,
@@ -385,7 +313,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "San Luis 750ml",
     "description": "Agua san luis",
     "price": 5.9,
@@ -393,7 +321,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "Inca Kola 1.5 lt",
     "description": "Inca kola  1.5 lt",
     "price": 12.9,
@@ -401,7 +329,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "Inca Kola Zero 1.5 lt",
     "description": "Inca kola zero 1.5 lt",
     "price": 12.9,
@@ -409,7 +337,7 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "Coca Cola 1.5 lt",
     "description": "Coca cola 1.5 lt",
     "price": 12.9,
@@ -417,10 +345,42 @@
   },
   {
     "restaurant": "Don Belisario",
-    "category": "General",
+    "category": "Bebidas",
     "name": "Coca Cola Zero 1.5 lt",
     "description": "Coca cola zero 1.5 lt",
     "price": 12.9,
     "sku": "DB2146463133"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
+    "name": "Jueves de Parejas",
+    "description": "1/2 pollo a la brasa + papas fritas + 2 bot. gaseosa + salsas.",
+    "price": 35.9,
+    "sku": "DB2146466508"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
+    "name": "Menú Mostrito",
+    "description": "1/4 pollo + papas personales + chaufa personal + 1 salsa",
+    "price": 19.9,
+    "sku": "DB2146467621"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
+    "name": "Menú Arrocero",
+    "description": "1/4 pollo + arroz c/choclo personal + 1 salsa",
+    "price": 19.9,
+    "sku": "DB2146467620"
+  },
+  {
+    "restaurant": "Don Belisario",
+    "category": "Promociones",
+    "name": "Menú Clásico",
+    "description": "1/4 pollo + papas personales + 1 salsa",
+    "price": 19.9,
+    "sku": "DB2146467619"
   }
 ]

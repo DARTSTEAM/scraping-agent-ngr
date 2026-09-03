@@ -1,0 +1,538 @@
+[
+  {
+    "restaurant": "Chinawok",
+    "category": "Mostrazo Broaster",
+    "name": "Mostrazo Familiar",
+    "description": "6 Piezas de Pollo + 1 Arroz Chaufa de Pollo + 1 Caja de papas + 1 Salsa a elección",
+    "price": 59.9,
+    "sku": "CW2146472107"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Mostrazo Broaster",
+    "name": "Mostrazo Compartir",
+    "description": "3 Piezas de Pollo + 1 Arroz Chaufa de Pollo + 1 Caja de papas + 1 Salsa a elección",
+    "price": 39.9,
+    "sku": "CW2146472102"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Mostrazo Broaster",
+    "name": "Mostrazo Personal",
+    "description": "1 Broaster Personal (Arroz Chaufa + Papas Fritas + 1 Pieza de Pollo) + 1 Salsa a elección + 1 Gaseosa 500ml",
+    "price": 22.9,
+    "sku": "CW2146472097"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Días Encájate Dúo",
+    "description": "2 Encajate a Elección . Imágenes referenciales.",
+    "price": 19.9,
+    "sku": "CW2146469992"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Dias Encájate Personal",
+    "description": "1 Encajate a Elección y 1 Gaseosa de 500ml. Imágenes referenciales.",
+    "price": 14.9,
+    "sku": "CW2146469991"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Dias Encájate Trio",
+    "description": "3 Encájate a elección (honey, chijaukay, tipakay y mandarin) acompañado de 1 Gaseosa 1lt . Imágenes referenciales.",
+    "price": 36.9,
+    "sku": "CW2146469993"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Dias Encájate Familiar",
+    "description": "4 Encajate a Elección y 8 wantanes. Imágenes referenciales.",
+    "price": 44.9,
+    "sku": "CW2146469994"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Combo A la Tinka",
+    "description": "Con el código de LA TINKA, por S/19.90 lleva 1 Arroz Chaufa de Pollo + 3 Wantanes + 1 Gaseosa 500ml",
+    "price": 28.7,
+    "sku": "CW2146472122"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Compartir Encájate",
+    "description": "4 Encajates a elección",
+    "price": 39.9,
+    "sku": "CW2146471900"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Promo Dúo A lo Pobre",
+    "description": "2 Chijaukay A lo Pobre + 2 Gaseosas 500ml",
+    "price": 32.9,
+    "sku": "CW2146471898"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Dúo Encajate al Wok",
+    "description": "2 Encájates a elección + 4 Wantanes + 2 Gaseosas 500ml",
+    "price": 29.9,
+    "sku": "CW2146471897"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Promo Dúo Encajate",
+    "description": "2 Encájates a elección + 2 Gaseosas 500ml",
+    "price": 25.9,
+    "sku": "CW2146471896"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Dúo Clásico al Wok",
+    "description": "1 Arroz Chaufa de Pollo + 1 Tallarin Taypa + 2 Gaseosas 500ml",
+    "price": 24.9,
+    "sku": "CW2146471895"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Promo Mostrazo",
+    "description": "1 Mostrazo Chicharron + 3 Wantanes + 1 Gaseosa 500ml",
+    "price": 23.9,
+    "sku": "CW2146471894"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Promo Sopa al Wok",
+    "description": "1 Combinado Taypa + 1 Sopa Wantan Personal",
+    "price": 19.9,
+    "sku": "CW2146471893"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Menú Encájate",
+    "description": "1 Encajate + 2 Wantanes o 1 Sopa personal + 1 Gaseosa 500ml",
+    "price": 18.9,
+    "sku": "CW2146471892"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Promo Sopa",
+    "description": "1 Sopa Wantan o Sopa Womin",
+    "price": 15.9,
+    "sku": "CW2146471891"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Trio Encajate Yapero",
+    "description": "Con el código yape, por S/36.90 llévate 3 Encajate a elección y 1 Gaseosa de 1LT",
+    "price": 56.6,
+    "sku": "CW2146471391"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Duo Mostrazo Yapero",
+    "description": "Con el código yape, por S/29.90 lleva 2 Mostrazo Chicharron + 2 Ajíes orientales",
+    "price": 49.9,
+    "sku": "CW2146470985"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Dúo Encajate Yapero",
+    "description": "Con el código yape, por S/19.90 lleva 2 Encajate a Elección",
+    "price": 29.9,
+    "sku": "CW2146470751"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Combos Personales",
+    "name": "Combo Chaufa",
+    "description": "1 Arroz Chaufa de Pollo + 1 Gaseosa 500ml",
+    "price": 16.9,
+    "sku": "CW2146471901"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Combos Personales",
+    "name": "Combo Tallarin Taypá",
+    "description": "1 Tallarin Taypa + 1 Gaseosa 500ml",
+    "price": 17.9,
+    "sku": "CW2146471902"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Combos Personales",
+    "name": "Combo Combinado",
+    "description": "1 Combinado Taypa + 1 Gaseosa 500ml",
+    "price": 18.9,
+    "sku": "CW2146471904"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Combos Personales",
+    "name": "Combo Tallarin Saltado",
+    "description": "1 Tallarin Saltado + 1 Gaseosa 500ml",
+    "price": 18.9,
+    "sku": "CW2146471903"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Combos Personales",
+    "name": "Combo Sabor al Wok",
+    "description": "1 Sabor al Wok a elección + 1 Gaseosa 500ml",
+    "price": 21.9,
+    "sku": "CW2146471905"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Combos Personales",
+    "name": "Combo Mostrazo",
+    "description": "1 Mostrazo a elección + 1 Gaseosa 500ml",
+    "price": 24.9,
+    "sku": "CW2146471906"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Combos Personales",
+    "name": "Combo A lo Pobre",
+    "description": "1 Sabor A lo Pobre a elección + 1 Gaseosa 500ml",
+    "price": 25.9,
+    "sku": "CW2146471907"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Dúos",
+    "name": "Dúo Clásico",
+    "description": "2 Arroz Chaufa de Pollo + 4 Wantanes + 2 Gaseosas 500ml",
+    "price": 28.9,
+    "sku": "CW2146471908"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Dúos",
+    "name": "Clásico para 2",
+    "description": "2 Clásicos a elección + 2 Gaseosas 500ml",
+    "price": 31.9,
+    "sku": "CW2146471909"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Dúos",
+    "name": "Dúo Sabor al Wok",
+    "description": "2 Sabor al Wok a elección + 2 Gaseosas 500ml",
+    "price": 38.9,
+    "sku": "CW2146471910"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Dúos",
+    "name": "Dúo Contundente",
+    "description": "2 Platos a elección (Mostrazo Chicharron o Chijaukay A lo Pobre) + 2 Gaseosas 500ml",
+    "price": 41.9,
+    "sku": "CW2146471911"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Dúos",
+    "name": "Dúo Power",
+    "description": "2 Platos a elección (Sabor al Wok, Mostrazo Chicharron o Chijaukay A lo Pobre) + 4 Wantanes + 2 Gaseosas 500ml",
+    "price": 45.9,
+    "sku": "CW2146471912"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Banquetazos",
+    "name": "Banquetazo Familiar",
+    "description": "2 Arroz Chaufa de Pollo + 2 Medio Potaje a elección + 1 Gaseosa de 1lt a elección",
+    "price": 49.9,
+    "sku": "CW2146470567"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Banquetazos",
+    "name": "Banquete para 4",
+    "description": "2 Arroz Chaufa de Pollo + 2 Medios Potaje a Elección + 1 Tallarin Taypa + 1 Gaseosa de 1Lt",
+    "price": 59.9,
+    "sku": "CW2146471375"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Banquetazos",
+    "name": "Super Banquete para 4",
+    "description": "1 Arroz Chaufa de Pollo Familiar, 3 medio potaje a elección, 6 wantanes y 1 gaseosa de 1LT a elección",
+    "price": 69.9,
+    "sku": "CW2146471376"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Banquetazos",
+    "name": "Banquete para 5",
+    "description": "1 Arroz Chaufa de Pollo Familiar, 1 Tallarin Taypa Familiar, 1 Potaje Familiar a elección, 8 Wantanes y 1 Gaseosa de 1LT a elección",
+    "price": 79.9,
+    "sku": "CW2146471377"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Banquetazos",
+    "name": "Banquete para 6",
+    "description": "2 Arroz Chaufa de Pollo Familiar, 1 Tallarín Taypá, 1 Potaje a elección y 12 wantanes con salsa de tamarindo",
+    "price": 89.9,
+    "sku": "CW2146469553"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Banquetazos",
+    "name": "Super Banquete para 6",
+    "description": "2 Arroz Chaufa de Pollo familiar, 2 Potajes familiar a elección, 12 wantanes y 1 gaseosa de 1.5LT",
+    "price": 99.9,
+    "sku": "CW2146471378"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Banquetazos",
+    "name": "Banquete para 7",
+    "description": "2 Arroz Chaufa de Pollo Familiar, 1 Tallarín Saltado de Pollo Familiar, 2 Potajes Familiares a Elección Chi Jau Kay (salado) o Tipakay (dulce), 14 wantanes con salsa tamarindo.",
+    "price": 109.9,
+    "sku": "CW2146467229"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Banquetazos",
+    "name": "Banquete para 8",
+    "description": "3 Arroz Chaufa de Pollo Familiar, 1 Tallarín Saltado de Pollo Familiar, 2 Potajes Familiares a Elección Chi Jau Kay (salado) o Tipakay (dulce), 16 wantanes con salsa tamarindo.",
+    "price": 119.9,
+    "sku": "CW2146467230"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "A la Carta",
+    "name": "Arroz Chaufa de Pollo",
+    "description": "Arroz Chaufa de Pollo",
+    "price": 15.9,
+    "sku": "CW2146471913"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "A la Carta",
+    "name": "Tallarín Taypá",
+    "description": "Tallarin Taypá",
+    "price": 16.9,
+    "sku": "CW2146471914"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "A la Carta",
+    "name": "Tallarin Saltado",
+    "description": "Tallarin Saltado",
+    "price": 17.9,
+    "sku": "CW2146471915"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "A la Carta",
+    "name": "Mandarin",
+    "description": "Pollo Mandarin (Ligeramente Picante)",
+    "price": 19.9,
+    "sku": "CW2146471919"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "A la Carta",
+    "name": "Honey Chicken",
+    "description": "Pollo Honey Chicken (Dulce)",
+    "price": 19.9,
+    "sku": "CW2146471918"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "A la Carta",
+    "name": "Tipakay",
+    "description": "Pollo Tipakay (Dulce)",
+    "price": 19.9,
+    "sku": "CW2146471917"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "A la Carta",
+    "name": "Chi Jau Kay",
+    "description": "Pollo Chi Jau Kay (Salado)",
+    "price": 19.9,
+    "sku": "CW2146471916"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "A la Carta",
+    "name": "Taypa Familiar",
+    "description": "Pollo Taypa",
+    "price": 35.9,
+    "sku": "CW2146471920"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "2 Wantanes",
+    "description": "2 Wantanes",
+    "price": 4.9,
+    "sku": "CW2146471921"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "3 Wantanes",
+    "description": "3 Wantanes",
+    "price": 5.9,
+    "sku": "CW2146471922"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "6 Wantanes",
+    "description": "6 Wantanes",
+    "price": 9.9,
+    "sku": "CW2146471923"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "12 Wantanes",
+    "description": "12 Wantanes",
+    "price": 18.9,
+    "sku": "CW2146471924"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "2 Tequeños de Lomo",
+    "description": "2 Tequeños de Lomo",
+    "price": 5.9,
+    "sku": "CW2146471929"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "3 Tequeños de Lomo",
+    "description": "3 Tequeños de Lomo",
+    "price": 7.9,
+    "sku": "CW2146471930"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "6 Tequeños de Lomo",
+    "description": "6 Tequeños de Lomo",
+    "price": 9.9,
+    "sku": "CW2146471931"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "12 Tequeños de Lomo",
+    "description": "12 Tequeños de Lomo",
+    "price": 18.9,
+    "sku": "CW2146471932"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "Inca Kola 500ml",
+    "description": "Inca Kola 500ml",
+    "price": 5.9,
+    "sku": "CW2146471933"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "Inca Zero 500ml",
+    "description": "Inca Zero 500ml",
+    "price": 5.9,
+    "sku": "CW2146471934"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "Coca Cola 500ml",
+    "description": "Coca Cola 500ml",
+    "price": 5.9,
+    "sku": "CW2146471935"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "Coca Zero 500ml",
+    "description": "Coca Zero 500ml",
+    "price": 5.9,
+    "sku": "CW2146471936"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "Inca Kola 1Lt",
+    "description": "Inca Kola 1Lt",
+    "price": 10.9,
+    "sku": "CW2146471937"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "Inca Zero 1Lt",
+    "description": "Inca Zero 1Lt",
+    "price": 10.9,
+    "sku": "CW2146471938"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "Coca Zero 1Lt",
+    "description": "Coca Zero 1Lt",
+    "price": 10.9,
+    "sku": "CW2146471940"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Complementos",
+    "name": "Inca Zero 1.5Lt",
+    "description": "Inca Zero 1.5Lt",
+    "price": 15.9,
+    "sku": "CW2146471941"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Chinabox para 4",
+    "description": "1 Chinabox (4 Encajates a elección) + 6 Wantanes",
+    "price": 49.9,
+    "sku": "CW2146471988"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Chinabox Familiar",
+    "description": "1 Chinabox (6 Encajates a elección)",
+    "price": 59.9,
+    "sku": "CW2146471749"
+  },
+  {
+    "restaurant": "Chinawok",
+    "category": "Promociones",
+    "name": "Chinabox Super Familiar",
+    "description": "1 Chinabox (6 Encajates a elección) + 1 Gaseosa 1Lt",
+    "price": 69.9,
+    "sku": "CW2146471750"
+  }
+]

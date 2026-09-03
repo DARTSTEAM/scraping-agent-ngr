@@ -1,0 +1,714 @@
+[
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Dúo Power Signature",
+    "description": "Disfruta de 2 pizzas grandes signature",
+    "price": 59.9,
+    "sku": "PJ11278"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Dupla Perfecta",
+    "description": "2 Pizzas grandes Clásicas",
+    "price": 49.9,
+    "sku": "PJ14364"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combinación Perfecta",
+    "description": "1 pizza grande clásica mas gaseosa de 1LT con 3 rolls de pepperoni",
+    "price": 35.9,
+    "sku": "PJ14895"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Dupla Perfecta Especial",
+    "description": "2 Pizzas grandes clásicas o especiales con 1 Mini Cheeseticks",
+    "price": 54.9,
+    "sku": "PJ14365"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Trio Grande Power",
+    "description": "2 Pizzas Grandes Clásicas + 1 Pizza Grande Power Pepperoni",
+    "price": 59.9,
+    "sku": "PJ19040"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Papa Flash Dúo Pizza Grande",
+    "description": "2 Pizzas Grandes Clásicas o Especialidad",
+    "price": 34.9,
+    "sku": "PJ18694"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Dúo Grande con Gaseosa",
+    "description": "2 Pizzas grandes clásicas + 1 Gaseosa 1L (gratis)",
+    "price": 49.9,
+    "sku": "PJ18320"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Miercoles de Signature Familiar",
+    "description": "2 Pizzas Familiares Signature",
+    "price": 69.9,
+    "sku": "PJ18227"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Miercoles de Signature Grande",
+    "description": "2 Pizzas Grandes Signature",
+    "price": 49.9,
+    "sku": "PJ18226"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Superpack",
+    "description": "4 Pizzas grandes",
+    "price": 99.9,
+    "sku": "PJ14370"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Superpack Familiar",
+    "description": "4 Pizzas familiares",
+    "price": 129.9,
+    "sku": "PJ14371"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Triple Pack Grande",
+    "description": "3 Pizzas grandes clásicas con 6 pepperoni rolls",
+    "price": 79.9,
+    "sku": "PJ11258"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Dúo Power Signature Familiar",
+    "description": "2 pizzas familiares signature.",
+    "price": 79.9,
+    "sku": "PJ11294"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo 2 Pizzas Familiares",
+    "description": "2 Pizza familiares clásicas con complemento  y gaseosa 1.5LT.",
+    "price": 85.9,
+    "sku": "PJ11298"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Triple Pack Familiar",
+    "description": "3 Pizzas Familiares clásicas con 6 pepperoni rolls",
+    "price": 99.9,
+    "sku": "PJ11293"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combos Tripack Box",
+    "description": "2 pizzas grandes clásicas con 1 pizza grande signature y 1 gaseosa 1L",
+    "price": 89.9,
+    "sku": "PJ16500"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combos Tripack y Share Box",
+    "description": "2 pizzas grandes clásicas con share box",
+    "price": 79.9,
+    "sku": "PJ16496"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Trio Familiar Power",
+    "description": "2 Pizzas Familiares Clásicas + 1 Pizza Familiar Power Pepperoni",
+    "price": 79.9,
+    "sku": "PJ19042"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Dúo Familiar con Grande",
+    "description": "2  Pizzas familiares clásicas + 1 grande clásica (gratis)",
+    "price": 69.9,
+    "sku": "PJ18323"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Dúo Familiar con Gaseosa",
+    "description": "2  Pizzas familiares clásicas + 1 Gaseosa 1L (gratis)",
+    "price": 59.9,
+    "sku": "PJ18321"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Pizza Grande",
+    "description": "1 Pizza grande clásica con complemento y gaseosa 1LT",
+    "price": 45.9,
+    "sku": "PJ11286"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Perfecta Especial",
+    "description": "1 pizza grande clásica con 3 palitos a la parmesana",
+    "price": 29.9,
+    "sku": "PJ14387"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Doble",
+    "description": "2 Pizzas Clásicas Medianas.",
+    "price": 32.9,
+    "sku": "PJ14361"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Papa Full Dúo",
+    "description": "2 Pizzas clásicas personales con 2 gaseosas de 500ml",
+    "price": 22.9,
+    "sku": "PJ14362"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Dúo Grande Power",
+    "description": "1 Pizza Grande Clásica + 1 Pizza Grande Power Pepperoni + 1 Gaseosa 1 L",
+    "price": 49.9,
+    "sku": "PJ19039"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Pan Pizza: Especialidad o Signature",
+    "description": "1 Pizza Grande Especialidad o Signature con la nueva Masa Pan Pizza (+S/7 Agrega 1 Gaseosa de 1L)",
+    "price": 49.9,
+    "sku": "PJ18926"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Personal Clásico",
+    "description": "1 Pizza clásica personal con 1 una gaseosa de 500ml",
+    "price": 14.9,
+    "sku": "PJ14358"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Personal Full",
+    "description": "Pizza personal clásica con 3 rolls de pepperoni y  gaseosa",
+    "price": 16.9,
+    "sku": "PJ11290"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Papadia Personal",
+    "description": "1 Papadia con Rolls Pepperoni x3",
+    "price": 16.9,
+    "sku": "PJ14360"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Calzone Full",
+    "description": "1 calzone con 3 rolls de pepperoni y gaseosa personal",
+    "price": 19.9,
+    "sku": "PJ10410"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Mediano Full",
+    "description": "1 Pizza mediana clásica con  3 rolls de pepperoni y gaseosa",
+    "price": 23.9,
+    "sku": "PJ11291"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Americana",
+    "description": "Queso mozzarella, salsa de tomate y Jamón americano.",
+    "price": 11.9,
+    "sku": "PJST0001"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Pepperoni",
+    "description": "Queso Mozarella, Pepperoni y Salsa de Tomate.",
+    "price": 11.9,
+    "sku": "PJST0002"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Mozzarella",
+    "description": "Doble Queso mozzarella y Salsa de Tomate.",
+    "price": 11.9,
+    "sku": "PJST0004"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Vegetariana",
+    "description": "Queso Mozzarella, Salsa de Tomate, Cebolla blanca, champiñones, Pimiento verde, Aceitunas Negras y Tomates.",
+    "price": 22.9,
+    "sku": "PJST0003"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Hawaiana",
+    "description": "Queso mozzarella, salsa de tomate especial, Jamón y Piña.",
+    "price": 26.9,
+    "sku": "PJST0005"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Súper Margarita 6 Quesos",
+    "description": "6 Quesos, Salsa de Tomate, Orégano y Tomate.",
+    "price": 26.9,
+    "sku": "PJST0007"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Continentalle",
+    "description": "Queso Mozzarella, Jamón, Salsa de Tomate, Champiñones y Cebolla.",
+    "price": 26.9,
+    "sku": "PJST0006"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Española",
+    "description": "Queso Mozarella, Base de salsa de mantequilla y ajo, Chorizo, Cebolla Blanca, Aceitunas Verdes, Aceitunas Negras y Champiñones",
+    "price": 26.9,
+    "sku": "PJST0008"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "All The Meats",
+    "description": "Carne de Res, Pepperoni, Salchicha de Cerdo, Tocino, Jamón y Queso Mozzarella.",
+    "price": 31.9,
+    "sku": "PJST0011"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "The Works",
+    "description": "Pepperoni, Salchicha Italiana, Jamón, Cebolla Blanca, Pimientos Verdes, Champiñones, Aceitunas Negras y Queso Mozzarella.",
+    "price": 31.9,
+    "sku": "PJST0012"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Veggie 6 Quesos",
+    "description": "6 Tipos de Queso, Cebolla, Pimientos Verdes, Tomate, Aceitunas Negras, Champiñones y Sazonador Italiano.",
+    "price": 31.9,
+    "sku": "PJST0010"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "La Favorita",
+    "description": "Pepperoni, Salchicha de Cerdo, Sazonador Italiano y mix de 6 quesos: Mozzarella, Romano, Parmesano, Asiago, Provolone y Fontina",
+    "price": 31.9,
+    "sku": "PJST0013"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Hawaiana chicken BBQ",
+    "description": "Queso mozzarella, Salsa barbacoa, Pollo a la parrilla, Tocino, Cebolla blanca y Piña.",
+    "price": 31.9,
+    "sku": "PJST0014"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Tocino 6 Quesos",
+    "description": "Jamón, Tocino, Salsa de tomate, Sazonador Italiano, Mix de 6 Quesos: Parmesano, Asiago, Romano, Provolone, Fontina y Mozzarella.",
+    "price": 31.9,
+    "sku": "PJST0009"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Pizzas",
+    "name": "Chicken BBQ",
+    "description": "Salsa Barbacoa, Pollo a la Parrilla, Tocino, Cebolla Blanca y Queso Mozzarella",
+    "price": 31.9,
+    "sku": "PJST0015"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Combos",
+    "name": "Combo Pizza Grande",
+    "description": "1 Pizza grande clásica con complemento y gaseosa 1LT",
+    "price": 45.9,
+    "sku": "PJ11286"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Combos",
+    "name": "Combo 2 Pizzas Familiares",
+    "description": "2 Pizza familiares clásicas con complemento  y gaseosa 1.5LT.",
+    "price": 85.9,
+    "sku": "PJ11298"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Combos",
+    "name": "Combo Pizza Familiar",
+    "description": "1 Pizza familiar clásica con complemento y gaseosa 1LT",
+    "price": 55.9,
+    "sku": "PJ11297"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Combos",
+    "name": "Combo 2 Pizzas Grandes",
+    "description": "2 Pizzas grandes clásicas con complemento y 1 gaseosa de 1.5LT",
+    "price": 75.9,
+    "sku": "PJ11287"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promos Signature",
+    "name": "Dúo Power Signature",
+    "description": "Disfruta de 2 pizzas grandes signature",
+    "price": 59.9,
+    "sku": "PJ11278"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promos Signature",
+    "name": "Dúo Power Signature Familiar",
+    "description": "2 pizzas familiares signature.",
+    "price": 79.9,
+    "sku": "PJ11294"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Big Combos",
+    "name": "Big Combo x4",
+    "description": "4 pizzas grandes clásicas con  2 gaseosa  de 1LT.",
+    "price": 109.9,
+    "sku": "PJ14141"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Big Combos",
+    "name": "Big Combo Super Grande x5",
+    "description": "5 pizzas Grande  clásicas con  2 gaseosa  de 1L.",
+    "price": 139.9,
+    "sku": "PJ14143"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Big Combos",
+    "name": "Big Combo  Familiar x 4",
+    "description": "4 pizzas Familiar clásicas con  2 gaseosa  de 1LT.",
+    "price": 129.9,
+    "sku": "PJ14142"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Big Combos",
+    "name": "Big Combo Super Familiar x 5",
+    "description": "5 pizzas Familiar clásicas con  2 gaseosa  de 1LT.",
+    "price": 159.9,
+    "sku": "PJ14144"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "6 Alitas",
+    "description": "Alitas de pollo asadas al horno servidas con salsa BBQ o salsa Búffalo.",
+    "price": 16.9,
+    "sku": "PJ9595"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "9 Alitas",
+    "description": "Alitas de pollo asadas al horno servidas con  salsa BBQ o salsa Búffalo.",
+    "price": 20.9,
+    "sku": "PJ9596"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Chicken Poppers x8",
+    "description": "Trozos de pechuga de pollo ligeramente empanizados, cocinados al horno y acompañados de tu salsa favorita.",
+    "price": 19.9,
+    "sku": "PJ9598"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Chicken Poppers x12",
+    "description": "Trozos de pechuga de pollo ligeramente empanizados, cocinados al horno y acompañados de tu salsa favorita.",
+    "price": 21.9,
+    "sku": "PJ9599"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Rolls de Pepperoni x6",
+    "description": "Masa enrollada con pepperoni y queso mozarella",
+    "price": 14.9,
+    "sku": "PJ6639"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Rolls de Pepperoni x3",
+    "description": "Masa enrollada con pepperoni y queso mozarella",
+    "price": 7.9,
+    "sku": "PJ10434"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Rolls de Jamon x6",
+    "description": "Masa enrollada con jamón y queso mozarella.",
+    "price": 14.9,
+    "sku": "PJ6638"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Rolls de Canela x6",
+    "description": "Rolls enrollados con dulce de canela, cubiertos con azúcar glaseada.",
+    "price": 10.9,
+    "sku": "PJ6710"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Palitos a la Parmesana",
+    "description": "Masa fresca cubierta con salsa de ajo y sazonada con queso parmesano y especias italianas.",
+    "price": 14.9,
+    "sku": "PJ6637"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Mini Cheesesticks",
+    "description": "Masa fresca,salsa especial de ajo y 100% mozzarella.",
+    "price": 7.9,
+    "sku": "PJ6863"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Fugazza",
+    "description": "Masa fresca recién horneada, cubierta con salsa de ajo y cebolla blanca.",
+    "price": 16.9,
+    "sku": "PJ6641"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Crostini de Tomate",
+    "description": "Masa  recién horneada, cubierta con salsa de ajo y trocitos de tomate.",
+    "price": 16.9,
+    "sku": "PJ6640"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Cheesesticks",
+    "description": "Masa fresca, exquisita salsa especial de ajo y 100% mozzarella.",
+    "price": 18.9,
+    "sku": "PJ6642"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Papadia Hot Chicken",
+    "description": "Pollo parrilla, jalapeños, champiñones, tomate, salsa Ranch.",
+    "price": 19.9,
+    "sku": "PJ11888"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Papadia Pepperoni & Salchicha Italiana",
+    "description": "Mitad Sandwich, mitad pizza: Salchicha italiana, Pepperoni, Sazonador Italiano y Queso Mozarella",
+    "price": 17.9,
+    "sku": "PJ8271"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Papadia Champiñones & Queso",
+    "description": "Mitad Sandwich, mitad pizza: Champiñones, Pimientos Verdes, Cebolla, Queso Mozarella y Salsa Ranch.",
+    "price": 17.9,
+    "sku": "PJ8272"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "San Luis 750 ML",
+    "description": "",
+    "price": 6.9,
+    "sku": "PJ12277"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Sprite Sin Azúcar 500 ML.",
+    "description": "",
+    "price": 4.9,
+    "sku": "PJ12086"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Fanta 500ml",
+    "description": "",
+    "price": 4.9,
+    "sku": "PJ12085"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Inca Kola 1.5Lt",
+    "description": "",
+    "price": 10.9,
+    "sku": "PJ14940"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Inca Kola 1Lt",
+    "description": "",
+    "price": 7.9,
+    "sku": "PJ14939"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Inca Kola 500ml",
+    "description": "",
+    "price": 4.9,
+    "sku": "PJ14938"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Coca Cola 1.5Lt",
+    "description": "",
+    "price": 10.9,
+    "sku": "PJ14937"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Coca Cola 1Lt",
+    "description": "",
+    "price": 7.9,
+    "sku": "PJ14936"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Coca Cola 500ml",
+    "description": "",
+    "price": 4.9,
+    "sku": "PJ14935"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Salsa BBQ Extra",
+    "description": "",
+    "price": 1.9,
+    "sku": "PJ7985"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Salsa de Ajo Extra",
+    "description": "",
+    "price": 1.9,
+    "sku": "PJ7984"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "PapaEspecialidades",
+    "name": "Salsa Buffalo Extra",
+    "description": "",
+    "price": 1.9,
+    "sku": ""
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Papa Flash Signature Adicional",
+    "description": "1 Pizza Grande Signature + Palitos a la Parmesana x3",
+    "price": 29.9,
+    "sku": "PJ19127"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Promo Pizza Power Grande",
+    "description": "1 Pizza Grande Power Americana, Pepperoni o Hawaiana",
+    "price": 29.9,
+    "sku": "PJ19115"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Combo Duo Familiar Power",
+    "description": "1 Pizza Familiar Clásica + 1 Pizza Familiar Power Pepperoni + 1 Gaseosa 1.5 L",
+    "price": 69.9,
+    "sku": "PJ19041"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Pan Pizza: Clásicas",
+    "description": "1 Pizza Grande Clásica con la nueva Masa Pan Pizza (+S/7 Agrega 1 Gaseosa de 1L)",
+    "price": 39.9,
+    "sku": "PJ18920"
+  },
+  {
+    "restaurant": "Papa Johns",
+    "category": "Promociones",
+    "name": "Duo Power Familiar",
+    "description": "2 Pizzas Familiares clásicas con nuditos de ajo o rolls de canela",
+    "price": 77.9,
+    "sku": "PJ11295"
+  }
+]

@@ -1,42 +1,82 @@
 [
   {
     "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Clásicos del día",
-    "name": "McCombo grande McPollo con queso",
-    "description": "01 McPollo con queso, 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Imágenes referenciales",
-    "price": 16.9,
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Grande Nuggetsx10 Huntr/x",
+    "description": "10 Chicken McNuggets, 1 papas grandes McShaker con sazonador Ramyeon, 2 salsas Hunter, 1 bebida de perlas Blueberry x Sprite y 1 sobre de photocards Huntr/x. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 33.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Clásicos del día",
-    "name": "McCombo mediano McPollo con Queso",
-    "description": "01 McPollo con queso, 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Imágenes referenciales",
-    "price": 14.9,
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Grande Cuarto BLT Saja Boys",
+    "description": "1 Cuarto de Libra BLT compuesta por carne de res, lechuga, tocino, tomate, queso, pan, cebolla, ketchup, mayonesa, pepinillos y mostaza; 1 papas medianas McShaker con sazonador Ramyeon; 1 salsa Demon; 1 bebida de perlas Blueberry x Sprite y 1 sobre de photocards Saja Boys. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 33.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Clásicos del día",
-    "name": "McCombo regular McPollo con queso",
-    "description": "1 McPollo con queso, 01 papa regular y 01 gaseosa regular de 12oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Válido solo hoy. Imágenes referenciales",
-    "price": 12.9,
+    "category": "Kpop Demon Hunters",
+    "name": "Derpy Sundae con perlas de Blueberry",
+    "description": "Sundae con perlas de Blueberry. Helado de base vainilla. Imagen referencial",
+    "price": 5.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Clásicos del día",
-    "name": "McPollo con Queso",
-    "description": "",
-    "price": 7.9,
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Grande Huntr/x + Derpy Sundae",
+    "description": "10 Chicken McNuggets, 1 papas grandes McShaker con sazonador Ramyeon, 2 salsas Hunter, 1 bebida de perlas Blueberry x Sprite, 1 sobre de photocards Huntr/x y 1 Derpy Sundae con perlas de Blueberry. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 38.9,
     "inStock": true
   },
   {
     "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Promociones",
-    "name": "Banquete Patrio",
-    "description": "8 piezas de pollo crujiente, 10 chicken McNuggets y 3 papas regulares. Las piezas de pollo son aleatorias. Sujeto a stock de local. Válida hasta el 31 de julio. Stock: 2,000 unds total país. Imágenes referenciales",
-    "price": 45.9,
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Grande Saja Boys + Derpy Sundae",
+    "description": "1 Cuarto de Libra BLT compuesta por carne de res, lechuga, tocino, tomate, queso, pan, cebolla, ketchup, mayonesa, pepinillos y mostaza; 1 papas medianas McShaker con sazonador Ramyeon; 1 salsa Demon; 1 bebida de perlas Blueberry x Sprite; 1 sobre de photocards Saja Boys y 1 Derpy Sundae con perlas de Blueberry. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 38.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Mediano Huntr/x + Derpy Sundae",
+    "description": "110 Chicken McNuggets, 1 papas medianas McShaker con sazonador Ramyeon, 2 salsas Hunter, 1 bebida de perlas Blueberry x Sprite, 1 sobre de photocards Huntr/x y 1 Derpy Sundae con perlas de Blueberry. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Mediano Saja Boys + Derpy Sundae",
+    "description": "1 Cuarto de Libra BLT compuesta por carne de res, lechuga, tocino, tomate, queso, pan, cebolla, ketchup, mayonesa, pepinillos y mostaza; 1 papas medianas McShaker con sazonador Ramyeon; 1 salsa Demon; 1 bebida de perlas Blueberry x Sprite; 1 sobre de photocards Saja Boys y 1 Derpy Sundae con perlas de Blueberry. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Mediano Nuggetsx10 Huntr/x",
+    "description": "10 Chicken McNuggets, 1 papas medianas McShaker con sazonador Ramyeon, 2 salsas Hunter, 1 bebida de perlas Blueberry x Sprite y 1 sobre de photocards Huntr/x. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Kpop Demon Hunters",
+    "name": "McCombo Mediano Cuarto BLT Saja Boys",
+    "description": "1 Cuarto de Libra BLT compuesta por carne de res, lechuga, tocino, tomate, queso, pan, cebolla, ketchup, mayonesa, pepinillos y mostaza; 1 papas medianas McShaker con sazonador Ramyeon; 1 salsa Demon; 1 bebida de perlas Blueberry x Sprite y 1 sobre de photocards Saja Boys. Photocards aleatorios, sujeto a stock y sin posibilidad de cambio. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Kpop Demon Hunters",
+    "name": "Blueberry X Sprite",
+    "description": "Bebida de perlas de Blueberry hecha con Sprite. Las bebidas incluyen hielo. Imagen referencial",
+    "price": 6.9,
     "inStock": true
   },
   {
@@ -61,22 +101,6 @@
     "name": "Pack x3: 3 elecciones y 3 papas",
     "description": "3 hamburguesas a elección entre Big Mac o Cuarto de Libra y 3 papas regulares. Sujeto a stock de local. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales",
     "price": 39.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Promociones",
-    "name": "6 Hamburguesas con queso",
-    "description": "6 hamburguesas con queso. Sujeto a stock de local. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales",
-    "price": 29.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Promociones",
-    "name": "6 Piezas de Pollo Crujiente",
-    "description": "6 piezas de pollo crujiente. Piezas de pollo aleatorias. Sujeto a stock de local. Válida hoy. Stock: 2,000 unds total país. Imágenes referenciales",
-    "price": 29.9,
     "inStock": true
   },
   {
@@ -157,6 +181,14 @@
     "name": "Dupla Combos Big Mac y Cuarto",
     "description": "1 sándwich Big Mac, 1 Cuarto de Libra, 2 papas medianas y 2 gaseosas medianas a 16 oz. sabor a elección. Imagen referencial",
     "price": 33.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Promociones",
+    "name": "Combo de los 5",
+    "description": "1 sándwich \"Hamburguesa con queso\", 1 pieza de pollo crujiente, 1 papa regular, 1 gaseosa regular de 12 oz y 1 sundae sabor a elección entre fresa, manjar o chocolate. Pieza de pollo es aleatoria y sujeto a stock de local. Válida de lunes a viernes. Stock: 500 unds. La gaseosa incluye hielo. Imagenes referenciales. Ver detalle producto en \"Sándwiches\" y \"Postres\"",
+    "price": 17.9,
     "inStock": true
   },
   {
@@ -370,46 +402,6 @@
   {
     "restaurant": "McDonalds benavides-aurora-bau",
     "category": "Combos Inca Kola",
-    "name": "McCombo grande Cuarto de Libra con Queso",
-    "description": "Hamburguesa de carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
-    "price": 24.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Combos Inca Kola",
-    "name": "McCombo grande Big Mac",
-    "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande de 21 oz, a elección. Imagen referencial",
-    "price": 23.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Combos Inca Kola",
-    "name": "McCombo grande McPollo con queso",
-    "description": "Hamburguesa de pollo apanado, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
-    "price": 23.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Combos Inca Kola",
-    "name": "Combo grande 3 piezas de pollo crispy",
-    "description": "3 piezas de pollo crispy (enharinado y frito) con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
-    "price": 26.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Combos Inca Kola",
-    "name": "McCombo mediano Cuarto de Libra con Queso",
-    "description": "Hamburguesa de carne de res, doble queso cheddar, pepinillos, mostaza, ketchup, cebolla fresca en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
-    "price": 22.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Combos Inca Kola",
     "name": "McCombo mediano Big Mac",
     "description": "Hamburguesa doble carne de res, queso cheddar, pepinillos, lechuga, pan en centro, salsa Big Mac en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana de 16 oz, a elección. Imagen referencial",
     "price": 21.9,
@@ -417,26 +409,10 @@
   },
   {
     "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Combos Inca Kola",
-    "name": "McCombo mediano McPollo con queso",
-    "description": "Hamburguesa de pollo apanado, queso cheddar, mayonesa, lechuga en pan con ajonjolí; con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
-    "price": 21.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Combos Inca Kola",
-    "name": "Combo mediano 3 piezas de pollo crispy",
-    "description": "3 piezas de pollo crispy (enharinado y frito) con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
-    "price": 24.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
     "category": "McCombos",
     "name": "McCombo grande Bacon Cheddar McMelt Doble",
     "description": "Hamburguesa Grand Bacon Cheddar McMelt de dos carnes, 1 gaseosa grande 21 oz sabor a elección y 1 papas grandes. Imagen referencial",
-    "price": 33.9,
+    "price": 30.9,
     "inStock": true
   },
   {
@@ -452,7 +428,7 @@
     "category": "McCombos",
     "name": "McCombo grande Bacon Cheddar McMelt Triple",
     "description": "Hamburguesa Grand Bacon Cheddar McMelt de tres carnes, 1 gaseosa grande 21 oz sabor a elección y 1 papas grandes. Imagen referencial",
-    "price": 39.9,
+    "price": 33.9,
     "inStock": true
   },
   {
@@ -460,7 +436,7 @@
     "category": "McCombos",
     "name": "McCombo grande Argentina doble",
     "description": "01 hamburguesa \"Argentina\", 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 33.9,
+    "price": 30.9,
     "inStock": true
   },
   {
@@ -468,7 +444,7 @@
     "category": "McCombos",
     "name": "McCombo grande USA doble",
     "description": "01 hamburguesa \"Usa\", 01 papa grande y 01 gaseosa grande de 21oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 33.9,
+    "price": 30.9,
     "inStock": true
   },
   {
@@ -492,7 +468,7 @@
     "category": "McCombos",
     "name": "McCombo mediano Argentina doble",
     "description": "01 hamburguesa \"Argentina\", 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 31.9,
+    "price": 28.9,
     "inStock": true
   },
   {
@@ -500,7 +476,7 @@
     "category": "McCombos",
     "name": "McCombo mediano USA doble",
     "description": "01 hamburguesa \"Usa\", 01 papa mediana y 01 gaseosa mediana de 16oz. Sujeto a stock de local. Las gaseosas incluyen hielo. Detalle del sándwich en \"Hamburguesas\". Imágenes referenciales",
-    "price": 31.9,
+    "price": 28.9,
     "inStock": true
   },
   {
@@ -602,14 +578,6 @@
   {
     "restaurant": "McDonalds benavides-aurora-bau",
     "category": "McCombos",
-    "name": "McCombo grande Chicken McNuggets 6 unidades",
-    "description": "6 nuggets de pechuga de pollo con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Incluye 1 salsa barbacue de 28.3 Grs cada una. Imagen referencial",
-    "price": 19.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "McCombos",
     "name": "Combo grande 3 piezas de pollo crispy",
     "description": "3 piezas de pollo crispy (enharinado y frito) con 1 papas grandes y 1 gaseosa grande 21 oz, a elección. Imagen referencial",
     "price": 26.9,
@@ -620,7 +588,7 @@
     "category": "McCombos",
     "name": "McCombo mediano Bacon Cheddar McMelt Doble",
     "description": "Hamburguesa Grand Bacon Cheddar McMelt de dos carnes, 1 gaseosa mediana 16 oz sabor a elección y 1 papas medianas. Imagen referencial",
-    "price": 31.9,
+    "price": 28.9,
     "inStock": true
   },
   {
@@ -636,7 +604,7 @@
     "category": "McCombos",
     "name": "McCombo mediano Bacon Cheddar McMelt Triple",
     "description": "Hamburguesa Grand Bacon Cheddar McMelt de tres carnes, 1 gaseosa mediana 16 oz sabor a elección y 1 papas medianas. Imagen referencial",
-    "price": 37.9,
+    "price": 31.9,
     "inStock": true
   },
   {
@@ -770,14 +738,6 @@
   {
     "restaurant": "McDonalds benavides-aurora-bau",
     "category": "McCombos",
-    "name": "McCombo mediano Chicken McNuggets 6 unidades",
-    "description": "6 nuggets de pechuga de pollo con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Incluye 1 salsa barbacue de 28.3 Grs cada una. Imagen referencial",
-    "price": 17.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "McCombos",
     "name": "Combo mediano 3 piezas de pollo crispy",
     "description": "3 piezas de pollo crispy (enharinado y frito) con 1 papas medianas y 1 gaseosa mediana 16 oz, a elección. Imagen referencial",
     "price": 24.9,
@@ -882,30 +842,6 @@
   {
     "restaurant": "McDonalds benavides-aurora-bau",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "McCombo regular Contundente",
-    "description": "4 piezas de pollo crujiente, 2 papas regulares y 2 gaseosas regulares. Piezas de pollo aleatorias. Imágenes referenciales",
-    "price": 35.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Pollo Crujiente y McNuggets",
-    "name": "McCombo mediano Contundente",
-    "description": "4 piezas de pollo crujiente, 2 papas medianas y 2 gaseosas medianas. Piezas de pollo aleatorias. Imágenes referenciales",
-    "price": 37.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Pollo Crujiente y McNuggets",
-    "name": "McCombo grande Contundente",
-    "description": "4 piezas de pollo crujiente, 2 papas grandes y 2 gaseosas grandes. Piezas de pollo aleatorias. Imágenes referenciales",
-    "price": 39.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Pollo Crujiente y McNuggets",
     "name": "Banquete Full x 8 piezas",
     "description": "8 piezas de pollo y 4 papas regulares. Piezas de pollo aleatorias. Imagen referencial",
     "price": 56.9,
@@ -930,25 +866,17 @@
   {
     "restaurant": "McDonalds benavides-aurora-bau",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "McCombo Contundente",
-    "description": "2 Piezas de Pollo Crispy, 10 McNuggets y Papas Regulares. Piezas de pollo aleatorias. Stock de 5,000 uds. Imagen referencial",
-    "price": 32.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Pollo Crujiente y McNuggets",
-    "name": "Combo compartir: 20 McNuggets",
-    "description": "20 McNuggets y 2 Papas Regulares. Stock de 5,000 uds. Imagen referencial",
-    "price": 32.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Pollo Crujiente y McNuggets",
     "name": "Banquete Full x 8 piezas con Gaseosas",
     "description": "8 piezas de Pollo, 4 Papas Regulares, 4 gaseosas regulares. Piezas de pollo aleatorias. Stock de 5,000 uds. Imagen referencial",
     "price": 64.8,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Banquete Supremo x 12 piezas con Gaseosas",
+    "description": "12 piezas de Pollo, 4 Papas Regulares, 4 gaseosas regulares. Piezas de pollo aleatorias. Stock de 5,000 uds. Imagen referencial",
+    "price": 84.8,
     "inStock": true
   },
   {
@@ -962,9 +890,41 @@
   {
     "restaurant": "McDonalds benavides-aurora-bau",
     "category": "Pollo Crujiente y McNuggets",
-    "name": "Banquete Supremo x 12 piezas con Gaseosas",
-    "description": "12 piezas de Pollo, 4 Papas Regulares, 4 gaseosas regulares. Piezas de pollo aleatorias. Stock de 5,000 uds. Imagen referencial",
-    "price": 84.8,
+    "name": "McCombo regular Contundente",
+    "description": "4 piezas de pollo crujiente, 2 papas regulares y 2 gaseosas regulares. Piezas de pollo aleatorias. Imágenes referenciales",
+    "price": 35.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo mediano Contundente",
+    "description": "4 piezas de pollo crujiente, 2 papas medianas y 2 gaseosas medianas. Piezas de pollo aleatorias. Imágenes referenciales",
+    "price": 37.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo grande Contundente",
+    "description": "4 piezas de pollo crujiente, 2 papas grandes y 2 gaseosas grandes. Piezas de pollo aleatorias. Imágenes referenciales",
+    "price": 39.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "McCombo Contundente",
+    "description": "2 Piezas de Pollo Crispy, 10 McNuggets y Papas Regulares. Piezas de pollo aleatorias. Stock de 5,000 uds. Imagen referencial",
+    "price": 32.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Pollo Crujiente y McNuggets",
+    "name": "Combo compartir: 20 McNuggets",
+    "description": "20 McNuggets y 2 Papas Regulares. Stock de 5,000 uds. Imagen referencial",
+    "price": 32.9,
     "inStock": true
   },
   {
@@ -1409,22 +1369,6 @@
   },
   {
     "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Hamburguesas",
-    "name": "Doble McPollo Bacon",
-    "description": "Doble hamburguesa de pollo apanado, 2 tocinos en tiras, doble queso cheddar, mayonesa, lechuga en pan con ajonjolí. Imagen referencial",
-    "price": 22.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
-    "category": "Para acompañar",
-    "name": "Papas regulares",
-    "description": "Papas fritas en tamaño regular. Imágenes referenciales",
-    "price": 5.9,
-    "inStock": true
-  },
-  {
-    "restaurant": "McDonalds benavides-aurora-bau",
     "category": "Para acompañar",
     "name": "Papas grandes",
     "description": "Papas fritas en tamaño grande",
@@ -1437,6 +1381,14 @@
     "name": "Papas medianas",
     "description": "Papas fritas en tamaño mediano",
     "price": 6.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Para acompañar",
+    "name": "Papas regulares",
+    "description": "Papas fritas en tamaño regular. Imágenes referenciales",
+    "price": 5.9,
     "inStock": true
   },
   {
@@ -1547,7 +1499,7 @@
     "restaurant": "McDonalds benavides-aurora-bau",
     "category": "Bebidas",
     "name": "Café Pasado",
-    "description": "Café americano de 14 oz. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "description": "Café pasado de 12 oz. Sujeto a stock en local. Imagen referencial",
     "price": 5.9,
     "inStock": true
   },
@@ -1609,6 +1561,14 @@
   },
   {
     "restaurant": "McDonalds benavides-aurora-bau",
+    "category": "Bebidas",
+    "name": "Café con Leche",
+    "description": "Café con Leche. Sujeto a stock. Imágenes Referenciales",
+    "price": 5.9,
+    "inStock": true
+  },
+  {
+    "restaurant": "McDonalds benavides-aurora-bau",
     "category": "Desayunos",
     "name": "Sándwich Queso, Huevo y Tocino",
     "description": "Sándwich con queso cheddar, huevo frito y tocino",
@@ -1636,7 +1596,7 @@
     "category": "Desayunos",
     "name": "Tostado Tocino y Queso + Café",
     "description": "Sándwich tostado tocino y queso y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
-    "price": 10.9,
+    "price": 11.9,
     "inStock": true
   },
   {
@@ -1668,7 +1628,7 @@
     "category": "Desayunos",
     "name": "McQueso + Café",
     "description": "Un sándwich McQueso y un café 12oz. Válido durante el mes. Imagenes referenciales. Stock: 3,000 unds",
-    "price": 7.9,
+    "price": 9.9,
     "inStock": true
   },
   {
@@ -1723,7 +1683,7 @@
     "restaurant": "McDonalds benavides-aurora-bau",
     "category": "Desayunos",
     "name": "Café Pasado",
-    "description": "Café americano de 14 oz. Producto válido hasta las 12 p.m. o sujeto a stock. Imagen referencial",
+    "description": "Café pasado de 12 oz. Sujeto a stock en local. Imagen referencial",
     "price": 5.9,
     "inStock": true
   },

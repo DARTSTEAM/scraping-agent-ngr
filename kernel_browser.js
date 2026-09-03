@@ -34,7 +34,7 @@ const PROXY_IDS = {
 async function createKernelBrowser({ proxy = 'ngr-peru', stealth = true } = {}) {
   if (!process.env.KERNEL_API_KEY) {
     console.warn('[Kernel] KERNEL_API_KEY not set — using local Chromium (no Peru residential proxy).');
-    const browser = await chromium.launch({ headless: true });
+    const browser = await chromium.launch({ headless: true, channel: 'chrome' });
     const context = await browser.newContext({
       userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
       locale: 'es-PE',

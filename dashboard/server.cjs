@@ -8,6 +8,7 @@ const { Storage } = require('@google-cloud/storage');
 
 const { matchBrand } = require('../product_matcher');
 const { BRANDS, CHANNELS, getChannelConfig } = require('../brand_config');
+const scrapeMeta = require('../scrape_meta');
 
 const app = express();
 const port = process.env.PORT || 3001;
@@ -43,6 +44,7 @@ async function syncFromGCS() {
         { prefix: 'products_',  dir: DATA_DIR },
         { prefix: 'matches_',   dir: ROOT_DIR },
         { prefix: 'overrides_', dir: ROOT_DIR },
+        { prefix: 'scrape_meta', dir: ROOT_DIR },
     ];
     for (const { prefix, dir } of prefixes) {
         try {
@@ -173,6 +175,7 @@ function findProductFiles() {
 app.get('/api/results', (req, res) => {
     try {
         const files = findProductFiles();
+        const scrapeTimes = scrapeMeta.load();
         const data = [];
 
         for (const [filename, { filePath, mtime }] of files) {
@@ -194,7 +197,7 @@ app.get('/api/results', (req, res) => {
                 name: meta.name,
                 platform: meta.platform,
                 local: content[0]?.restaurant || 'Sin información de local',
-                lastUpdated: mtime,
+                lastUpdated: scrapeTimes[storeId] || mtime,
                 products: content,
                 csvFile: `products_${storeId}.csv`
             });
@@ -288,9 +291,9 @@ app.post('/api/update', (req, res) => {
         console.log(`Scraper output: ${stdout}`);
 
         // Upload fresh JSON to GCS so it persists across container restarts
-        const storeIdFromScript = pedidosYaStoreId || url.split('/').pop();
-        // Find any newly-written products_*.json in SCRAPERS_DIR and upload to GCS
         try {
+            const freshStoreIds = [];
+            const scrapedAt = new Date().toISOString();
             const freshFiles = fs.readdirSync(SCRAPERS_DIR)
                 .filter(f => f.startsWith('products_') && f.endsWith('.json'));
             for (const f of freshFiles) {
@@ -299,7 +302,14 @@ app.post('/api/update', (req, res) => {
                 const stat = fs.statSync(localPath);
                 if (Date.now() - stat.mtimeMs < 5 * 60 * 1000) {
                     await uploadToGCS(localPath);
+                    const storeId = f.match(/^products_(.+)\.json$/)?.[1];
+                    if (storeId) freshStoreIds.push(storeId);
                 }
+            }
+            if (freshStoreIds.length > 0) {
+                const metaPath = scrapeMeta.stamp(freshStoreIds, scrapedAt);
+                if (metaPath) await uploadToGCS(metaPath);
+                console.log(`[scrape_meta] stamped ${freshStoreIds.join(', ')} @ ${scrapedAt}`);
             }
         } catch (uploadErr) {
             console.warn(`[GCS] Upload post-scrape fallado: ${uploadErr.message}`);
