@@ -1,16 +1,27 @@
 const { createKernelBrowser, closeKernelBrowser } = require('./kernel_browser');
+const { stamp } = require('./scrape_meta');
 const fs = require('fs');
 const path = require('path');
 
 /**
  * PedidosYa Peru scraper
- * Uses Kernel residential Peru proxy to bypass Cloudflare.
+ * Uses Kernel residential Peru proxy.
+ *
+ * PedidosYa requires a geo context (lat/lng) before restaurant deep links work.
  * Strategy:
- *  1. Intercept XHR/fetch responses with menu data
- *  2. Parse __NEXT_DATA__ from the page
- *  3. DOM fallback
+ *  1. Warm session with a Miraflores shoplist URL (sets location cookies)
+ *  2. Open restaurant menu page
+ *  3. Prefer intercepted /v2/niles/partners/{id}/menus JSON
+ *  4. Fallbacks: __NEXT_DATA__, then DOM
  */
-async function scrapePedidosYa(url, storeId = 'mcd-ovalo-gutierrez') {
+
+const DEFAULT_URL =
+  'https://www.pedidosya.com.pe/restaurantes/lima/mcdonalds-ovalo-gutierrez-e6b6652e-45c6-44f7-8976-e376edf475a8-menu';
+
+const GEO_WARM_URL =
+  'https://www.pedidosya.com.pe/restaurantes?lat=-12.1118&lng=-77.0355&address=Ovalo%20Gutierrez%20Miraflores&city=Lima';
+
+async function scrapePedidosYa(url = DEFAULT_URL, storeId = 'mcd-ovalo-gutierrez') {
     console.log(`Iniciando scraping de PedidosYa: ${url}`);
     console.log(`Store ID: ${storeId}`);
     console.log(`🌐 Conectando al navegador remoto en Kernel (proxy residencial Perú)...`);
@@ -22,7 +33,6 @@ async function scrapePedidosYa(url, storeId = 'mcd-ovalo-gutierrez') {
 
     const page = await context.newPage();
 
-    // Extra headers to look more like a real browser
     await page.setExtraHTTPHeaders({
         'Accept-Language': 'es-PE,es;q=0.9,en;q=0.8',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -30,84 +40,141 @@ async function scrapePedidosYa(url, storeId = 'mcd-ovalo-gutierrez') {
 
     const interceptedResponses = [];
 
-    // Intercept any JSON response that might contain menu/section data
-    page.on('response', async (response) => {
-        const respUrl = response.url();
-        const status = response.status();
-        if (status !== 200) return;
-
-        const contentType = response.headers()['content-type'] || '';
-        if (!contentType.includes('application/json')) return;
-
-        // Target likely API endpoints
-        if (
-            respUrl.includes('/api/') ||
-            respUrl.includes('/sections') ||
-            respUrl.includes('/menu') ||
-            respUrl.includes('/restaurant') ||
-            respUrl.includes('/products') ||
-            respUrl.includes('gateway')
-        ) {
-            try {
-                const json = await response.json();
-                const urlShort = respUrl.split('?')[0];
-                console.log(`[API] Interceptado: ${urlShort}`);
-                interceptedResponses.push({ url: respUrl, data: json });
-            } catch (_) {}
-        }
-    });
-
     try {
-        // ── Cloudflare bypass: warm up with homepage first ────────────────
-        // Cloudflare blocks cold requests from residential proxies — navigating to
-        // the homepage first establishes a session cookie and passes behavioral checks.
-        console.log('[PedidosYa] Calentando sesión con homepage...');
-        const homeResp = await page.goto('https://www.pedidosya.com.pe/', {
+        console.log('[PedidosYa] Calentando sesión con ubicación Miraflores...');
+        const warmResp = await page.goto(GEO_WARM_URL, {
             waitUntil: 'domcontentloaded',
-            timeout: 45000,
+            timeout: 60000,
         });
-        console.log(`[PedidosYa] Homepage status: ${homeResp?.status()}`);
-        await page.waitForTimeout(4000); // let JS run, cookies settle
+        console.log(`[PedidosYa] Warm status: ${warmResp?.status()} → ${page.url()}`);
+        await page.waitForTimeout(3000);
 
-        // ── Navigate to restaurant ────────────────────────────────────────
+        const bodyWarm = await page.evaluate(() => (document.body?.innerText || '').slice(0, 200));
+        if (/acceso ha sido denegado|confirma que eres un humano/i.test(bodyWarm)) {
+            throw new Error('⛔ Bloqueado por Cloudflare en warm-up.');
+        }
+
         console.log(`[PedidosYa] Navegando al restaurante: ${url}`);
         const resp = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90000 });
-
         const httpStatus = resp?.status();
-        console.log(`[HTTP] Status de página: ${httpStatus}`);
+        console.log(`[HTTP] Status: ${httpStatus} → ${page.url()}`);
 
         if (httpStatus === 403 || httpStatus === 451) {
             throw new Error(`⛔ Bloqueado por Cloudflare (HTTP ${httpStatus}).`);
         }
 
-        // Wait for dynamic content to settle
-        await page.waitForTimeout(6000);
+        // Confirm restaurant UI rendered (prices / menu tabs)
+        await page.waitForFunction(
+            () => /S\/\s*\d/.test(document.body?.innerText || '') || !!document.querySelector('h1'),
+            { timeout: 30000 }
+        ).catch(() => {});
+        await page.waitForTimeout(2000);
 
-        // ── Strategy 1: __NEXT_DATA__ ──────────────────────────────────────
-        console.log('[PedidosYa] Buscando __NEXT_DATA__...');
-        const nextDataRaw = await page.evaluate(() => {
-            const el = document.getElementById('__NEXT_DATA__');
-            return el ? el.textContent : null;
+        // Fetch menus API from inside the page (same cookies / PX session as the UI)
+        const partnerId = await page.evaluate(async () => {
+            // Prefer partner id from any already-loaded script/state; fall back to network hint in DOM links
+            const html = document.documentElement.innerHTML;
+            const m = html.match(/partners\/(\d+)\/menus/) || html.match(/"legacyId"\s*:\s*(\d{5,})/);
+            return m ? m[1] : null;
         });
+
+        const tryFetchMenus = async (id) => {
+            if (!id) return null;
+            return page.evaluate(async (pid) => {
+                const res = await fetch(`/v2/niles/partners/${pid}/menus`, {
+                    credentials: 'include',
+                    headers: { Accept: 'application/json' },
+                });
+                if (!res.ok) return { error: `HTTP ${res.status}` };
+                const ct = res.headers.get('content-type') || '';
+                if (!ct.includes('json')) {
+                    const text = await res.text();
+                    return { error: `non-json (${ct}): ${text.slice(0, 80)}` };
+                }
+                return { data: await res.json() };
+            }, id);
+        };
+
+        let menuJson = null;
+        const candidateIds = [partnerId, '401214'].filter(Boolean);
+        // Also listen once in case a natural request fires
+        const menuWait = page.waitForResponse(
+            (r) => /\/v2\/niles\/partners\/\d+\/menus/i.test(r.url()) && r.status() === 200,
+            { timeout: 15000 }
+        ).catch(() => null);
+
+        for (const id of [...new Set(candidateIds)]) {
+            console.log(`[API] fetch in-page menus partner=${id}`);
+            const result = await tryFetchMenus(id);
+            if (result?.data?.sections) {
+                menuJson = result.data;
+                console.log(`[API] OK sections=${menuJson.sections.length} name=${menuJson.name || ''}`);
+                break;
+            }
+            console.warn(`[API] fetch falló: ${result?.error || 'sin sections'}`);
+        }
+
+        if (!menuJson) {
+            const menuResp = await menuWait;
+            if (menuResp) {
+                try {
+                    const json = await menuResp.json();
+                    if (json?.sections) {
+                        menuJson = json;
+                        console.log(`[API] OK vía response listener sections=${menuJson.sections.length}`);
+                    }
+                } catch (e) {
+                    console.warn(`[API] listener json error: ${e.message}`);
+                }
+            }
+        }
+
+        if (menuJson) {
+            interceptedResponses.push({ url: `in-page:/v2/niles/partners/menus`, data: menuJson });
+        }
+
+        await page.waitForTimeout(500);
 
         let products = [];
         let restaurantName = storeId;
 
-        if (nextDataRaw) {
-            try {
-                const nextData = JSON.parse(nextDataRaw);
-                const result = extractFromNextData(nextData);
-                products = result.products;
-                restaurantName = result.restaurantName || restaurantName;
-                console.log(`[__NEXT_DATA__] Extraídos ${products.length} productos`);
-            } catch (e) {
-                console.warn(`[__NEXT_DATA__] Error parseando: ${e.message}`);
+        // Strategy 1: intercepted menus API (preferred)
+        const menuResponses = interceptedResponses.filter(r => /\/menus/.test(r.url) || r.data?.sections);
+        if (menuResponses.length > 0) {
+            console.log(`[API] Analizando ${menuResponses.length} respuestas de menú...`);
+            for (const { url: apiUrl, data } of menuResponses) {
+                const result = extractFromApiData(data);
+                if (result.products.length > 0) {
+                    products = result.products;
+                    restaurantName = result.restaurantName || restaurantName;
+                    console.log(`[API] Extraídos ${products.length} productos desde: ${apiUrl.split('?')[0]}`);
+                    break;
+                }
             }
         }
 
-        // ── Strategy 2: intercepted API responses ──────────────────────────
+        // Strategy 2: __NEXT_DATA__
+        if (products.length === 0) {
+            console.log('[PedidosYa] Buscando __NEXT_DATA__...');
+            const nextDataRaw = await page.evaluate(() => {
+                const el = document.getElementById('__NEXT_DATA__');
+                return el ? el.textContent : null;
+            });
+            if (nextDataRaw) {
+                try {
+                    const nextData = JSON.parse(nextDataRaw);
+                    const result = extractFromNextData(nextData);
+                    products = result.products;
+                    restaurantName = result.restaurantName || restaurantName;
+                    console.log(`[__NEXT_DATA__] Extraídos ${products.length} productos`);
+                } catch (e) {
+                    console.warn(`[__NEXT_DATA__] Error parseando: ${e.message}`);
+                }
+            }
+        }
+
+        // Strategy 3: remaining intercepted JSON
         if (products.length === 0 && interceptedResponses.length > 0) {
-            console.log(`[API] Analizando ${interceptedResponses.length} respuestas interceptadas...`);
             for (const { url: apiUrl, data } of interceptedResponses) {
                 const result = extractFromApiData(data);
                 if (result.products.length > 0) {
@@ -119,65 +186,30 @@ async function scrapePedidosYa(url, storeId = 'mcd-ovalo-gutierrez') {
             }
         }
 
-        // ── Strategy 3: DOM scraping ───────────────────────────────────────
+        // Strategy 4: DOM
         if (products.length === 0) {
             console.log('[DOM] Intentando extracción desde DOM...');
-            products = await page.evaluate(() => {
-                const items = [];
-                const nameEl = document.querySelector('h1, [class*="restaurantName"], [data-testid="restaurant-name"]');
-                const restName = nameEl?.textContent?.trim() || 'McDonald\'s Ovalo Gutierrez';
-
-                // Try product cards with multiple selector strategies
-                const cardSelectors = [
-                    '[data-testid="product-card"]',
-                    '[class*="ProductCard"]',
-                    '[class*="product-card"]',
-                    '[class*="MenuItem"]',
-                    '[class*="menu-item"]',
-                ];
-                for (const sel of cardSelectors) {
-                    const els = document.querySelectorAll(sel);
-                    if (els.length === 0) continue;
-                    els.forEach(el => {
-                        const nameEl2 = el.querySelector('[data-testid="product-name"], [class*="productName"], [class*="ProductName"], h3, h4');
-                        const descEl = el.querySelector('[data-testid="product-description"], [class*="description"]');
-                        const priceEl = el.querySelector('[data-testid="product-price"], [class*="price"], [class*="Price"]');
-                        const name = nameEl2?.textContent?.trim() || '';
-                        const description = descEl?.textContent?.trim() || '';
-                        const priceText = priceEl?.textContent?.trim() || '0';
-                        const price = parseFloat(priceText.replace(/[^\d.]/g, '')) || 0;
-                        if (name) items.push({ restaurant: restName, category: 'General', name, description, price, inStock: true });
-                    });
-                    if (items.length > 0) {
-                        console.log(`DOM: found ${items.length} items with selector ${sel}`);
-                        break;
-                    }
-                }
-                return items;
-            });
+            products = await extractFromDom(page);
             console.log(`[DOM] Extraídos ${products.length} productos`);
         }
 
         if (products.length === 0) {
-            // Log first intercepted payload for debugging
             if (interceptedResponses.length > 0) {
                 const sample = JSON.stringify(interceptedResponses[0].data).slice(0, 500);
                 console.error(`[DEBUG] Primera respuesta interceptada: ${sample}`);
             }
-            // Log __NEXT_DATA__ keys for debugging
-            if (nextDataRaw) {
-                try {
-                    const nd = JSON.parse(nextDataRaw);
-                    console.error(`[DEBUG] __NEXT_DATA__ pageProps keys: ${Object.keys(nd?.props?.pageProps || {}).join(', ')}`);
-                } catch (_) {}
-            }
             throw new Error('No se pudo extraer productos de PedidosYa. Ver logs para debug.');
         }
 
-        // Ensure restaurant name is set on all products
+        // Drop zero-price rows unless they are the only signal (usually incomplete options)
+        const withPrice = products.filter(p => p.price > 0);
+        if (withPrice.length > 0) products = withPrice;
+
         products = products.map(p => ({ ...p, restaurant: p.restaurant || restaurantName }));
 
-        console.log(`✅ ${products.length} productos extraídos de "${restaurantName}"`);
+        const catCounts = {};
+        products.forEach(p => { catCounts[p.category] = (catCounts[p.category] || 0) + 1; });
+        console.log(`✅ ${products.length} productos · categorías: ${Object.entries(catCounts).map(([k, v]) => `${k}(${v})`).join(', ')}`);
         saveData(products, storeId);
 
     } catch (error) {
@@ -188,17 +220,12 @@ async function scrapePedidosYa(url, storeId = 'mcd-ovalo-gutierrez') {
     }
 }
 
-/**
- * Try to extract products from Next.js SSR data (__NEXT_DATA__).
- * PedidosYa has changed its data structure multiple times — we try several shapes.
- */
 function extractFromNextData(nextData) {
     const pageProps = nextData?.props?.pageProps;
     if (!pageProps) return { products: [], restaurantName: '' };
 
     console.log(`[__NEXT_DATA__] pageProps keys: ${Object.keys(pageProps).join(', ')}`);
 
-    // Shape 1: pageProps.restaurant
     const restaurant = pageProps.restaurant
         || pageProps.restaurantDetailInfo
         || pageProps.data?.restaurant
@@ -209,20 +236,18 @@ function extractFromNextData(nextData) {
         const sections = restaurant.menuSections
             || restaurant.sections
             || restaurant.menu?.sections
-            || restaurant.menu?.items  // sometimes items directly
+            || restaurant.menu?.items
             || [];
         const products = flattenSections(sections, name);
         if (products.length > 0) return { products, restaurantName: name };
     }
 
-    // Shape 2: pageProps directly has sections/menu
     const sections = pageProps.sections || pageProps.menuSections || pageProps.menu?.sections;
     if (sections) {
         const name = pageProps.restaurantName || pageProps.name || '';
         return { products: flattenSections(sections, name), restaurantName: name };
     }
 
-    // Shape 3: Deep search for sections array
     const found = deepFind(pageProps, 'sections');
     if (found && Array.isArray(found)) {
         const products = flattenSections(found, '');
@@ -232,13 +257,11 @@ function extractFromNextData(nextData) {
     return { products: [], restaurantName: '' };
 }
 
-/** Try to extract products from an intercepted API response */
 function extractFromApiData(data) {
     if (!data || typeof data !== 'object') return { products: [], restaurantName: '' };
 
     const name = data.name || data.restaurantName || data.restaurant?.name || '';
 
-    // Look for sections at various depths
     const sections = data.sections || data.menuSections
         || data.data?.sections || data.restaurant?.sections
         || data.menu?.sections || data.result?.sections;
@@ -247,7 +270,6 @@ function extractFromApiData(data) {
         return { products: flattenSections(sections, name), restaurantName: name };
     }
 
-    // Look for items directly
     const items = data.items || data.products || data.data?.items;
     if (items && Array.isArray(items) && items.length > 0 && items[0].name) {
         return { products: itemsToProducts(items, 'General', name), restaurantName: name };
@@ -260,26 +282,72 @@ function flattenSections(sections, restaurantName) {
     const products = [];
     for (const section of (sections || [])) {
         const category = section.name || section.title || 'General';
-        const items = section.items || section.products || section.menuItems || [];
+        const items = section.products || section.items || section.menuItems || [];
         products.push(...itemsToProducts(items, category, restaurantName));
     }
     return products;
 }
 
+function parsePrice(item) {
+    const raw = item?.price;
+    if (typeof raw === 'number') return raw;
+    if (raw && typeof raw === 'object') {
+        const n = raw.finalPrice ?? raw.originalPrice ?? raw.amount ?? raw.value;
+        if (typeof n === 'number') return n;
+        if (typeof n === 'string') return parseFloat(n.replace(/[^\d.]/g, '')) || 0;
+    }
+    if (typeof item.unitPrice === 'number') return item.unitPrice;
+    if (typeof item.originalPrice === 'number') return item.originalPrice;
+    if (typeof raw === 'string') return parseFloat(raw.replace(/[^\d.]/g, '')) || 0;
+    return 0;
+}
+
 function itemsToProducts(items, category, restaurantName) {
     return (items || [])
         .filter(item => item && (item.name || item.title))
+        .filter(item => item.enabled !== false && item.available !== false && item.outOfStock !== true)
         .map(item => ({
             restaurant: restaurantName,
             category,
             name: item.name || item.title || '',
             description: item.description || item.desc || '',
-            price: parseFloat(item.price || item.unitPrice || item.originalPrice || 0),
-            inStock: item.outOfStock !== true && item.available !== false,
+            price: parsePrice(item),
+            inStock: true,
         }));
 }
 
-/** Recursively search for a key in a nested object */
+async function extractFromDom(page) {
+    return page.evaluate(() => {
+        const items = [];
+        const nameEl = document.querySelector('h1, [class*="restaurantName"], [data-testid="restaurant-name"]');
+        const restName = nameEl?.textContent?.trim() || "McDonald's Ovalo Gutierrez";
+
+        const cardSelectors = [
+            '[data-testid="product-card"]',
+            '[class*="ProductCard"]',
+            '[class*="product-card"]',
+            '[class*="MenuItem"]',
+            '[class*="menu-item"]',
+        ];
+        for (const sel of cardSelectors) {
+            const els = document.querySelectorAll(sel);
+            if (els.length === 0) continue;
+            els.forEach(el => {
+                const nameEl2 = el.querySelector('[data-testid="product-name"], [class*="productName"], [class*="ProductName"], h3, h4');
+                const descEl = el.querySelector('[data-testid="product-description"], [class*="description"]');
+                const priceEl = el.querySelector('[data-testid="product-price"], [class*="price"], [class*="Price"]');
+                const name = nameEl2?.textContent?.trim() || '';
+                const description = descEl?.textContent?.trim() || '';
+                const priceText = priceEl?.textContent?.trim() || '0';
+                const price = parseFloat(priceText.replace(/[^\d.]/g, '')) || 0;
+                if (name) items.push({ restaurant: restName, category: 'General', name, description, price, inStock: true });
+            });
+            if (items.length > 0) break;
+        }
+        return items;
+    });
+}
+
 function deepFind(obj, key, depth = 0) {
     if (depth > 6 || !obj || typeof obj !== 'object') return null;
     if (key in obj) return obj[key];
@@ -293,15 +361,14 @@ function deepFind(obj, key, depth = 0) {
 function saveData(products, storeId) {
     const jsonPath = path.join(__dirname, `products_${storeId}.json`);
     fs.writeFileSync(jsonPath, JSON.stringify(products, null, 2));
+    stamp(storeId);
     console.log(`✅ Guardado: ${jsonPath} (${products.length} productos)`);
 }
 
-// ── Entry point ──────────────────────────────────────────────────────────────
-const targetUrl = process.argv[2];
-const targetStoreId = process.argv[3] || 'mcd-ovalo-gutierrez';
+module.exports = { scrapePedidosYa, DEFAULT_URL };
 
-if (targetUrl) {
+if (require.main === module) {
+    const targetUrl = process.argv[2] || DEFAULT_URL;
+    const targetStoreId = process.argv[3] || 'mcd-ovalo-gutierrez';
     scrapePedidosYa(targetUrl, targetStoreId);
-} else {
-    console.log('Uso: node pedidosya_scraper.js <URL> [storeId]');
 }

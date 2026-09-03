@@ -124,6 +124,7 @@ const STORE_METADATA = {
     // ── Propios – Competencia vs. Bembos ────────
     'mcd-benavides-aurora-bau': { name: "McDonald's - Benavides Aurora", platform: 'Propio' },
     'mcd-izaguirre-iza':       { name: "McDonald's - Izaguirre",        platform: 'Propio' },
+    'mcd-ovalo-gutierrez':     { name: "McDonald's - Óvalo Gutiérrez",  platform: 'PedidosYa' },
     'burgerking-pe':       { name: "Burger King",               platform: 'Propio' },
     // Propios – Competencia vs. Popeyes
     'kfc-pe':              { name: "KFC",                       platform: 'Propio' },
@@ -149,6 +150,11 @@ function resolveStoreIdFromUrl(url) {
         'mcdonalds-ovalo-gutierrez': 'mcd-ovalo-gutierrez',
     };
 
+    if (url.includes('pedidosya.com.pe')) {
+        const slug = url.split('/').pop()?.replace(/-menu$/, '').replace(/-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/, '') || '';
+        return PEDIDOSYA_STORES[slug] || (slug.startsWith('mcdonalds') ? 'mcd-ovalo-gutierrez' : slug || 'mcd-ovalo-gutierrez');
+    }
+
     if (url.includes('papajohns.com.pe')) return 'papajohns-pe';
     if (url.includes('bembos.com.pe')) return 'bembos-pe';
     if (url.includes('popeyes.com.pe')) return 'popeyes-pe';
@@ -169,11 +175,6 @@ function resolveStoreIdFromUrl(url) {
     if (url.includes('mcdonalds.com.pe')) {
         const m = url.match(/\/([^\/]+)\/pedidos\/?$/);
         if (m) return `mcd-${m[1]}`;
-    }
-
-    if (url.includes('pedidosya.com.pe')) {
-        const slug = url.split('/').pop()?.replace(/-menu$/, '').replace(/-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/, '') || '';
-        return PEDIDOSYA_STORES[slug] || 'mcd-ovalo-gutierrez';
     }
 
     const rappiMatch = url.match(/restaurantes\/(\d+)/);
@@ -304,12 +305,13 @@ app.post('/api/update', (req, res) => {
         PLAYWRIGHT_CHROMIUM_LAUNCH_OPTIONS: JSON.stringify({ args: ['--no-sandbox', '--disable-setuid-sandbox'] })
     };
 
-    // For PedidosYa, also pass the storeId so the scraper knows what filename to use
     const PEDIDOSYA_STORES = {
         'mcdonalds-ovalo-gutierrez': 'mcd-ovalo-gutierrez',
     };
     const urlSlug = url.split('/').pop()?.replace(/-menu$/, '').replace(/-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/, '') || '';
-    const pedidosYaStoreId = PEDIDOSYA_STORES[urlSlug] || 'mcd-ovalo-gutierrez';
+    const pedidosYaStoreId = PEDIDOSYA_STORES[urlSlug]
+        || (urlSlug.startsWith('mcdonalds') ? 'mcd-ovalo-gutierrez' : null)
+        || 'mcd-ovalo-gutierrez';
     const scriptArgs = scriptName === 'pedidosya_scraper.js'
         ? `"${scriptPath}" "${url}" "${pedidosYaStoreId}"`
         : `"${scriptPath}" "${url}"`;
