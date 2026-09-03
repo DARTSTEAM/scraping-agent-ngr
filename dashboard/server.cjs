@@ -271,10 +271,15 @@ app.post('/api/update', (req, res) => {
         return res.status(400).json({ error: 'URL is required' });
     }
 
-    let scriptName = 'rappi_scraper.js';
+    // PedidosYa is batch-only: manual refresh from the dashboard risks PerimeterX blocks.
     if (url.includes('pedidosya.com.pe')) {
-        scriptName = 'pedidosya_scraper.js';
-    } else if (url.includes('mcdonalds.com.pe')) {
+        return res.status(403).json({
+            error: 'Actualización manual de PedidosYa deshabilitada. Usá el batch controlado (scrape_pedidosya_batch.js).',
+        });
+    }
+
+    let scriptName = 'rappi_scraper.js';
+    if (url.includes('mcdonalds.com.pe')) {
         scriptName = 'mcdonalds_scraper.js';
     } else if (url.includes('burgerking.pe')) {
         scriptName = 'burgerking_scraper.js';

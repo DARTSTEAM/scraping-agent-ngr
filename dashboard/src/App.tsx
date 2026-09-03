@@ -252,10 +252,16 @@ export default function App() {
   }, [activeTab, aggregator, data]);
 
   const handleUpdate = async () => {
-    const comp = COMPETITORS.find(c => c.id === selectedCompId) || { url: `https://www.rappi.com.pe/restaurantes/${selectedCompId}` };
+    const comp = COMPETITORS.find(c => c.id === selectedCompId);
+    const url = comp?.url || `https://www.rappi.com.pe/restaurantes/${selectedCompId}`;
+    const platform = comp?.platform || currentCompData?.platform || '';
+    if (platform === 'PedidosYa' || url.includes('pedidosya.com.pe')) {
+      alert('La actualización manual de PedidosYa está deshabilitada para evitar bloqueos. Usá el batch controlado.');
+      return;
+    }
     setUpdating(true);
     try {
-      await axios.post(`${API_BASE}/update`, { url: comp.url });
+      await axios.post(`${API_BASE}/update`, { url });
       await fetchData();
     } catch (err: any) {
       console.error('Error updating:', err);
@@ -306,8 +312,13 @@ export default function App() {
               </button>
               <button
                 onClick={handleUpdate}
-                disabled={updating || !selectedCompId}
-                className="px-5 py-2.5 bg-slate-900 text-white rounded-xl hover:bg-slate-800 shadow-lg shadow-slate-200 transition-all flex items-center gap-2 font-semibold disabled:opacity-50"
+                disabled={updating || !selectedCompId || aggregator === 'PedidosYa' || currentCompData?.platform === 'PedidosYa'}
+                title={
+                  aggregator === 'PedidosYa' || currentCompData?.platform === 'PedidosYa'
+                    ? 'Actualización manual deshabilitada en PedidosYa (riesgo de bloqueo)'
+                    : undefined
+                }
+                className="px-5 py-2.5 bg-slate-900 text-white rounded-xl hover:bg-slate-800 shadow-lg shadow-slate-200 transition-all flex items-center gap-2 font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <ArrowPathIcon className={`w-5 h-5 ${updating ? 'animate-spin' : ''}`} />
                 {updating ? 'Actualizando...' : 'Actualizar Información'}
