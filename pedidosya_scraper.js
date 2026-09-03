@@ -41,8 +41,16 @@ async function scrapePedidosYa(url = DEFAULT_URL, storeId = 'mcd-ovalo-gutierrez
     const interceptedResponses = [];
 
     try {
-        console.log('[PedidosYa] Calentando sesión con ubicación Miraflores...');
-        const warmResp = await page.goto(GEO_WARM_URL, {
+        console.log('[PedidosYa] Calentando sesión...');
+        // Prefer homepage first — geo shoplist is more likely to trip PX after bursts
+        let warmResp = await page.goto('https://www.pedidosya.com.pe/', {
+            waitUntil: 'domcontentloaded',
+            timeout: 60000,
+        });
+        console.log(`[PedidosYa] Home status: ${warmResp?.status()}`);
+        await page.waitForTimeout(4000);
+
+        warmResp = await page.goto(GEO_WARM_URL, {
             waitUntil: 'domcontentloaded',
             timeout: 60000,
         });
@@ -50,11 +58,22 @@ async function scrapePedidosYa(url = DEFAULT_URL, storeId = 'mcd-ovalo-gutierrez
         await page.waitForTimeout(3000);
 
         const bodyWarm = await page.evaluate(() => (document.body?.innerText || '').slice(0, 200));
-        if (/acceso ha sido denegado|confirma que eres un humano/i.test(bodyWarm)) {
+        if (/acceso ha sido denegado|confirma que eres un humano/i.test(bodyWarm) || warmResp?.status() === 403) {
             throw new Error('⛔ Bloqueado por Cloudflare en warm-up.');
         }
 
         console.log(`[PedidosYa] Navegando al restaurante: ${url}`);
+
+        // Wait for the natural menus API BEFORE navigation (avoid hardcoding partner IDs)
+        const menuWait = page.waitForResponse(
+            (r) => {
+                if (!/\/v2\/niles\/partners\/\d+\/menus/i.test(r.url())) return false;
+                const ct = r.headers()['content-type'] || '';
+                return r.status() === 200 && ct.includes('json');
+            },
+            { timeout: 45000 }
+        ).catch(() => null);
+
         const resp = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90000 });
         const httpStatus = resp?.status();
         console.log(`[HTTP] Status: ${httpStatus} → ${page.url()}`);
@@ -63,74 +82,70 @@ async function scrapePedidosYa(url = DEFAULT_URL, storeId = 'mcd-ovalo-gutierrez
             throw new Error(`⛔ Bloqueado por Cloudflare (HTTP ${httpStatus}).`);
         }
 
-        // Confirm restaurant UI rendered (prices / menu tabs)
         await page.waitForFunction(
             () => /S\/\s*\d/.test(document.body?.innerText || '') || !!document.querySelector('h1'),
             { timeout: 30000 }
         ).catch(() => {});
-        await page.waitForTimeout(2000);
-
-        // Fetch menus API from inside the page (same cookies / PX session as the UI)
-        const partnerId = await page.evaluate(async () => {
-            // Prefer partner id from any already-loaded script/state; fall back to network hint in DOM links
-            const html = document.documentElement.innerHTML;
-            const m = html.match(/partners\/(\d+)\/menus/) || html.match(/"legacyId"\s*:\s*(\d{5,})/);
-            return m ? m[1] : null;
-        });
-
-        const tryFetchMenus = async (id) => {
-            if (!id) return null;
-            return page.evaluate(async (pid) => {
-                const res = await fetch(`/v2/niles/partners/${pid}/menus`, {
-                    credentials: 'include',
-                    headers: { Accept: 'application/json' },
-                });
-                if (!res.ok) return { error: `HTTP ${res.status}` };
-                const ct = res.headers.get('content-type') || '';
-                if (!ct.includes('json')) {
-                    const text = await res.text();
-                    return { error: `non-json (${ct}): ${text.slice(0, 80)}` };
-                }
-                return { data: await res.json() };
-            }, id);
-        };
 
         let menuJson = null;
-        const candidateIds = [partnerId, '401214'].filter(Boolean);
-        // Also listen once in case a natural request fires
-        const menuWait = page.waitForResponse(
-            (r) => /\/v2\/niles\/partners\/\d+\/menus/i.test(r.url()) && r.status() === 200,
-            { timeout: 15000 }
-        ).catch(() => null);
-
-        for (const id of [...new Set(candidateIds)]) {
-            console.log(`[API] fetch in-page menus partner=${id}`);
-            const result = await tryFetchMenus(id);
-            if (result?.data?.sections) {
-                menuJson = result.data;
-                console.log(`[API] OK sections=${menuJson.sections.length} name=${menuJson.name || ''}`);
-                break;
+        const menuResp = await menuWait;
+        if (menuResp) {
+            try {
+                const json = await menuResp.json();
+                if (json?.sections) {
+                    menuJson = json;
+                    console.log(`[API] Menú natural: ${menuResp.url().split('?')[0]} · sections=${json.sections.length}`);
+                }
+            } catch (e) {
+                console.warn(`[API] No se pudo leer menú natural: ${e.message}`);
             }
-            console.warn(`[API] fetch falló: ${result?.error || 'sin sections'}`);
         }
 
+        // If natural request missed, discover partner id from page and fetch once
         if (!menuJson) {
-            const menuResp = await menuWait;
-            if (menuResp) {
-                try {
-                    const json = await menuResp.json();
-                    if (json?.sections) {
-                        menuJson = json;
-                        console.log(`[API] OK vía response listener sections=${menuJson.sections.length}`);
-                    }
-                } catch (e) {
-                    console.warn(`[API] listener json error: ${e.message}`);
+            const partnerId = await page.evaluate(() => {
+                const html = document.documentElement.innerHTML;
+                const patterns = [
+                    /\/v2\/niles\/partners\/(\d+)\/menus/,
+                    /"partnerId"\s*:\s*"?(\d{4,})"?/,
+                    /"vendorId"\s*:\s*"?(\d{4,})"?/,
+                    /"restaurantId"\s*:\s*"?(\d{4,})"?/,
+                    /partners%2F(\d+)%2Fmenus/,
+                ];
+                for (const re of patterns) {
+                    const m = html.match(re);
+                    if (m) return m[1];
                 }
+                return null;
+            });
+            if (partnerId) {
+                console.log(`[API] partnerId descubierto en página: ${partnerId}`);
+                const result = await page.evaluate(async (pid) => {
+                    const res = await fetch(`/v2/niles/partners/${pid}/menus`, {
+                        credentials: 'include',
+                        headers: { Accept: 'application/json' },
+                    });
+                    if (!res.ok) return { error: `HTTP ${res.status}` };
+                    const ct = res.headers.get('content-type') || '';
+                    if (!ct.includes('json')) {
+                        const text = await res.text();
+                        return { error: `non-json (${ct}): ${text.slice(0, 80)}` };
+                    }
+                    return { data: await res.json() };
+                }, partnerId);
+                if (result?.data?.sections) {
+                    menuJson = result.data;
+                    console.log(`[API] OK fetch partner=${partnerId} sections=${menuJson.sections.length}`);
+                } else {
+                    console.warn(`[API] fetch falló: ${result?.error || 'sin sections'}`);
+                }
+            } else {
+                console.warn('[API] No se encontró partnerId en la página');
             }
         }
 
         if (menuJson) {
-            interceptedResponses.push({ url: `in-page:/v2/niles/partners/menus`, data: menuJson });
+            interceptedResponses.push({ url: `menus:/v2/niles/partners/menus`, data: menuJson });
         }
 
         await page.waitForTimeout(500);
