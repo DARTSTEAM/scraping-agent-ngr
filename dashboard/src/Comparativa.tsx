@@ -10,6 +10,7 @@ import {
   MinusIcon,
 } from '@heroicons/react/24/outline';
 import axios from 'axios';
+import { formatPeruDateTime } from './formatDate';
 
 const API_BASE = '/api';
 
@@ -148,7 +149,7 @@ export default function Comparativa() {
         <div className="flex items-center gap-2 self-end lg:self-auto">
           {data?.generatedAt && (
             <span className="text-[11px] text-slate-400 font-medium">
-              Último cálculo: {new Date(data.generatedAt).toLocaleString('es-PE')}
+              Último cálculo: {formatPeruDateTime(data.generatedAt)}
             </span>
           )}
           {recalculating && (

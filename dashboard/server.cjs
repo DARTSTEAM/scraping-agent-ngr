@@ -142,6 +142,47 @@ const STORE_METADATA = {
 };
 
 /**
+ * Map scrape target URL → products_<storeId>.json storeId.
+ */
+function resolveStoreIdFromUrl(url) {
+    const PEDIDOSYA_STORES = {
+        'mcdonalds-ovalo-gutierrez': 'mcd-ovalo-gutierrez',
+    };
+
+    if (url.includes('papajohns.com.pe')) return 'papajohns-pe';
+    if (url.includes('bembos.com.pe')) return 'bembos-pe';
+    if (url.includes('popeyes.com.pe')) return 'popeyes-pe';
+    if (url.includes('dunkin.pe')) return 'dunkin-pe';
+    if (url.includes('donbelisario.com.pe')) return 'donbelisario-pe';
+    if (url.includes('chinawok.com.pe')) return 'chinawok-pe';
+    if (url.includes('burgerking.pe')) return 'burgerking-pe';
+    if (url.includes('kfc.com.pe')) return 'kfc-pe';
+    if (url.includes('yopo.pe')) return 'yopo-pe';
+    if (url.includes('littlecaesars.com')) return 'littlecaesars-pe';
+    if (url.includes('wanta.pe')) return 'wanta-pe';
+    if (url.includes('chifaexpress.pe')) return 'chifaexpress-pe';
+    if (url.includes('cinnabon.com.pe')) return 'cinnabon-pe';
+    if (url.includes('starbucks.pe')) return 'starbucks-pe';
+    if (url.includes('rokys.com')) return 'rokys-pe';
+    if (url.includes('pizzahut.com.pe')) return 'pizzahut-miraflores';
+
+    if (url.includes('mcdonalds.com.pe')) {
+        const m = url.match(/\/([^\/]+)\/pedidos\/?$/);
+        if (m) return `mcd-${m[1]}`;
+    }
+
+    if (url.includes('pedidosya.com.pe')) {
+        const slug = url.split('/').pop()?.replace(/-menu$/, '').replace(/-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$/, '') || '';
+        return PEDIDOSYA_STORES[slug] || 'mcd-ovalo-gutierrez';
+    }
+
+    const rappiMatch = url.match(/restaurantes\/(\d+)/);
+    if (rappiMatch) return rappiMatch[1];
+
+    return null;
+}
+
+/**
  * Find all products_*.json files, merging data/ (base) with root-level fresh scrapes.
  * Root-level files take priority over data/ when both exist.
  */
@@ -290,26 +331,27 @@ app.post('/api/update', (req, res) => {
         }
         console.log(`Scraper output: ${stdout}`);
 
-        // Upload fresh JSON to GCS so it persists across container restarts
+        // Upload only the scraped store's JSON to GCS and stamp its individual time
         try {
-            const freshStoreIds = [];
-            const scrapedAt = new Date().toISOString();
-            const freshFiles = fs.readdirSync(SCRAPERS_DIR)
-                .filter(f => f.startsWith('products_') && f.endsWith('.json'));
-            for (const f of freshFiles) {
-                const localPath = path.join(SCRAPERS_DIR, f);
-                // Only upload if modified in the last 5 minutes (fresh scrape)
-                const stat = fs.statSync(localPath);
-                if (Date.now() - stat.mtimeMs < 5 * 60 * 1000) {
+            const targetStoreId = resolveStoreIdFromUrl(url);
+            if (!targetStoreId) {
+                console.warn(`[scrape_meta] No se pudo resolver storeId para: ${url}`);
+            } else {
+                const jsonName = `products_${targetStoreId}.json`;
+                const rootPath = path.join(SCRAPERS_DIR, jsonName);
+                const dataPath = path.join(DATA_DIR, jsonName);
+                const localPath = fs.existsSync(rootPath) ? rootPath : dataPath;
+
+                if (fs.existsSync(localPath)) {
+                    const stat = fs.statSync(localPath);
+                    const scrapedAt = new Date(stat.mtimeMs).toISOString();
                     await uploadToGCS(localPath);
-                    const storeId = f.match(/^products_(.+)\.json$/)?.[1];
-                    if (storeId) freshStoreIds.push(storeId);
+                    const metaPath = scrapeMeta.stamp(targetStoreId, scrapedAt);
+                    if (metaPath) await uploadToGCS(metaPath);
+                    console.log(`[scrape_meta] stamped ${targetStoreId} @ ${scrapedAt}`);
+                } else {
+                    console.warn(`[scrape_meta] Archivo no encontrado tras scrape: ${jsonName}`);
                 }
-            }
-            if (freshStoreIds.length > 0) {
-                const metaPath = scrapeMeta.stamp(freshStoreIds, scrapedAt);
-                if (metaPath) await uploadToGCS(metaPath);
-                console.log(`[scrape_meta] stamped ${freshStoreIds.join(', ')} @ ${scrapedAt}`);
             }
         } catch (uploadErr) {
             console.warn(`[GCS] Upload post-scrape fallado: ${uploadErr.message}`);

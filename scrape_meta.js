@@ -14,14 +14,23 @@ function metaPath() {
 }
 
 function load() {
-    const fp = metaPath();
-    if (!fs.existsSync(fp)) return {};
-    try {
-        const raw = JSON.parse(fs.readFileSync(fp, 'utf8'));
-        return raw && typeof raw === 'object' && !Array.isArray(raw) ? raw : {};
-    } catch {
-        return {};
+    const merged = {};
+    for (const fp of [path.join(DATA_DIR, NAME), path.join(ROOT_DIR, NAME)]) {
+        if (!fs.existsSync(fp)) continue;
+        try {
+            const raw = JSON.parse(fs.readFileSync(fp, 'utf8'));
+            if (!raw || typeof raw !== 'object' || Array.isArray(raw)) continue;
+            for (const [id, ts] of Object.entries(raw)) {
+                if (typeof ts !== 'string') continue;
+                if (!merged[id] || new Date(ts) > new Date(merged[id])) {
+                    merged[id] = ts;
+                }
+            }
+        } catch {
+            // ignore corrupt file
+        }
     }
+    return merged;
 }
 
 function stamp(storeIds, scrapedAt = new Date().toISOString()) {

@@ -12,6 +12,7 @@ import {
 import axios from 'axios';
 import logoNgr from './assets/Logo-ngr.png';
 import Comparativa from './Comparativa';
+import { formatPeruDateTime } from './formatDate';
 
 // In production the frontend is served by the same Express server,
 // so relative paths work. In dev, Vite proxies /api to localhost:3001.
@@ -353,7 +354,7 @@ export default function App() {
                 <div>
                   <p className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">Última Extracción</p>
                   <p className="text-sm font-bold text-slate-900">
-                    {currentCompData?.lastUpdated ? new Date(currentCompData.lastUpdated).toLocaleString('es-PE') : 'N/A'}
+                    {formatPeruDateTime(currentCompData?.lastUpdated)}
                   </p>
                 </div>
               </div>
